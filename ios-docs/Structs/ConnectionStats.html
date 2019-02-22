@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ConnectionStats Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/ConnectionStats" class="dashAnchor"></a>
+    <a title="ConnectionStats Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SpeedifySDK Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SpeedifySDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ConnectionStats Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SpeedifySDK.html">SpeedifySDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BondingMode.html">BondingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionPriority.html">ConnectionPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransportMode.html">TransportMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountingData.html">AccountingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterData.html">AdapterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerInformation.html">ServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ConnectionStats</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">ConnectionStats</span></code></pre>
+
+                </div>
+              </div>
+            <p>Statistics about a connection.
+There is one of these per socket that Speedify creates to make the VPN. Each
+one is bound to run over a single one of your internet connections.  It&rsquo;s
+possible for there to be more than one on a single internet connection.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9adapterIDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/adapterID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9adapterIDSSvp">adapterID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adapter unique ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9connectedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/connected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9connectedSbvp">connected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether or not <em>this</em> adaper is connected.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connected</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV13connectionUIDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/connectionUID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV13connectionUIDSSvp">connectionUID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connection unique ID.</p>
+
+<p>Not available on historic
+connection stat updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connectionUID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8inFlights5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/inFlight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8inFlights5Int64Vvp">inFlight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bytes currently in flight.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">inFlight</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV14inFlightWindows5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/inFlightWindow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV14inFlightWindows5Int64Vvp">inFlightWindow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>inflight window, bytes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">inFlightWindow</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9latencyMss5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/latencyMs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9latencyMss5Int64Vvp">latencyMs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Latency, milliseconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">latencyMs</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV7localIpSSvp"></a>
+                    <a name="//apple_ref/swift/Property/localIp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV7localIpSSvp">localIp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not available on historic
+connection stat updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">localIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV11lossReceives5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/lossReceive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV11lossReceives5Int64Vvp">lossReceive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Receive loss ratio (0.0-1.0).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lossReceive</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8lossSends5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/lossSend" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8lossSends5Int64Vvp">lossSend</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send loss ratio (0.0-1.0).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lossSend</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9privateIpSSvp"></a>
+                    <a name="//apple_ref/swift/Property/privateIp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9privateIpSSvp">privateIp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not available on historic
+connection stat updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">privateIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV12protocolUsedSSvp"></a>
+                    <a name="//apple_ref/swift/Property/protocolUsed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV12protocolUsedSSvp">protocolUsed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transport protocol used for this connection (tcp|udp).</p>
+
+<p>*Please see <code><a href="../Enums/TransportMode.html">TransportMode</a></code>.</p>
+
+<p>Not available on historic
+connection stat updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">protocolUsed</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8remoteIpSSvp"></a>
+                    <a name="//apple_ref/swift/Property/remoteIp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8remoteIpSSvp">remoteIp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Internet facing IP address of the connection.</p>
+
+<p>Not available on historic
+connection stat updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">remoteIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8sleepingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/sleeping" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8sleepingSbvp">sleeping</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sleeping</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8totalBpss5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/totalBps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8totalBpss5Int64Vvp">totalBps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bytes per second through this connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">totalBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV12connectionIDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/connectionID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV12connectionIDSSvp">connectionID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connection identifier. Not available on historic connection stat updates.</p>
+
+<p>Not available on historic
+connection stat updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connectionID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV7sendBpss5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/sendBps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV7sendBpss5Int64Vvp">sendBps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>bytes per second sent through this tunnel. Not available on historic tunnel stat updates.
+@since 7.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sendBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV10receiveBpss5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveBps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV10receiveBpss5Int64Vvp">receiveBps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>bytes per second received through this tunnel. Not available on historic tunnel stat updates.
+@since 7.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">receiveBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV16sendEstimateMbpss5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/sendEstimateMbps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV16sendEstimateMbpss5Int64Vvp">sendEstimateMbps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>estimated maximum megabytes per second send. Not available on historic tunnel stat updates.
+@since 7.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sendEstimateMbps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV18receiveEstimateMpss5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveEstimateMps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV18receiveEstimateMpss5Int64Vvp">receiveEstimateMps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>estimated maximum megabytes per second received. Not available on historic tunnel stat updates.
+@since 7.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">receiveEstimateMps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2017 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

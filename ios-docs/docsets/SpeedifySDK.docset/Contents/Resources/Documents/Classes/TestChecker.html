@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TestChecker Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/TestChecker" class="dashAnchor"></a>
+    <a title="TestChecker Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SpeedifySDK Docs</a> (48% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SpeedifySDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TestChecker Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MyStackView.html">MyStackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MyView.html">MyView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpeedifySDK.html">SpeedifySDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestChecker.html">TestChecker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestCoordinator.html">TestCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestKeeper.html">TestKeeper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestLimit.html">TestLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestManager.html">TestManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestResultsCoordinator.html">TestResultsCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestResultsView.html">TestResultsView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BondingMode.html">BondingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionPriority.html">ConnectionPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TestState.html">TestState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransportMode.html">TransportMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor/TestStateColor.html">– TestStateColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterData.html">AdapterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerInformation.html">ServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Test.html">Test</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ValidationError.html">ValidationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TestChecker</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TestChecker</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC13completedtestAA0C0VSgv"></a>
+                    <a name="//apple_ref/swift/Property/completedtest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC13completedtestAA0C0VSgv">completedtest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">completedtest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC13activeAdapterAA0F4DataVSgv"></a>
+                    <a name="//apple_ref/swift/Property/activeAdapter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC13activeAdapterAA0F4DataVSgv">activeAdapter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">activeAdapter</span><span class="p">:</span> <span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC10checkLoginyAA0C0V_AA5StateOtF"></a>
+                    <a name="//apple_ref/swift/Method/checkLogin(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC10checkLoginyAA0C0V_AA5StateOtF">checkLogin(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkLogin</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC12checkVersionyAA0C0V_AA0F0VtF"></a>
+                    <a name="//apple_ref/swift/Method/checkVersion(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC12checkVersionyAA0C0V_AA0F0VtF">checkVersion(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkVersion</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">version</span><span class="p">:</span> <span class="kt"><a href="../Structs/Version.html">Version</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC13checkSettingsyAA0C0V_AA0F0VtF"></a>
+                    <a name="//apple_ref/swift/Method/checkSettings(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC13checkSettingsyAA0C0V_AA0F0VtF">checkSettings(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">version</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC10checkStateyAA0C0V_AA0F0OtF"></a>
+                    <a name="//apple_ref/swift/Method/checkState(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC10checkStateyAA0C0V_AA0F0OtF">checkState(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkState</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC16checkGetNetworksyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkGetNetworks(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC16checkGetNetworksyAA0C0V_SayAA11AdapterDataVGtF">checkGetNetworks(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkGetNetworks</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC18checkRedundantModeyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkRedundantMode(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC18checkRedundantModeyAA0C0V_AA8SettingsVtF">checkRedundantMode(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkRedundantMode</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC14checkSpeedModeyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkSpeedMode(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC14checkSpeedModeyAA0C0V_AA8SettingsVtF">checkSpeedMode(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkSpeedMode</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC17checkJumboModeOffyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkJumboModeOff(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC17checkJumboModeOffyAA0C0V_AA8SettingsVtF">checkJumboModeOff(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkJumboModeOff</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC16checkJumboModeOnyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkJumboModeOn(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC16checkJumboModeOnyAA0C0V_AA8SettingsVtF">checkJumboModeOn(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkJumboModeOn</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC24checkTunnelEncryptionOffyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkTunnelEncryptionOff(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC24checkTunnelEncryptionOffyAA0C0V_AA8SettingsVtF">checkTunnelEncryptionOff(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkTunnelEncryptionOff</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC23checkTunnelEncryptionOnyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkTunnelEncryptionOn(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC23checkTunnelEncryptionOnyAA0C0V_AA8SettingsVtF">checkTunnelEncryptionOn(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkTunnelEncryptionOn</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC17checkTransportUDPyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkTransportUDP(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC17checkTransportUDPyAA0C0V_AA8SettingsVtF">checkTransportUDP(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkTransportUDP</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC17checkTransportTCPyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkTransportTCP(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC17checkTransportTCPyAA0C0V_AA8SettingsVtF">checkTransportTCP(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkTransportTCP</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC14checkOverflow5yAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkOverflow5(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC14checkOverflow5yAA0C0V_AA8SettingsVtF">checkOverflow5(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkOverflow5</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC15checkOverflow30yAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkOverflow30(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC15checkOverflow30yAA0C0V_AA8SettingsVtF">checkOverflow30(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkOverflow30</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC22check2ExcludedIPRangesyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/check2ExcludedIPRanges(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC22check2ExcludedIPRangesyAA0C0V_AA8SettingsVtF">check2ExcludedIPRanges(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">check2ExcludedIPRanges</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC22check0ExcludedIPRangesyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/check0ExcludedIPRanges(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC22check0ExcludedIPRangesyAA0C0V_AA8SettingsVtF">check0ExcludedIPRanges(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">check0ExcludedIPRanges</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC19checkBackupPriorityyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkBackupPriority(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC19checkBackupPriorityyAA0C0V_SayAA11AdapterDataVGtF">checkBackupPriority(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkBackupPriority</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC19checkAlwaysPriorityyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkAlwaysPriority(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC19checkAlwaysPriorityyAA0C0V_SayAA11AdapterDataVGtF">checkAlwaysPriority(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkAlwaysPriority</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC28checkConnectionEncryptionOffyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkConnectionEncryptionOff(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC28checkConnectionEncryptionOffyAA0C0V_AA8SettingsVtF">checkConnectionEncryptionOff(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkConnectionEncryptionOff</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC27checkConnectionEncryptionOnyAA0C0V_AA8SettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkConnectionEncryptionOn(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC27checkConnectionEncryptionOnyAA0C0V_AA8SettingsVtF">checkConnectionEncryptionOn(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkConnectionEncryptionOn</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC16checkRateLimit10yAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkRateLimit10(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC16checkRateLimit10yAA0C0V_SayAA11AdapterDataVGtF">checkRateLimit10(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkRateLimit10</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC23checkRateLimitUnlimitedyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkRateLimitUnlimited(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC23checkRateLimitUnlimitedyAA0C0V_SayAA11AdapterDataVGtF">checkRateLimitUnlimited(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkRateLimitUnlimited</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC21checkDirectoryStagingyAA0C0V_s10DictionaryVySSypGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDirectoryStaging(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC21checkDirectoryStagingyAA0C0V_s10DictionaryVySSypGtF">checkDirectoryStaging(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDirectoryStaging</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">dict</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC21checkDirectoryDefaultyAA0C0V_s10DictionaryVySSypGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDirectoryDefault(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC21checkDirectoryDefaultyAA0C0V_s10DictionaryVySSypGtF">checkDirectoryDefault(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDirectoryDefault</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">dict</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC19checkDailyLimit100MyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDailyLimit100M(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC19checkDailyLimit100MyAA0C0V_SayAA11AdapterDataVGtF">checkDailyLimit100M(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDailyLimit100M</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC23checkDailyLimit100BoostyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDailyLimit100Boost(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC23checkDailyLimit100BoostyAA0C0V_SayAA11AdapterDataVGtF">checkDailyLimit100Boost(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDailyLimit100Boost</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC24checkDailyLimitUnlimitedyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDailyLimitUnlimited(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC24checkDailyLimitUnlimitedyAA0C0V_SayAA11AdapterDataVGtF">checkDailyLimitUnlimited(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDailyLimitUnlimited</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC19checkMonthlyLimit1GyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkMonthlyLimit1G(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC19checkMonthlyLimit1GyAA0C0V_SayAA11AdapterDataVGtF">checkMonthlyLimit1G(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkMonthlyLimit1G</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC26checkMonthlyLimitUnlimitedyAA0C0V_SayAA11AdapterDataVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkMonthlyLimitUnlimited(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC26checkMonthlyLimitUnlimitedyAA0C0V_SayAA11AdapterDataVGtF">checkMonthlyLimitUnlimited(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkMonthlyLimitUnlimited</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC14checkDevModeOnyAA0C0V_SaySSGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDevModeOn(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC14checkDevModeOnyAA0C0V_SaySSGtF">checkDevModeOn(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDevModeOn</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">servers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC19checkCountryConnectyAA0C0V_AA17ServerInformationVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkCountryConnect(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC19checkCountryConnectyAA0C0V_AA17ServerInformationVtF">checkCountryConnect(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkCountryConnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt"><a href="../Structs/ServerInformation.html">ServerInformation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC16checkCityConnectyAA0C0V_AA17ServerInformationVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkCityConnect(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC16checkCityConnectyAA0C0V_AA17ServerInformationVtF">checkCityConnect(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkCityConnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt"><a href="../Structs/ServerInformation.html">ServerInformation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC18checkServerConnectyAA0C0V_AA0F11InformationVtF"></a>
+                    <a name="//apple_ref/swift/Method/checkServerConnect(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC18checkServerConnectyAA0C0V_AA0F11InformationVtF">checkServerConnect(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkServerConnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt"><a href="../Structs/ServerInformation.html">ServerInformation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC15checkDevModeOffyAA0C0V_SaySSGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDevModeOff(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC15checkDevModeOffyAA0C0V_SaySSGtF">checkDevModeOff(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDevModeOff</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">servers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC26checkHistoricalConnectionsyAA0C0V_SayAA20ConnectionStatsGroupVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkHistoricalConnections(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC26checkHistoricalConnectionsyAA0C0V_SayAA20ConnectionStatsGroupVGtF">checkHistoricalConnections(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkHistoricalConnections</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">connectionStats</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC20checkLiveConnectionsyAA0C0V_SayAA15ConnectionStatsVGtF"></a>
+                    <a name="//apple_ref/swift/Method/checkLiveConnections(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC20checkLiveConnectionsyAA0C0V_SayAA15ConnectionStatsVGtF">checkLiveConnections(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkLiveConnections</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">connectionStats</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ConnectionStats.html">ConnectionStats</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC15checkDisconnectyAA0C0V_AA5StateOtF"></a>
+                    <a name="//apple_ref/swift/Method/checkDisconnect(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC15checkDisconnectyAA0C0V_AA5StateOtF">checkDisconnect(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkDisconnect</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK11TestCheckerC14checkLoggedOutyAA0C0V_AA5StateOtF"></a>
+                    <a name="//apple_ref/swift/Method/checkLoggedOut(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK11TestCheckerC14checkLoggedOutyAA0C0V_AA5StateOtF">checkLoggedOut(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">checkLoggedOut</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentTest</span><span class="p">:</span> <span class="kt"><a href="../Structs/Test.html">Test</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2017 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
