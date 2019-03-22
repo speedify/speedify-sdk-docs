@@ -14,6 +14,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,700i,200|Lato:700,400&amp;subset=latin,latin-ext" type="text/css" media="all" data-x-google-fonts="">
+<link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,9 +23,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">7.2.9</span>
+   &#160;<span id="projectnumber">7.4.0</span>
    </div>
   </td>
  </tr>
@@ -85,6 +88,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a82d080b7bafe0ea6de97a5de58a626dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___privacy_settings.html#a82d080b7bafe0ea6de97a5de58a626dd">crashReports</a></td></tr>
 <tr class="memdesc:a82d080b7bafe0ea6de97a5de58a626dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If crash reporting is enabled.  <a href="#a82d080b7bafe0ea6de97a5de58a626dd">More...</a><br /></td></tr>
 <tr class="separator:a82d080b7bafe0ea6de97a5de58a626dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e87585e0633fde18ee8bae3689e0d1a"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___privacy_settings.html#a2e87585e0633fde18ee8bae3689e0d1a">dnsAddressCount</a></td></tr>
+<tr class="memdesc:a2e87585e0633fde18ee8bae3689e0d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of configured dns addresses to forward.  <a href="#a2e87585e0633fde18ee8bae3689e0d1a">More...</a><br /></td></tr>
+<tr class="separator:a2e87585e0633fde18ee8bae3689e0d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c60b0198ba08669a2107a2f05fc8e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga06bae3bce45584142ccff3765318162b">IPAddressString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___privacy_settings.html#af4c60b0198ba08669a2107a2f05fc8e0">dnsAddresses</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga8e1cd03d663a09fa25904301bb6a7dca">SPEEDIFYSDK_MAX_DNS_COUNT</a>]</td></tr>
+<tr class="memdesc:af4c60b0198ba08669a2107a2f05fc8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public IP addresses of the server.  <a href="#af4c60b0198ba08669a2107a2f05fc8e0">More...</a><br /></td></tr>
+<tr class="separator:af4c60b0198ba08669a2107a2f05fc8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a82d080b7bafe0ea6de97a5de58a626dd"></a>
@@ -100,6 +109,39 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If crash reporting is enabled. </p>
+
+</div>
+</div>
+<a id="a2e87585e0633fde18ee8bae3689e0d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e87585e0633fde18ee8bae3689e0d1a">&#9670;&nbsp;</a></span>dnsAddressCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t SpeedifySDK_PrivacySettings::dnsAddressCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of configured dns addresses to forward. </p>
+
+</div>
+</div>
+<a id="af4c60b0198ba08669a2107a2f05fc8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c60b0198ba08669a2107a2f05fc8e0">&#9670;&nbsp;</a></span>dnsAddresses</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga06bae3bce45584142ccff3765318162b">IPAddressString</a> SpeedifySDK_PrivacySettings::dnsAddresses[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga8e1cd03d663a09fa25904301bb6a7dca">SPEEDIFYSDK_MAX_DNS_COUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Public IP addresses of the server. </p>
+<p>Windows and Mac Only </p>
 
 </div>
 </div>

@@ -14,6 +14,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,700i,200|Lato:700,400&amp;subset=latin,latin-ext" type="text/css" media="all" data-x-google-fonts="">
+<link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,9 +23,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">7.2.9</span>
+   &#160;<span id="projectnumber">7.4.0</span>
    </div>
   </td>
  </tr>
@@ -79,9 +82,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1bf3287dbd9e43f190b262f1f908b6c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html#a1bf3287dbd9e43f190b262f1f908b6c7">isError</a></td></tr>
 <tr class="memdesc:a1bf3287dbd9e43f190b262f1f908b6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if this result is an error.  <a href="#a1bf3287dbd9e43f190b262f1f908b6c7">More...</a><br /></td></tr>
 <tr class="separator:a1bf3287dbd9e43f190b262f1f908b6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a675baa18cb83c2878c2cab001b7ffc23"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html#a675baa18cb83c2878c2cab001b7ffc23">errorCode</a></td></tr>
-<tr class="memdesc:a675baa18cb83c2878c2cab001b7ffc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code.  <a href="#a675baa18cb83c2878c2cab001b7ffc23">More...</a><br /></td></tr>
-<tr class="separator:a675baa18cb83c2878c2cab001b7ffc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48a6edea210ea82300c8ed246537fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2">SpeedifySDK_ErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html#ab48a6edea210ea82300c8ed246537fd7">errorCode</a></td></tr>
+<tr class="memdesc:ab48a6edea210ea82300c8ed246537fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code.  <a href="#ab48a6edea210ea82300c8ed246537fd7">More...</a><br /></td></tr>
+<tr class="separator:ab48a6edea210ea82300c8ed246537fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef010ecb64ed4b63c8dd17eafd0d785"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html#a5ef010ecb64ed4b63c8dd17eafd0d785">errorMessage</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga7e7f5d88a268342966e117251f43328e">SPEEDIFYSDK_MAX_ERROR_STRING</a>]</td></tr>
 <tr class="memdesc:a5ef010ecb64ed4b63c8dd17eafd0d785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message.  <a href="#a5ef010ecb64ed4b63c8dd17eafd0d785">More...</a><br /></td></tr>
 <tr class="separator:a5ef010ecb64ed4b63c8dd17eafd0d785"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,6 +94,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a15687be4b54d0d64f65d4d65e786762b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html#a15687be4b54d0d64f65d4d65e786762b">adapterID</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gabbaf8ead9aa98fb5632f549ae4bfceac">SPEEDIFYSDK_MAX_ADAPTER_NAME</a>]</td></tr>
 <tr class="memdesc:a15687be4b54d0d64f65d4d65e786762b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique ID of the overlimit adapter.  <a href="#a15687be4b54d0d64f65d4d65e786762b">More...</a><br /></td></tr>
 <tr class="separator:a15687be4b54d0d64f65d4d65e786762b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ee79e89d0151c22fb9a0c963a4e76f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga1b0e167436dde4e47d01f7057280887b">SpeedifySDK_NetworkType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html#a45ee79e89d0151c22fb9a0c963a4e76f">type</a></td></tr>
+<tr class="memdesc:a45ee79e89d0151c22fb9a0c963a4e76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the new adapter.  <a href="#a45ee79e89d0151c22fb9a0c963a4e76f">More...</a><br /></td></tr>
+<tr class="separator:a45ee79e89d0151c22fb9a0c963a4e76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad314a1d1b49b0fa91fe0477e65b921d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___adapter_usage_data.html">SpeedifySDK_AdapterUsageData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html#ad314a1d1b49b0fa91fe0477e65b921d4">usageData</a></td></tr>
 <tr class="memdesc:ad314a1d1b49b0fa91fe0477e65b921d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current usage on the adapter.  <a href="#ad314a1d1b49b0fa91fe0477e65b921d4">More...</a><br /></td></tr>
 <tr class="separator:ad314a1d1b49b0fa91fe0477e65b921d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,14 +118,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a675baa18cb83c2878c2cab001b7ffc23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a675baa18cb83c2878c2cab001b7ffc23">&#9670;&nbsp;</a></span>errorCode</h2>
+<a id="ab48a6edea210ea82300c8ed246537fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48a6edea210ea82300c8ed246537fd7">&#9670;&nbsp;</a></span>errorCode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t SpeedifySDK_AdapterOverlimitResult::errorCode</td>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2">SpeedifySDK_ErrorType</a> SpeedifySDK_AdapterOverlimitResult::errorCode</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -173,6 +179,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates if this result is an error. </p>
+
+</div>
+</div>
+<a id="a45ee79e89d0151c22fb9a0c963a4e76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ee79e89d0151c22fb9a0c963a4e76f">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga1b0e167436dde4e47d01f7057280887b">SpeedifySDK_NetworkType</a> SpeedifySDK_AdapterOverlimitResult::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of the new adapter. </p>
 
 </div>
 </div>

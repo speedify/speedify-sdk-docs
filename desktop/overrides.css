@@ -1,0 +1,31 @@
+.tabs, .tabs2, .tabs3, .sm-dox {
+  background-image: none;
+  border-bottom: 1px solid #888;
+}
+.tablist li, .tablist a,
+.sm-dox li, .sm-dox a {
+  background-image: none !important;
+}
+.tablist li.current a,
+.sm-dox li.current a {
+  color:rgb(255,255,255);
+  background-color:rgb(26,193,255);
+  text-shadow:none;
+}
+.tablist a,
+.sm-dox a {
+  color:rgb(0,0,0);
+  text-shadow:none !important;
+}
+.tablist a:hover,
+.sm-dox a:hover {
+  color:rgb(255,255,255);
+  background-color:rgb(26,193,255);
+  text-shadow:none !important;
+}
+
+#projectlogo img {
+  height: 42px;
+  margin-left: 7px;
+  margin-bottom: 7px;
+}

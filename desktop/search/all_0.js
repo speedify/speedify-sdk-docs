@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['accountexists',['accountExists',['../struct_speedify_s_d_k___account_check_result.html#af70f398569716bf1d919acab745f2573',1,'SpeedifySDK_AccountCheckResult']]],
   ['accounting',['accounting',['../struct_speedify_s_d_k___accounting_result.html#a0ef20a9ead72cd1a968970a078bf9077',1,'SpeedifySDK_AccountingResult']]],
   ['acm_5fbysetting',['ACM_BYSETTING',['../group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a46ffa50c2278f79d933ee9152072acb5',1,'types.h']]],
   ['acm_5fclosest',['ACM_CLOSEST',['../group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a2faa0ddb609becb27b2cc7bcfca64048',1,'types.h']]],

@@ -14,6 +14,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,700i,200|Lato:700,400&amp;subset=latin,latin-ext" type="text/css" media="all" data-x-google-fonts="">
+<link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,9 +23,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">7.2.9</span>
+   &#160;<span id="projectnumber">7.4.0</span>
    </div>
   </td>
  </tr>
@@ -78,9 +81,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="results_8h_source.html">results.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="callbacks_8h_source.html">callbacks.h</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
-</div>
-<p><a href="speedifysdk_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a256b71774105b68b43040010e88169d3"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a></td></tr>
@@ -128,6 +129,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5a98304c7c6faef85904f08577586a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga5a98304c7c6faef85904f08577586a97">SpeedifySDK_Logout</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga5a98304c7c6faef85904f08577586a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logout the current user.  <a href="group___s_d_k.html#ga5a98304c7c6faef85904f08577586a97">More...</a><br /></td></tr>
 <tr class="separator:ga5a98304c7c6faef85904f08577586a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15971af6e53bc950d9afa5feecb9f2d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___account_check_result.html">SpeedifySDK_AccountCheckResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4">SpeedifySDK_AccountCheck</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *email, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga7808c5235e3d79a0c813a4801e6a9d07">SpeedifySDK_AccountCheckCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga15971af6e53bc950d9afa5feecb9f2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is already an account using this email address.  <a href="group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4">More...</a><br /></td></tr>
+<tr class="separator:ga15971af6e53bc950d9afa5feecb9f2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9c05d2331dcc69b88817da5c1746928"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___account_create_result.html">SpeedifySDK_AccountCreateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaa9c05d2331dcc69b88817da5c1746928">SpeedifySDK_AccountCreate</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *email, const char *password, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaa9cdbcdba696e05d5d57bfd8213ccd4f">SpeedifySDK_AccountCreateCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gaa9c05d2331dcc69b88817da5c1746928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new account using this email address.  <a href="group___s_d_k.html#gaa9c05d2331dcc69b88817da5c1746928">More...</a><br /></td></tr>
+<tr class="separator:gaa9c05d2331dcc69b88817da5c1746928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga737c02bfdc85c91d9605406df3434dc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___account_password_change_result.html">SpeedifySDK_AccountPasswordChangeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga737c02bfdc85c91d9605406df3434dc8">SpeedifySDK_AccountPasswordChange</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *email, const char *originalPassword, const char *newPassword, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga602e009ffb97e8244ed65a5c4d32c942">SpeedifySDK_AccountPasswordChangeCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga737c02bfdc85c91d9605406df3434dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the password on the account.  <a href="group___s_d_k.html#ga737c02bfdc85c91d9605406df3434dc8">More...</a><br /></td></tr>
+<tr class="separator:ga737c02bfdc85c91d9605406df3434dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga482c184056cc2a8ac16f26f92887c229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___directory_result.html">SpeedifySDK_DirectoryResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga482c184056cc2a8ac16f26f92887c229">SpeedifySDK_GetDirectory</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaeb1e79e2ecd8b2c338619196b225901e">SpeedifySDK_DirectoryCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga482c184056cc2a8ac16f26f92887c229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of available servers from the directory list.  <a href="group___s_d_k.html#ga482c184056cc2a8ac16f26f92887c229">More...</a><br /></td></tr>
 <tr class="separator:ga482c184056cc2a8ac16f26f92887c229"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +210,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6c8a1364b2f81b86cf058b21412b8873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga6c8a1364b2f81b86cf058b21412b8873">SpeedifySDK_SetDnsLeak</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga6c8a1364b2f81b86cf058b21412b8873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if DNS Leak protection is enabled.  <a href="group___s_d_k.html#ga6c8a1364b2f81b86cf058b21412b8873">More...</a><br /></td></tr>
 <tr class="separator:ga6c8a1364b2f81b86cf058b21412b8873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2a7b48495219fe6b6dcb726fd801b55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaa2a7b48495219fe6b6dcb726fd801b55">SpeedifySDK_SetDNSServers</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="group___t_y_p_e_s.html#ga06bae3bce45584142ccff3765318162b">IPAddressString</a> *dnsAddrs, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gaa2a7b48495219fe6b6dcb726fd801b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DNS servers to use.  <a href="group___s_d_k.html#gaa2a7b48495219fe6b6dcb726fd801b55">More...</a><br /></td></tr>
+<tr class="separator:gaa2a7b48495219fe6b6dcb726fd801b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0bd08ed618acafc51f6bb786509dffc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___adapters_result.html">SpeedifySDK_AdaptersResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga0bd08ed618acafc51f6bb786509dffc2">SpeedifySDK_GetAdapters</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3019cfa17dc99dd15edd53b6f0b61bdb">SpeedifySDK_AdaptersCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga0bd08ed618acafc51f6bb786509dffc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of current adapters.  <a href="group___s_d_k.html#ga0bd08ed618acafc51f6bb786509dffc2">More...</a><br /></td></tr>
 <tr class="separator:ga0bd08ed618acafc51f6bb786509dffc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +266,7 @@ Supports Subscription.  <a href="group___s_d_k.html#ga028e4b1c52cb2520d2bd77fc79
 <tr class="memdesc:ga962144e235008d2d6934934a42ea7dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a new adapter message.  <a href="group___s_d_k.html#ga962144e235008d2d6934934a42ea7dcd">More...</a><br /></td></tr>
 <tr class="separator:ga962144e235008d2d6934934a42ea7dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab73b86d3ee87b712e8483698b3230d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___adapter_overlimit_result.html">SpeedifySDK_AdapterOverlimitResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaab73b86d3ee87b712e8483698b3230d9">SpeedifySDK_ListenForAdapterOverlimit</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga86c29a010cc64f70a118f345f687a79c">SpeedifySDK_AdapterOverlimitCallback</a> cb, void *userData)</td></tr>
-<tr class="memdesc:gaab73b86d3ee87b712e8483698b3230d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive messages when a an adapter reaches its daily or monthly limit.  <a href="group___s_d_k.html#gaab73b86d3ee87b712e8483698b3230d9">More...</a><br /></td></tr>
+<tr class="memdesc:gaab73b86d3ee87b712e8483698b3230d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive messages when an adapter reaches its daily or monthly limit.  <a href="group___s_d_k.html#gaab73b86d3ee87b712e8483698b3230d9">More...</a><br /></td></tr>
 <tr class="separator:gaab73b86d3ee87b712e8483698b3230d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab86ad5af4242d95e2fa97148f2821961"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gab86ad5af4242d95e2fa97148f2821961">SpeedifySDK_HandleAdapterOverlimit</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *adapterID)</td></tr>
 <tr class="memdesc:gab86ad5af4242d95e2fa97148f2821961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear an overlimit message.  <a href="group___s_d_k.html#gab86ad5af4242d95e2fa97148f2821961">More...</a><br /></td></tr>
@@ -267,6 +280,9 @@ Supports Subscription.  <a href="group___s_d_k.html#ga028e4b1c52cb2520d2bd77fc79
 <tr class="memitem:gaa2abf58eebc653f520ce5981bbbf765b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaa2abf58eebc653f520ce5981bbbf765b">SpeedifySDK_SetReportingEncryptionKey</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *key128bit)</td></tr>
 <tr class="memdesc:gaa2abf58eebc653f520ce5981bbbf765b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set reporting encryption key.  <a href="group___s_d_k.html#gaa2abf58eebc653f520ce5981bbbf765b">More...</a><br /></td></tr>
 <tr class="separator:gaa2abf58eebc653f520ce5981bbbf765b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82b4d7fa17cc0f59451b19624eab78c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___torrent_result.html">SpeedifySDK_TorrentResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga82b4d7fa17cc0f59451b19624eab78c3">SpeedifySDK_ListenForTorrentDetection</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga039a065c52636679930a66a7fbfb7653">SpeedifySDK_TorrentCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga82b4d7fa17cc0f59451b19624eab78c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive messages when a torrent is detected. Subscription Only.  <a href="group___s_d_k.html#ga82b4d7fa17cc0f59451b19624eab78c3">More...</a><br /></td></tr>
+<tr class="separator:ga82b4d7fa17cc0f59451b19624eab78c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae00990b78fbb6f32f43599083b6d3bfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gae00990b78fbb6f32f43599083b6d3bfa">SpeedifySDK_UnregisterCallback</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___r_e_s_u_l_t.html#ga4f4cea7755c8fea8ca022fb8cc4c21f3">SpeedifySDK_EventID</a> eventId)</td></tr>
 <tr class="memdesc:gae00990b78fbb6f32f43599083b6d3bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an asynchronous callback registered via other calls.  <a href="group___s_d_k.html#gae00990b78fbb6f32f43599083b6d3bfa">More...</a><br /></td></tr>
 <tr class="separator:gae00990b78fbb6f32f43599083b6d3bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>

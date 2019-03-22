@@ -4,6 +4,8 @@ var searchData=
   ['dayssincefirst',['daysSinceFirst',['../struct_speedify_s_d_k___session_stats.html#a2899d03bed1f76a24823c8740956444b',1,'SpeedifySDK_SessionStats']]],
   ['data_20limits',['Data Limits',['../group___d_e_f_i_n_e_l_i_m_i_t_s.html',1,'']]],
   ['description',['description',['../struct_speedify_s_d_k___adapter_data.html#a8dde27d17766dcb52fc861ca663af628',1,'SpeedifySDK_AdapterData']]],
+  ['dnsaddresscount',['dnsAddressCount',['../struct_speedify_s_d_k___privacy_settings.html#a2e87585e0633fde18ee8bae3689e0d1a',1,'SpeedifySDK_PrivacySettings']]],
+  ['dnsaddresses',['dnsAddresses',['../struct_speedify_s_d_k___privacy_settings.html#af4c60b0198ba08669a2107a2f05fc8e0',1,'SpeedifySDK_PrivacySettings']]],
   ['dnsleak',['dnsleak',['../struct_speedify_s_d_k___privacy_settings.html#a4cd21a6e3329da4d2284069c64eaa926',1,'SpeedifySDK_PrivacySettings']]],
   ['docmain_2edox',['docmain.dox',['../docmain_8dox.html',1,'']]],
   ['domain',['domain',['../struct_speedify_s_d_k___directory_domain_result.html#a45502dc3f5e92aabc552422411e65fc6',1,'SpeedifySDK_DirectoryDomainResult']]],

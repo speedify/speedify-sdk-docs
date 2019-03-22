@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['speedifysdk_5faccountcheck',['SpeedifySDK_AccountCheck',['../group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4',1,'speedifysdk.h']]],
+  ['speedifysdk_5faccountcreate',['SpeedifySDK_AccountCreate',['../group___s_d_k.html#gaa9c05d2331dcc69b88817da5c1746928',1,'speedifysdk.h']]],
+  ['speedifysdk_5faccountpasswordchange',['SpeedifySDK_AccountPasswordChange',['../group___s_d_k.html#ga737c02bfdc85c91d9605406df3434dc8',1,'speedifysdk.h']]],
   ['speedifysdk_5faddadapterdailydatalimitboost',['SpeedifySDK_AddAdapterDailyDataLimitBoost',['../group___s_d_k.html#ga0e9bc88fcf350ed9f647c5a5125e9bb4',1,'speedifysdk.h']]],
   ['speedifysdk_5fautoconnectmethod_5ftostring',['SpeedifySDK_AutoConnectMethod_toString',['../group___t_y_p_e_s.html#gae04cb4a9ef11417d92807e0e1c0c7d24',1,'types.h']]],
   ['speedifysdk_5fbondingmode_5ftostring',['SpeedifySDK_BondingMode_toString',['../group___t_y_p_e_s.html#gaf8747cdc9fdc63505e53d799dc1297f8',1,'types.h']]],
@@ -34,6 +37,7 @@ var searchData=
   ['speedifysdk_5fhandlenewadapter',['SpeedifySDK_HandleNewAdapter',['../group___s_d_k.html#ga962144e235008d2d6934934a42ea7dcd',1,'speedifysdk.h']]],
   ['speedifysdk_5flistenforadapteroverlimit',['SpeedifySDK_ListenForAdapterOverlimit',['../group___s_d_k.html#gaab73b86d3ee87b712e8483698b3230d9',1,'speedifysdk.h']]],
   ['speedifysdk_5flistenfornewadapter',['SpeedifySDK_ListenForNewAdapter',['../group___s_d_k.html#ga9686e1e528f9bb6d12ea41576e525bbc',1,'speedifysdk.h']]],
+  ['speedifysdk_5flistenfortorrentdetection',['SpeedifySDK_ListenForTorrentDetection',['../group___s_d_k.html#ga82b4d7fa17cc0f59451b19624eab78c3',1,'speedifysdk.h']]],
   ['speedifysdk_5flogin',['SpeedifySDK_Login',['../group___s_d_k.html#ga98d605031f5e7877854ec031a5438861',1,'speedifysdk.h']]],
   ['speedifysdk_5floginautoaccount',['SpeedifySDK_LoginAutoAccount',['../group___s_d_k.html#gacd8e0ac2b766bd2c9c6cb00b35645e8a',1,'speedifysdk.h']]],
   ['speedifysdk_5floginoauth',['SpeedifySDK_LoginOauth',['../group___s_d_k.html#ga257f47fe54c981721bd877334c48d6c0',1,'speedifysdk.h']]],
@@ -63,6 +67,7 @@ var searchData=
   ['speedifysdk_5fsetcrashreports',['SpeedifySDK_SetCrashReports',['../group___s_d_k.html#ga0930afedd0d56e7ffdd823cb1cd8738e',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetdirectorydomain',['SpeedifySDK_SetDirectoryDomain',['../group___s_d_k.html#gaeb1fc7fdcd2b94d1eff9586bbd832bdc',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetdnsleak',['SpeedifySDK_SetDnsLeak',['../group___s_d_k.html#ga6c8a1364b2f81b86cf058b21412b8873',1,'speedifysdk.h']]],
+  ['speedifysdk_5fsetdnsservers',['SpeedifySDK_SetDNSServers',['../group___s_d_k.html#gaa2a7b48495219fe6b6dcb726fd801b55',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetforwardports',['SpeedifySDK_SetForwardPorts',['../group___s_d_k.html#gacf4355ebf5179bf7f43ade7fd117ee8c',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetjumbopackets',['SpeedifySDK_SetJumboPackets',['../group___s_d_k.html#gaad135ae2568bf4519f4e27da341f0f50',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetkillswitch',['SpeedifySDK_SetKillswitch',['../group___s_d_k.html#gaf597ce561a5169d5a889018464b7ca57',1,'speedifysdk.h']]],

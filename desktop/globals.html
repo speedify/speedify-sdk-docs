@@ -14,6 +14,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,700i,200|Lato:700,400&amp;subset=latin,latin-ext" type="text/css" media="all" data-x-google-fonts="">
+<link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,9 +23,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">7.2.9</span>
+   &#160;<span id="projectnumber">7.4.0</span>
    </div>
   </td>
  </tr>
@@ -87,8 +90,26 @@ $(function() {
 <li>ACM_P2P
 : <a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a80f2edd8f0fbd0721a9d74ff99d309a9">types.h</a>
 </li>
+<li>SpeedifySDK_AccountCheck()
+: <a class="el" href="group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_AccountCheckCallback
+: <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga7808c5235e3d79a0c813a4801e6a9d07">callbacks.h</a>
+</li>
+<li>SpeedifySDK_AccountCreate()
+: <a class="el" href="group___s_d_k.html#gaa9c05d2331dcc69b88817da5c1746928">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_AccountCreateCallback
+: <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaa9cdbcdba696e05d5d57bfd8213ccd4f">callbacks.h</a>
+</li>
 <li>SpeedifySDK_AccountingCallback
 : <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga549909a1b0fa13c4f3aceca5dac2f313">callbacks.h</a>
+</li>
+<li>SpeedifySDK_AccountPasswordChange()
+: <a class="el" href="group___s_d_k.html#ga737c02bfdc85c91d9605406df3434dc8">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_AccountPasswordChangeCallback
+: <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga602e009ffb97e8244ed65a5c4d32c942">callbacks.h</a>
 </li>
 <li>SpeedifySDK_AdapterOverlimitCallback
 : <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga86c29a010cc64f70a118f345f687a79c">callbacks.h</a>
@@ -247,6 +268,9 @@ $(function() {
 <li>ET_SDK_INVALID_ARGUMENT
 : <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a884bdad7bd03c834d97cc1be1c05fa7d">types.h</a>
 </li>
+<li>ET_SDK_PLATFORM_NO_SUPPORT
+: <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a7f46fc245dd01ebf20c1b6a8e41f9c9a">types.h</a>
+</li>
 <li>ET_SDK_TIMEOUT
 : <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a5ead18bac8736c96ca7446202bc49a98">types.h</a>
 </li>
@@ -324,12 +348,22 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>IPAddressString
+: <a class="el" href="group___t_y_p_e_s.html#ga06bae3bce45584142ccff3765318162b">types.h</a>
+</li>
+</ul>
+
+
 <h3><a id="index_l"></a>- l -</h3><ul>
 <li>SpeedifySDK_ListenForAdapterOverlimit()
 : <a class="el" href="group___s_d_k.html#gaab73b86d3ee87b712e8483698b3230d9">speedifysdk.h</a>
 </li>
 <li>SpeedifySDK_ListenForNewAdapter()
 : <a class="el" href="group___s_d_k.html#ga9686e1e528f9bb6d12ea41576e525bbc">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_ListenForTorrentDetection()
+: <a class="el" href="group___s_d_k.html#ga82b4d7fa17cc0f59451b19624eab78c3">speedifysdk.h</a>
 </li>
 <li>SpeedifySDK_Login()
 : <a class="el" href="group___s_d_k.html#ga98d605031f5e7877854ec031a5438861">speedifysdk.h</a>
@@ -425,6 +459,9 @@ $(function() {
 <li>SPEEDIFYSDK_MAX_DIRECTORY_DOMAIN
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gaffbedd10cd28c4cd6c4994b36cf30907">sdkdefines.h</a>
 </li>
+<li>SPEEDIFYSDK_MAX_DNS_COUNT
+: <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga8e1cd03d663a09fa25904301bb6a7dca">sdkdefines.h</a>
+</li>
 <li>SPEEDIFYSDK_MAX_EMAIL
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gab458063742e77ceb99b3ff2a31d0ae4e">sdkdefines.h</a>
 </li>
@@ -514,6 +551,9 @@ $(function() {
 </li>
 <li>SpeedifySDK_SetDnsLeak()
 : <a class="el" href="group___s_d_k.html#ga6c8a1364b2f81b86cf058b21412b8873">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetDNSServers()
+: <a class="el" href="group___s_d_k.html#gaa2a7b48495219fe6b6dcb726fd801b55">speedifysdk.h</a>
 </li>
 <li>SpeedifySDK_SetForwardPorts()
 : <a class="el" href="group___s_d_k.html#gacf4355ebf5179bf7f43ade7fd117ee8c">speedifysdk.h</a>
@@ -624,6 +664,9 @@ $(function() {
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>SpeedifySDK_TorrentCallback
+: <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga039a065c52636679930a66a7fbfb7653">callbacks.h</a>
+</li>
 <li>SpeedifySDK_TransportMode
 : <a class="el" href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">types.h</a>
 </li>

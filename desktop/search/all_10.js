@@ -9,6 +9,6 @@ var searchData=
   ['totalbps',['totalBps',['../struct_speedify_s_d_k___connection_stats.html#a229dd9fac65cb930100fc60da0fd8644',1,'SpeedifySDK_ConnectionStats']]],
   ['totalconnectedminutes',['totalConnectedMinutes',['../struct_speedify_s_d_k___session_stats.html#a66371088fe0e6f2ea1a13a72b543d61d',1,'SpeedifySDK_SessionStats']]],
   ['transportmode',['transportMode',['../struct_speedify_s_d_k___settings.html#aba5fb1a5c8ff54a8d0c6404a0ef23098',1,'SpeedifySDK_Settings']]],
-  ['type',['type',['../struct_speedify_s_d_k___new_adapter_result.html#ad1c52d24b27227a3e384af8288f296f2',1,'SpeedifySDK_NewAdapterResult::type()'],['../struct_speedify_s_d_k___adapter_data.html#a3e3fba2959ab5b6beba8aeb465fd7444',1,'SpeedifySDK_AdapterData::type()']]],
+  ['type',['type',['../struct_speedify_s_d_k___new_adapter_result.html#ad1c52d24b27227a3e384af8288f296f2',1,'SpeedifySDK_NewAdapterResult::type()'],['../struct_speedify_s_d_k___adapter_overlimit_result.html#a45ee79e89d0151c22fb9a0c963a4e76f',1,'SpeedifySDK_AdapterOverlimitResult::type()'],['../struct_speedify_s_d_k___adapter_data.html#a3e3fba2959ab5b6beba8aeb465fd7444',1,'SpeedifySDK_AdapterData::type()']]],
   ['types_2eh',['types.h',['../types_8h.html',1,'']]]
 ];

@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['speedifysdk_5faccountcheckresult',['SpeedifySDK_AccountCheckResult',['../struct_speedify_s_d_k___account_check_result.html',1,'']]],
+  ['speedifysdk_5faccountcreateresult',['SpeedifySDK_AccountCreateResult',['../struct_speedify_s_d_k___account_create_result.html',1,'']]],
   ['speedifysdk_5faccountingdata',['SpeedifySDK_AccountingData',['../struct_speedify_s_d_k___accounting_data.html',1,'']]],
   ['speedifysdk_5faccountingresult',['SpeedifySDK_AccountingResult',['../struct_speedify_s_d_k___accounting_result.html',1,'']]],
+  ['speedifysdk_5faccountpasswordchangeresult',['SpeedifySDK_AccountPasswordChangeResult',['../struct_speedify_s_d_k___account_password_change_result.html',1,'']]],
   ['speedifysdk_5fadapterdata',['SpeedifySDK_AdapterData',['../struct_speedify_s_d_k___adapter_data.html',1,'']]],
   ['speedifysdk_5fadapteroverlimitresult',['SpeedifySDK_AdapterOverlimitResult',['../struct_speedify_s_d_k___adapter_overlimit_result.html',1,'']]],
   ['speedifysdk_5fadaptersresult',['SpeedifySDK_AdaptersResult',['../struct_speedify_s_d_k___adapters_result.html',1,'']]],
@@ -30,6 +33,7 @@ var searchData=
   ['speedifysdk_5fspeedtestreport',['SpeedifySDK_SpeedTestReport',['../struct_speedify_s_d_k___speed_test_report.html',1,'']]],
   ['speedifysdk_5fspeedtestresult',['SpeedifySDK_SpeedtestResult',['../struct_speedify_s_d_k___speedtest_result.html',1,'']]],
   ['speedifysdk_5fstateresult',['SpeedifySDK_StateResult',['../struct_speedify_s_d_k___state_result.html',1,'']]],
+  ['speedifysdk_5ftorrentresult',['SpeedifySDK_TorrentResult',['../struct_speedify_s_d_k___torrent_result.html',1,'']]],
   ['speedifysdk_5fversion',['SpeedifySDK_Version',['../struct_speedify_s_d_k___version.html',1,'']]],
   ['speedifysdk_5fversionresult',['SpeedifySDK_VersionResult',['../struct_speedify_s_d_k___version_result.html',1,'']]]
 ];
