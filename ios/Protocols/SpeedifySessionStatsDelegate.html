@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ValidationError Structure Reference</title>
+    <title>SpeedifySessionStatsDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,18 +10,18 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/ValidationError" class="dashAnchor"></a>
-    <a title="ValidationError Structure Reference"></a>
+    <a name="//apple_ref/swift/Protocol/SpeedifySessionStatsDelegate" class="dashAnchor"></a>
+    <a title="SpeedifySessionStatsDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SpeedifySDK Docs</a> (87% documented)</p>
+        <p><a href="../index.html">SpeedifySDK Docs</a> (78% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">SpeedifySDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        ValidationError Structure Reference
+        SpeedifySessionStatsDelegate Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -32,6 +32,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Classes/SpeedifySDK.html">SpeedifySDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
               </li>
             </ul>
           </li>
@@ -45,10 +48,16 @@
                 <a href="../Enums/BondingMode.html">BondingMode</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/Connection.html">Connection</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/ConnectionPriority.html">ConnectionPriority</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/NetworkType.html">NetworkType</a>
@@ -62,16 +71,48 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountingData.html">AccountingData</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Structs/AdapterData.html">AdapterData</a>
               </li>
@@ -88,6 +129,9 @@
                 <a href="../Structs/IPRange.html">IPRange</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ServerInformation.html">ServerInformation</a>
               </li>
               <li class="nav-group-task">
@@ -95,9 +139,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Settings.html">Settings</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/ValidationError.html">ValidationError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Version.html">Version</a>
@@ -109,14 +150,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ValidationError</h1>
+            <h1>SpeedifySessionStatsDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">ValidationError</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifySessionStatsDelegate</span></code></pre>
 
                 </div>
               </div>
-            <p>Errors that may be passed back when validating a user.</p>
+            <p>Listens for <code><a href="../Structs/SessionStats.html">SessionStats</a></code> updates.</p>
 
           </section>
           <section class="section task-group-section">
@@ -125,9 +166,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK15ValidationErrorV7messageSSv"></a>
-                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK15ValidationErrorV7messageSSv">message</a>
+                    <a name="/s:11SpeedifySDK0A20SessionStatsDelegateP07sessionD9DidUpdate0fD0yAA0cD0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/sessionStatsDidUpdate(sessionStats:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK0A20SessionStatsDelegateP07sessionD9DidUpdate0fD0yAA0cD0V_tF">sessionStatsDidUpdate(sessionStats:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -142,34 +183,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11SpeedifySDK15ValidationErrorV4codeSiv"></a>
-                    <a name="//apple_ref/swift/Property/code" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK15ValidationErrorV4codeSiv">code</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">code</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sessionStatsDidUpdate</span><span class="p">(</span><span class="nv">sessionStats</span><span class="p">:</span> <span class="kt"><a href="../Structs/SessionStats.html">SessionStats</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -182,7 +196,7 @@
         </section>
         <section id="footer">
           <p>© 2017 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

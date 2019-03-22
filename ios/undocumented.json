@@ -1,243 +1,362 @@
 {
   "warnings": [
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
       "line": 10,
       "symbol": "SpeedifySDKDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 32,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 11,
       "symbol": "SpeedifySDKDelegate.networkOverLimitUpdated(adapter:usage:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 34,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 12,
       "symbol": "SpeedifySDKDelegate.privacySettingsDidUpdate(privacy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 52,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 19,
+      "symbol": "SpeedifySettingsDelegate.settingsDidUpdate(settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 26,
+      "symbol": "SpeedifyStateDelegate.stateDidUpdate(state:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 33,
+      "symbol": "SpeedifyAdapterDelegate.adapterDataDidUpdate(adapterData:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 40,
+      "symbol": "SpeedifyAccountingDelegate.accountingDataDidUpdate(accountingData:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 47,
+      "symbol": "SpeedifySessionStatsDelegate.sessionStatsDidUpdate(sessionStats:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 54,
+      "symbol": "SpeedifyConnectionStatsDelegate.connectionStatsDidUpdate(connectionStats:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 72,
       "symbol": "SpeedifySDK.sharedInstance",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 54,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 74,
       "symbol": "SpeedifySDK.state",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 56,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 76,
       "symbol": "SpeedifySDK.version",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 66,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 86,
       "symbol": "SpeedifySDK.settings",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 68,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 88,
       "symbol": "SpeedifySDK.stats",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 70,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 90,
       "symbol": "SpeedifySDK.accountingData",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 72,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 92,
       "symbol": "SpeedifySDK.privacySettings",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 74,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 94,
+      "symbol": "SpeedifySDK.stateDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 95,
+      "symbol": "SpeedifySDK.adapterDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 96,
+      "symbol": "SpeedifySDK.accountingDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 97,
+      "symbol": "SpeedifySDK.sessionStatsDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 98,
+      "symbol": "SpeedifySDK.connectionStatsDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 99,
+      "symbol": "SpeedifySDK.settingsDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 101,
       "symbol": "SpeedifySDK.pendingCompletionHandler",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 76,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 103,
       "symbol": "SpeedifySDK.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 81,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 108,
       "symbol": "SpeedifySDK.update(completionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 557,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 566,
+      "symbol": "SpeedifySDK.refreshState()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 588,
       "symbol": "SpeedifySDK.handleAdapterOverlimit(adapterID:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 587,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 628,
       "symbol": "SpeedifySDK.setCrashReporting(enable:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 685,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 658,
+      "symbol": "SpeedifySDK.sessionStatsDidUpdate(stats:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 743,
       "symbol": "SpeedifySDK.versionDidUpdate(version:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 689,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 747,
       "symbol": "SpeedifySDK.serverInformationDidUpdate(serverInformation:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 693,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 751,
       "symbol": "SpeedifySDK.networkOverLimitUpdated(adapter:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/SpeedifySDK.swift",
-      "line": 704,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
+      "line": 762,
       "symbol": "SpeedifySDK.privacySettingsDidUpdate(privacy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 261,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 34,
+      "symbol": "Connection",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 35,
+      "symbol": "Connection.cellular",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 36,
+      "symbol": "Connection.wifi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 266,
       "symbol": "ServerInformation",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 392,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 397,
       "symbol": "ConnectionStats.sleeping",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 426,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 431,
       "symbol": "ConnectionStatsGroup",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 437,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 442,
       "symbol": "Version",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 438,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 443,
       "symbol": "Version.maj",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 439,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 444,
       "symbol": "Version.min",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 440,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 445,
       "symbol": "Version.bug",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 441,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 446,
       "symbol": "Version.build",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 516,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 521,
       "symbol": "TransportMode",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 578,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 583,
       "symbol": "ErrorType.ok",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 579,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 584,
       "symbol": "ErrorType.network",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 584,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 589,
       "symbol": "ErrorType.credential",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/Types.swift",
-      "line": 626,
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
+      "line": 631,
       "symbol": "PrivacySettings",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/UUIDProvider.swift",
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/UUIDProvider.swift",
       "line": 18,
       "symbol": "UUIDProvider.shared",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK/SDK/UUIDProvider.swift",
+      "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/UUIDProvider.swift",
       "line": 20,
       "symbol": "UUIDProvider.getUUID()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/_kane7161/Xcode/Connectify/iosWhiteLabelSDK"
+  "source_directory": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK"
 }
