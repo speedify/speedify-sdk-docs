@@ -1192,13 +1192,69 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getDirectory</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated: 7.4, message: "Please use the resetDirectoryDomain(﹚ function instead")</span>
+<span class="kd">func</span> <span class="nf">getDirectory</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>completionHandler: A dictionary containing a server list</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC18setDirectoryDomain6domain17completionHandlerySS_ySSctF"></a>
+                    <a name="//apple_ref/swift/Method/setDirectoryDomain(domain:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC18setDirectoryDomain6domain17completionHandlerySS_ySSctF">setDirectoryDomain(domain:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change directory server used for user authentication and server management.
+ If using your own directory server, this should be called before <code>login</code> or <code>loginAutoAccount</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDirectoryDomain</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC20resetDirectoryDomain17completionHandleryySSc_tF"></a>
+                    <a name="//apple_ref/swift/Method/resetDirectoryDomain(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC20resetDirectoryDomain17completionHandleryySSc_tF">resetDirectoryDomain(completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset the directory server to defaults.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resetDirectoryDomain</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -1446,7 +1502,8 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changeDirectoryURL</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated: 7.4, message: "Please use the setDirectoryDomain(domain﹚ function instead")</span>
+<span class="kd">func</span> <span class="nf">changeDirectoryURL</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2678,36 +2735,6 @@ Triggers <code>privacySettingsDidUpdate</code></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDKAAC15setUserUniqueID06uniqueF0ySS_tF"></a>
-                    <a name="//apple_ref/swift/Method/setUserUniqueID(uniqueID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDKAAC15setUserUniqueID06uniqueF0ySS_tF">setUserUniqueID(uniqueID:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <blockquote>
-<p>Deprecated - please use <code><a href="../Classes/SpeedifySDK.html#/s:11SpeedifySDKAAC16loginAutoAccountyyF">loginAutoAccount()</a></code></p>
-</blockquote>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated: 6.1, message: "Please use the loginAutoAccount(﹚ function instead")</span>
-<span class="kd">func</span> <span class="nf">setUserUniqueID</span><span class="p">(</span><span class="nv">uniqueID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:11SpeedifySDKAAC16loginAutoAccountyyF"></a>
                     <a name="//apple_ref/swift/Method/loginAutoAccount()" class="dashAnchor"></a>
                     <a class="token" href="#/s:11SpeedifySDKAAC16loginAutoAccountyyF">loginAutoAccount()</a>
@@ -2731,6 +2758,99 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loginAutoAccount</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC12accountCheck5email17completionHandlerySS_yAA9ErrorTypeO_SSSbtctF"></a>
+                    <a name="//apple_ref/swift/Method/accountCheck(email:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC12accountCheck5email17completionHandlerySS_yAA9ErrorTypeO_SSSbtctF">accountCheck(email:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Check if there is already an account using this email address.</li>
+<li><p>@since 7.4</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">accountCheck</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">accountExists</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC13accountCreate5email8password17completionHandlerySS_SSyAA9ErrorTypeO_SStctF"></a>
+                    <a name="//apple_ref/swift/Method/accountCreate(email:password:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC13accountCreate5email8password17completionHandlerySS_SSyAA9ErrorTypeO_SStctF">accountCreate(email:password:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Create a new account using this email address.</li>
+<li><p>@since 7.4</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">accountCreate</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC21accountPasswordChange5email08originalD003newD017completionHandlerySS_S2SyAA9ErrorTypeO_SStctF"></a>
+                    <a name="//apple_ref/swift/Method/accountPasswordChange(email:originalPassword:newPassword:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC21accountPasswordChange5email08originalD003newD017completionHandlerySS_S2SyAA9ErrorTypeO_SStctF">accountPasswordChange(email:originalPassword:newPassword:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Change the password on the account.</li>
+<li>@since 7.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">accountPasswordChange</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">originalPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2947,6 +3067,33 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">serverInformationDidUpdate</span><span class="p">(</span><span class="nv">serverInformation</span><span class="p">:</span> <span class="kt"><a href="../Structs/ServerInformation.html">ServerInformation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC18torrentUseReported14willDisconnectySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/torrentUseReported(willDisconnect:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC18torrentUseReported14willDisconnectySb_tF">torrentUseReported(willDisconnect:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">torrentUseReported</span><span class="p">(</span><span class="nv">willDisconnect</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

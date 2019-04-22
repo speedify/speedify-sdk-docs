@@ -1,6 +1,7 @@
 var searchData=
 [
   ['speedify_20sdk_20for_20linux',['Speedify SDK for Linux',['../linux.html',1,'']]],
+  ['speedify_20sdk_20for_20macos',['Speedify SDK for MacOS',['../macos.html',1,'']]],
   ['sdk_20methods',['SDK Methods',['../group___s_d_k.html',1,'']]],
   ['sdkdefines_2eh',['sdkdefines.h',['../sdkdefines_8h.html',1,'']]],
   ['sendbps',['sendBps',['../struct_speedify_s_d_k___connection_stats.html#ad1520c0d71d80d219635d448a3744ce5',1,'SpeedifySDK_ConnectionStats']]],
