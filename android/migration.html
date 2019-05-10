@@ -15,6 +15,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,700i,200|Lato:700,400&amp;subset=latin,latin-ext" type="text/css" media="all" data-x-google-fonts="">
+<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet"> 
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -26,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">7.5.1</span>
+   &#160;<span id="projectnumber">7.6.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +71,7 @@ $(function() {
 <div class="title">Migration Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="migrate_740_750"></a>Speedify SDK for Android 7.4 -&gt; 7.5 Migration </h1>
+<div class="textblock"><h2><a class="anchor" id="migrate_740_750"></a>Speedify SDK for Android 7.4 -&gt; 7.5 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>
@@ -97,17 +98,17 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="migrate_722_724"></a>Speedify SDK for Android 7.2.2 -&gt; 7.2.4 Migration </h1>
+<h2><a class="anchor" id="migrate_722_724"></a>Speedify SDK for Android 7.2.2 -&gt; 7.2.4 Migration </h2>
 <ul>
 <li>The Android Support library is now using AndroidX 1.0.0 and Play Services is now 17.1.2. Any dependencies in your own app should be updated to those versions as well to avoid conflicts between different versions of the Google libraries.</li>
 </ul>
-<h1><a class="anchor" id="migrate_714_720"></a>Speedify SDK for Android 7.1.4 -&gt; 7.2 Migration </h1>
+<h2><a class="anchor" id="migrate_714_720"></a>Speedify SDK for Android 7.1.4 -&gt; 7.2 Migration </h2>
 <ul>
 <li>The Android SDK (compileSdkVersion) and build tools versions used for Speedify SDK are now 28 and 28.0.2, respectively, and targetSdkVersion is also 28.</li>
 <li>The Google libraries the SDK depends on have been updated to Support 28.0.0 and Play Services 16.0.0. Any dependencies in your own app should be updated to those versions as well to avoid conflicts between different versions of the Google libraries.</li>
 <li>Android SDK 28 when running on Android 9 (Pie) disables all cleartext traffic (unsecured, ie: HTTP, WS) by default. As a result, Speedify SDK now specifies a default networkSecurityConfig for the application which disabled all cleartext traffic except that which goes to 127.0.0.1. If you need to enable more cleartext traffic, provide your own networkSecurityConfig that also allows cleartext traffic to 127.0.0.1.</li>
 </ul>
-<h1><a class="anchor" id="migrate_702_713"></a>Speedify SDK for Android 7.0.2 -&gt; 7.1.3 Migration </h1>
+<h2><a class="anchor" id="migrate_702_713"></a>Speedify SDK for Android 7.0.2 -&gt; 7.1.3 Migration </h2>
 <ul>
 <li>Add the 'google()' repository to your 'allprojects' dependencies in your project's build.gradle </li>
 </ul>

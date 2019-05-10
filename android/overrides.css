@@ -30,8 +30,13 @@
   margin-bottom: 7px;
 }
 
+#projectname {
+  font-family:"rawline", "Raleway", sans-serif;
+  font-weight: 300;
+}
 dl.since dd {
-  font-family:sans-sans-serif;
+  font-family:"rawline", "Raleway", sans-serif;
+  font-weight: 300;
 }
 
 .sm-dox ul a:hover {

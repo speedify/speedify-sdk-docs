@@ -22,6 +22,5 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Platform Instructions",url:"pages.html"},
-{text:"SDK Calls",url:"modules.html"}]}
+{text:"Overview",url:"index.html"},
+{text:"API",url:"modules.html"}]}

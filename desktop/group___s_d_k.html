@@ -15,6 +15,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,700,700i,200|Lato:700,400&amp;subset=latin,latin-ext" type="text/css" media="all" data-x-google-fonts="">
+<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet"> 
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -26,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">7.5.1</span>
+   &#160;<span id="projectnumber">7.6.0</span>
    </div>
   </td>
  </tr>
@@ -106,7 +107,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad4532583e5aa0d94c7c41d78063e9354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to a specific server.  <a href="#gad4532583e5aa0d94c7c41d78063e9354">More...</a><br /></td></tr>
 <tr class="separator:gad4532583e5aa0d94c7c41d78063e9354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae4e89d1a97e874d639956cd57cfd7334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gae4e89d1a97e874d639956cd57cfd7334">SpeedifySDK_Disconnect</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a> cb, void *userData)</td></tr>
-<tr class="memdesc:gae4e89d1a97e874d639956cd57cfd7334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the server, if connected.  <a href="#gae4e89d1a97e874d639956cd57cfd7334">More...</a><br /></td></tr>
+<tr class="memdesc:gae4e89d1a97e874d639956cd57cfd7334"><td class="mdescLeft">&#160;</td><td class="mdescRight"><ul>
+<li>Disconnect from the server if connected, or cancel a connection attempt if currenty connecting. </li>
+</ul>
+ <a href="#gae4e89d1a97e874d639956cd57cfd7334">More...</a><br /></td></tr>
 <tr class="separator:gae4e89d1a97e874d639956cd57cfd7334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98d605031f5e7877854ec031a5438861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga98d605031f5e7877854ec031a5438861">SpeedifySDK_Login</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *username, const char *password, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga98d605031f5e7877854ec031a5438861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a new user.  <a href="#ga98d605031f5e7877854ec031a5438861">More...</a><br /></td></tr>
@@ -976,7 +980,10 @@ Supports Subscription.  <a href="#ga028e4b1c52cb2520d2bd77fc791b8272">More...</a
       </table>
 </div><div class="memdoc">
 
-<p>Disconnect from the server, if connected. </p>
+<p><ul>
+<li>Disconnect from the server if connected, or cancel a connection attempt if currenty connecting. </li>
+</ul>
+</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
