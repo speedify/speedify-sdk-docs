@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['migration_20guide',['Migration Guide',['../migration.html',1,'']]]
+  ['log_20generation',['Log Generation',['../loggen.html',1,'']]]
 ];

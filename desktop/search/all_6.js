@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['introduction_20to_20speedify_20sdk_20for_20desktop',['Introduction to Speedify SDK for Desktop',['../index.html',1,'']]],
+  ['introduction_20to_20the_20speedify_20sdk_20for_20desktop',['Introduction to the Speedify SDK for Desktop',['../index.html',1,'']]],
   ['inflight',['inFlight',['../struct_speedify_s_d_k___connection_stats.html#a3ca6775f113be39f64adde18e231b068',1,'SpeedifySDK_ConnectionStats']]],
   ['inflightwindow',['inFlightWindow',['../struct_speedify_s_d_k___connection_stats.html#a9ab007b3e61eb1f49e3431be53999bd9',1,'SpeedifySDK_ConnectionStats']]],
   ['ipaddressstring',['IPAddressString',['../group___t_y_p_e_s.html#ga06bae3bce45584142ccff3765318162b',1,'types.h']]],

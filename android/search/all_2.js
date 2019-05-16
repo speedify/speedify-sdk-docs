@@ -2,12 +2,13 @@ var searchData=
 [
   ['cellular',['CELLULAR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#afcd82c8270e8af0829077ea8820e1f63',1,'com::speedify::speedifysdk::Types::NetworkType']]],
   ['city',['city',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#aa5df93cffa7e788a5b2fc2266a4762f5',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
+  ['cleanupoldjavalog',['cleanupOldJavalog',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#af6e25ef8f1e3e8f5730856f0ddf3dd14',1,'com::speedify::speedifysdk::LogGeneration']]],
   ['closest',['CLOSEST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a7572c9e226ddc2e00dfe941f43c66ed3',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['closestprivate',['CLOSESTPRIVATE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#aa69f6626a96785de5ea2de1503feb742',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['closestpublic',['CLOSESTPUBLIC',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#ae1633f42a4026a6c69e9697beef202ad',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['com',['com',['../namespacecom.html',1,'']]],
   ['complete',['COMPLETE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_status.html#a5508a167aed48da2b5c895d3698eb39a',1,'com::speedify::speedifysdk::Types::SpeedTestStatus']]],
-  ['connectauto',['connectAuto',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1106d1fd43fd3bcb25cbe7fdfef7bc95',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['connectauto',['connectAuto',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2044f8af335757aebb88580abf145355',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['connectbycity',['connectByCity',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2f63ba475c5bfadccbdaba3404c65a8d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['connectbycountry',['connectByCountry',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2cb0f8751c60408f53091686c125e547',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['connectbyserver',['connectByServer',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8f0c4c951586be0c75cde00f3f01cfb',1,'com::speedify::speedifysdk::SpeedifySDK']]],
@@ -25,6 +26,7 @@ var searchData=
   ['country',['country',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#ae4ccf247a18221627e74e0d554df480e',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['crashlyticsintegrationenabled',['CrashlyticsIntegrationEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a686d2ac8699e429abc96bd831581520d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['crashreports',['crashReports',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a04351369bc30e907f7d43e6f8519c5e0',1,'com::speedify::speedifysdk::Types::PrivacySettings']]],
+  ['createnotification',['createNotification',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#afa01c0f579d38b63a8e8c8f04a459a06',1,'com.speedify.speedifysdk.NotificationHelper.createNotification(Context context, String notificationChannel, int notificationId, String title)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a2ceeb92a828c1557542908b420101550',1,'com.speedify.speedifysdk.NotificationHelper.createNotification(Context context, String notificationChannel, int notificationId, String title, String message)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#aa882acd2f362c47b983816a2253806da',1,'com.speedify.speedifysdk.NotificationHelper.createNotification(Context context, String notificationChannel, int notificationId, String title, String message, String subtext)']]],
   ['credential',['CREDENTIAL',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a4ca83a3aeaea352742b831c3f93bdefc',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['speedify',['speedify',['../namespacecom_1_1speedify.html',1,'com']]],
   ['speedifysdk',['speedifysdk',['../namespacecom_1_1speedify_1_1speedifysdk.html',1,'com::speedify']]]

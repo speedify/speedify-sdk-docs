@@ -1,11 +1,11 @@
 /* The standard CSS for doxygen 1.8.15 */
 
 body, table, div, p, dl {
-	font: 400 14px/22px Raleway, sans-serif;
+	font: 300 14px/22px rawline, sans-serif;
 }
 
 p.reference, p.definition {
-	font: 400 14px/22px Raleway, sans-serif;
+	font: 300 14px/22px rawline, sans-serif;
 }
 
 /* @group Heading Levels */
@@ -15,7 +15,7 @@ h1.groupheader {
 }
 
 .title {
-	font: 400 14px/28px Raleway, sans-serif;
+	font: 300 14px/28px rawline, sans-serif;
 	font-size: 150%;
 	font-weight: bold;
 	margin: 10px 2px;
@@ -888,7 +888,7 @@ div.directory {
 }
 
 table.directory {
-    font: 400 14px Raleway, sans-serif;
+    font: 300 14px rawline, sans-serif;
 }
 
 /* @end */
@@ -1279,21 +1279,21 @@ dl.section dd {
 
 #projectname
 {
-	font: 300% Raleway, sans-serif;
+	font: 300% rawline, sans-serif;
 	margin: 0px;
 	padding: 2px 0px;
 }
 
 #projectbrief
 {
-	font: 120% Raleway, sans-serif;
+	font: 120% rawline, sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
 
 #projectnumber
 {
-	/*font: 50% Raleway, sans-serif;*/
+	/*font: 50% rawline, sans-serif;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -1376,7 +1376,7 @@ div.toc {
 
 div.toc li {
         background: url("bdwn.png") no-repeat scroll 0 5px transparent;
-        font: 10px/1.2 Raleway, sans-serif;
+        font: 10px/1.2 rawline, sans-serif;
         margin-top: 5px;
         padding-left: 10px;
         padding-top: 2px;
@@ -1389,7 +1389,7 @@ div.toc li {
 }
 
 div.toc h3 {
-        font: bold 12px/1.2 Raleway, sans-serif;
+        font: bold 12px/1.2 rawline, sans-serif;
 	color: #4665A2;
         border-bottom: 0 none;
         margin: 0;
@@ -1505,7 +1505,7 @@ tr.heading h2 {
 #powerTip div {
         margin: 0px;
         padding: 0px;
-        font: 12px/16px Raleway, sans-serif;
+        font: 12px/16px rawline, sans-serif;
 }
 
 #powerTip:before, #powerTip:after {

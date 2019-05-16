@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['basic_20usage',['Basic Usage',['../basicusage.html',1,'']]],
+  ['basicusage_2edox',['basicusage.dox',['../basicusage_8dox.html',1,'']]],
   ['bmode_5fredundant',['BMODE_REDUNDANT',['../group___t_y_p_e_s.html#gga673980be58fe205ac13216bd9c934128af5717c3f2f4577f2f0bbc7b30725bea8',1,'types.h']]],
   ['bmode_5fspeed',['BMODE_SPEED',['../group___t_y_p_e_s.html#gga673980be58fe205ac13216bd9c934128a175590e254f98586fc979b0a718916ca',1,'types.h']]],
   ['bondingmode',['bondingMode',['../struct_speedify_s_d_k___settings.html#af34245c012ae56719b7043d5b28d78a2',1,'SpeedifySDK_Settings']]],

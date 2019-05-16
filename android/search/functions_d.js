@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updateforegroundnotification',['UpdateForegroundNotification',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa3a5484bc6e0995c03a4f05bf1fb5404',1,'com.speedify.speedifysdk.ISpeedifyHandler.UpdateForegroundNotification()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aa9e751b649ebc1239e3b6717f04f7941',1,'com.speedify.speedifysdk.SpeedifyHandler.UpdateForegroundNotification()']]]
+  ['tostring',['toString',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#a3a41f4f3a248404bcf540d4811f72087',1,'com.speedify.speedifysdk.Types.ServerInformation.toString()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#a4944897d96bfd217631f76541a23c1fa',1,'com.speedify.speedifysdk.Types.IPRange.toString()']]]
 ];
