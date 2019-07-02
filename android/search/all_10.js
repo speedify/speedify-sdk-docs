@@ -56,5 +56,6 @@ var searchData=
   ['status',['status',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_results.html#adf4c29241f422c304576ab7463ddcc5f',1,'com::speedify::speedifysdk::Types::SpeedTestResults']]],
   ['step',['step',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a41a238918bb7ed523f2d543e6f668cbb',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
   ['stepprogress',['stepProgress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a0928c74b8ea6cce987e4baf356378560',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
-  ['stopspeedtest',['stopSpeedtest',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac600c2bb6b0e5b673219ce35ec404dae',1,'com::speedify::speedifysdk::SpeedifySDK']]]
+  ['stopspeedtest',['stopSpeedtest',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac600c2bb6b0e5b673219ce35ec404dae',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['subscribetoevent',['subscribeToEvent',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7d36a3989feb08c105de3bd3e2afc9eb',1,'com::speedify::speedifysdk::SpeedifySDK']]]
 ];
