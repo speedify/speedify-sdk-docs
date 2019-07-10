@@ -8,7 +8,6 @@ var searchData=
   ['redundant',['REDUNDANT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a99278b454b2ca49335aec1d661798ad8',1,'com::speedify::speedifysdk::Types::BondingMode']]],
   ['refreshaccounting',['refreshAccounting',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2aa9430a19baebc672c261b05626f868',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshall',['refreshAll',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac1707708df33d4a9dc4bc5c4451b8773',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['refreshappusage',['refreshAppUsage',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ae97adf702d05f28291b9ebc913a8dd5e',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshdirectory',['refreshDirectory',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7d926e0a8bb87cddc5421abfb87c381',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshdirectorydomain',['refreshDirectoryDomain',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshhistoricconnectionstats',['refreshHistoricConnectionStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9b91a466b84ef755d41818687b2e106e',1,'com::speedify::speedifysdk::SpeedifySDK']]],

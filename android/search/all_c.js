@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['name',['name',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_app_usage.html#a60558bc523d96c85e6db6881d7426ea3',1,'com::speedify::speedifysdk::Types::AppUsage']]],
   ['network',['NETWORK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ac01d0e062d6866c0dc00911e9b78360a',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['networktype',['NetworkType',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html',1,'com::speedify::speedifysdk::Types']]],
   ['never',['NEVER',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a32959b613c04b917487bb342babeac10',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],

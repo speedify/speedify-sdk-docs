@@ -2,7 +2,6 @@ var searchData=
 [
   ['p2p',['P2P',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#aba73e7d33baf4c3614283cdffd9ea094',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['package_2dinfo_2ejava',['package-info.java',['../package-info_8java.html',1,'']]],
-  ['pkg',['pkg',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_app_usage.html#a3526687b365b0f7c28d573145e8bb586',1,'com::speedify::speedifysdk::Types::AppUsage']]],
   ['pooledbroadcastreceiver',['PooledBroadcastReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html',1,'com::speedify::speedifysdk']]],
   ['pooledbroadcastreceiver_2ejava',['PooledBroadcastReceiver.java',['../_pooled_broadcast_receiver_8java.html',1,'']]],
   ['pooledexecutor',['PooledExecutor',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html',1,'com::speedify::speedifysdk']]],
