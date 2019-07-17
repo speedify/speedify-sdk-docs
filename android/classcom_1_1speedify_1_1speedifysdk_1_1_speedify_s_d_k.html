@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">7.8.2</span>
+   &#160;<span id="projectnumber">7.8.3</span>
    </div>
   </td>
  </tr>
@@ -246,6 +246,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae9fb995d7f77004cb7d0463078f7246"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aae9fb995d7f77004cb7d0463078f7246">setAdapterOverlimitRatelimit</a> (String adapterID, long bps)</td></tr>
 <tr class="memdesc:aae9fb995d7f77004cb7d0463078f7246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets how to handle an adapter that has hit its daily or monthly data limit.  <a href="#aae9fb995d7f77004cb7d0463078f7246">More...</a><br /></td></tr>
 <tr class="separator:aae9fb995d7f77004cb7d0463078f7246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc02af08c21eb0e0c9b485c843e2c5e3"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acc02af08c21eb0e0c9b485c843e2c5e3">resetAdapterUsage</a> (String adapterID)</td></tr>
+<tr class="memdesc:acc02af08c21eb0e0c9b485c843e2c5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the tracked data usage on an adapter.  <a href="#acc02af08c21eb0e0c9b485c843e2c5e3">More...</a><br /></td></tr>
+<tr class="separator:acc02af08c21eb0e0c9b485c843e2c5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c03b7892aac0bb58ef0adad37b81f6c"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8c03b7892aac0bb58ef0adad37b81f6c">loginAutoAccount</a> ()</td></tr>
 <tr class="memdesc:a8c03b7892aac0bb58ef0adad37b81f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs out of any current account and logs in to an automatically generated account for this device.  <a href="#a8c03b7892aac0bb58ef0adad37b81f6c">More...</a><br /></td></tr>
 <tr class="separator:a8c03b7892aac0bb58ef0adad37b81f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1544,6 +1547,33 @@ Protected Member Functions</h2></td></tr>
 
 <p>Refresh the current connection state and connected/last server. </p>
 <p>Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#af5c164aedf655768a5d06de6e0c28725">OnState</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a58bd66a2c3a3d4cc4fd97fb514035e62">OnConnectedServer</a>. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+
+</div>
+</div>
+<a id="acc02af08c21eb0e0c9b485c843e2c5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc02af08c21eb0e0c9b485c843e2c5e3">&#9670;&nbsp;</a></span>resetAdapterUsage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.resetAdapterUsage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>adapterID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the tracked data usage on an adapter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adapterID</td><td>ID of the adapterID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>7.8.3 </dd></dl>
 
 </div>
 </div>

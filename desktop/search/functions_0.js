@@ -44,6 +44,7 @@ var searchData=
   ['speedifysdk_5flogout',['SpeedifySDK_Logout',['../group___s_d_k.html#ga5a98304c7c6faef85904f08577586a97',1,'speedifysdk.h']]],
   ['speedifysdk_5fnetworktype_5ftostring',['SpeedifySDK_NetworkType_toString',['../group___t_y_p_e_s.html#ga1211244d82341d96baf9f2c2d52e034e',1,'types.h']]],
   ['speedifysdk_5fportprotocol_5ftostring',['SpeedifySDK_PortProtocol_toString',['../group___t_y_p_e_s.html#ga275b45ca2c47e3f255bc01552ebe74d6',1,'types.h']]],
+  ['speedifysdk_5fresetadapterusage',['SpeedifySDK_ResetAdapterUsage',['../group___s_d_k.html#gafe3fb5b01210fcf6e26c14a7770d3a9e',1,'speedifysdk.h']]],
   ['speedifysdk_5fresetconnectionratelimit',['SpeedifySDK_ResetConnectionRateLimit',['../group___s_d_k.html#gaa514beb7c30faea7819185426abce652',1,'speedifysdk.h']]],
   ['speedifysdk_5fresetdirectorydomain',['SpeedifySDK_ResetDirectoryDomain',['../group___s_d_k.html#ga5177116140e9d9a4db563c38ab9a7293',1,'speedifysdk.h']]],
   ['speedifysdk_5fserverinformation_5fgetcityname',['SpeedifySDK_ServerInformation_GetCityName',['../group___t_y_p_e_s.html#ga651a12b11fedfe85a9028c75133945bd',1,'types.h']]],
