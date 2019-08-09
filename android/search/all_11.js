@@ -8,6 +8,7 @@ var searchData=
   ['totalbps',['totalBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a768c88e5cf5caf6dcc5e6c65ed4e7fe5',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['totalconnectedminutes',['totalConnectedMinutes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a5a538a709344d4b990f4f3cbb2966e99',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['transportmode',['TransportMode',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html',1,'com.speedify.speedifysdk.Types.TransportMode'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#ad9fedab5887a82aa0b873e55a3feaa3a',1,'com.speedify.speedifysdk.Types.Settings.transportMode()']]],
+  ['tunstats',['TunStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html',1,'com.speedify.speedifysdk.Types.TunStats'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#abbbb4e36a5be76d587b999cc21a3d4ea',1,'com.speedify.speedifysdk.Types.SessionStats.tunStats()']]],
   ['type',['type',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a933e926893bbb3ee8c9c24c488d28f51',1,'com::speedify::speedifysdk::Types::AdapterData']]],
   ['types',['Types',['../classcom_1_1speedify_1_1speedifysdk_1_1_types.html',1,'com::speedify::speedifysdk']]],
   ['types_2ejava',['Types.java',['../_types_8java.html',1,'']]]

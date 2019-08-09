@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['ratelimit',['rateLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#aa705c1ef3ac8390973ff82a9424e305c',1,'com::speedify::speedifysdk::Types::AdapterData']]],
-  ['ratelimited',['RATELIMITED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a0688f2dae1d1f6df87c80ce36655c873',1,'com::speedify::speedifysdk::Types::ErrorType']]],
-  ['receivebps',['receiveBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['receiveestimatemps',['receiveEstimateMps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a88cc557b044e5850c61e9c565343172a',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['redundant',['REDUNDANT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a99278b454b2ca49335aec1d661798ad8',1,'com::speedify::speedifysdk::Types::BondingMode']]],
-  ['remoteip',['remoteIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aca783cf8aa6edd1c8b5d8f496dc19c93',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['retransbytes',['retransBytes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ace654b641593d5ae67ac3ef2af035193',1,'com::speedify::speedifysdk::Types::SessionStats']]],
-  ['rtt',['RTT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_step.html#a26c4f8a976789ae0a2c723bd64aa5885',1,'com::speedify::speedifysdk::Types::SpeedTestStep']]],
-  ['rttms',['rttMs',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#aadadd65dff011f464a671085484b4ff6',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
-  ['running',['RUNNING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_status.html#afde4ac14e5048ebb2cbd0532bb4939bc',1,'com::speedify::speedifysdk::Types::SpeedTestStatus']]]
+  ['p2p',['P2P',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#aba73e7d33baf4c3614283cdffd9ea094',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
+  ['packetsin',['packetsIn',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a41498898c3082c62409f9cf1b2ce98b0',1,'com.speedify.speedifysdk.Types.TunStats.packetsIn()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#a5c3aa6cc012de8836e63ab7334412c57',1,'com.speedify.speedifysdk.Types.HandlerStats.packetsIn()']]],
+  ['packetsout',['packetsOut',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a90e768c686f0a826e1c4a30f5cb6a5f3',1,'com.speedify.speedifysdk.Types.TunStats.packetsOut()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#a4b30fb2a77ce4e5d472a3c909183ec33',1,'com.speedify.speedifysdk.Types.HandlerStats.packetsOut()']]],
+  ['packetwaits',['packetWaits',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a7a1e869fe251a31114fa02b743b4a123',1,'com::speedify::speedifysdk::Types::TunStats']]],
+  ['prefixlength',['prefixLength',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#aed82f494ab7e3a4d35e07c2552f6d9ac',1,'com::speedify::speedifysdk::Types::IPRange']]],
+  ['priority',['priority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a59fabf110e0330b8c8fa38a7c62e9721',1,'com::speedify::speedifysdk::Types::AdapterData']]],
+  ['privateip',['privateIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a14f91217d13fe79167d4eb397f8001bb',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['protocol',['protocol',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a92cbd0e1b6e052362aa3b2fc28cff0b2',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['publicip',['publicIP',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html#aa684f7342502080902629ca33b0a6069',1,'com::speedify::speedifysdk::Types::ServerInformationDetailed']]]
 ];

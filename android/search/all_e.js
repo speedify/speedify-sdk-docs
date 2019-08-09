@@ -2,6 +2,9 @@ var searchData=
 [
   ['p2p',['P2P',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#aba73e7d33baf4c3614283cdffd9ea094',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['package_2dinfo_2ejava',['package-info.java',['../package-info_8java.html',1,'']]],
+  ['packetsin',['packetsIn',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a41498898c3082c62409f9cf1b2ce98b0',1,'com.speedify.speedifysdk.Types.TunStats.packetsIn()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#a5c3aa6cc012de8836e63ab7334412c57',1,'com.speedify.speedifysdk.Types.HandlerStats.packetsIn()']]],
+  ['packetsout',['packetsOut',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a90e768c686f0a826e1c4a30f5cb6a5f3',1,'com.speedify.speedifysdk.Types.TunStats.packetsOut()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#a4b30fb2a77ce4e5d472a3c909183ec33',1,'com.speedify.speedifysdk.Types.HandlerStats.packetsOut()']]],
+  ['packetwaits',['packetWaits',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a7a1e869fe251a31114fa02b743b4a123',1,'com::speedify::speedifysdk::Types::TunStats']]],
   ['pooledbroadcastreceiver',['PooledBroadcastReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html',1,'com::speedify::speedifysdk']]],
   ['pooledbroadcastreceiver_2ejava',['PooledBroadcastReceiver.java',['../_pooled_broadcast_receiver_8java.html',1,'']]],
   ['pooledexecutor',['PooledExecutor',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html',1,'com::speedify::speedifysdk']]],

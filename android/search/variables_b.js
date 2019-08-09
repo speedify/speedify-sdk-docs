@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['p2p',['P2P',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#aba73e7d33baf4c3614283cdffd9ea094',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
-  ['prefixlength',['prefixLength',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#aed82f494ab7e3a4d35e07c2552f6d9ac',1,'com::speedify::speedifysdk::Types::IPRange']]],
-  ['priority',['priority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a59fabf110e0330b8c8fa38a7c62e9721',1,'com::speedify::speedifysdk::Types::AdapterData']]],
-  ['privateip',['privateIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a14f91217d13fe79167d4eb397f8001bb',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['protocol',['protocol',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a92cbd0e1b6e052362aa3b2fc28cff0b2',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['publicip',['publicIP',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html#aa684f7342502080902629ca33b0a6069',1,'com::speedify::speedifysdk::Types::ServerInformationDetailed']]]
+  ['ok',['OK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a893ea51e7455e7d655bfe8faeda0267b',1,'com::speedify::speedifysdk::Types::ErrorType']]],
+  ['overflowthreshold',['overflowThreshold',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6047bf51cab4f774f6b1840664f1ae60',1,'com::speedify::speedifysdk::Types::Settings']]],
+  ['overlimit',['OVERLIMIT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#aac2de2792427d9f10d9b60263c305627',1,'com::speedify::speedifysdk::Types::State']]],
+  ['overlimitratelimit',['overlimitRatelimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#ae9bc5a3762efe240423f8c59ab3d5a22',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]]
 ];

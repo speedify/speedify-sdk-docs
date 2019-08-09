@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['uploadbps',['uploadBps',['../struct_speedify_s_d_k___speed_test_connection_result.html#a959827ea0a101c2cb8ce42ce5a958852',1,'SpeedifySDK_SpeedTestConnectionResult']]],
-  ['usagedaily',['usageDaily',['../struct_speedify_s_d_k___adapter_usage_data.html#a1ef112f8a79d821cef7fab6a03e16401',1,'SpeedifySDK_AdapterUsageData']]],
-  ['usagedailyboost',['usageDailyBoost',['../struct_speedify_s_d_k___adapter_usage_data.html#a5ece84866c7e1e2eac8bd95855a66fa0',1,'SpeedifySDK_AdapterUsageData']]],
-  ['usagedailylimit',['usageDailyLimit',['../struct_speedify_s_d_k___adapter_usage_data.html#aebf7e6016867220b3f89c23cd4596e01',1,'SpeedifySDK_AdapterUsageData']]],
-  ['usagedata',['usageData',['../struct_speedify_s_d_k___adapter_overlimit_result.html#ad314a1d1b49b0fa91fe0477e65b921d4',1,'SpeedifySDK_AdapterOverlimitResult']]],
-  ['usagemonthly',['usageMonthly',['../struct_speedify_s_d_k___adapter_usage_data.html#a441dbb78089121c22e10404bb6fa9fb5',1,'SpeedifySDK_AdapterUsageData']]],
-  ['usagemonthlylimit',['usageMonthlyLimit',['../struct_speedify_s_d_k___adapter_usage_data.html#ada61a7067399359a72c47a252d6af37a',1,'SpeedifySDK_AdapterUsageData']]],
-  ['usagemonthlyresetday',['usageMonthlyResetDay',['../struct_speedify_s_d_k___adapter_usage_data.html#a0754109a5cf563bc3c040b67e59708a4',1,'SpeedifySDK_AdapterUsageData']]]
+  ['testreport',['testReport',['../struct_speedify_s_d_k___speedtest_result.html#a1660ab0682cbfc4117820a3d60d85fea',1,'SpeedifySDK_SpeedtestResult']]],
+  ['time',['time',['../struct_speedify_s_d_k___connection_stats_group.html#aff8e62b6fcd54ba39eede11dbe4a5956',1,'SpeedifySDK_ConnectionStatsGroup']]],
+  ['torrentallowed',['torrentAllowed',['../struct_speedify_s_d_k___server_information_detailed.html#ad5707ddd194493e6b541cc26c1a863c7',1,'SpeedifySDK_ServerInformationDetailed']]],
+  ['totalbps',['totalBps',['../struct_speedify_s_d_k___connection_stats.html#a229dd9fac65cb930100fc60da0fd8644',1,'SpeedifySDK_ConnectionStats']]],
+  ['totalconnectedminutes',['totalConnectedMinutes',['../struct_speedify_s_d_k___session_stats.html#a66371088fe0e6f2ea1a13a72b543d61d',1,'SpeedifySDK_SessionStats']]],
+  ['transportmode',['transportMode',['../struct_speedify_s_d_k___settings.html#aba5fb1a5c8ff54a8d0c6404a0ef23098',1,'SpeedifySDK_Settings']]],
+  ['tunstats',['tunStats',['../struct_speedify_s_d_k___session_stats.html#a428c79a93ec260f524e7a759f646a3af',1,'SpeedifySDK_SessionStats']]],
+  ['type',['type',['../struct_speedify_s_d_k___new_adapter_result.html#ad1c52d24b27227a3e384af8288f296f2',1,'SpeedifySDK_NewAdapterResult::type()'],['../struct_speedify_s_d_k___adapter_overlimit_result.html#a45ee79e89d0151c22fb9a0c963a4e76f',1,'SpeedifySDK_AdapterOverlimitResult::type()'],['../struct_speedify_s_d_k___adapter_data.html#a3e3fba2959ab5b6beba8aeb465fd7444',1,'SpeedifySDK_AdapterData::type()']]]
 ];

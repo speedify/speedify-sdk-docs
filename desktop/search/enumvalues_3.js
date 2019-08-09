@@ -10,8 +10,10 @@ var searchData=
   ['et_5fsdk_5fcallback_5frequired',['ET_SDK_CALLBACK_REQUIRED',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a02c2da178718dbe68635f551e7e915ea',1,'types.h']]],
   ['et_5fsdk_5ferror',['ET_SDK_ERROR',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2af27f8b9631b6098fa645e8e0ff0852b5',1,'types.h']]],
   ['et_5fsdk_5finvalid_5fargument',['ET_SDK_INVALID_ARGUMENT',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a884bdad7bd03c834d97cc1be1c05fa7d',1,'types.h']]],
+  ['et_5fsdk_5fno_5fconnection',['ET_SDK_NO_CONNECTION',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a71d735910f4cd03c618ce8cd0a3e68c6',1,'types.h']]],
   ['et_5fsdk_5fplatform_5fno_5fsupport',['ET_SDK_PLATFORM_NO_SUPPORT',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a7f46fc245dd01ebf20c1b6a8e41f9c9a',1,'types.h']]],
   ['et_5fsdk_5ftimeout',['ET_SDK_TIMEOUT',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a5ead18bac8736c96ca7446202bc49a98',1,'types.h']]],
   ['et_5fserver',['ET_SERVER',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2ad31e7149e68b0b9177e109869b55d5a3',1,'types.h']]],
-  ['et_5ftoken_5fexpired',['ET_TOKEN_EXPIRED',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a8da2dc7d08025e78e78e531e8bc05421',1,'types.h']]]
+  ['et_5ftoken_5fexpired',['ET_TOKEN_EXPIRED',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a8da2dc7d08025e78e78e531e8bc05421',1,'types.h']]],
+  ['et_5fvpn_5fadapter',['ET_VPN_ADAPTER',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a19419fd98e337bee0c4b6ecf9ce0f5b2',1,'types.h']]]
 ];

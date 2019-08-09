@@ -74,6 +74,7 @@ var searchData=
   ['speedifysdk_5fsetkillswitch',['SpeedifySDK_SetKillswitch',['../group___s_d_k.html#gaf597ce561a5169d5a889018464b7ca57',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetmode',['SpeedifySDK_SetMode',['../group___s_d_k.html#ga4cc3b3a24b056db0b416331f1f9e63a0',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetoverflowthreshold',['SpeedifySDK_SetOverflowThreshold',['../group___s_d_k.html#gab1ade44b44c1c91c954a9d25afe16c26',1,'speedifysdk.h']]],
+  ['speedifysdk_5fsetpacketaggregation',['SpeedifySDK_SetPacketAggregation',['../group___s_d_k.html#ga5a18a759be68b355954f5b44c21c9ee7',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetreportingencryptionkey',['SpeedifySDK_SetReportingEncryptionKey',['../group___s_d_k.html#gaa2abf58eebc653f520ce5981bbbf765b',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetstartupconnect',['SpeedifySDK_SetStartupConnect',['../group___s_d_k.html#gab19bd2b04f1d250cce8c34fe0cb727de',1,'speedifysdk.h']]],
   ['speedifysdk_5fsettunnelencrypted',['SpeedifySDK_SetTunnelEncrypted',['../group___s_d_k.html#ga3cd09895bf831066625be4886bbadcaf',1,'speedifysdk.h']]],
