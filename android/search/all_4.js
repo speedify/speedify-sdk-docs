@@ -7,6 +7,7 @@ var searchData=
   ['error',['error',['../classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#ae827305c548061974f0f5984726e1b69',1,'com.speedify.speedifysdk.Logging.LogHandler.error(String message)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#a8c7f806523821b9b00c826818e82f745',1,'com.speedify.speedifysdk.Logging.LogHandler.error(String message, Throwable th)']]],
   ['errortype',['ErrorType',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html',1,'com::speedify::speedifysdk::Types']]],
   ['ethernet',['ETHERNET',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#abaa041a2dfa13161cbf6a7a16471948d',1,'com::speedify::speedifysdk::Types::NetworkType']]],
+  ['excludedefaultprivateipranges',['excludeDefaultPrivateIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a799cbf8072f0be49078a1b3a971c92a3',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['excludedipranges',['excludedIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a3f14782468fc4e7f6c217c78872f3651',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['execute',['execute',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html#a4eaeb8ee2f5cd65a968aff8bf06a1563',1,'com::speedify::speedifysdk::PooledExecutor']]]
 ];

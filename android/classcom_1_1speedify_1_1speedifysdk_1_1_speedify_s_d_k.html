@@ -228,6 +228,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d3ef739b468369bdca24b8b9690db08"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7d3ef739b468369bdca24b8b9690db08">setExcludedIPRanges</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html">IPRange</a> &gt; excludedRanges)</td></tr>
 <tr class="memdesc:a7d3ef739b468369bdca24b8b9690db08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IP address ranges to exclude from going over the VPN tunnel.  <a href="#a7d3ef739b468369bdca24b8b9690db08">More...</a><br /></td></tr>
 <tr class="separator:a7d3ef739b468369bdca24b8b9690db08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a825f85d22f1fe945b592d83585847"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a26a825f85d22f1fe945b592d83585847">setExcludeDefaultPrivateIPRanges</a> (boolean exclude)</td></tr>
+<tr class="memdesc:a26a825f85d22f1fe945b592d83585847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the default private IP ranges are excluded from going over the VPN tunnel.  <a href="#a26a825f85d22f1fe945b592d83585847">More...</a><br /></td></tr>
+<tr class="separator:a26a825f85d22f1fe945b592d83585847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad14d8a3cf6a48a8317a5570c2e35a97b"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad14d8a3cf6a48a8317a5570c2e35a97b">setJumboPackets</a> (boolean useJumbo)</td></tr>
 <tr class="memdesc:ad14d8a3cf6a48a8317a5570c2e35a97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to allow jumbo packets over the VPN tunnel.  <a href="#ad14d8a3cf6a48a8317a5570c2e35a97b">More...</a><br /></td></tr>
 <tr class="separator:ad14d8a3cf6a48a8317a5570c2e35a97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2246,6 +2249,33 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>7.4 </dd></dl>
+
+</div>
+</div>
+<a id="a26a825f85d22f1fe945b592d83585847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a825f85d22f1fe945b592d83585847">&#9670;&nbsp;</a></span>setExcludeDefaultPrivateIPRanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setExcludeDefaultPrivateIPRanges </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>exclude</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether the default private IP ranges are excluded from going over the VPN tunnel. </p>
+<p>This range includes: 224.0.0.0/4, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 This change takes effect on the next VPN connect. Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a48a12dc47f67eb9dd96a32df0fda24ef">OnSettings</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exclude</td><td>if default private IP ranges are excluded </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>8.0.2 </dd></dl>
 
 </div>
 </div>
