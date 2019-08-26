@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">8.0.2</span>
+   &#160;<span id="projectnumber">8.1.0</span>
    </div>
   </td>
  </tr>
@@ -117,9 +117,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35164922b22e7ce5bfb63eb909b2794b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a35164922b22e7ce5bfb63eb909b2794b">OnServiceStartError</a> ()</td></tr>
 <tr class="memdesc:a35164922b22e7ce5bfb63eb909b2794b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error starting the vpn service.  <a href="#a35164922b22e7ce5bfb63eb909b2794b">More...</a><br /></td></tr>
 <tr class="separator:a35164922b22e7ce5bfb63eb909b2794b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44dc0197c15ce9abce0b1fcb60c90bdb"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a44dc0197c15ce9abce0b1fcb60c90bdb">OnServiceInternetPermissionError</a> ()</td></tr>
-<tr class="memdesc:a44dc0197c15ce9abce0b1fcb60c90bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error when INTERNET permission has been revoked from the app.  <a href="#a44dc0197c15ce9abce0b1fcb60c90bdb">More...</a><br /></td></tr>
-<tr class="separator:a44dc0197c15ce9abce0b1fcb60c90bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4a13f28c0298a24b0ef78fa47063da"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6a4a13f28c0298a24b0ef78fa47063da">OnServiceInterruptedError</a> ()</td></tr>
 <tr class="memdesc:a6a4a13f28c0298a24b0ef78fa47063da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error when another VPN starts, interrupting Speedify.  <a href="#a6a4a13f28c0298a24b0ef78fa47063da">More...</a><br /></td></tr>
 <tr class="separator:a6a4a13f28c0298a24b0ef78fa47063da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -813,29 +810,6 @@ Public Member Functions</h2></td></tr>
 <p>Called from secondary (:sdkservice) process. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3f7a7e80dcbeded14988e4964878be5">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
-
-</div>
-</div>
-<a id="a44dc0197c15ce9abce0b1fcb60c90bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44dc0197c15ce9abce0b1fcb60c90bdb">&#9670;&nbsp;</a></span>OnServiceInternetPermissionError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean com.speedify.speedifysdk.ISpeedifyHandler.OnServiceInternetPermissionError </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Error when INTERNET permission has been revoked from the app. </p>
-<p>The default handler uses the string resources SPEEDIFY_ERROR_VPN_SECURITY_TITLE and SPEEDIFY_ERROR_VPN_SECURITY_TEXT </p><dl class="section return"><dt>Returns</dt><dd>true if error is handled, false for default dialog </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
-
-<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac2df70bf9046e1812a72186da84dfc01">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>

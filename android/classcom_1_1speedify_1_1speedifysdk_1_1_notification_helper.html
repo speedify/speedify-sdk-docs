@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">8.0.2</span>
+   &#160;<span id="projectnumber">8.1.0</span>
    </div>
   </td>
  </tr>
@@ -99,8 +99,85 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa882acd2f362c47b983816a2253806da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#aa882acd2f362c47b983816a2253806da">createNotification</a> (Context context, String notificationChannel, int notificationId, String title, String message, String subtext)</td></tr>
 <tr class="memdesc:aa882acd2f362c47b983816a2253806da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a notification.  <a href="#aa882acd2f362c47b983816a2253806da">More...</a><br /></td></tr>
 <tr class="separator:aa882acd2f362c47b983816a2253806da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1ee5572af52b23be5a0efec4ddacf7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#aad1ee5572af52b23be5a0efec4ddacf7">createBackgroundActivityNotification</a> (Context context, String notificationChannel, int notificationId, String title, String message, PendingIntent pendingIntent)</td></tr>
+<tr class="memdesc:aad1ee5572af52b23be5a0efec4ddacf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a fullscreen notification from the background.  <a href="#aad1ee5572af52b23be5a0efec4ddacf7">More...</a><br /></td></tr>
+<tr class="separator:aad1ee5572af52b23be5a0efec4ddacf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aad1ee5572af52b23be5a0efec4ddacf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1ee5572af52b23be5a0efec4ddacf7">&#9670;&nbsp;</a></span>createBackgroundActivityNotification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void com.speedify.speedifysdk.NotificationHelper.createBackgroundActivityNotification </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>notificationChannel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>notificationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PendingIntent&#160;</td>
+          <td class="paramname"><em>pendingIntent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a fullscreen notification from the background. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context used to launch notification </td></tr>
+    <tr><td class="paramname">notificationChannel</td><td>channel group for this notification </td></tr>
+    <tr><td class="paramname">notificationId</td><td>unique identifier for this notifications </td></tr>
+    <tr><td class="paramname">title</td><td>notification title </td></tr>
+    <tr><td class="paramname">message</td><td>notification message </td></tr>
+    <tr><td class="paramname">pendingIntent</td><td>intent this fullscreen notification should launch </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>8.1 </dd></dl>
+
+</div>
+</div>
 <a id="afa01c0f579d38b63a8e8c8f04a459a06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa01c0f579d38b63a8e8c8f04a459a06">&#9670;&nbsp;</a></span>createNotification() <span class="overload">[1/3]</span></h2>
 

@@ -12,6 +12,7 @@ var searchData=
   ['usagemonthly',['usageMonthly',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a18c90b39ae46367209b8862259d95ca3',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['usagemonthlylimit',['usageMonthlyLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a1e42546bcfd0c7ca13275465603e2650',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['usagemonthlyresetday',['usageMonthlyResetDay',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a5a91c2a774495ddf5b7d9b00dcb16ab5',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
+  ['userstrings_2edox',['userstrings.dox',['../userstrings_8dox.html',1,'']]],
   ['uuidprovider',['UuidProvider',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html',1,'com::speedify::speedifysdk']]],
   ['uuidprovider_2ejava',['UuidProvider.java',['../_uuid_provider_8java.html',1,'']]]
 ];
