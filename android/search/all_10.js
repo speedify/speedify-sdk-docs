@@ -1,6 +1,7 @@
 var searchData=
 [
   ['schedule',['schedule',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html#a06f32b7179e334b5bb712e2f2d8fc453',1,'com::speedify::speedifysdk::PooledExecutor']]],
+  ['sdkinit_2edox',['sdkinit.dox',['../sdkinit_8dox.html',1,'']]],
   ['secondary',['SECONDARY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#ae29d8cb0bf92099eb656b88c60c29862',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['send',['send',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#a0db40ca01deeef4c659d6a274d936566',1,'com::speedify::speedifysdk::LocalBroadcastHelper']]],
   ['sendbps',['sendBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a37e4c430aa1d38ab769d2a4c58326def',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
@@ -25,6 +26,7 @@ var searchData=
   ['setdnsservers',['setDNSServers',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef0319bb8e304e64cd656ea4b7b05ae0',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setexcludedefaultprivateipranges',['setExcludeDefaultPrivateIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a26a825f85d22f1fe945b592d83585847',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setexcludedipranges',['setExcludedIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7d3ef739b468369bdca24b8b9690db08',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['setforwardports',['setForwardPorts',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac356455954faaa9541395f1f412372fa',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['sethandler',['setHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4a148300a682f8b99eaa0102082fe0f8',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setjumbopackets',['setJumboPackets',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad14d8a3cf6a48a8317a5570c2e35a97b',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setlauncherclass',['setLauncherClass',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#ae34d5fd5119e5e374b5bf3b3b7c0449e',1,'com::speedify::speedifysdk::NotificationHelper']]],
@@ -52,7 +54,7 @@ var searchData=
   ['speedteststep',['SpeedTestStep',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_step.html',1,'com::speedify::speedifysdk::Types']]],
   ['stable',['stable',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#aa9eb5de0e186eaf0aeb6269847b28cfb',1,'com::speedify::speedifysdk::Types::State']]],
   ['startspeedtest',['startSpeedtest',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab085b81879931e6300267f96567a227c',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['state',['State',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html',1,'com.speedify.speedifysdk.Types.State'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#aec7c744d9e3f5facf1a541825b4870d4',1,'com.speedify.speedifysdk.Types.State.State()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a32a1c06be95208485f169fe3366d5d8d',1,'com.speedify.speedifysdk.Types.AdapterData.state()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a86203961af20aa479117327b55ac84d2',1,'com.speedify.speedifysdk.Types.State.state()']]],
+  ['state',['State',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html',1,'com.speedify.speedifysdk.Types.State'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a32a1c06be95208485f169fe3366d5d8d',1,'com.speedify.speedifysdk.Types.AdapterData.state()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a86203961af20aa479117327b55ac84d2',1,'com.speedify.speedifysdk.Types.State.state()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#aec7c744d9e3f5facf1a541825b4870d4',1,'com.speedify.speedifysdk.Types.State.State(int state, boolean stable, boolean loggedIn)']]],
   ['status',['status',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_results.html#adf4c29241f422c304576ab7463ddcc5f',1,'com::speedify::speedifysdk::Types::SpeedTestResults']]],
   ['step',['step',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a41a238918bb7ed523f2d543e6f668cbb',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
   ['stepprogress',['stepProgress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a0928c74b8ea6cce987e4baf356378560',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['udp',['UDP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a0600e8694b7dd81cc918df57a8d37be5',1,'com::speedify::speedifysdk::Types::TransportMode']]],
+  ['udp',['UDP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a0600e8694b7dd81cc918df57a8d37be5',1,'com.speedify.speedifysdk.Types.TransportMode.UDP()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_port_protocol.html#a386b4be17e4b5df735ec1b7cc8a229f3',1,'com.speedify.speedifysdk.Types.PortProtocol.UDP()']]],
   ['unknown',['UNKNOWN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a4733a4a74a24745d4254c9f0f6373938',1,'com.speedify.speedifysdk.Types.State.UNKNOWN()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#a2e456b234436bac95fddf795d7749b6c',1,'com.speedify.speedifysdk.Types.NetworkType.UNKNOWN()']]],
   ['unregister',['unregister',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#a3a04431f9fab562cc559004e4ea18f9c',1,'com::speedify::speedifysdk::LocalBroadcastHelper']]],
   ['updateforegroundnotification',['UpdateForegroundNotification',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa3cdb2823fd270b6a3d81ba4afccf5f1',1,'com.speedify.speedifysdk.ISpeedifyHandler.UpdateForegroundNotification()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a38e93d979c962ab0957e44ad5f74fb6f',1,'com.speedify.speedifysdk.SpeedifyHandler.UpdateForegroundNotification()']]],

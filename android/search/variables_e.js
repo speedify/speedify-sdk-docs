@@ -1,14 +1,15 @@
 var searchData=
 [
-  ['secondary',['SECONDARY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#ae29d8cb0bf92099eb656b88c60c29862',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
-  ['sendbps',['sendBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a37e4c430aa1d38ab769d2a4c58326def',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['sendestimatembps',['sendEstimateMbps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9f2157a241a0ea8e7dfc89018c2aad33',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['server',['SERVER',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ace2c1d28fa386ab68472f0f611950062',1,'com::speedify::speedifysdk::Types::ErrorType']]],
-  ['sleeping',['sleeping',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a2e5edb6ad04b04b7b546a67b9b739654',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['speed',['SPEED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#aac2e459261ac5a2ed6875a6ad095c3d3',1,'com::speedify::speedifysdk::Types::BondingMode']]],
-  ['speedtest',['SPEEDTEST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a9785f3aae943288e3fc3c59c66917505',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
-  ['state',['state',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a32a1c06be95208485f169fe3366d5d8d',1,'com::speedify::speedifysdk::Types::AdapterData']]],
-  ['status',['status',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_results.html#adf4c29241f422c304576ab7463ddcc5f',1,'com::speedify::speedifysdk::Types::SpeedTestResults']]],
-  ['step',['step',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a41a238918bb7ed523f2d543e6f668cbb',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
-  ['stepprogress',['stepProgress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a0928c74b8ea6cce987e4baf356378560',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]]
+  ['ratelimit',['rateLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#aa705c1ef3ac8390973ff82a9424e305c',1,'com::speedify::speedifysdk::Types::AdapterData']]],
+  ['ratelimited',['RATELIMITED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a0688f2dae1d1f6df87c80ce36655c873',1,'com::speedify::speedifysdk::Types::ErrorType']]],
+  ['readqueue',['readQueue',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#af65e6f9cf307b0b331a4746387bdae84',1,'com::speedify::speedifysdk::Types::TunStats']]],
+  ['receivebps',['receiveBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['receiveestimatembps',['receiveEstimateMbps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ace4da62624db5f8b60ff62abe5f233c2',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['redundant',['REDUNDANT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a99278b454b2ca49335aec1d661798ad8',1,'com::speedify::speedifysdk::Types::BondingMode']]],
+  ['remoteip',['remoteIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aca783cf8aa6edd1c8b5d8f496dc19c93',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['retransbytes',['retransBytes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ace654b641593d5ae67ac3ef2af035193',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['retries',['retries',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#aa785eff5043e55ed5041f35a86789f79',1,'com::speedify::speedifysdk::Types::HandlerStats']]],
+  ['rtt',['RTT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_step.html#a26c4f8a976789ae0a2c723bd64aa5885',1,'com::speedify::speedifysdk::Types::SpeedTestStep']]],
+  ['rttms',['rttMs',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#aadadd65dff011f464a671085484b4ff6',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
+  ['running',['RUNNING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_status.html#afde4ac14e5048ebb2cbd0532bb4939bc',1,'com::speedify::speedifysdk::Types::SpeedTestStatus']]]
 ];

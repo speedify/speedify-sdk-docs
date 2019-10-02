@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tcp',['TCP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a39a86cd0fda16c451f893a9af2ffaa01',1,'com::speedify::speedifysdk::Types::TransportMode']]],
+  ['tcp',['TCP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a39a86cd0fda16c451f893a9af2ffaa01',1,'com.speedify.speedifysdk.Types.TransportMode.TCP()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_port_protocol.html#afa22fcdb304e5a1039a30473c4adf142',1,'com.speedify.speedifysdk.Types.PortProtocol.TCP()']]],
   ['time',['time',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats_group.html#ac62be1cddc939c8b34945ccb5df30620',1,'com::speedify::speedifysdk::Types::ConnectionStatsGroup']]],
   ['token_5fexpired',['TOKEN_EXPIRED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['torrentallowed',['torrentAllowed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html#ac31d17f89fc8fde47ddd1b5142595dfa',1,'com::speedify::speedifysdk::Types::ServerInformationDetailed']]],

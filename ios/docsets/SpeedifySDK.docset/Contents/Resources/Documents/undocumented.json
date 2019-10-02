@@ -205,35 +205,35 @@
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
-      "line": 815,
+      "line": 825,
       "symbol": "SpeedifySDK.versionDidUpdate(version:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
-      "line": 819,
+      "line": 829,
       "symbol": "SpeedifySDK.serverInformationDidUpdate(serverInformation:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
-      "line": 823,
+      "line": 833,
       "symbol": "SpeedifySDK.torrentUseReported(willDisconnect:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
-      "line": 827,
+      "line": 837,
       "symbol": "SpeedifySDK.networkOverLimitUpdated(adapter:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/SpeedifySDK.swift",
-      "line": 838,
+      "line": 848,
       "symbol": "SpeedifySDK.privacySettingsDidUpdate(privacy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -317,35 +317,35 @@
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
-      "line": 586,
+      "line": 591,
       "symbol": "TransportMode",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
-      "line": 648,
+      "line": 653,
       "symbol": "ErrorType.ok",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
-      "line": 649,
+      "line": 654,
       "symbol": "ErrorType.network",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
-      "line": 654,
+      "line": 659,
       "symbol": "ErrorType.credential",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/jenkins/workspace/Speedify_iOS_SDK/SDK/Types.swift",
-      "line": 701,
+      "line": 706,
       "symbol": "PrivacySettings",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"

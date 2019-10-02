@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">8.1.4</span>
+   &#160;<span id="projectnumber">8.2.0</span>
    </div>
   </td>
  </tr>
@@ -288,6 +288,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef0319bb8e304e64cd656ea4b7b05ae0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef0319bb8e304e64cd656ea4b7b05ae0">setDNSServers</a> (List&lt; String &gt; dnsAddrs)</td></tr>
 <tr class="memdesc:aef0319bb8e304e64cd656ea4b7b05ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IP addresses of the DNS servers to use Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab6d9161aec16a4f7c57575b6fe715adf">OnPrivacySettings</a>.  <a href="#aef0319bb8e304e64cd656ea4b7b05ae0">More...</a><br /></td></tr>
 <tr class="separator:aef0319bb8e304e64cd656ea4b7b05ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac356455954faaa9541395f1f412372fa"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac356455954faaa9541395f1f412372fa">setForwardPorts</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_forwarded_port.html">ForwardedPort</a> &gt; ports)</td></tr>
+<tr class="memdesc:ac356455954faaa9541395f1f412372fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ports to be forwarded to this client when connected to a dedicated server.  <a href="#ac356455954faaa9541395f1f412372fa">More...</a><br /></td></tr>
+<tr class="separator:ac356455954faaa9541395f1f412372fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd8b43f20d0eb08df91c909474956a1"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfd8b43f20d0eb08df91c909474956a1">sendMessage</a> (String messageType, JSONObject data)</td></tr>
 <tr class="memdesc:acfd8b43f20d0eb08df91c909474956a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal use  <a href="#acfd8b43f20d0eb08df91c909474956a1">More...</a><br /></td></tr>
 <tr class="separator:acfd8b43f20d0eb08df91c909474956a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,7 +366,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor for <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> with default handler. </p>
-<p>To use this constructor, you must define speedify_sdk_name and speedify_sdk_port resource values. This is the only version of the constructor that does not require you to create your <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> isntance in your Application object. You may supply your custom <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html" title="Default ISpeedifyHandler Implementation.">SpeedifyHandler</a> via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4a148300a682f8b99eaa0102082fe0f8">setHandler</a>. This constructor does not allow for customizing the foreground notification beyond overriding resource strings. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>To use this constructor, you must define speedify_sdk_name and speedify_sdk_port resource values. This is the only version of the constructor that does not require you to create your <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> instance in your Application object. You may supply your custom <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html" title="Default ISpeedifyHandler Implementation.">SpeedifyHandler</a> via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4a148300a682f8b99eaa0102082fe0f8">setHandler</a>. This constructor does not allow for customizing the foreground notification beyond overriding resource strings. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">applicationContext</td><td>Application Context </td></tr>
   </table>
@@ -412,7 +415,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor for <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> with default handler. </p>
-<p>This should be created in the Application, as <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> will start a second process for running the VPN service, and will need access to data from this object. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This should be created in the Application class, as <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> will start a second process for running the VPN service, and will need access to data from this object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">applicationContext</td><td>Application Context </td></tr>
     <tr><td class="paramname">name</td><td>Name of the application. Used in notifications. </td></tr>
@@ -463,7 +466,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor for <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> with provided handler. </p>
-<p>This should be created in the Application, as <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> will start a second process for running the VPN service, and will need access to data from this object. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This should be created in the Application class, as <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SpeedifySDK API.">SpeedifySDK</a> will start a second process for running the VPN service, and will need access to data from this object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">applicationContext</td><td>Application Context </td></tr>
     <tr><td class="paramname">name</td><td>Name of the application. Used in notifications. </td></tr>
@@ -2306,6 +2309,33 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac356455954faaa9541395f1f412372fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac356455954faaa9541395f1f412372fa">&#9670;&nbsp;</a></span>setForwardPorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setForwardPorts </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_forwarded_port.html">ForwardedPort</a> &gt;&#160;</td>
+          <td class="paramname"><em>ports</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set ports to be forwarded to this client when connected to a dedicated server. </p>
+<p>Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a48a12dc47f67eb9dd96a32df0fda24ef">OnSettings</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ports</td><td>ports to be forwarded </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>8.2 </dd></dl>
+
+</div>
+</div>
 <a id="a4a148300a682f8b99eaa0102082fe0f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a148300a682f8b99eaa0102082fe0f8">&#9670;&nbsp;</a></span>setHandler()</h2>
 
@@ -2642,7 +2672,7 @@ Protected Member Functions</h2></td></tr>
 <p>internal use </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">intent</td><td>event to subscribe to </td></tr>
+    <tr><td class="paramname">event</td><td>event to subscribe to </td></tr>
   </table>
   </dd>
 </dl>
