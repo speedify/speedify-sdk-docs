@@ -8,6 +8,6 @@ var searchData=
   ['prefixlength',['prefixLength',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#aed82f494ab7e3a4d35e07c2552f6d9ac',1,'com::speedify::speedifysdk::Types::IPRange']]],
   ['priority',['priority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a59fabf110e0330b8c8fa38a7c62e9721',1,'com::speedify::speedifysdk::Types::AdapterData']]],
   ['privateip',['privateIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a14f91217d13fe79167d4eb397f8001bb',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['protocol',['protocol',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a92cbd0e1b6e052362aa3b2fc28cff0b2',1,'com.speedify.speedifysdk.Types.ConnectionStats.protocol()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_forwarded_port.html#a8c142e04c37321f9ba303def81673ebf',1,'com.speedify.speedifysdk.Types.ForwardedPort.protocol()']]],
+  ['protocol',['protocol',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9205ab3f596e449ef6be69adffecb127',1,'com.speedify.speedifysdk.Types.ConnectionStats.protocol()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_forwarded_port.html#a8c142e04c37321f9ba303def81673ebf',1,'com.speedify.speedifysdk.Types.ForwardedPort.protocol()']]],
   ['publicip',['publicIP',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html#aa684f7342502080902629ca33b0a6069',1,'com::speedify::speedifysdk::Types::ServerInformationDetailed']]]
 ];

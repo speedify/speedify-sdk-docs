@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">8.2.1</span>
+   &#160;<span id="projectnumber">9.0.0</span>
    </div>
   </td>
  </tr>
@@ -82,6 +82,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="results_8h_source.html">results.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="callbacks_8h_source.html">callbacks.h</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -293,6 +294,18 @@ Supports Subscription.  <a href="group___s_d_k.html#ga028e4b1c52cb2520d2bd77fc79
 <tr class="memitem:ga82b4d7fa17cc0f59451b19624eab78c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___torrent_result.html">SpeedifySDK_TorrentResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga82b4d7fa17cc0f59451b19624eab78c3">SpeedifySDK_ListenForTorrentDetection</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga039a065c52636679930a66a7fbfb7653">SpeedifySDK_TorrentCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga82b4d7fa17cc0f59451b19624eab78c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive messages when a torrent is detected. Subscription Only.  <a href="group___s_d_k.html#ga82b4d7fa17cc0f59451b19624eab78c3">More...</a><br /></td></tr>
 <tr class="separator:ga82b4d7fa17cc0f59451b19624eab78c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c6d755e3f0f38f4dc33d9d7607d8991"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___captive_portal_check_result.html">SpeedifySDK_CaptivePortalCheckResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga4c6d755e3f0f38f4dc33d9d7607d8991">SpeedifySDK_CheckForCaptivePortals</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga825d94635c7ea5972edd4d1bcc337dd9">SpeedifySDK_CaptivePortalCheckCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga4c6d755e3f0f38f4dc33d9d7607d8991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for captive portals.  <a href="group___s_d_k.html#ga4c6d755e3f0f38f4dc33d9d7607d8991">More...</a><br /></td></tr>
+<tr class="separator:ga4c6d755e3f0f38f4dc33d9d7607d8991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80d0df203d341ba33f425ad499b0fcbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___captive_portal_check_result.html">SpeedifySDK_CaptivePortalCheckResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga80d0df203d341ba33f425ad499b0fcbd">SpeedifySDK_ListenForCaptivePortals</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga825d94635c7ea5972edd4d1bcc337dd9">SpeedifySDK_CaptivePortalCheckCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga80d0df203d341ba33f425ad499b0fcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive messages when a captive protal is detected. Subscription Only.  <a href="group___s_d_k.html#ga80d0df203d341ba33f425ad499b0fcbd">More...</a><br /></td></tr>
+<tr class="separator:ga80d0df203d341ba33f425ad499b0fcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06fd94858ef4658b2373a8e0a74b5cd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___captive_portal_login_result.html">SpeedifySDK_CaptivePortalLoginResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga06fd94858ef4658b2373a8e0a74b5cd7">SpeedifySDK_SetCaptivePortalLoginMode</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, const char *adapterID, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga5ffb57733a269cacf0a58b762109ef60">SpeedifySDK_CaptivePortalLoginCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga06fd94858ef4658b2373a8e0a74b5cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls the captive portal login mode. If enabled, new port 80, 443, and 53 sockets will be directed through the chosen adapter instead of over the VPN tunnel. Can only be started while the VPN tunnel is connected. If enabling, an adapterID must be provided.  <a href="group___s_d_k.html#ga06fd94858ef4658b2373a8e0a74b5cd7">More...</a><br /></td></tr>
+<tr class="separator:ga06fd94858ef4658b2373a8e0a74b5cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7a23d9ab77c557fb53ba565b3b1107c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___captive_portal_login_result.html">SpeedifySDK_CaptivePortalLoginResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaa7a23d9ab77c557fb53ba565b3b1107c">SpeedifySDK_GetCaptivePortalLoginMode</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga5ffb57733a269cacf0a58b762109ef60">SpeedifySDK_CaptivePortalLoginCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gaa7a23d9ab77c557fb53ba565b3b1107c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status of the captive portal login mode..  <a href="group___s_d_k.html#gaa7a23d9ab77c557fb53ba565b3b1107c">More...</a><br /></td></tr>
+<tr class="separator:gaa7a23d9ab77c557fb53ba565b3b1107c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae00990b78fbb6f32f43599083b6d3bfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gae00990b78fbb6f32f43599083b6d3bfa">SpeedifySDK_UnregisterCallback</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___r_e_s_u_l_t.html#ga4f4cea7755c8fea8ca022fb8cc4c21f3">SpeedifySDK_EventID</a> eventId)</td></tr>
 <tr class="memdesc:gae00990b78fbb6f32f43599083b6d3bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an asynchronous callback registered via other calls.  <a href="group___s_d_k.html#gae00990b78fbb6f32f43599083b6d3bfa">More...</a><br /></td></tr>
 <tr class="separator:gae00990b78fbb6f32f43599083b6d3bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>

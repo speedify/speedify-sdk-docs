@@ -10,6 +10,8 @@ var searchData=
   ['speedifysdk_5fadaptersresult',['SpeedifySDK_AdaptersResult',['../struct_speedify_s_d_k___adapters_result.html',1,'']]],
   ['speedifysdk_5fadapterusagedata',['SpeedifySDK_AdapterUsageData',['../struct_speedify_s_d_k___adapter_usage_data.html',1,'']]],
   ['speedifysdk_5fbaseresult',['SpeedifySDK_BaseResult',['../struct_speedify_s_d_k___base_result.html',1,'']]],
+  ['speedifysdk_5fcaptiveportalcheckresult',['SpeedifySDK_CaptivePortalCheckResult',['../struct_speedify_s_d_k___captive_portal_check_result.html',1,'']]],
+  ['speedifysdk_5fcaptiveportalloginresult',['SpeedifySDK_CaptivePortalLoginResult',['../struct_speedify_s_d_k___captive_portal_login_result.html',1,'']]],
   ['speedifysdk_5fconnectionstats',['SpeedifySDK_ConnectionStats',['../struct_speedify_s_d_k___connection_stats.html',1,'']]],
   ['speedifysdk_5fconnectionstatsgroup',['SpeedifySDK_ConnectionStatsGroup',['../struct_speedify_s_d_k___connection_stats_group.html',1,'']]],
   ['speedifysdk_5fconnectionstatsresult',['SpeedifySDK_ConnectionStatsResult',['../struct_speedify_s_d_k___connection_stats_result.html',1,'']]],

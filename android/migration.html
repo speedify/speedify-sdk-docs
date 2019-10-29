@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">8.2.1</span>
+   &#160;<span id="projectnumber">9.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,21 @@ $(function() {
 <div class="title">Migration Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="migrate_800_810"></a>Speedify SDK for Android 8.0 -&gt; 8.1 Migration </h2>
+<div class="textblock"><h2><a class="anchor" id="migrate_821_900"></a>Speedify SDK for Android 8.2.1 -&gt; 9.0 Migration </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a><ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9205ab3f596e449ef6be69adffecb127">protocol</a> is now of type <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html">TransportMode</a></li>
+</ul>
+</li>
+<li><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html">TransportMode</a><ul>
+<li>WEBSOCKET has been removed. <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a2cba02d5cb9e4f790154eecffd10878a">HTTPS</a> now serves the same purpose.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_800_810"></a>Speedify SDK for Android 8.0 -&gt; 8.1 Migration </h2>
 <ul>
 <li>The Android SDK (compileSdkVersion) and build tools versions used for Speedify SDK are now 29 and 29.0.0, respectively, and targetSdkVersion is also 29.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a686d2ac8699e429abc96bd831581520d">CrashlyticsIntegrationEnabled</a> now defaults to false</li>
