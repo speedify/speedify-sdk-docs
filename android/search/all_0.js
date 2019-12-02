@@ -13,5 +13,6 @@ var searchData=
   ['always',['ALWAYS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a91776f0b98e54fefcb4ef24fe6e59f5b',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['auto',['AUTO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd',1,'com::speedify::speedifysdk::Types::TransportMode']]],
   ['auto_5fconnecting',['AUTO_CONNECTING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a05b5a305aebbbe7abcb77ea003cbbe96',1,'com::speedify::speedifysdk::Types::State']]],
-  ['autoconnectmethod',['AutoConnectMethod',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html',1,'com::speedify::speedifysdk::Types']]]
+  ['autoconnectmethod',['AutoConnectMethod',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html',1,'com::speedify::speedifysdk::Types']]],
+  ['advanced_20initialization',['Advanced Initialization',['../sdkadv.html',1,'']]]
 ];

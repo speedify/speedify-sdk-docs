@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['st_5fstatus_5fcomplete',['ST_STATUS_COMPLETE',['../group___t_y_p_e_s.html#ggaa81ea1e0bf1bf0a53c166c3c345c7998aa97653e867fa5e60b9db60ea184cea35',1,'types.h']]],
-  ['st_5fstatus_5fnot_5frunning',['ST_STATUS_NOT_RUNNING',['../group___t_y_p_e_s.html#ggaa81ea1e0bf1bf0a53c166c3c345c7998a8ce99763e4c48e7670cf9a7cf5542335',1,'types.h']]],
-  ['st_5fstatus_5frunning',['ST_STATUS_RUNNING',['../group___t_y_p_e_s.html#ggaa81ea1e0bf1bf0a53c166c3c345c7998aaec0b097a21dcf87aa59f75d10707149',1,'types.h']]],
-  ['st_5fstep_5fdownload',['ST_STEP_DOWNLOAD',['../group___t_y_p_e_s.html#gga8c4c6a5fc675507215cb2ed75d169fa6a8012721bcb0f3a31107f23ca0333fb65',1,'types.h']]],
-  ['st_5fstep_5fnot_5frunning',['ST_STEP_NOT_RUNNING',['../group___t_y_p_e_s.html#gga8c4c6a5fc675507215cb2ed75d169fa6a98b073a4213d654e335eb63a27e6feb5',1,'types.h']]],
-  ['st_5fstep_5frtt',['ST_STEP_RTT',['../group___t_y_p_e_s.html#gga8c4c6a5fc675507215cb2ed75d169fa6aa8fb153ed1f1bcf7437449764ebde60f',1,'types.h']]],
-  ['st_5fstep_5fupload',['ST_STEP_UPLOAD',['../group___t_y_p_e_s.html#gga8c4c6a5fc675507215cb2ed75d169fa6af949294a1d889130e5a5a0ca3efccf37',1,'types.h']]],
-  ['state_5fauto_5fconnecting',['STATE_AUTO_CONNECTING',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a49e04ca25b83812a21e1e59879e46ed1',1,'types.h']]],
-  ['state_5fconnected',['STATE_CONNECTED',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a5b0f1cbce9b9f72772747cdedfc7b8e1',1,'types.h']]],
-  ['state_5fconnecting',['STATE_CONNECTING',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a28b97e301232f1b841d146187844c7a5',1,'types.h']]],
-  ['state_5fdisconnecting',['STATE_DISCONNECTING',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a29ba6f94f71dff61e2afef7237b2932a',1,'types.h']]],
-  ['state_5flogged_5fin',['STATE_LOGGED_IN',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a4d62b4f08c4ce7d9b77671f4df09fd34',1,'types.h']]],
-  ['state_5flogged_5fout',['STATE_LOGGED_OUT',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a8aa4bec580307bb6229e9a3b8e04c7f0',1,'types.h']]],
-  ['state_5flogging_5fin',['STATE_LOGGING_IN',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0aaadbb3943d785e7ddb03350daa2c30c5',1,'types.h']]],
-  ['state_5foverlimit',['STATE_OVERLIMIT',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0ad0bf2ff9c8849bb895770a8f8976f1c2',1,'types.h']]],
-  ['state_5funknown',['STATE_UNKNOWN',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a786a8e9401b8091f65b2afbd342c90f5',1,'types.h']]]
+  ['pmm_5fblacklist',['PMM_BLACKLIST',['../group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aa5aea1cc06e6b436d2704436fae15a342',1,'types.h']]],
+  ['pmm_5fwhitelist',['PMM_WHITELIST',['../group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aaf7e085c1d6a38351e3dfaafab0341cb2',1,'types.h']]],
+  ['pproto_5ftcp',['PPROTO_TCP',['../group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44ea9b480fd1da16f2b74b8732c4756217f9',1,'types.h']]],
+  ['pproto_5fudp',['PPROTO_UDP',['../group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44eaca15f369269ee3980fafa67a63f4ede4',1,'types.h']]]
 ];

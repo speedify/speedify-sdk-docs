@@ -6,6 +6,7 @@ var searchData=
   ['serversettings',['serverSettings',['../struct_speedify_s_d_k___server_settings_result.html#a6c7242e97a427403e1f3c7bfb67d6364',1,'SpeedifySDK_ServerSettingsResult']]],
   ['sessionstats',['sessionStats',['../struct_speedify_s_d_k___session_stats_result.html#a7e945b2a827f28bf61d39c5d59aa2e83',1,'SpeedifySDK_SessionStatsResult']]],
   ['settings',['settings',['../struct_speedify_s_d_k___settings_result.html#a8e51651fe0d2b1eb0556604510112c9a',1,'SpeedifySDK_SettingsResult']]],
+  ['settingsjson',['settingsJson',['../struct_speedify_s_d_k___vendor_settings_result.html#ab0b8af602adba4ad42d9f38386411667',1,'SpeedifySDK_VendorSettingsResult']]],
   ['sleeping',['sleeping',['../struct_speedify_s_d_k___connection_stats.html#a85465e681022a375efd1d0da63088cee',1,'SpeedifySDK_ConnectionStats']]],
   ['startupconnect',['startupConnect',['../struct_speedify_s_d_k___settings.html#a85977be4a6178041250de9b4caa5fd78',1,'SpeedifySDK_Settings']]],
   ['state',['state',['../struct_speedify_s_d_k___state_result.html#aa6c44da9ff974f19dfd367dc45cc230f',1,'SpeedifySDK_StateResult::state()'],['../struct_speedify_s_d_k___adapter_data.html#a061925e0039b8065bfc742ec248a8888',1,'SpeedifySDK_AdapterData::state()']]],

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.1.3</span>
+   &#160;<span id="projectnumber">9.2.1</span>
    </div>
   </td>
  </tr>
@@ -88,11 +88,23 @@ $(function() {
 <li>SPEEDIFYSDK_MAX_DNS_COUNT
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga8e1cd03d663a09fa25904301bb6a7dca">sdkdefines.h</a>
 </li>
+<li>SPEEDIFYSDK_MAX_DOMAIN_LENGTH
+: <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gad43b5b70f908994cb8ef02a34103ac6c">sdkdefines.h</a>
+</li>
 <li>SPEEDIFYSDK_MAX_EMAIL
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gab458063742e77ceb99b3ff2a31d0ae4e">sdkdefines.h</a>
 </li>
 <li>SPEEDIFYSDK_MAX_ERROR_STRING
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga7e7f5d88a268342966e117251f43328e">sdkdefines.h</a>
+</li>
+<li>SPEEDIFYSDK_MAX_FIREWALL_DOMAINS
+: <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gac05f408a83c87b8ab6be070766b5ba95">sdkdefines.h</a>
+</li>
+<li>SPEEDIFYSDK_MAX_FIREWALL_IPS
+: <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gae0fbdc459c8723fa728ab8e7cd9bdb4a">sdkdefines.h</a>
+</li>
+<li>SPEEDIFYSDK_MAX_FIREWALL_PORTS
+: <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga1358d4d72253006fc96cfa5be3abbefa">sdkdefines.h</a>
 </li>
 <li>SPEEDIFYSDK_MAX_FORWARD_PORTS
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gae7f28a426899e7ff9da29f9061e3ccc5">sdkdefines.h</a>
@@ -102,6 +114,12 @@ $(function() {
 </li>
 <li>SPEEDIFYSDK_MAX_IP_STRING_LENGTH
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga09c82b811f5074b699932244049a5b83">sdkdefines.h</a>
+</li>
+<li>SPEEDIFYSDK_MAX_PROXY_DOMAINS
+: <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gad326eaafcf3849cd365b47e289af89a8">sdkdefines.h</a>
+</li>
+<li>SPEEDIFYSDK_MAX_PROXY_IPS
+: <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gaded72fd5c430a235679441ce886a9246">sdkdefines.h</a>
 </li>
 <li>SPEEDIFYSDK_MAX_SERVER_FULL_NAME
 : <a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gab09bad7d2dbbf37b3e3cdff4ee73a67c">sdkdefines.h</a>
@@ -182,7 +200,19 @@ $(function() {
 : <a class="el" href="group___s_d_k.html#ga6c8a1364b2f81b86cf058b21412b8873">speedifysdk.h</a>
 </li>
 <li>SpeedifySDK_SetDNSServers()
-: <a class="el" href="group___s_d_k.html#gaa2a7b48495219fe6b6dcb726fd801b55">speedifysdk.h</a>
+: <a class="el" href="group___s_d_k.html#ga8c5cb702a9ab8ff29cbf737fdd52f59d">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetFirewallDomains()
+: <a class="el" href="group___s_d_k.html#ga79ff08188b324083c7eaa629b8a2262f">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetFirewallIPv4()
+: <a class="el" href="group___s_d_k.html#gab67ec00d591674c3c3fb2172280e5420">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetFirewallMode()
+: <a class="el" href="group___s_d_k.html#gaaddc223507836782bd4ee69227cc2957">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetFirewallPorts()
+: <a class="el" href="group___s_d_k.html#ga53d1f6c87ba0ab9e6133258b87a0f0d7">speedifysdk.h</a>
 </li>
 <li>SpeedifySDK_SetForwardPorts()
 : <a class="el" href="group___s_d_k.html#gacf4355ebf5179bf7f43ade7fd117ee8c">speedifysdk.h</a>
@@ -192,6 +222,21 @@ $(function() {
 </li>
 <li>SpeedifySDK_SetKillswitch()
 : <a class="el" href="group___s_d_k.html#gaf597ce561a5169d5a889018464b7ca57">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetLocalProxyDomains()
+: <a class="el" href="group___s_d_k.html#ga59c29093725b396e5052e02ef3f8c2a7">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetLocalProxyEnabled()
+: <a class="el" href="group___s_d_k.html#ga1161a3b5eff93c2877ee3f873adbd9e4">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetLocalProxyIPv4()
+: <a class="el" href="group___s_d_k.html#gad2bb175d24f9087d8a8918591794f7c3">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetLocalProxyMatchMode()
+: <a class="el" href="group___s_d_k.html#ga6ef89cc596dbb5ba7d30e917f5a66461">speedifysdk.h</a>
+</li>
+<li>SpeedifySDK_SetLocalVendorSettings()
+: <a class="el" href="group___s_d_k.html#gae846b9b87f5ee1905d7992bb816454d9">speedifysdk.h</a>
 </li>
 <li>SpeedifySDK_SetMode()
 : <a class="el" href="group___s_d_k.html#ga4cc3b3a24b056db0b416331f1f9e63a0">speedifysdk.h</a>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sdk_20strings',['SDK Strings',['../userstrings.html',1,'']]]
+  ['migration_20guide',['Migration Guide',['../migration.html',1,'']]]
 ];

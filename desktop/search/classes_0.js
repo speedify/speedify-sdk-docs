@@ -18,8 +18,13 @@ var searchData=
   ['speedifysdk_5fconnectresult',['SpeedifySDK_ConnectResult',['../struct_speedify_s_d_k___connect_result.html',1,'']]],
   ['speedifysdk_5fdirectorydomainresult',['SpeedifySDK_DirectoryDomainResult',['../struct_speedify_s_d_k___directory_domain_result.html',1,'']]],
   ['speedifysdk_5fdirectoryresult',['SpeedifySDK_DirectoryResult',['../struct_speedify_s_d_k___directory_result.html',1,'']]],
+  ['speedifysdk_5ffirewallport',['SpeedifySDK_FirewallPort',['../struct_speedify_s_d_k___firewall_port.html',1,'']]],
+  ['speedifysdk_5ffirewallsettings',['SpeedifySDK_FirewallSettings',['../struct_speedify_s_d_k___firewall_settings.html',1,'']]],
+  ['speedifysdk_5ffirewallsettingsresult',['SpeedifySDK_FirewallSettingsResult',['../struct_speedify_s_d_k___firewall_settings_result.html',1,'']]],
   ['speedifysdk_5fforwardedport',['SpeedifySDK_ForwardedPort',['../struct_speedify_s_d_k___forwarded_port.html',1,'']]],
   ['speedifysdk_5fhandlerstats',['SpeedifySDK_HandlerStats',['../struct_speedify_s_d_k___handler_stats.html',1,'']]],
+  ['speedifysdk_5flocalproxysettings',['SpeedifySDK_LocalProxySettings',['../struct_speedify_s_d_k___local_proxy_settings.html',1,'']]],
+  ['speedifysdk_5flocalproxysettingsresult',['SpeedifySDK_LocalProxySettingsResult',['../struct_speedify_s_d_k___local_proxy_settings_result.html',1,'']]],
   ['speedifysdk_5fnewadapterresult',['SpeedifySDK_NewAdapterResult',['../struct_speedify_s_d_k___new_adapter_result.html',1,'']]],
   ['speedifysdk_5fperconnectionencryption',['SpeedifySDK_PerConnectionEncryption',['../struct_speedify_s_d_k___per_connection_encryption.html',1,'']]],
   ['speedifysdk_5fprivacysettings',['SpeedifySDK_PrivacySettings',['../struct_speedify_s_d_k___privacy_settings.html',1,'']]],
@@ -38,6 +43,7 @@ var searchData=
   ['speedifysdk_5fstateresult',['SpeedifySDK_StateResult',['../struct_speedify_s_d_k___state_result.html',1,'']]],
   ['speedifysdk_5ftorrentresult',['SpeedifySDK_TorrentResult',['../struct_speedify_s_d_k___torrent_result.html',1,'']]],
   ['speedifysdk_5ftunstats',['SpeedifySDK_TunStats',['../struct_speedify_s_d_k___tun_stats.html',1,'']]],
+  ['speedifysdk_5fvendorsettingsresult',['SpeedifySDK_VendorSettingsResult',['../struct_speedify_s_d_k___vendor_settings_result.html',1,'']]],
   ['speedifysdk_5fversion',['SpeedifySDK_Version',['../struct_speedify_s_d_k___version.html',1,'']]],
   ['speedifysdk_5fversionresult',['SpeedifySDK_VersionResult',['../struct_speedify_s_d_k___version_result.html',1,'']]]
 ];

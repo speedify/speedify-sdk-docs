@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.1.3</span>
+   &#160;<span id="projectnumber">9.2.1</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,26 @@ $(function() {
 <div class="title">Migration Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="migrate_821_900"></a>Speedify SDK for Android 8.2.1 -&gt; 9.0 Migration </h2>
+<div class="textblock"><h2><a class="anchor" id="migrate_913_920"></a>Speedify SDK for Android 9.1.3 -&gt; 9.2 Migration </h2>
+<ul>
+<li>The dependency on play-services-ads has been reduced in scope to play-services-ads-identifier, version 17.0.0.</li>
+<li>Deprecation removals - Longtime methods marked as Deprecated have been removed<ul>
+<li>SpeedifyHandler<ul>
+<li>OnServiceRestart() - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9413aeb08f153f6f44a5672c26c524d2">OnServiceRestart</a></li>
+<li>OnConnectedServer(ServerInformation) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a18c9d6c7d334c10ad726c644dca3b6e6">OnConnectedServer</a></li>
+<li>OnNewAdapter(String) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aed01db667447cc835ba547324ddcdf48">OnNewAdapter</a></li>
+<li>OnAdapterOverlimit(String,AdapterUsageData) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab5d0d87f91cad7e90b2f2bdc981fff73">OnAdapterOverlimit</a></li>
+</ul>
+</li>
+<li>SpeedifySDK<ul>
+<li>setDirectoryURL(String) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a22d502292a8d8002340a78d487007797">setDirectoryDomain</a></li>
+<li>resetDirectoryURL() - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8d43b451e0ebc24feb97a16996d6bf40">resetDirectoryDomain</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_821_900"></a>Speedify SDK for Android 8.2.1 -&gt; 9.0 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a><ul>

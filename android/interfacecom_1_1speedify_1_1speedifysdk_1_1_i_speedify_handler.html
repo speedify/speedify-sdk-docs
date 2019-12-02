@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.1.3</span>
+   &#160;<span id="projectnumber">9.2.1</span>
    </div>
   </td>
  </tr>
@@ -183,6 +183,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7de775ad7df0ef1e9ee3d06b27c9370d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a7de775ad7df0ef1e9ee3d06b27c9370d">OnNonVPNApplications</a> (List&lt; String &gt; nonVpnApps)</td></tr>
 <tr class="memdesc:a7de775ad7df0ef1e9ee3d06b27c9370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of apps configured to go around the VPN.  <a href="#a7de775ad7df0ef1e9ee3d06b27c9370d">More...</a><br /></td></tr>
 <tr class="separator:a7de775ad7df0ef1e9ee3d06b27c9370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232ba243c7d2cb563b3ad2191fd2607a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a232ba243c7d2cb563b3ad2191fd2607a">OnLockedSetting</a> (String settingAction)</td></tr>
+<tr class="memdesc:a232ba243c7d2cb563b3ad2191fd2607a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in response to attempt to change a setting that is locked by the server.  <a href="#a232ba243c7d2cb563b3ad2191fd2607a">More...</a><br /></td></tr>
+<tr class="separator:a232ba243c7d2cb563b3ad2191fd2607a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6506f86aa74b15e1e1bc377225c9e27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ae6506f86aa74b15e1e1bc377225c9e27">OnLocalVendorSettings</a> (JSONObject settings)</td></tr>
+<tr class="memdesc:ae6506f86aa74b15e1e1bc377225c9e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local vendor settings update.  <a href="#ae6506f86aa74b15e1e1bc377225c9e27">More...</a><br /></td></tr>
+<tr class="separator:ae6506f86aa74b15e1e1bc377225c9e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98a382d0084f14558f58c2e7ce33133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa98a382d0084f14558f58c2e7ce33133">OnRemoteVendorSettings</a> (JSONObject settings)</td></tr>
+<tr class="memdesc:aa98a382d0084f14558f58c2e7ce33133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote vendor settings update.  <a href="#aa98a382d0084f14558f58c2e7ce33133">More...</a><br /></td></tr>
+<tr class="separator:aa98a382d0084f14558f58c2e7ce33133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d42fcdd9bd3b0195350cc46cf9012cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9d42fcdd9bd3b0195350cc46cf9012cd">OnLocalProxySettings</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html">LocalProxySettings</a> settings)</td></tr>
+<tr class="memdesc:a9d42fcdd9bd3b0195350cc46cf9012cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local proxy settings update.  <a href="#a9d42fcdd9bd3b0195350cc46cf9012cd">More...</a><br /></td></tr>
+<tr class="separator:a9d42fcdd9bd3b0195350cc46cf9012cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5957d64cb5aaa7bb295f05aa01e92b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa5957d64cb5aaa7bb295f05aa01e92b8">OnFirewallSettings</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html">FirewallSettings</a> settings)</td></tr>
+<tr class="memdesc:aa5957d64cb5aaa7bb295f05aa01e92b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Firewall settings update.  <a href="#aa5957d64cb5aaa7bb295f05aa01e92b8">More...</a><br /></td></tr>
+<tr class="separator:aa5957d64cb5aaa7bb295f05aa01e92b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af69068a631143a620a54082776e0cf47"></a>
@@ -591,6 +606,122 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa5957d64cb5aaa7bb295f05aa01e92b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5957d64cb5aaa7bb295f05aa01e92b8">&#9670;&nbsp;</a></span>OnFirewallSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnFirewallSettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html">FirewallSettings</a>&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Firewall settings update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>current firewall settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad81ff616d4ec0d1e69acbe90b9475a93">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
+<a id="a9d42fcdd9bd3b0195350cc46cf9012cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d42fcdd9bd3b0195350cc46cf9012cd">&#9670;&nbsp;</a></span>OnLocalProxySettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnLocalProxySettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html">LocalProxySettings</a>&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Local proxy settings update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>current local proxy settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0b2a5eb92389d9a15ea5962fa9589cd4">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
+<a id="ae6506f86aa74b15e1e1bc377225c9e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6506f86aa74b15e1e1bc377225c9e27">&#9670;&nbsp;</a></span>OnLocalVendorSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnLocalVendorSettings </td>
+          <td>(</td>
+          <td class="paramtype">JSONObject&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Local vendor settings update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>current local vendor settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab60fc2f119a6dbb78dc308efefd4130a">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
+<a id="a232ba243c7d2cb563b3ad2191fd2607a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232ba243c7d2cb563b3ad2191fd2607a">&#9670;&nbsp;</a></span>OnLockedSetting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnLockedSetting </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>settingAction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called in response to attempt to change a setting that is locked by the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settingAction</td><td>string identifying the setting that is locked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a39303004b2e8d4a72906aaefaf898185">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
 <a id="ad51bd6dd1b6af898b37e7433ab3cbce1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad51bd6dd1b6af898b37e7433ab3cbce1">&#9670;&nbsp;</a></span>OnLoginError()</h2>
 
@@ -766,6 +897,35 @@ Public Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>6.3 </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a7a1b9b6445a20f116af55efeb7403ef9">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
+<a id="aa98a382d0084f14558f58c2e7ce33133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98a382d0084f14558f58c2e7ce33133">&#9670;&nbsp;</a></span>OnRemoteVendorSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnRemoteVendorSettings </td>
+          <td>(</td>
+          <td class="paramtype">JSONObject&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remote vendor settings update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>current remote vendor settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad1f206a09df1117b60c24ac7eebbae29">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>
