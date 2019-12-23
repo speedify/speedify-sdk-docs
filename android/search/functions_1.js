@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cleanupoldjavalog',['cleanupOldJavalog',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#af6e25ef8f1e3e8f5730856f0ddf3dd14',1,'com::speedify::speedifysdk::LogGeneration']]],
+  ['clear',['clear',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a555afbd48491f7372fd616c42c039150',1,'com::speedify::speedifysdk::NotificationHelper']]],
   ['connectauto',['connectAuto',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2044f8af335757aebb88580abf145355',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['connectbycity',['connectByCity',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2f63ba475c5bfadccbdaba3404c65a8d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['connectbycountry',['connectByCountry',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2cb0f8751c60408f53091686c125e547',1,'com::speedify::speedifysdk::SpeedifySDK']]],

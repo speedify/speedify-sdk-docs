@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.2.1</span>
+   &#160;<span id="projectnumber">9.3.0</span>
    </div>
   </td>
  </tr>
@@ -102,8 +102,57 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aad1ee5572af52b23be5a0efec4ddacf7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#aad1ee5572af52b23be5a0efec4ddacf7">createBackgroundActivityNotification</a> (Context context, String notificationChannel, int notificationId, String title, String message, PendingIntent pendingIntent)</td></tr>
 <tr class="memdesc:aad1ee5572af52b23be5a0efec4ddacf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a fullscreen notification from the background.  <a href="#aad1ee5572af52b23be5a0efec4ddacf7">More...</a><br /></td></tr>
 <tr class="separator:aad1ee5572af52b23be5a0efec4ddacf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555afbd48491f7372fd616c42c039150"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a555afbd48491f7372fd616c42c039150">clear</a> (Context context, int notificatonId)</td></tr>
+<tr class="memdesc:a555afbd48491f7372fd616c42c039150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a notification.  <a href="#a555afbd48491f7372fd616c42c039150">More...</a><br /></td></tr>
+<tr class="separator:a555afbd48491f7372fd616c42c039150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a555afbd48491f7372fd616c42c039150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555afbd48491f7372fd616c42c039150">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void com.speedify.speedifysdk.NotificationHelper.clear </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>notificatonId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear a notification. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context used to launch notification </td></tr>
+    <tr><td class="paramname">notificationId</td><td>unique identifier for the notification to clear </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+
+</div>
+</div>
 <a id="aad1ee5572af52b23be5a0efec4ddacf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad1ee5572af52b23be5a0efec4ddacf7">&#9670;&nbsp;</a></span>createBackgroundActivityNotification()</h2>
 
@@ -167,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">context</td><td>context used to launch notification </td></tr>
     <tr><td class="paramname">notificationChannel</td><td>channel group for this notification </td></tr>
-    <tr><td class="paramname">notificationId</td><td>unique identifier for this notifications </td></tr>
+    <tr><td class="paramname">notificationId</td><td>unique identifier for this notification </td></tr>
     <tr><td class="paramname">title</td><td>notification title </td></tr>
     <tr><td class="paramname">message</td><td>notification message </td></tr>
     <tr><td class="paramname">pendingIntent</td><td>intent this fullscreen notification should launch </td></tr>
@@ -229,7 +278,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">context</td><td>context used to launch notification </td></tr>
     <tr><td class="paramname">notificationChannel</td><td>channel group for this notification </td></tr>
-    <tr><td class="paramname">notificationId</td><td>unique identifier for this notifications </td></tr>
+    <tr><td class="paramname">notificationId</td><td>unique identifier for this notification </td></tr>
     <tr><td class="paramname">title</td><td>notification title </td></tr>
   </table>
   </dd>
@@ -295,7 +344,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">context</td><td>context used to launch notification </td></tr>
     <tr><td class="paramname">notificationChannel</td><td>channel group for this notification </td></tr>
-    <tr><td class="paramname">notificationId</td><td>unique identifier for this notifications </td></tr>
+    <tr><td class="paramname">notificationId</td><td>unique identifier for this notification </td></tr>
     <tr><td class="paramname">title</td><td>notification title </td></tr>
     <tr><td class="paramname">message</td><td>notification message </td></tr>
   </table>
@@ -368,7 +417,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">context</td><td>context used to launch notification </td></tr>
     <tr><td class="paramname">notificationChannel</td><td>channel group for this notification </td></tr>
-    <tr><td class="paramname">notificationId</td><td>unique identifier for this notifications </td></tr>
+    <tr><td class="paramname">notificationId</td><td>unique identifier for this notification </td></tr>
     <tr><td class="paramname">title</td><td>notification title </td></tr>
     <tr><td class="paramname">message</td><td>notification message </td></tr>
     <tr><td class="paramname">subtext</td><td>notification subtext </td></tr>

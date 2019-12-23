@@ -13,6 +13,7 @@ var searchData=
   ['et_5fsdk_5fno_5fconnection',['ET_SDK_NO_CONNECTION',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a71d735910f4cd03c618ce8cd0a3e68c6',1,'types.h']]],
   ['et_5fsdk_5fplatform_5fno_5fsupport',['ET_SDK_PLATFORM_NO_SUPPORT',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a7f46fc245dd01ebf20c1b6a8e41f9c9a',1,'types.h']]],
   ['et_5fsdk_5fsetting_5flocked',['ET_SDK_SETTING_LOCKED',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2ad0bd2f79bdf821162e4cda68276b86ba',1,'types.h']]],
+  ['et_5fsdk_5fsync_5ffrom_5fasync',['ET_SDK_SYNC_FROM_ASYNC',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a84b42d05579e21f21c6734f134899c5d',1,'types.h']]],
   ['et_5fsdk_5ftimeout',['ET_SDK_TIMEOUT',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a5ead18bac8736c96ca7446202bc49a98',1,'types.h']]],
   ['et_5fserver',['ET_SERVER',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2ad31e7149e68b0b9177e109869b55d5a3',1,'types.h']]],
   ['et_5ftoken_5fexpired',['ET_TOKEN_EXPIRED',['../group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a8da2dc7d08025e78e78e531e8bc05421',1,'types.h']]],

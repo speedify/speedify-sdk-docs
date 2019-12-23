@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.2.1</span>
+   &#160;<span id="projectnumber">9.3.0</span>
    </div>
   </td>
  </tr>
@@ -309,6 +309,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb3b6bf3030c04fd1762c4678bd619dd"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#adb3b6bf3030c04fd1762c4678bd619dd">setLocalProxyIPv4</a> (List&lt; String &gt; ipv4)</td></tr>
 <tr class="memdesc:adb3b6bf3030c04fd1762c4678bd619dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv4 address to proxy locally, instead of going through the VPN.  <a href="#adb3b6bf3030c04fd1762c4678bd619dd">More...</a><br /></td></tr>
 <tr class="separator:adb3b6bf3030c04fd1762c4678bd619dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4da4aa940649ebfdc7e744b2be7c8b"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1a4da4aa940649ebfdc7e744b2be7c8b">setLocalProxyDomainWatchlist</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html">LocalProxyDomainWatchlistItem</a> &gt; domainWatchlist)</td></tr>
+<tr class="memdesc:a1a4da4aa940649ebfdc7e744b2be7c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set domain watchlist settings for the local proxy.  <a href="#a1a4da4aa940649ebfdc7e744b2be7c8b">More...</a><br /></td></tr>
+<tr class="separator:a1a4da4aa940649ebfdc7e744b2be7c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834aa60247c7741c18d4484f58447551"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a834aa60247c7741c18d4484f58447551">setLocalProxyDomainWatchlistEnable</a> (String title, boolean enabled)</td></tr>
+<tr class="memdesc:a834aa60247c7741c18d4484f58447551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle a single domain watchlist item from being enabled over the local proxy.  <a href="#a834aa60247c7741c18d4484f58447551">More...</a><br /></td></tr>
+<tr class="separator:a834aa60247c7741c18d4484f58447551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1483aa4fe6cff812382ba363c1b3377"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac1483aa4fe6cff812382ba363c1b3377">refreshCaptivePortals</a> ()</td></tr>
+<tr class="memdesc:ac1483aa4fe6cff812382ba363c1b3377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks connected networks for captive portals Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a>.  <a href="#ac1483aa4fe6cff812382ba363c1b3377">More...</a><br /></td></tr>
+<tr class="separator:ac1483aa4fe6cff812382ba363c1b3377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeec0b3b6a08707fa92b5af48720e7a0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#afeec0b3b6a08707fa92b5af48720e7a0">refreshFirewall</a> ()</td></tr>
 <tr class="memdesc:afeec0b3b6a08707fa92b5af48720e7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get configuration of the firewall Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa5957d64cb5aaa7bb295f05aa01e92b8">OnFirewallSettings</a>.  <a href="#afeec0b3b6a08707fa92b5af48720e7a0">More...</a><br /></td></tr>
 <tr class="separator:afeec0b3b6a08707fa92b5af48720e7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,6 +330,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6693bc5e19783e7feb3cd4cc5e589ea2"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6693bc5e19783e7feb3cd4cc5e589ea2">setFirewallIPv4</a> (List&lt; String &gt; ipv4)</td></tr>
 <tr class="memdesc:a6693bc5e19783e7feb3cd4cc5e589ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv4 address to firewall.  <a href="#a6693bc5e19783e7feb3cd4cc5e589ea2">More...</a><br /></td></tr>
 <tr class="separator:a6693bc5e19783e7feb3cd4cc5e589ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a13663c1252cc145d6ef55248cb8ef"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a40a13663c1252cc145d6ef55248cb8ef">setFirewallIPv6</a> (List&lt; String &gt; ipv6)</td></tr>
+<tr class="memdesc:a40a13663c1252cc145d6ef55248cb8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv6 address to firewall.  <a href="#a40a13663c1252cc145d6ef55248cb8ef">More...</a><br /></td></tr>
+<tr class="separator:a40a13663c1252cc145d6ef55248cb8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00095faf4abadacf72026e100669b657"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a00095faf4abadacf72026e100669b657">setFirewallPorts</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_port.html">FirewallPort</a> &gt; ports)</td></tr>
 <tr class="memdesc:a00095faf4abadacf72026e100669b657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ports to firewall.  <a href="#a00095faf4abadacf72026e100669b657">More...</a><br /></td></tr>
 <tr class="separator:a00095faf4abadacf72026e100669b657"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1486,6 +1498,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac1483aa4fe6cff812382ba363c1b3377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1483aa4fe6cff812382ba363c1b3377">&#9670;&nbsp;</a></span>refreshCaptivePortals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.refreshCaptivePortals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks connected networks for captive portals Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+
+</div>
+</div>
 <a id="ab7d926e0a8bb87cddc5421abfb87c381"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7d926e0a8bb87cddc5421abfb87c381">&#9670;&nbsp;</a></span>refreshDirectory()</h2>
 
@@ -2429,6 +2461,33 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a40a13663c1252cc145d6ef55248cb8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a13663c1252cc145d6ef55248cb8ef">&#9670;&nbsp;</a></span>setFirewallIPv6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setFirewallIPv6 </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>ipv6</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set IPv6 address to firewall. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ipv6</td><td>ipv6 addresses to block/whitelist Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa5957d64cb5aaa7bb295f05aa01e92b8">OnFirewallSettings</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+
+</div>
+</div>
 <a id="ad3b41bbb9c2b079fde95351e6a1f6aa7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3b41bbb9c2b079fde95351e6a1f6aa7">&#9670;&nbsp;</a></span>setFirewallMode()</h2>
 
@@ -2588,6 +2647,71 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+</div>
+</div>
+<a id="a1a4da4aa940649ebfdc7e744b2be7c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4da4aa940649ebfdc7e744b2be7c8b">&#9670;&nbsp;</a></span>setLocalProxyDomainWatchlist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setLocalProxyDomainWatchlist </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html">LocalProxyDomainWatchlistItem</a> &gt;&#160;</td>
+          <td class="paramname"><em>domainWatchlist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set domain watchlist settings for the local proxy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domainWatchlist</td><td>domain watchlist items Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9d42fcdd9bd3b0195350cc46cf9012cd">OnLocalProxySettings</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+
+</div>
+</div>
+<a id="a834aa60247c7741c18d4484f58447551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834aa60247c7741c18d4484f58447551">&#9670;&nbsp;</a></span>setLocalProxyDomainWatchlistEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setLocalProxyDomainWatchlistEnable </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toggle a single domain watchlist item from being enabled over the local proxy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>watchlist item title </td></tr>
+    <tr><td class="paramname">enable</td><td>if this watchlist item's domains should be included in the local proxy filter Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9d42fcdd9bd3b0195350cc46cf9012cd">OnLocalProxySettings</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
 
 </div>
 </div>

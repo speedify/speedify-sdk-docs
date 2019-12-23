@@ -5,6 +5,7 @@ var searchData=
   ['localbroadcasthelper',['LocalBroadcastHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html',1,'com::speedify::speedifysdk']]],
   ['localbroadcasthelper_2ejava',['LocalBroadcastHelper.java',['../_local_broadcast_helper_8java.html',1,'']]],
   ['localip',['localIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a7f8aafde30794f9a2eb6b540fdea17f3',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['localproxydomainwatchlistitem',['LocalProxyDomainWatchlistItem',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html',1,'com::speedify::speedifysdk::Types']]],
   ['localproxysettings',['LocalProxySettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html',1,'com::speedify::speedifysdk::Types']]],
   ['logcomplete',['logComplete',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#ad6edbb0dcb2fdc5f099302952e532786',1,'com::speedify::speedifysdk::LogGeneration::ILogCompleteCallback']]],
   ['logged_5fin',['LOGGED_IN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a1da87be8f9f0a70c56e0b152d702ebfe',1,'com::speedify::speedifysdk::Types::State']]],

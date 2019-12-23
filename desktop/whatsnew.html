@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.2.1</span>
+   &#160;<span id="projectnumber">9.3.0</span>
    </div>
   </td>
  </tr>
@@ -71,12 +71,17 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_920"></a>Speedify SDK for Desktop 9.2 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Desktop 9.3 </h2>
+<ul>
+<li>The Firewall API now supports filtering by IPv6: <a class="el" href="group___s_d_k.html#ga9e899db04b8916c430982f7ea5624b63">SpeedifySDK_SetFirewallIPv6</a>. ICMP and other protocols are now also blockable by domain and IP.</li>
+<li>The Local Proxy API now supports Domain Watchlists. Watchlists are lists of domains grouped by the service they represent, configurable via <a class="el" href="group___s_d_k.html#gac3a360edffb708b83a672c32af3b3ccc">SpeedifySDK_SetLocalProxyDomainWatchlist</a>. When an attempt to access a watched domain is seen, <a class="el" href="group___s_d_k.html#gacdf907ba9b0e167f7e54dd3cf3472f6a">SpeedifySDK_ListenForLocalProxyDomainWatchlistHit</a> is triggered. <a class="el" href="group___s_d_k.html#gab0775c2f20bcd8489c39beae53d3bf55">SpeedifySDK_SetLocalProxyDomainWatchlistEnable</a> can then be used to enable that service's domains to be sent through the local proxy instead of the VPN.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_920"></a>Speedify SDK for Desktop 9.2 </h2>
 <ul>
 <li>The Firewall API is used to block traffic over the VPN tunnel.<ul>
 <li><a class="el" href="group___s_d_k.html#gaaddc223507836782bd4ee69227cc2957">SpeedifySDK_SetFirewallMode</a></li>
 <li><a class="el" href="group___s_d_k.html#ga79ff08188b324083c7eaa629b8a2262f">SpeedifySDK_SetFirewallDomains</a></li>
-<li><a class="el" href="group___s_d_k.html#gab67ec00d591674c3c3fb2172280e5420">SpeedifySDK_SetFirewallIPv4</a></li>
+<li><a class="el" href="group___s_d_k.html#ga390a617169ed7c6e50a1eae482915b9a">SpeedifySDK_SetFirewallIPv4</a></li>
 <li><a class="el" href="group___s_d_k.html#ga53d1f6c87ba0ab9e6133258b87a0f0d7">SpeedifySDK_SetFirewallPorts</a></li>
 </ul>
 </li>
@@ -84,7 +89,7 @@ $(function() {
 <li><a class="el" href="group___s_d_k.html#ga1161a3b5eff93c2877ee3f873adbd9e4">SpeedifySDK_SetLocalProxyEnabled</a></li>
 <li><a class="el" href="group___s_d_k.html#ga6ef89cc596dbb5ba7d30e917f5a66461">SpeedifySDK_SetLocalProxyMatchMode</a></li>
 <li><a class="el" href="group___s_d_k.html#ga59c29093725b396e5052e02ef3f8c2a7">SpeedifySDK_SetLocalProxyDomains</a></li>
-<li><a class="el" href="group___s_d_k.html#gad2bb175d24f9087d8a8918591794f7c3">SpeedifySDK_SetLocalProxyIPv4</a></li>
+<li><a class="el" href="group___s_d_k.html#gaef3f39b63ff31b5adb5c9621bb6da4eb">SpeedifySDK_SetLocalProxyIPv4</a></li>
 </ul>
 </li>
 <li>Speedify SDK now provides <a class="el" href="group___s_d_k.html#gae846b9b87f5ee1905d7992bb816454d9">SpeedifySDK_SetLocalVendorSettings</a> for saving a custom JSON object for later consumption. </li>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.2.1</span>
+   &#160;<span id="projectnumber">9.3.0</span>
    </div>
   </td>
  </tr>
@@ -198,6 +198,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5957d64cb5aaa7bb295f05aa01e92b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa5957d64cb5aaa7bb295f05aa01e92b8">OnFirewallSettings</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html">FirewallSettings</a> settings)</td></tr>
 <tr class="memdesc:aa5957d64cb5aaa7bb295f05aa01e92b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Firewall settings update.  <a href="#aa5957d64cb5aaa7bb295f05aa01e92b8">More...</a><br /></td></tr>
 <tr class="separator:aa5957d64cb5aaa7bb295f05aa01e92b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea213bd554b177777942184dfb587f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aea213bd554b177777942184dfb587f90">OnLocalProxyDomainWatchlistHit</a> (String title)</td></tr>
+<tr class="memdesc:aea213bd554b177777942184dfb587f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a domain from a disabled localproxy domainwatchlist is detected.  <a href="#aea213bd554b177777942184dfb587f90">More...</a><br /></td></tr>
+<tr class="separator:aea213bd554b177777942184dfb587f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4892769037411666f998c44a39810b55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a> (List&lt; String &gt; networks)</td></tr>
+<tr class="memdesc:a4892769037411666f998c44a39810b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when captive portals are detected.  <a href="#a4892769037411666f998c44a39810b55">More...</a><br /></td></tr>
+<tr class="separator:a4892769037411666f998c44a39810b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af69068a631143a620a54082776e0cf47"></a>
@@ -421,6 +427,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4892769037411666f998c44a39810b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4892769037411666f998c44a39810b55">&#9670;&nbsp;</a></span>OnCaptivePortals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnCaptivePortals </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>networks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when captive portals are detected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">networks</td><td>networks on which a captive portal was detected </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a02ec7483ceb98a2b6509c45b73fd94d5">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
 <a id="a58bd66a2c3a3d4cc4fd97fb514035e62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58bd66a2c3a3d4cc4fd97fb514035e62">&#9670;&nbsp;</a></span>OnConnectedServer()</h2>
 
@@ -632,6 +667,35 @@ Public Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
 
 <p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad81ff616d4ec0d1e69acbe90b9475a93">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
+<a id="aea213bd554b177777942184dfb587f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea213bd554b177777942184dfb587f90">&#9670;&nbsp;</a></span>OnLocalProxyDomainWatchlistHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnLocalProxyDomainWatchlistHit </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>title</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a domain from a disabled localproxy domainwatchlist is detected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>title of the watchlist that was detected </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a724c9f8d97d9aef9447f8bcdbaa61b2b">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>

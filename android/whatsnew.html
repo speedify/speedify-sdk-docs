@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.2.1</span>
+   &#160;<span id="projectnumber">9.3.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,13 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_920"></a>Speedify SDK for Android 9.2 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Android 9.3 </h2>
+<ul>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a> callbacks when captive portals are detected.</li>
+<li>The Firewall API now supports filtering by IPv6: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a40a13663c1252cc145d6ef55248cb8ef">setFirewallIPv6</a>. ICMP and other protocols are now also blockable by domain and IP.</li>
+<li>The Local Proxy API now supports Domain Watchlists. Watchlists are lists of domains grouped by the service they represent, configurable via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1a4da4aa940649ebfdc7e744b2be7c8b">setLocalProxyDomainWatchlist</a>. When an attempt to access a watched domain is seen, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aea213bd554b177777942184dfb587f90">OnLocalProxyDomainWatchlistHit</a> is triggered. <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a834aa60247c7741c18d4484f58447551">setLocalProxyDomainWatchlistEnable</a> can then be used to enable that service's domains to be sent through the local proxy instead of the VPN.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_920"></a>Speedify SDK for Android 9.2 </h2>
 <ul>
 <li>The Firewall API is used to block traffic over the VPN tunnel.<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad3b41bbb9c2b079fde95351e6a1f6aa7">setFirewallMode</a></li>

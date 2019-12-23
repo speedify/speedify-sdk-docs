@@ -100,6 +100,9 @@
                 <a href="../Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -157,6 +160,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
@@ -737,6 +743,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">firewallSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC28localDomainWatchListDelegateAA0adefG0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localDomainWatchListDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC28localDomainWatchListDelegateAA0adefG0_pSgvp">localDomainWatchListDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">localDomainWatchListDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1685,6 +1718,65 @@ If already connected, this will disconnect before reconnecting.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setFirewallDomains</span><span class="p">(</span><span class="nv">domains</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC15setFirewallIPv64ipv6ySaySSG_tF"></a>
+                    <a name="//apple_ref/swift/Method/setFirewallIPv6(ipv6:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC15setFirewallIPv64ipv6ySaySSG_tF">setFirewallIPv6(ipv6:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set IPv6 address to firewall.
+@param ipv6 ipv6 addresses to block/whitelist
+@since future</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setFirewallIPv6</span><span class="p">(</span><span class="nv">ipv6</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC34setLocalProxyDomainWatchlistEnable5title7enabledySS_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/setLocalProxyDomainWatchlistEnable(title:enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC34setLocalProxyDomainWatchlistEnable5title7enabledySS_SbtF">setLocalProxyDomainWatchlistEnable(title:enabled:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set domain watchlist settings for the local proxy
+@param domainWatchlist domain watchlist items
+Triggers delegate localProxySettingsDidUpdate
+@since future</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setLocalProxyDomainWatchlistEnable</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3660,6 +3752,33 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">firewallSettings</span><span class="p">(</span><span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/FirewallSettings.html">FirewallSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC34localProxyDomainWatchListDidUpdate5titleySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/localProxyDomainWatchListDidUpdate(title:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC34localProxyDomainWatchListDidUpdate5titleySS_tF">localProxyDomainWatchListDidUpdate(title:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">localProxyDomainWatchListDidUpdate</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

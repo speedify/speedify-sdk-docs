@@ -3,6 +3,7 @@ var searchData=
   ['cellular',['CELLULAR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#afcd82c8270e8af0829077ea8820e1f63',1,'com::speedify::speedifysdk::Types::NetworkType']]],
   ['city',['city',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#aa5df93cffa7e788a5b2fc2266a4762f5',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['cleanupoldjavalog',['cleanupOldJavalog',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#af6e25ef8f1e3e8f5730856f0ddf3dd14',1,'com::speedify::speedifysdk::LogGeneration']]],
+  ['clear',['clear',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a555afbd48491f7372fd616c42c039150',1,'com::speedify::speedifysdk::NotificationHelper']]],
   ['closest',['CLOSEST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a7572c9e226ddc2e00dfe941f43c66ed3',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['closestprivate',['CLOSESTPRIVATE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#aa69f6626a96785de5ea2de1503feb742',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['closestpublic',['CLOSESTPUBLIC',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#ae1633f42a4026a6c69e9697beef202ad',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
