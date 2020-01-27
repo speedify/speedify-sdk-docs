@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,13 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Android 9.3 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_940"></a>Speedify SDK for Android 9.4 </h2>
+<ul>
+<li>Connect at boot is now supported via a <a class="el" href="onboot.html">boot handler</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0825a47f582698ee62cab30e5144f0b5">setStartupConnect</a>. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a17b2f00221a04792a6be29706ce41b8d">setConnectMethodAuto</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ae353b1e51ef960d4f4c71fbde24c28df">setConnectMethodCountry</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa23ded634cfc40ea6b2f3b8ae0366fb3">setConnectMethodCity</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa4f4c71935a54d407beaaa7a1a9bfeb5">setConnectMethodServer</a> to control how servers are chosen at boot.</li>
+<li>Killswitch functionality has been added to Speedify for Android. Enable the option via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6b8e54786ac67a0e6158f0d7dc9e09ad">setKillswitch</a> and implement a <a class="el" href="onboot.html">boot handler</a> to initialize the killswitch at device startup.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfe4ddbddf1e8ca62bb266eafc454b01">setEnableDefaultRoute</a> can be used to disable Speedify from obtaining the default route and handling all Internet traffic.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Android 9.3 </h2>
 <ul>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a> callbacks when captive portals are detected.</li>
 <li>The Firewall API now supports filtering by IPv6: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a40a13663c1252cc145d6ef55248cb8ef">setFirewallIPv6</a>. ICMP and other protocols are now also blockable by domain and IP.</li>

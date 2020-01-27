@@ -9,6 +9,7 @@ var searchData=
   ['getint',['getInt',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#add5963eaed61d77c05d80e002933f712',1,'com::speedify::speedifysdk::Preferences']]],
   ['getlogger',['getLogger',['../classcom_1_1speedify_1_1speedifysdk_1_1_logging.html#a9e16ff7f959d33e01e0f2d0340f7b363',1,'com::speedify::speedifysdk::Logging']]],
   ['getlong',['getLong',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#af2cb5751f676b2035599f20890b96621',1,'com::speedify::speedifysdk::Preferences']]],
+  ['getsdk',['getSDK',['../classcom_1_1speedify_1_1speedifysdk_1_1_startup_broadcast_receiver.html#aa241b566483d1c56bffee8d260b55558',1,'com::speedify::speedifysdk::StartupBroadcastReceiver']]],
   ['getstring',['getString',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#ae59e575871bd374680464f192224115f',1,'com::speedify::speedifysdk::Preferences']]],
   ['getuuid',['getUuid',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#af16f827b86116eb16308eefe25ed8849',1,'com::speedify::speedifysdk::UuidProvider']]]
 ];

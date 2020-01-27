@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,11 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Desktop 9.3 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_940"></a>Speedify SDK for Desktop 9.4 </h2>
+<ul>
+<li><a class="el" href="group___s_d_k.html#gaa403830371e20b79f16a9053b8ed336a">SpeedifySDK_SetEnableDefaultRoute</a> can be used to disable Speedify from obtaining the default route and handling all Internet traffic.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Desktop 9.3 </h2>
 <ul>
 <li>The Firewall API now supports filtering by IPv6: <a class="el" href="group___s_d_k.html#ga9e899db04b8916c430982f7ea5624b63">SpeedifySDK_SetFirewallIPv6</a>. ICMP and other protocols are now also blockable by domain and IP.</li>
 <li>The Local Proxy API now supports Domain Watchlists. Watchlists are lists of domains grouped by the service they represent, configurable via <a class="el" href="group___s_d_k.html#gac3a360edffb708b83a672c32af3b3ccc">SpeedifySDK_SetLocalProxyDomainWatchlist</a>. When an attempt to access a watched domain is seen, <a class="el" href="group___s_d_k.html#gacdf907ba9b0e167f7e54dd3cf3472f6a">SpeedifySDK_ListenForLocalProxyDomainWatchlistHit</a> is triggered. <a class="el" href="group___s_d_k.html#gab0775c2f20bcd8489c39beae53d3bf55">SpeedifySDK_SetLocalProxyDomainWatchlistEnable</a> can then be used to enable that service's domains to be sent through the local proxy instead of the VPN.</li>

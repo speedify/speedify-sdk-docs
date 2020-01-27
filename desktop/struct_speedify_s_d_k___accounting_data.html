@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -88,14 +88,26 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a666f62fee8b60bbba68a94a227f1fc6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this account is an automatically generated account.  <a href="#a666f62fee8b60bbba68a94a227f1fc6f">More...</a><br /></td></tr>
 <tr class="separator:a666f62fee8b60bbba68a94a227f1fc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a437ee6351d56b6c37f26e30c62f02905"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html#a437ee6351d56b6c37f26e30c62f02905">bytesAvailable</a></td></tr>
-<tr class="memdesc:a437ee6351d56b6c37f26e30c62f02905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes allowed per month for this account. -1 for unlimited.  <a href="#a437ee6351d56b6c37f26e30c62f02905">More...</a><br /></td></tr>
+<tr class="memdesc:a437ee6351d56b6c37f26e30c62f02905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes allowed per data period (typically a month) for this account. -1 for unlimited.  <a href="#a437ee6351d56b6c37f26e30c62f02905">More...</a><br /></td></tr>
 <tr class="separator:a437ee6351d56b6c37f26e30c62f02905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c7aebeda9df1b0c878ceda0ae0395b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html#a60c7aebeda9df1b0c878ceda0ae0395b">bytesUsed</a></td></tr>
-<tr class="memdesc:a60c7aebeda9df1b0c878ceda0ae0395b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes used this month for this account.  <a href="#a60c7aebeda9df1b0c878ceda0ae0395b">More...</a><br /></td></tr>
+<tr class="memdesc:a60c7aebeda9df1b0c878ceda0ae0395b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes used this data period (typically a month) for this account.  <a href="#a60c7aebeda9df1b0c878ceda0ae0395b">More...</a><br /></td></tr>
 <tr class="separator:a60c7aebeda9df1b0c878ceda0ae0395b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad508f0947e1cca3beb8ec4b231a98bed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html#ad508f0947e1cca3beb8ec4b231a98bed">isTeam</a></td></tr>
 <tr class="memdesc:ad508f0947e1cca3beb8ec4b231a98bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this user is a teams member.  <a href="#ad508f0947e1cca3beb8ec4b231a98bed">More...</a><br /></td></tr>
 <tr class="separator:ad508f0947e1cca3beb8ec4b231a98bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50bdde67f4a20477e0cacb914bf0259f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html#a50bdde67f4a20477e0cacb914bf0259f">minutesAvailable</a></td></tr>
+<tr class="memdesc:a50bdde67f4a20477e0cacb914bf0259f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minutes allowed per data period (typically a month) for this account. -1 for unlimited.  <a href="#a50bdde67f4a20477e0cacb914bf0259f">More...</a><br /></td></tr>
+<tr class="separator:a50bdde67f4a20477e0cacb914bf0259f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b67fbb73ad5d160cac9bee0ea158c8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html#ab5b67fbb73ad5d160cac9bee0ea158c8">minutesUsed</a></td></tr>
+<tr class="memdesc:ab5b67fbb73ad5d160cac9bee0ea158c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minutes used this data period (typically a month) for this account.  <a href="#ab5b67fbb73ad5d160cac9bee0ea158c8">More...</a><br /></td></tr>
+<tr class="separator:ab5b67fbb73ad5d160cac9bee0ea158c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037a294ba0e59d88ed9f72b660c2c957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#gafddea3bcdbce77ede80928a7fb218600">SpeedifySDK_AccountPaymentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html#a037a294ba0e59d88ed9f72b660c2c957">paymentType</a></td></tr>
+<tr class="memdesc:a037a294ba0e59d88ed9f72b660c2c957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payment status of this account.  <a href="#a037a294ba0e59d88ed9f72b660c2c957">More...</a><br /></td></tr>
+<tr class="separator:a037a294ba0e59d88ed9f72b660c2c957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f3074ed47bda09f418cd7ea8c022f4"><td class="memItemLeft" align="right" valign="top">struct tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html#a85f3074ed47bda09f418cd7ea8c022f4">dataPeriodEnd</a></td></tr>
+<tr class="memdesc:a85f3074ed47bda09f418cd7ea8c022f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the current data period ends.  <a href="#a85f3074ed47bda09f418cd7ea8c022f4">More...</a><br /></td></tr>
+<tr class="separator:a85f3074ed47bda09f418cd7ea8c022f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a437ee6351d56b6c37f26e30c62f02905"></a>
@@ -110,7 +122,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Bytes allowed per month for this account. -1 for unlimited. </p>
+<p>Bytes allowed per data period (typically a month) for this account. -1 for unlimited. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -127,8 +139,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Bytes used this month for this account. </p>
+<p>Bytes used this data period (typically a month) for this account. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a85f3074ed47bda09f418cd7ea8c022f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f3074ed47bda09f418cd7ea8c022f4">&#9670;&nbsp;</a></span>dataPeriodEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct tm SpeedifySDK_AccountingData::dataPeriodEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When the current data period ends. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
 
 </div>
 </div>
@@ -180,6 +209,57 @@ Data Fields</h2></td></tr>
 
 <p>If this user is a teams member. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a50bdde67f4a20477e0cacb914bf0259f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50bdde67f4a20477e0cacb914bf0259f">&#9670;&nbsp;</a></span>minutesAvailable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t SpeedifySDK_AccountingData::minutesAvailable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minutes allowed per data period (typically a month) for this account. -1 for unlimited. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
+
+</div>
+</div>
+<a id="ab5b67fbb73ad5d160cac9bee0ea158c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b67fbb73ad5d160cac9bee0ea158c8">&#9670;&nbsp;</a></span>minutesUsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t SpeedifySDK_AccountingData::minutesUsed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minutes used this data period (typically a month) for this account. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
+
+</div>
+</div>
+<a id="a037a294ba0e59d88ed9f72b660c2c957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037a294ba0e59d88ed9f72b660c2c957">&#9670;&nbsp;</a></span>paymentType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#gafddea3bcdbce77ede80928a7fb218600">SpeedifySDK_AccountPaymentType</a> SpeedifySDK_AccountingData::paymentType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Payment status of this account. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
 
 </div>
 </div>

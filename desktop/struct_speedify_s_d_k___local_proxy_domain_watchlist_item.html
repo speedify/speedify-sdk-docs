@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -87,48 +87,20 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a42f2cc4fbfdb77061ac9a1c92084ac19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a42f2cc4fbfdb77061ac9a1c92084ac19">enabled</a></td></tr>
 <tr class="memdesc:a42f2cc4fbfdb77061ac9a1c92084ac19"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the domains in this watchlist should be added to the local proxy filter.  <a href="#a42f2cc4fbfdb77061ac9a1c92084ac19">More...</a><br /></td></tr>
 <tr class="separator:a42f2cc4fbfdb77061ac9a1c92084ac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d02dea2ed50896d7c488adb74c51cc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a85d02dea2ed50896d7c488adb74c51cc">domainsCount</a></td></tr>
-<tr class="memdesc:a85d02dea2ed50896d7c488adb74c51cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of domains.  <a href="#a85d02dea2ed50896d7c488adb74c51cc">More...</a><br /></td></tr>
-<tr class="separator:a85d02dea2ed50896d7c488adb74c51cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40c1ffcba23a846f09906cdc560710e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#ab40c1ffcba23a846f09906cdc560710e">domains</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2d64077cd0cd2392ab72b66ede09e43e">SPEEDIFYSDK_MAX_WATCHLIST_DOMAINS</a>]</td></tr>
-<tr class="memdesc:ab40c1ffcba23a846f09906cdc560710e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domains of this watchlist item.  <a href="#ab40c1ffcba23a846f09906cdc560710e">More...</a><br /></td></tr>
-<tr class="separator:ab40c1ffcba23a846f09906cdc560710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c5aa8fefc902ea789c077ade79ac27"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#aa2c5aa8fefc902ea789c077ade79ac27">watchedDomainsCount</a></td></tr>
+<tr class="memdesc:aa2c5aa8fefc902ea789c077ade79ac27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of watched domains.  <a href="#aa2c5aa8fefc902ea789c077ade79ac27">More...</a><br /></td></tr>
+<tr class="separator:aa2c5aa8fefc902ea789c077ade79ac27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9a4c735991a5bfe382c11537160afd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#afa9a4c735991a5bfe382c11537160afd">watchedDomains</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2d64077cd0cd2392ab72b66ede09e43e">SPEEDIFYSDK_MAX_WATCHLIST_DOMAINS</a>]</td></tr>
+<tr class="memdesc:afa9a4c735991a5bfe382c11537160afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domains watched for.  <a href="#afa9a4c735991a5bfe382c11537160afd">More...</a><br /></td></tr>
+<tr class="separator:afa9a4c735991a5bfe382c11537160afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40edf488688d8722b958c22458c4e85e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a40edf488688d8722b958c22458c4e85e">proxiedDomainsCount</a></td></tr>
+<tr class="memdesc:a40edf488688d8722b958c22458c4e85e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of proxied domains.  <a href="#a40edf488688d8722b958c22458c4e85e">More...</a><br /></td></tr>
+<tr class="separator:a40edf488688d8722b958c22458c4e85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5ca97d98b997a7e5d1f7e34f0b40ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a2f5ca97d98b997a7e5d1f7e34f0b40ec">proxiedDomains</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2d64077cd0cd2392ab72b66ede09e43e">SPEEDIFYSDK_MAX_WATCHLIST_DOMAINS</a>]</td></tr>
+<tr class="memdesc:a2f5ca97d98b997a7e5d1f7e34f0b40ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domains proxied when enabled.  <a href="#a2f5ca97d98b997a7e5d1f7e34f0b40ec">More...</a><br /></td></tr>
+<tr class="separator:a2f5ca97d98b997a7e5d1f7e34f0b40ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="ab40c1ffcba23a846f09906cdc560710e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab40c1ffcba23a846f09906cdc560710e">&#9670;&nbsp;</a></span>domains</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a> SpeedifySDK_LocalProxyDomainWatchlistItem::domains[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2d64077cd0cd2392ab72b66ede09e43e">SPEEDIFYSDK_MAX_WATCHLIST_DOMAINS</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Domains of this watchlist item. </p>
-<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
-
-</div>
-</div>
-<a id="a85d02dea2ed50896d7c488adb74c51cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85d02dea2ed50896d7c488adb74c51cc">&#9670;&nbsp;</a></span>domainsCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t SpeedifySDK_LocalProxyDomainWatchlistItem::domainsCount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Number of domains. </p>
-<dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
-
-</div>
-</div>
 <a id="a42f2cc4fbfdb77061ac9a1c92084ac19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42f2cc4fbfdb77061ac9a1c92084ac19">&#9670;&nbsp;</a></span>enabled</h2>
 
@@ -146,6 +118,40 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a2f5ca97d98b997a7e5d1f7e34f0b40ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5ca97d98b997a7e5d1f7e34f0b40ec">&#9670;&nbsp;</a></span>proxiedDomains</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a> SpeedifySDK_LocalProxyDomainWatchlistItem::proxiedDomains[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2d64077cd0cd2392ab72b66ede09e43e">SPEEDIFYSDK_MAX_WATCHLIST_DOMAINS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Domains proxied when enabled. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
+
+</div>
+</div>
+<a id="a40edf488688d8722b958c22458c4e85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40edf488688d8722b958c22458c4e85e">&#9670;&nbsp;</a></span>proxiedDomainsCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SpeedifySDK_LocalProxyDomainWatchlistItem::proxiedDomainsCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of proxied domains. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
+
+</div>
+</div>
 <a id="a26b83d082b0d3cffb8d261639112ec18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26b83d082b0d3cffb8d261639112ec18">&#9670;&nbsp;</a></span>title</h2>
 
@@ -160,6 +166,40 @@ Data Fields</h2></td></tr>
 
 <p>Title of this watchlist item. </p>
 <dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+
+</div>
+</div>
+<a id="afa9a4c735991a5bfe382c11537160afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9a4c735991a5bfe382c11537160afd">&#9670;&nbsp;</a></span>watchedDomains</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a> SpeedifySDK_LocalProxyDomainWatchlistItem::watchedDomains[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2d64077cd0cd2392ab72b66ede09e43e">SPEEDIFYSDK_MAX_WATCHLIST_DOMAINS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Domains watched for. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
+
+</div>
+</div>
+<a id="aa2c5aa8fefc902ea789c077ade79ac27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c5aa8fefc902ea789c077ade79ac27">&#9670;&nbsp;</a></span>watchedDomainsCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SpeedifySDK_LocalProxyDomainWatchlistItem::watchedDomainsCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of watched domains. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
 
 </div>
 </div>

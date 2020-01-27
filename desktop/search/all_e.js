@@ -4,6 +4,7 @@ var searchData=
   ['packetsin',['packetsIn',['../struct_speedify_s_d_k___tun_stats.html#a44039e9f5ef3113c1d213704b658fcb4',1,'SpeedifySDK_TunStats::packetsIn()'],['../struct_speedify_s_d_k___handler_stats.html#ad84b15c082a9a9ebcb07834507cf058d',1,'SpeedifySDK_HandlerStats::packetsIn()']]],
   ['packetsout',['packetsOut',['../struct_speedify_s_d_k___tun_stats.html#a71325d64ee983838f66bd229592b2dee',1,'SpeedifySDK_TunStats::packetsOut()'],['../struct_speedify_s_d_k___handler_stats.html#aa23c39f7037c0032af11f5df1933b72d',1,'SpeedifySDK_HandlerStats::packetsOut()']]],
   ['packetwaits',['packetWaits',['../struct_speedify_s_d_k___tun_stats.html#af3bb24525b67e6e704de7f79fa3dd123',1,'SpeedifySDK_TunStats']]],
+  ['paymenttype',['paymentType',['../struct_speedify_s_d_k___accounting_data.html#a037a294ba0e59d88ed9f72b660c2c957',1,'SpeedifySDK_AccountingData']]],
   ['perconnectionencryptioncount',['perConnectionEncryptionCount',['../struct_speedify_s_d_k___settings.html#af3d360f7d0bd29d24aa55cf6f00c4f9a',1,'SpeedifySDK_Settings']]],
   ['perconnectionencryptionenabled',['perConnectionEncryptionEnabled',['../struct_speedify_s_d_k___settings.html#a16e63d3cc6675576f7a07c7d6482f978',1,'SpeedifySDK_Settings']]],
   ['perconnectionencryptionsettings',['perConnectionEncryptionSettings',['../struct_speedify_s_d_k___settings.html#a86934847771ded16202ca7dc6234b55a',1,'SpeedifySDK_Settings']]],
@@ -18,6 +19,8 @@ var searchData=
   ['privacysettings',['privacySettings',['../struct_speedify_s_d_k___privacy_settings_result.html#a972a47b9eb0e3df83842c4b9aac7bbfa',1,'SpeedifySDK_PrivacySettingsResult']]],
   ['privateip',['privateIp',['../struct_speedify_s_d_k___connection_stats.html#aa7d9396aa466f93861e6c051d62344fa',1,'SpeedifySDK_ConnectionStats']]],
   ['protocol',['protocol',['../struct_speedify_s_d_k___forwarded_port.html#aaed8c087c409542ca5e371d6cb8d7705',1,'SpeedifySDK_ForwardedPort::protocol()'],['../struct_speedify_s_d_k___connection_stats.html#afb8eb8d9465837008418f4462868267e',1,'SpeedifySDK_ConnectionStats::protocol()'],['../struct_speedify_s_d_k___firewall_port.html#a84216499288759ea2369a57068d2cd5a',1,'SpeedifySDK_FirewallPort::protocol()']]],
+  ['proxieddomains',['proxiedDomains',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a2f5ca97d98b997a7e5d1f7e34f0b40ec',1,'SpeedifySDK_LocalProxyDomainWatchlistItem']]],
+  ['proxieddomainscount',['proxiedDomainsCount',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a40edf488688d8722b958c22458c4e85e',1,'SpeedifySDK_LocalProxyDomainWatchlistItem']]],
   ['publicip',['publicIP',['../struct_speedify_s_d_k___server_information_detailed.html#a2fc65640d87b71788769e4480f6846cc',1,'SpeedifySDK_ServerInformationDetailed']]],
   ['publicipcount',['publicIPCount',['../struct_speedify_s_d_k___server_information_detailed.html#ae1d31b6007a584ea05861024c6c9af59',1,'SpeedifySDK_ServerInformationDetailed']]]
 ];

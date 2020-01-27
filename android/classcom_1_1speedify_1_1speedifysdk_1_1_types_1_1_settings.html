@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -87,6 +87,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a72aead37981ae9c9c8a79dca81ff0ca0"><td class="memItemLeft" align="right" valign="top">Types.BondingMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a72aead37981ae9c9c8a79dca81ff0ca0">bondingMode</a></td></tr>
 <tr class="memdesc:a72aead37981ae9c9c8a79dca81ff0ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current bonding mode.  <a href="#a72aead37981ae9c9c8a79dca81ff0ca0">More...</a><br /></td></tr>
 <tr class="separator:a72aead37981ae9c9c8a79dca81ff0ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8981f5a1e54eaced9b2a9c121d3fdbc7"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a8981f5a1e54eaced9b2a9c121d3fdbc7">enableDefaultRoute</a></td></tr>
+<tr class="memdesc:a8981f5a1e54eaced9b2a9c121d3fdbc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the default route goes over the VPN tunnel.  <a href="#a8981f5a1e54eaced9b2a9c121d3fdbc7">More...</a><br /></td></tr>
+<tr class="separator:a8981f5a1e54eaced9b2a9c121d3fdbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f14782468fc4e7f6c217c78872f3651"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html">IPRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a3f14782468fc4e7f6c217c78872f3651">excludedIPRanges</a></td></tr>
 <tr class="memdesc:a3f14782468fc4e7f6c217c78872f3651"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPv4 networks to be excluded from the VPN tunnel.  <a href="#a3f14782468fc4e7f6c217c78872f3651">More...</a><br /></td></tr>
 <tr class="separator:a3f14782468fc4e7f6c217c78872f3651"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +120,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a769e67fc0bc51bef03f3e45adcabb1dd"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_forwarded_port.html">ForwardedPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a769e67fc0bc51bef03f3e45adcabb1dd">forwardedPorts</a></td></tr>
 <tr class="memdesc:a769e67fc0bc51bef03f3e45adcabb1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ports to forward when connected to private servers.  <a href="#a769e67fc0bc51bef03f3e45adcabb1dd">More...</a><br /></td></tr>
 <tr class="separator:a769e67fc0bc51bef03f3e45adcabb1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6980d9cc9b8519b5cf6cd454a92937c7"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6980d9cc9b8519b5cf6cd454a92937c7">startupConnect</a></td></tr>
+<tr class="memdesc:a6980d9cc9b8519b5cf6cd454a92937c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">If Speedify will automatically connect when the device starts.  <a href="#a6980d9cc9b8519b5cf6cd454a92937c7">More...</a><br /></td></tr>
+<tr class="separator:a6980d9cc9b8519b5cf6cd454a92937c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9b0de0b5b035b6a199a3beccba290787"></a>
@@ -167,6 +173,23 @@ Public Attributes</h2></td></tr>
 
 <p>Whether the VPN will be disconnected when the application is swipe closed. </p>
 <dl class="section since"><dt>Since</dt><dd>7.0 </dd></dl>
+
+</div>
+</div>
+<a id="a8981f5a1e54eaced9b2a9c121d3fdbc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8981f5a1e54eaced9b2a9c121d3fdbc7">&#9670;&nbsp;</a></span>enableDefaultRoute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.speedify.speedifysdk.Types.Settings.enableDefaultRoute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the default route goes over the VPN tunnel. </p>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
 
 </div>
 </div>
@@ -286,6 +309,23 @@ Public Attributes</h2></td></tr>
 
 <p>Overflow threshold, in megabits per second. </p>
 <dl class="section since"><dt>Since</dt><dd>5.8 </dd></dl>
+
+</div>
+</div>
+<a id="a6980d9cc9b8519b5cf6cd454a92937c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6980d9cc9b8519b5cf6cd454a92937c7">&#9670;&nbsp;</a></span>startupConnect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.speedify.speedifysdk.Types.Settings.startupConnect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If Speedify will automatically connect when the device starts. </p>
+<p>Register a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_startup_broadcast_receiver.html">StartupBroadcastReceiver</a> to obtain on-boot functionality. </p><dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
 
 </div>
 </div>

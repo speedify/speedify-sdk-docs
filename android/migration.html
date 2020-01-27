@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,21 @@ $(function() {
 <div class="title">Migration Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="migrate_913_920"></a>Speedify SDK for Android 9.1.3 -&gt; 9.2 Migration </h2>
+<div class="textblock"><h2><a class="anchor" id="migrate_930_940"></a>Speedify SDK for Android 9.3 -&gt; 9.4 Migration </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html">LocalProxyDomainWatchlistItem</a><ul>
+<li>domains - The domains list has been split in to separate <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a3f1165e7dab2a32abd836ce639cbbb16">watchedDomains</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a1b7e6732ce780639a058ac4d94bd411e">proxiedDomains</a> lists.</li>
+</ul>
+</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a0b24608739cd7b73da628c2cea16c700">shareLogs</a><ul>
+<li>Now takes a fileName argument to control the name of the generated log zip file.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_913_920"></a>Speedify SDK for Android 9.1.3 -&gt; 9.2 Migration </h2>
 <ul>
 <li>The dependency on play-services-ads has been reduced in scope to play-services-ads-identifier, version 17.0.0.</li>
 <li>Deprecation removals - Longtime methods marked as Deprecated have been removed<ul>

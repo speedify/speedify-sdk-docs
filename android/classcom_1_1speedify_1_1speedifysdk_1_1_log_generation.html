@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -99,9 +99,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a681b133c26a5edbda731306d2eb987e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a681b133c26a5edbda731306d2eb987e5">shareLogs</a> (Activity activity)</td></tr>
 <tr class="memdesc:a681b133c26a5edbda731306d2eb987e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log zip using default messaging.  <a href="#a681b133c26a5edbda731306d2eb987e5">More...</a><br /></td></tr>
 <tr class="separator:a681b133c26a5edbda731306d2eb987e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ef1f79dd64baf8521220ac0d28d3aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a57ef1f79dd64baf8521220ac0d28d3aa">shareLogs</a> (Activity activity, String email, String subject, String body)</td></tr>
-<tr class="memdesc:a57ef1f79dd64baf8521220ac0d28d3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log zip using custom messaging.  <a href="#a57ef1f79dd64baf8521220ac0d28d3aa">More...</a><br /></td></tr>
-<tr class="separator:a57ef1f79dd64baf8521220ac0d28d3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b24608739cd7b73da628c2cea16c700"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a0b24608739cd7b73da628c2cea16c700">shareLogs</a> (Activity activity, String fileName, String email, String subject, String body)</td></tr>
+<tr class="memdesc:a0b24608739cd7b73da628c2cea16c700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log zip using custom messaging.  <a href="#a0b24608739cd7b73da628c2cea16c700">More...</a><br /></td></tr>
+<tr class="separator:a0b24608739cd7b73da628c2cea16c700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af6e25ef8f1e3e8f5730856f0ddf3dd14"></a>
@@ -174,8 +174,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a57ef1f79dd64baf8521220ac0d28d3aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57ef1f79dd64baf8521220ac0d28d3aa">&#9670;&nbsp;</a></span>shareLogs() <span class="overload">[2/2]</span></h2>
+<a id="a0b24608739cd7b73da628c2cea16c700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b24608739cd7b73da628c2cea16c700">&#9670;&nbsp;</a></span>shareLogs() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,6 +188,12 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">Activity&#160;</td>
           <td class="paramname"><em>activity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -224,6 +230,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">activity</td><td>activity used to launch the share dialog. Implement <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> to be notified on completion. </td></tr>
+    <tr><td class="paramname">fileName</td><td>the name of the zip file to create </td></tr>
     <tr><td class="paramname">email</td><td>email address to send to (for email sharing) </td></tr>
     <tr><td class="paramname">subject</td><td>subject string (for email sharing) </td></tr>
     <tr><td class="paramname">body</td><td>main message used in email or instant message bodies </td></tr>

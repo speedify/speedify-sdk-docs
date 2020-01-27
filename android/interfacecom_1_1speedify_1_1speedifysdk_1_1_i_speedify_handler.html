@@ -14,7 +14,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
+<link href="css/rawline.css" rel="stylesheet">
 <link rel="shortcut icon" href="logo.png" />
 <link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.3.0</span>
+   &#160;<span id="projectnumber">9.4.0</span>
    </div>
   </td>
  </tr>
@@ -93,9 +93,9 @@ Inheritance diagram for com.speedify.speedifysdk.ISpeedifyHandler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3cdb2823fd270b6a3d81ba4afccf5f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa3cdb2823fd270b6a3d81ba4afccf5f1">UpdateForegroundNotification</a> (Service service, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> state, String serverName)</td></tr>
-<tr class="memdesc:aa3cdb2823fd270b6a3d81ba4afccf5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to show a notification of the service state.  <a href="#aa3cdb2823fd270b6a3d81ba4afccf5f1">More...</a><br /></td></tr>
-<tr class="separator:aa3cdb2823fd270b6a3d81ba4afccf5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf48e22446e1d7aed179198bc01b5d1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aaf48e22446e1d7aed179198bc01b5d1e">UpdateForegroundNotification</a> (Service service, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> state, String serverName, boolean killswitchActive)</td></tr>
+<tr class="memdesc:aaf48e22446e1d7aed179198bc01b5d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to show a notification of the service state.  <a href="#aaf48e22446e1d7aed179198bc01b5d1e">More...</a><br /></td></tr>
+<tr class="separator:aaf48e22446e1d7aed179198bc01b5d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69068a631143a620a54082776e0cf47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#af69068a631143a620a54082776e0cf47">HideForegroundNotification</a> (Service service)</td></tr>
 <tr class="memdesc:af69068a631143a620a54082776e0cf47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service task is removed.  <a href="#af69068a631143a620a54082776e0cf47">More...</a><br /></td></tr>
 <tr class="separator:af69068a631143a620a54082776e0cf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +204,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4892769037411666f998c44a39810b55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a> (List&lt; String &gt; networks)</td></tr>
 <tr class="memdesc:a4892769037411666f998c44a39810b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when captive portals are detected.  <a href="#a4892769037411666f998c44a39810b55">More...</a><br /></td></tr>
 <tr class="separator:a4892769037411666f998c44a39810b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bdfd1f95de45946b160f6fec477712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a22bdfd1f95de45946b160f6fec477712">OnServerSettings</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html">ServerSettings</a> settings)</td></tr>
+<tr class="memdesc:a22bdfd1f95de45946b160f6fec477712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server settings update.  <a href="#a22bdfd1f95de45946b160f6fec477712">More...</a><br /></td></tr>
+<tr class="separator:a22bdfd1f95de45946b160f6fec477712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af69068a631143a620a54082776e0cf47"></a>
@@ -993,6 +996,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a22bdfd1f95de45946b160f6fec477712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22bdfd1f95de45946b160f6fec477712">&#9670;&nbsp;</a></span>OnServerSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnServerSettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html">ServerSettings</a>&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Server settings update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>current server settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.4 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a21d122914b3a6cd3cedede5c4e3a6906">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
 <a id="a4a1991034f1d1b979ef5053d1e44f567"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a1991034f1d1b979ef5053d1e44f567">&#9670;&nbsp;</a></span>OnServiceCreate()</h2>
 
@@ -1312,8 +1344,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa3cdb2823fd270b6a3d81ba4afccf5f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3cdb2823fd270b6a3d81ba4afccf5f1">&#9670;&nbsp;</a></span>UpdateForegroundNotification()</h2>
+<a id="aaf48e22446e1d7aed179198bc01b5d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf48e22446e1d7aed179198bc01b5d1e">&#9670;&nbsp;</a></span>UpdateForegroundNotification()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1334,7 +1366,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>serverName</em>&#160;</td>
+          <td class="paramname"><em>serverName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>killswitchActive</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1350,12 +1388,13 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">service</td><td>Reference to the vpn service </td></tr>
     <tr><td class="paramname">state</td><td>Current state </td></tr>
     <tr><td class="paramname">serverName</td><td>Name of current server connected to </td></tr>
+    <tr><td class="paramname">killswitchActive</td><td>if killswitch setting is on </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
 
-<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a38e93d979c962ab0957e44ad5f74fb6f">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8c963b5e0a24b7989d3cbde64c034258">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>
