@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.4.0</span>
+   &#160;<span id="projectnumber">9.5.0</span>
    </div>
   </td>
  </tr>
@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Statistics for this or all sessions. </p>
+<div class="textblock"><p>Statistics for a period. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 </div>
 <p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
@@ -82,38 +82,56 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a000b7c957583e7f5eeacf1cfd274697d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a000b7c957583e7f5eeacf1cfd274697d">bytesReceived</a></td></tr>
-<tr class="memdesc:a000b7c957583e7f5eeacf1cfd274697d"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes received this session  <a href="#a000b7c957583e7f5eeacf1cfd274697d">More...</a><br /></td></tr>
+<tr class="memdesc:a000b7c957583e7f5eeacf1cfd274697d"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes received this period  <a href="#a000b7c957583e7f5eeacf1cfd274697d">More...</a><br /></td></tr>
 <tr class="separator:a000b7c957583e7f5eeacf1cfd274697d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0d6ebb7b951cb15edb6b2c775842ac"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a4d0d6ebb7b951cb15edb6b2c775842ac">bytesSent</a></td></tr>
-<tr class="memdesc:a4d0d6ebb7b951cb15edb6b2c775842ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes sent this session  <a href="#a4d0d6ebb7b951cb15edb6b2c775842ac">More...</a><br /></td></tr>
+<tr class="memdesc:a4d0d6ebb7b951cb15edb6b2c775842ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes sent this period  <a href="#a4d0d6ebb7b951cb15edb6b2c775842ac">More...</a><br /></td></tr>
 <tr class="separator:a4d0d6ebb7b951cb15edb6b2c775842ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2b27fa6683a8273013fec58ec0c12d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a0d2b27fa6683a8273013fec58ec0c12d">encryptedBytesReceived</a></td></tr>
+<tr class="memdesc:a0d2b27fa6683a8273013fec58ec0c12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">encrypted bytes received this period  <a href="#a0d2b27fa6683a8273013fec58ec0c12d">More...</a><br /></td></tr>
+<tr class="separator:a0d2b27fa6683a8273013fec58ec0c12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad209e2e78dc4efee57d60509bf296d26"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#ad209e2e78dc4efee57d60509bf296d26">encryptedBytesSent</a></td></tr>
+<tr class="memdesc:ad209e2e78dc4efee57d60509bf296d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">encrypted bytes sent this period  <a href="#ad209e2e78dc4efee57d60509bf296d26">More...</a><br /></td></tr>
+<tr class="separator:ad209e2e78dc4efee57d60509bf296d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ca5a760f9abf13955f574775d9de19"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#ac5ca5a760f9abf13955f574775d9de19">maxDownloadSpeed</a></td></tr>
+<tr class="memdesc:ac5ca5a760f9abf13955f574775d9de19"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum download speed this period, megabits per second  <a href="#ac5ca5a760f9abf13955f574775d9de19">More...</a><br /></td></tr>
+<tr class="separator:ac5ca5a760f9abf13955f574775d9de19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec3442a9569aac5c75d7e417c12b217"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a3ec3442a9569aac5c75d7e417c12b217">maxUploadSpeed</a></td></tr>
+<tr class="memdesc:a3ec3442a9569aac5c75d7e417c12b217"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum upload speed this period, megabits per second  <a href="#a3ec3442a9569aac5c75d7e417c12b217">More...</a><br /></td></tr>
+<tr class="separator:a3ec3442a9569aac5c75d7e417c12b217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2899d03bed1f76a24823c8740956444b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a2899d03bed1f76a24823c8740956444b">daysSinceFirst</a></td></tr>
 <tr class="memdesc:a2899d03bed1f76a24823c8740956444b"><td class="mdescLeft">&#160;</td><td class="mdescRight">days since first connection  <a href="#a2899d03bed1f76a24823c8740956444b">More...</a><br /></td></tr>
 <tr class="separator:a2899d03bed1f76a24823c8740956444b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32d601edf3c73d7bf6a02257ce6e0655"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a32d601edf3c73d7bf6a02257ce6e0655">numFailovers</a></td></tr>
-<tr class="memdesc:a32d601edf3c73d7bf6a02257ce6e0655"><td class="mdescLeft">&#160;</td><td class="mdescRight">connection failovers, lifetime  <a href="#a32d601edf3c73d7bf6a02257ce6e0655">More...</a><br /></td></tr>
+<tr class="memdesc:a32d601edf3c73d7bf6a02257ce6e0655"><td class="mdescLeft">&#160;</td><td class="mdescRight">connection failovers this period  <a href="#a32d601edf3c73d7bf6a02257ce6e0655">More...</a><br /></td></tr>
 <tr class="separator:a32d601edf3c73d7bf6a02257ce6e0655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af059fab204996be56429665c67a5af2c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#af059fab204996be56429665c67a5af2c">numSessions</a></td></tr>
-<tr class="memdesc:af059fab204996be56429665c67a5af2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">total number of sessions, lifetime  <a href="#af059fab204996be56429665c67a5af2c">More...</a><br /></td></tr>
+<tr class="memdesc:af059fab204996be56429665c67a5af2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">total number of sessions this period  <a href="#af059fab204996be56429665c67a5af2c">More...</a><br /></td></tr>
 <tr class="separator:af059fab204996be56429665c67a5af2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c8fc02d608cfff810d4250a1fb12578"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578">retransBytes</a></td></tr>
-<tr class="memdesc:a6c8fc02d608cfff810d4250a1fb12578"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes retransmitted, lifetime  <a href="#a6c8fc02d608cfff810d4250a1fb12578">More...</a><br /></td></tr>
+<tr class="memdesc:a6c8fc02d608cfff810d4250a1fb12578"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes retransmitted this period  <a href="#a6c8fc02d608cfff810d4250a1fb12578">More...</a><br /></td></tr>
 <tr class="separator:a6c8fc02d608cfff810d4250a1fb12578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4262b790823298e578c0b16ed5c857"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a7a4262b790823298e578c0b16ed5c857">periodStartTime</a></td></tr>
+<tr class="memdesc:a7a4262b790823298e578c0b16ed5c857"><td class="mdescLeft">&#160;</td><td class="mdescRight">start time of this period, in seconds since epoch  <a href="#a7a4262b790823298e578c0b16ed5c857">More...</a><br /></td></tr>
+<tr class="separator:a7a4262b790823298e578c0b16ed5c857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66371088fe0e6f2ea1a13a72b543d61d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a66371088fe0e6f2ea1a13a72b543d61d">totalConnectedMinutes</a></td></tr>
-<tr class="memdesc:a66371088fe0e6f2ea1a13a72b543d61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">minutes connected, lifetime  <a href="#a66371088fe0e6f2ea1a13a72b543d61d">More...</a><br /></td></tr>
+<tr class="memdesc:a66371088fe0e6f2ea1a13a72b543d61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">minutes connected, this period  <a href="#a66371088fe0e6f2ea1a13a72b543d61d">More...</a><br /></td></tr>
 <tr class="separator:a66371088fe0e6f2ea1a13a72b543d61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26387ca76def5f40542d3707c1998f0d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a26387ca76def5f40542d3707c1998f0d">mbpsDownBenefit</a></td></tr>
-<tr class="memdesc:a26387ca76def5f40542d3707c1998f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">extra download bandwidth acheived  <a href="#a26387ca76def5f40542d3707c1998f0d">More...</a><br /></td></tr>
+<tr class="memdesc:a26387ca76def5f40542d3707c1998f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">extra download bandwidth acheived this period  <a href="#a26387ca76def5f40542d3707c1998f0d">More...</a><br /></td></tr>
 <tr class="separator:a26387ca76def5f40542d3707c1998f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae582ad4c7561409b528846e51236a4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#aae582ad4c7561409b528846e51236a4b">mbpsUpBenefit</a></td></tr>
-<tr class="memdesc:aae582ad4c7561409b528846e51236a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">extra upload bandwidth acheived  <a href="#aae582ad4c7561409b528846e51236a4b">More...</a><br /></td></tr>
+<tr class="memdesc:aae582ad4c7561409b528846e51236a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">extra upload bandwidth acheived this period  <a href="#aae582ad4c7561409b528846e51236a4b">More...</a><br /></td></tr>
 <tr class="separator:aae582ad4c7561409b528846e51236a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428c79a93ec260f524e7a759f646a3af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___tun_stats.html">SpeedifySDK_TunStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a428c79a93ec260f524e7a759f646a3af">tunStats</a></td></tr>
-<tr class="memdesc:a428c79a93ec260f524e7a759f646a3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding the TUN.  <a href="#a428c79a93ec260f524e7a759f646a3af">More...</a><br /></td></tr>
+<tr class="memdesc:a428c79a93ec260f524e7a759f646a3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding the TUN this period.  <a href="#a428c79a93ec260f524e7a759f646a3af">More...</a><br /></td></tr>
 <tr class="separator:a428c79a93ec260f524e7a759f646a3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f6bf435be3544316abb8bc645586b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___handler_stats.html">SpeedifySDK_HandlerStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a29f6bf435be3544316abb8bc645586b2">handlerStats</a></td></tr>
-<tr class="memdesc:a29f6bf435be3544316abb8bc645586b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding the packet handler.  <a href="#a29f6bf435be3544316abb8bc645586b2">More...</a><br /></td></tr>
+<tr class="memdesc:a29f6bf435be3544316abb8bc645586b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding the packet handler this period.  <a href="#a29f6bf435be3544316abb8bc645586b2">More...</a><br /></td></tr>
 <tr class="separator:a29f6bf435be3544316abb8bc645586b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922e6c3932b867cd507a6830774660f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___captive_portal_stats.html">SpeedifySDK_CaptivePortalStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html#a922e6c3932b867cd507a6830774660f5">captivePortalStats</a></td></tr>
+<tr class="memdesc:a922e6c3932b867cd507a6830774660f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding captive portals this period.  <a href="#a922e6c3932b867cd507a6830774660f5">More...</a><br /></td></tr>
+<tr class="separator:a922e6c3932b867cd507a6830774660f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a000b7c957583e7f5eeacf1cfd274697d"></a>
@@ -128,7 +146,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>bytes received this session </p>
+<p>bytes received this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -145,8 +163,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>bytes sent this session </p>
+<p>bytes sent this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a922e6c3932b867cd507a6830774660f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922e6c3932b867cd507a6830774660f5">&#9670;&nbsp;</a></span>captivePortalStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___captive_portal_stats.html">SpeedifySDK_CaptivePortalStats</a> SpeedifySDK_SessionStats::captivePortalStats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contains stats regarding captive portals this period. </p>
+<dl class="section since"><dt>Since</dt><dd>9.5 </dd></dl>
 
 </div>
 </div>
@@ -167,6 +202,40 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a0d2b27fa6683a8273013fec58ec0c12d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d2b27fa6683a8273013fec58ec0c12d">&#9670;&nbsp;</a></span>encryptedBytesReceived</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t SpeedifySDK_SessionStats::encryptedBytesReceived</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>encrypted bytes received this period </p>
+<dl class="section since"><dt>Since</dt><dd>9.5 </dd></dl>
+
+</div>
+</div>
+<a id="ad209e2e78dc4efee57d60509bf296d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad209e2e78dc4efee57d60509bf296d26">&#9670;&nbsp;</a></span>encryptedBytesSent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t SpeedifySDK_SessionStats::encryptedBytesSent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>encrypted bytes sent this period </p>
+<dl class="section since"><dt>Since</dt><dd>9.5 </dd></dl>
+
+</div>
+</div>
 <a id="a29f6bf435be3544316abb8bc645586b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29f6bf435be3544316abb8bc645586b2">&#9670;&nbsp;</a></span>handlerStats</h2>
 
@@ -179,8 +248,42 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Contains stats regarding the packet handler. </p>
+<p>Contains stats regarding the packet handler this period. </p>
 <dl class="section since"><dt>Since</dt><dd>8.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac5ca5a760f9abf13955f574775d9de19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ca5a760f9abf13955f574775d9de19">&#9670;&nbsp;</a></span>maxDownloadSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SpeedifySDK_SessionStats::maxDownloadSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>maximum download speed this period, megabits per second </p>
+<dl class="section since"><dt>Since</dt><dd>9.5 </dd></dl>
+
+</div>
+</div>
+<a id="a3ec3442a9569aac5c75d7e417c12b217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec3442a9569aac5c75d7e417c12b217">&#9670;&nbsp;</a></span>maxUploadSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SpeedifySDK_SessionStats::maxUploadSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>maximum upload speed this period, megabits per second </p>
+<dl class="section since"><dt>Since</dt><dd>9.5 </dd></dl>
 
 </div>
 </div>
@@ -196,7 +299,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>extra download bandwidth acheived </p>
+<p>extra download bandwidth acheived this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -213,7 +316,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>extra upload bandwidth acheived </p>
+<p>extra upload bandwidth acheived this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -230,7 +333,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>connection failovers, lifetime </p>
+<p>connection failovers this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -247,8 +350,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>total number of sessions, lifetime </p>
+<p>total number of sessions this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a7a4262b790823298e578c0b16ed5c857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4262b790823298e578c0b16ed5c857">&#9670;&nbsp;</a></span>periodStartTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t SpeedifySDK_SessionStats::periodStartTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>start time of this period, in seconds since epoch </p>
+<dl class="section since"><dt>Since</dt><dd>9.5 </dd></dl>
 
 </div>
 </div>
@@ -264,7 +384,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>bytes retransmitted, lifetime </p>
+<p>bytes retransmitted this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -281,7 +401,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>minutes connected, lifetime </p>
+<p>minutes connected, this period </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -298,7 +418,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Contains stats regarding the TUN. </p>
+<p>Contains stats regarding the TUN this period. </p>
 <dl class="section since"><dt>Since</dt><dd>8.0 </dd></dl>
 
 </div>

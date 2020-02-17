@@ -14,6 +14,7 @@ var searchData=
   ['refreshnonvpnapplications',['refreshNonVPNApplications',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a47269635f9513a9e23f694b9e3284330',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshprivacy',['refreshPrivacy',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad9df57534a030dc309a05742f680c09b',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshremotevendorsettings',['refreshRemoteVendorSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9f8af9a33020849e603d31aa3e93a865',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['refreshsessionstats',['refreshSessionStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab56221d14ff2a4ba8e9115ad3fe5ad8f',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshsettings',['refreshSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#af17aa25ca7694e58f5d290ca26ca96fe',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshstate',['refreshState',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aae351208c272f3384015b8407e121163',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['register',['register',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#aa47608c6031c230549ea26084862ce46',1,'com::speedify::speedifysdk::LocalBroadcastHelper']]],

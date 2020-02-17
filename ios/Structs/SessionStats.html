@@ -14,7 +14,7 @@
     <a title="SessionStats Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (78% documented)</p>
+        <p><a href="../index.html"> Docs</a> (79% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -115,6 +115,9 @@
                 <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -139,6 +142,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CaptivePortalStats.html">CaptivePortalStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
@@ -172,6 +178,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStatsPeriod.html">SessionStatsPeriod</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Settings.html">Settings</a>
@@ -215,7 +224,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Bytes received this session.</p>
+                        <p>Bytes received this period.</p>
 
                       </div>
                       <div class="declaration">
@@ -242,7 +251,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Bytes sent this session.</p>
+                        <p>Bytes sent this period.</p>
 
                       </div>
                       <div class="declaration">
@@ -250,6 +259,118 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bytesSent</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK12SessionStatsV22encryptedBytesReceiveds5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/encryptedBytesReceived" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK12SessionStatsV22encryptedBytesReceiveds5Int64Vvp">encryptedBytesReceived</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>encrypted bytes received this period
+@since 9.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">encryptedBytesReceived</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK12SessionStatsV18encryptedBytesSents5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/encryptedBytesSent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK12SessionStatsV18encryptedBytesSents5Int64Vvp">encryptedBytesSent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>encrypted bytes sent this period
+@since 9.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">encryptedBytesSent</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK12SessionStatsV16maxDownloadSpeedSdvp"></a>
+                    <a name="//apple_ref/swift/Property/maxDownloadSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK12SessionStatsV16maxDownloadSpeedSdvp">maxDownloadSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>maximum download speed this period, megabits per second
+@since 9.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maxDownloadSpeed</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK12SessionStatsV14maxUploadSpeedSdvp"></a>
+                    <a name="//apple_ref/swift/Property/maxUploadSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK12SessionStatsV14maxUploadSpeedSdvp">maxUploadSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>maximum upload speed this period, megabits per second
+@since 9.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maxUploadSpeed</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -350,7 +471,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Connection failovers, lifetime.</p>
+                        <p>Connection failovers this period.</p>
 
                       </div>
                       <div class="declaration">
@@ -377,7 +498,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Total number of sessions, lifetime.</p>
+                        <p>Total number of sessions this period.</p>
 
                       </div>
                       <div class="declaration">
@@ -404,7 +525,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Bytes retransmitted, lifetime.</p>
+                        <p>Bytes retransmitted this period.</p>
 
                       </div>
                       <div class="declaration">
@@ -412,6 +533,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">retransBytes</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK12SessionStatsV15periodStartTimes5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/periodStartTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK12SessionStatsV15periodStartTimes5Int64Vvp">periodStartTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>start time of this period, in seconds since epoch
+@since 9.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">periodStartTime</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -431,7 +580,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Minutes connected, lifetime.</p>
+                        <p>Minutes connected this period.</p>
 
                       </div>
                       <div class="declaration">
@@ -458,7 +607,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>\brief Contains stats regarding the TUN</p>
+                        <p>\brief Contains stats regarding the TUN this period.</p>
 
 <ul>
 <li>@since 8.0</li>
@@ -489,7 +638,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>\brief Contains stats regarding the packet handler</p>
+                        <p>\brief Contains stats regarding the packet handler this period.</p>
 
 <ul>
 <li>@since 8.0</li>
@@ -501,6 +650,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">handlerStats</span><span class="p">:</span> <span class="kt"><a href="../Structs/HandlerStats.html">HandlerStats</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDK12SessionStatsV013captivePortalD0AA07CaptivefD0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/captivePortalStats" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK12SessionStatsV013captivePortalD0AA07CaptivefD0Vvp">captivePortalStats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains stats regarding captive portals this period
+@since 9.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">captivePortalStats</span><span class="p">:</span> <span class="kt"><a href="../Structs/CaptivePortalStats.html">CaptivePortalStats</a></span></code></pre>
 
                         </div>
                       </div>

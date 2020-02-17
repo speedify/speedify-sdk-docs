@@ -6,6 +6,7 @@ var searchData=
   ['packetsout',['packetsOut',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a90e768c686f0a826e1c4a30f5cb6a5f3',1,'com.speedify.speedifysdk.Types.TunStats.packetsOut()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#a4b30fb2a77ce4e5d472a3c909183ec33',1,'com.speedify.speedifysdk.Types.HandlerStats.packetsOut()']]],
   ['packetwaits',['packetWaits',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a7a1e869fe251a31114fa02b743b4a123',1,'com::speedify::speedifysdk::Types::TunStats']]],
   ['paymenttype',['paymentType',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a506adad72e4a2a42d149d152bc4add9a',1,'com::speedify::speedifysdk::Types::AccountingData']]],
+  ['periodstarttime',['periodStartTime',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#aad6ecf2b3b0648e5b2fb11a3442a3384',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['pooledbroadcastreceiver',['PooledBroadcastReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html',1,'com::speedify::speedifysdk']]],
   ['pooledbroadcastreceiver_2ejava',['PooledBroadcastReceiver.java',['../_pooled_broadcast_receiver_8java.html',1,'']]],
   ['pooledexecutor',['PooledExecutor',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html',1,'com::speedify::speedifysdk']]],

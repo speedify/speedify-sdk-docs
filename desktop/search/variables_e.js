@@ -8,6 +8,7 @@ var searchData=
   ['perconnectionencryptioncount',['perConnectionEncryptionCount',['../struct_speedify_s_d_k___settings.html#af3d360f7d0bd29d24aa55cf6f00c4f9a',1,'SpeedifySDK_Settings']]],
   ['perconnectionencryptionenabled',['perConnectionEncryptionEnabled',['../struct_speedify_s_d_k___settings.html#a16e63d3cc6675576f7a07c7d6482f978',1,'SpeedifySDK_Settings']]],
   ['perconnectionencryptionsettings',['perConnectionEncryptionSettings',['../struct_speedify_s_d_k___settings.html#a86934847771ded16202ca7dc6234b55a',1,'SpeedifySDK_Settings']]],
+  ['periodstarttime',['periodStartTime',['../struct_speedify_s_d_k___session_stats.html#a7a4262b790823298e578c0b16ed5c857',1,'SpeedifySDK_SessionStats']]],
   ['port',['port',['../struct_speedify_s_d_k___forwarded_port.html#a6855fc6a8af481d29d372dc6b4043ec6',1,'SpeedifySDK_ForwardedPort::port()'],['../struct_speedify_s_d_k___firewall_port.html#a0c1d14d1dff00112d8f21b08236ea50e',1,'SpeedifySDK_FirewallPort::port()']]],
   ['ports',['ports',['../struct_speedify_s_d_k___firewall_settings.html#adb0afcaf760bea8a51cc97d6661eee81',1,'SpeedifySDK_FirewallSettings']]],
   ['portscount',['portsCount',['../struct_speedify_s_d_k___settings.html#a7f7497ebe6f0e7a0aa6e05a46566d527',1,'SpeedifySDK_Settings::portsCount()'],['../struct_speedify_s_d_k___firewall_settings.html#a1b1952b5e96b94887f70fc8d01ec7b3a',1,'SpeedifySDK_FirewallSettings::portsCount()']]],

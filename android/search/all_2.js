@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['captiveportalstats',['CaptivePortalStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_captive_portal_stats.html',1,'com.speedify.speedifysdk.Types.CaptivePortalStats'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#af704d752d7cbe5c3d852ad1b14a55a61',1,'com.speedify.speedifysdk.Types.SessionStats.captivePortalStats()']]],
   ['cellular',['CELLULAR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#afcd82c8270e8af0829077ea8820e1f63',1,'com::speedify::speedifysdk::Types::NetworkType']]],
   ['city',['city',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#aa5df93cffa7e788a5b2fc2266a4762f5',1,'com.speedify.speedifysdk.Types.ServerInformation.city()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html#a3c6defd0dc971370dfc85624d5bf49d9',1,'com.speedify.speedifysdk.Types.ServerSettings.city()']]],
   ['cleanupoldjavalog',['cleanupOldJavalog',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#af6e25ef8f1e3e8f5730856f0ddf3dd14',1,'com::speedify::speedifysdk::LogGeneration']]],
@@ -32,6 +33,7 @@ var searchData=
   ['createbackgroundactivitynotification',['createBackgroundActivityNotification',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#aad1ee5572af52b23be5a0efec4ddacf7',1,'com::speedify::speedifysdk::NotificationHelper']]],
   ['createnotification',['createNotification',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#afa01c0f579d38b63a8e8c8f04a459a06',1,'com.speedify.speedifysdk.NotificationHelper.createNotification(Context context, String notificationChannel, int notificationId, String title)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a2ceeb92a828c1557542908b420101550',1,'com.speedify.speedifysdk.NotificationHelper.createNotification(Context context, String notificationChannel, int notificationId, String title, String message)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#aa882acd2f362c47b983816a2253806da',1,'com.speedify.speedifysdk.NotificationHelper.createNotification(Context context, String notificationChannel, int notificationId, String title, String message, String subtext)']]],
   ['credential',['CREDENTIAL',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a4ca83a3aeaea352742b831c3f93bdefc',1,'com::speedify::speedifysdk::Types::ErrorType']]],
+  ['current',['current',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#af73824184ca3e35b04d49513a709a267',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],
   ['speedify',['speedify',['../namespacecom_1_1speedify.html',1,'com']]],
   ['speedifysdk',['speedifysdk',['../namespacecom_1_1speedify_1_1speedifysdk.html',1,'com::speedify']]]
 ];

@@ -14,7 +14,7 @@
     <a title="SpeedifySDK Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (78% documented)</p>
+        <p><a href="../index.html"> Docs</a> (79% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -115,6 +115,9 @@
                 <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -139,6 +142,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CaptivePortalStats.html">CaptivePortalStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
@@ -172,6 +178,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStatsPeriod.html">SessionStatsPeriod</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Settings.html">Settings</a>
@@ -563,9 +572,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDKAAC20sessionStatsDelegateAA0a7SessiondE0_pSgvp"></a>
-                    <a name="//apple_ref/swift/Property/sessionStatsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDKAAC20sessionStatsDelegateAA0a7SessiondE0_pSgvp">sessionStatsDelegate</a>
+                    <a name="/s:11SpeedifySDKAAC26sessionStatsPeriodDelegateAA0a7SessionedF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sessionStatsPeriodDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC26sessionStatsPeriodDelegateAA0a7SessionedF0_pSgvp">sessionStatsPeriodDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -580,7 +589,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sessionStatsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sessionStatsPeriodDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1366,7 +1375,8 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getDirectory</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Please use the resetDirectoryDomain(﹚ function instead"</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">getDirectory</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1968,7 +1978,8 @@ Triggers delegate localProxySettingsDidUpdate
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changeDirectoryURL</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Please use the setDirectoryDomain(domain﹚ function instead"</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">changeDirectoryURL</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3173,9 +3184,9 @@ Triggers <code>privacySettingsDidUpdate</code></p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDKAAC21sessionStatsDidUpdate5statsyAA07SessionD0V_tF"></a>
+                    <a name="/s:11SpeedifySDKAAC21sessionStatsDidUpdate5statsySDySSypG_tF"></a>
                     <a name="//apple_ref/swift/Method/sessionStatsDidUpdate(stats:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDKAAC21sessionStatsDidUpdate5statsyAA07SessionD0V_tF">sessionStatsDidUpdate(stats:)</a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC21sessionStatsDidUpdate5statsySDySSypG_tF">sessionStatsDidUpdate(stats:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3183,14 +3194,14 @@ Triggers <code>privacySettingsDidUpdate</code></p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Allows developers to access developer options.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sessionStatsDidUpdate</span><span class="p">(</span><span class="nv">stats</span><span class="p">:</span> <span class="kt"><a href="../Structs/SessionStats.html">SessionStats</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sessionStatsDidUpdate</span><span class="p">(</span><span class="nv">stats</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3316,6 +3327,34 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">accountCreate</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC19requestSessionStatsyyF"></a>
+                    <a name="//apple_ref/swift/Method/requestSessionStats()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC19requestSessionStatsyyF">requestSessionStats()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request new session statss
+@since 9.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">requestSessionStats</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

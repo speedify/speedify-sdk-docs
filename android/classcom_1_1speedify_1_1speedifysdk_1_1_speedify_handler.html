@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.4.0</span>
+   &#160;<span id="projectnumber">9.5.0</span>
    </div>
   </td>
  </tr>
@@ -145,8 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adbf41a3afd77b8933be0ce7a9e6cf991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Historic tunnel stats update.  <a href="#adbf41a3afd77b8933be0ce7a9e6cf991">More...</a><br /></td></tr>
 <tr class="separator:adbf41a3afd77b8933be0ce7a9e6cf991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb91549ef7ecbdf3b696c3a0b3ef19e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0cb91549ef7ecbdf3b696c3a0b3ef19e">OnSessionStats</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html">SessionStats</a> stats)</td></tr>
-<tr class="memdesc:a0cb91549ef7ecbdf3b696c3a0b3ef19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session stats update.  <a href="#a0cb91549ef7ecbdf3b696c3a0b3ef19e">More...</a><br /></td></tr>
 <tr class="separator:a0cb91549ef7ecbdf3b696c3a0b3ef19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268b350f619b5bbde7b27c46f7868e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a268b350f619b5bbde7b27c46f7868e12">OnSessionStats</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html">SessionStatPeriods</a> stats)</td></tr>
+<tr class="memdesc:a268b350f619b5bbde7b27c46f7868e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session stats update.  <a href="#a268b350f619b5bbde7b27c46f7868e12">More...</a><br /></td></tr>
+<tr class="separator:a268b350f619b5bbde7b27c46f7868e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed01db667447cc835ba547324ddcdf48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aed01db667447cc835ba547324ddcdf48">OnNewAdapter</a> (String adapterID, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> type)</td></tr>
 <tr class="memdesc:aed01db667447cc835ba547324ddcdf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification for the first time seeing a new adapter.  <a href="#aed01db667447cc835ba547324ddcdf48">More...</a><br /></td></tr>
 <tr class="separator:aed01db667447cc835ba547324ddcdf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1208,7 +1210,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0cb91549ef7ecbdf3b696c3a0b3ef19e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cb91549ef7ecbdf3b696c3a0b3ef19e">&#9670;&nbsp;</a></span>OnSessionStats()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb91549ef7ecbdf3b696c3a0b3ef19e">&#9670;&nbsp;</a></span>OnSessionStats() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1223,16 +1225,34 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a268b350f619b5bbde7b27c46f7868e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268b350f619b5bbde7b27c46f7868e12">&#9670;&nbsp;</a></span>OnSessionStats() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnSessionStats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html">SessionStatPeriods</a>&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Session stats update. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stats</td><td>session stats </td></tr>
+    <tr><td class="paramname">stats</td><td>session stat periods object </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>9.5 </dd></dl>
 
-<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9d589a5e73b122eaf7e1de0bdc1b12eb">com.speedify.speedifysdk.ISpeedifyHandler</a>.</p>
+<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">com.speedify.speedifysdk.ISpeedifyHandler</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['captiveportalstats',['captivePortalStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#af704d752d7cbe5c3d852ad1b14a55a61',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['cellular',['CELLULAR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#afcd82c8270e8af0829077ea8820e1f63',1,'com::speedify::speedifysdk::Types::NetworkType']]],
   ['city',['city',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#aa5df93cffa7e788a5b2fc2266a4762f5',1,'com.speedify.speedifysdk.Types.ServerInformation.city()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html#a3c6defd0dc971370dfc85624d5bf49d9',1,'com.speedify.speedifysdk.Types.ServerSettings.city()']]],
   ['closest',['CLOSEST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a7572c9e226ddc2e00dfe941f43c66ed3',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
@@ -18,5 +19,6 @@ var searchData=
   ['countrycityserver',['COUNTRYCITYSERVER',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#aad95c25ee581458350ee98c598c6fdb0',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['crashlyticsintegrationenabled',['CrashlyticsIntegrationEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a686d2ac8699e429abc96bd831581520d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['crashreports',['crashReports',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a04351369bc30e907f7d43e6f8519c5e0',1,'com::speedify::speedifysdk::Types::PrivacySettings']]],
-  ['credential',['CREDENTIAL',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a4ca83a3aeaea352742b831c3f93bdefc',1,'com::speedify::speedifysdk::Types::ErrorType']]]
+  ['credential',['CREDENTIAL',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a4ca83a3aeaea352742b831c3f93bdefc',1,'com::speedify::speedifysdk::Types::ErrorType']]],
+  ['current',['current',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#af73824184ca3e35b04d49513a709a267',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]]
 ];
