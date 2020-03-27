@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.5.0</span>
+   &#160;<span id="projectnumber">9.6.0</span>
    </div>
   </td>
  </tr>
@@ -261,7 +261,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change encryption settings per connection.  <a href="group___s_d_k.html#gaf93f8c2a4b02c9f1eac82e688706afb5">More...</a><br /></td></tr>
 <tr class="separator:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9248dbadb01305a0fc84ccef8f23a6a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">SpeedifySDK_EnableConnectionStatUpdates</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled)</td></tr>
-<tr class="memdesc:ga9248dbadb01305a0fc84ccef8f23a6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats and adapter list updates to be sent while Speedify is connected.  <a href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">More...</a><br /></td></tr>
+<tr class="memdesc:ga9248dbadb01305a0fc84ccef8f23a6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">More...</a><br /></td></tr>
 <tr class="separator:ga9248dbadb01305a0fc84ccef8f23a6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d2730f06e342dcae86b5f19c2153b5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___connection_stats_result.html">SpeedifySDK_ConnectionStatsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga0d2730f06e342dcae86b5f19c2153b5a">SpeedifySDK_GetConnectionStats</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3b8001d47483ba0bf5a1d1259bb2306b">SpeedifySDK_ConnectionStatsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga0d2730f06e342dcae86b5f19c2153b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stats on current connections to the Speedify server.  <a href="group___s_d_k.html#ga0d2730f06e342dcae86b5f19c2153b5a">More...</a><br /></td></tr>
@@ -273,6 +273,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga028e4b1c52cb2520d2bd77fc791b8272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get session stats.<br />
 Supports Subscription.  <a href="group___s_d_k.html#ga028e4b1c52cb2520d2bd77fc791b8272">More...</a><br /></td></tr>
 <tr class="separator:ga028e4b1c52cb2520d2bd77fc791b8272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7725452fee63dcd3fcba2947e0f861d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___streaming_stats_result.html">SpeedifySDK_StreamingStatsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga7725452fee63dcd3fcba2947e0f861d5">SpeedifySDK_GetStreamingStats</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga08eb785469df319e496f63fbe9295a79">SpeedifySDK_StreamingStatsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga7725452fee63dcd3fcba2947e0f861d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get streaming stats.<br />
+Supports Subscription.  <a href="group___s_d_k.html#ga7725452fee63dcd3fcba2947e0f861d5">More...</a><br /></td></tr>
+<tr class="separator:ga7725452fee63dcd3fcba2947e0f861d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9686e1e528f9bb6d12ea41576e525bbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___new_adapter_result.html">SpeedifySDK_NewAdapterResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga9686e1e528f9bb6d12ea41576e525bbc">SpeedifySDK_ListenForNewAdapter</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gad989bd091e8dc02da49c39745e6d5e8f">SpeedifySDK_NewAdapterCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga9686e1e528f9bb6d12ea41576e525bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive messages when a new adapter is connected.  <a href="group___s_d_k.html#ga9686e1e528f9bb6d12ea41576e525bbc">More...</a><br /></td></tr>
 <tr class="separator:ga9686e1e528f9bb6d12ea41576e525bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>

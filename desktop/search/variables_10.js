@@ -8,10 +8,14 @@ var searchData=
   ['settings',['settings',['../struct_speedify_s_d_k___settings_result.html#a8e51651fe0d2b1eb0556604510112c9a',1,'SpeedifySDK_SettingsResult']]],
   ['settingsjson',['settingsJson',['../struct_speedify_s_d_k___vendor_settings_result.html#ab0b8af602adba4ad42d9f38386411667',1,'SpeedifySDK_VendorSettingsResult']]],
   ['sleeping',['sleeping',['../struct_speedify_s_d_k___connection_stats.html#a85465e681022a375efd1d0da63088cee',1,'SpeedifySDK_ConnectionStats']]],
+  ['starttime',['startTime',['../struct_speedify_s_d_k___stream_stats.html#a3d6ff70ca5fdf973ad195ee72f0e7e2a',1,'SpeedifySDK_StreamStats']]],
   ['startupconnect',['startupConnect',['../struct_speedify_s_d_k___settings.html#a85977be4a6178041250de9b4caa5fd78',1,'SpeedifySDK_Settings']]],
   ['state',['state',['../struct_speedify_s_d_k___state_result.html#aa6c44da9ff974f19dfd367dc45cc230f',1,'SpeedifySDK_StateResult::state()'],['../struct_speedify_s_d_k___adapter_data.html#a061925e0039b8065bfc742ec248a8888',1,'SpeedifySDK_AdapterData::state()']]],
   ['status',['status',['../struct_speedify_s_d_k___speed_test_report.html#a654a00c8abf3e08fc8429c4be4ebaeec',1,'SpeedifySDK_SpeedTestReport']]],
   ['step',['step',['../struct_speedify_s_d_k___speed_test_connection_result.html#aebe5ffa645dee6f60fccb15066f7b74c',1,'SpeedifySDK_SpeedTestConnectionResult']]],
   ['stepprogress',['stepProgress',['../struct_speedify_s_d_k___speed_test_connection_result.html#af0f85a60b1f32df015fc50f5b61cd6e1',1,'SpeedifySDK_SpeedTestConnectionResult']]],
+  ['streamingstats',['streamingStats',['../struct_speedify_s_d_k___streaming_stats_result.html#a1be876e4455257508afec22c81f9faa5',1,'SpeedifySDK_StreamingStatsResult']]],
+  ['streams',['streams',['../struct_speedify_s_d_k___streaming_stats.html#afb0bc30b39167440d9e9c456f232294b',1,'SpeedifySDK_StreamingStats']]],
+  ['streamscount',['streamsCount',['../struct_speedify_s_d_k___streaming_stats.html#ab1c3760393f2f0d46b91c61d6fc615ed',1,'SpeedifySDK_StreamingStats']]],
   ['successes',['successes',['../struct_speedify_s_d_k___captive_portal_stats.html#a7780edc67c8539a52e38b75d968d1397',1,'SpeedifySDK_CaptivePortalStats']]]
 ];

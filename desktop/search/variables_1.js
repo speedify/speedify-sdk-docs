@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['bondingmode',['bondingMode',['../struct_speedify_s_d_k___settings.html#af34245c012ae56719b7043d5b28d78a2',1,'SpeedifySDK_Settings']]],
+  ['bondingmode',['bondingMode',['../struct_speedify_s_d_k___settings.html#af34245c012ae56719b7043d5b28d78a2',1,'SpeedifySDK_Settings::bondingMode()'],['../struct_speedify_s_d_k___streaming_stats.html#a56c18f371dd778e3e8a16bdc4cda712c',1,'SpeedifySDK_StreamingStats::bondingMode()']]],
   ['bufferwaits',['bufferWaits',['../struct_speedify_s_d_k___tun_stats.html#a7344909eecf766fb10222fb7e4e37b11',1,'SpeedifySDK_TunStats']]],
   ['bugfix',['bugfix',['../struct_speedify_s_d_k___version.html#acc185ed419011f89f30c1dd241316089',1,'SpeedifySDK_Version']]],
   ['build',['build',['../struct_speedify_s_d_k___version.html#a7015b24b64aaa972bab007849ad78abd',1,'SpeedifySDK_Version']]],

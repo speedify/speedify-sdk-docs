@@ -19,5 +19,6 @@ var searchData=
   ['domainwatchlistitems',['domainWatchlistItems',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a4d2b0be401ee211bb1d74bee06a369ea',1,'com::speedify::speedifysdk::Types::LocalProxySettings']]],
   ['download',['DOWNLOAD',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_step.html#a7505b6e34448560b9d1db25c967d6bca',1,'com::speedify::speedifysdk::Types::SpeedTestStep']]],
   ['downloadbps',['downloadBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#aa6865bbf6bf8361ca41ef9506b4bcd13',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
-  ['droppedincoming',['droppedIncoming',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a5c409d304819b51b5241786f66bf21f7',1,'com::speedify::speedifysdk::Types::TunStats']]]
+  ['droppedincoming',['droppedIncoming',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a5c409d304819b51b5241786f66bf21f7',1,'com::speedify::speedifysdk::Types::TunStats']]],
+  ['duration',['duration',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#abd9ff4dfc13f4093686ef70e5b50161b',1,'com::speedify::speedifysdk::Types::StreamStats']]]
 ];

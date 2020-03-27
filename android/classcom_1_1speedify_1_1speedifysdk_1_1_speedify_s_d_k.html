@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.5.0</span>
+   &#160;<span id="projectnumber">9.6.0</span>
    </div>
   </td>
  </tr>
@@ -186,6 +186,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab56221d14ff2a4ba8e9115ad3fe5ad8f"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab56221d14ff2a4ba8e9115ad3fe5ad8f">refreshSessionStats</a> ()</td></tr>
 <tr class="memdesc:ab56221d14ff2a4ba8e9115ad3fe5ad8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes session stats.  <a href="#ab56221d14ff2a4ba8e9115ad3fe5ad8f">More...</a><br /></td></tr>
 <tr class="separator:ab56221d14ff2a4ba8e9115ad3fe5ad8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccb948f7d4f12dcf440546a60705a67"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7ccb948f7d4f12dcf440546a60705a67">refreshStreamingStats</a> ()</td></tr>
+<tr class="memdesc:a7ccb948f7d4f12dcf440546a60705a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes streaming stats.  <a href="#a7ccb948f7d4f12dcf440546a60705a67">More...</a><br /></td></tr>
+<tr class="separator:a7ccb948f7d4f12dcf440546a60705a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d926e0a8bb87cddc5421abfb87c381"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7d926e0a8bb87cddc5421abfb87c381">refreshDirectory</a> ()</td></tr>
 <tr class="memdesc:ab7d926e0a8bb87cddc5421abfb87c381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh a list of available servers from the directory list.  <a href="#ab7d926e0a8bb87cddc5421abfb87c381">More...</a><br /></td></tr>
 <tr class="separator:ab7d926e0a8bb87cddc5421abfb87c381"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -937,7 +940,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables connection stat updates once a second. </p>
-<p>Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a57e78a7c48fb21de1d336c376278330a">OnConnectionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8dfeea141111ebdb89dd9c0dad58eb87">OnAdaptersList</a> once every 30 seconds while connected. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a57e78a7c48fb21de1d336c376278330a">OnConnectionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8dfeea141111ebdb89dd9c0dad58eb87">OnAdaptersList</a> once every 30 seconds while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">OnSessionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#abb8ec8f1ac9dad71cca05b4f5bb5ca8f">OnStreamingStats</a> once per second while connected. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">enabled</td><td>if connection stat updates should be continuously received </td></tr>
   </table>
@@ -1770,6 +1773,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7ccb948f7d4f12dcf440546a60705a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccb948f7d4f12dcf440546a60705a67">&#9670;&nbsp;</a></span>refreshStreamingStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.refreshStreamingStats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refreshes streaming stats. </p>
+<p>Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#abb8ec8f1ac9dad71cca05b4f5bb5ca8f">OnStreamingStats</a>. </p><dl class="section since"><dt>Since</dt><dd>9.6 </dd></dl>
+
+</div>
+</div>
 <a id="acc02af08c21eb0e0c9b485c843e2c5e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc02af08c21eb0e0c9b485c843e2c5e3">&#9670;&nbsp;</a></span>resetAdapterUsage()</h2>
 
@@ -2487,7 +2510,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set whether the default private IP ranges are excluded from going over the VPN tunnel. </p>
-<p>This range includes: 224.0.0.0/4, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 This only has effect if <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a8981f5a1e54eaced9b2a9c121d3fdbc7">enableDefaultRoute</a> is true. If connected, this triggers a reconnect. Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a48a12dc47f67eb9dd96a32df0fda24ef">OnSettings</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This range includes: 224.0.0.0/4, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a48a12dc47f67eb9dd96a32df0fda24ef">OnSettings</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">exclude</td><td>if default private IP ranges are excluded </td></tr>
   </table>

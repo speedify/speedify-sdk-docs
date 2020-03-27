@@ -26,6 +26,7 @@ var searchData=
   ['speedifysdk_5fsettingscallback',['SpeedifySDK_SettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70',1,'callbacks.h']]],
   ['speedifysdk_5fspeedtestcallback',['SpeedifySDK_SpeedtestCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga3e5bd201bce4c1ac3c2cc051fc286880',1,'callbacks.h']]],
   ['speedifysdk_5fstatecallback',['SpeedifySDK_StateCallback',['../group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160',1,'callbacks.h']]],
+  ['speedifysdk_5fstreamingstatscallback',['SpeedifySDK_StreamingStatsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga08eb785469df319e496f63fbe9295a79',1,'callbacks.h']]],
   ['speedifysdk_5ftorrentcallback',['SpeedifySDK_TorrentCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga039a065c52636679930a66a7fbfb7653',1,'callbacks.h']]],
   ['speedifysdk_5fvendorsettingscallback',['SpeedifySDK_VendorSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga7815bfd1565eb312cb9322dd42ef3bfa',1,'callbacks.h']]],
   ['speedifysdk_5fversioncallback',['SpeedifySDK_VersionCallback',['../group___c_a_l_l_b_a_c_k_s.html#gafd2d6b994d4af5038136d4d93e72e1c5',1,'callbacks.h']]]

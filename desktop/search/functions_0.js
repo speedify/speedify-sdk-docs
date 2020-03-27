@@ -41,6 +41,7 @@ var searchData=
   ['speedifysdk_5fgetsessionstats',['SpeedifySDK_GetSessionStats',['../group___s_d_k.html#ga028e4b1c52cb2520d2bd77fc791b8272',1,'speedifysdk.h']]],
   ['speedifysdk_5fgetsettings',['SpeedifySDK_GetSettings',['../group___s_d_k.html#ga82f7eeb294efff1c92f3080ab278637b',1,'speedifysdk.h']]],
   ['speedifysdk_5fgetstate',['SpeedifySDK_GetState',['../group___s_d_k.html#ga3eff41c5c8ea39183d623a0a7d5572b9',1,'speedifysdk.h']]],
+  ['speedifysdk_5fgetstreamingstats',['SpeedifySDK_GetStreamingStats',['../group___s_d_k.html#ga7725452fee63dcd3fcba2947e0f861d5',1,'speedifysdk.h']]],
   ['speedifysdk_5fgetversion',['SpeedifySDK_GetVersion',['../group___s_d_k.html#gada880fc0cc4cc1d3ea9aa067f1a59e0d',1,'speedifysdk.h']]],
   ['speedifysdk_5fhandleadapteroverlimit',['SpeedifySDK_HandleAdapterOverlimit',['../group___s_d_k.html#gab86ad5af4242d95e2fa97148f2821961',1,'speedifysdk.h']]],
   ['speedifysdk_5fhandlenewadapter',['SpeedifySDK_HandleNewAdapter',['../group___s_d_k.html#ga962144e235008d2d6934934a42ea7dcd',1,'speedifysdk.h']]],

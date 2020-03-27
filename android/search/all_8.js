@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['id',['id',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ae357a0f1aff6c9a64e5239fb03dd1e54',1,'com::speedify::speedifysdk::Types::StreamStats']]],
   ['ilogcompletecallback',['ILogCompleteCallback',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html',1,'com::speedify::speedifysdk::LogGeneration']]],
   ['introduction_20to_20the_20speedify_20sdk_20for_20android',['Introduction to the Speedify SDK for Android',['../index.html',1,'']]],
   ['inflight',['inFlight',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a4cecf6e26f1b888599f00e991d41fd0d',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
@@ -13,7 +14,7 @@ var searchData=
   ['ipv4',['ipv4',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a39c2166bdb16e5e2cc0a70427e9a37c9',1,'com.speedify.speedifysdk.Types.LocalProxySettings.ipv4()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#abda3993d0d67c4eb69bf8964ddce2fe4',1,'com.speedify.speedifysdk.Types.FirewallSettings.ipv4()']]],
   ['ipv6',['ipv6',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#a75192ed9f5cdbc1fa4bd5daf7a01248a',1,'com::speedify::speedifysdk::Types::FirewallSettings']]],
   ['isautoaccount',['isAutoAccount',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a2d4cab8504ccd416d1e17901653361c1',1,'com::speedify::speedifysdk::Types::AccountingData']]],
-  ['isbackgroundprocess',['isBackgroundProcess',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ace03b8046df79e2dd341c32f4d498020',1,'com.speedify.speedifysdk.SpeedifySDK.isBackgroundProcess()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4e50b099b15178340662f43c55ed5fa5',1,'com.speedify.speedifysdk.SpeedifySDK.IsBackgroundProcess(Application application)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#afaedc4a7bd0b876239cd6b49f00730b1',1,'com.speedify.speedifysdk.SpeedifySDK.IsBackgroundProcess(Context context)']]],
+  ['isbackgroundprocess',['IsBackgroundProcess',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4e50b099b15178340662f43c55ed5fa5',1,'com.speedify.speedifysdk.SpeedifySDK.IsBackgroundProcess(Application application)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#afaedc4a7bd0b876239cd6b49f00730b1',1,'com.speedify.speedifysdk.SpeedifySDK.IsBackgroundProcess(Context context)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ace03b8046df79e2dd341c32f4d498020',1,'com.speedify.speedifysdk.SpeedifySDK.isBackgroundProcess()']]],
   ['ispeedifyhandler',['ISpeedifyHandler',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html',1,'com::speedify::speedifysdk']]],
   ['ispeedifyhandler_2ejava',['ISpeedifyHandler.java',['../_i_speedify_handler_8java.html',1,'']]],
   ['isprivate',['isPrivate',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af95cbcc9eab26731861344fa2e66ef82',1,'com::speedify::speedifysdk::Types::ServerInformation']]],

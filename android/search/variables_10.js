@@ -7,10 +7,13 @@ var searchData=
   ['sleeping',['sleeping',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a2e5edb6ad04b04b7b546a67b9b739654',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['speed',['SPEED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#aac2e459261ac5a2ed6875a6ad095c3d3',1,'com::speedify::speedifysdk::Types::BondingMode']]],
   ['speedtest',['SPEEDTEST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a9785f3aae943288e3fc3c59c66917505',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
+  ['starttime',['startTime',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ae1ad42a14f41a73d701d64c36596d495',1,'com::speedify::speedifysdk::Types::StreamStats']]],
   ['startupconnect',['startupConnect',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6980d9cc9b8519b5cf6cd454a92937c7',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['state',['state',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a32a1c06be95208485f169fe3366d5d8d',1,'com::speedify::speedifysdk::Types::AdapterData']]],
   ['status',['status',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_results.html#adf4c29241f422c304576ab7463ddcc5f',1,'com::speedify::speedifysdk::Types::SpeedTestResults']]],
   ['step',['step',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a41a238918bb7ed523f2d543e6f668cbb',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
   ['stepprogress',['stepProgress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a0928c74b8ea6cce987e4baf356378560',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
+  ['streaming',['STREAMING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a18b205d3113d83c8e6d30e8e32bf91f0',1,'com::speedify::speedifysdk::Types::BondingMode']]],
+  ['streams',['streams',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a518476f2a6e0c0e4a434c5b3b204db27',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
   ['successes',['successes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_captive_portal_stats.html#a51ed8c41ef413dffc1e0ab6c73270ab2',1,'com::speedify::speedifysdk::Types::CaptivePortalStats']]]
 ];
