@@ -1,21 +1,12 @@
 var searchData=
 [
-  ['sendbps',['sendBps',['../struct_speedify_s_d_k___connection_stats.html#ad1520c0d71d80d219635d448a3744ce5',1,'SpeedifySDK_ConnectionStats']]],
-  ['sendestimatembps',['sendEstimateMbps',['../struct_speedify_s_d_k___connection_stats.html#a67a651f635d792f069ec334ef6028a82',1,'SpeedifySDK_ConnectionStats']]],
-  ['servers',['servers',['../struct_speedify_s_d_k___directory_result.html#acd93cecc4693a03288aaee44987af94d',1,'SpeedifySDK_DirectoryResult']]],
-  ['serversettings',['serverSettings',['../struct_speedify_s_d_k___server_settings_result.html#a6c7242e97a427403e1f3c7bfb67d6364',1,'SpeedifySDK_ServerSettingsResult']]],
-  ['sessionstats',['sessionStats',['../struct_speedify_s_d_k___session_stats_result.html#a6636df7425ecb1309161706c147d9119',1,'SpeedifySDK_SessionStatsResult']]],
-  ['settings',['settings',['../struct_speedify_s_d_k___settings_result.html#a8e51651fe0d2b1eb0556604510112c9a',1,'SpeedifySDK_SettingsResult']]],
-  ['settingsjson',['settingsJson',['../struct_speedify_s_d_k___vendor_settings_result.html#ab0b8af602adba4ad42d9f38386411667',1,'SpeedifySDK_VendorSettingsResult']]],
-  ['sleeping',['sleeping',['../struct_speedify_s_d_k___connection_stats.html#a85465e681022a375efd1d0da63088cee',1,'SpeedifySDK_ConnectionStats']]],
-  ['starttime',['startTime',['../struct_speedify_s_d_k___stream_stats.html#a3d6ff70ca5fdf973ad195ee72f0e7e2a',1,'SpeedifySDK_StreamStats']]],
-  ['startupconnect',['startupConnect',['../struct_speedify_s_d_k___settings.html#a85977be4a6178041250de9b4caa5fd78',1,'SpeedifySDK_Settings']]],
-  ['state',['state',['../struct_speedify_s_d_k___state_result.html#aa6c44da9ff974f19dfd367dc45cc230f',1,'SpeedifySDK_StateResult::state()'],['../struct_speedify_s_d_k___adapter_data.html#a061925e0039b8065bfc742ec248a8888',1,'SpeedifySDK_AdapterData::state()']]],
-  ['status',['status',['../struct_speedify_s_d_k___speed_test_report.html#a654a00c8abf3e08fc8429c4be4ebaeec',1,'SpeedifySDK_SpeedTestReport']]],
-  ['step',['step',['../struct_speedify_s_d_k___speed_test_connection_result.html#aebe5ffa645dee6f60fccb15066f7b74c',1,'SpeedifySDK_SpeedTestConnectionResult']]],
-  ['stepprogress',['stepProgress',['../struct_speedify_s_d_k___speed_test_connection_result.html#af0f85a60b1f32df015fc50f5b61cd6e1',1,'SpeedifySDK_SpeedTestConnectionResult']]],
-  ['streamingstats',['streamingStats',['../struct_speedify_s_d_k___streaming_stats_result.html#a1be876e4455257508afec22c81f9faa5',1,'SpeedifySDK_StreamingStatsResult']]],
-  ['streams',['streams',['../struct_speedify_s_d_k___streaming_stats.html#afb0bc30b39167440d9e9c456f232294b',1,'SpeedifySDK_StreamingStats']]],
-  ['streamscount',['streamsCount',['../struct_speedify_s_d_k___streaming_stats.html#ab1c3760393f2f0d46b91c61d6fc615ed',1,'SpeedifySDK_StreamingStats']]],
-  ['successes',['successes',['../struct_speedify_s_d_k___captive_portal_stats.html#a7780edc67c8539a52e38b75d968d1397',1,'SpeedifySDK_CaptivePortalStats']]]
+  ['ratelimit',['rateLimit',['../struct_speedify_s_d_k___adapter_data.html#a37006399cd50b16ec7a08cc513f40a41',1,'SpeedifySDK_AdapterData']]],
+  ['readqueue',['readQueue',['../struct_speedify_s_d_k___tun_stats.html#a792a753054e428cff72709cf912cfd82',1,'SpeedifySDK_TunStats']]],
+  ['receivebps',['receiveBps',['../struct_speedify_s_d_k___connection_stats.html#ae9751732c3d0094a1c102fb6875bf94f',1,'SpeedifySDK_ConnectionStats']]],
+  ['receiveestimatembps',['receiveEstimateMbps',['../struct_speedify_s_d_k___connection_stats.html#ac607ae60efde70a0e6703098991845da',1,'SpeedifySDK_ConnectionStats']]],
+  ['redundantmodesaves',['redundantModeSaves',['../struct_speedify_s_d_k___stream_stats.html#acbb8d7ee60dcff367912d9edc3168cc9',1,'SpeedifySDK_StreamStats']]],
+  ['remoteip',['remoteIp',['../struct_speedify_s_d_k___connection_stats.html#a6f7ae1268215eb0516cb2c6340fe0d2f',1,'SpeedifySDK_ConnectionStats']]],
+  ['retransbytes',['retransBytes',['../struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578',1,'SpeedifySDK_SessionStats']]],
+  ['retries',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]],
+  ['rttms',['rttMs',['../struct_speedify_s_d_k___speed_test_connection_result.html#aa556b6f1d80541bc4e176956d0494344',1,'SpeedifySDK_SpeedTestConnectionResult']]]
 ];

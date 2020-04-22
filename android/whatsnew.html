@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.7.0</span>
+   &#160;<span id="projectnumber">9.8.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,29 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_970"></a>Speedify SDK for Android 9.7 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_980"></a>Speedify SDK for Android 9.8 </h2>
+<ul>
+<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html">StreamingStats</a> fields:<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a2344512fe8ae366ee384d2760dfeed57">totalRedundantModeSaves</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a276ff6e4aa14ba6df3d37ac06bc126b1">totalSpeedModeSaves</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#ab205af1e55c4ac36a020d7a8121da552">totalStreams</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#ac7924cac53f508f1228c50a1f129ae89">uniqueSaves</a></li>
+</ul>
+</li>
+<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html">StreamStats</a> fields:<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#aaa034b88833b197a54304abe6d988daf">groupId</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ab5174a2e02eff4fcc3d67e4b60ec4099">downloadSpeed</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a42fa867975d8e16bc06571c725d8bba9">averageUploadSpeed</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2dd660dc84a6db3f734925dbcd0bae9f">averageDownloadSpeed</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a4352ac361fa12a4636de8640987dfc88">redundantModeSaves</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a7ae82f633f31b02e61dfdb67de884056">speedModeSaves</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a6a8a155cf393efc95ded450bc84b13ea">name</a></li>
+</ul>
+</li>
+<li>Multicast Support - Receiving multicast packets while the VPN is connected has been restricted by the VPN not allowing apps to send/receive traffic around the VPN. This is the default VPN behavior on Android, and is the most secure setting. If you need multicast support, you can allow apps to communicate around the VPN by setting <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a83fdcd0d1fadb7c33c329ea7a48f3652">setAllowTunnelBypass</a>. Note that this opens up all apps to be able to create sockets that bypass the VPN, thus decreasing security.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac4239bb495d63bf6cedbf775cd47f048">setVendorUserData</a> can be used to provide a string of user data for an account.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_970"></a>Speedify SDK for Android 9.7 </h2>
 <ul>
 <li>No new features. This is a stability and performance release.</li>
 </ul>
@@ -142,7 +164,34 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_700"></a>Speedify SDK for Android 7.0 </h2>
 <ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a> now shows <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed">download</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a37e4c430aa1d38ab769d2a4c58326def">upload</a> speeds, as well as <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ace4da62624db5f8b60ff62abe5f233c2">download</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9f2157a241a0ea8e7dfc89018c2aad33">upload</a> maximum speed estimates for connections. </li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a> now shows <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed">download</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a37e4c430aa1d38ab769d2a4c58326def">upload</a> speeds, as well as <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ace4da62624db5f8b60ff62abe5f233c2">download</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9f2157a241a0ea8e7dfc89018c2aad33">upload</a> maximum speed estimates for connections.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_634"></a>Speedify SDK for Android 6.3.4 </h2>
+<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a064d56a2aeb14d6aef2380d525cd5a91">com.speedify.speedifysdk.SpeedifySDK#loginOauth</a> - When using your own directory server that supports it, Oauth access tokens can be used to authenticate a user. It is the application's responsibility to refresh their access token if a login or connect error of type <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44">TOKEN_EXPIRED</a> is returned.</li>
+<li>Previous SDK version incorrectly described the overlfow threshold as being in bits per second. This is actually in megabits per second. The documentation on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5">setOverflowThreshold</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6047bf51cab4f774f6b1840664f1ae60">overflowThreshold</a> have been updated to reflect this.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_630"></a>Speedify SDK for Android 6.3 </h2>
+<ul>
+<li>Crash and optimization reporting can be controlled via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a74bf34fadb64d702ab4596a07f9d8cd3">SpeedifySDK.setCrashReporting</a> and SpeedifySDK.setOptimizationReporting</li>
+<li>Encryption key used on optimization reports can be set via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8e7a7509ab0f1fc2fdaee4651c32a378">SpeedifySDK.setReportingEncryptionKey</a></li>
+</ul>
+<h2><a class="anchor" id="whatsnew_620"></a>Speedify SDK for Android 6.2 </h2>
+<ul>
+<li>Log files can be generated via adb by running the following command with your APK's package name : <em>adb shell am start -a <b>your.package.name</b>.speedifysdk.sharelogs</em></li>
+</ul>
+<h2><a class="anchor" id="whatsnew_610"></a>Speedify SDK for Android 6.1 </h2>
+<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html">com.speedify.speedifysdk.LogGeneration</a> - Creates a zip file of all Speedify SDK logs and shares it via an Android Share dialog.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html">com.speedify.speedifysdk.NotificationHelper</a> - Manages notifications and their associated channels.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8c03b7892aac0bb58ef0adad37b81f6c">SpeedifySDK.loginAutoAccount</a> - Log in with an automatically generated account. This takes over for setUserUniqueID.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html">AccountingData</a> / <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8ad2685bc6372a467937a439f7621e4f">OnAccountingData</a> - Obtain information about the account being used.</li>
+<li>Application Stats : Speedify SDK tracks data usage by app. Call refreshAppUsage enable application stats reports via OnAppUsage reports.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_600"></a>Speedify SDK for Android 6.0 </h2>
+<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html">com.speedify.speedifysdk.UuidProvider</a> - Obtain the device's unique ID.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aae9fb995d7f77004cb7d0463078f7246">SpeedifySDK.setAdapterOverlimitRatelimit</a> - Control behavior of an adapter when it reaches it's data limit. </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

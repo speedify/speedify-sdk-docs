@@ -1,7 +1,14 @@
 var searchData=
 [
-  ['name',['name',['../struct_speedify_s_d_k___adapter_data.html#a299b40d13ec1bbdd8ea30b79dfbeefca',1,'SpeedifySDK_AdapterData']]],
-  ['num',['num',['../struct_speedify_s_d_k___server_information.html#a3168056b6e8da102c24f457cb71e0588',1,'SpeedifySDK_ServerInformation::num()'],['../struct_speedify_s_d_k___server_information_detailed.html#aa65cb9fc725ad8201be7eefa2ec6ce7b',1,'SpeedifySDK_ServerInformationDetailed::num()'],['../struct_speedify_s_d_k___server_settings.html#af5bbd90f4fdd8eb5be5f53ff0a769663',1,'SpeedifySDK_ServerSettings::num()']]],
-  ['numfailovers',['numFailovers',['../struct_speedify_s_d_k___session_stats.html#a32d601edf3c73d7bf6a02257ce6e0655',1,'SpeedifySDK_SessionStats']]],
-  ['numsessions',['numSessions',['../struct_speedify_s_d_k___session_stats.html#af059fab204996be56429665c67a5af2c',1,'SpeedifySDK_SessionStats']]]
+  ['major',['major',['../struct_speedify_s_d_k___version.html#a44ae854a344a3833f0fd182a179f84df',1,'SpeedifySDK_Version']]],
+  ['matchmode',['matchMode',['../struct_speedify_s_d_k___local_proxy_settings.html#a513e9b13254bff7384cea3f195018906',1,'SpeedifySDK_LocalProxySettings']]],
+  ['maxdownloadspeed',['maxDownloadSpeed',['../struct_speedify_s_d_k___session_stats.html#ac5ca5a760f9abf13955f574775d9de19',1,'SpeedifySDK_SessionStats']]],
+  ['maxuploadspeed',['maxUploadSpeed',['../struct_speedify_s_d_k___session_stats.html#a3ec3442a9569aac5c75d7e417c12b217',1,'SpeedifySDK_SessionStats']]],
+  ['mbpsdownbenefit',['mbpsDownBenefit',['../struct_speedify_s_d_k___session_stats.html#a26387ca76def5f40542d3707c1998f0d',1,'SpeedifySDK_SessionStats']]],
+  ['mbpsupbenefit',['mbpsUpBenefit',['../struct_speedify_s_d_k___session_stats.html#aae582ad4c7561409b528846e51236a4b',1,'SpeedifySDK_SessionStats']]],
+  ['minor',['minor',['../struct_speedify_s_d_k___version.html#adeecdfe5c0587a8edb4a86693f81689d',1,'SpeedifySDK_Version']]],
+  ['minutesavailable',['minutesAvailable',['../struct_speedify_s_d_k___accounting_data.html#a50bdde67f4a20477e0cacb914bf0259f',1,'SpeedifySDK_AccountingData']]],
+  ['minutesused',['minutesUsed',['../struct_speedify_s_d_k___accounting_data.html#ab5b67fbb73ad5d160cac9bee0ea158c8',1,'SpeedifySDK_AccountingData']]],
+  ['mode',['mode',['../struct_speedify_s_d_k___firewall_settings.html#a070c838a7e9409c8395e062e3074d546',1,'SpeedifySDK_FirewallSettings']]],
+  ['month',['month',['../struct_speedify_s_d_k___session_stat_periods.html#afef645562a67bae3fd96a33c80b19733',1,'SpeedifySDK_SessionStatPeriods']]]
 ];

@@ -14,7 +14,7 @@
     <a title="SpeedifySDK Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (78% documented)</p>
+        <p><a href="../index.html"> Docs</a> (77% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -132,6 +132,12 @@
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -210,7 +216,7 @@
             <h1>SpeedifySDK</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SpeedifySDK</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SpeedifyDelegate</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SpeedifySDK</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SpeedifyDelegate</span><span class="p">,</span> <span class="kt">TunnelHelperDelegate</span></code></pre>
 
                 </div>
               </div>
@@ -527,6 +533,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11SpeedifySDKAAC18vendorDataDelegateAA06VendordE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vendorDataDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC18vendorDataDelegateAA06VendordE0_pSgvp">vendorDataDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">vendorDataDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11SpeedifySDKAAC15adapterDelegateAA0a7AdapterD0_pSgvp"></a>
                     <a name="//apple_ref/swift/Property/adapterDelegate" class="dashAnchor"></a>
                     <a class="token" href="#/s:11SpeedifySDKAAC15adapterDelegateAA0a7AdapterD0_pSgvp">adapterDelegate</a>
@@ -824,6 +857,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11SpeedifySDKAAC14tunnelDelegateAA0a6TunnelD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tunnelDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC14tunnelDelegateAA0a6TunnelD0_pSgvp">tunnelDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tunnelDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11SpeedifySDKAAC24pendingCompletionHandlerySbcSgvp"></a>
                     <a name="//apple_ref/swift/Property/pendingCompletionHandler" class="dashAnchor"></a>
                     <a class="token" href="#/s:11SpeedifySDKAAC24pendingCompletionHandlerySbcSgvp">pendingCompletionHandler</a>
@@ -905,9 +965,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDKAAC11startTunnelyyF"></a>
-                    <a name="//apple_ref/swift/Method/startTunnel()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDKAAC11startTunnelyyF">startTunnel()</a>
+                    <a name="/s:11SpeedifySDKAAC11startTunnel11shouldStartySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/startTunnel(shouldStart:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC11startTunnel11shouldStartySb_tF">startTunnel(shouldStart:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -933,7 +993,7 @@ This checks the app extension state for</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startTunnel</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startTunnel</span><span class="p">(</span><span class="nv">shouldStart</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1588,6 +1648,68 @@ If already connected, this will disconnect before reconnecting.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>completionHandler: <code><a href="../Structs/SessionStats.html">SessionStats</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC17setVendorSettings14vendorUserDataySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/setVendorSettings(vendorUserData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC17setVendorSettings14vendorUserDataySS_tF">setVendorSettings(vendorUserData:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Set vendor user data</li>
+<li>Current value available from <code><a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a></code>.</li>
+<li>vendorUserData user data string</li>
+<li>@since 9.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setVendorSettings</span><span class="p">(</span><span class="nv">vendorUserData</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC021refreshVendorDataUserE0yyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshVendorDataUserData()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC021refreshVendorDataUserE0yyF">refreshVendorDataUserData()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the vendor user data
+Triggers <code><a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a></code>.
+@since 9.8</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">refreshVendorDataUserData</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -3909,6 +4031,60 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">streamingStatsDidUpdate</span><span class="p">(</span><span class="nv">stats</span><span class="p">:</span> <span class="kt"><a href="../Structs/StreamingStats.html">StreamingStats</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC19vendorDataDidUpdate0cD0ySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/vendorDataDidUpdate(vendorData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC19vendorDataDidUpdate0cD0ySS_tF">vendorDataDidUpdate(vendorData:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">vendorDataDidUpdate</span><span class="p">(</span><span class="nv">vendorData</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SpeedifySDKAAC14profileDidFailyyF"></a>
+                    <a name="//apple_ref/swift/Method/profileDidFail()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDKAAC14profileDidFailyyF">profileDidFail()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">profileDidFail</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

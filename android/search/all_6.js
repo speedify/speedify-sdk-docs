@@ -11,5 +11,6 @@ var searchData=
   ['getlong',['getLong',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#af2cb5751f676b2035599f20890b96621',1,'com::speedify::speedifysdk::Preferences']]],
   ['getsdk',['getSDK',['../classcom_1_1speedify_1_1speedifysdk_1_1_startup_broadcast_receiver.html#aa241b566483d1c56bffee8d260b55558',1,'com::speedify::speedifysdk::StartupBroadcastReceiver']]],
   ['getstring',['getString',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#ae59e575871bd374680464f192224115f',1,'com::speedify::speedifysdk::Preferences']]],
-  ['getuuid',['getUuid',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#af16f827b86116eb16308eefe25ed8849',1,'com::speedify::speedifysdk::UuidProvider']]]
+  ['getuuid',['getUuid',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#af16f827b86116eb16308eefe25ed8849',1,'com::speedify::speedifysdk::UuidProvider']]],
+  ['groupid',['groupId',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#aaa034b88833b197a54304abe6d988daf',1,'com::speedify::speedifysdk::Types::StreamStats']]]
 ];
