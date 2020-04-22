@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (78% documented)</p>
+        <p><a href="index.html"> Docs</a> (77% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -130,6 +130,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
               </li>
             </ul>
           </li>
@@ -249,6 +255,32 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='strong-speedify-9-8-strong' class='heading'><strong>Speedify 9.8</strong></h3>
+<h4 id='sdk-now-supports-building-with-ios-simulators' class='heading'>SDK now supports building with iOS Simulators.</h4>
+<h4 id='code-setvendoruserdata-code-can-be-used-to-provide-a-string-of-user-data-for-an-account' class='heading'><code>setVendorUserData</code> - can be used to provide a string of user data for an account.</h4>
+<h4 id='code-streamingstats-code-has-new-property-fields' class='heading'><code><a href="Structs/StreamingStats.html">StreamingStats</a></code> has new property fields</h4>
+
+<ul>
+<li><code>totalRedundantSaves</code> - Total number of redundant saves per session. Please see <code><a href="Structs/StreamStats.html#/s:11SpeedifySDK11StreamStatsV14redundantSavesSdvp">StreamStats.redundantSaves</a></code></li>
+<li><code>totalSpeedSaves</code> - Total number of speed saves per session. Please see <code><a href="Structs/StreamStats.html#/s:11SpeedifySDK11StreamStatsV10speedSavesSdvp">StreamStats.speedSaves</a></code></li>
+<li><code>totalStreams</code> - Total number of streams per session</li>
+<li><code>uniqueSaves</code> -  A stream can be saved multiple times, but the unique save count will only go up by one
+#### Function changes</li>
+<li><code>func startTunnel()</code> is now  <code>func startTunnel(shouldStart:Bool)</code> pass in a bool to tell the SDK whether to start the tunnel or just ask permissions and save the profile. The default before this change was true. 
+### New Protocol
+*<code><a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a></code> this allows a callback to trigger when a user denies permission or cannot save the profile. When these errors occur you MUST restart the tunnel by calling  <code>func startTunnel(shouldStart:Bool)</code>. Please see LoginViewController in the sample app for more information.</li>
+</ul>
+<h4 id='code-streamstats-code-has-new-property-fields' class='heading'><code><a href="Structs/StreamStats.html">StreamStats</a></code> has new property fields.</h4>
+
+<ul>
+<li><code>downloadSpeed</code> - Download speed of the stream</li>
+<li><code>averageDownloadSpeed</code> - Average download speed of this stream, in megabits per second</li>
+<li><code>averageUploadSpeed</code> - Average upload speed of this stream, in megabits per second</li>
+<li><code>groupID</code> - Unique identifier of this stream</li>
+<li><code>name</code> - Name of app/service in use
+*<code>redundantSaves</code> - When a stream has switched to redundant mode</li>
+<li><code>speedSaves</code> - When the network speed dips below the speed of the stream and speedify bonds the connection for more speed</li>
+</ul>
 <h3 id='strong-speedify-9-7-strong' class='heading'><strong>Speedify 9.7</strong></h3>
 
 <ul>

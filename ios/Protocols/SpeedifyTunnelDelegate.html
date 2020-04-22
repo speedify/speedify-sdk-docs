@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SpeedifyAccountingDelegate Protocol Reference</title>
+    <title>SpeedifyTunnelDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/SpeedifyAccountingDelegate" class="dashAnchor"></a>
-    <a title="SpeedifyAccountingDelegate Protocol Reference"></a>
+    <a name="//apple_ref/swift/Protocol/SpeedifyTunnelDelegate" class="dashAnchor"></a>
+    <a title="SpeedifyTunnelDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (77% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        SpeedifyAccountingDelegate Protocol Reference
+        SpeedifyTunnelDelegate Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -213,14 +213,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SpeedifyAccountingDelegate</h1>
+            <h1>SpeedifyTunnelDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyAccountingDelegate</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyTunnelDelegate</span></code></pre>
 
                 </div>
               </div>
-            <p>Listen for <code><a href="../Structs/AdapterData.html">AdapterData</a></code> updates.</p>
+            <p>Listen for failure updates to the profile configuration.
+This will get triggered if a user denies the VPN permission</p>
 
           </section>
           <section class="section task-group-section">
@@ -229,9 +230,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A18AccountingDelegateP23accountingDataDidUpdate0eF0yAA0cF0V_tF"></a>
-                    <a name="//apple_ref/swift/Method/accountingDataDidUpdate(accountingData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A18AccountingDelegateP23accountingDataDidUpdate0eF0yAA0cF0V_tF">accountingDataDidUpdate(accountingData:<wbr>)</a>
+                    <a name="/s:11SpeedifySDK0A14TunnelDelegateP14profileDidFailyyF"></a>
+                    <a name="//apple_ref/swift/Method/profileDidFail()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SpeedifySDK0A14TunnelDelegateP14profileDidFailyyF">profileDidFail()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -246,7 +247,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">accountingDataDidUpdate</span><span class="p">(</span><span class="nv">accountingData</span><span class="p">:</span> <span class="kt"><a href="../Structs/AccountingData.html">AccountingData</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">profileDidFail</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
