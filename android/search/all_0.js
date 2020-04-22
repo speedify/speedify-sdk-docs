@@ -12,9 +12,12 @@ var searchData=
   ['adapterusagedata',['AdapterUsageData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html',1,'com::speedify::speedifysdk::Types']]],
   ['addadapterdailydatalimitboost',['addAdapterDailyDataLimitBoost',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a623bd60ab09740cc82b974c3d994363c',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['allowchachaencryption',['allowChaChaEncryption',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a9b0de0b5b035b6a199a3beccba290787',1,'com::speedify::speedifysdk::Types::Settings']]],
+  ['allowtunnelbypass',['allowTunnelBypass',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a09696181c8282bf329ec9499ada742fb',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['always',['ALWAYS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a91776f0b98e54fefcb4ef24fe6e59f5b',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['auto',['AUTO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd',1,'com::speedify::speedifysdk::Types::TransportMode']]],
   ['auto_5fconnecting',['AUTO_CONNECTING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a05b5a305aebbbe7abcb77ea003cbbe96',1,'com::speedify::speedifysdk::Types::State']]],
   ['autoconnectmethod',['AutoConnectMethod',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html',1,'com::speedify::speedifysdk::Types']]],
+  ['averagedownloadspeed',['averageDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2dd660dc84a6db3f734925dbcd0bae9f',1,'com::speedify::speedifysdk::Types::StreamStats']]],
+  ['averageuploadspeed',['averageUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a42fa867975d8e16bc06571c725d8bba9',1,'com::speedify::speedifysdk::Types::StreamStats']]],
   ['advanced_20initialization',['Advanced Initialization',['../sdkadv.html',1,'']]]
 ];

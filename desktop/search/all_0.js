@@ -16,5 +16,7 @@ var searchData=
   ['allowchachaencryption',['allowChaChaEncryption',['../struct_speedify_s_d_k___settings.html#a7ebf7b124efed02a3a88f15a068ddf23',1,'SpeedifySDK_Settings']]],
   ['apt_5ffree',['APT_FREE',['../group___t_y_p_e_s.html#ggafddea3bcdbce77ede80928a7fb218600a3e9442deff7000eabeb7aa52223ed2eb',1,'types.h']]],
   ['apt_5fmonthly',['APT_MONTHLY',['../group___t_y_p_e_s.html#ggafddea3bcdbce77ede80928a7fb218600a55d035ba77fc5397ffaac3cee5e61221',1,'types.h']]],
-  ['apt_5fyearly',['APT_YEARLY',['../group___t_y_p_e_s.html#ggafddea3bcdbce77ede80928a7fb218600ad49655f191a57ba2fb084989514a265c',1,'types.h']]]
+  ['apt_5fyearly',['APT_YEARLY',['../group___t_y_p_e_s.html#ggafddea3bcdbce77ede80928a7fb218600ad49655f191a57ba2fb084989514a265c',1,'types.h']]],
+  ['averagedownloadspeed',['averageDownloadSpeed',['../struct_speedify_s_d_k___stream_stats.html#a08ae9d78daa38ca513b415976191abfc',1,'SpeedifySDK_StreamStats']]],
+  ['averageuploadspeed',['averageUploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81',1,'SpeedifySDK_StreamStats']]]
 ];

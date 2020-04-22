@@ -16,6 +16,7 @@ var searchData=
   ['domainwatchlistitems',['domainWatchlistItems',['../struct_speedify_s_d_k___local_proxy_settings.html#a5645840e9deb4982608e8070a350339e',1,'SpeedifySDK_LocalProxySettings']]],
   ['domainwatchlistitemscount',['domainWatchlistItemsCount',['../struct_speedify_s_d_k___local_proxy_settings.html#ae0064207c0bcb24daa64a6b013e09fed',1,'SpeedifySDK_LocalProxySettings']]],
   ['downloadbps',['downloadBps',['../struct_speedify_s_d_k___speed_test_connection_result.html#adb4819ff8904babcff50917ec83fa722',1,'SpeedifySDK_SpeedTestConnectionResult']]],
+  ['downloadspeed',['downloadSpeed',['../struct_speedify_s_d_k___stream_stats.html#ac72935c701571b4d64239acc6223af72',1,'SpeedifySDK_StreamStats']]],
   ['droppedincoming',['droppedIncoming',['../struct_speedify_s_d_k___tun_stats.html#ab5b4d4f49683161431b90351bca636bc',1,'SpeedifySDK_TunStats']]],
   ['duration',['duration',['../struct_speedify_s_d_k___stream_stats.html#a1b65dab1d72b7be34bc4c834aae99592',1,'SpeedifySDK_StreamStats']]],
   ['data_20types',['Data Types',['../group___t_y_p_e_s.html',1,'']]]

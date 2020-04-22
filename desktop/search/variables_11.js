@@ -1,13 +1,22 @@
 var searchData=
 [
-  ['testreport',['testReport',['../struct_speedify_s_d_k___speedtest_result.html#a1660ab0682cbfc4117820a3d60d85fea',1,'SpeedifySDK_SpeedtestResult']]],
-  ['time',['time',['../struct_speedify_s_d_k___connection_stats_group.html#aff8e62b6fcd54ba39eede11dbe4a5956',1,'SpeedifySDK_ConnectionStatsGroup']]],
-  ['title',['title',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html#a65785dad720219c29ac820912164b10f',1,'SpeedifySDK_LocalProxyDomainWatchlistHitResult::title()'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a26b83d082b0d3cffb8d261639112ec18',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::title()']]],
-  ['torrentallowed',['torrentAllowed',['../struct_speedify_s_d_k___server_information_detailed.html#ad5707ddd194493e6b541cc26c1a863c7',1,'SpeedifySDK_ServerInformationDetailed']]],
-  ['total',['total',['../struct_speedify_s_d_k___session_stat_periods.html#acff4060f8cb957ec34f82c6cf8f9f2f3',1,'SpeedifySDK_SessionStatPeriods']]],
-  ['totalbps',['totalBps',['../struct_speedify_s_d_k___connection_stats.html#a229dd9fac65cb930100fc60da0fd8644',1,'SpeedifySDK_ConnectionStats']]],
-  ['totalconnectedminutes',['totalConnectedMinutes',['../struct_speedify_s_d_k___session_stats.html#a66371088fe0e6f2ea1a13a72b543d61d',1,'SpeedifySDK_SessionStats']]],
-  ['transportmode',['transportMode',['../struct_speedify_s_d_k___settings.html#aba5fb1a5c8ff54a8d0c6404a0ef23098',1,'SpeedifySDK_Settings']]],
-  ['tunstats',['tunStats',['../struct_speedify_s_d_k___session_stats.html#a428c79a93ec260f524e7a759f646a3af',1,'SpeedifySDK_SessionStats']]],
-  ['type',['type',['../struct_speedify_s_d_k___new_adapter_result.html#ad1c52d24b27227a3e384af8288f296f2',1,'SpeedifySDK_NewAdapterResult::type()'],['../struct_speedify_s_d_k___adapter_overlimit_result.html#a45ee79e89d0151c22fb9a0c963a4e76f',1,'SpeedifySDK_AdapterOverlimitResult::type()'],['../struct_speedify_s_d_k___adapter_data.html#a3e3fba2959ab5b6beba8aeb465fd7444',1,'SpeedifySDK_AdapterData::type()']]]
+  ['sendbps',['sendBps',['../struct_speedify_s_d_k___connection_stats.html#ad1520c0d71d80d219635d448a3744ce5',1,'SpeedifySDK_ConnectionStats']]],
+  ['sendestimatembps',['sendEstimateMbps',['../struct_speedify_s_d_k___connection_stats.html#a67a651f635d792f069ec334ef6028a82',1,'SpeedifySDK_ConnectionStats']]],
+  ['servers',['servers',['../struct_speedify_s_d_k___directory_result.html#acd93cecc4693a03288aaee44987af94d',1,'SpeedifySDK_DirectoryResult']]],
+  ['serversettings',['serverSettings',['../struct_speedify_s_d_k___server_settings_result.html#a6c7242e97a427403e1f3c7bfb67d6364',1,'SpeedifySDK_ServerSettingsResult']]],
+  ['sessionstats',['sessionStats',['../struct_speedify_s_d_k___session_stats_result.html#a6636df7425ecb1309161706c147d9119',1,'SpeedifySDK_SessionStatsResult']]],
+  ['settings',['settings',['../struct_speedify_s_d_k___settings_result.html#a8e51651fe0d2b1eb0556604510112c9a',1,'SpeedifySDK_SettingsResult']]],
+  ['settingsjson',['settingsJson',['../struct_speedify_s_d_k___vendor_settings_result.html#ab0b8af602adba4ad42d9f38386411667',1,'SpeedifySDK_VendorSettingsResult']]],
+  ['sleeping',['sleeping',['../struct_speedify_s_d_k___connection_stats.html#a85465e681022a375efd1d0da63088cee',1,'SpeedifySDK_ConnectionStats']]],
+  ['speedmodesaves',['speedModeSaves',['../struct_speedify_s_d_k___stream_stats.html#a34321423add905a84b7f35b294a9e1c0',1,'SpeedifySDK_StreamStats']]],
+  ['starttime',['startTime',['../struct_speedify_s_d_k___stream_stats.html#a3d6ff70ca5fdf973ad195ee72f0e7e2a',1,'SpeedifySDK_StreamStats']]],
+  ['startupconnect',['startupConnect',['../struct_speedify_s_d_k___settings.html#a85977be4a6178041250de9b4caa5fd78',1,'SpeedifySDK_Settings']]],
+  ['state',['state',['../struct_speedify_s_d_k___state_result.html#aa6c44da9ff974f19dfd367dc45cc230f',1,'SpeedifySDK_StateResult::state()'],['../struct_speedify_s_d_k___adapter_data.html#a061925e0039b8065bfc742ec248a8888',1,'SpeedifySDK_AdapterData::state()']]],
+  ['status',['status',['../struct_speedify_s_d_k___speed_test_report.html#a654a00c8abf3e08fc8429c4be4ebaeec',1,'SpeedifySDK_SpeedTestReport']]],
+  ['step',['step',['../struct_speedify_s_d_k___speed_test_connection_result.html#aebe5ffa645dee6f60fccb15066f7b74c',1,'SpeedifySDK_SpeedTestConnectionResult']]],
+  ['stepprogress',['stepProgress',['../struct_speedify_s_d_k___speed_test_connection_result.html#af0f85a60b1f32df015fc50f5b61cd6e1',1,'SpeedifySDK_SpeedTestConnectionResult']]],
+  ['streamingstats',['streamingStats',['../struct_speedify_s_d_k___streaming_stats_result.html#a1be876e4455257508afec22c81f9faa5',1,'SpeedifySDK_StreamingStatsResult']]],
+  ['streams',['streams',['../struct_speedify_s_d_k___streaming_stats.html#afb0bc30b39167440d9e9c456f232294b',1,'SpeedifySDK_StreamingStats']]],
+  ['streamscount',['streamsCount',['../struct_speedify_s_d_k___streaming_stats.html#ab1c3760393f2f0d46b91c61d6fc615ed',1,'SpeedifySDK_StreamingStats']]],
+  ['successes',['successes',['../struct_speedify_s_d_k___captive_portal_stats.html#a7780edc67c8539a52e38b75d968d1397',1,'SpeedifySDK_CaptivePortalStats']]]
 ];

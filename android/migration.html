@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.7.0</span>
+   &#160;<span id="projectnumber">9.8.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,19 @@ $(function() {
 <div class="title">Migration Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="migrate_940_950"></a>Speedify SDK for Android 9.4 -&gt; 9.5 Migration </h2>
+<div class="textblock"><h2><a class="anchor" id="migrate_980"></a>Speedify SDK for Android 9.8 Migration </h2>
+<ul>
+<li>The dependency on legacy-support-v4 has been reduced in scope to androidx.core, version 1.2.0.</li>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html">LocalBroadcastHelper</a> - To remove dependency on a deprecated Google library, this has been rewritten from scratch and now works in conjunction with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html">PooledBroadcastReceiver</a>. Messages are delivered on pooled background threads.<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#a70e0927195da2d837779f70a2f725012">register</a> - No longer takes a context. Takes a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html">PooledBroadcastReceiver</a> instead of a BroadcastReceiver.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#ac1aa8fb0d4ecdf7388b9a6fdaf5a0b18">unregister</a> - No longer takes a context. Takes a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html">PooledBroadcastReceiver</a> instead of a BroadcastReceiver.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_950"></a>Speedify SDK for Android 9.5 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html">ISpeedifyHandler</a><ul>
@@ -81,7 +93,7 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="migrate_930_940"></a>Speedify SDK for Android 9.3 -&gt; 9.4 Migration </h2>
+<h2><a class="anchor" id="migrate_940"></a>Speedify SDK for Android 9.4 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html">LocalProxyDomainWatchlistItem</a><ul>
@@ -95,7 +107,7 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="migrate_913_920"></a>Speedify SDK for Android 9.1.3 -&gt; 9.2 Migration </h2>
+<h2><a class="anchor" id="migrate_920"></a>Speedify SDK for Android 9.2 Migration </h2>
 <ul>
 <li>The dependency on play-services-ads has been reduced in scope to play-services-ads-identifier, version 17.0.0.</li>
 <li>Deprecation removals - Longtime methods marked as Deprecated have been removed<ul>
@@ -114,7 +126,7 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="migrate_821_900"></a>Speedify SDK for Android 8.2.1 -&gt; 9.0 Migration </h2>
+<h2><a class="anchor" id="migrate_900"></a>Speedify SDK for Android 9.0 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a><ul>
@@ -128,14 +140,14 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="migrate_800_810"></a>Speedify SDK for Android 8.0 -&gt; 8.1 Migration </h2>
+<h2><a class="anchor" id="migrate_810"></a>Speedify SDK for Android 8.1 Migration </h2>
 <ul>
 <li>The Android SDK (compileSdkVersion) and build tools versions used for Speedify SDK are now 29 and 29.0.0, respectively, and targetSdkVersion is also 29.</li>
 <li>CrashlyticsIntegrationEnabled now defaults to false</li>
 <li>ISpeedifyHandler.OnServiceInternetPermissionError has been removed.</li>
 <li>WifiHelper has been removed.</li>
 </ul>
-<h2><a class="anchor" id="migrate_783_800"></a>Speedify SDK for Android 7.8.3 -&gt; 8.0 Migration </h2>
+<h2><a class="anchor" id="migrate_800"></a>Speedify SDK for Android 8.0 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a><ul>
@@ -145,7 +157,7 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="migrate_781_782"></a>Speedify SDK for Android 7.8.1 -&gt; 7.8.2 Migration </h2>
+<h2><a class="anchor" id="migrate_782"></a>Speedify SDK for Android 7.8.2 Migration </h2>
 <ul>
 <li>App Usage reports have been removed. This removes the following APIs:<ul>
 <li>SpeedifySDK<ul>
@@ -163,7 +175,7 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="migrate_740_750"></a>Speedify SDK for Android 7.4 -&gt; 7.5 Migration </h2>
+<h2><a class="anchor" id="migrate_750"></a>Speedify SDK for Android 7.5 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>
@@ -190,19 +202,74 @@ $(function() {
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="migrate_722_724"></a>Speedify SDK for Android 7.2.2 -&gt; 7.2.4 Migration </h2>
+<h2><a class="anchor" id="migrate_724"></a>Speedify SDK for Android 7.2.4 Migration </h2>
 <ul>
 <li>The Android Support library is now using AndroidX 1.0.0 and Play Services is now 17.1.2. Any dependencies in your own app should be updated to those versions as well to avoid conflicts between different versions of the Google libraries.</li>
 </ul>
-<h2><a class="anchor" id="migrate_714_720"></a>Speedify SDK for Android 7.1.4 -&gt; 7.2 Migration </h2>
+<h2><a class="anchor" id="migrate_720"></a>Speedify SDK for Android 7.2 Migration </h2>
 <ul>
 <li>The Android SDK (compileSdkVersion) and build tools versions used for Speedify SDK are now 28 and 28.0.2, respectively, and targetSdkVersion is also 28.</li>
 <li>The Google libraries the SDK depends on have been updated to Support 28.0.0 and Play Services 16.0.0. Any dependencies in your own app should be updated to those versions as well to avoid conflicts between different versions of the Google libraries.</li>
 <li>Android SDK 28 when running on Android 9 (Pie) disables all cleartext traffic (unsecured, ie: HTTP, WS) by default. As a result, Speedify SDK now specifies a default networkSecurityConfig for the application which disabled all cleartext traffic except that which goes to 127.0.0.1. If you need to enable more cleartext traffic, provide your own networkSecurityConfig that also allows cleartext traffic to 127.0.0.1.</li>
 </ul>
-<h2><a class="anchor" id="migrate_702_713"></a>Speedify SDK for Android 7.0.2 -&gt; 7.1.3 Migration </h2>
+<h2><a class="anchor" id="migrate_713"></a>Speedify SDK for Android 7.1.3 Migration </h2>
 <ul>
-<li>Add the 'google()' repository to your 'allprojects' dependencies in your project's build.gradle </li>
+<li>Add the 'google()' repository to your 'allprojects' dependencies in your project's build.gradle</li>
+</ul>
+<h2><a class="anchor" id="migrate_700"></a>Speedify SDK for Android 7.0 Migration </h2>
+<ul>
+<li>The Android SDK (compileSdkVersion) and build tools versions used for Speedify SDK are now 27 and 27.0.3, respectively, and targetSdkVersion is also 27.</li>
+<li>The Google libraries the SDK depends on have been updated to Support 27.0.2 and Play Services 15.0.1. Any dependencies in your own app should be updated to those versions as well to avoid conflicts between different versions of the Google libraries.</li>
+</ul>
+<h2><a class="anchor" id="migrate_636"></a>Speedify SDK for Android 6.3.6 Migration </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li>SpeedifySDK<ul>
+<li>SpeedifySDK.setOptimizationReporting has been removed.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_634"></a>Speedify SDK for Android 6.3.4 Migration </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li>SpeedifySDK<ul>
+<li>Previous SDK version incorrectly described the overlfow threshold as being in bits per second. This is actually in megabits per second. The documentation on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5">setOverflowThreshold</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6047bf51cab4f774f6b1840664f1ae60">overflowThreshold</a> have been updated to reflect this.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_610"></a>Speedify SDK for Android 6.1.0 Migration </h2>
+<ul>
+<li>Android KitKat (4.4) is no longer supported. The minimum supported Android version is now Lollipop (5.0). As such, minSdkVersion in your build.gradle needs to be atleast 21</li>
+<li>The Android SDK (compileSdkVersion) and build tools versions used for Speedify SDK are now 26 and 26.0.2, respectively, and targetSdkVersion is also 26.</li>
+<li>The Google libraries the SDK depends on have been updated to Support 26.1.0 and Play Services 11.8.0. Any dependencies in your own app should be updated to those versions as well to avoid conflicts between different versions of the Google libraries.</li>
+<li>If you were previously providing your own UpdateForegroundNotification implementation, note that on Oreo and newer it is now required to call service.startForeground to show a foreground notification. Failing to do this will cause the service to be killed by Android.</li>
+<li>API Compatibility Changes<ul>
+<li>SpeedifySDK<ul>
+<li>SpeedifySDK.setUserUniqueID has been deprecated in favor of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8c03b7892aac0bb58ef0adad37b81f6c">loginAutoAccount</a>. setUserUniqueID remains in place, and simply calls loginAutoAccount internally to preserve compatibility.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_600"></a>Speedify SDK for Android 6.0 Migration </h2>
+<ul>
+<li>The Google maven repository is now required for building. Add it to your build.gradle repositories : <pre>
+      repositories {
+        ...
+        maven { url '<a href="https://maven.google.com'">https://maven.google.com'</a> }
+      }</pre></li>
+<li>API Compatibility Changes<ul>
+<li>ISpeedifyHandler<ul>
+<li>OnLoginError(String) -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ad51bd6dd1b6af898b37e7433ab3cbce1">OnLoginError(String,ErrorType)</a> : The default SpeedifyHandler implementation provides an OnLoginError(String) for compatibility</li>
+<li>OnConnectError(String) -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a475cf80d525a686fcfca52cb860a4b1a">OnConnectError(String,ErrorType)</a> : The default SpeedifyHandler implementation provides an OnConnectError(String) for compatibility </li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

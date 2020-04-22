@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.7.0</span>
+   &#160;<span id="projectnumber">9.8.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,32 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_960"></a>Speedify SDK for Desktop 9.6 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_980"></a>Speedify SDK for Desktop 9.8 </h2>
+<ul>
+<li>New <a class="el" href="struct_speedify_s_d_k___streaming_stats.html">StreamingStats</a> fields:<ul>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#ac418e98e8ed854e87fa279c567cc147b">totalRedundantModeSaves</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#aad9f479c1640fefdc20a89d8f48c5e30">totalSpeedModeSaves</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#ac3271414d48551cbb949808b2af5f77c">totalStreams</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#ae61837b28d1071c32facfdff107efad7">uniqueSaves</a></li>
+</ul>
+</li>
+<li>New <a class="el" href="struct_speedify_s_d_k___stream_stats.html">StreamStats</a> fields:<ul>
+<li><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a2859fa44b6d815923ef1ec6371786d98">groupId</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___stream_stats.html#ac72935c701571b4d64239acc6223af72">downloadSpeed</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81">averageUploadSpeed</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a08ae9d78daa38ca513b415976191abfc">averageDownloadSpeed</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___stream_stats.html#acbb8d7ee60dcff367912d9edc3168cc9">redundantModeSaves</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a34321423add905a84b7f35b294a9e1c0">speedModeSaves</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___stream_stats.html#aab6d694b73fbfad4da4b7f1aea2d80c1">name</a></li>
+</ul>
+</li>
+<li><a class="el" href="group___s_d_k.html#gaeb65cc18ae259e086ebf814b8aefc516">SpeedifySDK_SetVendorUserData</a> can be used to provide a string of user data for an account.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_970"></a>Speedify SDK for Desktop 9.7 </h2>
+<ul>
+<li>No new features. This is a stability and performance release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_960"></a>Speedify SDK for Desktop 9.6 </h2>
 <ul>
 <li>Speedify has a new Streaming Mode to better support video streamers. This can be set via <a class="el" href="group___s_d_k.html#ga4cc3b3a24b056db0b416331f1f9e63a0">SpeedifySDK_SetMode</a> with <a class="el" href="group___t_y_p_e_s.html#gga673980be58fe205ac13216bd9c934128a59c5dff6ddeebfbe94852f4ce25faae6">BMODE_STREAMING</a>. Statistics on individual streams are available from <a class="el" href="group___s_d_k.html#ga7725452fee63dcd3fcba2947e0f861d5">SpeedifySDK_GetStreamingStats</a>, and are provided once per second when enabling <a class="el" href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">SpeedifySDK_EnableConnectionStatUpdates</a>.</li>
 </ul>

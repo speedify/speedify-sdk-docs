@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['network',['NETWORK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ac01d0e062d6866c0dc00911e9b78360a',1,'com::speedify::speedifysdk::Types::ErrorType']]],
-  ['never',['NEVER',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a32959b613c04b917487bb342babeac10',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
-  ['not_5frunning',['NOT_RUNNING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_status.html#af7073ae71e15e75e1ae04a08ae6bb17f',1,'com.speedify.speedifysdk.Types.SpeedTestStatus.NOT_RUNNING()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_step.html#abaf3682e743b80c74b6e7dc2a9ddf93f',1,'com.speedify.speedifysdk.Types.SpeedTestStep.NOT_RUNNING()']]],
-  ['num',['num',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af740b9cb245ba9dcd94dca942293a6c5',1,'com.speedify.speedifysdk.Types.ServerInformation.num()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html#abe39ecac725e3b0ce82df083bffaca67',1,'com.speedify.speedifysdk.Types.ServerSettings.num()']]],
-  ['numfailovers',['numFailovers',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#afdc9f5ce53631140ef7c57968c5208f8',1,'com::speedify::speedifysdk::Types::SessionStats']]],
-  ['numsessions',['numSessions',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a8cb5b34ba43b066d11b4c6cf4046aa40',1,'com::speedify::speedifysdk::Types::SessionStats']]]
+  ['matchmode',['matchMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a2743a9f0c3ee4ea85ef9349fe67128ed',1,'com::speedify::speedifysdk::Types::LocalProxySettings']]],
+  ['maxdownloadspeed',['maxDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#af6eec00df3e669eaafee69379b5e18b6',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['maxuploadspeed',['maxUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#aa925cd7fbf14487fd5e117b9a20d4f06',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['mbpsdownbenefit',['mbpsDownBenefit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ac7a47b6a29d1eb451415ab8906b84f29',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['mbpsupbenefit',['mbpsUpBenefit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#adfce30860e75988c7cbba6430ca34dd4',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['minutesavailable',['minutesAvailable',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a2d1edc5588d5733b97d896a9fb01e07f',1,'com::speedify::speedifysdk::Types::AccountingData']]],
+  ['minutesused',['minutesUsed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a8e69fcc88b5a5f8e219bc60d2ca72f6b',1,'com::speedify::speedifysdk::Types::AccountingData']]],
+  ['mode',['mode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#a75e902f374321cc7e24738879ea32da6',1,'com::speedify::speedifysdk::Types::FirewallSettings']]],
+  ['month',['month',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#ab68d1462acb137d2bad332ff8d7b40eb',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],
+  ['monthly',['MONTHLY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_payment_type.html#ab55be96386ff998f77f212cf748d3833',1,'com::speedify::speedifysdk::Types::AccountPaymentType']]]
 ];
