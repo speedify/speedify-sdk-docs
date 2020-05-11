@@ -26,6 +26,7 @@ var searchData=
   ['speedifysdk_5fhandlerstats',['SpeedifySDK_HandlerStats',['../struct_speedify_s_d_k___handler_stats.html',1,'']]],
   ['speedifysdk_5flocalproxydomainwatchlisthitresult',['SpeedifySDK_LocalProxyDomainWatchlistHitResult',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html',1,'']]],
   ['speedifysdk_5flocalproxydomainwatchlistitem',['SpeedifySDK_LocalProxyDomainWatchlistItem',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html',1,'']]],
+  ['speedifysdk_5flocalproxyport',['SpeedifySDK_LocalProxyPort',['../struct_speedify_s_d_k___local_proxy_port.html',1,'']]],
   ['speedifysdk_5flocalproxysettings',['SpeedifySDK_LocalProxySettings',['../struct_speedify_s_d_k___local_proxy_settings.html',1,'']]],
   ['speedifysdk_5flocalproxysettingsresult',['SpeedifySDK_LocalProxySettingsResult',['../struct_speedify_s_d_k___local_proxy_settings_result.html',1,'']]],
   ['speedifysdk_5fnewadapterresult',['SpeedifySDK_NewAdapterResult',['../struct_speedify_s_d_k___new_adapter_result.html',1,'']]],

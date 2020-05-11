@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.8.0</span>
+   &#160;<span id="projectnumber">9.9.0</span>
    </div>
   </td>
  </tr>
@@ -71,8 +71,14 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_980"></a>Speedify SDK for Android 9.8 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_990"></a>Speedify SDK for Android 9.9 </h2>
 <ul>
+<li>The Local Proxy API now supports matching by TCP and UDP port: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a649903a4d1d19b5b78467f128d93d8a0">setLocalProxyPorts</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_980"></a>Speedify SDK for Android 9.8 </h2>
+<ul>
+<li>Multicast Support - Receiving multicast packets while the VPN is connected has been restricted by the VPN not allowing apps to send/receive traffic around the VPN. This is the default VPN behavior on Android, and is the most secure setting. If you need multicast support, you can allow apps to communicate around the VPN by setting <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a83fdcd0d1fadb7c33c329ea7a48f3652">setAllowTunnelBypass</a>. Note that this opens up all apps to be able to create sockets that bypass the VPN, thus decreasing security.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac4239bb495d63bf6cedbf775cd47f048">setVendorUserData</a> can be used to provide a string of user data for an account.</li>
 <li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html">StreamingStats</a> fields:<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a2344512fe8ae366ee384d2760dfeed57">totalRedundantModeSaves</a></li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a276ff6e4aa14ba6df3d37ac06bc126b1">totalSpeedModeSaves</a></li>
@@ -90,8 +96,6 @@ $(function() {
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a6a8a155cf393efc95ded450bc84b13ea">name</a></li>
 </ul>
 </li>
-<li>Multicast Support - Receiving multicast packets while the VPN is connected has been restricted by the VPN not allowing apps to send/receive traffic around the VPN. This is the default VPN behavior on Android, and is the most secure setting. If you need multicast support, you can allow apps to communicate around the VPN by setting <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a83fdcd0d1fadb7c33c329ea7a48f3652">setAllowTunnelBypass</a>. Note that this opens up all apps to be able to create sockets that bypass the VPN, thus decreasing security.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac4239bb495d63bf6cedbf775cd47f048">setVendorUserData</a> can be used to provide a string of user data for an account.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_970"></a>Speedify SDK for Android 9.7 </h2>
 <ul>
