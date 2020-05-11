@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PTunnelUserNotificationManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PTunnelUserNotificationManager" class="dashAnchor"></a>
+    <a title="PTunnelUserNotificationManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (38% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PTunnelUserNotificationManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AssetExtractor.html">AssetExtractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PThreadMutex.html">PThreadMutex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PThreadMutex/PThreadMutexType.html">– PThreadMutexType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTunnelUserNotificationManager.html">PTunnelUserNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Parser.html">Parser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpeedifyHandler.html">SpeedifyHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpeedifySDK.html">SpeedifySDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpeeedifyPacketTunnel.html">SpeeedifyPacketTunnel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TunnelHelper.html">TunnelHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebsocketMessageHandler.html">WebsocketMessageHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ptCallBacks.html">ptCallBacks</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8speedify11ErrorDomainSSvp">ErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8speedify21ErrorIndexOutOfBoundsSivp">ErrorIndexOutOfBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8speedify16ErrorInvalidJSONSivp">ErrorInvalidJSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8speedify13ErrorNotExistSivp">ErrorNotExist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8speedify20ErrorUnsupportedTypeSivp">ErrorUnsupportedType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8speedify14ErrorWrongTypeSivp">ErrorWrongType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BondingMode.html">BondingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Connection.html">Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionPriority.html">ConnectionPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FirewallMode.html">FirewallMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Index.html">Index</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JSONKey.html">JSONKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PortProtocol.html">PortProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpeedifyDaemonState.html">SpeedifyDaemonState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransportMode.html">TransportMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Type.html">Type</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/writingOptionsKeys.html">writingOptionsKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NEVPNStatus.html">NEVPNStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSNumber.html">NSNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/PThreadMutex.html">PThreadMutex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2neoiySbSo8NSNumberC_ADtF">!=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify1loiySbAA4JSONV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify1loiySbSo8NSNumberC_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2leoiySbAA4JSONV_ADtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2leoiySbSo8NSNumberC_ADtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2eeoiySbAA4JSONV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2eeoiySbSo8NSNumberC_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify1goiySbAA4JSONV_ADtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify1goiySbSo8NSNumberC_ADtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2geoiySbAA4JSONV_ADtF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2geoiySbSo8NSNumberC_ADtF">&gt;=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/JSONSubscriptType.html">JSONSubscriptType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDelegate.html">SpeedifyDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLocalSettingsVendorDelegate.html">SpeedifyLocalSettingsVendorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyRemoteSettingsVendorDelegate.html">SpeedifyRemoteSettingsVendorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySettingsErrorDelegate.html">SpeedifySettingsErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeeidfyLocalProxySettingsDelegate.html">SpeeidfyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TunnelHelperDelegate.html">TunnelHelperDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/callBackDelegate.html">callBackDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountingData.html">AccountingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterData.html">AdapterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CaptivePortalStats.html">CaptivePortalStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Commands.html">Commands</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DispatchSemaphore.html">DispatchSemaphore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FirewallPort.html">FirewallPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FirewallSettings.html">FirewallSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ForwardedPort.html">ForwardedPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HandlerStats.html">HandlerStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JSON.html">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyPort.html">LocalProxyPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MessageListeners.html">MessageListeners</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Modes.html">Modes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Protocols.html">Protocols</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerInformation.html">ServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStatsPeriod.html">SessionStatsPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamStats.html">StreamStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingStats.html">StreamingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TunStats.html">TunStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8speedify9JSONIndexa">JSONIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8speedify12JSONRawIndexa">JSONRawIndex</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PTunnelUserNotificationManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">PTunnelUserNotificationManager</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">UNUserNotificationCenterDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC14sharedInstanceACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC14sharedInstanceACvpZ">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">PTunnelUserNotificationManager</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC6centerSo06UNUserD6CenterCvp"></a>
+                    <a name="//apple_ref/swift/Property/center" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC6centerSo06UNUserD6CenterCvp">center</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">center</span><span class="p">:</span> <span class="kt">UNUserNotificationCenter</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC04showD012notificationy10Foundation0D0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/showNotification(notification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC04showD012notificationy10Foundation0D0V_tF">showNotification(notification:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showNotification</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC018clearCaptivePortalD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/clearCaptivePortalNotification()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC018clearCaptivePortalD0yyF">clearCaptivePortalNotification()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearCaptivePortalNotification</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC017showCaptivePortalD012notificationy10Foundation0D0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/showCaptivePortalNotification(notification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC017showCaptivePortalD012notificationy10Foundation0D0V_tF">showCaptivePortalNotification(notification:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showCaptivePortalNotification</span><span class="p">(</span><span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC019showStreamingBypassD05titleySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/showStreamingBypassNotification(title:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC019showStreamingBypassD05titleySS_tF">showStreamingBypassNotification(title:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showStreamingBypassNotification</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC025showConfigurationDisabledD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/showConfigurationDisabledNotification()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC025showConfigurationDisabledD0yyF">showConfigurationDisabledNotification()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showConfigurationDisabledNotification</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC23notificationInformation4typeSS5title_SS8subtitleSS9identifertSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/notificationInformation(type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC23notificationInformation4typeSS5title_SS8subtitleSS9identifertSS_tF">notificationInformation(type:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">notificationInformation</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">subtitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">identifer</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8speedify30PTunnelUserNotificationManagerC013removePendingD8RequestsyyF"></a>
+                    <a name="//apple_ref/swift/Method/removePendingNotificationRequests()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8speedify30PTunnelUserNotificationManagerC013removePendingD8RequestsyyF">removePendingNotificationRequests()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removePendingNotificationRequests</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedify@objc(cs)PTunnelUserNotificationManager(im)userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/userNotificationCenter(_:didReceive:withCompletionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedify@objc(cs)PTunnelUserNotificationManager(im)userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:">userNotificationCenter(_:<wbr>didReceive:<wbr>withCompletionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">userNotificationCenter</span><span class="p">(</span><span class="n">_</span> <span class="nv">center</span><span class="p">:</span> <span class="kt">UNUserNotificationCenter</span><span class="p">,</span> <span class="n">didReceive</span> <span class="nv">response</span><span class="p">:</span> <span class="kt">UNNotificationResponse</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedify@objc(cs)PTunnelUserNotificationManager(im)userNotificationCenter:willPresentNotification:withCompletionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/userNotificationCenter(_:willPresent:withCompletionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedify@objc(cs)PTunnelUserNotificationManager(im)userNotificationCenter:willPresentNotification:withCompletionHandler:">userNotificationCenter(_:<wbr>willPresent:<wbr>withCompletionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">userNotificationCenter</span><span class="p">(</span><span class="n">_</span> <span class="nv">center</span><span class="p">:</span> <span class="kt">UNUserNotificationCenter</span><span class="p">,</span> <span class="n">willPresent</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UNNotificationPresentationOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -14,7 +14,7 @@
     <a title="StreamingStats Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (77% documented)</p>
+        <p><a href="../index.html"> Docs</a> (67% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -32,6 +32,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Classes/SpeedifySDK.html">SpeedifySDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpeeedifyPacketTunnel.html">SpeeedifyPacketTunnel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
@@ -63,10 +66,19 @@
                 <a href="../Enums/FirewallMode.html">FirewallMode</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/Index.html">Index</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JSONKey.html">JSONKey</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/NetworkType.html">NetworkType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PortProtocol.html">PortProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
@@ -74,16 +86,42 @@
               <li class="nav-group-task">
                 <a href="../Enums/TransportMode.html">TransportMode</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Type.html">Type</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Extensions/NEVPNStatus.html">NEVPNStatus</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify1loiySbAA4JSONV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2leoiySbAA4JSONV_ADtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2eeoiySbAA4JSONV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify1goiySbAA4JSONV_ADtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:8speedify2geoiySbAA4JSONV_ADtF">&gt;=(_:_:)</a>
               </li>
             </ul>
           </li>
@@ -136,6 +174,9 @@
                 <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeeidfyLocalProxySettingsDelegate.html">SpeeidfyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
               </li>
             </ul>
@@ -177,7 +218,16 @@
                 <a href="../Structs/IPRange.html">IPRange</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/JSON.html">JSON</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyPort.html">LocalProxyPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
@@ -208,6 +258,17 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8speedify9JSONIndexa">JSONIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:8speedify12JSONRawIndexa">JSONRawIndex</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -216,7 +277,7 @@
             <h1>StreamingStats</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">StreamingStats</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamingStats</span></code></pre>
 
                 </div>
               </div>
@@ -230,9 +291,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK14StreamingStatsV11bondingModeAA07BondingF0Ovp"></a>
+                    <a name="/s:8speedify14StreamingStatsV11bondingModeAA07BondingE0Ovp"></a>
                     <a name="//apple_ref/swift/Property/bondingMode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK14StreamingStatsV11bondingModeAA07BondingF0Ovp">bondingMode</a>
+                    <a class="token" href="#/s:8speedify14StreamingStatsV11bondingModeAA07BondingE0Ovp">bondingMode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -248,7 +309,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bondingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/BondingMode.html">BondingMode</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">bondingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/BondingMode.html">BondingMode</a></span></code></pre>
 
                         </div>
                       </div>
@@ -258,9 +319,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK14StreamingStatsV7streamsSayAA06StreamD0VGvp"></a>
+                    <a name="/s:8speedify14StreamingStatsV7streamsSayAA06StreamC0VGvp"></a>
                     <a name="//apple_ref/swift/Property/streams" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK14StreamingStatsV7streamsSayAA06StreamD0VGvp">streams</a>
+                    <a class="token" href="#/s:8speedify14StreamingStatsV7streamsSayAA06StreamC0VGvp">streams</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -276,7 +337,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">streams</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/StreamStats.html">StreamStats</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">streams</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/StreamStats.html">StreamStats</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -286,9 +347,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK14StreamingStatsV19totalRedundantSavesSdvp"></a>
+                    <a name="/s:8speedify14StreamingStatsV19totalRedundantSavesSdvp"></a>
                     <a name="//apple_ref/swift/Property/totalRedundantSaves" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK14StreamingStatsV19totalRedundantSavesSdvp">totalRedundantSaves</a>
+                    <a class="token" href="#/s:8speedify14StreamingStatsV19totalRedundantSavesSdvp">totalRedundantSaves</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -304,7 +365,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">totalRedundantSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">totalRedundantSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -314,9 +375,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK14StreamingStatsV15totalSpeedSavesSdvp"></a>
+                    <a name="/s:8speedify14StreamingStatsV15totalSpeedSavesSdvp"></a>
                     <a name="//apple_ref/swift/Property/totalSpeedSaves" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK14StreamingStatsV15totalSpeedSavesSdvp">totalSpeedSaves</a>
+                    <a class="token" href="#/s:8speedify14StreamingStatsV15totalSpeedSavesSdvp">totalSpeedSaves</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -324,7 +385,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Total number of speed saves per session. Please see <code><a href="../Structs/StreamStats.html#/s:11SpeedifySDK11StreamStatsV10speedSavesSdvp">StreamStats.speedSaves</a></code>
+                        <p>Total number of speed saves per session. Please see <code><a href="../Structs/StreamStats.html#/s:8speedify11StreamStatsV10speedSavesSdvp">StreamStats.speedSaves</a></code>
 @since 9.8</p>
 
                       </div>
@@ -332,7 +393,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">totalSpeedSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">totalSpeedSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -342,9 +403,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK14StreamingStatsV12totalStreamsSdvp"></a>
+                    <a name="/s:8speedify14StreamingStatsV12totalStreamsSdvp"></a>
                     <a name="//apple_ref/swift/Property/totalStreams" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK14StreamingStatsV12totalStreamsSdvp">totalStreams</a>
+                    <a class="token" href="#/s:8speedify14StreamingStatsV12totalStreamsSdvp">totalStreams</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -360,7 +421,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">totalStreams</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">totalStreams</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -370,9 +431,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK14StreamingStatsV11uniqueSavesSdvp"></a>
+                    <a name="/s:8speedify14StreamingStatsV11uniqueSavesSdvp"></a>
                     <a name="//apple_ref/swift/Property/uniqueSaves" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK14StreamingStatsV11uniqueSavesSdvp">uniqueSaves</a>
+                    <a class="token" href="#/s:8speedify14StreamingStatsV11uniqueSavesSdvp">uniqueSaves</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -388,7 +449,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">uniqueSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uniqueSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -400,7 +461,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>© 2019 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
