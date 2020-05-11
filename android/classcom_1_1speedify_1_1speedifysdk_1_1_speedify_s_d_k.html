@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.8.0</span>
+   &#160;<span id="projectnumber">9.9.0</span>
    </div>
   </td>
  </tr>
@@ -332,6 +332,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb3b6bf3030c04fd1762c4678bd619dd"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#adb3b6bf3030c04fd1762c4678bd619dd">setLocalProxyIPv4</a> (List&lt; String &gt; ipv4)</td></tr>
 <tr class="memdesc:adb3b6bf3030c04fd1762c4678bd619dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv4 address to proxy locally, instead of going through the VPN.  <a href="#adb3b6bf3030c04fd1762c4678bd619dd">More...</a><br /></td></tr>
 <tr class="separator:adb3b6bf3030c04fd1762c4678bd619dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649903a4d1d19b5b78467f128d93d8a0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a649903a4d1d19b5b78467f128d93d8a0">setLocalProxyPorts</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_port.html">LocalProxyPort</a> &gt; ports)</td></tr>
+<tr class="memdesc:a649903a4d1d19b5b78467f128d93d8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ports to proxy.  <a href="#a649903a4d1d19b5b78467f128d93d8a0">More...</a><br /></td></tr>
+<tr class="separator:a649903a4d1d19b5b78467f128d93d8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a4da4aa940649ebfdc7e744b2be7c8b"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1a4da4aa940649ebfdc7e744b2be7c8b">setLocalProxyDomainWatchlist</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html">LocalProxyDomainWatchlistItem</a> &gt; domainWatchlist)</td></tr>
 <tr class="memdesc:a1a4da4aa940649ebfdc7e744b2be7c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set domain watchlist settings for the local proxy.  <a href="#a1a4da4aa940649ebfdc7e744b2be7c8b">More...</a><br /></td></tr>
 <tr class="separator:a1a4da4aa940649ebfdc7e744b2be7c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3012,6 +3015,33 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a649903a4d1d19b5b78467f128d93d8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649903a4d1d19b5b78467f128d93d8a0">&#9670;&nbsp;</a></span>setLocalProxyPorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setLocalProxyPorts </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_port.html">LocalProxyPort</a> &gt;&#160;</td>
+          <td class="paramname"><em>ports</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set ports to proxy. </p>
+<p>Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9d42fcdd9bd3b0195350cc46cf9012cd">OnLocalProxySettings</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ports</td><td>ports to be proxied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>9.9 </dd></dl>
+
+</div>
+</div>
 <a id="abd91fc14cf03cf59c6a3eda50f098e8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd91fc14cf03cf59c6a3eda50f098e8e">&#9670;&nbsp;</a></span>setLocalVendorSettings()</h2>
 
@@ -3150,7 +3180,7 @@ Protected Member Functions</h2></td></tr>
 <p>Set reporting encryption key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key128bit</td><td>A 16 byte ascii or 32byte hex string used to encrypt sensitive reports, or null to use default. </td></tr>
+    <tr><td class="paramname">key128bit</td><td>A 16 byte ascii encoded, 32byte hex encoded, or base64 encoded string used to encrypt sensitive reports, or null to use default. </td></tr>
   </table>
   </dd>
 </dl>

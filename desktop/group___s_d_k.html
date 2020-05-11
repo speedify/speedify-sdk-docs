@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.8.0</span>
+   &#160;<span id="projectnumber">9.9.0</span>
    </div>
   </td>
  </tr>
@@ -318,6 +318,9 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 <tr class="memitem:gaef3f39b63ff31b5adb5c9621bb6da4eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaef3f39b63ff31b5adb5c9621bb6da4eb">SpeedifySDK_SetLocalProxyIPv4</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, struct in_addr *ipv4, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaef3f39b63ff31b5adb5c9621bb6da4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv4 address to proxy locally, instead of going through the VPN. IP addresses should be in network byte order.  <a href="#gaef3f39b63ff31b5adb5c9621bb6da4eb">More...</a><br /></td></tr>
 <tr class="separator:gaef3f39b63ff31b5adb5c9621bb6da4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbb20259225196d9884d8b65994f7c70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gafbb20259225196d9884d8b65994f7c70">SpeedifySDK_SetLocalProxyPorts</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="struct_speedify_s_d_k___local_proxy_port.html">SpeedifySDK_LocalProxyPort</a> *ports, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gafbb20259225196d9884d8b65994f7c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ports to proxy locally, instead of going through the VPN. Ports should be in host byte order.  <a href="#gafbb20259225196d9884d8b65994f7c70">More...</a><br /></td></tr>
+<tr class="separator:gafbb20259225196d9884d8b65994f7c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac3a360edffb708b83a672c32af3b3ccc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gac3a360edffb708b83a672c32af3b3ccc">SpeedifySDK_SetLocalProxyDomainWatchlist</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html">SpeedifySDK_LocalProxyDomainWatchlistItem</a> *domainWatchlist, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gac3a360edffb708b83a672c32af3b3ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set domain watchlist settings for the local proxy.  <a href="#gac3a360edffb708b83a672c32af3b3ccc">More...</a><br /></td></tr>
 <tr class="separator:gac3a360edffb708b83a672c32af3b3ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4631,6 +4634,66 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 
 </div>
 </div>
+<a id="gafbb20259225196d9884d8b65994f7c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbb20259225196d9884d8b65994f7c70">&#9670;&nbsp;</a></span>SpeedifySDK_SetLocalProxyPorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a> SpeedifySDK_SetLocalProxyPorts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_speedify_s_d_k___local_proxy_port.html">SpeedifySDK_LocalProxyPort</a> *&#160;</td>
+          <td class="paramname"><em>ports</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set ports to proxy locally, instead of going through the VPN. Ports should be in host byte order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">count</td><td>number of domain objects </td></tr>
+    <tr><td class="paramname">ports</td><td>to redirect through the local proxy </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>local proxy result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>9.9 </dd></dl>
+
+</div>
+</div>
 <a id="gae846b9b87f5ee1905d7992bb816454d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae846b9b87f5ee1905d7992bb816454d9">&#9670;&nbsp;</a></span>SpeedifySDK_SetLocalVendorSettings()</h2>
 
@@ -4880,7 +4943,7 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">key128bit</td><td>A 16 byte ascii or 32byte hex string used to encrypt sensitive reports, or null to use default. </td></tr>
+    <tr><td class="paramname">key128bit</td><td>A 16 byte ascii encoded, 32byte hex encoded, or base64 encoded string used to encrypt sensitive reports, or null to use default. </td></tr>
   </table>
   </dd>
 </dl>

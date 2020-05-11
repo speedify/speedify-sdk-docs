@@ -99,6 +99,7 @@ var searchData=
   ['speedifysdk_5fsetlocalproxyenabled',['SpeedifySDK_SetLocalProxyEnabled',['../group___s_d_k.html#ga1161a3b5eff93c2877ee3f873adbd9e4',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetlocalproxyipv4',['SpeedifySDK_SetLocalProxyIPv4',['../group___s_d_k.html#gaef3f39b63ff31b5adb5c9621bb6da4eb',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetlocalproxymatchmode',['SpeedifySDK_SetLocalProxyMatchMode',['../group___s_d_k.html#ga6ef89cc596dbb5ba7d30e917f5a66461',1,'speedifysdk.h']]],
+  ['speedifysdk_5fsetlocalproxyports',['SpeedifySDK_SetLocalProxyPorts',['../group___s_d_k.html#gafbb20259225196d9884d8b65994f7c70',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetlocalvendorsettings',['SpeedifySDK_SetLocalVendorSettings',['../group___s_d_k.html#gae846b9b87f5ee1905d7992bb816454d9',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetmode',['SpeedifySDK_SetMode',['../group___s_d_k.html#ga4cc3b3a24b056db0b416331f1f9e63a0',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetoverflowthreshold',['SpeedifySDK_SetOverflowThreshold',['../group___s_d_k.html#gab1ade44b44c1c91c954a9d25afe16c26',1,'speedifysdk.h']]],
