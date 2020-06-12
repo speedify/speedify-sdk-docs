@@ -10,6 +10,5 @@ var searchData=
   ['minutesavailable',['minutesAvailable',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a2d1edc5588d5733b97d896a9fb01e07f',1,'com::speedify::speedifysdk::Types::AccountingData']]],
   ['minutesused',['minutesUsed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a8e69fcc88b5a5f8e219bc60d2ca72f6b',1,'com::speedify::speedifysdk::Types::AccountingData']]],
   ['mode',['mode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#a75e902f374321cc7e24738879ea32da6',1,'com::speedify::speedifysdk::Types::FirewallSettings']]],
-  ['month',['month',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#ab68d1462acb137d2bad332ff8d7b40eb',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],
   ['monthly',['MONTHLY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_payment_type.html#ab55be96386ff998f77f212cf748d3833',1,'com::speedify::speedifysdk::Types::AccountPaymentType']]]
 ];

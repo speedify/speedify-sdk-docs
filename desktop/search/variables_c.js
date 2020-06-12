@@ -9,6 +9,5 @@ var searchData=
   ['minor',['minor',['../struct_speedify_s_d_k___version.html#adeecdfe5c0587a8edb4a86693f81689d',1,'SpeedifySDK_Version']]],
   ['minutesavailable',['minutesAvailable',['../struct_speedify_s_d_k___accounting_data.html#a50bdde67f4a20477e0cacb914bf0259f',1,'SpeedifySDK_AccountingData']]],
   ['minutesused',['minutesUsed',['../struct_speedify_s_d_k___accounting_data.html#ab5b67fbb73ad5d160cac9bee0ea158c8',1,'SpeedifySDK_AccountingData']]],
-  ['mode',['mode',['../struct_speedify_s_d_k___firewall_settings.html#a070c838a7e9409c8395e062e3074d546',1,'SpeedifySDK_FirewallSettings']]],
-  ['month',['month',['../struct_speedify_s_d_k___session_stat_periods.html#afef645562a67bae3fd96a33c80b19733',1,'SpeedifySDK_SessionStatPeriods']]]
+  ['mode',['mode',['../struct_speedify_s_d_k___firewall_settings.html#a070c838a7e9409c8395e062e3074d546',1,'SpeedifySDK_FirewallSettings']]]
 ];

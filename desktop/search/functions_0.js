@@ -21,6 +21,7 @@ var searchData=
   ['speedifysdk_5fdisableadaptermonthlydatalimit',['SpeedifySDK_DisableAdapterMonthlyDataLimit',['../group___s_d_k.html#ga90214154e954c6d0c4e648e60a5e9ebc',1,'speedifysdk.h']]],
   ['speedifysdk_5fdisconnect',['SpeedifySDK_Disconnect',['../group___s_d_k.html#gae4e89d1a97e874d639956cd57cfd7334',1,'speedifysdk.h']]],
   ['speedifysdk_5fenableconnectionstatupdates',['SpeedifySDK_EnableConnectionStatUpdates',['../group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2',1,'speedifysdk.h']]],
+  ['speedifysdk_5fenablestatupdates',['SpeedifySDK_EnableStatUpdates',['../group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf',1,'speedifysdk.h']]],
   ['speedifysdk_5ferrortype_5ftostring',['SpeedifySDK_ErrorType_toString',['../group___t_y_p_e_s.html#gac5cd5618d087f462dc32b4b85d2030f7',1,'types.h']]],
   ['speedifysdk_5ffirewallmode_5ftostring',['SpeedifySDK_FirewallMode_toString',['../group___t_y_p_e_s.html#ga664339a1ed8d20db385f485cbadf273b',1,'types.h']]],
   ['speedifysdk_5ffree',['SpeedifySDK_Free',['../group___s_d_k.html#ga9e22671327a7252d615cdab74fcfee8a',1,'speedifysdk.h']]],
@@ -115,5 +116,6 @@ var searchData=
   ['speedifysdk_5fstopspeedtest',['SpeedifySDK_StopSpeedtest',['../group___s_d_k.html#gad4868ccac00a43a2417cde7cd5cf8d53',1,'speedifysdk.h']]],
   ['speedifysdk_5ftransportmode_5ftostring',['SpeedifySDK_TransportMode_toString',['../group___t_y_p_e_s.html#ga62e003c739d9ad534fc37640fbc1d3d4',1,'types.h']]],
   ['speedifysdk_5funregistercallback',['SpeedifySDK_UnregisterCallback',['../group___s_d_k.html#gae00990b78fbb6f32f43599083b6d3bfa',1,'speedifysdk.h']]],
-  ['speedifysdk_5fversion_5ftostring',['SpeedifySDK_Version_toString',['../group___t_y_p_e_s.html#ga0f41b8335b631fe26481f53fa5b8b962',1,'types.h']]]
+  ['speedifysdk_5fversion_5ftostring',['SpeedifySDK_Version_toString',['../group___t_y_p_e_s.html#ga0f41b8335b631fe26481f53fa5b8b962',1,'types.h']]],
+  ['speedifysdk_5fwaitoncallback',['SpeedifySDK_WaitOnCallback',['../group___s_d_k.html#gaa9200813e3991fe0e2786e24f149ea1f',1,'speedifysdk.h']]]
 ];

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.9.0</span>
+   &#160;<span id="projectnumber">10.0.0</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,9 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a9ed1e12fc9f6335ebdf7cff46f763654"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a9ed1e12fc9f6335ebdf7cff46f763654">period</a></td></tr>
+<tr class="memdesc:a9ed1e12fc9f6335ebdf7cff46f763654"><td class="mdescLeft">&#160;</td><td class="mdescRight">period the time period this stat covers, in hours, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a1c940703f3de9190a83fab2de467aa47">PERIOD_CURRENT</a> for current, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573">PERIOD_TOTAL</a> for total  <a href="#a9ed1e12fc9f6335ebdf7cff46f763654">More...</a><br /></td></tr>
+<tr class="separator:a9ed1e12fc9f6335ebdf7cff46f763654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9bed04deeb90fd616d528bc19e0fbbd"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ad9bed04deeb90fd616d528bc19e0fbbd">bytesReceived</a></td></tr>
 <tr class="memdesc:ad9bed04deeb90fd616d528bc19e0fbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes received this period  <a href="#ad9bed04deeb90fd616d528bc19e0fbbd">More...</a><br /></td></tr>
 <tr class="separator:ad9bed04deeb90fd616d528bc19e0fbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,11 +133,14 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:abbbb4e36a5be76d587b999cc21a3d4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding the TUN this period.  <a href="#abbbb4e36a5be76d587b999cc21a3d4ea">More...</a><br /></td></tr>
 <tr class="separator:abbbb4e36a5be76d587b999cc21a3d4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad831df42df78641d082abd547dbc5a72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html">HandlerStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ad831df42df78641d082abd547dbc5a72">handlerStats</a></td></tr>
-<tr class="memdesc:ad831df42df78641d082abd547dbc5a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding the packet handler this period.  <a href="#ad831df42df78641d082abd547dbc5a72">More...</a><br /></td></tr>
+<tr class="memdesc:ad831df42df78641d082abd547dbc5a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding the packet handler this period, only available on PERIOD_CURRENT.  <a href="#ad831df42df78641d082abd547dbc5a72">More...</a><br /></td></tr>
 <tr class="separator:ad831df42df78641d082abd547dbc5a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af704d752d7cbe5c3d852ad1b14a55a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_captive_portal_stats.html">CaptivePortalStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#af704d752d7cbe5c3d852ad1b14a55a61">captivePortalStats</a></td></tr>
 <tr class="memdesc:af704d752d7cbe5c3d852ad1b14a55a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding captive portals this period.  <a href="#af704d752d7cbe5c3d852ad1b14a55a61">More...</a><br /></td></tr>
 <tr class="separator:af704d752d7cbe5c3d852ad1b14a55a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700488c9f27def5cfe6616bc5353b65f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html">StreamingSessionStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a700488c9f27def5cfe6616bc5353b65f">streamingStats</a></td></tr>
+<tr class="memdesc:a700488c9f27def5cfe6616bc5353b65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats regarding streaming mode this period.  <a href="#a700488c9f27def5cfe6616bc5353b65f">More...</a><br /></td></tr>
+<tr class="separator:a700488c9f27def5cfe6616bc5353b65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad9bed04deeb90fd616d528bc19e0fbbd"></a>
@@ -251,7 +257,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Contains stats regarding the packet handler this period. </p>
+<p>Contains stats regarding the packet handler this period, only available on PERIOD_CURRENT. </p>
 <dl class="section since"><dt>Since</dt><dd>8.0 </dd></dl>
 
 </div>
@@ -358,6 +364,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9ed1e12fc9f6335ebdf7cff46f763654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed1e12fc9f6335ebdf7cff46f763654">&#9670;&nbsp;</a></span>period</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long com.speedify.speedifysdk.Types.SessionStats.period</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>period the time period this stat covers, in hours, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a1c940703f3de9190a83fab2de467aa47">PERIOD_CURRENT</a> for current, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573">PERIOD_TOTAL</a> for total </p>
+<dl class="section since"><dt>Since</dt><dd>10.0 </dd></dl>
+
+</div>
+</div>
 <a id="aad6ecf2b3b0648e5b2fb11a3442a3384"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad6ecf2b3b0648e5b2fb11a3442a3384">&#9670;&nbsp;</a></span>periodStartTime</h2>
 
@@ -389,6 +412,23 @@ Public Attributes</h2></td></tr>
 
 <p>bytes retransmitted this period </p>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+
+</div>
+</div>
+<a id="a700488c9f27def5cfe6616bc5353b65f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700488c9f27def5cfe6616bc5353b65f">&#9670;&nbsp;</a></span>streamingStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html">StreamingSessionStats</a> com.speedify.speedifysdk.Types.SessionStats.streamingStats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contains stats regarding streaming mode this period. </p>
+<dl class="section since"><dt>Since</dt><dd>10.0 </dd></dl>
 
 </div>
 </div>

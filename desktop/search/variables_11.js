@@ -15,7 +15,7 @@ var searchData=
   ['status',['status',['../struct_speedify_s_d_k___speed_test_report.html#a654a00c8abf3e08fc8429c4be4ebaeec',1,'SpeedifySDK_SpeedTestReport']]],
   ['step',['step',['../struct_speedify_s_d_k___speed_test_connection_result.html#aebe5ffa645dee6f60fccb15066f7b74c',1,'SpeedifySDK_SpeedTestConnectionResult']]],
   ['stepprogress',['stepProgress',['../struct_speedify_s_d_k___speed_test_connection_result.html#af0f85a60b1f32df015fc50f5b61cd6e1',1,'SpeedifySDK_SpeedTestConnectionResult']]],
-  ['streamingstats',['streamingStats',['../struct_speedify_s_d_k___streaming_stats_result.html#a1be876e4455257508afec22c81f9faa5',1,'SpeedifySDK_StreamingStatsResult']]],
+  ['streamingstats',['streamingStats',['../struct_speedify_s_d_k___streaming_stats_result.html#a1be876e4455257508afec22c81f9faa5',1,'SpeedifySDK_StreamingStatsResult::streamingStats()'],['../struct_speedify_s_d_k___session_stats.html#aa38db802bbf3b75383851d66fb8f6857',1,'SpeedifySDK_SessionStats::streamingStats()']]],
   ['streams',['streams',['../struct_speedify_s_d_k___streaming_stats.html#afb0bc30b39167440d9e9c456f232294b',1,'SpeedifySDK_StreamingStats']]],
   ['streamscount',['streamsCount',['../struct_speedify_s_d_k___streaming_stats.html#ab1c3760393f2f0d46b91c61d6fc615ed',1,'SpeedifySDK_StreamingStats']]],
   ['successes',['successes',['../struct_speedify_s_d_k___captive_portal_stats.html#a7780edc67c8539a52e38b75d968d1397',1,'SpeedifySDK_CaptivePortalStats']]]

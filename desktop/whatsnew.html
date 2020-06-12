@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.9.0</span>
+   &#160;<span id="projectnumber">10.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,18 +71,28 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_990"></a>Speedify SDK for Desktop 9.9 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1000"></a>Speedify SDK for Desktop 10.0 </h2>
+<ul>
+<li>New Session Stats API<ul>
+<li>The named time period members (current, day, week, month, total) are removed in favor of custom time periods. The <a class="el" href="struct_speedify_s_d_k___session_stat_periods.html#a9ce04eaddfa77db1e5af2ec5fa825880">periods</a> member now contains a list of all requested time periods. Use the <a class="el" href="struct_speedify_s_d_k___session_stats.html#a7d4ad844ab915e806ac9c451b645ed5b">period</a> member of <a class="el" href="struct_speedify_s_d_k___session_stats.html">SpeedifySDK_SessionStats</a> to identify the period the stats are for.</li>
+<li>Use <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> to specify wanted time periods.</li>
+</ul>
+</li>
+<li>Session Stats now include <a class="el" href="struct_speedify_s_d_k___streaming_session_stats.html">SpeedifySDK_StreamingSessionStats</a> for each period.</li>
+<li>When using asynchronous SDK methods, you can now wait for the callback to occur via <a class="el" href="group___s_d_k.html#gaa9200813e3991fe0e2786e24f149ea1f">SpeedifySDK_WaitOnCallback</a>. This will wait in the current thread until the desired callback has returned.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_990"></a>Speedify SDK for Desktop 9.9 </h2>
 <ul>
 <li>The Local Proxy API now supports matching by TCP and UDP port: <a class="el" href="group___s_d_k.html#gafbb20259225196d9884d8b65994f7c70">SpeedifySDK_SetLocalProxyPorts</a>.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_980"></a>Speedify SDK for Desktop 9.8 </h2>
 <ul>
 <li><a class="el" href="group___s_d_k.html#gaeb65cc18ae259e086ebf814b8aefc516">SpeedifySDK_SetVendorUserData</a> can be used to provide a string of user data for an account.</li>
-<li>New <a class="el" href="struct_speedify_s_d_k___streaming_stats.html">StreamingStats</a> fields:<ul>
-<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#ac418e98e8ed854e87fa279c567cc147b">totalRedundantModeSaves</a></li>
-<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#aad9f479c1640fefdc20a89d8f48c5e30">totalSpeedModeSaves</a></li>
-<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#ac3271414d48551cbb949808b2af5f77c">totalStreams</a></li>
-<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#ae61837b28d1071c32facfdff107efad7">uniqueSaves</a></li>
+<li>New <a class="el" href="struct_speedify_s_d_k___streaming_stats.html">StreamingStats</a> fields: (these are now under <a class="el" href="struct_speedify_s_d_k___streaming_session_stats.html">SpeedifySDK_StreamingSessionStats</a> as of 10.0)<ul>
+<li>totalRedundantModeSaves</li>
+<li>totalSpeedModeSaves</li>
+<li>totalStreams</li>
+<li>uniqueSaves</li>
 </ul>
 </li>
 <li>New <a class="el" href="struct_speedify_s_d_k___stream_stats.html">StreamStats</a> fields:<ul>

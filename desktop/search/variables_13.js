@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['uniquesaves',['uniqueSaves',['../struct_speedify_s_d_k___streaming_stats.html#ae61837b28d1071c32facfdff107efad7',1,'SpeedifySDK_StreamingStats']]],
+  ['uniquesaves',['uniqueSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#a0916cce0dd4e0033160a51219f9fc8f6',1,'SpeedifySDK_StreamingSessionStats']]],
   ['uploadbps',['uploadBps',['../struct_speedify_s_d_k___speed_test_connection_result.html#a959827ea0a101c2cb8ce42ce5a958852',1,'SpeedifySDK_SpeedTestConnectionResult']]],
   ['uploadspeed',['uploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#ad11e911f815224f96e4b08b412164bbc',1,'SpeedifySDK_StreamStats']]],
   ['usagedaily',['usageDaily',['../struct_speedify_s_d_k___adapter_usage_data.html#a1ef112f8a79d821cef7fab6a03e16401',1,'SpeedifySDK_AdapterUsageData']]],

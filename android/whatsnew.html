@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.9.0</span>
+   &#160;<span id="projectnumber">10.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,20 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_990"></a>Speedify SDK for Android 9.9 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1000"></a>Speedify SDK for Android 10.0 </h2>
+<ul>
+<li>New Session Stats API<ul>
+<li>The named time period members (current, day, week, month, total) are removed in favor of custom time periods. The <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#ad0cf9a09d563aab96b5c2fdf8fc61362">periods</a> member now contains a list of all requested time periods. Use the <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a9ed1e12fc9f6335ebdf7cff46f763654">period</a> member of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html">SessionStats</a> to identify the period the stats are for.</li>
+<li>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> to specify wanted time periods.</li>
+</ul>
+</li>
+<li>Session Stats now include <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html">StreamingSessionStats</a> for each period.</li>
+<li>Create VPN Profile without starting VPN<ul>
+<li>You can now create the Android VPN Profile without connecting to a speed server first. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a28168c54f50eb91a95cd551b51cf928a">hasVPNPermission</a> to check if VPN permission has already been granted and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a43d8aee228eb303357ed460fe65f28ba">initializeVPNPermission</a> to request it.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_990"></a>Speedify SDK for Android 9.9 </h2>
 <ul>
 <li>The Local Proxy API now supports matching by TCP and UDP port: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a649903a4d1d19b5b78467f128d93d8a0">setLocalProxyPorts</a>.</li>
 </ul>
@@ -79,11 +92,11 @@ $(function() {
 <ul>
 <li>Multicast Support - Receiving multicast packets while the VPN is connected has been restricted by the VPN not allowing apps to send/receive traffic around the VPN. This is the default VPN behavior on Android, and is the most secure setting. If you need multicast support, you can allow apps to communicate around the VPN by setting <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a83fdcd0d1fadb7c33c329ea7a48f3652">setAllowTunnelBypass</a>. Note that this opens up all apps to be able to create sockets that bypass the VPN, thus decreasing security.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac4239bb495d63bf6cedbf775cd47f048">setVendorUserData</a> can be used to provide a string of user data for an account.</li>
-<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html">StreamingStats</a> fields:<ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a2344512fe8ae366ee384d2760dfeed57">totalRedundantModeSaves</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a276ff6e4aa14ba6df3d37ac06bc126b1">totalSpeedModeSaves</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#ab205af1e55c4ac36a020d7a8121da552">totalStreams</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#ac7924cac53f508f1228c50a1f129ae89">uniqueSaves</a></li>
+<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html">StreamingStats</a> fields: (these are now under <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html">StreamingSessionStats</a> as of 10.0)<ul>
+<li>totalRedundantModeSaves</li>
+<li>totalSpeedModeSaves</li>
+<li>totalStreams</li>
+<li>uniqueSaves</li>
 </ul>
 </li>
 <li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html">StreamStats</a> fields:<ul>

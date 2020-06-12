@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">9.9.0</span>
+   &#160;<span id="projectnumber">10.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,25 @@ $(function() {
 <div class="title">Migration Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="migrate_950"></a>Speedify SDK for Desktop 9.5 Migration </h2>
+<div class="textblock"><h2><a class="anchor" id="migrate_1000"></a>Speedify SDK for Desktop 10.0 Migration </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li>SpeedifySDK<ul>
+<li><a class="el" href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">SpeedifySDK_EnableConnectionStatUpdates</a> is deprecated. Use <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> instead.</li>
+</ul>
+</li>
+<li><a class="el" href="struct_speedify_s_d_k___session_stat_periods.html" title="Statistics for sessions over various time periods.">SpeedifySDK_SessionStatPeriods</a><ul>
+<li>The named time period members (current, day, week, month, total) are removed in favor of custom time periods. The <a class="el" href="struct_speedify_s_d_k___session_stat_periods.html#a9ce04eaddfa77db1e5af2ec5fa825880">periods</a> member now contains a list of all requested time periods. Use the <a class="el" href="struct_speedify_s_d_k___session_stats.html#a7d4ad844ab915e806ac9c451b645ed5b">period</a> member of <a class="el" href="struct_speedify_s_d_k___session_stats.html">SpeedifySDK_SessionStats</a> to identify the period the stats are for.</li>
+</ul>
+</li>
+<li>StreamingStats<ul>
+<li>Stats on total streams and events have been moved in to <a class="el" href="struct_speedify_s_d_k___streaming_session_stats.html">SpeedifySDK_StreamingSessionStats</a> available in <a class="el" href="struct_speedify_s_d_k___session_stats.html">SpeedifySDK_SessionStats</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_950"></a>Speedify SDK for Desktop 9.5 Migration </h2>
 <ul>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="struct_speedify_s_d_k___session_stats_result.html">SpeedifySDK_SessionStatsResult</a><ul>

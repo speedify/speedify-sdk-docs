@@ -24,6 +24,5 @@ var searchData=
   ['cspeedifysdk',['CSpeedifySDK',['../speedifysdk_8h.html#a256b71774105b68b43040010e88169d3',1,'speedifysdk.h']]],
   ['cstate_5fconnected',['CSTATE_CONNECTED',['../group___t_y_p_e_s.html#ggabc5444e7756604223c538c9417e89cbeaa1fa11f367a7454366f2159c98c97098',1,'types.h']]],
   ['cstate_5fconnecting',['CSTATE_CONNECTING',['../group___t_y_p_e_s.html#ggabc5444e7756604223c538c9417e89cbea721ea2b825ee3dc05fc07234fee62574',1,'types.h']]],
-  ['cstate_5fdisconnected',['CSTATE_DISCONNECTED',['../group___t_y_p_e_s.html#ggabc5444e7756604223c538c9417e89cbea2d152dc77c713c2c1e991737e137f8f3',1,'types.h']]],
-  ['current',['current',['../struct_speedify_s_d_k___session_stat_periods.html#af3837c509cd9811bc5788e7e684cd0e9',1,'SpeedifySDK_SessionStatPeriods']]]
+  ['cstate_5fdisconnected',['CSTATE_DISCONNECTED',['../group___t_y_p_e_s.html#ggabc5444e7756604223c538c9417e89cbea2d152dc77c713c2c1e991737e137f8f3',1,'types.h']]]
 ];

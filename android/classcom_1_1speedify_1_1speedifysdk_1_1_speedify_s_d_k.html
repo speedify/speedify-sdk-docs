@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.9.0</span>
+   &#160;<span id="projectnumber">10.0.0</span>
    </div>
   </td>
  </tr>
@@ -177,8 +177,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d43b451e0ebc24feb97a16996d6bf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the directory server to defaults.  <a href="#a8d43b451e0ebc24feb97a16996d6bf40">More...</a><br /></td></tr>
 <tr class="separator:a8d43b451e0ebc24feb97a16996d6bf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab51c7f8e6d1a1a9d8491c1485cdbf291">enableConnectionStatUpdates</a> (boolean enabled)</td></tr>
-<tr class="memdesc:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables connection stat updates once a second.  <a href="#ab51c7f8e6d1a1a9d8491c1485cdbf291">More...</a><br /></td></tr>
+<tr class="memdesc:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#ab51c7f8e6d1a1a9d8491c1485cdbf291">More...</a><br /></td></tr>
 <tr class="separator:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7815d1b7b4591407fa253f0773aaf66"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> (boolean enabled, List&lt; Long &gt; periods)</td></tr>
+<tr class="memdesc:aa7815d1b7b4591407fa253f0773aaf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#aa7815d1b7b4591407fa253f0773aaf66">More...</a><br /></td></tr>
+<tr class="separator:aa7815d1b7b4591407fa253f0773aaf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b91a466b84ef755d41818687b2e106e"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9b91a466b84ef755d41818687b2e106e">refreshHistoricConnectionStats</a> ()</td></tr>
 <tr class="memdesc:a9b91a466b84ef755d41818687b2e106e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets historic tunnel stats for last 5 minutes.  <a href="#a9b91a466b84ef755d41818687b2e106e">More...</a><br /></td></tr>
 <tr class="separator:a9b91a466b84ef755d41818687b2e106e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,6 +371,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0825a47f582698ee62cab30e5144f0b5"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0825a47f582698ee62cab30e5144f0b5">setStartupConnect</a> (boolean enabled)</td></tr>
 <tr class="memdesc:a0825a47f582698ee62cab30e5144f0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if Speedify should autmatically connect when the daemon starts.  <a href="#a0825a47f582698ee62cab30e5144f0b5">More...</a><br /></td></tr>
 <tr class="separator:a0825a47f582698ee62cab30e5144f0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28168c54f50eb91a95cd551b51cf928a"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a28168c54f50eb91a95cd551b51cf928a">hasVPNPermission</a> ()</td></tr>
+<tr class="memdesc:a28168c54f50eb91a95cd551b51cf928a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the SDK currently has VPN permission.  <a href="#a28168c54f50eb91a95cd551b51cf928a">More...</a><br /></td></tr>
+<tr class="separator:a28168c54f50eb91a95cd551b51cf928a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d8aee228eb303357ed460fe65f28ba"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a43d8aee228eb303357ed460fe65f28ba">initializeVPNPermission</a> ()</td></tr>
+<tr class="memdesc:a43d8aee228eb303357ed460fe65f28ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests VPN permission from the user through the system VPN dialog Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9ec07dcc9f6d2012215f63574eee5adb">OnVPNPermissionResult</a>.  <a href="#a43d8aee228eb303357ed460fe65f28ba">More...</a><br /></td></tr>
+<tr class="separator:a43d8aee228eb303357ed460fe65f28ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0da807e1c374c9c826e87de5d5f902a"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab0da807e1c374c9c826e87de5d5f902a">sendRawMessage</a> (String messageType, JSONObject data)</td></tr>
 <tr class="memdesc:ab0da807e1c374c9c826e87de5d5f902a"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal use  <a href="#ab0da807e1c374c9c826e87de5d5f902a">More...</a><br /></td></tr>
 <tr class="separator:ab0da807e1c374c9c826e87de5d5f902a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -944,14 +953,53 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enables connection stat updates once a second. </p>
-<p>Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a57e78a7c48fb21de1d336c376278330a">OnConnectionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8dfeea141111ebdb89dd9c0dad58eb87">OnAdaptersList</a> once every 30 seconds while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">OnSessionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#abb8ec8f1ac9dad71cca05b4f5bb5ca8f">OnStreamingStats</a> once per second while connected. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected. </p>
+<p>This is equivalent to <code>eenableStatUpdates(enabled,Arrays.asList(<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573" title="Requests total stats updates.">SessionStatPeriods.PERIOD_TOTAL</a>));</code> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>As of 10.0. See <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a57e78a7c48fb21de1d336c376278330a">OnConnectionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8dfeea141111ebdb89dd9c0dad58eb87">OnAdaptersList</a> once every 30 seconds while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">OnSessionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#abb8ec8f1ac9dad71cca05b4f5bb5ca8f">OnStreamingStats</a> once per second while connected. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">enabled</td><td>if connection stat updates should be continuously received </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.8 </dd></dl>
+
+</div>
+</div>
+<a id="aa7815d1b7b4591407fa253f0773aaf66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7815d1b7b4591407fa253f0773aaf66">&#9670;&nbsp;</a></span>enableStatUpdates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.enableStatUpdates </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Long &gt;&#160;</td>
+          <td class="paramname"><em>periods</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected. </p>
+<p>Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a57e78a7c48fb21de1d336c376278330a">OnConnectionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8dfeea141111ebdb89dd9c0dad58eb87">OnAdaptersList</a> once every 30 seconds while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">OnSessionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#abb8ec8f1ac9dad71cca05b4f5bb5ca8f">OnStreamingStats</a> once per second while connected. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>if connection stat updates should be continuously received </td></tr>
+    <tr><td class="paramname">periods</td><td>timeframes of requested session stats, values in hours, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a1c940703f3de9190a83fab2de467aa47">PERIOD_CURRENT</a> for current, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573">PERIOD_TOTAL</a> for total, or empty/null for previously configured periods </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>10.0 </dd></dl>
 
 </div>
 </div>
@@ -1131,6 +1179,47 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.8 </dd></dl>
+
+</div>
+</div>
+<a id="a28168c54f50eb91a95cd551b51cf928a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28168c54f50eb91a95cd551b51cf928a">&#9670;&nbsp;</a></span>hasVPNPermission()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final boolean com.speedify.speedifysdk.SpeedifySDK.hasVPNPermission </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the SDK currently has VPN permission. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if permission is already granted </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>10.0 </dd></dl>
+
+</div>
+</div>
+<a id="a43d8aee228eb303357ed460fe65f28ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d8aee228eb303357ed460fe65f28ba">&#9670;&nbsp;</a></span>initializeVPNPermission()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.initializeVPNPermission </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests VPN permission from the user through the system VPN dialog Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9ec07dcc9f6d2012215f63574eee5adb">OnVPNPermissionResult</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>10.0 </dd></dl>
 
 </div>
 </div>

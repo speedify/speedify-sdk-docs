@@ -2,7 +2,6 @@ var searchData=
 [
   ['dataperiodend',['dataPeriodEnd',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a49870dcaf74788b5728e27a0bce1f822',1,'com::speedify::speedifysdk::Types::AccountingData']]],
   ['datausage',['dataUsage',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a6731b68f0024e249e497462a1b0bdeb3',1,'com::speedify::speedifysdk::Types::AdapterData']]],
-  ['day',['day',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a362a1cefffd2621e0c547e1048fd3a37',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],
   ['dayssincefirst',['daysSinceFirst',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a26c7864736d96e718f48b22fa1a761ab',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['detections',['detections',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_captive_portal_stats.html#ab330cab79c24a8c6d2f8bb7247fc4169',1,'com::speedify::speedifysdk::Types::CaptivePortalStats']]],
   ['directory',['DIRECTORY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ab198d8b11ccbf58e0fd7e1f3e287895d',1,'com::speedify::speedifysdk::Types::ErrorType']]],

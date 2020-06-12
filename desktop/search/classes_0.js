@@ -46,6 +46,7 @@ var searchData=
   ['speedifysdk_5fspeedtestreport',['SpeedifySDK_SpeedTestReport',['../struct_speedify_s_d_k___speed_test_report.html',1,'']]],
   ['speedifysdk_5fspeedtestresult',['SpeedifySDK_SpeedtestResult',['../struct_speedify_s_d_k___speedtest_result.html',1,'']]],
   ['speedifysdk_5fstateresult',['SpeedifySDK_StateResult',['../struct_speedify_s_d_k___state_result.html',1,'']]],
+  ['speedifysdk_5fstreamingsessionstats',['SpeedifySDK_StreamingSessionStats',['../struct_speedify_s_d_k___streaming_session_stats.html',1,'']]],
   ['speedifysdk_5fstreamingstats',['SpeedifySDK_StreamingStats',['../struct_speedify_s_d_k___streaming_stats.html',1,'']]],
   ['speedifysdk_5fstreamingstatsresult',['SpeedifySDK_StreamingStatsResult',['../struct_speedify_s_d_k___streaming_stats_result.html',1,'']]],
   ['speedifysdk_5fstreamstats',['SpeedifySDK_StreamStats',['../struct_speedify_s_d_k___stream_stats.html',1,'']]],

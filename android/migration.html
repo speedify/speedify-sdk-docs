@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">9.9.0</span>
+   &#160;<span id="projectnumber">10.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,36 @@ $(function() {
 <div class="title">Migration Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="migrate_980"></a>Speedify SDK for Android 9.8 Migration </h2>
+<div class="textblock"><h2><a class="anchor" id="migrate_1000"></a>Speedify SDK for Android 10.0 Migration </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li>SpeedifySDK<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab51c7f8e6d1a1a9d8491c1485cdbf291">enableConnectionStatUpdates</a> is deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> instead.</li>
+</ul>
+</li>
+<li>SessionStatPeriods<ul>
+<li>The named time period members (current, day, week, month, total) are removed in favor of custom time periods. The <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#ad0cf9a09d563aab96b5c2fdf8fc61362">periods</a> member now contains a list of all requested time periods. Use the <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a9ed1e12fc9f6335ebdf7cff46f763654">period</a> member of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html">SessionStats</a> to identify the period the stats are for.</li>
+</ul>
+</li>
+<li>StreamingStats<ul>
+<li>Stats on total streams and events have been moved in to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html">StreamingSessionStats</a> available in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html">SessionStats</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Deprecation removals - Longtime methods marked as Deprecated have been removed<ul>
+<li>SpeedifyHandler<ul>
+<li>The single stats object version of OnSessionStats has been removed.</li>
+</ul>
+</li>
+<li>Types.AdapterData<ul>
+<li>connectedNetworkBSSID has been removed.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="migrate_980"></a>Speedify SDK for Android 9.8 Migration </h2>
 <ul>
 <li>The dependency on legacy-support-v4 has been reduced in scope to androidx.core, version 1.2.0.</li>
 <li>API Compatibility Changes<ul>

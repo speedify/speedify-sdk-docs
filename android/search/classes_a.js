@@ -14,6 +14,7 @@ var searchData=
   ['speedteststep',['SpeedTestStep',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_step.html',1,'com::speedify::speedifysdk::Types']]],
   ['startupbroadcastreceiver',['StartupBroadcastReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_startup_broadcast_receiver.html',1,'com::speedify::speedifysdk']]],
   ['state',['State',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html',1,'com::speedify::speedifysdk::Types']]],
+  ['streamingsessionstats',['StreamingSessionStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html',1,'com::speedify::speedifysdk::Types']]],
   ['streamingstats',['StreamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html',1,'com::speedify::speedifysdk::Types']]],
   ['streamstats',['StreamStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html',1,'com::speedify::speedifysdk::Types']]]
 ];

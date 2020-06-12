@@ -15,6 +15,7 @@ var searchData=
   ['step',['step',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a41a238918bb7ed523f2d543e6f668cbb',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
   ['stepprogress',['stepProgress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_connection_result.html#a0928c74b8ea6cce987e4baf356378560',1,'com::speedify::speedifysdk::Types::SpeedTestConnectionResult']]],
   ['streaming',['STREAMING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a18b205d3113d83c8e6d30e8e32bf91f0',1,'com::speedify::speedifysdk::Types::BondingMode']]],
+  ['streamingstats',['streamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a700488c9f27def5cfe6616bc5353b65f',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['streams',['streams',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a518476f2a6e0c0e4a434c5b3b204db27',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
   ['successes',['successes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_captive_portal_stats.html#a51ed8c41ef413dffc1e0ab6c73270ab2',1,'com::speedify::speedifysdk::Types::CaptivePortalStats']]]
 ];

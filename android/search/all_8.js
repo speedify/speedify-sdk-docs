@@ -7,6 +7,7 @@ var searchData=
   ['inflightwindow',['inFlightWindow',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a91aff05d023297e352276f886593f031',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['info',['info',['../classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#a38d6ad29df4d1df8c470ee8fdf4038a9',1,'com::speedify::speedifysdk::Logging::LogHandler']]],
   ['init',['Init',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#a4de570cdd39d3664cceae383d61d2186',1,'com::speedify::speedifysdk::Preferences']]],
+  ['initializevpnpermission',['initializeVPNPermission',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a43d8aee228eb303357ed460fe65f28ba',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['integration_20guide',['Integration Guide',['../integration.html',1,'']]],
   ['integration_2edox',['integration.dox',['../integration_8dox.html',1,'']]],
   ['ipaddress',['ipAddress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#a763c986b37f74a17049098c3d19c695a',1,'com::speedify::speedifysdk::Types::IPRange']]],

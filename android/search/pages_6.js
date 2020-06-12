@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['what_27s_20new',['What&apos;s New',['../whatsnew.html',1,'']]]
+  ['sdk_20strings',['SDK Strings',['../userstrings.html',1,'']]]
 ];
