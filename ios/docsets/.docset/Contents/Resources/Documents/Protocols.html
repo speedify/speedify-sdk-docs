@@ -14,7 +14,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (77% documented)</p>
+        <p><a href="index.html"> Docs</a> (76% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,7 +31,10 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/SpeedifySDK.html">SpeedifySDK</a>
+                <a href="Classes/Speedify.html">Speedify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SpeeedifyPacketTunnel.html">SpeeedifyPacketTunnel</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/UUIDProvider.html">UUIDProvider</a>
@@ -66,7 +69,13 @@
                 <a href="Enums/NetworkType.html">NetworkType</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/PERIODS.html">PERIODS</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/PortProtocol.html">PortProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/State.html">State</a>
@@ -136,6 +145,9 @@
                 <a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/SpeeidfyLocalProxySettingsDelegate.html">SpeeidfyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
               </li>
             </ul>
@@ -180,22 +192,31 @@
                 <a href="Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/LocalProxyPort.html">LocalProxyPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LocalProxySettings.html">LocalProxySettings</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/PrivacySettings.html">PrivacySettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/ServerInformation.html">ServerInformation</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/SessionStats.html">SessionStats</a>
+                <a href="Structs/SessionStatPeriods.html">SessionStatPeriods</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/SessionStatsPeriod.html">SessionStatsPeriod</a>
+                <a href="Structs/SessionStats.html">SessionStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Settings.html">Settings</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/StreamStats.html">StreamStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamingSessionStats.html">StreamingSessionStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/StreamingStats.html">StreamingStats</a>
@@ -223,9 +244,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A11SDKDelegateP"></a>
+                    <a name="/s:11speedifysdk19SpeedifySDKDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifySDKDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A11SDKDelegateP">SpeedifySDKDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk19SpeedifySDKDelegateP">SpeedifySDKDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -241,7 +262,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifySDKDelegate</span> <span class="p">:</span> <span class="kt"><a href="Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySDKDelegate</span> <span class="p">:</span> <span class="kt"><a href="Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a></span></code></pre>
 
                         </div>
                       </div>
@@ -251,9 +272,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A16SettingsDelegateP"></a>
+                    <a name="/s:11speedifysdk24SpeedifySettingsDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifySettingsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A16SettingsDelegateP">SpeedifySettingsDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -269,7 +290,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifySettingsDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -279,9 +300,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A14TunnelDelegateP"></a>
+                    <a name="/s:11speedifysdk22SpeedifyTunnelDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyTunnelDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A14TunnelDelegateP">SpeedifyTunnelDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -298,7 +319,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyTunnelDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyTunnelDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -308,9 +329,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A13StateDelegateP"></a>
+                    <a name="/s:11speedifysdk21SpeedifyStateDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyStateDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A13StateDelegateP">SpeedifyStateDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -326,7 +347,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyStateDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyStateDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -336,9 +357,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK18VendorDataDelegateP"></a>
+                    <a name="/s:11speedifysdk18VendorDataDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/VendorDataDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK18VendorDataDelegateP">VendorDataDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk18VendorDataDelegateP">VendorDataDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -354,7 +375,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">VendorDataDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">VendorDataDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -364,9 +385,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A15AdapterDelegateP"></a>
+                    <a name="/s:11speedifysdk23SpeedifyAdapterDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyAdapterDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A15AdapterDelegateP">SpeedifyAdapterDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -382,7 +403,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyAdapterDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyAdapterDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -392,9 +413,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A18AccountingDelegateP"></a>
+                    <a name="/s:11speedifysdk26SpeedifyAccountingDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyAccountingDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A18AccountingDelegateP">SpeedifyAccountingDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -410,7 +431,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyAccountingDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyAccountingDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -420,9 +441,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A20SessionStatsDelegateP"></a>
+                    <a name="/s:11speedifysdk28SpeedifySessionStatsDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifySessionStatsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A20SessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -438,8 +459,8 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Use `SpeedifySessionPeriodStatsDelegate` instead")</span>
-<span class="kd">protocol</span> <span class="kt">SpeedifySessionStatsDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use `SpeedifySessionPeriodStatsDelegate` instead"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySessionStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -449,9 +470,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A22StreamingStatsDelegateP"></a>
+                    <a name="/s:11speedifysdk30SpeedifyStreamingStatsDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyStreamingStatsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A22StreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -467,7 +488,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyStreamingStatsDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyStreamingStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -477,9 +498,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A26SessionPeriodStatsDelegateP"></a>
+                    <a name="/s:11speedifysdk34SpeedifySessionPeriodStatsDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifySessionPeriodStatsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A26SessionPeriodStatsDelegateP">SpeedifySessionPeriodStatsDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk34SpeedifySessionPeriodStatsDelegateP">SpeedifySessionPeriodStatsDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -487,8 +508,8 @@ This will get triggered if a user denies the VPN permission</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Listens for <code><a href="Structs/SessionStatsPeriod.html">SessionStatsPeriod</a></code> updates.
- Since 9.5</p>
+                        <p>Listens for <code>SessionStatsPeriod</code> updates.
+Since 9.5</p>
 
                         <a href="Protocols/SpeedifySessionPeriodStatsDelegate.html" class="slightly-smaller">See more</a>
                       </div>
@@ -496,7 +517,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifySessionPeriodStatsDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySessionPeriodStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -506,9 +527,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A27LocalSettingsVendorDelegateP"></a>
+                    <a name="/s:11speedifysdk35SpeedifyLocalSettingsVendorDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyLocalSettingsVendorDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A27LocalSettingsVendorDelegateP">SpeedifyLocalSettingsVendorDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk35SpeedifyLocalSettingsVendorDelegateP">SpeedifyLocalSettingsVendorDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -524,7 +545,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyLocalSettingsVendorDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyLocalSettingsVendorDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -534,9 +555,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A28RemoteSettingsVendorDelegateP"></a>
+                    <a name="/s:11speedifysdk36SpeedifyRemoteSettingsVendorDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyRemoteSettingsVendorDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A28RemoteSettingsVendorDelegateP">SpeedifyRemoteSettingsVendorDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk36SpeedifyRemoteSettingsVendorDelegateP">SpeedifyRemoteSettingsVendorDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -552,7 +573,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyRemoteSettingsVendorDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyRemoteSettingsVendorDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -562,9 +583,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A23ConnectionStatsDelegateP"></a>
+                    <a name="/s:11speedifysdk31SpeedifyConnectionStatsDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyConnectionStatsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A23ConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -580,7 +601,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyConnectionStatsDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyConnectionStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -590,9 +611,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A21SettingsErrorDelegateP"></a>
+                    <a name="/s:11speedifysdk29SpeedifySettingsErrorDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifySettingsErrorDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A21SettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -608,7 +629,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifySettingsErrorDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySettingsErrorDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -618,9 +639,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A24FirewallSettingsDelegateP"></a>
+                    <a name="/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyFirewallSettingsDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A24FirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -636,7 +657,7 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyFirewallSettingsDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyFirewallSettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -646,9 +667,9 @@ This will get triggered if a user denies the VPN permission</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A23DomainWatchListDelegateP"></a>
+                    <a name="/s:11speedifysdk31SpeedifyDomainWatchListDelegateP"></a>
                     <a name="//apple_ref/swift/Protocol/SpeedifyDomainWatchListDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A23DomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -664,7 +685,35 @@ This will get triggered if a user denies the VPN permission</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SpeedifyDomainWatchListDelegate</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyDomainWatchListDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk34SpeeidfyLocalProxySettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeeidfyLocalProxySettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk34SpeeidfyLocalProxySettingsDelegateP">SpeeidfyLocalProxySettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/SpeeidfyLocalProxySettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeeidfyLocalProxySettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>
@@ -676,8 +725,8 @@ This will get triggered if a user denies the VPN permission</p>
           </section>
         </section>
         <section id="footer">
-          <p>© 2019 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

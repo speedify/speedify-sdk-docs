@@ -14,7 +14,7 @@
     <a title="SpeedifySessionStatsDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (77% documented)</p>
+        <p><a href="../index.html"> Docs</a> (76% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,7 +31,10 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/SpeedifySDK.html">SpeedifySDK</a>
+                <a href="../Classes/Speedify.html">Speedify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpeeedifyPacketTunnel.html">SpeeedifyPacketTunnel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
@@ -66,7 +69,13 @@
                 <a href="../Enums/NetworkType.html">NetworkType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/PERIODS.html">PERIODS</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/PortProtocol.html">PortProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
@@ -136,6 +145,9 @@
                 <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeeidfyLocalProxySettingsDelegate.html">SpeeidfyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
               </li>
             </ul>
@@ -180,22 +192,31 @@
                 <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/LocalProxyPort.html">LocalProxyPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ServerInformation.html">ServerInformation</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SessionStats.html">SessionStats</a>
+                <a href="../Structs/SessionStatPeriods.html">SessionStatPeriods</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SessionStatsPeriod.html">SessionStatsPeriod</a>
+                <a href="../Structs/SessionStats.html">SessionStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Settings.html">Settings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/StreamStats.html">StreamStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingSessionStats.html">StreamingSessionStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/StreamingStats.html">StreamingStats</a>
@@ -216,8 +237,8 @@
             <h1>SpeedifySessionStatsDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Use `SpeedifySessionPeriodStatsDelegate` instead")</span>
-<span class="kd">protocol</span> <span class="kt">SpeedifySessionStatsDelegate</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use `SpeedifySessionPeriodStatsDelegate` instead"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySessionStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
@@ -230,9 +251,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK0A20SessionStatsDelegateP07sessionD9DidUpdate0fD0yAA0cD0V_tF"></a>
+                    <a name="/s:11speedifysdk28SpeedifySessionStatsDelegateP07sessionD9DidUpdate0fD0yAA0cD0V_tF"></a>
                     <a name="//apple_ref/swift/Method/sessionStatsDidUpdate(sessionStats:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK0A20SessionStatsDelegateP07sessionD9DidUpdate0fD0yAA0cD0V_tF">sessionStatsDidUpdate(sessionStats:<wbr>)</a>
+                    <a class="token" href="#/s:11speedifysdk28SpeedifySessionStatsDelegateP07sessionD9DidUpdate0fD0yAA0cD0V_tF">sessionStatsDidUpdate(sessionStats:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -259,8 +280,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>© 2019 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
