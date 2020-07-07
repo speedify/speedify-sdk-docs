@@ -31,10 +31,7 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/Speedify.html">Speedify</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SpeeedifyPacketTunnel.html">SpeeedifyPacketTunnel</a>
+                <a href="../Classes/SpeedifySDK.html">SpeedifySDK</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
@@ -69,13 +66,7 @@
                 <a href="../Enums/NetworkType.html">NetworkType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/PERIODS.html">PERIODS</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/PortProtocol.html">PortProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
@@ -145,9 +136,6 @@
                 <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/SpeeidfyLocalProxySettingsDelegate.html">SpeeidfyLocalProxySettingsDelegate</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
               </li>
             </ul>
@@ -192,31 +180,22 @@
                 <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/LocalProxyPort.html">LocalProxyPort</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ServerInformation.html">ServerInformation</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SessionStatPeriods.html">SessionStatPeriods</a>
+                <a href="../Structs/SessionStats.html">SessionStats</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SessionStats.html">SessionStats</a>
+                <a href="../Structs/SessionStatsPeriod.html">SessionStatsPeriod</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Settings.html">Settings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/StreamStats.html">StreamStats</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/StreamingSessionStats.html">StreamingSessionStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/StreamingStats.html">StreamingStats</a>
@@ -237,7 +216,7 @@
             <h1>ConnectionStats</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConnectionStats</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">ConnectionStats</span></code></pre>
 
                 </div>
               </div>
@@ -253,9 +232,9 @@ possible for there to be more than one on a single internet connection.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV9adapterIDSSvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9adapterIDSSvp"></a>
                     <a name="//apple_ref/swift/Property/adapterID" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV9adapterIDSSvp">adapterID</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9adapterIDSSvp">adapterID</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -270,7 +249,7 @@ possible for there to be more than one on a single internet connection.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -280,9 +259,9 @@ possible for there to be more than one on a single internet connection.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV9connectedSbvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9connectedSbvp"></a>
                     <a name="//apple_ref/swift/Property/connected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV9connectedSbvp">connected</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9connectedSbvp">connected</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -297,7 +276,7 @@ possible for there to be more than one on a single internet connection.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">connected</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connected</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -307,9 +286,9 @@ possible for there to be more than one on a single internet connection.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV13connectionUIDSSvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV13connectionUIDSSvp"></a>
                     <a name="//apple_ref/swift/Property/connectionUID" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV13connectionUIDSSvp">connectionUID</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV13connectionUIDSSvp">connectionUID</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -327,7 +306,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">connectionUID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connectionUID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -337,9 +316,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV8inFlights5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8inFlights5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/inFlight" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV8inFlights5Int64Vvp">inFlight</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8inFlights5Int64Vvp">inFlight</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -354,7 +333,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inFlight</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">inFlight</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -364,9 +343,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV14inFlightWindows5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV14inFlightWindows5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/inFlightWindow" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV14inFlightWindows5Int64Vvp">inFlightWindow</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV14inFlightWindows5Int64Vvp">inFlightWindow</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -381,7 +360,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inFlightWindow</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">inFlightWindow</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -391,9 +370,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV9latencyMss5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9latencyMss5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/latencyMs" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV9latencyMss5Int64Vvp">latencyMs</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9latencyMss5Int64Vvp">latencyMs</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -408,7 +387,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">latencyMs</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">latencyMs</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -418,9 +397,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV7localIpSSvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV7localIpSSvp"></a>
                     <a name="//apple_ref/swift/Property/localIp" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV7localIpSSvp">localIp</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV7localIpSSvp">localIp</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -436,7 +415,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">localIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">localIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -446,9 +425,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV11lossReceives5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV11lossReceives5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/lossReceive" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV11lossReceives5Int64Vvp">lossReceive</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV11lossReceives5Int64Vvp">lossReceive</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -463,7 +442,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lossReceive</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lossReceive</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -473,9 +452,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV8lossSends5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8lossSends5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/lossSend" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV8lossSends5Int64Vvp">lossSend</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8lossSends5Int64Vvp">lossSend</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -490,7 +469,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lossSend</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lossSend</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -500,9 +479,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV9privateIpSSvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV9privateIpSSvp"></a>
                     <a name="//apple_ref/swift/Property/privateIp" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV9privateIpSSvp">privateIp</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV9privateIpSSvp">privateIp</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -518,7 +497,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">privateIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">privateIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -528,9 +507,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV12protocolUsedSSvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV12protocolUsedSSvp"></a>
                     <a name="//apple_ref/swift/Property/protocolUsed" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV12protocolUsedSSvp">protocolUsed</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV12protocolUsedSSvp">protocolUsed</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -550,7 +529,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">protocolUsed</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">protocolUsed</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -560,9 +539,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV8remoteIpSSvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8remoteIpSSvp"></a>
                     <a name="//apple_ref/swift/Property/remoteIp" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV8remoteIpSSvp">remoteIp</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8remoteIpSSvp">remoteIp</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -580,7 +559,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">remoteIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">remoteIp</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -590,9 +569,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV8sleepingSbvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8sleepingSbvp"></a>
                     <a name="//apple_ref/swift/Property/sleeping" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV8sleepingSbvp">sleeping</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8sleepingSbvp">sleeping</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -607,7 +586,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sleeping</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sleeping</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -617,9 +596,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV8totalBpss5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV8totalBpss5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/totalBps" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV8totalBpss5Int64Vvp">totalBps</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV8totalBpss5Int64Vvp">totalBps</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -634,7 +613,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">totalBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">totalBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -644,9 +623,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV12connectionIDSSvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV12connectionIDSSvp"></a>
                     <a name="//apple_ref/swift/Property/connectionID" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV12connectionIDSSvp">connectionID</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV12connectionIDSSvp">connectionID</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -664,7 +643,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">connectionID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connectionID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -674,9 +653,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV7sendBpss5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV7sendBpss5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/sendBps" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV7sendBpss5Int64Vvp">sendBps</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV7sendBpss5Int64Vvp">sendBps</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -692,7 +671,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sendBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sendBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -702,9 +681,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV10receiveBpss5Int64Vvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV10receiveBpss5Int64Vvp"></a>
                     <a name="//apple_ref/swift/Property/receiveBps" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV10receiveBpss5Int64Vvp">receiveBps</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV10receiveBpss5Int64Vvp">receiveBps</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -720,7 +699,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">receiveBps</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
 
                         </div>
                       </div>
@@ -730,9 +709,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV16sendEstimateMbpsSdvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV16sendEstimateMbpsSdvp"></a>
                     <a name="//apple_ref/swift/Property/sendEstimateMbps" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV16sendEstimateMbpsSdvp">sendEstimateMbps</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV16sendEstimateMbpsSdvp">sendEstimateMbps</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -748,7 +727,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sendEstimateMbps</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sendEstimateMbps</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -758,9 +737,9 @@ connection stat updates.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStatsV18receiveEstimateMpsSdvp"></a>
+                    <a name="/s:11SpeedifySDK15ConnectionStatsV18receiveEstimateMpsSdvp"></a>
                     <a name="//apple_ref/swift/Property/receiveEstimateMps" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV18receiveEstimateMpsSdvp">receiveEstimateMps</a>
+                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStatsV18receiveEstimateMpsSdvp">receiveEstimateMps</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -776,7 +755,7 @@ connection stat updates.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveEstimateMps</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">receiveEstimateMps</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -788,8 +767,8 @@ connection stat updates.</p>
           </section>
         </section>
         <section id="footer">
-          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2019 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
