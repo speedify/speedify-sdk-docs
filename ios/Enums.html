@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Section/Enumerations" class="dashAnchor"></a>
     <a title="Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (77% documented)</p>
+        <p><a href="index.html"> Docs</a> (72% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,10 +39,10 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/SpeedifySDK.html">SpeedifySDK</a>
+                <a href="Classes/Speedify.html">Speedify</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/UUIDProvider.html">UUIDProvider</a>
+                <a href="Classes.html#/c:@M@speedifysdk@objc(cs)UUIDProvider">UUIDProvider</a>
               </li>
             </ul>
           </li>
@@ -46,9 +54,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/BondingMode.html">BondingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/Connection.html">Connection</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/ConnectionPriority.html">ConnectionPriority</a>
@@ -63,22 +68,31 @@
                 <a href="Enums/FirewallMode.html">FirewallMode</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums.html#/s:11speedifysdk7JSONKeyO">JSONKey</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/NetworkType.html">NetworkType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/PortProtocol.html">PortProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/ProxyMatchMode.html">ProxyMatchMode</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/State.html">State</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/TransportMode.html">TransportMode</a>
+                <a href="Enums.html#/s:11speedifysdk4TypeO">Type</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/NEVPNStatus.html">NEVPNStatus</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Extensions/Notification.html">Notification</a>
               </li>
@@ -91,52 +105,28 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk34SpeedifySessionPeriodStatsDelegateP">SpeedifySessionPeriodStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifyLocalSettingsVendorDelegate.html">SpeedifyLocalSettingsVendorDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifyRemoteSettingsVendorDelegate.html">SpeedifyRemoteSettingsVendorDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/SpeedifySettingsErrorDelegate.html">SpeedifySettingsErrorDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a>
               </li>
             </ul>
           </li>
@@ -159,9 +149,6 @@
                 <a href="Structs/ConnectionStats.html">ConnectionStats</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Structs/FirewallPort.html">FirewallPort</a>
               </li>
               <li class="nav-group-task">
@@ -180,16 +167,13 @@
                 <a href="Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/PrivacySettings.html">PrivacySettings</a>
+                <a href="Structs/LocalProxyPort.html">LocalProxyPort</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/ServerInformation.html">ServerInformation</a>
+                <a href="Structs/LocalProxySettings.html">LocalProxySettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SessionStats.html">SessionStats</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/SessionStatsPeriod.html">SessionStatsPeriod</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Settings.html">Settings</a>
@@ -202,9 +186,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/TunStats.html">TunStats</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Version.html">Version</a>
               </li>
             </ul>
           </li>
@@ -219,13 +200,91 @@
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/JSON%20Type"></a>
+                <a name="//apple_ref/swift/Section/JSON Type" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/JSON%20Type"></a>
+                  <h3 class="section-name"><p>JSON Type</p>
+</h3>
+                </div>
+              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK17AutoConnectMethodO"></a>
+                    <a name="/s:11speedifysdk4TypeO"></a>
+                    <a name="//apple_ref/swift/Enum/Type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk4TypeO">Type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>JSON&rsquo;s type definitions.</p>
+
+<p>See <a href="http://www.json.org">http://www.json.org</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="k">Type</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subscript"></a>
+                <a name="//apple_ref/swift/Section/Subscript" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Subscript"></a>
+                  <h3 class="section-name"><p>Subscript</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk7JSONKeyO"></a>
+                    <a name="//apple_ref/swift/Enum/JSONKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk7JSONKeyO">JSONKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To mark both String and Int can be used in subscript.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">JSONKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk17AutoConnectMethodO"></a>
                     <a name="//apple_ref/swift/Enum/AutoConnectMethod" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK17AutoConnectMethodO">AutoConnectMethod</a>
+                    <a class="token" href="#/s:11speedifysdk17AutoConnectMethodO">AutoConnectMethod</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -242,7 +301,7 @@ based on your <code>AutoConnectMethod</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">AutoConnectMethod</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AutoConnectMethod</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -252,37 +311,9 @@ based on your <code>AutoConnectMethod</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK10ConnectionO"></a>
-                    <a name="//apple_ref/swift/Enum/Connection" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK10ConnectionO">Connection</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Enums/Connection.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">Connection</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11SpeedifySDK11BondingModeO"></a>
+                    <a name="/s:11speedifysdk11BondingModeO"></a>
                     <a name="//apple_ref/swift/Enum/BondingMode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK11BondingModeO">BondingMode</a>
+                    <a class="token" href="#/s:11speedifysdk11BondingModeO">BondingMode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -298,7 +329,7 @@ based on your <code>AutoConnectMethod</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">BondingMode</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">BondingMode</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -308,9 +339,9 @@ based on your <code>AutoConnectMethod</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK18ConnectionPriorityO"></a>
+                    <a name="/s:11speedifysdk18ConnectionPriorityO"></a>
                     <a name="//apple_ref/swift/Enum/ConnectionPriority" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK18ConnectionPriorityO">ConnectionPriority</a>
+                    <a class="token" href="#/s:11speedifysdk18ConnectionPriorityO">ConnectionPriority</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -326,7 +357,7 @@ based on your <code>AutoConnectMethod</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">ConnectionPriority</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ConnectionPriority</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -336,9 +367,9 @@ based on your <code>AutoConnectMethod</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK5StateO"></a>
+                    <a name="/s:11speedifysdk5StateO"></a>
                     <a name="//apple_ref/swift/Enum/State" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK5StateO">State</a>
+                    <a class="token" href="#/s:11speedifysdk5StateO">State</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -354,7 +385,7 @@ based on your <code>AutoConnectMethod</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">State</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">State</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -364,9 +395,9 @@ based on your <code>AutoConnectMethod</code>.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK15ConnectionStateO"></a>
+                    <a name="/s:11speedifysdk15ConnectionStateO"></a>
                     <a name="//apple_ref/swift/Enum/ConnectionState" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK15ConnectionStateO">ConnectionState</a>
+                    <a class="token" href="#/s:11speedifysdk15ConnectionStateO">ConnectionState</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -385,7 +416,7 @@ connections may be CONNECTING or DISCONNECTED.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">ConnectionState</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ConnectionState</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -395,9 +426,9 @@ connections may be CONNECTING or DISCONNECTED.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK11NetworkTypeO"></a>
+                    <a name="/s:11speedifysdk11NetworkTypeO"></a>
                     <a name="//apple_ref/swift/Enum/NetworkType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK11NetworkTypeO">NetworkType</a>
+                    <a class="token" href="#/s:11speedifysdk11NetworkTypeO">NetworkType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -413,7 +444,7 @@ connections may be CONNECTING or DISCONNECTED.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">NetworkType</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">NetworkType</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -423,37 +454,9 @@ connections may be CONNECTING or DISCONNECTED.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK13TransportModeO"></a>
-                    <a name="//apple_ref/swift/Enum/TransportMode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK13TransportModeO">TransportMode</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Enums/TransportMode.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">TransportMode</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11SpeedifySDK9ErrorTypeO"></a>
+                    <a name="/s:11speedifysdk9ErrorTypeO"></a>
                     <a name="//apple_ref/swift/Enum/ErrorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK9ErrorTypeO">ErrorType</a>
+                    <a class="token" href="#/s:11speedifysdk9ErrorTypeO">ErrorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -469,7 +472,7 @@ connections may be CONNECTING or DISCONNECTED.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">ErrorType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ErrorType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -479,9 +482,9 @@ connections may be CONNECTING or DISCONNECTED.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK12PortProtocolO"></a>
+                    <a name="/s:11speedifysdk12PortProtocolO"></a>
                     <a name="//apple_ref/swift/Enum/PortProtocol" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK12PortProtocolO">PortProtocol</a>
+                    <a class="token" href="#/s:11speedifysdk12PortProtocolO">PortProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -498,7 +501,7 @@ connections may be CONNECTING or DISCONNECTED.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">PortProtocol</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PortProtocol</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -508,9 +511,9 @@ connections may be CONNECTING or DISCONNECTED.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SpeedifySDK12FirewallModeO"></a>
+                    <a name="/s:11speedifysdk12FirewallModeO"></a>
                     <a name="//apple_ref/swift/Enum/FirewallMode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SpeedifySDK12FirewallModeO">FirewallMode</a>
+                    <a class="token" href="#/s:11speedifysdk12FirewallModeO">FirewallMode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -527,7 +530,36 @@ connections may be CONNECTING or DISCONNECTED.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">FirewallMode</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FirewallMode</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk14ProxyMatchModeO"></a>
+                    <a name="//apple_ref/swift/Enum/ProxyMatchMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk14ProxyMatchModeO">ProxyMatchMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>How local proxy treats matches
+@since 9.2</p>
+
+                        <a href="Enums/ProxyMatchMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ProxyMatchMode</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -539,8 +571,8 @@ connections may be CONNECTING or DISCONNECTED.</p>
           </section>
         </section>
         <section id="footer">
-          <p>© 2019 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
