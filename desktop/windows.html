@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.1.0</span>
+   &#160;<span id="projectnumber">10.2.0</span>
    </div>
   </td>
  </tr>
@@ -73,18 +73,17 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h2>Files </h2>
 <ul>
-<li>bin/<ul>
+<li>bin/[x86|arm64]<ul>
 <li>speedify.exe - main daemon</li>
 <li>bondingsdk.dll - Speedify SDK Library DLL</li>
 <li>tap-driver/ - driver and driver installer<ul>
 <li>TapDriverInstallCheck.exe - driver installer</li>
-<li>win32/ - 32bit Windows drivers</li>
-<li>win64/ - 64bit Windows drivers</li>
+<li>[i386|amd64|arm64]/ - Architecture-specific Windows drivers</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>libs/<ul>
+<li>libs/[x86|arm64]<ul>
 <li>bondingsdk.dll.lib - Speedify SDK Library Lib</li>
 </ul>
 </li>
@@ -100,7 +99,7 @@ $(function() {
 </ul>
 <h2>Distributing </h2>
 <ul>
-<li>Include the contents of the bin/ folder in your installation path.</li>
+<li>Include the contents of the bin/[x86|arm64] folder in your installation path.</li>
 <li>Run tap-driver/TapDriverInstallCheck.exe during installation to install the network driver.</li>
 </ul>
 <h2>Running </h2>

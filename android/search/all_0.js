@@ -12,6 +12,7 @@ var searchData=
   ['adapterusagedata',['AdapterUsageData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html',1,'com::speedify::speedifysdk::Types']]],
   ['addadapterdailydatalimitboost',['addAdapterDailyDataLimitBoost',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a623bd60ab09740cc82b974c3d994363c',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['allowchachaencryption',['allowChaChaEncryption',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a9b0de0b5b035b6a199a3beccba290787',1,'com::speedify::speedifysdk::Types::Settings']]],
+  ['allowlist',['ALLOWLIST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_proxy_match_mode.html#a55a3077422efd558169a639bb733a0cf',1,'com.speedify.speedifysdk.Types.ProxyMatchMode.ALLOWLIST()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#a45889c4ba455285912785e43ecac9767',1,'com.speedify.speedifysdk.Types.FirewallMode.ALLOWLIST()']]],
   ['allowtunnelbypass',['allowTunnelBypass',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a09696181c8282bf329ec9499ada742fb',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['always',['ALWAYS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a91776f0b98e54fefcb4ef24fe6e59f5b',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['auto',['AUTO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd',1,'com::speedify::speedifysdk::Types::TransportMode']]],

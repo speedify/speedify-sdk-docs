@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.1.0</span>
+   &#160;<span id="projectnumber">10.2.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,21 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1010"></a>Speedify SDK for Desktop 10.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1020"></a>Speedify SDK for Desktop 10.2 </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="group___t_y_p_e_s.html#gac5fce2249549ad9ffc779c9b71ad343a">SpeedifySDK_ProxyMatchMode</a><ul>
+<li>PMM_WHITELIST and PMM_BLACKLIST have been renamed to <a class="el" href="group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aaa0f36a86250d6a8c3a622bafc7ce6a23">PMM_ALLOWLIST</a> and <a class="el" href="group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aa0de312811ca807ad5edd0a822e47091a">PMM_DENYLIST</a>.</li>
+</ul>
+</li>
+<li><a class="el" href="group___t_y_p_e_s.html#gaa0999d1c8d7d3eaf8d6cea85609364c8">SpeedifySDK_FirewallMode</a><ul>
+<li>FWM_WHITELIST and FWM_BLACKLIST have been renamed to <a class="el" href="group___t_y_p_e_s.html#ggaa0999d1c8d7d3eaf8d6cea85609364c8a64ce499e666c6873366ca0f8f3216aa1">FWM_ALLOWLIST</a> and <a class="el" href="group___t_y_p_e_s.html#ggaa0999d1c8d7d3eaf8d6cea85609364c8a214ae9e39fb4efe35112b54cd473fb8e">FWM_DENYLIST</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1010"></a>Speedify SDK for Desktop 10.1 </h2>
 <ul>
 <li>Support for virtual interfaces on Linux.</li>
 </ul>
@@ -88,6 +102,21 @@ $(function() {
 </li>
 <li>Session Stats now include <a class="el" href="struct_speedify_s_d_k___streaming_session_stats.html">SpeedifySDK_StreamingSessionStats</a> for each period.</li>
 <li>When using asynchronous SDK methods, you can now wait for the callback to occur via <a class="el" href="group___s_d_k.html#gaa9200813e3991fe0e2786e24f149ea1f">SpeedifySDK_WaitOnCallback</a>. This will wait in the current thread until the desired callback has returned.</li>
+<li>API Compatibility Changes<ul>
+<li>SpeedifySDK<ul>
+<li><a class="el" href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">SpeedifySDK_EnableConnectionStatUpdates</a> is deprecated. Use <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> instead.</li>
+</ul>
+</li>
+<li><a class="el" href="struct_speedify_s_d_k___session_stat_periods.html">SpeedifySDK_SessionStatPeriods</a><ul>
+<li>The named time period members (current, day, week, month, total) are removed in favor of custom time periods. The <a class="el" href="struct_speedify_s_d_k___session_stat_periods.html#a9ce04eaddfa77db1e5af2ec5fa825880">periods</a> member now contains a list of all requested time periods. Use the <a class="el" href="struct_speedify_s_d_k___session_stats.html#a7d4ad844ab915e806ac9c451b645ed5b">period</a> member of <a class="el" href="struct_speedify_s_d_k___session_stats.html">SpeedifySDK_SessionStats</a> to identify the period the stats are for.</li>
+</ul>
+</li>
+<li>StreamingStats<ul>
+<li>Stats on total streams and events have been moved in to <a class="el" href="struct_speedify_s_d_k___streaming_session_stats.html">SpeedifySDK_StreamingSessionStats</a> available in <a class="el" href="struct_speedify_s_d_k___session_stats.html">SpeedifySDK_SessionStats</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_990"></a>Speedify SDK for Desktop 9.9 </h2>
 <ul>
@@ -125,15 +154,33 @@ $(function() {
 <h2><a class="anchor" id="whatsnew_950"></a>Speedify SDK for Desktop 9.5 </h2>
 <ul>
 <li>Session stats in <a class="el" href="struct_speedify_s_d_k___session_stats_result.html">SpeedifySDK_SessionStatsResult</a> are now tracked over multiple time periods, including current session, last day, last week, last month, and total.</li>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="struct_speedify_s_d_k___session_stats_result.html">SpeedifySDK_SessionStatsResult</a><ul>
+<li>Now contains a <a class="el" href="struct_speedify_s_d_k___session_stat_periods.html">SpeedifySDK_SessionStatPeriods</a> object instead of a <a class="el" href="struct_speedify_s_d_k___session_stats.html">SpeedifySDK_SessionStats</a> to accommodate stats over various time periods.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_940"></a>Speedify SDK for Desktop 9.4 </h2>
 <ul>
 <li><a class="el" href="group___s_d_k.html#gaa403830371e20b79f16a9053b8ed336a">SpeedifySDK_SetEnableDefaultRoute</a> can be used to disable Speedify from obtaining the default route and handling all Internet traffic.</li>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html">SpeedifySDK_LocalProxyDomainWatchlistItem</a><ul>
+<li>domains - The domains list has been split in to separate <a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#afa9a4c735991a5bfe382c11537160afd">watchedDomains</a> and <a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a2f5ca97d98b997a7e5d1f7e34f0b40ec">proxiedDomains</a> lists.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Desktop 9.3 </h2>
 <ul>
 <li>The Firewall API now supports filtering by IPv6: <a class="el" href="group___s_d_k.html#ga9e899db04b8916c430982f7ea5624b63">SpeedifySDK_SetFirewallIPv6</a>. ICMP and other protocols are now also blockable by domain and IP.</li>
 <li>The Local Proxy API now supports Domain Watchlists. Watchlists are lists of domains grouped by the service they represent, configurable via <a class="el" href="group___s_d_k.html#gac3a360edffb708b83a672c32af3b3ccc">SpeedifySDK_SetLocalProxyDomainWatchlist</a>. When an attempt to access a watched domain is seen, <a class="el" href="group___s_d_k.html#gacdf907ba9b0e167f7e54dd3cf3472f6a">SpeedifySDK_ListenForLocalProxyDomainWatchlistHit</a> is triggered. <a class="el" href="group___s_d_k.html#gab0775c2f20bcd8489c39beae53d3bf55">SpeedifySDK_SetLocalProxyDomainWatchlistEnable</a> can then be used to enable that service's domains to be sent through the local proxy instead of the VPN.</li>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="group___s_d_k.html#ga390a617169ed7c6e50a1eae482915b9a">SpeedifySDK_SetFirewallIPv4</a> and <a class="el" href="group___s_d_k.html#gaef3f39b63ff31b5adb5c9621bb6da4eb">SpeedifySDK_SetLocalProxyIPv4</a> have been changed to take an array of struct in_addr instead of uint32_t, for consistency with new <a class="el" href="group___s_d_k.html#ga9e899db04b8916c430982f7ea5624b63">SpeedifySDK_SetFirewallIPv6</a> method arguments.</li>
+</ul>
+</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_920"></a>Speedify SDK for Desktop 9.2 </h2>
 <ul>
@@ -151,7 +198,11 @@ $(function() {
 <li><a class="el" href="group___s_d_k.html#gaef3f39b63ff31b5adb5c9621bb6da4eb">SpeedifySDK_SetLocalProxyIPv4</a></li>
 </ul>
 </li>
-<li>Speedify SDK now provides <a class="el" href="group___s_d_k.html#gae846b9b87f5ee1905d7992bb816454d9">SpeedifySDK_SetLocalVendorSettings</a> for saving a custom JSON object for later consumption. </li>
+<li>Speedify SDK now provides <a class="el" href="group___s_d_k.html#gae846b9b87f5ee1905d7992bb816454d9">SpeedifySDK_SetLocalVendorSettings</a> for saving a custom JSON object for later consumption.</li>
+<li>API Compatibility Changes<ul>
+<li>IPAddressString has been changed to <a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a> to match namespace convention with rest of SDK. </li>
+</ul>
+</li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

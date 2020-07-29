@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['package_2dinfo_2ejava',['package-info.java',['../package-info_8java.html',1,'']]],
-  ['pooledbroadcastreceiver_2ejava',['PooledBroadcastReceiver.java',['../_pooled_broadcast_receiver_8java.html',1,'']]],
-  ['pooledexecutor_2ejava',['PooledExecutor.java',['../_pooled_executor_8java.html',1,'']]],
-  ['preferences_2ejava',['Preferences.java',['../_preferences_8java.html',1,'']]]
+  ['sdkadv_2edox',['sdkadv.dox',['../sdkadv_8dox.html',1,'']]],
+  ['sdkinit_2edox',['sdkinit.dox',['../sdkinit_8dox.html',1,'']]],
+  ['speedifyhandler_2ejava',['SpeedifyHandler.java',['../_speedify_handler_8java.html',1,'']]],
+  ['speedifysdk_2ejava',['SpeedifySDK.java',['../_speedify_s_d_k_8java.html',1,'']]],
+  ['startupbroadcastreceiver_2ejava',['StartupBroadcastReceiver.java',['../_startup_broadcast_receiver_8java.html',1,'']]]
 ];

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.1.0</span>
+   &#160;<span id="projectnumber">10.2.0</span>
    </div>
   </td>
  </tr>
@@ -87,28 +87,43 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa8762812ba57b91833dfb095e033e187"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#aa8762812ba57b91833dfb095e033e187">OFF</a></td></tr>
 <tr class="memdesc:aa8762812ba57b91833dfb095e033e187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Firewall is disabled.  <a href="#aa8762812ba57b91833dfb095e033e187">More...</a><br /></td></tr>
 <tr class="separator:aa8762812ba57b91833dfb095e033e187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8f39058258b6da33af36c74a1f403a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#ab8f39058258b6da33af36c74a1f403a0">WHITELIST</a></td></tr>
-<tr class="memdesc:ab8f39058258b6da33af36c74a1f403a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matches are allowed through the VPN, all others are dropped.  <a href="#ab8f39058258b6da33af36c74a1f403a0">More...</a><br /></td></tr>
-<tr class="separator:ab8f39058258b6da33af36c74a1f403a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da45b69ddef7b7f8ede57b069293db7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#a0da45b69ddef7b7f8ede57b069293db7">BLACKLIST</a></td></tr>
-<tr class="memdesc:a0da45b69ddef7b7f8ede57b069293db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matches are dropped, all others are allowed through the VPN.  <a href="#a0da45b69ddef7b7f8ede57b069293db7">More...</a><br /></td></tr>
-<tr class="separator:a0da45b69ddef7b7f8ede57b069293db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45889c4ba455285912785e43ecac9767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#a45889c4ba455285912785e43ecac9767">ALLOWLIST</a></td></tr>
+<tr class="memdesc:a45889c4ba455285912785e43ecac9767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matches are allowed through the VPN, all others are dropped @since 10.2.  <a href="#a45889c4ba455285912785e43ecac9767">More...</a><br /></td></tr>
+<tr class="separator:a45889c4ba455285912785e43ecac9767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace653af6738e5af3286caf8064eb7960"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#ace653af6738e5af3286caf8064eb7960">DENYLIST</a></td></tr>
+<tr class="memdesc:ace653af6738e5af3286caf8064eb7960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matches are dropped, all others are allowed through the VPN @since 10.2.  <a href="#ace653af6738e5af3286caf8064eb7960">More...</a><br /></td></tr>
+<tr class="separator:ace653af6738e5af3286caf8064eb7960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0da45b69ddef7b7f8ede57b069293db7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0da45b69ddef7b7f8ede57b069293db7">&#9670;&nbsp;</a></span>BLACKLIST</h2>
+<a id="a45889c4ba455285912785e43ecac9767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45889c4ba455285912785e43ecac9767">&#9670;&nbsp;</a></span>ALLOWLIST</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">com.speedify.speedifysdk.Types.FirewallMode.BLACKLIST</td>
+          <td class="memname">com.speedify.speedifysdk.Types.FirewallMode.ALLOWLIST</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Matches are dropped, all others are allowed through the VPN. </p>
-<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+<p>Matches are allowed through the VPN, all others are dropped @since 10.2. </p>
+
+</div>
+</div>
+<a id="ace653af6738e5af3286caf8064eb7960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace653af6738e5af3286caf8064eb7960">&#9670;&nbsp;</a></span>DENYLIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">com.speedify.speedifysdk.Types.FirewallMode.DENYLIST</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Matches are dropped, all others are allowed through the VPN @since 10.2. </p>
 
 </div>
 </div>
@@ -125,23 +140,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Firewall is disabled. </p>
-<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
-
-</div>
-</div>
-<a id="ab8f39058258b6da33af36c74a1f403a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8f39058258b6da33af36c74a1f403a0">&#9670;&nbsp;</a></span>WHITELIST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">com.speedify.speedifysdk.Types.FirewallMode.WHITELIST</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Matches are allowed through the VPN, all others are dropped. </p>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
 
 </div>
