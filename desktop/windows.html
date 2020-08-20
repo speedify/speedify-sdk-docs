@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.2.0</span>
+   &#160;<span id="projectnumber">10.3.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(function() {
 <ul>
 <li>bin/[x86|arm64]<ul>
 <li>speedify.exe - main daemon</li>
-<li>bondingsdk.dll - Speedify SDK Library DLL</li>
+<li>bondingsdk.dll - Speedify SDK Library DLL for communicating with the daemon</li>
 <li>tap-driver/ - driver and driver installer<ul>
 <li>TapDriverInstallCheck.exe - driver installer</li>
 <li>[i386|amd64|arm64]/ - Architecture-specific Windows drivers</li>
@@ -84,7 +84,7 @@ $(function() {
 </ul>
 </li>
 <li>libs/[x86|arm64]<ul>
-<li>bondingsdk.dll.lib - Speedify SDK Library Lib</li>
+<li>bondingsdk.lib - Speedify SDK Library Lib</li>
 </ul>
 </li>
 <li>include/<ul>
@@ -95,11 +95,14 @@ $(function() {
 </ul>
 <h2>Building </h2>
 <ul>
-<li>Link with bondingsdk.dll.lib and put include/ in your include path.</li>
+<li>Link with bondingsdk.lib and put include/ in your include path.</li>
 </ul>
 <h2>Distributing </h2>
 <ul>
-<li>Include the contents of the bin/[x86|arm64] folder in your installation path.</li>
+<li>Include the contents of the bin/[x86|arm64] folder in your installation path.<ul>
+<li>If you are creating an app that controls a standard Speedify install, you only need bondingsdk.dll</li>
+</ul>
+</li>
 <li>Run tap-driver/TapDriverInstallCheck.exe during installation to install the network driver.</li>
 </ul>
 <h2>Running </h2>

@@ -92,6 +92,7 @@ var searchData=
   ['speedifysdk_5fsetfirewallmode',['SpeedifySDK_SetFirewallMode',['../group___s_d_k.html#gaaddc223507836782bd4ee69227cc2957',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetfirewallports',['SpeedifySDK_SetFirewallPorts',['../group___s_d_k.html#ga53d1f6c87ba0ab9e6133258b87a0f0d7',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetforwardports',['SpeedifySDK_SetForwardPorts',['../group___s_d_k.html#gacf4355ebf5179bf7f43ade7fd117ee8c',1,'speedifysdk.h']]],
+  ['speedifysdk_5fsetipleak',['SpeedifySDK_SetIpLeak',['../group___s_d_k.html#gaf5e135d158dbc836af9b81b8298d9acd',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetjumbopackets',['SpeedifySDK_SetJumboPackets',['../group___s_d_k.html#gaad135ae2568bf4519f4e27da341f0f50',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetkillswitch',['SpeedifySDK_SetKillswitch',['../group___s_d_k.html#gaf597ce561a5169d5a889018464b7ca57',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetlocalproxydomains',['SpeedifySDK_SetLocalProxyDomains',['../group___s_d_k.html#ga59c29093725b396e5052e02ef3f8c2a7',1,'speedifysdk.h']]],

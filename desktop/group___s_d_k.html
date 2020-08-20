@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.2.0</span>
+   &#160;<span id="projectnumber">10.3.0</span>
    </div>
   </td>
  </tr>
@@ -211,6 +211,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6c8a1364b2f81b86cf058b21412b8873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga6c8a1364b2f81b86cf058b21412b8873">SpeedifySDK_SetDnsLeak</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga6c8a1364b2f81b86cf058b21412b8873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if DNS Leak protection is enabled.  <a href="#ga6c8a1364b2f81b86cf058b21412b8873">More...</a><br /></td></tr>
 <tr class="separator:ga6c8a1364b2f81b86cf058b21412b8873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5e135d158dbc836af9b81b8298d9acd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaf5e135d158dbc836af9b81b8298d9acd">SpeedifySDK_SetIpLeak</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gaf5e135d158dbc836af9b81b8298d9acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if IP Leak protection is enabled.  <a href="#gaf5e135d158dbc836af9b81b8298d9acd">More...</a><br /></td></tr>
+<tr class="separator:gaf5e135d158dbc836af9b81b8298d9acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c5cb702a9ab8ff29cbf737fdd52f59d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga8c5cb702a9ab8ff29cbf737fdd52f59d">SpeedifySDK_SetDNSServers</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a> *dnsAddrs, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga8c5cb702a9ab8ff29cbf737fdd52f59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DNS servers to use.  <a href="#ga8c5cb702a9ab8ff29cbf737fdd52f59d">More...</a><br /></td></tr>
 <tr class="separator:ga8c5cb702a9ab8ff29cbf737fdd52f59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4238,6 +4241,59 @@ Windows &amp; Mac Only </p><dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>settings result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="gaf5e135d158dbc836af9b81b8298d9acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5e135d158dbc836af9b81b8298d9acd">&#9670;&nbsp;</a></span>SpeedifySDK_SetIpLeak()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetIpLeak </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets if IP Leak protection is enabled. </p>
+<p>Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">enabled</td><td>If ip leak protection is enabled </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>privacy settings result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>10.3 </dd></dl>
 
 </div>
 </div>

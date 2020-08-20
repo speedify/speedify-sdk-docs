@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.2.0</span>
+   &#160;<span id="projectnumber">10.3.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(function() {
 <ul>
 <li>bin/<ul>
 <li>speedify - main daemon</li>
-<li>libbondingsdk.dylib - SDK Library</li>
+<li>libbondingsdk.dylib - SDK Library for communicating with the daemon</li>
 </ul>
 </li>
 <li>include/ - header files for the SDK library</li>
@@ -86,6 +86,13 @@ $(function() {
 <li>Link with libbondingsdk.dylib and put include/ in your include path.</li>
 </ul>
 <h2>Distributing </h2>
+<ul>
+<li>Include the contents of the bin folder in your installation path.<ul>
+<li>If you are creating an app that controls a standard Speedify install, you only need libbondingsdk.dylib</li>
+</ul>
+</li>
+<li>Notarize your binaries as well as libbondingsdk.dylib</li>
+</ul>
 <h2>Running </h2>
 <ul>
 <li>Pass in arguments to the daemon of '-p &lt;port number&gt; -r &lt;installation path&gt; -d &lt;log data path&gt;'. </li>

@@ -3,6 +3,7 @@ var searchData=
   ['id',['id',['../struct_speedify_s_d_k___stream_stats.html#acb1d4eac3a1233dfa7cc189208dee37d',1,'SpeedifySDK_StreamStats']]],
   ['inflight',['inFlight',['../struct_speedify_s_d_k___connection_stats.html#a3ca6775f113be39f64adde18e231b068',1,'SpeedifySDK_ConnectionStats']]],
   ['inflightwindow',['inFlightWindow',['../struct_speedify_s_d_k___connection_stats.html#a9ab007b3e61eb1f49e3431be53999bd9',1,'SpeedifySDK_ConnectionStats']]],
+  ['ipleak',['ipleak',['../struct_speedify_s_d_k___privacy_settings.html#a4c407ee55063125c6df3c7efcb32900a',1,'SpeedifySDK_PrivacySettings']]],
   ['ipv4',['ipv4',['../struct_speedify_s_d_k___local_proxy_settings.html#a4a8f01c05d24bbd17e3d10641986678e',1,'SpeedifySDK_LocalProxySettings::ipv4()'],['../struct_speedify_s_d_k___firewall_settings.html#a17753813cf0a4c08eb07052109114b39',1,'SpeedifySDK_FirewallSettings::ipv4()']]],
   ['ipv4count',['ipv4Count',['../struct_speedify_s_d_k___local_proxy_settings.html#a9f57ef3d42ca09319988a6fddf11bf9d',1,'SpeedifySDK_LocalProxySettings::ipv4Count()'],['../struct_speedify_s_d_k___firewall_settings.html#a4db88cd1bd1e95985917da869ff5d425',1,'SpeedifySDK_FirewallSettings::ipv4Count()']]],
   ['ipv6',['ipv6',['../struct_speedify_s_d_k___firewall_settings.html#a0d6ce5e12e4f9a9d57585fab0051b6d3',1,'SpeedifySDK_FirewallSettings']]],
