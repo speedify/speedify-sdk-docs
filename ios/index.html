@@ -16,7 +16,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (72% documented)</p>
+        <p><a href="index.html"> Docs</a> (73% documented)</p>
         <p class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -113,10 +113,10 @@
                 <a href="Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols.html#/s:11speedifysdk34SpeedifySessionPeriodStatsDelegateP">SpeedifySessionPeriodStatsDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
+                <a href="Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
@@ -236,22 +236,43 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='strong-speedify-10-3-strong' class='heading'><strong>Speedify 10.3</strong></h3>
+
+<ul>
+<li>No new features. This is a stability and performance release.</li>
+</ul>
+<h3 id='strong-speedify-10-2-1-strong' class='heading'><strong>Speedify 10.2.1</strong></h3>
+
+<ul>
+<li><code>VendorDataDelegate</code> is now <code>SpeedifyVendorUserDataDelegate</code>.</li>
+<li><code>func sessionPeriodStatsDidUpdate(sessionStats: SessionStatPeriods)</code> -&gt; <code>func sessionPeriodStatsDidUpdate(sessionPeriodStats: SessionStatPeriods)</code></li>
+<li><code>func firewallSettingsUpdated(settings:FirewallSettings)</code> -&gt; <code>func firewallSettingsDidUpdate(settings:FirewallSettings)</code></li>
+<li>Fixed typo inside of  <code>protocol SpeedifyLocalProxySettingsDelegate</code></li>
+<li><code>public var stats: [ConnectionStats]?</code> -&gt; <code>public var connectionStats: [ConnectionStats]?</code></li>
+<li><code>vendorDataDelegate</code> -&gt; <code>SpeedifyVendorUserDataDelegate</code></li>
+<li><code>settingsLockDelegate</code> -&gt; <code>settingsErrorDelegate</code></li>
+<li>Removed <code>func setCrashReporting(enable: Bool)</code></li>
+</ul>
+<h3 id='strong-speedify-10-2-0-strong' class='heading'><strong>Speedify 10.2.0</strong></h3>
+
+<ul>
+<li>Updated function <code>runDaemon</code> now takes a new parameter called Port which is used for websocket communication with the SpeedifySDK service</li>
+</ul>
 <h3 id='strong-speedify-10-1-1-strong' class='heading'><strong>Speedify 10.1.1</strong></h3>
 
 <ul>
-<li>- <code>@objc public func initializeVPNPermission</code> now takes an optional string. You may also set the description inside of the plist with the  key <code>VPN Localized Description</code></li>
+<li><code>@objc public func initializeVPNPermission</code> now takes an optional string. You may also set the description inside of the plist with the  key <code>VPN Localized Description</code></li>
 </ul>
 <h3 id='strong-speedify-10-1-0-strong' class='heading'><strong>Speedify 10.1.0</strong></h3>
 
-<p>*-<code>runDaemon</code> now has a new paramter called <code>connectWithHandler</code>, this will open the VPN connection right away and a user will see the icon. This should default to false and only in rare circumstances be set to true.
-*-<code>initializeVPNPermission</code> now has a new paramter called <code>waitUntilConnected</code>. If set to true it will wait until the Extension has fully connected before sending messages. Be sure to call <code>runDaemon</code> and set the <code>connectWithHandler</code> to match. This should default to false and only in rare circumstances be set to true.
-*-<code>checkForExit()</code> has been removed and it is now up to the developer how they would like to close the tunnel when backgrounding.  Please see the sample app for an example.
-*-<code>@objc public func connectAuto(connectOption: String)</code> This function is meant for Objectove-C implementations where a developer needs to call  auto connect . It takes a string parameter.  Please see <code><a href="Enums/AutoConnectMethod.html">AutoConnectMethod</a></code> for those values.</p>
-
 <ul>
-<li>-<code>@objc public func currentSpeedifyState() -&gt; Int</code>  This function is meant for Objectove-C implementations where aa Swift object is unreadable. This will give the developer the current Speedify state as an Int. Please see <code><a href="Enums/State.html">State</a></code> to get the enum values.</li>
-<li>- <code>resetVpnProfile(startTunnel: Bool)</code> will kick off permissions from the OS. The parameter <code>startTunnel</code> will bring up the extension if true.
-*-<code>tunnelWillStop</code> now take&rsquo;s an optional completionHandler and removes the reason parameter.</li>
+<li><code>runDaemon</code> now has a new paramter called <code>connectWithHandler</code>, this will open the VPN connection right away and a user will see the icon. This should default to false and only in rare circumstances be set to true.</li>
+<li><code>initializeVPNPermission</code> now has a new paramter called <code>waitUntilConnected</code>. If set to true it will wait until the Extension has fully connected before sending messages. Be sure to call <code>runDaemon</code> and set the <code>connectWithHandler</code> to match. This should default to false and only in rare circumstances be set to true.</li>
+<li><code>checkForExit()</code> has been removed and it is now up to the developer how they would like to close the tunnel when backgrounding.  Please see the sample app for an example.</li>
+<li><code>@objc public func connectAuto(connectOption: String)</code> This function is meant for Objective-C implementations where a developer needs to call  auto connect . It takes a string parameter.  Please see <code><a href="Enums/AutoConnectMethod.html">AutoConnectMethod</a></code> for those values.</li>
+<li><code>@objc public func currentSpeedifyState() -&gt; Int</code>  This function is meant for Objective-C implementations where a Swift object is unreadable. This will give the developer the current Speedify state as an Int. Please see <code><a href="Enums/State.html">State</a></code> to get the enum values.</li>
+<li><code>resetVpnProfile(startTunnel: Bool)</code> will kick off permissions from the OS. The parameter <code>startTunnel</code> will bring up the extension if true.</li>
+<li><code>tunnelWillStop</code> now take&rsquo;s an optional completionHandler and removes the reason parameter.</li>
 </ul>
 <h3 id='strong-speedify-10-0-strong' class='heading'><strong>Speedify 10.0</strong></h3>
 
@@ -523,7 +544,7 @@ Proprietary and Confidential</p>
         </section>
         <section id="footer">
           <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
