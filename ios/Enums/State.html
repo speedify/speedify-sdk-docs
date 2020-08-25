@@ -8,21 +8,13 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
-    <script src="../js/lunr.min.js" defer></script>
-    <script src="../js/typeahead.jquery.js" defer></script>
-    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Enum/State" class="dashAnchor"></a>
     <a title="State Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (72% documented)</p>
-        <p class="header-right">
-          <form role="search" action="../search.json">
-            <input type="text" placeholder="Search documentation" data-typeahead>
-          </form>
-        </p>
+        <p><a href="../index.html"> Docs</a> (73% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -114,10 +106,10 @@
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionPeriodStatsDelegateP">SpeedifySessionPeriodStatsDelegate</a>
+                <a href="../Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
+                <a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
@@ -197,8 +189,8 @@
             <h1>State</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">State</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">State</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
               </div>
@@ -211,9 +203,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO10logged_outyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateLogged_out"></a>
                     <a name="//apple_ref/swift/Element/logged_out" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO10logged_outyA2CmF">logged_out</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateLogged_out">logged_out</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,9 +230,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO10logging_inyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateLogging_in"></a>
                     <a name="//apple_ref/swift/Element/logging_in" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO10logging_inyA2CmF">logging_in</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateLogging_in">logging_in</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -265,9 +257,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO9logged_inyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateLogged_in"></a>
                     <a name="//apple_ref/swift/Element/logged_in" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO9logged_inyA2CmF">logged_in</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateLogged_in">logged_in</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -292,9 +284,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO15auto_connectingyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateAuto_connecting"></a>
                     <a name="//apple_ref/swift/Element/auto_connecting" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO15auto_connectingyA2CmF">auto_connecting</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateAuto_connecting">auto_connecting</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -319,9 +311,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO10connectingyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateConnecting"></a>
                     <a name="//apple_ref/swift/Element/connecting" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO10connectingyA2CmF">connecting</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateConnecting">connecting</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -346,9 +338,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO13disconnectingyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateDisconnecting"></a>
                     <a name="//apple_ref/swift/Element/disconnecting" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO13disconnectingyA2CmF">disconnecting</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateDisconnecting">disconnecting</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -373,9 +365,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO9connectedyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateConnected"></a>
                     <a name="//apple_ref/swift/Element/connected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO9connectedyA2CmF">connected</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateConnected">connected</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -400,9 +392,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO9overlimityA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateOverlimit"></a>
                     <a name="//apple_ref/swift/Element/overlimit" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO9overlimityA2CmF">overlimit</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateOverlimit">overlimit</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -427,9 +419,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk5StateO7unknownyA2CmF"></a>
+                    <a name="/c:@M@speedifysdk@E@State@StateUnknown"></a>
                     <a name="//apple_ref/swift/Element/unknown" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk5StateO7unknownyA2CmF">unknown</a>
+                    <a class="token" href="#/c:@M@speedifysdk@E@State@StateUnknown">unknown</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -451,13 +443,65 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SL1loiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SL1loiySbx_xtFZ">&lt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
           <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
