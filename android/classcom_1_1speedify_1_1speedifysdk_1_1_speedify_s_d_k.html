@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d43b451e0ebc24feb97a16996d6bf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the directory server to defaults.  <a href="#a8d43b451e0ebc24feb97a16996d6bf40">More...</a><br /></td></tr>
 <tr class="separator:a8d43b451e0ebc24feb97a16996d6bf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab51c7f8e6d1a1a9d8491c1485cdbf291">enableConnectionStatUpdates</a> (boolean enabled)</td></tr>
-<tr class="memdesc:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#ab51c7f8e6d1a1a9d8491c1485cdbf291">More...</a><br /></td></tr>
+<tr class="memdesc:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a>.  <a href="#ab51c7f8e6d1a1a9d8491c1485cdbf291">More...</a><br /></td></tr>
 <tr class="separator:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7815d1b7b4591407fa253f0773aaf66"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> (boolean enabled, List&lt; Long &gt; periods)</td></tr>
 <tr class="memdesc:aa7815d1b7b4591407fa253f0773aaf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#aa7815d1b7b4591407fa253f0773aaf66">More...</a><br /></td></tr>
@@ -983,15 +983,9 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected. </p>
-<p>This is equivalent to <code>eenableStatUpdates(enabled,Arrays.asList(<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573" title="Requests total stats updates.">SessionStatPeriods.PERIOD_TOTAL</a>));</code> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>As of 10.0. See <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a57e78a7c48fb21de1d336c376278330a">OnConnectionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8dfeea141111ebdb89dd9c0dad58eb87">OnAdaptersList</a> once every 30 seconds while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">OnSessionStats</a> once per second while connected. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#abb8ec8f1ac9dad71cca05b4f5bb5ca8f">OnStreamingStats</a> once per second while connected. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enabled</td><td>if connection stat updates should be continuously received </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>5.8 </dd></dl>
+<p>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a>. </p>
+<p>This is equivalent to <code>enableStatUpdates(enabled,Arrays.asList(<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573" title="Requests total stats updates.">SessionStatPeriods.PERIOD_TOTAL</a>));</code></p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>10.0 </dd></dl>
 
 </div>
 </div>
