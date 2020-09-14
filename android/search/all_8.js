@@ -2,6 +2,7 @@ var searchData=
 [
   ['id',['id',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ae357a0f1aff6c9a64e5239fb03dd1e54',1,'com::speedify::speedifysdk::Types::StreamStats']]],
   ['ilogcompletecallback',['ILogCompleteCallback',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html',1,'com::speedify::speedifysdk::LogGeneration']]],
+  ['inactivetimeout',['INACTIVETIMEOUT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a9f3a721c531a24ba2a5d8387b46be305',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['introduction_20to_20the_20speedify_20sdk_20for_20android',['Introduction to the Speedify SDK for Android',['../index.html',1,'']]],
   ['inflight',['inFlight',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a4cecf6e26f1b888599f00e991d41fd0d',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['inflightwindow',['inFlightWindow',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a91aff05d023297e352276f886593f031',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
@@ -10,6 +11,7 @@ var searchData=
   ['initializevpnpermission',['initializeVPNPermission',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a43d8aee228eb303357ed460fe65f28ba',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['integration_20guide',['Integration Guide',['../integration.html',1,'']]],
   ['integration_2edox',['integration.dox',['../integration_8dox.html',1,'']]],
+  ['interrupted',['INTERRUPTED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html#a6aa5d78e35585ec9648af18040ac5054',1,'com.speedify.speedifysdk.Types.RestartReason.INTERRUPTED()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#aa26e0a4c9e23848c8151c61508208211',1,'com.speedify.speedifysdk.Types.DisconnectReason.INTERRUPTED()']]],
   ['ipaddress',['ipAddress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#a763c986b37f74a17049098c3d19c695a',1,'com::speedify::speedifysdk::Types::IPRange']]],
   ['iprange',['IPRange',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html',1,'com.speedify.speedifysdk.Types.IPRange'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#a3067f8f82de58404cb7a1dd50f9143a0',1,'com.speedify.speedifysdk.Types.IPRange.IPRange(String ipAddress, int prefixLength)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#a091ee0a6b37ca04b3d4bd2d2b8780aec',1,'com.speedify.speedifysdk.Types.IPRange.IPRange(String ipAddress)']]],
   ['ipv4',['ipv4',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a39c2166bdb16e5e2cc0a70427e9a37c9',1,'com.speedify.speedifysdk.Types.LocalProxySettings.ipv4()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#abda3993d0d67c4eb69bf8964ddce2fe4',1,'com.speedify.speedifysdk.Types.FirewallSettings.ipv4()']]],

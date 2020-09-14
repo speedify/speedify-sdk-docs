@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['lastdisconnectevent',['lastDisconnectEvent',['../struct_speedify_s_d_k___disconnect_event_result.html#a00f5c42a2d7b1705cec2e399a991258d',1,'SpeedifySDK_DisconnectEventResult']]],
   ['latencyms',['latencyMs',['../struct_speedify_s_d_k___connection_stats.html#aabcf2b92b7e1e93e58cca4f8339a984f',1,'SpeedifySDK_ConnectionStats']]],
   ['linux_2edox',['linux.dox',['../linux_8dox.html',1,'']]],
   ['localip',['localIp',['../struct_speedify_s_d_k___connection_stats.html#a9c24a35f808f788fcdf92cd213989f54',1,'SpeedifySDK_ConnectionStats']]],

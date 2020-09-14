@@ -13,6 +13,7 @@ var searchData=
   ['speedifysdk_5fconnectionstatscallback',['SpeedifySDK_ConnectionStatsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga3b8001d47483ba0bf5a1d1259bb2306b',1,'callbacks.h']]],
   ['speedifysdk_5fdirectorycallback',['SpeedifySDK_DirectoryCallback',['../group___c_a_l_l_b_a_c_k_s.html#gaeb1e79e2ecd8b2c338619196b225901e',1,'callbacks.h']]],
   ['speedifysdk_5fdirectorydomaincallback',['SpeedifySDK_DirectoryDomainCallback',['../group___c_a_l_l_b_a_c_k_s.html#gaaf7f3c42f17410da3bf451287721ba66',1,'callbacks.h']]],
+  ['speedifysdk_5fdisconnecteventcallback',['SpeedifySDK_DisconnectEventCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga9bf3db057b483648829cced795a47898',1,'callbacks.h']]],
   ['speedifysdk_5fdomainstring',['SpeedifySDK_DomainString',['../group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326',1,'types.h']]],
   ['speedifysdk_5feventid',['SpeedifySDK_EventID',['../group___r_e_s_u_l_t.html#ga4f4cea7755c8fea8ca022fb8cc4c21f3',1,'results.h']]],
   ['speedifysdk_5ffirewallsettingscallback',['SpeedifySDK_FirewallSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#gae8d7c56e166ac9703b6d2ad2c4420600',1,'callbacks.h']]],

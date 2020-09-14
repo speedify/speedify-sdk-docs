@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.3.1</span>
+   &#160;<span id="projectnumber">10.4.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,23 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1031"></a>Speedify SDK for Android 10.3.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1040"></a>Speedify SDK for Android 10.4 </h2>
+<ul>
+<li>Proxy Mode - You may not start a local-proxy-only VPN by calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a891b3e67a44106afb1b8be9b6db9600b">connectProxy</a>. All traffic through the VPN will be sent out via the Local Proxy over the default network interface.</li>
+<li>You can now disable ESNI in directory and speed server requests with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a595d59f60f5727ba06036b815e4f55a4">setESNIEnabled</a> if your custom directory server does not support ESNI.</li>
+<li>Android Always-On VPN support may now be disabled. See <a class="el" href="alwayson.html">Disable Always-On Support</a> for details.</li>
+<li>Disconnect Events<ul>
+<li>To track reboot and upgrade disconnect events, see <a class="el" href="disconnectevents.html">Tracking Disconnect Events</a>.</li>
+<li>The reason for the last disconnect may be queried via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa87d44348fbcc7cc58430c2edb7862d4">refreshLastDisconnectEvent</a>.</li>
+</ul>
+</li>
+<li>Deprecations<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9413aeb08f153f6f44a5672c26c524d2">OnServiceRestart(State,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa69ee1f83e2a0a78566db640b52ebccd">OnServiceRestart(State,RestartReason)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8d3202983f79516ca4ca698a7ef6b6ae">OnDirectoryDomain(String)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a162c008203d462bd91965f239e3c3e5f">OnDirectoryDomain(String,boolean)</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1031"></a>Speedify SDK for Android 10.3.1 </h2>
 <ul>
 <li>No new features. This is a stability and performance release.</li>
 </ul>
@@ -315,9 +331,9 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_750"></a>Speedify SDK for Android 7.5 </h2>
 <ul>
-<li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a656c13a84a8f1acc91a93b4f4994f86f">OnServiceRestart</a> to stop this behavior.</li>
+<li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa69ee1f83e2a0a78566db640b52ebccd">OnServiceRestart</a> to stop this behavior.</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a268b556f9223c327e47cc2374030cb75">OnNewAdapter</a> now has a <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> argument.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> can be used to get the current directory domain via <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3235e4a285f423f9cb2d1a0ee4c17f6c">OnDirectoryDomain</a> .</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> can be used to get the current directory domain via <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a162c008203d462bd91965f239e3c3e5f">OnDirectoryDomain</a> .</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a58bd66a2c3a3d4cc4fd97fb514035e62">OnConnectedServer</a> now sends a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> object with more information on the connect server..</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>

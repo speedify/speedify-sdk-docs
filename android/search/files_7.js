@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['userstrings_2edox',['userstrings.dox',['../userstrings_8dox.html',1,'']]],
-  ['uuidprovider_2ejava',['UuidProvider.java',['../_uuid_provider_8java.html',1,'']]]
+  ['sdkadv_2edox',['sdkadv.dox',['../sdkadv_8dox.html',1,'']]],
+  ['sdkinit_2edox',['sdkinit.dox',['../sdkinit_8dox.html',1,'']]],
+  ['speedifyhandler_2ejava',['SpeedifyHandler.java',['../_speedify_handler_8java.html',1,'']]],
+  ['speedifysdk_2ejava',['SpeedifySDK.java',['../_speedify_s_d_k_8java.html',1,'']]],
+  ['startupbroadcastreceiver_2ejava',['StartupBroadcastReceiver.java',['../_startup_broadcast_receiver_8java.html',1,'']]],
+  ['statetrackingsbr_2ejava',['StateTrackingSBR.java',['../_state_tracking_s_b_r_8java.html',1,'']]]
 ];

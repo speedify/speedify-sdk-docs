@@ -5,6 +5,7 @@ var searchData=
   ['dayssincefirst',['daysSinceFirst',['../struct_speedify_s_d_k___session_stats.html#a2899d03bed1f76a24823c8740956444b',1,'SpeedifySDK_SessionStats']]],
   ['description',['description',['../struct_speedify_s_d_k___adapter_data.html#a8dde27d17766dcb52fc861ca663af628',1,'SpeedifySDK_AdapterData']]],
   ['detections',['detections',['../struct_speedify_s_d_k___captive_portal_stats.html#abade7ea4b053647fa0be77e871bfe7c4',1,'SpeedifySDK_CaptivePortalStats']]],
+  ['disconnectreason',['disconnectReason',['../struct_speedify_s_d_k___disconnect_event.html#a385a30979bdff0eb99aa847f444e8991',1,'SpeedifySDK_DisconnectEvent']]],
   ['dnsaddresscount',['dnsAddressCount',['../struct_speedify_s_d_k___privacy_settings.html#abee7b042ac42e35c6b6a915fc9073274',1,'SpeedifySDK_PrivacySettings']]],
   ['dnsaddresses',['dnsAddresses',['../struct_speedify_s_d_k___privacy_settings.html#a37386f5000c86d6bceb5f2e2bb403ec2',1,'SpeedifySDK_PrivacySettings']]],
   ['dnsleak',['dnsleak',['../struct_speedify_s_d_k___privacy_settings.html#a4cd21a6e3329da4d2284069c64eaa926',1,'SpeedifySDK_PrivacySettings']]],

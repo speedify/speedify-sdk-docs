@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (73% documented)</p>
+        <p><a href="index.html"> Docs</a> (72% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -140,6 +140,9 @@
                 <a href="Structs/ConnectionStats.html">ConnectionStats</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs.html#/s:11speedifysdk15DisconnectEventV">DisconnectEvent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/FirewallPort.html">FirewallPort</a>
               </li>
               <li class="nav-group-task">
@@ -228,6 +231,19 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='strong-speedify-10-4-strong' class='heading'><strong>Speedify 10.4</strong></h3>
+
+<ul>
+<li>Service account key will now be mandatory inside of the app&rsquo;s info.plist. Please set <code>&lt;key&gt;SpeedifyServiceAccount&lt;/key&gt;</code> <code>&lt;string&gt;YOUR_SERVICE_ACCOUNT&lt;/string&gt;</code>. The service account is a unique key, specific to your app, to store a user&rsquo;s UUID in the keychain. Here is an example of a service account string  <code>&quot;MyExampleAppUUID&quot;</code>.  This will ensure the same UUID throughout app deletions and installations. It will <code>assert</code> during DEBUG if you forget to set its key. In production it will set a blank string and a user will be unable to authenticate or connect.</li>
+<li>New  <code><a href="Enums/AutoConnectMethod.html">AutoConnectMethod</a></code> -&gt; <code>case proxy = &quot;proxy&quot;</code></li>
+<li>New Type <code>Directory</code></li>
+<li>Deprecated <code>setDirectoryDomain(domain: String, completionHandler:@escaping (_ domain: String)-&gt;Void)</code> Use <code>setDirectoryWithDomain(domain: String, completionHandler:@escaping (_ directory: Directory)-&gt;Void)</code></li>
+<li>New <code>setESNIEnabled(enable: Bool)</code> - Sets if ESNI is used when talking to the directory domain</li>
+<li>New <code>SpeedifyDirectoryDomainDelegate</code></li>
+<li>New <code>SpeedifyLastDisconnectDelegate</code> which has a  function <code>func disconnectEventDidUpdate(disconnectReason: DisconnectReason)</code> to send back the last disconnected reason. <code>DisconnectReason</code></li>
+<li>New   <code>public func refreshLastDisconnectEvent()</code> Get the last session disconnect event</li>
+<li>Change <code>func initializeVPNPermission(profile: String?,startTunnel: Bool, waitUntilConnected: Bool, completionHandler: @escaping (_ didSave: Bool, _ error: Error?)-&gt;Void)</code> -&gt; <code>func initializeVPNPermission(profile: String?, onDemandRules: [NEOnDemandRule]?,startTunnel: Bool, waitUntilConnected: Bool, completionHandler: @escaping (_ didSave: Bool, _ error: Error?)-&gt;Void)</code>. Note: When initializing a VPN profile you may now pass an optional array of NEOndemand rules. Setting onDemandRules to nil will remove the onDemand toggle from the iOS settings app</li>
+</ul>
 <h3 id='strong-speedify-10-3-1-strong' class='heading'><strong>Speedify 10.3.1</strong></h3>
 
 <ul>

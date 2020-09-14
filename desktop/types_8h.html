@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.3.1</span>
+   &#160;<span id="projectnumber">10.4.0</span>
    </div>
   </td>
  </tr>
@@ -173,6 +173,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___streaming_stats.html">SpeedifySDK_StreamingStats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streaming mode stats.  <a href="struct_speedify_s_d_k___streaming_stats.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___disconnect_event.html">SpeedifySDK_DisconnectEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a disconnect event.  <a href="struct_speedify_s_d_k___disconnect_event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -209,7 +212,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a80f2edd8f0fbd0721a9d74ff99d309a9">ACM_P2P</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a46ffa50c2278f79d933ee9152072acb5">ACM_BYSETTING</a>, 
-<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2aa3e6b80efc1fad5567694feb4f697270">ACM_COUNTRYCITYSERVER</a>
+<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2aa3e6b80efc1fad5567694feb4f697270">ACM_COUNTRYCITYSERVER</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a84625c4e1a93023a6f45853b39df5824">ACM_PROXY</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gab919eb84f5459fa31364b2a5a24088f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods for automatic server selection.  <a href="group___t_y_p_e_s.html#gab919eb84f5459fa31364b2a5a24088f2">More...</a><br /></td></tr>
@@ -319,6 +323,27 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gaa0999d1c8d7d3eaf8d6cea85609364c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">How firewall treats matches.  <a href="group___t_y_p_e_s.html#gaa0999d1c8d7d3eaf8d6cea85609364c8">More...</a><br /></td></tr>
 <tr class="separator:gaa0999d1c8d7d3eaf8d6cea85609364c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga081a8b9c8a0177d504aa84266b56a994"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994">SpeedifySDK_DisconnectReason</a> { <br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994aa0c6bb224e71a132204c82ac6d63cd9d">DR_UNKNOWN</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a525759be422e3d5d7fee547d9f4e8fc3">DR_CONNECTIVITY</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994af5aeb36f36897e092659d0290fca2f60">DR_AIRPLANE</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a83152d74f1b537afdc228ede857d045e">DR_REBOOT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a23a6dfbe604829a6e031420e2f5f4679">DR_UPDATE</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994afebe5702c045185b3466bcee5b26f5a9">DR_CRASH</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994ad90afe69109ff97ea31de59a4a562aeb">DR_SLEEP</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994aa64c8211c04109dbf4130f5dc323f931">DR_USERINITIATED</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a97b932046352e65c1d0fcd4a425b76ce">DR_TORRENT</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994aa860af7b1aeeb82f4e51d4f0e97007b1">DR_SERVICESTOP</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994ae49983705d70f518ef59e6361c1cc83e">DR_STARTTIMEOUT</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994af0a202a40400285543bd42d05d0c6f10">DR_INACTIVETIMEOUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a3e3fd56a0887b10bc972856bcce22bd6">DR_SETTINGCHANGERECONNECT</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga081a8b9c8a0177d504aa84266b56a994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for a disconnect.  <a href="group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994">More...</a><br /></td></tr>
+<tr class="separator:ga081a8b9c8a0177d504aa84266b56a994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -385,6 +410,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga664339a1ed8d20db385f485cbadf273b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga664339a1ed8d20db385f485cbadf273b">SpeedifySDK_FirewallMode_toString</a> (<a class="el" href="group___t_y_p_e_s.html#gaa0999d1c8d7d3eaf8d6cea85609364c8">SpeedifySDK_FirewallMode</a> matchMode)</td></tr>
 <tr class="memdesc:ga664339a1ed8d20db385f485cbadf273b"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_ProxyMatchMode.  <a href="group___t_y_p_e_s.html#ga664339a1ed8d20db385f485cbadf273b">More...</a><br /></td></tr>
 <tr class="separator:ga664339a1ed8d20db385f485cbadf273b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d4615616242a3b3fe438822123eaf95"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga1d4615616242a3b3fe438822123eaf95">SpeedifySDK_DisconnectReason_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994">SpeedifySDK_DisconnectReason</a> reason)</td></tr>
+<tr class="separator:ga1d4615616242a3b3fe438822123eaf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.15-->

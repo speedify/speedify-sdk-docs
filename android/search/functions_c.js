@@ -24,6 +24,7 @@ var searchData=
   ['setdisconnectonexit',['setDisconnectOnExit',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8dbd62d62d2fdb05acbc03b725dc349d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setdnsservers',['setDNSServers',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef0319bb8e304e64cd656ea4b7b05ae0',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setenabledefaultroute',['setEnableDefaultRoute',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfe4ddbddf1e8ca62bb266eafc454b01',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['setesnienabled',['setESNIEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a595d59f60f5727ba06036b815e4f55a4',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setexcludedefaultprivateipranges',['setExcludeDefaultPrivateIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a26a825f85d22f1fe945b592d83585847',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setexcludedipranges',['setExcludedIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7d3ef739b468369bdca24b8b9690db08',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setfirewalldomains',['setFirewallDomains',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acb32f9195d98043664242bb796f119a8',1,'com::speedify::speedifysdk::SpeedifySDK']]],

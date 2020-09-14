@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['disable_20always_2don_20support',['Disable Always-On Support',['../alwayson.html',1,'']]],
   ['dataperiodend',['dataPeriodEnd',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a49870dcaf74788b5728e27a0bce1f822',1,'com::speedify::speedifysdk::Types::AccountingData']]],
   ['datausage',['dataUsage',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a6731b68f0024e249e497462a1b0bdeb3',1,'com::speedify::speedifysdk::Types::AdapterData']]],
   ['dayssincefirst',['daysSinceFirst',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a26c7864736d96e718f48b22fa1a761ab',1,'com::speedify::speedifysdk::Types::SessionStats']]],
@@ -13,8 +14,11 @@ var searchData=
   ['disableadaptermonthlydatalimit',['disableAdapterMonthlyDataLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4810b4a7092392ad14908d3b8aeaa157',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['disconnect',['disconnect',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4a4c2690d116f02c0a5c0ee446ef2db1',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['disconnected',['DISCONNECTED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_state.html#aef1d46a9a41eafdd9cf58e56275d7235',1,'com::speedify::speedifysdk::Types::ConnectionState']]],
+  ['disconnectevent',['DisconnectEvent',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html',1,'com::speedify::speedifysdk::Types']]],
+  ['disconnectevents_2edox',['disconnectevents.dox',['../disconnectevents_8dox.html',1,'']]],
   ['disconnecting',['DISCONNECTING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a66d3b187cf3134079f0b19601d4ed063',1,'com::speedify::speedifysdk::Types::State']]],
   ['disconnectonexit',['disconnectOnExit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#ae93fbc88369dfd70a60f4d16812077e7',1,'com::speedify::speedifysdk::Types::Settings']]],
+  ['disconnectreason',['DisconnectReason',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html',1,'com::speedify::speedifysdk::Types']]],
   ['dnsaddresses',['dnsAddresses',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#ad08f6aaaa39094cf695fb79fbe90d3eb',1,'com::speedify::speedifysdk::Types::PrivacySettings']]],
   ['domains',['domains',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#af2e9b1afd3e4fe46f107df3f19600feb',1,'com.speedify.speedifysdk.Types.LocalProxySettings.domains()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#ae7657a70db57842992802f6de90316f6',1,'com.speedify.speedifysdk.Types.FirewallSettings.domains()']]],
   ['domainwatchlistitems',['domainWatchlistItems',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a4d2b0be401ee211bb1d74bee06a369ea',1,'com::speedify::speedifysdk::Types::LocalProxySettings']]],
