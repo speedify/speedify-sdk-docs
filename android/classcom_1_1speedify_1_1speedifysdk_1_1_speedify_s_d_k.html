@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62d03ab3a4fd73de7ddea3d4f4d0105d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the directory oauth gateway to defaults.  <a href="#a62d03ab3a4fd73de7ddea3d4f4d0105d">More...</a><br /></td></tr>
 <tr class="separator:a62d03ab3a4fd73de7ddea3d4f4d0105d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab51c7f8e6d1a1a9d8491c1485cdbf291">enableConnectionStatUpdates</a> (boolean enabled)</td></tr>
-<tr class="memdesc:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a>.  <a href="#ab51c7f8e6d1a1a9d8491c1485cdbf291">More...</a><br /></td></tr>
+<tr class="memdesc:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is equivalent to <code>enableStatUpdates(enabled,Arrays.asList(<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573" title="Requests total stats updates.">SessionStatPeriods.PERIOD_TOTAL</a>));</code>  <a href="#ab51c7f8e6d1a1a9d8491c1485cdbf291">More...</a><br /></td></tr>
 <tr class="separator:ab51c7f8e6d1a1a9d8491c1485cdbf291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7815d1b7b4591407fa253f0773aaf66"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> (boolean enabled, List&lt; Long &gt; periods)</td></tr>
 <tr class="memdesc:aa7815d1b7b4591407fa253f0773aaf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#aa7815d1b7b4591407fa253f0773aaf66">More...</a><br /></td></tr>
@@ -207,7 +207,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab7d926e0a8bb87cddc5421abfb87c381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh a list of available servers from the directory list.  <a href="#ab7d926e0a8bb87cddc5421abfb87c381">More...</a><br /></td></tr>
 <tr class="separator:ab7d926e0a8bb87cddc5421abfb87c381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665e4d5e66ca49c8e8deddfd54e23a1e"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> ()</td></tr>
-<tr class="memdesc:a665e4d5e66ca49c8e8deddfd54e23a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a>.  <a href="#a665e4d5e66ca49c8e8deddfd54e23a1e">More...</a><br /></td></tr>
 <tr class="separator:a665e4d5e66ca49c8e8deddfd54e23a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10892665b1312d439363a2068a19543b"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a> ()</td></tr>
 <tr class="memdesc:a10892665b1312d439363a2068a19543b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the current directory settings.  <a href="#a10892665b1312d439363a2068a19543b">More...</a><br /></td></tr>
@@ -398,6 +397,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fcfd6413bab4360acca2a69ea2576af"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6fcfd6413bab4360acca2a69ea2576af">setDaemonLogSettings</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html">DaemonLogSettings</a> daemon)</td></tr>
 <tr class="memdesc:a6fcfd6413bab4360acca2a69ea2576af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set daemon log file settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a1807125620277536cc8225878be25e74">OnLogSettings</a>.  <a href="#a6fcfd6413bab4360acca2a69ea2576af">More...</a><br /></td></tr>
 <tr class="separator:a6fcfd6413bab4360acca2a69ea2576af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ec7a377038174ab36595a11b153eb2"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a71ec7a377038174ab36595a11b153eb2">eraseAllLogFiles</a> ()</td></tr>
+<tr class="memdesc:a71ec7a377038174ab36595a11b153eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase all log files and log zips.  <a href="#a71ec7a377038174ab36595a11b153eb2">More...</a><br /></td></tr>
+<tr class="separator:a71ec7a377038174ab36595a11b153eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28168c54f50eb91a95cd551b51cf928a"><td class="memItemLeft" align="right" valign="top">final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a28168c54f50eb91a95cd551b51cf928a">hasVPNPermission</a> ()</td></tr>
 <tr class="memdesc:a28168c54f50eb91a95cd551b51cf928a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the SDK currently has VPN permission.  <a href="#a28168c54f50eb91a95cd551b51cf928a">More...</a><br /></td></tr>
 <tr class="separator:a28168c54f50eb91a95cd551b51cf928a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1001,9 +1003,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a>. </p>
-<p>This is equivalent to <code>enableStatUpdates(enabled,Arrays.asList(<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573" title="Requests total stats updates.">SessionStatPeriods.PERIOD_TOTAL</a>));</code></p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>10.0 </dd></dl>
+<p>This is equivalent to <code>enableStatUpdates(enabled,Arrays.asList(<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573" title="Requests total stats updates.">SessionStatPeriods.PERIOD_TOTAL</a>));</code> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 10.0. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a>. </dd></dl>
 
 </div>
 </div>
@@ -1042,6 +1043,26 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>10.0 </dd></dl>
+
+</div>
+</div>
+<a id="a71ec7a377038174ab36595a11b153eb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ec7a377038174ab36595a11b153eb2">&#9670;&nbsp;</a></span>eraseAllLogFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.eraseAllLogFiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Erase all log files and log zips. </p>
+<p>Note that the current active log file is not erased. </p><dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
 
 </div>
 </div>
@@ -1683,10 +1704,8 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>10.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>as of 10.5. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a> </dd></dl>
 
 </div>
 </div>
@@ -2645,7 +2664,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>since 10.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>As of 10.5. Functionality removed. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>6.3 </dd></dl>
 
 </div>

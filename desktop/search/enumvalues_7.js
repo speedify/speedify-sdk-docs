@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['pmm_5fallowlist',['PMM_ALLOWLIST',['../group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aaa0f36a86250d6a8c3a622bafc7ce6a23',1,'types.h']]],
-  ['pmm_5fdenylist',['PMM_DENYLIST',['../group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aa0de312811ca807ad5edd0a822e47091a',1,'types.h']]],
-  ['pproto_5ftcp',['PPROTO_TCP',['../group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44ea9b480fd1da16f2b74b8732c4756217f9',1,'types.h']]],
-  ['pproto_5fudp',['PPROTO_UDP',['../group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44eaca15f369269ee3980fafa67a63f4ede4',1,'types.h']]]
+  ['networktype_5fbluetooth',['NETWORKTYPE_BLUETOOTH',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba8f5cd60eff300be459749f30cf3f05de',1,'types.h']]],
+  ['networktype_5fcellular',['NETWORKTYPE_CELLULAR',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baee15d79f90293e228aadeef700a54d8a',1,'types.h']]],
+  ['networktype_5fethernet',['NETWORKTYPE_ETHERNET',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba1eb038a7b01236f57976d434e6467cba',1,'types.h']]],
+  ['networktype_5floopback',['NETWORKTYPE_LOOPBACK',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887bab43d42b3b44a5333e08f7958aba938bb',1,'types.h']]],
+  ['networktype_5funknown',['NETWORKTYPE_UNKNOWN',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baf51a69e0a2c5a3e644f50f786cbc9992',1,'types.h']]],
+  ['networktype_5fvpn',['NETWORKTYPE_VPN',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba277d6ee1babf5d8abbf2865c58ca66c2',1,'types.h']]],
+  ['networktype_5fwifi',['NETWORKTYPE_WIFI',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887bac0371be8f103c110f715d063499845c5',1,'types.h']]]
 ];

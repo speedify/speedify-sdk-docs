@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.4.0</span>
+   &#160;<span id="projectnumber">10.5.0</span>
    </div>
   </td>
  </tr>
@@ -175,6 +175,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___disconnect_event.html">SpeedifySDK_DisconnectEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a disconnect event.  <a href="struct_speedify_s_d_k___disconnect_event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___daemon_log_settings.html">SpeedifySDK_DaemonLogSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for logging in the daemon.  <a href="struct_speedify_s_d_k___daemon_log_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___directory_settings.html">SpeedifySDK_DirectorySettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory settings.  <a href="struct_speedify_s_d_k___directory_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -344,6 +350,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga081a8b9c8a0177d504aa84266b56a994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for a disconnect.  <a href="group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994">More...</a><br /></td></tr>
 <tr class="separator:ga081a8b9c8a0177d504aa84266b56a994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1b620799799836a6f78e3113a2884bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">SpeedifySDK_LogLevel</a> { <a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfaf8183bf220ce3ac3b3a1ab2cac1aeed1">LL_VERBOSE</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfa3d0aabc1a000a1668922ab44aeca5771">LL_INFO</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfa7413c537cbbee6447b4d2a2fd90bd1c9">LL_WARN</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfa50717458baf49c204bb0645418e0da15">LL_ERROR</a>
+ }</td></tr>
+<tr class="memdesc:gae1b620799799836a6f78e3113a2884bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log levels in the SDK.  <a href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">More...</a><br /></td></tr>
+<tr class="separator:gae1b620799799836a6f78e3113a2884bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -412,6 +425,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga664339a1ed8d20db385f485cbadf273b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d4615616242a3b3fe438822123eaf95"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga1d4615616242a3b3fe438822123eaf95">SpeedifySDK_DisconnectReason_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994">SpeedifySDK_DisconnectReason</a> reason)</td></tr>
 <tr class="separator:ga1d4615616242a3b3fe438822123eaf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9841624fb8d0ec1f6393304bc422b2ea"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga9841624fb8d0ec1f6393304bc422b2ea">SpeedifySDK_LogLevel_toString</a> (<a class="el" href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">SpeedifySDK_LogLevel</a> level)</td></tr>
+<tr class="separator:ga9841624fb8d0ec1f6393304bc422b2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.15-->

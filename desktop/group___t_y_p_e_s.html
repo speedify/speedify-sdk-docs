@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.4.0</span>
+   &#160;<span id="projectnumber">10.5.0</span>
    </div>
   </td>
  </tr>
@@ -167,6 +167,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___disconnect_event.html">SpeedifySDK_DisconnectEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a disconnect event.  <a href="struct_speedify_s_d_k___disconnect_event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___daemon_log_settings.html">SpeedifySDK_DaemonLogSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for logging in the daemon.  <a href="struct_speedify_s_d_k___daemon_log_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___directory_settings.html">SpeedifySDK_DirectorySettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory settings.  <a href="struct_speedify_s_d_k___directory_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -336,6 +342,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga081a8b9c8a0177d504aa84266b56a994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for a disconnect.  <a href="group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994">More...</a><br /></td></tr>
 <tr class="separator:ga081a8b9c8a0177d504aa84266b56a994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1b620799799836a6f78e3113a2884bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">SpeedifySDK_LogLevel</a> { <a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfaf8183bf220ce3ac3b3a1ab2cac1aeed1">LL_VERBOSE</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfa3d0aabc1a000a1668922ab44aeca5771">LL_INFO</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfa7413c537cbbee6447b4d2a2fd90bd1c9">LL_WARN</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfa50717458baf49c204bb0645418e0da15">LL_ERROR</a>
+ }</td></tr>
+<tr class="memdesc:gae1b620799799836a6f78e3113a2884bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log levels in the SDK.  <a href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">More...</a><br /></td></tr>
+<tr class="separator:gae1b620799799836a6f78e3113a2884bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -404,6 +417,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga664339a1ed8d20db385f485cbadf273b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d4615616242a3b3fe438822123eaf95"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga1d4615616242a3b3fe438822123eaf95">SpeedifySDK_DisconnectReason_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994">SpeedifySDK_DisconnectReason</a> reason)</td></tr>
 <tr class="separator:ga1d4615616242a3b3fe438822123eaf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9841624fb8d0ec1f6393304bc422b2ea"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga9841624fb8d0ec1f6393304bc422b2ea">SpeedifySDK_LogLevel_toString</a> (<a class="el" href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">SpeedifySDK_LogLevel</a> level)</td></tr>
+<tr class="separator:ga9841624fb8d0ec1f6393304bc422b2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaffaec6a9ce68f94b60c8b62767207326"></a>
@@ -754,6 +769,37 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ggaa0999d1c8d7d3eaf8d6cea85609364c8a64ce499e666c6873366ca0f8f3216aa1"></a>FWM_ALLOWLIST&#160;</td><td class="fielddoc"><p>Matches are allowed through the VPN, all others are dropped @since 10.2. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggaa0999d1c8d7d3eaf8d6cea85609364c8a214ae9e39fb4efe35112b54cd473fb8e"></a>FWM_DENYLIST&#160;</td><td class="fielddoc"><p>Matches are dropped, all others are allowed through the VPN @since 10.2. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gae1b620799799836a6f78e3113a2884bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1b620799799836a6f78e3113a2884bf">&#9670;&nbsp;</a></span>SpeedifySDK_LogLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">SpeedifySDK_LogLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log levels in the SDK. </p>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae1b620799799836a6f78e3113a2884bfaf8183bf220ce3ac3b3a1ab2cac1aeed1"></a>LL_VERBOSE&#160;</td><td class="fielddoc"><p>Verbose. </p>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae1b620799799836a6f78e3113a2884bfa3d0aabc1a000a1668922ab44aeca5771"></a>LL_INFO&#160;</td><td class="fielddoc"><p>Info. </p>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae1b620799799836a6f78e3113a2884bfa7413c537cbbee6447b4d2a2fd90bd1c9"></a>LL_WARN&#160;</td><td class="fielddoc"><p>Warning. </p>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae1b620799799836a6f78e3113a2884bfa50717458baf49c204bb0645418e0da15"></a>LL_ERROR&#160;</td><td class="fielddoc"><p>Error. </p>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
 </td></tr>
 </table>
 
@@ -1146,6 +1192,24 @@ Functions</h2></td></tr>
 
 <p>String representation of a SpeedifySDK_ProxyMatchMode. </p>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+</div>
+</div>
+<a id="ga9841624fb8d0ec1f6393304bc422b2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9841624fb8d0ec1f6393304bc422b2ea">&#9670;&nbsp;</a></span>SpeedifySDK_LogLevel_toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SpeedifySDK_LogLevel_toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf">SpeedifySDK_LogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -14,7 +14,7 @@
     <a title="Speedify Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (72% documented)</p>
+        <p><a href="../index.html"> Docs</a> (71% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -63,6 +63,9 @@
                 <a href="../Enums.html#/s:11speedifysdk7JSONKeyO">JSONKey</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/NetworkType.html">NetworkType</a>
               </li>
               <li class="nav-group-task">
@@ -106,6 +109,12 @@
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk28SpeedifyLogSettingstDelegateP">SpeedifyLogSettingstDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk28SpeedifySafeBrowsingDelegateP">SpeedifySafeBrowsingDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -141,6 +150,9 @@
                 <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs.html#/s:11speedifysdk17DaemonLogSettingsV">DaemonLogSettings</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs.html#/s:11speedifysdk15DisconnectEventV">DisconnectEvent</a>
               </li>
               <li class="nav-group-task">
@@ -166,6 +178,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingError.html">SafeBrowsingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:11speedifysdk17SafeBrowsingStatsV">SafeBrowsingStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
@@ -284,6 +302,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(py)waitUntilConnected"></a>
+                    <a name="//apple_ref/swift/Property/waitUntilConnected" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(py)waitUntilConnected">waitUntilConnected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setting to true will tell the sdk not to send any messages to the extension until it is fully connected</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">waitUntilConnected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -915,11 +961,11 @@ Automatic accounts have false email address in the form of <platform>.<device id
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Logs out of any current account and logs in to an automatically generated account for this device.
- If setting a custom directory, call &lsquo;changeDirectoryURL(url: String)&rsquo; before calling this.
- This may take several seconds as the OS is queryied for the device id
- Login or auto-account creation errors will be signalled in &lsquo;ErrorType&rsquo; return in the
- &lsquo;login(username: String, password: String, completionHandler:@escaping (_ message: State?, _ error: ErrorType)-&gt;Void&rsquo; closure.
- Automatic accounts have false email address in the form of <platform>.<device id>@autoaccount.speedify.com.</p>
+If setting a custom directory, call &lsquo;changeDirectoryURL(url: String)&rsquo; before calling this.
+This may take several seconds as the OS is queryied for the device id
+Login or auto-account creation errors will be signalled in &lsquo;ErrorType&rsquo; return in the
+&lsquo;login(username: String, password: String, completionHandler:@escaping (_ message: State?, _ error: ErrorType)-&gt;Void&rsquo; closure.
+Automatic accounts have false email address in the form of <platform>.<device id>@autoaccount.speedify.com.</p>
 
                       </div>
                       <div class="declaration">
@@ -2243,8 +2289,8 @@ Current value available from <code><a href="../Structs/Settings.html">Settings</
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Set the data usage, in bytes, allowed on this adapter in a single day.
- Setting allowedBytes to 0 will disable this limit.
- Cellular adapters default to 200MB/month.</p>
+Setting allowedBytes to 0 will disable this limit.
+Cellular adapters default to 200MB/month.</p>
 
                       </div>
                       <div class="declaration">
@@ -3070,9 +3116,11 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Resets the tracked data usage on an adapter.</p>
-
-<p>@since future</p>
+                        
+<ul>
+<li>Resets the tracked data usage on an adapter.</li>
+<li><p>@since future</p></li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -3170,6 +3218,128 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountPasswordChange</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">originalPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC16initSafeBrowsing04safeE6ConfigySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/initSafeBrowsing(safeBrowsingConfig:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16initSafeBrowsing04safeE6ConfigySS_tF">initSafeBrowsing(safeBrowsingConfig:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Initialize Safe Browsing library</li>
+<li>Current value available from <code>safebrowsingDelegate</code>.</li>
+<li>@since future</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initSafeBrowsing</span><span class="p">(</span><span class="nv">safeBrowsingConfig</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22setSafeBrowsingEnabled7enabledySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/setSafeBrowsingEnabled(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setSafeBrowsingEnabled7enabledySb_tF">setSafeBrowsingEnabled(enabled:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Sets if Safe Browsing is enabled</li>
+<li>Current value available <code>safebrowsingDelegate</code>.</li>
+<li>@since future</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24refreshSafeBrowsingStatsyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshSafeBrowsingStats()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24refreshSafeBrowsingStatsyyF">refreshSafeBrowsingStats()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets Safe Browsing stats
+Triggers <code>safebrowsingDelegate</code> <code>statsDidUpdate</code>.
+@since future</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshSafeBrowsingStats</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC19refreshSafeBrowsingyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshSafeBrowsing()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC19refreshSafeBrowsingyyF">refreshSafeBrowsing()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets Safe Browsing settings
+Triggers <code>safebrowsingDelegate</code>
+@since future</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshSafeBrowsing</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

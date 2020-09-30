@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.4.0</span>
+   &#160;<span id="projectnumber">10.5.0</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Callback Definitions</div>  </div>
@@ -78,6 +79,11 @@ $(function() {
 <p>Definitions for asynchronous callback functions to SDK Methods.<br />
 For calls that support subscriptions, returning true will continue the subscription, and returning false will cancel the subscription. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga0225389631fe7ab3c3beac200244fd6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga0225389631fe7ab3c3beac200244fd6f">SpeedifySDK_DirectoryDomainCallback</a>&#160;&#160;&#160;<a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a></td></tr>
+<tr class="separator:ga0225389631fe7ab3c3beac200244fd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gaef7ad0779565124919dc49d377ad54c1"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaef7ad0779565124919dc49d377ad54c1">SpeedifySDK_BaseCallback</a>) (<a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>, void *)</td></tr>
@@ -95,9 +101,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaeb1e79e2ecd8b2c338619196b225901e"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaeb1e79e2ecd8b2c338619196b225901e">SpeedifySDK_DirectoryCallback</a>) (<a class="el" href="struct_speedify_s_d_k___directory_result.html">SpeedifySDK_DirectoryResult</a>, void *)</td></tr>
 <tr class="memdesc:gaeb1e79e2ecd8b2c338619196b225901e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for a <a class="el" href="struct_speedify_s_d_k___directory_result.html" title="Directory result.">SpeedifySDK_DirectoryResult</a>.  <a href="#gaeb1e79e2ecd8b2c338619196b225901e">More...</a><br /></td></tr>
 <tr class="separator:gaeb1e79e2ecd8b2c338619196b225901e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf7f3c42f17410da3bf451287721ba66"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaaf7f3c42f17410da3bf451287721ba66">SpeedifySDK_DirectoryDomainCallback</a>) (<a class="el" href="struct_speedify_s_d_k___directory_domain_result.html">SpeedifySDK_DirectoryDomainResult</a>, void *)</td></tr>
-<tr class="memdesc:gaaf7f3c42f17410da3bf451287721ba66"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for a <a class="el" href="struct_speedify_s_d_k___directory_domain_result.html" title="Directory URL result.">SpeedifySDK_DirectoryDomainResult</a>.  <a href="#gaaf7f3c42f17410da3bf451287721ba66">More...</a><br /></td></tr>
-<tr class="separator:gaaf7f3c42f17410da3bf451287721ba66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga959aa0888af216300b0d6841275e05d3"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a>) (<a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>, void *)</td></tr>
+<tr class="memdesc:ga959aa0888af216300b0d6841275e05d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for a <a class="el" href="struct_speedify_s_d_k___directory_settings_result.html" title="Directory settings result.">SpeedifySDK_DirectorySettingsResult</a>.  <a href="#ga959aa0888af216300b0d6841275e05d3">More...</a><br /></td></tr>
+<tr class="separator:ga959aa0888af216300b0d6841275e05d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga549909a1b0fa13c4f3aceca5dac2f313"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga549909a1b0fa13c4f3aceca5dac2f313">SpeedifySDK_AccountingCallback</a>) (<a class="el" href="struct_speedify_s_d_k___accounting_result.html">SpeedifySDK_AccountingResult</a>, void *)</td></tr>
 <tr class="memdesc:ga549909a1b0fa13c4f3aceca5dac2f313"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for a <a class="el" href="struct_speedify_s_d_k___accounting_result.html" title="Accounting result.">SpeedifySDK_AccountingResult</a>.  <a href="#ga549909a1b0fa13c4f3aceca5dac2f313">More...</a><br /></td></tr>
 <tr class="separator:ga549909a1b0fa13c4f3aceca5dac2f313"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +173,27 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga9bf3db057b483648829cced795a47898"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga9bf3db057b483648829cced795a47898">SpeedifySDK_DisconnectEventCallback</a>) (<a class="el" href="struct_speedify_s_d_k___disconnect_event_result.html">SpeedifySDK_DisconnectEventResult</a>, void *)</td></tr>
 <tr class="memdesc:ga9bf3db057b483648829cced795a47898"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for a <a class="el" href="struct_speedify_s_d_k___vendor_user_data_result.html" title="Vendor user data result.">SpeedifySDK_VendorUserDataResult</a>.  <a href="#ga9bf3db057b483648829cced795a47898">More...</a><br /></td></tr>
 <tr class="separator:ga9bf3db057b483648829cced795a47898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0185ee6d04104083bc6b1eccc1f49e2"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gad0185ee6d04104083bc6b1eccc1f49e2">SpeedifySDK_LogSettingsCallback</a>) (<a class="el" href="struct_speedify_s_d_k___log_settings_result.html">SpeedifySDK_LogSettingsResult</a>, void *)</td></tr>
+<tr class="memdesc:gad0185ee6d04104083bc6b1eccc1f49e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for a <a class="el" href="struct_speedify_s_d_k___log_settings_result.html" title="Log file settings result.">SpeedifySDK_LogSettingsResult</a>.  <a href="#gad0185ee6d04104083bc6b1eccc1f49e2">More...</a><br /></td></tr>
+<tr class="separator:gad0185ee6d04104083bc6b1eccc1f49e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga0225389631fe7ab3c3beac200244fd6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0225389631fe7ab3c3beac200244fd6f">&#9670;&nbsp;</a></span>SpeedifySDK_DirectoryDomainCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SpeedifySDK_DirectoryDomainCallback&#160;&#160;&#160;<a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>As of 10.5. Use <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga7808c5235e3d79a0c813a4801e6a9d07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7808c5235e3d79a0c813a4801e6a9d07">&#9670;&nbsp;</a></span>SpeedifySDK_AccountCheckCallback</h2>
@@ -373,20 +399,20 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gaaf7f3c42f17410da3bf451287721ba66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf7f3c42f17410da3bf451287721ba66">&#9670;&nbsp;</a></span>SpeedifySDK_DirectoryDomainCallback</h2>
+<a id="ga959aa0888af216300b0d6841275e05d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga959aa0888af216300b0d6841275e05d3">&#9670;&nbsp;</a></span>SpeedifySDK_DirectorySettingsCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* SpeedifySDK_DirectoryDomainCallback) (<a class="el" href="struct_speedify_s_d_k___directory_domain_result.html">SpeedifySDK_DirectoryDomainResult</a>, void *)</td>
+          <td class="memname">typedef bool(* SpeedifySDK_DirectorySettingsCallback) (<a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>, void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback for a <a class="el" href="struct_speedify_s_d_k___directory_domain_result.html" title="Directory URL result.">SpeedifySDK_DirectoryDomainResult</a>. </p>
-<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+<p>A callback for a <a class="el" href="struct_speedify_s_d_k___directory_settings_result.html" title="Directory settings result.">SpeedifySDK_DirectorySettingsResult</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
 
 </div>
 </div>
@@ -455,6 +481,23 @@ Typedefs</h2></td></tr>
 
 <p>A callback for a <a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html" title="Local proxy settings result.">SpeedifySDK_LocalProxySettingsResult</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+</div>
+</div>
+<a id="gad0185ee6d04104083bc6b1eccc1f49e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0185ee6d04104083bc6b1eccc1f49e2">&#9670;&nbsp;</a></span>SpeedifySDK_LogSettingsCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* SpeedifySDK_LogSettingsCallback) (<a class="el" href="struct_speedify_s_d_k___log_settings_result.html">SpeedifySDK_LogSettingsResult</a>, void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A callback for a <a class="el" href="struct_speedify_s_d_k___log_settings_result.html" title="Log file settings result.">SpeedifySDK_LogSettingsResult</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
 
 </div>
 </div>

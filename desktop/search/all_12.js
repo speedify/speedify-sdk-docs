@@ -11,6 +11,7 @@ var searchData=
   ['totalbps',['totalBps',['../struct_speedify_s_d_k___connection_stats.html#a229dd9fac65cb930100fc60da0fd8644',1,'SpeedifySDK_ConnectionStats']]],
   ['totalconnectedminutes',['totalConnectedMinutes',['../struct_speedify_s_d_k___session_stats.html#a66371088fe0e6f2ea1a13a72b543d61d',1,'SpeedifySDK_SessionStats']]],
   ['totalfailoversaves',['totalFailoverSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#aef5c04251f4f44199a3ed39119c2c26d',1,'SpeedifySDK_StreamingSessionStats']]],
+  ['totalfiles',['totalFiles',['../struct_speedify_s_d_k___daemon_log_settings.html#a9fdfb06630cdea13cfa149940c263acc',1,'SpeedifySDK_DaemonLogSettings']]],
   ['totalredundantmodesaves',['totalRedundantModeSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#af4def47ec3d912403e3f4438a4b04f02',1,'SpeedifySDK_StreamingSessionStats']]],
   ['totalspeedmodesaves',['totalSpeedModeSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#afa9f0c6733adf925cee2493d1c6f19ea',1,'SpeedifySDK_StreamingSessionStats']]],
   ['totalstreams',['totalStreams',['../struct_speedify_s_d_k___streaming_session_stats.html#a3570f959444a699c827bf42a4fb8877e',1,'SpeedifySDK_StreamingSessionStats']]],

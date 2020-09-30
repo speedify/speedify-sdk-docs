@@ -8,6 +8,7 @@ var searchData=
   ['speedifysdk_5fdisconnectreason',['SpeedifySDK_DisconnectReason',['../group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994',1,'types.h']]],
   ['speedifysdk_5ferrortype',['SpeedifySDK_ErrorType',['../group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2',1,'types.h']]],
   ['speedifysdk_5ffirewallmode',['SpeedifySDK_FirewallMode',['../group___t_y_p_e_s.html#gaa0999d1c8d7d3eaf8d6cea85609364c8',1,'types.h']]],
+  ['speedifysdk_5floglevel',['SpeedifySDK_LogLevel',['../group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf',1,'types.h']]],
   ['speedifysdk_5fnetworktype',['SpeedifySDK_NetworkType',['../group___t_y_p_e_s.html#ga1b0e167436dde4e47d01f7057280887b',1,'types.h']]],
   ['speedifysdk_5fportprotocol',['SpeedifySDK_PortProtocol',['../group___t_y_p_e_s.html#ga765f83167900eb588a4b4c73c8e9f44e',1,'types.h']]],
   ['speedifysdk_5fproxymatchmode',['SpeedifySDK_ProxyMatchMode',['../group___t_y_p_e_s.html#gac5fce2249549ad9ffc779c9b71ad343a',1,'types.h']]],

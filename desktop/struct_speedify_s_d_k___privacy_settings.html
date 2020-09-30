@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.4.0</span>
+   &#160;<span id="projectnumber">10.5.0</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a37386f5000c86d6bceb5f2e2bb403ec2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___privacy_settings.html#a37386f5000c86d6bceb5f2e2bb403ec2">dnsAddresses</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga8e1cd03d663a09fa25904301bb6a7dca">SPEEDIFYSDK_MAX_DNS_COUNT</a>]</td></tr>
 <tr class="memdesc:a37386f5000c86d6bceb5f2e2bb403ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public IP addresses of the server.  <a href="#a37386f5000c86d6bceb5f2e2bb403ec2">More...</a><br /></td></tr>
 <tr class="separator:a37386f5000c86d6bceb5f2e2bb403ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11520851abe4813faf3aa68eac68ef2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___privacy_settings.html#ab11520851abe4813faf3aa68eac68ef2">doNotStoreCredentials</a></td></tr>
+<tr class="memdesc:ab11520851abe4813faf3aa68eac68ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If credentials, including oauth tokens and passwords, are not stored locally.  <a href="#ab11520851abe4813faf3aa68eac68ef2">More...</a><br /></td></tr>
+<tr class="separator:ab11520851abe4813faf3aa68eac68ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a82d080b7bafe0ea6de97a5de58a626dd"></a>
@@ -114,6 +117,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If crash reporting is enabled. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of 10.5. Functionality removed. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -166,6 +170,23 @@ Data Fields</h2></td></tr>
 
 <p>If DNS Leak protection is enabled. </p>
 <p>Windows Only </p><dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="ab11520851abe4813faf3aa68eac68ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11520851abe4813faf3aa68eac68ef2">&#9670;&nbsp;</a></span>doNotStoreCredentials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_PrivacySettings::doNotStoreCredentials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If credentials, including oauth tokens and passwords, are not stored locally. </p>
+<p>If true, automatic login and connect at boot will not work. </p><dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
 
 </div>
 </div>
