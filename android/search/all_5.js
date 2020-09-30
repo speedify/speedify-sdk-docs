@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['filesize',['fileSize',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html#a4fe638d660ec54fc9c47f9814fba7b52',1,'com::speedify::speedifysdk::Types::DaemonLogSettings']]],
+  ['filesperdaemon',['filesPerDaemon',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html#a146c61282ab1e644e6d3ccdf24fa4d0b',1,'com::speedify::speedifysdk::Types::DaemonLogSettings']]],
   ['findstate',['findState',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a58cbbb2c115e6c36081b068fb8a89fc8',1,'com::speedify::speedifysdk::Types::State']]],
   ['firewallmode',['FirewallMode',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html',1,'com::speedify::speedifysdk::Types']]],
   ['firewallport',['FirewallPort',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_port.html',1,'com::speedify::speedifysdk::Types']]],

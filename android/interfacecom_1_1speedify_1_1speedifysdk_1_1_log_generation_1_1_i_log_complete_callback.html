@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.4.1</span>
+   &#160;<span id="projectnumber">10.5.0</span>
    </div>
   </td>
  </tr>
@@ -79,18 +79,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>If the Activity you pass to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a681b133c26a5edbda731306d2eb987e5">shareLogs</a> implements this, then this callback will be called after logs are shared. </p>
+<div class="textblock"><p>If the Activity you pass to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a681b133c26a5edbda731306d2eb987e5">shareLogs</a> implements this, then this callback will be called after logs are created. </p>
 <dl class="section since"><dt>Since</dt><dd>6.1 </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6edbb0dcb2fdc5f099302952e532786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#ad6edbb0dcb2fdc5f099302952e532786">logComplete</a> ()</td></tr>
-<tr class="memdesc:ad6edbb0dcb2fdc5f099302952e532786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called upon completion of log generation, just before Android share chooser is shown.  <a href="#ad6edbb0dcb2fdc5f099302952e532786">More...</a><br /></td></tr>
-<tr class="separator:ad6edbb0dcb2fdc5f099302952e532786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db09e559e8531a3a5f0e11e33b2095e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#a9db09e559e8531a3a5f0e11e33b2095e">logComplete</a> (boolean success)</td></tr>
+<tr class="separator:a9db09e559e8531a3a5f0e11e33b2095e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad6edbb0dcb2fdc5f099302952e532786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6edbb0dcb2fdc5f099302952e532786">&#9670;&nbsp;</a></span>logComplete()</h2>
+<a id="a9db09e559e8531a3a5f0e11e33b2095e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db09e559e8531a3a5f0e11e33b2095e">&#9670;&nbsp;</a></span>logComplete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,14 +97,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void com.speedify.speedifysdk.LogGeneration.ILogCompleteCallback.logComplete </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>success</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Called upon completion of log generation, just before Android share chooser is shown. </p>
-<dl class="section since"><dt>Since</dt><dd>6.1 </dd></dl>
+<pre class="fragment">Called upon completion of log generation, just before Android share chooser is shown.
+</pre> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">success</td><td>if log generation completed successfully </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
 
 </div>
 </div>

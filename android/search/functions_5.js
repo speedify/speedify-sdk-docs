@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['generatelogs',['generateLogs',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a158fef61d69a5a8d84d09168c255d68c',1,'com.speedify.speedifysdk.LogGeneration.generateLogs(Context context)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a07e739a061a31244318a91dfdb97d19c',1,'com.speedify.speedifysdk.LogGeneration.generateLogs(Context context, final String fileName)']]],
   ['getapplicationcontext',['getApplicationContext',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0d5fac1940b7f1255cd32dfaac2c5577',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['getboolean',['getBoolean',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#ae573812ddeee81f3ac37a6b46c76d22d',1,'com::speedify::speedifysdk::Preferences']]],
   ['getcityname',['GetCityName',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#aab0dd72475254063a65b1d6f934406f8',1,'com::speedify::speedifysdk::Types::ServerInformation']]],

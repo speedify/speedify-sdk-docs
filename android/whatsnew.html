@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.4.1</span>
+   &#160;<span id="projectnumber">10.5.0</span>
    </div>
   </td>
  </tr>
@@ -71,11 +71,32 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1050"></a>Speedify SDK for Android 10.5 </h2>
+<ul>
+<li>Speedify SDK now supports a centralized Oauth gateway for authentication. Setup the gateway URI with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8649444213cb3fbe1c5a5231ba6a678c">setDirectoryGatewayURI</a> before logging in with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a064d56a2aeb14d6aef2380d525cd5a91">loginOauth</a>.</li>
+<li>Log settings in the daemon service are now configurable through <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6fcfd6413bab4360acca2a69ea2576af">setDaemonLogSettings</a>.</li>
+<li>You can now generate a log zip without triggering a share dialog with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a07e739a061a31244318a91dfdb97d19c">generateLogs</a>. The resulting zip file will be placed in a folder named <code>logs</code> under your application's files directory.</li>
+<li>Credentials, like oauth tokens and passwords, can be restricted from being saved locally using <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3729a911fe4bcf7777397f6731977ff5">setDoNotStoreCredentials</a>. Note that you will have to manually call a login method on every new SDK daemon run.</li>
+<li>Deprecations<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaab5f7dd7bada25a1c1bdd2a0ba7b8f0">OnDirectoryDomain(String,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab3dbb522659ffa88b0808c9245efb87e">OnDirectorySettings</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> has been deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a74bf34fadb64d702ab4596a07f9d8cd3">setCrashReporting</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a04351369bc30e907f7d43e6f8519c5e0">crashReports</a> - Crash reporting has been removed from the SDK for several releases.</li>
+</ul>
+</li>
+</ul>
 <h2><a class="anchor" id="whatsnew_1041"></a>Speedify SDK for Android 10.4.1 </h2>
 <ul>
 <li>No new features. This is a stability release.</li>
 </ul>
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1040"></a>Speedify SDK for Android 10.4 </h2>
+<h2><a class="anchor" id="whatsnew_future"></a>Speedify SDK for Android future </h2>
+<ul>
+<li>You can now generate logs without triggering a share sheet via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a158fef61d69a5a8d84d09168c255d68c">generateLogs</a>.</li>
+<li>API Compatibility Changes<ul>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a>'s <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#a9db09e559e8531a3a5f0e11e33b2095e">logComplete</a> callback now takes a boolean indication successful log generation.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1040"></a>Speedify SDK for Android 10.4 </h2>
 <ul>
 <li>Proxy Mode - You may not start a local-proxy-only VPN by calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a891b3e67a44106afb1b8be9b6db9600b">connectProxy</a>. All traffic through the VPN will be sent out via the Local Proxy over the default network interface.</li>
 <li>You can now disable ESNI in directory and speed server requests with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a595d59f60f5727ba06036b815e4f55a4">setESNIEnabled</a> if your custom directory server does not support ESNI.</li>
@@ -87,7 +108,7 @@ $(function() {
 </li>
 <li>Deprecations<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9413aeb08f153f6f44a5672c26c524d2">OnServiceRestart(State,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa69ee1f83e2a0a78566db640b52ebccd">OnServiceRestart(State,RestartReason)</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8d3202983f79516ca4ca698a7ef6b6ae">OnDirectoryDomain(String)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a162c008203d462bd91965f239e3c3e5f">OnDirectoryDomain(String,boolean)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8d3202983f79516ca4ca698a7ef6b6ae">OnDirectoryDomain(String)</a> has been deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaab5f7dd7bada25a1c1bdd2a0ba7b8f0">OnDirectoryDomain(String,boolean)</a></li>
 </ul>
 </li>
 </ul>
@@ -224,7 +245,7 @@ $(function() {
 <li>domains - The domains list has been split in to separate <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a3f1165e7dab2a32abd836ce639cbbb16">watchedDomains</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a1b7e6732ce780639a058ac4d94bd411e">proxiedDomains</a> lists.</li>
 </ul>
 </li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a0b24608739cd7b73da628c2cea16c700">shareLogs</a><ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a1918ef726fef0b76baaebf76611d118b">shareLogs</a><ul>
 <li>Now takes a fileName argument to control the name of the generated log zip file.</li>
 </ul>
 </li>
@@ -337,7 +358,7 @@ $(function() {
 <ul>
 <li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa69ee1f83e2a0a78566db640b52ebccd">OnServiceRestart</a> to stop this behavior.</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a268b556f9223c327e47cc2374030cb75">OnNewAdapter</a> now has a <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> argument.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> can be used to get the current directory domain via <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a162c008203d462bd91965f239e3c3e5f">OnDirectoryDomain</a> .</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> can be used to get the current directory domain via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8d3202983f79516ca4ca698a7ef6b6ae">OnDirectoryDomain</a> .</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a58bd66a2c3a3d4cc4fd97fb514035e62">OnConnectedServer</a> now sends a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> object with more information on the connect server..</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>

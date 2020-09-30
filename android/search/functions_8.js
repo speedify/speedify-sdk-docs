@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['logcomplete',['logComplete',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#ad6edbb0dcb2fdc5f099302952e532786',1,'com::speedify::speedifysdk::LogGeneration::ILogCompleteCallback']]],
+  ['logcomplete',['logComplete',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#a9db09e559e8531a3a5f0e11e33b2095e',1,'com::speedify::speedifysdk::LogGeneration::ILogCompleteCallback']]],
   ['loggedin',['loggedIn',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#ac2534b5bdc6c8263680adae67db07472',1,'com::speedify::speedifysdk::Types::State']]],
   ['loghandler',['LogHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#a4b284b454b8d93490f5b114cdb9b5b94',1,'com::speedify::speedifysdk::Logging::LogHandler']]],
   ['login',['login',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a127d9ec58ada8901c5ad42f2b9cc0377',1,'com::speedify::speedifysdk::SpeedifySDK']]],
