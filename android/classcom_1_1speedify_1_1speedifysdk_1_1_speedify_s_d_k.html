@@ -146,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a127d9ec58ada8901c5ad42f2b9cc0377"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a127d9ec58ada8901c5ad42f2b9cc0377">login</a> (String username, String password)</td></tr>
 <tr class="memdesc:a127d9ec58ada8901c5ad42f2b9cc0377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a new user.  <a href="#a127d9ec58ada8901c5ad42f2b9cc0377">More...</a><br /></td></tr>
 <tr class="separator:a127d9ec58ada8901c5ad42f2b9cc0377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a064d56a2aeb14d6aef2380d525cd5a91"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a064d56a2aeb14d6aef2380d525cd5a91">loginOauth</a> (String oauthAccessToken)</td></tr>
-<tr class="memdesc:a064d56a2aeb14d6aef2380d525cd5a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a new user using an oauth access token.  <a href="#a064d56a2aeb14d6aef2380d525cd5a91">More...</a><br /></td></tr>
-<tr class="separator:a064d56a2aeb14d6aef2380d525cd5a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f2563b2c55b0ce5c534e285664b7a6"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">loginOAuth</a> (String oauthAccessToken)</td></tr>
+<tr class="memdesc:aa1f2563b2c55b0ce5c534e285664b7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a new user using an oauth access token.  <a href="#aa1f2563b2c55b0ce5c534e285664b7a6">More...</a><br /></td></tr>
+<tr class="separator:aa1f2563b2c55b0ce5c534e285664b7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7f35ca0ad17c0fc03b8a04448198522"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7f35ca0ad17c0fc03b8a04448198522">logout</a> ()</td></tr>
 <tr class="memdesc:ab7f35ca0ad17c0fc03b8a04448198522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logout the current user.  <a href="#ab7f35ca0ad17c0fc03b8a04448198522">More...</a><br /></td></tr>
 <tr class="separator:ab7f35ca0ad17c0fc03b8a04448198522"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1417,14 +1417,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a064d56a2aeb14d6aef2380d525cd5a91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a064d56a2aeb14d6aef2380d525cd5a91">&#9670;&nbsp;</a></span>loginOauth()</h2>
+<a id="aa1f2563b2c55b0ce5c534e285664b7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f2563b2c55b0ce5c534e285664b7a6">&#9670;&nbsp;</a></span>loginOAuth()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.loginOauth </td>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.loginOAuth </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>oauthAccessToken</em></td><td>)</td>
@@ -2721,7 +2721,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set an oauth gateway to use for directory server requests. </p>
-<p>If using your own directory gateway, this should be called before <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a064d56a2aeb14d6aef2380d525cd5a91">loginOauth</a>. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab3dbb522659ffa88b0808c9245efb87e">OnDirectorySettings</a>, and (if logged in) <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a33f3dc35f4d5eb5de83db1f502b8fc2e">OnDirectory</a> on domain change. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If using your own directory gateway, this should be called before <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">loginOAuth</a>. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab3dbb522659ffa88b0808c9245efb87e">OnDirectorySettings</a>, and (if logged in) <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a33f3dc35f4d5eb5de83db1f502b8fc2e">OnDirectory</a> on domain change. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gatewayUri</td><td>directory gateway uri </td></tr>
   </table>

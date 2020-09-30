@@ -73,17 +73,18 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h2><a class="anchor" id="whatsnew_1050"></a>Speedify SDK for Android 10.5 </h2>
 <ul>
-<li>Speedify SDK now supports a centralized Oauth gateway for authentication. Setup the gateway URI with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8649444213cb3fbe1c5a5231ba6a678c">setDirectoryGatewayURI</a> before logging in with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a064d56a2aeb14d6aef2380d525cd5a91">loginOauth</a>.</li>
+<li>Speedify SDK now supports a centralized OAuth gateway for authentication. Setup the gateway URI with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8649444213cb3fbe1c5a5231ba6a678c">setDirectoryGatewayURI</a> before logging in with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">loginOAuth</a>.</li>
 <li>Log settings in the daemon service are now configurable through <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6fcfd6413bab4360acca2a69ea2576af">setDaemonLogSettings</a>.</li>
 <li>You can now generate a log zip without triggering a share dialog with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a07e739a061a31244318a91dfdb97d19c">generateLogs</a>. The resulting zip file will be placed in a folder named <code>logs</code> under your application's files directory.</li>
 <li>Credentials, like oauth tokens and passwords, can be restricted from being saved locally using <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3729a911fe4bcf7777397f6731977ff5">setDoNotStoreCredentials</a>. Note that you will have to manually call a login method on every new SDK daemon run.</li>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a>'s <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#a9db09e559e8531a3a5f0e11e33b2095e">logComplete</a> callback now takes a boolean indicating successful log generation.</li>
+<li>loginOauth has been changed to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">loginOAuth</a>.</li>
 </ul>
 </li>
 <li>Deprecations<ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaab5f7dd7bada25a1c1bdd2a0ba7b8f0">OnDirectoryDomain(String,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab3dbb522659ffa88b0808c9245efb87e">OnDirectorySettings</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> has been deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaab5f7dd7bada25a1c1bdd2a0ba7b8f0">OnDirectoryDomain(String,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab3dbb522659ffa88b0808c9245efb87e">OnDirectorySettings</a>.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> has been deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a>.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a74bf34fadb64d702ab4596a07f9d8cd3">setCrashReporting</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a04351369bc30e907f7d43e6f8519c5e0">crashReports</a> - Crash reporting has been removed from the SDK for several releases.</li>
 </ul>
 </li>
@@ -417,7 +418,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_634"></a>Speedify SDK for Android 6.3.4 </h2>
 <ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a064d56a2aeb14d6aef2380d525cd5a91">com.speedify.speedifysdk.SpeedifySDK#loginOauth</a> - When using your own directory server that supports it, Oauth access tokens can be used to authenticate a user. It is the application's responsibility to refresh their access token if a login or connect error of type <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44">TOKEN_EXPIRED</a> is returned.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">com.speedify.speedifysdk.SpeedifySDK#loginOAuth</a> - When using your own directory server that supports it, OAuth access tokens can be used to authenticate a user. It is the application's responsibility to refresh their access token if a login or connect error of type <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44">TOKEN_EXPIRED</a> is returned.</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>
 <li>Previous SDK version incorrectly described the overlfow threshold as being in bits per second. This is actually in megabits per second. The documentation on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5">setOverflowThreshold</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6047bf51cab4f774f6b1840664f1ae60">overflowThreshold</a> have been updated to reflect this.</li>
