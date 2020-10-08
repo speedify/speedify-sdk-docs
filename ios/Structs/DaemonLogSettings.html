@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ConnectionState Enumeration Reference</title>
+    <title>DaemonLogSettings Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/ConnectionState" class="dashAnchor"></a>
-    <a title="ConnectionState Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/DaemonLogSettings" class="dashAnchor"></a>
+    <a title="DaemonLogSettings Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (70% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        ConnectionState Enumeration Reference
+        DaemonLogSettings Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -227,18 +227,19 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ConnectionState</h1>
+            <h1>DaemonLogSettings</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ConnectionState</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DaemonLogSettings</span></code></pre>
 
                 </div>
               </div>
-            <p>State of Speedify on a given connection (network adapter).
-Because different connections come and go, it&rsquo;s possible for Speedify to be
-in the connected state as long as even one is CONNECTED, while other
-connections may be CONNECTING or DISCONNECTED.</p>
+            <p>Settings for logging in the daemon</p>
+
+<ul>
+<li>@since 10.5</li>
+</ul>
 
           </section>
           <section class="section task-group-section">
@@ -247,9 +248,9 @@ connections may be CONNECTING or DISCONNECTED.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStateO12disconnectedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/disconnected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStateO12disconnectedyA2CmF">disconnected</a>
+                    <a name="/s:11speedifysdk17DaemonLogSettingsV8fileSizeSivp"></a>
+                    <a name="//apple_ref/swift/Property/fileSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk17DaemonLogSettingsV8fileSizeSivp">fileSize</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -257,14 +258,21 @@ connections may be CONNECTING or DISCONNECTED.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Connection is disconnected.</p>
+                        <p>Size of individual daemon log files, in bytes.</p>
+<div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    Requires daemon restart to take effect.
+
+</div><ul>
+<li>@since 10.5</li>
+</ul>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">disconnected</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fileSize</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -274,9 +282,9 @@ connections may be CONNECTING or DISCONNECTED.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStateO10connectingyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/connecting" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStateO10connectingyA2CmF">connecting</a>
+                    <a name="/s:11speedifysdk17DaemonLogSettingsV08filesPerB0Sivp"></a>
+                    <a name="//apple_ref/swift/Property/filesPerDaemon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk17DaemonLogSettingsV08filesPerB0Sivp">filesPerDaemon</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -284,14 +292,24 @@ connections may be CONNECTING or DISCONNECTED.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Connection is connecting.</p>
+                        <p>Number of log files allowed per SDK service instance</p>
+
+<ul>
+<li>Must be greater than 1.</li>
+</ul><div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    Requires daemon restart to take effect.
+
+</div><ul>
+<li>@since 10.5</li>
+</ul>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connecting</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">filesPerDaemon</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -301,9 +319,9 @@ connections may be CONNECTING or DISCONNECTED.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk15ConnectionStateO9connectedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/connected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk15ConnectionStateO9connectedyA2CmF">connected</a>
+                    <a name="/s:11speedifysdk17DaemonLogSettingsV10totalFilesSivp"></a>
+                    <a name="//apple_ref/swift/Property/totalFiles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk17DaemonLogSettingsV10totalFilesSivp">totalFiles</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -311,14 +329,55 @@ connections may be CONNECTING or DISCONNECTED.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Connection is connected.</p>
+                        <p>Total number of daemon log files to keep</p>
+
+<ul>
+<li>Must be greater than 1.</li>
+<li>@since 10.5</li>
+</ul>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">connected</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">totalFiles</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk17DaemonLogSettingsV8logLevelAA0cF0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/logLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk17DaemonLogSettingsV8logLevelAA0cF0Ovp">logLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>\brief Minimim logging level to allow.
+ *</p>
+<div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    Requires daemon restart to take effect.
+
+</div><ul>
+<li>Defaults to <code><a href="../Enums/LogLevel.html#/s:11speedifysdk8LogLevelO4INFOyA2CmF">LogLevel.INFO</a></code>.</li>
+<li>@since 10.5</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/LogLevel.html">LogLevel</a></span></code></pre>
 
                         </div>
                       </div>

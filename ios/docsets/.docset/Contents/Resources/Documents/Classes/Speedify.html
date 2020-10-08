@@ -8,13 +8,21 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/Speedify" class="dashAnchor"></a>
     <a title="Speedify Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (71% documented)</p>
+        <p><a href="../index.html"> Docs</a> (70% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -75,6 +83,9 @@
                 <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk17SafeBrowsingErrorO">SafeBrowsingError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
               </li>
               <li class="nav-group-task">
@@ -109,7 +120,7 @@
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk28SpeedifyLogSettingstDelegateP">SpeedifyLogSettingstDelegate</a>
+                <a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk28SpeedifySafeBrowsingDelegateP">SpeedifySafeBrowsingDelegate</a>
@@ -150,7 +161,7 @@
                 <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:11speedifysdk17DaemonLogSettingsV">DaemonLogSettings</a>
+                <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs.html#/s:11speedifysdk15DisconnectEventV">DisconnectEvent</a>
@@ -180,10 +191,19 @@
                 <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SafeBrowsingError.html">SafeBrowsingError</a>
+                <a href="../Structs/SafeBrowsingBlock.html">SafeBrowsingBlock</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:11speedifysdk17SafeBrowsingStatsV">SafeBrowsingStats</a>
+                <a href="../Structs.html#/s:11speedifysdk24SafeBrowsingConnectErrorV">SafeBrowsingConnectError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingLookupError.html">SafeBrowsingLookupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingSettings.html">SafeBrowsingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingStats.html">SafeBrowsingStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
@@ -210,6 +230,7 @@
             <h1>Speedify</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Speedify</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SpeedifyDelegate</span><span class="p">,</span> <span class="kt">TunnelHelperDelegate</span></code></pre>
 
                 </div>
@@ -380,7 +401,7 @@ This checks the app extension state for</p>
                     <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)reportVpnPermissionResultWithCompletionHandler:"></a>
                     <a name="//apple_ref/swift/Method/reportVpnPermissionResult(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)reportVpnPermissionResultWithCompletionHandler:">reportVpnPermissionResult(completionHandler:)</a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)reportVpnPermissionResultWithCompletionHandler:">reportVpnPermissionResult(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -400,7 +421,7 @@ This checks the app extension state for</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">reportVpnPermissionResult</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">hasPermission</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">reportVpnPermissionResult</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">hasPermission</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -412,7 +433,7 @@ This checks the app extension state for</p>
                     <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)initializeVPNPermissionWithProfile:onDemandRules:startTunnel:waitUntilConnected:completionHandler:"></a>
                     <a name="//apple_ref/swift/Method/initializeVPNPermission(profile:onDemandRules:startTunnel:waitUntilConnected:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)initializeVPNPermissionWithProfile:onDemandRules:startTunnel:waitUntilConnected:completionHandler:">initializeVPNPermission(profile:onDemandRules:startTunnel:waitUntilConnected:completionHandler:)</a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)initializeVPNPermissionWithProfile:onDemandRules:startTunnel:waitUntilConnected:completionHandler:">initializeVPNPermission(profile:<wbr>onDemandRules:<wbr>startTunnel:<wbr>waitUntilConnected:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -431,7 +452,7 @@ This checks the app extension state for</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">initializeVPNPermission</span><span class="p">(</span><span class="nv">profile</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onDemandRules</span><span class="p">:</span> <span class="p">[</span><span class="kt">NEOnDemandRule</span><span class="p">]?,</span><span class="nv">startTunnel</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">waitUntilConnected</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">didSave</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">initializeVPNPermission</span><span class="p">(</span><span class="nv">profile</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onDemandRules</span><span class="p">:</span> <span class="p">[</span><span class="kt">NEOnDemandRule</span><span class="p">]?,</span> <span class="nv">startTunnel</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">waitUntilConnected</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">didSave</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -443,7 +464,7 @@ This checks the app extension state for</p>
                     <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)resetVpnProfileWithCompletionHandler:"></a>
                     <a name="//apple_ref/swift/Method/resetVpnProfile(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)resetVpnProfileWithCompletionHandler:">resetVpnProfile(completionHandler:)</a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)resetVpnProfileWithCompletionHandler:">resetVpnProfile(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -462,7 +483,7 @@ This checks the app extension state for</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetVpnProfile</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">didSucceed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetVpnProfile</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">didSucceed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -502,7 +523,7 @@ This checks the app extension state for</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC11connectAuto0C6Option17completionHandleryAA0D13ConnectMethodO_yAA17ServerInformationVSg_AA9ErrorTypeOSgtctF"></a>
                     <a name="//apple_ref/swift/Method/connectAuto(connectOption:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC11connectAuto0C6Option17completionHandleryAA0D13ConnectMethodO_yAA17ServerInformationVSg_AA9ErrorTypeOSgtctF">connectAuto(connectOption:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC11connectAuto0C6Option17completionHandleryAA0D13ConnectMethodO_yAA17ServerInformationVSg_AA9ErrorTypeOSgtctF">connectAuto(connectOption:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -525,7 +546,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectAuto</span><span class="p">(</span><span class="nv">connectOption</span><span class="p">:</span> <span class="kt"><a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectAuto</span><span class="p">(</span><span class="nv">connectOption</span><span class="p">:</span> <span class="kt"><a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -560,7 +581,7 @@ If already connected, this will disconnect before reconnecting.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC13connectByCity7country4city17completionHandlerySS_SSyAA17ServerInformationVSg_AA9ErrorTypeOSgtctF"></a>
                     <a name="//apple_ref/swift/Method/connectByCity(country:city:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13connectByCity7country4city17completionHandlerySS_SSyAA17ServerInformationVSg_AA9ErrorTypeOSgtctF">connectByCity(country:city:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13connectByCity7country4city17completionHandlerySS_SSyAA17ServerInformationVSg_AA9ErrorTypeOSgtctF">connectByCity(country:<wbr>city:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -576,7 +597,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCity</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCity</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -623,7 +644,7 @@ If already connected, this will disconnect before reconnecting.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC16connectByCountry7country17completionHandlerySS_yAA17ServerInformationVSg_AA9ErrorTypeOSgtctF"></a>
                     <a name="//apple_ref/swift/Method/connectByCountry(country:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16connectByCountry7country17completionHandlerySS_yAA17ServerInformationVSg_AA9ErrorTypeOSgtctF">connectByCountry(country:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16connectByCountry7country17completionHandlerySS_yAA17ServerInformationVSg_AA9ErrorTypeOSgtctF">connectByCountry(country:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -639,7 +660,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCountry</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCountry</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -674,7 +695,7 @@ If already connected, this will disconnect before reconnecting.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC15connectByServer7country4city3num17completionHandlerySS_SSSiyAA0E11InformationVSg_AA9ErrorTypeOSgtctF"></a>
                     <a name="//apple_ref/swift/Method/connectByServer(country:city:num:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15connectByServer7country4city3num17completionHandlerySS_SSSiyAA0E11InformationVSg_AA9ErrorTypeOSgtctF">connectByServer(country:city:num:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15connectByServer7country4city3num17completionHandlerySS_SSSiyAA0E11InformationVSg_AA9ErrorTypeOSgtctF">connectByServer(country:<wbr>city:<wbr>num:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -690,7 +711,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByServer</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByServer</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -776,7 +797,7 @@ If already connected, this will disconnect before reconnecting.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC5login8username8password17completionHandlerySS_SSyAA5StateOSg_AA9ErrorTypeOSgtctF"></a>
                     <a name="//apple_ref/swift/Method/login(username:password:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC5login8username8password17completionHandlerySS_SSyAA5StateOSg_AA9ErrorTypeOSgtctF">login(username:password:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC5login8username8password17completionHandlerySS_SSyAA5StateOSg_AA9ErrorTypeOSgtctF">login(username:<wbr>password:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -791,7 +812,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -874,7 +895,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                               </td>
                               <td>
                                 <div>
-                                  <p>A unique string to store UUID information.  ex: <q>MyAppUUID</q></p>
+                                  <p>A unique string to store UUID information.  ex: &ldquo;MyAppUUID&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -887,9 +908,37 @@ Automatic accounts have false email address in the form of <platform>.<device id
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC14loginLocalOnlyyyF"></a>
+                    <a name="//apple_ref/swift/Method/loginLocalOnly()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14loginLocalOnlyyyF">loginLocalOnly()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Comcast Loopback Function
+@since future</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginLocalOnly</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC9loginAutoyySSF"></a>
                     <a name="//apple_ref/swift/Method/loginAuto(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC9loginAutoyySSF">loginAuto(_:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC9loginAutoyySSF">loginAuto(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,7 +986,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                               </td>
                               <td>
                                 <div>
-                                  <p>A unique string to store UUID information.  ex: <q>MyAppUUID</q></p>
+                                  <p>A unique string to store UUID information.  ex: &ldquo;MyAppUUID&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -952,7 +1001,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC16loginAutoAccount17completionHandleryyAA5StateOSg_AA9ErrorTypeOSgtc_tF"></a>
                     <a name="//apple_ref/swift/Method/loginAutoAccount(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16loginAutoAccount17completionHandleryyAA5StateOSg_AA9ErrorTypeOSgtc_tF">loginAutoAccount(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16loginAutoAccount17completionHandleryyAA5StateOSg_AA9ErrorTypeOSgtc_tF">loginAutoAccount(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -972,7 +1021,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginAutoAccount</span><span class="p">(</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginAutoAccount</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -988,7 +1037,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                               </td>
                               <td>
                                 <div>
-                                  <p>A unique string to store UUID information.  ex: <q>MyAppUUID</q></p>
+                                  <p>A unique string to store UUID information.  ex: &ldquo;MyAppUUID&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -1005,9 +1054,9 @@ Automatic accounts have false email address in the form of <platform>.<device id
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk8SpeedifyC10loginOauth16oauthAccessToken14serviceAccount17completionHandlerySS_SSyAA9ErrorTypeOSgctF"></a>
-                    <a name="//apple_ref/swift/Method/loginOauth(oauthAccessToken:serviceAccount:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10loginOauth16oauthAccessToken14serviceAccount17completionHandlerySS_SSyAA9ErrorTypeOSgctF">loginOauth(oauthAccessToken:serviceAccount:completionHandler:)</a>
+                    <a name="/s:11speedifysdk8SpeedifyC10loginOAuth16oauthAccessToken14serviceAccount17completionHandlerySS_SSyAA9ErrorTypeOSgctF"></a>
+                    <a name="//apple_ref/swift/Method/loginOAuth(oauthAccessToken:serviceAccount:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10loginOAuth16oauthAccessToken14serviceAccount17completionHandlerySS_SSyAA9ErrorTypeOSgctF">loginOAuth(oauthAccessToken:<wbr>serviceAccount:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1029,7 +1078,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginOauth</span><span class="p">(</span><span class="nv">oauthAccessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">serviceAccount</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginOAuth</span><span class="p">(</span><span class="nv">oauthAccessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">serviceAccount</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1041,7 +1090,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC6logout17completionHandleryyAA5StateOSgc_tF"></a>
                     <a name="//apple_ref/swift/Method/logout(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC6logout17completionHandleryyAA5StateOSgc_tF">logout(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC6logout17completionHandleryyAA5StateOSgc_tF">logout(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1056,7 +1105,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1072,7 +1121,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC7setMode4modeyAA07BondingD0O_tF"></a>
                     <a name="//apple_ref/swift/Method/setMode(mode:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC7setMode4modeyAA07BondingD0O_tF">setMode(mode:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC7setMode4modeyAA07BondingD0O_tF">setMode(mode:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1122,7 +1171,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC12getDirectory17completionHandleryySDySSypGc_tF"></a>
                     <a name="//apple_ref/swift/Method/getDirectory(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC12getDirectory17completionHandleryySDySSypGc_tF">getDirectory(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC12getDirectory17completionHandleryySDySSypGc_tF">getDirectory(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1137,7 +1186,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDirectory</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDirectory</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1153,7 +1202,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC18setDirectoryDomain6domain17completionHandlerySS_ySSctF"></a>
                     <a name="//apple_ref/swift/Method/setDirectoryDomain(domain:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setDirectoryDomain6domain17completionHandlerySS_ySSctF">setDirectoryDomain(domain:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setDirectoryDomain6domain17completionHandlerySS_ySSctF">setDirectoryDomain(domain:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1173,7 +1222,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use setDirectoryWithDomain(domain: String, completionHandler:@escaping (_ domain: String,_ esniEnabled: Bool﹚-&gt;Void﹚"</span><span class="p">)</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDirectoryDomain</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDirectoryDomain</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1183,9 +1232,9 @@ Automatic accounts have false email address in the form of <platform>.<device id
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk8SpeedifyC22setDirectoryWithDomain6domain17completionHandlerySS_yAA0D0VctF"></a>
+                    <a name="/s:11speedifysdk8SpeedifyC22setDirectoryWithDomain6domain17completionHandlerySS_yAA0D8SettingsVctF"></a>
                     <a name="//apple_ref/swift/Method/setDirectoryWithDomain(domain:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setDirectoryWithDomain6domain17completionHandlerySS_yAA0D0VctF">setDirectoryWithDomain(domain:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setDirectoryWithDomain6domain17completionHandlerySS_yAA0D8SettingsVctF">setDirectoryWithDomain(domain:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1204,7 +1253,104 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDirectoryWithDomain</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt">Directory</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDirectoryWithDomain</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt">DirectorySettings</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22setDirectoryGatewayURI10gatewayUriySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/setDirectoryGatewayURI(gatewayUri:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setDirectoryGatewayURI10gatewayUriySS_tF">setDirectoryGatewayURI(gatewayUri:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Set an oauth gateway to use for directory server requests.</li>
+<li>If using your own directory gateway, this should be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
+<li>Triggers <code>SpeedifyDirectoryDomainDelegate</code>, and (if logged in) {@link ISpeedifyHandler#OnDirectory OnDirectory} on domain change.</li>
+<li>@since 10.5</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDirectoryGatewayURI</span><span class="p">(</span><span class="nv">gatewayUri</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24setDoNotStoreCredentials02doeF0ySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/setDoNotStoreCredentials(doNotStore:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24setDoNotStoreCredentials02doeF0ySb_tF">setDoNotStoreCredentials(doNotStore:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Sets if credentials will not be stored.
+*</li>
+<li>This includes passwords, OAuth tokens, and Safe Browsing init config.</li>
+<li>Triggers <code>SpeedifySDKDelegate privacySettingsDidUpdate</code></li>
+<li>If true, automatic login and connect at boot will not work.</li>
+<li>@since 10.5</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDoNotStoreCredentials</span><span class="p">(</span><span class="nv">doNotStore</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC17resetDirectoryURIyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetDirectoryURI()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17resetDirectoryURIyyF">resetDirectoryURI()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset the directory oauth gateway to defaults.
+Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
+@since 10.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetDirectoryURI</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -1216,7 +1362,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC20resetDirectoryDomain17completionHandleryySSc_tF"></a>
                     <a name="//apple_ref/swift/Method/resetDirectoryDomain(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20resetDirectoryDomain17completionHandleryySSc_tF">resetDirectoryDomain(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20resetDirectoryDomain17completionHandleryySSc_tF">resetDirectoryDomain(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1231,7 +1377,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetDirectoryDomain</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetDirectoryDomain</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1243,7 +1389,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC14setESNIEnabled6enableySb_tF"></a>
                     <a name="//apple_ref/swift/Method/setESNIEnabled(enable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14setESNIEnabled6enableySb_tF">setESNIEnabled(enable:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14setESNIEnabled6enableySb_tF">setESNIEnabled(enable:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1251,11 +1397,13 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets if ESNI is used when talking to the directory domain
-If using your own directory server, this should be called before <code>login</code> or <code>loginAutoAccount</code>.
-Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
-@param enableEsni is ESNI is used to talk to the directory
-@since future</p>
+                        
+<ul>
+<li>Sets if ESNI is used when talking to the directory domain</li>
+<li>If using your own directory server, this should be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
+<li>Triggers <code>SpeedifyDirectoryDomainDelegate</code>.</li>
+<li>@since 10.4</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -1274,7 +1422,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC8getState17completionHandleryyAA0D0OSgc_tF"></a>
                     <a name="//apple_ref/swift/Method/getState(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC8getState17completionHandleryyAA0D0OSgc_tF">getState(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC8getState17completionHandleryyAA0D0OSgc_tF">getState(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1289,7 +1437,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getState</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getState</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1333,7 +1481,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC10getVersion17completionHandleryyAA0D0Vc_tF"></a>
                     <a name="//apple_ref/swift/Method/getVersion(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10getVersion17completionHandleryyAA0D0Vc_tF">getVersion(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10getVersion17completionHandleryyAA0D0Vc_tF">getVersion(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1348,7 +1496,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getVersion</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Version</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getVersion</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Version</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1364,7 +1512,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC27enableConnectionStatUpdates7enabledySb_tF"></a>
                     <a name="//apple_ref/swift/Method/enableConnectionStatUpdates(enabled:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27enableConnectionStatUpdates7enabledySb_tF">enableConnectionStatUpdates(enabled:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27enableConnectionStatUpdates7enabledySb_tF">enableConnectionStatUpdates(enabled:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1416,7 +1564,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC17setVendorUserData06vendoreF0ySS_tF"></a>
                     <a name="//apple_ref/swift/Method/setVendorUserData(vendorUserData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17setVendorUserData06vendoreF0ySS_tF">setVendorUserData(vendorUserData:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17setVendorUserData06vendoreF0ySS_tF">setVendorUserData(vendorUserData:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1428,6 +1576,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
 <ul>
 <li>Set vendor user data</li>
 <li>Current value available from <code>SpeedifyVendorUserDataDelegate</code>.</li>
+<li>Discussion: You may send a JSON string to be saved inside of <code>vendorUserData</code> but be sure it is valid JSON or it will be ignored.</li>
 <li>vendorSettings user data string</li>
 <li>@since 9.8</li>
 </ul>
@@ -1476,9 +1625,38 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC17refreshLocalProxyyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshLocalProxy()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17refreshLocalProxyyyF">refreshLocalProxy()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get configuration of the local proxy
+Triggers <code>SpeedifyLocalProxySettingsDelegate</code>.
+@since 9.2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshLocalProxy</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC14getConnections17completionHandleryySayAA11AdapterDataVGSgc_tF"></a>
                     <a name="//apple_ref/swift/Method/getConnections(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14getConnections17completionHandleryySayAA11AdapterDataVGSgc_tF">getConnections(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14getConnections17completionHandleryySayAA11AdapterDataVGSgc_tF">getConnections(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1492,7 +1670,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getConnections</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">]?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getConnections</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1508,7 +1686,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC22setVendorLocalSettings8settings6mergedyAA0F0V_SbtF"></a>
                     <a name="//apple_ref/swift/Method/setVendorLocalSettings(settings:merged:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setVendorLocalSettings8settings6mergedyAA0F0V_SbtF">setVendorLocalSettings(settings:merged:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setVendorLocalSettings8settings6mergedyAA0F0V_SbtF">setVendorLocalSettings(settings:<wbr>merged:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1522,7 +1700,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
 <ul>
 <li>Current value available from <code>SpeedifyVendorLocalSettingsDelegate</code>.
 @param merge if true, settingsJson is merged in to existing local vendor settings. if false, settingsJson replaces existing local vendor settings
-@since future</li>
+@since 9.2</li>
 </ul>
 
                       </div>
@@ -1626,7 +1804,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC15setFirewallMode4modeyAA0dE0O_tF"></a>
                     <a name="//apple_ref/swift/Method/setFirewallMode(mode:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setFirewallMode4modeyAA0dE0O_tF">setFirewallMode(mode:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setFirewallMode4modeyAA0dE0O_tF">setFirewallMode(mode:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1655,7 +1833,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC18setFirewallDomains7domainsySaySSG_tF"></a>
                     <a name="//apple_ref/swift/Method/setFirewallDomains(domains:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setFirewallDomains7domainsySaySSG_tF">setFirewallDomains(domains:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setFirewallDomains7domainsySaySSG_tF">setFirewallDomains(domains:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1684,7 +1862,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC15setFirewallIPv64ipv6ySaySSG_tF"></a>
                     <a name="//apple_ref/swift/Method/setFirewallIPv6(ipv6:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setFirewallIPv64ipv6ySaySSG_tF">setFirewallIPv6(ipv6:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setFirewallIPv64ipv6ySaySSG_tF">setFirewallIPv6(ipv6:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1694,7 +1872,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                       <div class="abstract">
                         <p>Set IPv6 address to firewall.
 @param ipv6 ipv6 addresses to deny/allow
-@since future</p>
+@since 9.3</p>
 
                       </div>
                       <div class="declaration">
@@ -1713,7 +1891,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC34setLocalProxyDomainWatchlistEnable5title7enabledySS_SbtF"></a>
                     <a name="//apple_ref/swift/Method/setLocalProxyDomainWatchlistEnable(title:enabled:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC34setLocalProxyDomainWatchlistEnable5title7enabledySS_SbtF">setLocalProxyDomainWatchlistEnable(title:enabled:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC34setLocalProxyDomainWatchlistEnable5title7enabledySS_SbtF">setLocalProxyDomainWatchlistEnable(title:<wbr>enabled:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1724,7 +1902,7 @@ Triggers <code>SpeedifyVendorUserDataDelegate</code>.
                         <p>Set domain watchlist settings for the local proxy
 @param domainWatchlist domain watchlist items
 Triggers delegate localProxySettingsDidUpdate
-@since future</p>
+@since 9.3</p>
 
                       </div>
                       <div class="declaration">
@@ -1743,7 +1921,7 @@ Triggers delegate localProxySettingsDidUpdate
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC15setFirewallIPv44ipv4ySaySSG_tF"></a>
                     <a name="//apple_ref/swift/Method/setFirewallIPv4(ipv4:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setFirewallIPv44ipv4ySaySSG_tF">setFirewallIPv4(ipv4:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setFirewallIPv44ipv4ySaySSG_tF">setFirewallIPv4(ipv4:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1772,7 +1950,7 @@ Triggers delegate localProxySettingsDidUpdate
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC16setFirewallPorts5portsySayAA0D4PortVG_tF"></a>
                     <a name="//apple_ref/swift/Method/setFirewallPorts(ports:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16setFirewallPorts5portsySayAA0D4PortVG_tF">setFirewallPorts(ports:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16setFirewallPorts5portsySayAA0D4PortVG_tF">setFirewallPorts(ports:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1829,7 +2007,7 @@ Triggers delegate localProxySettingsDidUpdate
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC23setConnectionPriorities10connection8priorityySS_AA0D8PriorityOtF"></a>
                     <a name="//apple_ref/swift/Method/setConnectionPriorities(connection:priority:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23setConnectionPriorities10connection8priorityySS_AA0D8PriorityOtF">setConnectionPriorities(connection:priority:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23setConnectionPriorities10connection8priorityySS_AA0D8PriorityOtF">setConnectionPriorities(connection:<wbr>priority:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1904,7 +2082,7 @@ Triggers delegate localProxySettingsDidUpdate
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC18changeDirectoryURL3urlySS_tF"></a>
                     <a name="//apple_ref/swift/Method/changeDirectoryURL(url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18changeDirectoryURL3urlySS_tF">changeDirectoryURL(url:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18changeDirectoryURL3urlySS_tF">changeDirectoryURL(url:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1959,7 +2137,7 @@ Triggers delegate localProxySettingsDidUpdate
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC23setConnectionEncryption9adapterID7encryptySS_SbtF"></a>
                     <a name="//apple_ref/swift/Method/setConnectionEncryption(adapterID:encrypt:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23setConnectionEncryption9adapterID7encryptySS_SbtF">setConnectionEncryption(adapterID:encrypt:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23setConnectionEncryption9adapterID7encryptySS_SbtF">setConnectionEncryption(adapterID:<wbr>encrypt:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1990,7 +2168,7 @@ Triggers delegate localProxySettingsDidUpdate
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter. ex: <q>en0</q></p>
+                                  <p>Name of the adapter. ex: &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2021,7 +2199,7 @@ Triggers delegate localProxySettingsDidUpdate
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC18setTunnelEncrypted9encryptedySb_tF"></a>
                     <a name="//apple_ref/swift/Method/setTunnelEncrypted(encrypted:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setTunnelEncrypted9encryptedySb_tF">setTunnelEncrypted(encrypted:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setTunnelEncrypted9encryptedySb_tF">setTunnelEncrypted(encrypted:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2071,7 +2249,7 @@ Triggers delegate localProxySettingsDidUpdate
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC06setChaD9Encrypted9encryptedySb_tF"></a>
                     <a name="//apple_ref/swift/Method/setChaChaEncrypted(encrypted:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC06setChaD9Encrypted9encryptedySb_tF">setChaChaEncrypted(encrypted:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC06setChaD9Encrypted9encryptedySb_tF">setChaChaEncrypted(encrypted:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2122,7 +2300,7 @@ Current value available from <code><a href="../Structs/Settings.html">Settings</
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC25setReportingEncryptionKey9key128bitySS_tF"></a>
                     <a name="//apple_ref/swift/Method/setReportingEncryptionKey(key128bit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC25setReportingEncryptionKey9key128bitySS_tF">setReportingEncryptionKey(key128bit:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC25setReportingEncryptionKey9key128bitySS_tF">setReportingEncryptionKey(key128bit:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2168,7 +2346,7 @@ Current value available from <code><a href="../Structs/Settings.html">Settings</
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC20setOverflowThreshold04mbpsD0ySd_tF"></a>
                     <a name="//apple_ref/swift/Method/setOverflowThreshold(mbpsOverflow:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20setOverflowThreshold04mbpsD0ySd_tF">setOverflowThreshold(mbpsOverflow:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20setOverflowThreshold04mbpsD0ySd_tF">setOverflowThreshold(mbpsOverflow:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2218,7 +2396,7 @@ Current value available from <code><a href="../Structs/Settings.html">Settings</
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC29addAdapterDailyDataLimitBoost9adapterID15additionalBytesySS_s5Int64VtF"></a>
                     <a name="//apple_ref/swift/Method/addAdapterDailyDataLimitBoost(adapterID:additionalBytes:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC29addAdapterDailyDataLimitBoost9adapterID15additionalBytesySS_s5Int64VtF">addAdapterDailyDataLimitBoost(adapterID:additionalBytes:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC29addAdapterDailyDataLimitBoost9adapterID15additionalBytesySS_s5Int64VtF">addAdapterDailyDataLimitBoost(adapterID:<wbr>additionalBytes:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2249,7 +2427,7 @@ Current value available from <code><a href="../Structs/Settings.html">Settings</
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter. ex: <q>en0</q></p>
+                                  <p>Name of the adapter. ex: &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2280,7 +2458,7 @@ Current value available from <code><a href="../Structs/Settings.html">Settings</
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC24setAdapterDailyDataLimit9adapterID12allowedBytesySS_s5Int64VtF"></a>
                     <a name="//apple_ref/swift/Method/setAdapterDailyDataLimit(adapterID:allowedBytes:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24setAdapterDailyDataLimit9adapterID12allowedBytesySS_s5Int64VtF">setAdapterDailyDataLimit(adapterID:allowedBytes:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24setAdapterDailyDataLimit9adapterID12allowedBytesySS_s5Int64VtF">setAdapterDailyDataLimit(adapterID:<wbr>allowedBytes:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2313,7 +2491,7 @@ Cellular adapters default to 200MB/month.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter. ex: <q>en0</q></p>
+                                  <p>Name of the adapter. ex: &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2344,7 +2522,7 @@ Cellular adapters default to 200MB/month.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC26setAdapterMonthlyDataLimit9adapterID12allowedBytes8resetDayySS_s5Int64VAItF"></a>
                     <a name="//apple_ref/swift/Method/setAdapterMonthlyDataLimit(adapterID:allowedBytes:resetDay:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26setAdapterMonthlyDataLimit9adapterID12allowedBytes8resetDayySS_s5Int64VAItF">setAdapterMonthlyDataLimit(adapterID:allowedBytes:resetDay:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26setAdapterMonthlyDataLimit9adapterID12allowedBytes8resetDayySS_s5Int64VAItF">setAdapterMonthlyDataLimit(adapterID:<wbr>allowedBytes:<wbr>resetDay:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2375,7 +2553,7 @@ Cellular adapters default to 200MB/month.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter. ex: <q>en0</q></p>
+                                  <p>Name of the adapter. ex: &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2418,7 +2596,7 @@ Cellular adapters default to 200MB/month.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC28disableAdapterDailyDataLimit9adapterIDySS_tF"></a>
                     <a name="//apple_ref/swift/Method/disableAdapterDailyDataLimit(adapterID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28disableAdapterDailyDataLimit9adapterIDySS_tF">disableAdapterDailyDataLimit(adapterID:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28disableAdapterDailyDataLimit9adapterIDySS_tF">disableAdapterDailyDataLimit(adapterID:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2450,7 +2628,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter. ex: <q>en0</q></p>
+                                  <p>Name of the adapter. ex: &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2465,7 +2643,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC30disableAdapterMonthlyDataLimit9adapterIDySS_tF"></a>
                     <a name="//apple_ref/swift/Method/disableAdapterMonthlyDataLimit(adapterID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC30disableAdapterMonthlyDataLimit9adapterIDySS_tF">disableAdapterMonthlyDataLimit(adapterID:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC30disableAdapterMonthlyDataLimit9adapterIDySS_tF">disableAdapterMonthlyDataLimit(adapterID:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2497,7 +2675,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter. ex: <q>en0</q></p>
+                                  <p>Name of the adapter. ex: &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2512,7 +2690,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC16handleNewAdapter9adapterIDySS_tF"></a>
                     <a name="//apple_ref/swift/Method/handleNewAdapter(adapterID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16handleNewAdapter9adapterIDySS_tF">handleNewAdapter(adapterID:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16handleNewAdapter9adapterIDySS_tF">handleNewAdapter(adapterID:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2543,7 +2721,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter. ex: <q>en0</q></p>
+                                  <p>Name of the adapter. ex: &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2558,7 +2736,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC22setConnectionRateLimit9adapterID3bpsySS_s5Int64VtF"></a>
                     <a name="//apple_ref/swift/Method/setConnectionRateLimit(adapterID:bps:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setConnectionRateLimit9adapterID3bpsySS_s5Int64VtF">setConnectionRateLimit(adapterID:bps:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setConnectionRateLimit9adapterID3bpsySS_s5Int64VtF">setConnectionRateLimit(adapterID:<wbr>bps:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2589,7 +2767,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                               </td>
                               <td>
                                 <div>
-                                  <p>Name of the adapter to be limited. ex <q>en0</q></p>
+                                  <p>Name of the adapter to be limited. ex &ldquo;en0&rdquo;</p>
                                 </div>
                               </td>
                             </tr>
@@ -2616,7 +2794,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC32refreshHistoricalConnectionStats17completionHandleryySayAA0eF5GroupVGSgc_tF"></a>
                     <a name="//apple_ref/swift/Method/refreshHistoricalConnectionStats(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC32refreshHistoricalConnectionStats17completionHandleryySayAA0eF5GroupVGSgc_tF">refreshHistoricalConnectionStats(completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC32refreshHistoricalConnectionStats17completionHandleryySayAA0eF5GroupVGSgc_tF">refreshHistoricalConnectionStats(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2632,7 +2810,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshHistoricalConnectionStats</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:[</span><span class="kt">ConnectionStatsGroup</span><span class="p">]?)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshHistoricalConnectionStats</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt">ConnectionStatsGroup</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2671,7 +2849,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC19setExcludedIPRanges14excludedRangesySayAA7IPRangeVG_tF"></a>
                     <a name="//apple_ref/swift/Method/setExcludedIPRanges(excludedRanges:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC19setExcludedIPRanges14excludedRangesySayAA7IPRangeVG_tF">setExcludedIPRanges(excludedRanges:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC19setExcludedIPRanges14excludedRangesySayAA7IPRangeVG_tF">setExcludedIPRanges(excludedRanges:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2719,7 +2897,7 @@ Current value available from delegate <code>settingsDidUpdate</code>.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC26setConnectionTransportMode09transportF0yAA0eF0O_tF"></a>
                     <a name="//apple_ref/swift/Method/setConnectionTransportMode(transportMode:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26setConnectionTransportMode09transportF0yAA0eF0O_tF">setConnectionTransportMode(transportMode:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26setConnectionTransportMode09transportF0yAA0eF0O_tF">setConnectionTransportMode(transportMode:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2766,7 +2944,7 @@ Current value available from delegate <code>settingsDidUpdate</code>.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC15setJumboPackets03useD0ySb_tF"></a>
                     <a name="//apple_ref/swift/Method/setJumboPackets(useJumbo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setJumboPackets03useD0ySb_tF">setJumboPackets(useJumbo:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setJumboPackets03useD0ySb_tF">setJumboPackets(useJumbo:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2823,7 +3001,7 @@ Current value available from delegate <code>accountingDataDidUpdate</code>.</p>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC28setAdapterOverlimitRatelimit9adapterID3bpsySS_s5Int64VtF"></a>
                     <a name="//apple_ref/swift/Method/setAdapterOverlimitRatelimit(adapterID:bps:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28setAdapterOverlimitRatelimit9adapterID3bpsySS_s5Int64VtF">setAdapterOverlimitRatelimit(adapterID:bps:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28setAdapterOverlimitRatelimit9adapterID3bpsySS_s5Int64VtF">setAdapterOverlimitRatelimit(adapterID:<wbr>bps:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2855,7 +3033,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                               </td>
                               <td>
                                 <div>
-                                  <p>name of the adapter. ex: <q>en0</q>.</p>
+                                  <p>name of the adapter. ex: &ldquo;en0&rdquo;.</p>
                                 </div>
                               </td>
                             </tr>
@@ -2870,7 +3048,7 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                     <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)generateLogsWithCompletionHandler:"></a>
                     <a name="//apple_ref/swift/Method/generateLogs(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)generateLogsWithCompletionHandler:">generateLogs(completionHandler:)</a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)generateLogsWithCompletionHandler:">generateLogs(completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2893,7 +3071,7 @@ Please add the following key to the Container and PacketTunnel info.plist
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">generateLogs</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">generateLogs</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2909,7 +3087,7 @@ Please add the following key to the Container and PacketTunnel info.plist
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC13setDNSServersyySaySSGF"></a>
                     <a name="//apple_ref/swift/Method/setDNSServers(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13setDNSServersyySaySSGF">setDNSServers(_:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13setDNSServersyySaySSGF">setDNSServers(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2940,7 +3118,7 @@ Please add the following key to the Container and PacketTunnel info.plist
                     <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)setOnDemandWithOndemand:"></a>
                     <a name="//apple_ref/swift/Method/setOnDemand(ondemand:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)setOnDemandWithOndemand:">setOnDemand(ondemand:)</a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)setOnDemandWithOndemand:">setOnDemand(ondemand:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3018,6 +3196,36 @@ Please add the following key to the Container and PacketTunnel info.plist
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC16eraseAllLogFilesyyF"></a>
+                    <a name="//apple_ref/swift/Method/eraseAllLogFiles()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16eraseAllLogFilesyyF">eraseAllLogFiles()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Erase all log files and log zips.</p>
+
+<p>Note that the current active log file is not erased.
+ @since 10.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">eraseAllLogFiles</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC22refreshPrivacySettingsyyF"></a>
                     <a name="//apple_ref/swift/Method/refreshPrivacySettings()" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC22refreshPrivacySettingsyyF">refreshPrivacySettings()</a>
@@ -3077,7 +3285,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC12accountCheck5email17completionHandlerySS_yAA9ErrorTypeO_SSSbtctF"></a>
                     <a name="//apple_ref/swift/Method/accountCheck(email:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC12accountCheck5email17completionHandlerySS_yAA9ErrorTypeO_SSSbtctF">accountCheck(email:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC12accountCheck5email17completionHandlerySS_yAA9ErrorTypeO_SSSbtctF">accountCheck(email:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3096,7 +3304,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCheck</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span><span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">accountExists</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCheck</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">accountExists</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3108,7 +3316,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC17resetAdapterUsage9adapterIDySS_tF"></a>
                     <a name="//apple_ref/swift/Method/resetAdapterUsage(adapterID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17resetAdapterUsage9adapterIDySS_tF">resetAdapterUsage(adapterID:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17resetAdapterUsage9adapterIDySS_tF">resetAdapterUsage(adapterID:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3119,7 +3327,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                         
 <ul>
 <li>Resets the tracked data usage on an adapter.</li>
-<li><p>@since future</p></li>
+<li><p>@since 7.8.3</p></li>
 </ul>
 
                       </div>
@@ -3139,7 +3347,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC13accountCreate5email8password17completionHandlerySS_SSyAA9ErrorTypeO_SStctF"></a>
                     <a name="//apple_ref/swift/Method/accountCreate(email:password:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13accountCreate5email8password17completionHandlerySS_SSyAA9ErrorTypeO_SStctF">accountCreate(email:password:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13accountCreate5email8password17completionHandlerySS_SSyAA9ErrorTypeO_SStctF">accountCreate(email:<wbr>password:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3158,7 +3366,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCreate</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCreate</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3198,7 +3406,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC21accountPasswordChange5email08originalD003newD017completionHandlerySS_S2SyAA9ErrorTypeO_SStctF"></a>
                     <a name="//apple_ref/swift/Method/accountPasswordChange(email:originalPassword:newPassword:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC21accountPasswordChange5email08originalD003newD017completionHandlerySS_S2SyAA9ErrorTypeO_SStctF">accountPasswordChange(email:originalPassword:newPassword:completionHandler:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC21accountPasswordChange5email08originalD003newD017completionHandlerySS_S2SyAA9ErrorTypeO_SStctF">accountPasswordChange(email:<wbr>originalPassword:<wbr>newPassword:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3217,7 +3425,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountPasswordChange</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">originalPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountPasswordChange</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">originalPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3229,7 +3437,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC16initSafeBrowsing04safeE6ConfigySS_tF"></a>
                     <a name="//apple_ref/swift/Method/initSafeBrowsing(safeBrowsingConfig:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16initSafeBrowsing04safeE6ConfigySS_tF">initSafeBrowsing(safeBrowsingConfig:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16initSafeBrowsing04safeE6ConfigySS_tF">initSafeBrowsing(safeBrowsingConfig:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3240,7 +3448,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                         
 <ul>
 <li>Initialize Safe Browsing library</li>
-<li>Current value available from <code>safebrowsingDelegate</code>.</li>
+<li>If initialized available from <code>safebrowsingDelegate</code>.</li>
 <li>@since future</li>
 </ul>
 
@@ -3261,7 +3469,7 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC22setSafeBrowsingEnabled7enabledySb_tF"></a>
                     <a name="//apple_ref/swift/Method/setSafeBrowsingEnabled(enabled:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setSafeBrowsingEnabled7enabledySb_tF">setSafeBrowsingEnabled(enabled:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setSafeBrowsingEnabled7enabledySb_tF">setSafeBrowsingEnabled(enabled:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3282,6 +3490,38 @@ Triggers &lsquo;SpeedifyLastDisconnectDelegate.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22setSafeBrowsingTimeout7timeoutySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/setSafeBrowsingTimeout(timeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setSafeBrowsingTimeout7timeoutySi_tF">setSafeBrowsingTimeout(timeout:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Sets the Safe Browsing fail open timeout</li>
+<li>Current value available from <code>safebrowsingDelegate</code>.</li>
+<li>@since future</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingTimeout</span><span class="p">(</span><span class="nv">timeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3351,7 +3591,7 @@ Triggers <code>safebrowsingDelegate</code>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC15setForwardPorts5portsySayAA13ForwardedPortVG_tF"></a>
                     <a name="//apple_ref/swift/Method/setForwardPorts(ports:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setForwardPorts5portsySayAA13ForwardedPortVG_tF">setForwardPorts(ports:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setForwardPorts5portsySayAA13ForwardedPortVG_tF">setForwardPorts(ports:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3363,7 +3603,7 @@ Triggers <code>safebrowsingDelegate</code>
 <ul>
 <li>Set ports to be forwarded to this client when connected to a dedicated server.</li>
 <li>Current value available from &lsquo;SpeedifySettingsDelegate&rsquo;</li>
-<li>@since future</li>
+<li>@since 8.2</li>
 </ul>
 
                       </div>
@@ -3383,7 +3623,7 @@ Triggers <code>safebrowsingDelegate</code>
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC18setLocalProxyPorts5portsySayAA0dE4PortVG_tF"></a>
                     <a name="//apple_ref/swift/Method/setLocalProxyPorts(ports:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setLocalProxyPorts5portsySayAA0dE4PortVG_tF">setLocalProxyPorts(ports:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setLocalProxyPorts5portsySayAA0dE4PortVG_tF">setLocalProxyPorts(ports:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3440,7 +3680,7 @@ Triggers LocalProxySettingsDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC14stateDidUpdate0C0yAA5StateO_tF"></a>
                     <a name="//apple_ref/swift/Method/stateDidUpdate(state:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14stateDidUpdate0C0yAA5StateO_tF">stateDidUpdate(state:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14stateDidUpdate0C0yAA5StateO_tF">stateDidUpdate(state:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3467,7 +3707,7 @@ Triggers LocalProxySettingsDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC20adapterDataDidUpdate0cD0ySayAA07AdapterD0VG_tF"></a>
                     <a name="//apple_ref/swift/Method/adapterDataDidUpdate(adapterData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20adapterDataDidUpdate0cD0ySayAA07AdapterD0VG_tF">adapterDataDidUpdate(adapterData:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20adapterDataDidUpdate0cD0ySayAA07AdapterD0VG_tF">adapterDataDidUpdate(adapterData:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3521,7 +3761,7 @@ Triggers LocalProxySettingsDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC24connectionStatsDidUpdate0cD0ySayAA010ConnectionD0VG_tF"></a>
                     <a name="//apple_ref/swift/Method/connectionStatsDidUpdate(connectionStats:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24connectionStatsDidUpdate0cD0ySayAA010ConnectionD0VG_tF">connectionStatsDidUpdate(connectionStats:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24connectionStatsDidUpdate0cD0ySayAA010ConnectionD0VG_tF">connectionStatsDidUpdate(connectionStats:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3548,7 +3788,7 @@ Triggers LocalProxySettingsDelegate.
                     <code>
                     <a name="/s:11speedifysdk8SpeedifyC17settingsDidUpdate0C0yAA8SettingsV_tF"></a>
                     <a name="//apple_ref/swift/Method/settingsDidUpdate(settings:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17settingsDidUpdate0C0yAA8SettingsV_tF">settingsDidUpdate(settings:)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17settingsDidUpdate0C0yAA8SettingsV_tF">settingsDidUpdate(settings:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3576,7 +3816,7 @@ Triggers LocalProxySettingsDelegate.
         </section>
         <section id="footer">
           <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
