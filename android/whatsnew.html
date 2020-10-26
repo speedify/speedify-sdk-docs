@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.5.0</span>
+   &#160;<span id="projectnumber">10.6.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,20 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1050"></a>Speedify SDK for Android 10.5 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1060"></a>Speedify SDK for Android 10.6 </h2>
+<ul>
+<li>Calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7f35ca0ad17c0fc03b8a04448198522">logout</a> will now reset your connect method to <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a7572c9e226ddc2e00dfe941f43c66ed3">CLOSEST</a>.</li>
+<li>Header compression can be enabled via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa9d56c2a4b8833f692d6698167c3faeb">setHeaderCompression</a>. Currently support extends to IPv4, UDP, and partial TCP (ports only).</li>
+<li>New portless SpeedifySDK constructor methods<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9b59b8a94f5e528fa6b6f66491f0e249">SpeedifySDK(Context,String)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a404f1217ca8c488d21a20c7fd7e35e3c">SpeedifySDK(Context,String,ISpeedifyHandler)</a></li>
+<li>The above SDK constructors, lacking the port argument, allows the Speedify SDK to automatically choose an internal endpoint based on the installed package's uid that is unique from any other application using the Speedify SDK.</li>
+<li>Android Work Profile and Samsung Secure Folder are now supported with no additional work when using one of the above SDK constructors.</li>
+<li>The SDK constructor calls with port arguments will continue to construct the internal endpoint at 127.0.0.1:<code>port</code></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1050"></a>Speedify SDK for Android 10.5 </h2>
 <ul>
 <li>Speedify SDK now supports a centralized OAuth gateway for authentication. Setup the gateway URI with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8649444213cb3fbe1c5a5231ba6a678c">setDirectoryGatewayURI</a> before logging in with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">loginOAuth</a>.</li>
 <li>Log settings in the daemon service are now configurable through <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6fcfd6413bab4360acca2a69ea2576af">setDaemonLogSettings</a>.</li>

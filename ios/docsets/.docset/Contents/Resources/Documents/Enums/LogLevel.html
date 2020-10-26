@@ -8,13 +8,21 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Enum/LogLevel" class="dashAnchor"></a>
     <a title="LogLevel Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (71% documented)</p>
+        <p><a href="../index.html"> Docs</a> (70% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -75,6 +83,9 @@
                 <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk17SafeBrowsingErrorO">SafeBrowsingError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
               </li>
               <li class="nav-group-task">
@@ -109,7 +120,7 @@
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk28SpeedifyLogSettingstDelegateP">SpeedifyLogSettingstDelegate</a>
+                <a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk28SpeedifySafeBrowsingDelegateP">SpeedifySafeBrowsingDelegate</a>
@@ -150,7 +161,7 @@
                 <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:11speedifysdk17DaemonLogSettingsV">DaemonLogSettings</a>
+                <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs.html#/s:11speedifysdk15DisconnectEventV">DisconnectEvent</a>
@@ -180,10 +191,19 @@
                 <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SafeBrowsingError.html">SafeBrowsingError</a>
+                <a href="../Structs/SafeBrowsingBlock.html">SafeBrowsingBlock</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:11speedifysdk17SafeBrowsingStatsV">SafeBrowsingStats</a>
+                <a href="../Structs.html#/s:11speedifysdk24SafeBrowsingConnectErrorV">SafeBrowsingConnectError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingLookupError.html">SafeBrowsingLookupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingSettings.html">SafeBrowsingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingStats.html">SafeBrowsingStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
@@ -210,6 +230,7 @@
             <h1>LogLevel</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">LogLevel</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
 
                 </div>
@@ -217,7 +238,7 @@
             <p>Log levels in the SDK</p>
 
 <ul>
-<li>@since future</li>
+<li>@since 10.5</li>
 </ul>
 
           </section>
@@ -240,7 +261,7 @@
                         <p>Verbose</p>
 
 <ul>
-<li>@since future</li>
+<li>@since 10.5</li>
 </ul>
 
                       </div>
@@ -271,7 +292,7 @@
                         <p>INFO</p>
 
 <ul>
-<li>@since future</li>
+<li>@since 10.5</li>
 </ul>
 
                       </div>
@@ -302,7 +323,7 @@
                         <p>WARN</p>
 
 <ul>
-<li>@since future</li>
+<li>@since 10.5</li>
 </ul>
 
                       </div>
@@ -333,7 +354,7 @@
                         <p>ERROR</p>
 
 <ul>
-<li>@since future</li>
+<li>@since 10.5</li>
 </ul>
 
                       </div>
@@ -354,7 +375,7 @@
         </section>
         <section id="footer">
           <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

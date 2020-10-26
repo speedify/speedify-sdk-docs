@@ -8,5 +8,6 @@ var searchData=
   ['adapters',['adapters',['../struct_speedify_s_d_k___adapters_result.html#a31179ce487ce341b4b385d3f6951542c',1,'SpeedifySDK_AdaptersResult']]],
   ['allowchachaencryption',['allowChaChaEncryption',['../struct_speedify_s_d_k___settings.html#a7ebf7b124efed02a3a88f15a068ddf23',1,'SpeedifySDK_Settings']]],
   ['averagedownloadspeed',['averageDownloadSpeed',['../struct_speedify_s_d_k___stream_stats.html#a08ae9d78daa38ca513b415976191abfc',1,'SpeedifySDK_StreamStats']]],
-  ['averageuploadspeed',['averageUploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81',1,'SpeedifySDK_StreamStats']]]
+  ['averageuploadspeed',['averageUploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81',1,'SpeedifySDK_StreamStats']]],
+  ['avgtime',['avgTime',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a02ad92dfd79561a810aa7bb26482984e',1,'SpeedifySDK_SafeBrowsingStatsResult']]]
 ];

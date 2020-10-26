@@ -19,5 +19,6 @@ var searchData=
   ['apt_5fmonthly',['APT_MONTHLY',['../group___t_y_p_e_s.html#ggafddea3bcdbce77ede80928a7fb218600a55d035ba77fc5397ffaac3cee5e61221',1,'types.h']]],
   ['apt_5fyearly',['APT_YEARLY',['../group___t_y_p_e_s.html#ggafddea3bcdbce77ede80928a7fb218600ad49655f191a57ba2fb084989514a265c',1,'types.h']]],
   ['averagedownloadspeed',['averageDownloadSpeed',['../struct_speedify_s_d_k___stream_stats.html#a08ae9d78daa38ca513b415976191abfc',1,'SpeedifySDK_StreamStats']]],
-  ['averageuploadspeed',['averageUploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81',1,'SpeedifySDK_StreamStats']]]
+  ['averageuploadspeed',['averageUploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81',1,'SpeedifySDK_StreamStats']]],
+  ['avgtime',['avgTime',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a02ad92dfd79561a810aa7bb26482984e',1,'SpeedifySDK_SafeBrowsingStatsResult']]]
 ];

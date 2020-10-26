@@ -2,6 +2,7 @@ var searchData=
 [
   ['captiveportalstats',['captivePortalStats',['../struct_speedify_s_d_k___session_stats.html#a922e6c3932b867cd507a6830774660f5',1,'SpeedifySDK_SessionStats']]],
   ['city',['city',['../struct_speedify_s_d_k___server_information.html#a80095b794057db9630d37805e5e8f4fe',1,'SpeedifySDK_ServerInformation::city()'],['../struct_speedify_s_d_k___server_information_detailed.html#a78fc09e556b940430cd3b1825002724e',1,'SpeedifySDK_ServerInformationDetailed::city()'],['../struct_speedify_s_d_k___server_settings.html#a03dfde6b0f98438a6d9b3291a7327bee',1,'SpeedifySDK_ServerSettings::city()']]],
+  ['configset',['configSet',['../struct_speedify_s_d_k___safe_browsing_result.html#a8404fa478bc6f5bd7b2d838b0034b6ff',1,'SpeedifySDK_SafeBrowsingResult']]],
   ['connected',['connected',['../struct_speedify_s_d_k___connection_stats.html#a6d17c9262b43a7b5a780246b16b6f11e',1,'SpeedifySDK_ConnectionStats']]],
   ['connectednetworkbssid',['connectedNetworkBSSID',['../struct_speedify_s_d_k___adapter_data.html#af0a48a42029eac75e0c87601107f8f85',1,'SpeedifySDK_AdapterData']]],
   ['connectednetworkname',['connectedNetworkName',['../struct_speedify_s_d_k___adapter_data.html#acf27f20fe1dba4764d3bfb7f179388e7',1,'SpeedifySDK_AdapterData']]],

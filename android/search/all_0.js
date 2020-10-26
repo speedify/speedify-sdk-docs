@@ -22,5 +22,6 @@ var searchData=
   ['autoconnectmethod',['AutoConnectMethod',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html',1,'com::speedify::speedifysdk::Types']]],
   ['averagedownloadspeed',['averageDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2dd660dc84a6db3f734925dbcd0bae9f',1,'com::speedify::speedifysdk::Types::StreamStats']]],
   ['averageuploadspeed',['averageUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a42fa867975d8e16bc06571c725d8bba9',1,'com::speedify::speedifysdk::Types::StreamStats']]],
+  ['avgtime',['avgTime',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a35362e3786b30c0cb89f175ad2a41f62',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
   ['advanced_20initialization',['Advanced Initialization',['../sdkadv.html',1,'']]]
 ];

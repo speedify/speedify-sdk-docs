@@ -11,5 +11,6 @@ var searchData=
   ['auto',['AUTO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd',1,'com::speedify::speedifysdk::Types::TransportMode']]],
   ['auto_5fconnecting',['AUTO_CONNECTING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a05b5a305aebbbe7abcb77ea003cbbe96',1,'com::speedify::speedifysdk::Types::State']]],
   ['averagedownloadspeed',['averageDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2dd660dc84a6db3f734925dbcd0bae9f',1,'com::speedify::speedifysdk::Types::StreamStats']]],
-  ['averageuploadspeed',['averageUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a42fa867975d8e16bc06571c725d8bba9',1,'com::speedify::speedifysdk::Types::StreamStats']]]
+  ['averageuploadspeed',['averageUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a42fa867975d8e16bc06571c725d8bba9',1,'com::speedify::speedifysdk::Types::StreamStats']]],
+  ['avgtime',['avgTime',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a35362e3786b30c0cb89f175ad2a41f62',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]]
 ];
