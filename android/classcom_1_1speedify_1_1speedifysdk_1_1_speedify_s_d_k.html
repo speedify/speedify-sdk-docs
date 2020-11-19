@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.6.0</span>
+   &#160;<span id="projectnumber">10.7.0</span>
    </div>
   </td>
  </tr>
@@ -325,6 +325,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8dbd62d62d2fdb05acbc03b725dc349d"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8dbd62d62d2fdb05acbc03b725dc349d">setDisconnectOnExit</a> (boolean shouldDisconnect)</td></tr>
 <tr class="memdesc:a8dbd62d62d2fdb05acbc03b725dc349d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the behavior of the VPN service upon task swipe/close all.  <a href="#a8dbd62d62d2fdb05acbc03b725dc349d">More...</a><br /></td></tr>
 <tr class="separator:a8dbd62d62d2fdb05acbc03b725dc349d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd9a17d7b72d19e1748bd69e21b81f4"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aefd9a17d7b72d19e1748bd69e21b81f4">setNeverExitOnSwipe</a> (boolean neverExitOnSwipe)</td></tr>
+<tr class="memdesc:aefd9a17d7b72d19e1748bd69e21b81f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting this disables all disconnect/exit on swipe logic.  <a href="#aefd9a17d7b72d19e1748bd69e21b81f4">More...</a><br /></td></tr>
+<tr class="separator:aefd9a17d7b72d19e1748bd69e21b81f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0319bb8e304e64cd656ea4b7b05ae0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef0319bb8e304e64cd656ea4b7b05ae0">setDNSServers</a> (List&lt; String &gt; dnsAddrs)</td></tr>
 <tr class="memdesc:aef0319bb8e304e64cd656ea4b7b05ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IP addresses of the DNS servers to use Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab6d9161aec16a4f7c57575b6fe715adf">OnPrivacySettings</a>.  <a href="#aef0319bb8e304e64cd656ea4b7b05ae0">More...</a><br /></td></tr>
 <tr class="separator:aef0319bb8e304e64cd656ea4b7b05ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3670,6 +3673,33 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+
+</div>
+</div>
+<a id="aefd9a17d7b72d19e1748bd69e21b81f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd9a17d7b72d19e1748bd69e21b81f4">&#9670;&nbsp;</a></span>setNeverExitOnSwipe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setNeverExitOnSwipe </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>neverExitOnSwipe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setting this disables all disconnect/exit on swipe logic. </p>
+<p>Your app will be responsible for calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3e56b3a94d421d8759a447f979f031a1">ForceExit</a> to close the daemon and foreground notification when you want to exit. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">neverExitOnSwipe</td><td>if all swipe logic should be ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>10.7 </dd></dl>
 
 </div>
 </div>

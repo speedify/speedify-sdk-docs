@@ -50,6 +50,7 @@ var searchData=
   ['setlocalproxyports',['setLocalProxyPorts',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a649903a4d1d19b5b78467f128d93d8a0',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setlocalvendorsettings',['setLocalVendorSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abd91fc14cf03cf59c6a3eda50f098e8e',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setmode',['setMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a48de02e22bf046a35e56c7f33eac34b3',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['setneverexitonswipe',['setNeverExitOnSwipe',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aefd9a17d7b72d19e1748bd69e21b81f4',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setnonvpnapplications',['setNonVPNApplications',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6db1558f07b6aefc0264856184c41470',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setoverflowthreshold',['setOverflowThreshold',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setreportingencryptionkey',['setReportingEncryptionKey',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8e7a7509ab0f1fc2fdaee4651c32a378',1,'com::speedify::speedifysdk::SpeedifySDK']]],

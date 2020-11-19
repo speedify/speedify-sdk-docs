@@ -2,6 +2,7 @@ var searchData=
 [
   ['tcp',['TCP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a39a86cd0fda16c451f893a9af2ffaa01',1,'com.speedify.speedifysdk.Types.TransportMode.TCP()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_port_protocol.html#afa22fcdb304e5a1039a30473c4adf142',1,'com.speedify.speedifysdk.Types.PortProtocol.TCP()']]],
   ['time',['time',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats_group.html#ac62be1cddc939c8b34945ccb5df30620',1,'com::speedify::speedifysdk::Types::ConnectionStatsGroup']]],
+  ['timed_5fout',['TIMED_OUT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a17ab4b5d3950ee07a735ba833078a24d',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['title',['title',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a197550a85e750c643f2633d169acb515',1,'com::speedify::speedifysdk::Types::LocalProxyDomainWatchlistItem']]],
   ['token_5fexpired',['TOKEN_EXPIRED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['torrent',['TORRENT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#ab3ff2ec75d076965493f3dac093d7d4c',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
@@ -14,6 +15,7 @@ var searchData=
   ['totalspeedmodesaves',['totalSpeedModeSaves',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html#ad0c9b5a9c7d3d95ff341e5322d742af3',1,'com::speedify::speedifysdk::Types::StreamingSessionStats']]],
   ['totalstreams',['totalStreams',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html#abdaa08da3eb21e73770ed37edce4789c',1,'com::speedify::speedifysdk::Types::StreamingSessionStats']]],
   ['transportmode',['transportMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#ad9fedab5887a82aa0b873e55a3feaa3a',1,'com::speedify::speedifysdk::Types::Settings']]],
+  ['tunneltimeout',['TUNNELTIMEOUT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a06f53ea1c79b8c8e0f40ea7426b7e99c',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['tunstats',['tunStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#abbbb4e36a5be76d587b999cc21a3d4ea',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['tununavailable',['TUNUNAVAILABLE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#ace257feda527ec676e83c1cac7bdc1c8',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['type',['type',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a933e926893bbb3ee8c9c24c488d28f51',1,'com::speedify::speedifysdk::Types::AdapterData']]]

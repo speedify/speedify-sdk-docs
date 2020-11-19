@@ -18,5 +18,6 @@ var searchData=
   ['cujo_5ferr_5fno_5fmemory',['CUJO_ERR_NO_MEMORY',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3cab0abf2f8ea8133204b11faa38b5b6e57',1,'types.h']]],
   ['cujo_5ferr_5fnot_5fconfigured',['CUJO_ERR_NOT_CONFIGURED',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca3aea9a012f5196f40fac26b38f0bab5a',1,'types.h']]],
   ['cujo_5ferr_5fparse_5ferror',['CUJO_ERR_PARSE_ERROR',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca0ff95c9328f77b79c453f77c22e63465',1,'types.h']]],
+  ['cujo_5ferr_5ftimed_5fout',['CUJO_ERR_TIMED_OUT',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca8b8fb2309e196d8294a9d806e7fb4043',1,'types.h']]],
   ['cujo_5fok',['CUJO_OK',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca9f44adec4cb6ef04977057139625abd6',1,'types.h']]]
 ];

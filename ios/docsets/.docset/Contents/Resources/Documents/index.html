@@ -82,7 +82,7 @@
                 <a href="Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums.html#/s:11speedifysdk17SafeBrowsingErrorO">SafeBrowsingError</a>
+                <a href="Enums/SafeBrowsingError.html">SafeBrowsingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/State.html">State</a>
@@ -270,10 +270,17 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='strong-speedify-10-7-strong' class='heading'><strong>Speedify 10.7</strong></h3>
+
+<ul>
+<li>Header compression now defaults to on.</li>
+<li>Disconnect Reasons have been expanded to include <code>TYPES.DisconnectReason.DNSTIMEOUT</code> and <code>TYPES.DisconnectReason.TUNNELTIMEOUT</code></li>
+</ul>
 <h3 id='strong-speedify-10-6-strong' class='heading'><strong>Speedify 10.6</strong></h3>
 
 <ul>
-<li>Change : <code>SpeedifyPacketTunnel.sharedInstance.runDaemon(in: 9330, provider: self, currentDefaults: myDefaults ?? UserDefaults.standard, connectWithHandler: connectWithHandler, completionHandler: completionHandler)</code> -&gt; <code>public func runDaemon(in port: Int, provider:NEPacketTunnelProvider, connectWithHandler: Bool, completionHandler: @escaping (Error?)-&gt; Void)</code>  The call to runDaemon removes the need to pass in the defaults argument. Speedify will lookup the host plist for the key <code>NSExtensionFileProviderDocumentGroup</code> if one is provided the suite name will be used. If this key is not present a user will no longer be able to connect manually from the device settings application.</li>
+<li>Deprecated : <code>SpeedifyPacketTunnel.sharedInstance.runDaemon(in: 9330, provider: self, currentDefaults: myDefaults ?? UserDefaults.standard, connectWithHandler: connectWithHandler, completionHandler: completionHandler)</code> -&gt;</li>
+<li>New: <code>public func runDaemon(in port: Int, provider:NEPacketTunnelProvider, connectWithHandler: Bool, completionHandler: @escaping (Error?)-&gt; Void)</code>  The call to runDaemon removes the need to pass in the defaults argument. Speedify will lookup the host plist for the key <code>NSExtensionFileProviderDocumentGroup</code> if one is provided the suite name will be used. If this key is not present a user will no longer be able to connect manually from the device settings application.</li>
 <li>Calling <code>logout</code> will now reset your connect method to <code>Types.AutoConnectMethod.closest</code>.</li>
 </ul>
 <h3 id='strong-speedify-10-5-strong' class='heading'><strong>Speedify 10.5</strong></h3>

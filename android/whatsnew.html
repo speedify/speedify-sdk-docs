@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.6.0</span>
+   &#160;<span id="projectnumber">10.7.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,13 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1060"></a>Speedify SDK for Android 10.6 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1070"></a>Speedify SDK for Android 10.7 </h2>
+<ul>
+<li>Header compression now defaults to on.</li>
+<li>Disconnect Reasons have been expanded to include <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#acdb96e5a3752d019c95ec32a00662174">DNSTIMEOUT</a> and <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a06f53ea1c79b8c8e0f40ea7426b7e99c">TUNNELTIMEOUT</a>.</li>
+<li>The default behavior of removing running services on task swipe when disconnect may be stopped via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aefd9a17d7b72d19e1748bd69e21b81f4">setNeverExitOnSwipe</a>. Services may be manually stopped with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3e56b3a94d421d8759a447f979f031a1">ForceExit</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1060"></a>Speedify SDK for Android 10.6 </h2>
 <ul>
 <li>Calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7f35ca0ad17c0fc03b8a04448198522">logout</a> will now reset your connect method to <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a7572c9e226ddc2e00dfe941f43c66ed3">CLOSEST</a>.</li>
 <li>Header compression can be enabled via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa9d56c2a4b8833f692d6698167c3faeb">setHeaderCompression</a>. Currently support extends to IPv4, UDP, and partial TCP (ports only).</li>
