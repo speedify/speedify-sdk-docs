@@ -3,6 +3,7 @@ var searchData=
   ['safebrowsingblock',['SafeBrowsingBlock',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_block.html',1,'com::speedify::speedifysdk::Types']]],
   ['safebrowsingconnecterror',['SafeBrowsingConnectError',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_connect_error.html',1,'com::speedify::speedifysdk::Types']]],
   ['safebrowsingerror',['SafeBrowsingError',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html',1,'com::speedify::speedifysdk::Types']]],
+  ['safebrowsingloglevel',['SafeBrowsingLogLevel',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_log_level.html',1,'com::speedify::speedifysdk::Types']]],
   ['safebrowsinglookuperror',['SafeBrowsingLookupError',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_lookup_error.html',1,'com::speedify::speedifysdk::Types']]],
   ['safebrowsingsettings',['SafeBrowsingSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_settings.html',1,'com::speedify::speedifysdk::Types']]],
   ['safebrowsingstats',['SafeBrowsingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html',1,'com::speedify::speedifysdk::Types']]],

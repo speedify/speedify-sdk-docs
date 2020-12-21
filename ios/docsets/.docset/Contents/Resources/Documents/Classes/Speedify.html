@@ -86,6 +86,9 @@
                 <a href="../Enums/SafeBrowsingError.html">SafeBrowsingError</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk20SafeBrowsingLogLevelO">SafeBrowsingLogLevel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
               </li>
               <li class="nav-group-task">
@@ -2847,6 +2850,38 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC11setLanguage8languageySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/setLanguage(language:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC11setLanguage8languageySS_tF">setLanguage(language:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the language used for error messages</p>
+
+<ul>
+<li>Triggers <code><a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a></code>.</li>
+<li>@since 10.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLanguage</span><span class="p">(</span><span class="nv">language</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC19setExcludedIPRanges14excludedRangesySayAA7IPRangeVG_tF"></a>
                     <a name="//apple_ref/swift/Method/setExcludedIPRanges(excludedRanges:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC19setExcludedIPRanges14excludedRangesySayAA7IPRangeVG_tF">setExcludedIPRanges(excludedRanges:<wbr>)</a>
@@ -3520,6 +3555,70 @@ reason will not be updated in the database until the next extension launch.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC21setSafeBrowsingConfig08optionalF0ySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/setSafeBrowsingConfig(optionalConfig:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC21setSafeBrowsingConfig08optionalF0ySS_tF">setSafeBrowsingConfig(optionalConfig:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Sets optional Safe Browsing Config, applied to next init call.</li>
+<li>Current value available <code>safebrowsingDelegate</code>.</li>
+<li>@since 10.6</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingConfig</span><span class="p">(</span><span class="nv">optionalConfig</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23setSafeBrowsingLogLevel03logG0yAA0defG0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/setSafeBrowsingLogLevel(logLevel:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23setSafeBrowsingLogLevel03logG0yAA0defG0O_tF">setSafeBrowsingLogLevel(logLevel:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Sets the Safe Browsing logging level</li>
+<li>Current value available <code>safebrowsingDelegate</code>.</li>
+<li>@since 10.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingLogLevel</span><span class="p">(</span><span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/s:11speedifysdk20SafeBrowsingLogLevelO">SafeBrowsingLogLevel</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

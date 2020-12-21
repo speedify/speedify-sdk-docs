@@ -19,5 +19,8 @@ var searchData=
   ['cujo_5ferr_5fnot_5fconfigured',['CUJO_ERR_NOT_CONFIGURED',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca3aea9a012f5196f40fac26b38f0bab5a',1,'types.h']]],
   ['cujo_5ferr_5fparse_5ferror',['CUJO_ERR_PARSE_ERROR',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca0ff95c9328f77b79c453f77c22e63465',1,'types.h']]],
   ['cujo_5ferr_5ftimed_5fout',['CUJO_ERR_TIMED_OUT',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca8b8fb2309e196d8294a9d806e7fb4043',1,'types.h']]],
+  ['cujo_5flog_5fdebug',['CUJO_LOG_DEBUG',['../types_8h.html#ad2de182c4b58b299104638840d48e186a12461c1731a1db983df231a00a2e67f3',1,'types.h']]],
+  ['cujo_5flog_5ferror',['CUJO_LOG_ERROR',['../types_8h.html#ad2de182c4b58b299104638840d48e186ae4533d3213610d11bc4bffa35b5534a9',1,'types.h']]],
+  ['cujo_5flog_5finfo',['CUJO_LOG_INFO',['../types_8h.html#ad2de182c4b58b299104638840d48e186aadfc44e33e2380193518606fa34ff1ed',1,'types.h']]],
   ['cujo_5fok',['CUJO_OK',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca9f44adec4cb6ef04977057139625abd6',1,'types.h']]]
 ];
