@@ -457,49 +457,42 @@
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Speedify.swift",
-      "line": 1102,
+      "line": 1110,
       "symbol": "Speedify.refreshState()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Speedify.swift",
-      "line": 1114,
+      "line": 1122,
       "symbol": "Speedify.listenForExtensionStateUpdates(completionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Speedify.swift",
-      "line": 1128,
+      "line": 1136,
       "symbol": "Speedify.handleAdapterOverlimit(adapterID:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Speedify.swift",
-      "line": 1208,
+      "line": 1216,
       "symbol": "Speedify.sessionStatsDidUpdate(stats:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Speedify.swift",
-      "line": 1303,
-      "symbol": "Speedify.setSafeBrowsingConfig(optionalConfig:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Speedify.swift",
-      "line": 1490,
+      "line": 1512,
       "symbol": "Speedify.currentExtensionState()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Speedify.swift",
-      "line": 1494,
+      "line": 1516,
       "symbol": "Speedify.sendMessageToExtension(message:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -772,219 +765,240 @@
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 780,
+      "line": 786,
       "symbol": "TransportMode",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 847,
+      "line": 853,
       "symbol": "ErrorType.ok",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 848,
+      "line": 854,
       "symbol": "ErrorType.network",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 853,
+      "line": 859,
       "symbol": "ErrorType.credential",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 872,
+      "line": 878,
       "symbol": "DirectorySettings",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 918,
+      "line": 924,
       "symbol": "AccountingData.minutesAvail",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 920,
+      "line": 926,
       "symbol": "AccountingData.minutesUsed",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 922,
+      "line": 928,
       "symbol": "AccountingData.payTier",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 924,
+      "line": 930,
       "symbol": "AccountingData.isPaying",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 926,
+      "line": 932,
       "symbol": "AccountingData.periodEndDate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 929,
+      "line": 935,
       "symbol": "PrivacySettings",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 986,
+      "line": 992,
       "symbol": "ForwardedPort.init(portProtocol:port:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1027,
+      "line": 1033,
       "symbol": "FirewallPort.init(portProtocol:port:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1151,
+      "line": 1157,
       "symbol": "StreamingSessionStats",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1177,
+      "line": 1183,
       "symbol": "PERIODS",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1195,
+      "line": 1201,
       "symbol": "SessionStatPeriod",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1321,
+      "line": 1331,
       "symbol": "SafeBrowsingError.OK",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1322,
+      "line": 1332,
       "symbol": "SafeBrowsingError.ERR",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1323,
+      "line": 1333,
       "symbol": "SafeBrowsingError.NOT_CONFIGURED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1327,
+      "line": 1337,
       "symbol": "SafeBrowsingError.SERVER_ERROR",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1328,
+      "line": 1338,
       "symbol": "SafeBrowsingError.CLIENT_UNAUTHORIZED",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1329,
+      "line": 1339,
       "symbol": "SafeBrowsingError.CLIENT_FORBIDDEN",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1330,
+      "line": 1340,
       "symbol": "SafeBrowsingError.CLIENT_RESOURCE_NOT_FOUND",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1331,
+      "line": 1341,
       "symbol": "SafeBrowsingError.CLIENT_SENT_BAD_REQUEST",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1332,
+      "line": 1342,
       "symbol": "SafeBrowsingError.NO_MEMORY",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1333,
+      "line": 1343,
       "symbol": "SafeBrowsingError.BAD_FUNCTION_ARGUMENT",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1334,
+      "line": 1344,
       "symbol": "SafeBrowsingError.PARSE_ERROR",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1349,
+      "line": 1359,
       "symbol": "SafeBrowsingBlock.init(json:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1360,
+      "line": 1370,
       "symbol": "DisconnectEvent.reason",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1367,
+      "line": 1377,
       "symbol": "DisconnectReason",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
-      "line": 1469,
+      "line": 1479,
       "symbol": "DaemonLogSettings.init(json:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
+      "line": 1519,
+      "symbol": "SafeBrowsingLogLevel.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
+      "line": 1520,
+      "symbol": "SafeBrowsingLogLevel.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/connectifyjenkins/src/webrtc-ios/src/third_party/connectify/ios/Speedify/speedifysdk/speedify/Types.swift",
+      "line": 1521,
+      "symbol": "SafeBrowsingLogLevel.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
