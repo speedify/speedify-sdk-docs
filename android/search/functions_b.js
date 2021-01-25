@@ -22,6 +22,7 @@ var searchData=
   ['refreshsessionstats',['refreshSessionStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab56221d14ff2a4ba8e9115ad3fe5ad8f',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshsettings',['refreshSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#af17aa25ca7694e58f5d290ca26ca96fe',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshstate',['refreshState',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aae351208c272f3384015b8407e121163',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['refreshstreamingsettings',['refreshStreamingSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac0e82fd3c240b7febfe4e4010a8a59e8',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshstreamingstats',['refreshStreamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7ccb948f7d4f12dcf440546a60705a67',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshvendoruserdata',['refreshVendorUserData',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2d388b7b54b6417ea2423e2b85c7f86c',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['register',['register',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#a70e0927195da2d837779f70a2f725012',1,'com::speedify::speedifysdk::LocalBroadcastHelper']]],

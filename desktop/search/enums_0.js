@@ -14,8 +14,6 @@ var searchData=
   ['speedifysdk_5fproxymatchmode',['SpeedifySDK_ProxyMatchMode',['../group___t_y_p_e_s.html#gac5fce2249549ad9ffc779c9b71ad343a',1,'types.h']]],
   ['speedifysdk_5fsafebrowsingerror',['SpeedifySDK_SafeBrowsingError',['../group___t_y_p_e_s.html#gad486e8c4796944b3b6b9ad4e5f2d7c3c',1,'types.h']]],
   ['speedifysdk_5fsafebrowsingloglevel',['SpeedifySDK_SafeBrowsingLogLevel',['../types_8h.html#ad2de182c4b58b299104638840d48e186',1,'types.h']]],
-  ['speedifysdk_5fspeedteststatus',['SpeedifySDK_SpeedTestStatus',['../group___t_y_p_e_s.html#gaa81ea1e0bf1bf0a53c166c3c345c7998',1,'types.h']]],
-  ['speedifysdk_5fspeedteststep',['SpeedifySDK_SpeedTestStep',['../group___t_y_p_e_s.html#ga8c4c6a5fc675507215cb2ed75d169fa6',1,'types.h']]],
   ['speedifysdk_5fstate',['SpeedifySDK_State',['../group___t_y_p_e_s.html#gaa7c8c7559160aeec64a6625079ac4ee0',1,'types.h']]],
   ['speedifysdk_5ftransportmode',['SpeedifySDK_TransportMode',['../group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee',1,'types.h']]]
 ];
