@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.9.1</span>
+   &#160;<span id="projectnumber">10.9.6</span>
    </div>
   </td>
  </tr>
@@ -370,6 +370,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1483aa4fe6cff812382ba363c1b3377"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac1483aa4fe6cff812382ba363c1b3377">refreshCaptivePortals</a> ()</td></tr>
 <tr class="memdesc:ac1483aa4fe6cff812382ba363c1b3377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks connected networks for captive portals Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a>.  <a href="#ac1483aa4fe6cff812382ba363c1b3377">More...</a><br /></td></tr>
 <tr class="separator:ac1483aa4fe6cff812382ba363c1b3377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169a1634e86fe269dbd86c62c99e29de"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a169a1634e86fe269dbd86c62c99e29de">enableCaptivePortalMode</a> (String adapterID)</td></tr>
+<tr class="memdesc:a169a1634e86fe269dbd86c62c99e29de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable captive portal mode, sending all traffic over the specified network.  <a href="#a169a1634e86fe269dbd86c62c99e29de">More...</a><br /></td></tr>
+<tr class="separator:a169a1634e86fe269dbd86c62c99e29de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689d82b57c5a745f0ecbcb455f5df013"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a689d82b57c5a745f0ecbcb455f5df013">disableCaptivePortalMode</a> ()</td></tr>
+<tr class="memdesc:a689d82b57c5a745f0ecbcb455f5df013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable captive portal mode.  <a href="#a689d82b57c5a745f0ecbcb455f5df013">More...</a><br /></td></tr>
+<tr class="separator:a689d82b57c5a745f0ecbcb455f5df013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeec0b3b6a08707fa92b5af48720e7a0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#afeec0b3b6a08707fa92b5af48720e7a0">refreshFirewall</a> ()</td></tr>
 <tr class="memdesc:afeec0b3b6a08707fa92b5af48720e7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get configuration of the firewall Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa5957d64cb5aaa7bb295f05aa01e92b8">OnFirewallSettings</a>.  <a href="#afeec0b3b6a08707fa92b5af48720e7a0">More...</a><br /></td></tr>
 <tr class="separator:afeec0b3b6a08707fa92b5af48720e7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1097,6 +1103,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a689d82b57c5a745f0ecbcb455f5df013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689d82b57c5a745f0ecbcb455f5df013">&#9670;&nbsp;</a></span>disableCaptivePortalMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.disableCaptivePortalMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable captive portal mode. </p>
+<dl class="section since"><dt>Since</dt><dd>10.9.5 </dd></dl>
+
+</div>
+</div>
 <a id="a4a4c2690d116f02c0a5c0ee446ef2db1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a4c2690d116f02c0a5c0ee446ef2db1">&#9670;&nbsp;</a></span>disconnect()</h2>
 
@@ -1114,6 +1140,33 @@ Protected Member Functions</h2></td></tr>
 
 <p>Disconnect from the server if connected, or cancel a connection attempt if currenty connecting. </p>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+
+</div>
+</div>
+<a id="a169a1634e86fe269dbd86c62c99e29de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169a1634e86fe269dbd86c62c99e29de">&#9670;&nbsp;</a></span>enableCaptivePortalMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.enableCaptivePortalMode </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>adapterID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable captive portal mode, sending all traffic over the specified network. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adapterID</td><td>network to operate captive portal mode over </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>10.9.5 </dd></dl>
 
 </div>
 </div>

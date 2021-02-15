@@ -8,6 +8,8 @@ var searchData=
   ['perconnectionencryptioncount',['perConnectionEncryptionCount',['../struct_speedify_s_d_k___settings.html#af3d360f7d0bd29d24aa55cf6f00c4f9a',1,'SpeedifySDK_Settings']]],
   ['perconnectionencryptionenabled',['perConnectionEncryptionEnabled',['../struct_speedify_s_d_k___settings.html#a16e63d3cc6675576f7a07c7d6482f978',1,'SpeedifySDK_Settings']]],
   ['perconnectionencryptionsettings',['perConnectionEncryptionSettings',['../struct_speedify_s_d_k___settings.html#a86934847771ded16202ca7dc6234b55a',1,'SpeedifySDK_Settings']]],
+  ['perconnectionparallelsockets',['perConnectionParallelSockets',['../struct_speedify_s_d_k___settings.html#a7f198102e3779a23a6d241fa8a6bf52a',1,'SpeedifySDK_Settings']]],
+  ['perconnectionparallelsocketscount',['perConnectionParallelSocketsCount',['../struct_speedify_s_d_k___settings.html#ad149d0db4ab44e5753656ba00ab7dd79',1,'SpeedifySDK_Settings']]],
   ['period',['period',['../struct_speedify_s_d_k___session_stats.html#a7d4ad844ab915e806ac9c451b645ed5b',1,'SpeedifySDK_SessionStats']]],
   ['periodcount',['periodCount',['../struct_speedify_s_d_k___session_stat_periods.html#a4d6b7517d065933f0f03d6c64b680de1',1,'SpeedifySDK_SessionStatPeriods']]],
   ['periods',['periods',['../struct_speedify_s_d_k___session_stat_periods.html#a9ce04eaddfa77db1e5af2ec5fa825880',1,'SpeedifySDK_SessionStatPeriods']]],

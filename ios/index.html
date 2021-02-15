@@ -285,6 +285,14 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='strong-speedify-10-9-5-strong' class='heading'><strong>Speedify 10.9.5</strong></h3>
+
+<ul>
+<li>Corrected documentation of units on <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV8totalBpss5Int64Vvp">ConnectionStats.totalBps</a></code> , <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV7sendBpss5Int64Vvp">ConnectionStats.sendBps</a></code> &amp; <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV10receiveBpss5Int64Vvp">ConnectionStats.receiveBps</a></code> to be bits per second.</li>
+<li>Corrected documentation of units on <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV16sendEstimateMbpsSdvp">ConnectionStats.sendEstimateMbps</a></code> &amp; <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV19receiveEstimateMbpsSdvp">ConnectionStats.receiveEstimateMbps</a></code> to be megabits per second.</li>
+<li>Updated documentation of units on <code><a href="Structs/SessionStats.html#/s:11speedifysdk12SessionStatsV15mbpsDownBenefits5Int64Vvp">SessionStats.mbpsDownBenefit</a></code> &amp; <code><a href="Structs/SessionStats.html#/s:11speedifysdk12SessionStatsV13mbpsUpBenefits5Int64Vvp">SessionStats.mbpsUpBenefit</a></code> to specify megabits per second.</li>
+<li>New experimental <code>TransportMode.multitcp</code> transport mode, using multiple TCP sockets over connections to increase bandwidth. <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV15numberOfSocketss5Int32Vvp">ConnectionStats.numberOfSockets</a></code> shows how many sockets are in use.</li>
+</ul>
 <h3 id='strong-speedify-10-9-strong' class='heading'><strong>Speedify 10.9</strong></h3>
 
 <ul>

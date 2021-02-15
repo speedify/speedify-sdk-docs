@@ -4,6 +4,7 @@ var searchData=
   ['title',['title',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html#a65785dad720219c29ac820912164b10f',1,'SpeedifySDK_LocalProxyDomainWatchlistHitResult::title()'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a26b83d082b0d3cffb8d261639112ec18',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::title()']]],
   ['tmode_5fauto',['TMODE_AUTO',['../group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea5b8ace58b63ae237cbfe1ff6591c03de',1,'types.h']]],
   ['tmode_5fhttps',['TMODE_HTTPS',['../group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeaf2a7c5e2bfdb2e93d8902a680c9193cf',1,'types.h']]],
+  ['tmode_5fmultitcp',['TMODE_MULTITCP',['../group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeae9ca04bbf83e4a7e27f43107a359d1ad',1,'types.h']]],
   ['tmode_5ftcp',['TMODE_TCP',['../group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea6324676e0e9bccf9e3115ee78d79b095',1,'types.h']]],
   ['tmode_5fudp',['TMODE_UDP',['../group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeac1e05d20f2a05d6489c5d06d59a1a02a',1,'types.h']]],
   ['torrentallowed',['torrentAllowed',['../struct_speedify_s_d_k___server_information_detailed.html#ad5707ddd194493e6b541cc26c1a863c7',1,'SpeedifySDK_ServerInformationDetailed']]],

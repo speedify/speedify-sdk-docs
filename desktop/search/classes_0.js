@@ -34,6 +34,7 @@ var searchData=
   ['speedifysdk_5flogsettingsresult',['SpeedifySDK_LogSettingsResult',['../struct_speedify_s_d_k___log_settings_result.html',1,'']]],
   ['speedifysdk_5fnewadapterresult',['SpeedifySDK_NewAdapterResult',['../struct_speedify_s_d_k___new_adapter_result.html',1,'']]],
   ['speedifysdk_5fperconnectionencryption',['SpeedifySDK_PerConnectionEncryption',['../struct_speedify_s_d_k___per_connection_encryption.html',1,'']]],
+  ['speedifysdk_5fperconnectionparallelsockets',['SpeedifySDK_PerConnectionParallelSockets',['../struct_speedify_s_d_k___per_connection_parallel_sockets.html',1,'']]],
   ['speedifysdk_5fprivacysettings',['SpeedifySDK_PrivacySettings',['../struct_speedify_s_d_k___privacy_settings.html',1,'']]],
   ['speedifysdk_5fprivacysettingsresult',['SpeedifySDK_PrivacySettingsResult',['../struct_speedify_s_d_k___privacy_settings_result.html',1,'']]],
   ['speedifysdk_5fprotocolportpair',['SpeedifySDK_ProtocolPortPair',['../struct_speedify_s_d_k___protocol_port_pair.html',1,'']]],

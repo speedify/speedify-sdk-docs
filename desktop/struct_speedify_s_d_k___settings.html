@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.9.1</span>
+   &#160;<span id="projectnumber">10.9.5</span>
    </div>
   </td>
  </tr>
@@ -114,6 +114,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a86934847771ded16202ca7dc6234b55a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___per_connection_encryption.html">SpeedifySDK_PerConnectionEncryption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a86934847771ded16202ca7dc6234b55a">perConnectionEncryptionSettings</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>]</td></tr>
 <tr class="memdesc:a86934847771ded16202ca7dc6234b55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per connection encryption settings.  <a href="#a86934847771ded16202ca7dc6234b55a">More...</a><br /></td></tr>
 <tr class="separator:a86934847771ded16202ca7dc6234b55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad149d0db4ab44e5753656ba00ab7dd79"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#ad149d0db4ab44e5753656ba00ab7dd79">perConnectionParallelSocketsCount</a></td></tr>
+<tr class="memdesc:ad149d0db4ab44e5753656ba00ab7dd79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of configured per-connection parallel socket settings.  <a href="#ad149d0db4ab44e5753656ba00ab7dd79">More...</a><br /></td></tr>
+<tr class="separator:ad149d0db4ab44e5753656ba00ab7dd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f198102e3779a23a6d241fa8a6bf52a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___per_connection_parallel_sockets.html">SpeedifySDK_PerConnectionParallelSockets</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a7f198102e3779a23a6d241fa8a6bf52a">perConnectionParallelSockets</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>]</td></tr>
+<tr class="memdesc:a7f198102e3779a23a6d241fa8a6bf52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per connection parallel sockets.  <a href="#a7f198102e3779a23a6d241fa8a6bf52a">More...</a><br /></td></tr>
+<tr class="separator:a7f198102e3779a23a6d241fa8a6bf52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a197cf0fd1972391e8f79ee2a044c5926"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a197cf0fd1972391e8f79ee2a044c5926">overflowThreshold</a></td></tr>
 <tr class="memdesc:a197cf0fd1972391e8f79ee2a044c5926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overflow threshold, in megabits per second.  <a href="#a197cf0fd1972391e8f79ee2a044c5926">More...</a><br /></td></tr>
 <tr class="separator:a197cf0fd1972391e8f79ee2a044c5926"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +355,40 @@ Data Fields</h2></td></tr>
 
 <p>Per connection encryption settings. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a7f198102e3779a23a6d241fa8a6bf52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f198102e3779a23a6d241fa8a6bf52a">&#9670;&nbsp;</a></span>perConnectionParallelSockets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___per_connection_parallel_sockets.html">SpeedifySDK_PerConnectionParallelSockets</a> SpeedifySDK_Settings::perConnectionParallelSockets[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per connection parallel sockets. </p>
+<dl class="section since"><dt>Since</dt><dd>10.9.5 </dd></dl>
+
+</div>
+</div>
+<a id="ad149d0db4ab44e5753656ba00ab7dd79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad149d0db4ab44e5753656ba00ab7dd79">&#9670;&nbsp;</a></span>perConnectionParallelSocketsCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SpeedifySDK_Settings::perConnectionParallelSocketsCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of configured per-connection parallel socket settings. </p>
+<dl class="section since"><dt>Since</dt><dd>10.9.5 </dd></dl>
 
 </div>
 </div>

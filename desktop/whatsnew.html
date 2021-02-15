@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.9.1</span>
+   &#160;<span id="projectnumber">10.9.5</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,14 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1091"></a>Speedify SDK for Desktop 10.9.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1095"></a>Speedify SDK for Desktop 10.9.5 </h2>
+<ul>
+<li>Corrected documentation of units on <a class="el" href="struct_speedify_s_d_k___connection_stats.html#a229dd9fac65cb930100fc60da0fd8644">totalBps</a>, <a class="el" href="struct_speedify_s_d_k___connection_stats.html#ad1520c0d71d80d219635d448a3744ce5">sendBps</a>, and <a class="el" href="struct_speedify_s_d_k___connection_stats.html#ae9751732c3d0094a1c102fb6875bf94f">receiveBps</a> to be bits per second.</li>
+<li>Corrected documentation of units on <a class="el" href="struct_speedify_s_d_k___connection_stats.html#a67a651f635d792f069ec334ef6028a82">sendEstimateMbps</a> and <a class="el" href="struct_speedify_s_d_k___connection_stats.html#ac607ae60efde70a0e6703098991845da">receiveEstimateMbps</a> to be megabits per second.</li>
+<li>Updated documentation of units on <a class="el" href="struct_speedify_s_d_k___session_stats.html#a26387ca76def5f40542d3707c1998f0d">mbpsDownBenefit</a> and <a class="el" href="struct_speedify_s_d_k___session_stats.html#aae582ad4c7561409b528846e51236a4b">mbpsUpBenefit</a> to specify megabits per second.</li>
+<li>New experimental <a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeae9ca04bbf83e4a7e27f43107a359d1ad">SpeedifySDK_TransportMode#TMODE_MULTITCP</a> transport mode, using multiple TCP sockets over connections to increase bandwidth. <a class="el" href="struct_speedify_s_d_k___connection_stats.html#a07b6beef7b0274c4146baed895203980">SpeedifySDK_ConnectionStats#numberOfSockets</a> shows how many sockets are in use.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1091"></a>Speedify SDK for Desktop 10.9.1 </h2>
 <ul>
 <li>No new features. This is a stability and performance release.</li>
 </ul>
@@ -81,6 +88,7 @@ $(function() {
 <li>Support for custom <a class="el" href="struct_speedify_s_d_k___streaming_settings.html">SpeedifySDK_StreamingSettings</a>. These can be set via <a class="el" href="group___s_d_k.html#ga3a8d4c28cb81c8a32805c785ca8d1464">SpeedifySDK_SetStreamingDomains</a>, <a class="el" href="group___s_d_k.html#ga1ea10f10effc6e160c75b579c6c37600">SpeedifySDK_SetStreamingIPv4</a>, <a class="el" href="group___s_d_k.html#ga4ca95385a48ca63742d8d70359749025">SpeedifySDK_SetStreamingIPv6</a>, and <a class="el" href="group___s_d_k.html#ga771f33e772bd47d644f9e03a25293422">SpeedifySDK_SetStreamingPorts</a>. Use <a class="el" href="group___s_d_k.html#ga989ad2f4056a24cc9683bb36b24a22d2">SpeedifySDK_GetStreamingSettings</a> to pull current settings.</li>
 <li>New <a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a9ef6debf2d231aa03989da7540a776a6">DR_OVERQUOTA</a> disconnect reason.</li>
 <li>Speed test calls have been removed.</li>
+<li>Corrected <a class="el" href="struct_speedify_s_d_k___connection_stats.html#ad1520c0d71d80d219635d448a3744ce5">sendBps</a> and <a class="el" href="struct_speedify_s_d_k___connection_stats.html#ae9751732c3d0094a1c102fb6875bf94f">receiveBps</a> on all physical adapters to be in bits per second, matching <a class="el" href="struct_speedify_s_d_k___connection_stats.html#a229dd9fac65cb930100fc60da0fd8644">totalBps</a>.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1081"></a>Speedify SDK for Desktop 10.8.1 </h2>
 <ul>

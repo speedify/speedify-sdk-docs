@@ -10,6 +10,7 @@ var searchData=
   ['notificationhelper',['NotificationHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html',1,'com::speedify::speedifysdk']]],
   ['notificationhelper_2ejava',['NotificationHelper.java',['../_notification_helper_8java.html',1,'']]],
   ['num',['num',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af740b9cb245ba9dcd94dca942293a6c5',1,'com.speedify.speedifysdk.Types.ServerInformation.num()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html#abe39ecac725e3b0ce82df083bffaca67',1,'com.speedify.speedifysdk.Types.ServerSettings.num()']]],
+  ['numberofsockets',['numberOfSockets',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ac880d80efc65ad81c9470950042fb7b8',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['numblocks',['numBlocks',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a878d209020e738b8970f3a444aef7f28',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
   ['numerrors',['numErrors',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a0b5a24aecd0bd4305cae29031fb6ca20',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
   ['numfailovers',['numFailovers',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#afdc9f5ce53631140ef7c57968c5208f8',1,'com::speedify::speedifysdk::Types::SessionStats']]],

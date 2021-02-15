@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">10.9.1</span>
+   &#160;<span id="projectnumber">10.9.5</span>
    </div>
   </td>
  </tr>
@@ -110,6 +110,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___per_connection_encryption.html">SpeedifySDK_PerConnectionEncryption</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter setting for per-connection encryption.  <a href="struct_speedify_s_d_k___per_connection_encryption.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___per_connection_parallel_sockets.html">SpeedifySDK_PerConnectionParallelSockets</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter setting for per-connection parallel sockets.  <a href="struct_speedify_s_d_k___per_connection_parallel_sockets.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html">SpeedifySDK_Settings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Speedify settings.  <a href="struct_speedify_s_d_k___settings.html#details">More...</a><br /></td></tr>
@@ -260,10 +263,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga673980be58fe205ac13216bd9c934128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mode of the VPN tunnel.  <a href="group___t_y_p_e_s.html#ga673980be58fe205ac13216bd9c934128">More...</a><br /></td></tr>
 <tr class="separator:ga673980be58fe205ac13216bd9c934128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga088bd5be74c1566ce9093bf8701fbdee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">SpeedifySDK_TransportMode</a> { <a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea6324676e0e9bccf9e3115ee78d79b095">TMODE_TCP</a>, 
+<tr class="memitem:ga088bd5be74c1566ce9093bf8701fbdee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">SpeedifySDK_TransportMode</a> { <br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea6324676e0e9bccf9e3115ee78d79b095">TMODE_TCP</a>, 
 <a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeac1e05d20f2a05d6489c5d06d59a1a02a">TMODE_UDP</a>, 
 <a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea5b8ace58b63ae237cbfe1ff6591c03de">TMODE_AUTO</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeaf2a7c5e2bfdb2e93d8902a680c9193cf">TMODE_HTTPS</a>
+<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeaf2a7c5e2bfdb2e93d8902a680c9193cf">TMODE_HTTPS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeae9ca04bbf83e4a7e27f43107a359d1ad">TMODE_MULTITCP</a>
+<br />
  }</td></tr>
 <tr class="memdesc:ga088bd5be74c1566ce9093bf8701fbdee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transport Protocol modes.  <a href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">More...</a><br /></td></tr>
 <tr class="separator:ga088bd5be74c1566ce9093bf8701fbdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1112,6 +1119,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga088bd5be74c1566ce9093bf8701fbdeeaf2a7c5e2bfdb2e93d8902a680c9193cf"></a>TMODE_HTTPS&#160;</td><td class="fielddoc"><p>Always use websocket. </p>
 <dl class="section since"><dt>Since</dt><dd>9.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga088bd5be74c1566ce9093bf8701fbdeeae9ca04bbf83e4a7e27f43107a359d1ad"></a>TMODE_MULTITCP&#160;</td><td class="fielddoc"><p>Always use Multi TCP. </p>
+<dl class="section since"><dt>Since</dt><dd>10.9.5 </dd></dl>
 </td></tr>
 </table>
 

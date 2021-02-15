@@ -9,6 +9,7 @@ var searchData=
   ['networktype_5fvpn',['NETWORKTYPE_VPN',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba277d6ee1babf5d8abbf2865c58ca66c2',1,'types.h']]],
   ['networktype_5fwifi',['NETWORKTYPE_WIFI',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887bac0371be8f103c110f715d063499845c5',1,'types.h']]],
   ['num',['num',['../struct_speedify_s_d_k___server_information.html#a3168056b6e8da102c24f457cb71e0588',1,'SpeedifySDK_ServerInformation::num()'],['../struct_speedify_s_d_k___server_information_detailed.html#aa65cb9fc725ad8201be7eefa2ec6ce7b',1,'SpeedifySDK_ServerInformationDetailed::num()'],['../struct_speedify_s_d_k___server_settings.html#af5bbd90f4fdd8eb5be5f53ff0a769663',1,'SpeedifySDK_ServerSettings::num()']]],
+  ['numberofsockets',['numberOfSockets',['../struct_speedify_s_d_k___connection_stats.html#a07b6beef7b0274c4146baed895203980',1,'SpeedifySDK_ConnectionStats']]],
   ['numblocks',['numBlocks',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a75059aececebfeb2096ebd632c589036',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
   ['numerrors',['numErrors',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#acd4195d549cad89df0b20cf390346a81',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
   ['numfailovers',['numFailovers',['../struct_speedify_s_d_k___session_stats.html#a32d601edf3c73d7bf6a02257ce6e0655',1,'SpeedifySDK_SessionStats']]],
