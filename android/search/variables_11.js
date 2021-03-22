@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['safenetwork',['SAFENETWORK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a7ef460587bf5562fd4444251ad4b2bc6',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['secondary',['SECONDARY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#ae29d8cb0bf92099eb656b88c60c29862',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['sendbps',['sendBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a37e4c430aa1d38ab769d2a4c58326def',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['sendestimatembps',['sendEstimateMbps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9f2157a241a0ea8e7dfc89018c2aad33',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],

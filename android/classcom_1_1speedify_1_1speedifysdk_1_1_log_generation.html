@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.9.6</span>
+   &#160;<span id="projectnumber">11.0.0</span>
    </div>
   </td>
  </tr>
@@ -216,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
 <p>To delete this zip, either use Java's File class, or call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a71ec7a377038174ab36595a11b153eb2">eraseAllLogFiles</a> to erase this and all log files. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>context used for OS acess. Implement <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> to be notified on completion. </td></tr>
-    <tr><td class="paramname">fileName</td><td>the name of the zip file to create </td></tr>
+    <tr><td class="paramname">fileName</td><td>the name of the zip file to create. As of 11.0, this may be an absolute path. If required, you must request write permission to this path prior to calling. </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,7 +315,7 @@ Static Public Member Functions</h2></td></tr>
 <p>To delete this zip, either use Java's File class, or call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a71ec7a377038174ab36595a11b153eb2">eraseAllLogFiles</a> to erase this and all log files. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">activity</td><td>activity used to launch the share dialog. Implement <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> to be notified on completion. </td></tr>
-    <tr><td class="paramname">fileName</td><td>the name of the zip file to create </td></tr>
+    <tr><td class="paramname">fileName</td><td>the name of the zip file to create. As of 11.0, this may be an absolute path. If required, you must request write permission to this path prior to calling. </td></tr>
     <tr><td class="paramname">email</td><td>email address to send to (for email sharing) </td></tr>
     <tr><td class="paramname">subject</td><td>subject string (for email sharing) </td></tr>
     <tr><td class="paramname">body</td><td>main message used in email or instant message bodies </td></tr>

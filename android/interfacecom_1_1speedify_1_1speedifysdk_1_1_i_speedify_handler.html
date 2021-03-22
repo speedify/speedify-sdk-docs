@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.9.6</span>
+   &#160;<span id="projectnumber">11.0.0</span>
    </div>
   </td>
  </tr>
@@ -193,7 +193,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa98a382d0084f14558f58c2e7ce33133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote vendor settings update.  <a href="#aa98a382d0084f14558f58c2e7ce33133">More...</a><br /></td></tr>
 <tr class="separator:aa98a382d0084f14558f58c2e7ce33133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48a5aa8073b784ee0762de48e1dd447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab48a5aa8073b784ee0762de48e1dd447">OnVendorUserData</a> (String userData)</td></tr>
-<tr class="memdesc:ab48a5aa8073b784ee0762de48e1dd447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote vendor settings update.  <a href="#ab48a5aa8073b784ee0762de48e1dd447">More...</a><br /></td></tr>
+<tr class="memdesc:ab48a5aa8073b784ee0762de48e1dd447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vendor user data update.  <a href="#ab48a5aa8073b784ee0762de48e1dd447">More...</a><br /></td></tr>
 <tr class="separator:ab48a5aa8073b784ee0762de48e1dd447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d42fcdd9bd3b0195350cc46cf9012cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9d42fcdd9bd3b0195350cc46cf9012cd">OnLocalProxySettings</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html">LocalProxySettings</a> settings)</td></tr>
 <tr class="memdesc:a9d42fcdd9bd3b0195350cc46cf9012cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local proxy settings update.  <a href="#a9d42fcdd9bd3b0195350cc46cf9012cd">More...</a><br /></td></tr>
@@ -237,6 +237,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1807125620277536cc8225878be25e74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a1807125620277536cc8225878be25e74">OnLogSettings</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html">DaemonLogSettings</a> daemon)</td></tr>
 <tr class="memdesc:a1807125620277536cc8225878be25e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log settings result.  <a href="#a1807125620277536cc8225878be25e74">More...</a><br /></td></tr>
 <tr class="separator:a1807125620277536cc8225878be25e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad136349c3e1cb3f45d9007798e9fa47d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ad136349c3e1cb3f45d9007798e9fa47d">OnSpeedTestResults</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html">SpeedTestResultData</a> &gt; results)</td></tr>
+<tr class="memdesc:ad136349c3e1cb3f45d9007798e9fa47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Speed test result data.  <a href="#ad136349c3e1cb3f45d9007798e9fa47d">More...</a><br /></td></tr>
+<tr class="separator:ad136349c3e1cb3f45d9007798e9fa47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af69068a631143a620a54082776e0cf47"></a>
@@ -1456,6 +1459,29 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad136349c3e1cb3f45d9007798e9fa47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad136349c3e1cb3f45d9007798e9fa47d">&#9670;&nbsp;</a></span>OnSpeedTestResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnSpeedTestResults </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html">SpeedTestResultData</a> &gt;&#160;</td>
+          <td class="paramname"><em>results</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Speed test result data. </p>
+<dl class="section since"><dt>Since</dt><dd>11.0 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae2ed72dd80319076a50336aa1c56caf2">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+
+</div>
+</div>
 <a id="af5c164aedf655768a5d06de6e0c28725"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5c164aedf655768a5d06de6e0c28725">&#9670;&nbsp;</a></span>OnState()</h2>
 
@@ -1588,7 +1614,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remote vendor settings update. </p>
+<p>Vendor user data update. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userData</td><td>current vendor user data </td></tr>

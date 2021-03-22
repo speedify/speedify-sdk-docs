@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">10.9.6</span>
+   &#160;<span id="projectnumber">11.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,12 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1095"></a>Speedify SDK for Android 10.9.5 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1100"></a>Speedify SDK for Android 11.0 </h2>
+<ul>
+<li>New simple speed test. This runs an iPerf3 speed test for 10 seconds in both directions over the VPN tunnel. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad3b5fc4fea89d2a8859345878a6f9f79">startSpeedTest</a> to initiate a new test. Results are provided via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae2ed72dd80319076a50336aa1c56caf2">OnSpeedTestResults</a>. Results of prior tests can be retrieved with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0bb6074964ed6b0aa017da8a6ca07259">refreshSpeedTestResults</a>.</li>
+<li>The fileName arguments for <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a1918ef726fef0b76baaebf76611d118b">shareLogs</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a07e739a061a31244318a91dfdb97d19c">generateLogs</a> now support absolute paths. If required, you must request write permission to this path prior to calling.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1095"></a>Speedify SDK for Android 10.9.5 </h2>
 <ul>
 <li>Corrected documentation of units on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a768c88e5cf5caf6dcc5e6c65ed4e7fe5">totalBps</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a37e4c430aa1d38ab769d2a4c58326def">sendBps</a>, and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed">receiveBps</a> to be bits per second.</li>
 <li>Corrected documentation of units on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9f2157a241a0ea8e7dfc89018c2aad33">sendEstimateMbps</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ace4da62624db5f8b60ff62abe5f233c2">receiveEstimateMbps</a> to be megabits per second.</li>

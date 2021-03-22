@@ -1,6 +1,7 @@
 var searchData=
 [
   ['tcp',['TCP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a39a86cd0fda16c451f893a9af2ffaa01',1,'com.speedify.speedifysdk.Types.TransportMode.TCP()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_port_protocol.html#afa22fcdb304e5a1039a30473c4adf142',1,'com.speedify.speedifysdk.Types.PortProtocol.TCP()']]],
+  ['testtime',['testTime',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a535f0924521d6a7752d4e88fec0a9949',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
   ['time',['time',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats_group.html#ac62be1cddc939c8b34945ccb5df30620',1,'com::speedify::speedifysdk::Types::ConnectionStatsGroup']]],
   ['timed_5fout',['TIMED_OUT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a17ab4b5d3950ee07a735ba833078a24d',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['title',['title',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a197550a85e750c643f2633d169acb515',1,'com::speedify::speedifysdk::Types::LocalProxyDomainWatchlistItem']]],

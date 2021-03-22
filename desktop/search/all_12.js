@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['testtime',['testTime',['../struct_speedify_s_d_k___speed_test_result_data.html#a0e15f8213ca53ce676abc364c9f40256',1,'SpeedifySDK_SpeedTestResultData']]],
   ['time',['time',['../struct_speedify_s_d_k___connection_stats_group.html#aff8e62b6fcd54ba39eede11dbe4a5956',1,'SpeedifySDK_ConnectionStatsGroup']]],
   ['title',['title',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html#a65785dad720219c29ac820912164b10f',1,'SpeedifySDK_LocalProxyDomainWatchlistHitResult::title()'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a26b83d082b0d3cffb8d261639112ec18',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::title()']]],
   ['tmode_5fauto',['TMODE_AUTO',['../group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea5b8ace58b63ae237cbfe1ff6591c03de',1,'types.h']]],

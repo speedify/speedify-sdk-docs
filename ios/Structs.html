@@ -62,9 +62,6 @@
                 <a href="Enums/ConnectionState.html">ConnectionState</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/ErrorType.html">ErrorType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/FirewallMode.html">FirewallMode</a>
               </li>
               <li class="nav-group-task">
@@ -87,6 +84,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums.html#/s:11speedifysdk20SafeBrowsingLogLevelO">SafeBrowsingLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/State.html">State</a>
@@ -120,13 +120,31 @@
                 <a href="Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols.html#/s:11speedifysdk28SpeedifySafeBrowsingDelegateP">SpeedifySafeBrowsingDelegate</a>
+                <a href="Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyServerSettingsDelegateP">SpeedifyServerSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
@@ -138,13 +156,28 @@
                 <a href="Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk33SpeedifyStreamingSettingsDelegateP">SpeedifyStreamingSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a>
               </li>
             </ul>
           </li>
@@ -203,7 +236,7 @@
                 <a href="Structs/SafeBrowsingBlock.html">SafeBrowsingBlock</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:11speedifysdk24SafeBrowsingConnectErrorV">SafeBrowsingConnectError</a>
+                <a href="Structs/SafeBrowsingConnectError.html">SafeBrowsingConnectError</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SafeBrowsingLookupError.html">SafeBrowsingLookupError</a>
@@ -213,6 +246,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SafeBrowsingStats.html">SafeBrowsingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ServerSettings.html">ServerSettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SessionStats.html">SessionStats</a>
@@ -540,6 +576,35 @@ possible for there to be more than one on a single internet connection.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Settings</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk14ServerSettingsV"></a>
+                    <a name="//apple_ref/swift/Struct/ServerSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk14ServerSettingsV">ServerSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Automatic server selection method settings
+@since 9.4</p>
+
+                        <a href="Structs/ServerSettings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServerSettings</span></code></pre>
 
                         </div>
                       </div>
@@ -969,6 +1034,7 @@ possible for there to be more than one on a single internet connection.</p>
                         <p>Safe Browsing Connect Error on initialization
 @since 10.6</p>
 
+                        <a href="Structs/SafeBrowsingConnectError.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>

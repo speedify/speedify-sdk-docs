@@ -7,6 +7,7 @@ var searchData=
   ['dr_5finactivetimeout',['DR_INACTIVETIMEOUT',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994af0a202a40400285543bd42d05d0c6f10',1,'types.h']]],
   ['dr_5foverquota',['DR_OVERQUOTA',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a9ef6debf2d231aa03989da7540a776a6',1,'types.h']]],
   ['dr_5freboot',['DR_REBOOT',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a83152d74f1b537afdc228ede857d045e',1,'types.h']]],
+  ['dr_5fsafenetwork',['DR_SAFENETWORK',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994ac59a7888b57f344d8c916d92d6d9bc03',1,'types.h']]],
   ['dr_5fservicestop',['DR_SERVICESTOP',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994aa860af7b1aeeb82f4e51d4f0e97007b1',1,'types.h']]],
   ['dr_5fsettingchangereconnect',['DR_SETTINGCHANGERECONNECT',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a3e3fd56a0887b10bc972856bcce22bd6',1,'types.h']]],
   ['dr_5fsleep',['DR_SLEEP',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994ad90afe69109ff97ea31de59a4a562aeb',1,'types.h']]],

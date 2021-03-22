@@ -8,7 +8,9 @@ var searchData=
   ['redundantmodesaves',['redundantModeSaves',['../struct_speedify_s_d_k___stream_stats.html#acbb8d7ee60dcff367912d9edc3168cc9',1,'SpeedifySDK_StreamStats']]],
   ['remoteip',['remoteIp',['../struct_speedify_s_d_k___connection_stats.html#a6f7ae1268215eb0516cb2c6340fe0d2f',1,'SpeedifySDK_ConnectionStats']]],
   ['result_20types',['Result Types',['../group___r_e_s_u_l_t.html',1,'']]],
+  ['results',['results',['../struct_speedify_s_d_k___speed_test_result.html#a26ecf178606cfae8768caf3ec454f57b',1,'SpeedifySDK_SpeedTestResult']]],
   ['results_2eh',['results.h',['../results_8h.html',1,'']]],
+  ['resultscount',['resultsCount',['../struct_speedify_s_d_k___speed_test_result.html#a56912f39a77fb667856d97250c1a3b42',1,'SpeedifySDK_SpeedTestResult']]],
   ['retransbytes',['retransBytes',['../struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578',1,'SpeedifySDK_SessionStats']]],
   ['retries',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['testtime',['testTime',['../struct_speedify_s_d_k___speed_test_result_data.html#a0e15f8213ca53ce676abc364c9f40256',1,'SpeedifySDK_SpeedTestResultData']]],
   ['time',['time',['../struct_speedify_s_d_k___connection_stats_group.html#aff8e62b6fcd54ba39eede11dbe4a5956',1,'SpeedifySDK_ConnectionStatsGroup']]],
   ['title',['title',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html#a65785dad720219c29ac820912164b10f',1,'SpeedifySDK_LocalProxyDomainWatchlistHitResult::title()'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a26b83d082b0d3cffb8d261639112ec18',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::title()']]],
   ['torrentallowed',['torrentAllowed',['../struct_speedify_s_d_k___server_information_detailed.html#ad5707ddd194493e6b541cc26c1a863c7',1,'SpeedifySDK_ServerInformationDetailed']]],

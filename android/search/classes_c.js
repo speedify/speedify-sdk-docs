@@ -15,6 +15,7 @@ var searchData=
   ['settings',['Settings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html',1,'com::speedify::speedifysdk::Types']]],
   ['speedifyhandler',['SpeedifyHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html',1,'com::speedify::speedifysdk']]],
   ['speedifysdk',['SpeedifySDK',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html',1,'com::speedify::speedifysdk']]],
+  ['speedtestresultdata',['SpeedTestResultData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html',1,'com::speedify::speedifysdk::Types']]],
   ['startupbroadcastreceiver',['StartupBroadcastReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_startup_broadcast_receiver.html',1,'com::speedify::speedifysdk']]],
   ['state',['State',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html',1,'com::speedify::speedifysdk::Types']]],
   ['statetrackingsbr',['StateTrackingSBR',['../classcom_1_1speedify_1_1speedifysdk_1_1_state_tracking_s_b_r.html',1,'com::speedify::speedifysdk']]],

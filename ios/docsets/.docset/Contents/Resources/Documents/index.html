@@ -61,9 +61,6 @@
                 <a href="Enums/ConnectionState.html">ConnectionState</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/ErrorType.html">ErrorType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/FirewallMode.html">FirewallMode</a>
               </li>
               <li class="nav-group-task">
@@ -86,6 +83,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums.html#/s:11speedifysdk20SafeBrowsingLogLevelO">SafeBrowsingLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/State.html">State</a>
@@ -119,13 +119,31 @@
                 <a href="Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols.html#/s:11speedifysdk28SpeedifySafeBrowsingDelegateP">SpeedifySafeBrowsingDelegate</a>
+                <a href="Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyServerSettingsDelegateP">SpeedifyServerSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
@@ -137,13 +155,28 @@
                 <a href="Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk33SpeedifyStreamingSettingsDelegateP">SpeedifyStreamingSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a>
               </li>
             </ul>
           </li>
@@ -202,7 +235,7 @@
                 <a href="Structs/SafeBrowsingBlock.html">SafeBrowsingBlock</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:11speedifysdk24SafeBrowsingConnectErrorV">SafeBrowsingConnectError</a>
+                <a href="Structs/SafeBrowsingConnectError.html">SafeBrowsingConnectError</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SafeBrowsingLookupError.html">SafeBrowsingLookupError</a>
@@ -212,6 +245,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SafeBrowsingStats.html">SafeBrowsingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ServerSettings.html">ServerSettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/SessionStats.html">SessionStats</a>
@@ -285,6 +321,20 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='strong-speedify-11-0-strong' class='heading'><strong>Speedify 11.0</strong></h3>
+
+<ul>
+<li>New property <code>daemonMessagingIsReady</code> can be used to signal when the extensions daemon is ready for messaging.</li>
+<li>New notification <code>readyDaemon</code> can be used to be notified when the extensions daemon is ready for messaging.</li>
+<li>New function to start the daemon inside of the PacketTunnel. <code>func runDaemon(in port: Int, provider: NEPacketTunnelProvider, options: [String : NSObject]?, connectWithHandler: Bool, completionHandler: @escaping (Error?)-&gt; Void)</code>, this new function intakes the options set by the containing app so users no longer need to support App Groups for SDK purposes.</li>
+<li>Deprecated <code>func runDaemon(in port: Int, provider: NEPacketTunnelProvider, connectWithHandler: Bool, completionHandler: @escaping (Error?)-&gt; Void)</code></li>
+<li>New simple speed test.  This runs an iPerf3 speed test for 10 seconds in both directions over the VPN tunnel. Use <code>startSpeedTest</code> to initiate a new test. Results are provided via {@link com.speedify.speedifysdk.SpeedifyHandler#OnSpeedTestResults OnSpeedTestResults}. Results of prior tests can be retrieved with <code><a href="Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a></code>.</li>
+<li>Change <code><a href="Structs/SafeBrowsingStats.html">SafeBrowsingStats</a></code> -&gt; <code>minTime</code> went from a Double to an Int</li>
+<li>Change <code><a href="Structs/SafeBrowsingStats.html">SafeBrowsingStats</a></code> -&gt; <code>maxTime</code> went from a Double to an Int</li>
+<li>Change <code><a href="Structs/SafeBrowsingStats.html">SafeBrowsingStats</a></code> -&gt; <code>avgTime</code> went from a Double to an Int</li>
+<li>Change <code><a href="Structs/SafeBrowsingStats.html">SafeBrowsingStats</a></code> -&gt; <code>numErrors</code> went from a Double to an Int</li>
+<li>Change <code><a href="Structs/SafeBrowsingStats.html">SafeBrowsingStats</a></code> -&gt; <code>numBlocks</code> went from a Double to an Int</li>
+</ul>
 <h3 id='strong-speedify-10-9-5-strong' class='heading'><strong>Speedify 10.9.5</strong></h3>
 
 <ul>
@@ -292,6 +342,7 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li>Corrected documentation of units on <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV16sendEstimateMbpsSdvp">ConnectionStats.sendEstimateMbps</a></code> &amp; <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV19receiveEstimateMbpsSdvp">ConnectionStats.receiveEstimateMbps</a></code> to be megabits per second.</li>
 <li>Updated documentation of units on <code><a href="Structs/SessionStats.html#/s:11speedifysdk12SessionStatsV15mbpsDownBenefits5Int64Vvp">SessionStats.mbpsDownBenefit</a></code> &amp; <code><a href="Structs/SessionStats.html#/s:11speedifysdk12SessionStatsV13mbpsUpBenefits5Int64Vvp">SessionStats.mbpsUpBenefit</a></code> to specify megabits per second.</li>
 <li>New experimental <code>TransportMode.multitcp</code> transport mode, using multiple TCP sockets over connections to increase bandwidth. <code><a href="Structs/ConnectionStats.html#/s:11speedifysdk15ConnectionStatsV15numberOfSocketss5Int32Vvp">ConnectionStats.numberOfSockets</a></code> shows how many sockets are in use.</li>
+<li>New function <code>func setAllowTunnelBypass(allowTunnelBypass: Bool)</code> .  Allows other apps to bind their sockets around the VPN tunnel, directly on other network adapters.</li>
 </ul>
 <h3 id='strong-speedify-10-9-strong' class='heading'><strong>Speedify 10.9</strong></h3>
 
@@ -338,7 +389,7 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li>Deprecated <code>setDirectoryDomain(domain: String, completionHandler:@escaping (_ domain: String)-&gt;Void)</code> Use <code>setDirectoryWithDomain(domain: String, completionHandler:@escaping (_ directory: Directory)-&gt;Void)</code></li>
 <li>New <code>setESNIEnabled(enable: Bool)</code> - Sets if ESNI is used when talking to the directory domain</li>
 <li>New <code>SpeedifyDirectoryDomainDelegate</code></li>
-<li>New <code>SpeedifyLastDisconnectDelegate</code> which has a  function <code>func disconnectEventDidUpdate(disconnectReason: DisconnectReason)</code> to send back the last disconnected reason. <code>DisconnectReason</code></li>
+<li>New <code><a href="Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a></code> which has a  function <code>func disconnectEventDidUpdate(disconnectReason: DisconnectReason)</code> to send back the last disconnected reason. <code>DisconnectReason</code></li>
 <li>New   <code>public func refreshLastDisconnectEvent()</code> Get the last session disconnect event</li>
 <li>Change <code>func initializeVPNPermission(profile: String?,startTunnel: Bool, waitUntilConnected: Bool, completionHandler: @escaping (_ didSave: Bool, _ error: Error?)-&gt;Void)</code> -&gt; <code>func initializeVPNPermission(profile: String?, onDemandRules: [NEOnDemandRule]?,startTunnel: Bool, waitUntilConnected: Bool, completionHandler: @escaping (_ didSave: Bool, _ error: Error?)-&gt;Void)</code>. Note: When initializing a VPN profile you may now pass an optional array of NEOndemand rules. Setting onDemandRules to nil will remove the onDemand toggle from the iOS settings app</li>
 <li>New <code>waitUntilConnected</code> public Boolean. Setting to true will tell the sdk not to send any messages to the extension until it is fully connected. Defaults to false.</li>
@@ -356,12 +407,12 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <h3 id='strong-speedify-10-2-1-strong' class='heading'><strong>Speedify 10.2.1</strong></h3>
 
 <ul>
-<li><code>VendorDataDelegate</code> is now <code>SpeedifyVendorUserDataDelegate</code>.</li>
+<li><code>VendorDataDelegate</code> is now <code><a href="Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a></code>.</li>
 <li><code>func sessionPeriodStatsDidUpdate(sessionStats: SessionStatPeriods)</code> -&gt; <code>func sessionPeriodStatsDidUpdate(sessionPeriodStats: SessionStatPeriods)</code></li>
 <li><code>func firewallSettingsUpdated(settings:FirewallSettings)</code> -&gt; <code>func firewallSettingsDidUpdate(settings:FirewallSettings)</code></li>
 <li>Fixed typo inside of  <code>protocol SpeedifyLocalProxySettingsDelegate</code></li>
 <li><code>public var stats: [ConnectionStats]?</code> -&gt; <code>public var connectionStats: [ConnectionStats]?</code></li>
-<li><code>vendorDataDelegate</code> -&gt; <code>SpeedifyVendorUserDataDelegate</code></li>
+<li><code>vendorDataDelegate</code> -&gt; <code><a href="Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a></code></li>
 <li><code>settingsLockDelegate</code> -&gt; <code>settingsErrorDelegate</code></li>
 <li>Removed <code>func setCrashReporting(enable: Bool)</code></li>
 </ul>
@@ -406,7 +457,7 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li>The Local Proxy API now supports matching by TCP and UDP port: <code>setLocalProxyPorts</code></li>
 </ul>
 <h4 id='function-changes' class='heading'>Function changes</h4>
-<h5 id='these-all-change-a-non-optional-code-errortype-code-to-an-option-code-errortype-code' class='heading'>These all change a non-optional <code><a href="Enums/ErrorType.html">ErrorType</a></code> to an option <code>ErrorType?</code></h5>
+<h5 id='these-all-change-a-non-optional-code-errortype-code-to-an-option-code-errortype-code' class='heading'>These all change a non-optional <code>ErrorType</code> to an option <code>ErrorType?</code></h5>
 
 <ul>
 <li><code>public func connectAuto(connectOption: AutoConnectMethod, completionHandler:@escaping (_ serverInformation: ServerInformation?, _ error: ErrorType?)-&gt;Void)</code></li>
@@ -526,9 +577,9 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <h3 id='strong-speedify-6-0-strong' class='heading'><strong>Speedify 6.0</strong></h3>
 
 <ul>
-<li><code>ValidationError</code> is now  <code><a href="Enums/ErrorType.html">ErrorType</a></code> which gives you errors on login and when connecting to servers.</li>
+<li><code>ValidationError</code> is now  <code>ErrorType</code> which gives you errors on login and when connecting to servers.</li>
 <li>New property in the <code><a href="Structs/AdapterUsageData.html">AdapterUsageData</a></code> -&gt; <code>overlimitRatelimit</code></li>
-<li>New functions for connecting now with an <code><a href="Enums/ErrorType.html">ErrorType</a></code> parameter in the closure</li>
+<li>New functions for connecting now with an <code>ErrorType</code> parameter in the closure</li>
 <li>New function <code>setAdapterOverlimitRatelimit(adapterID: String, bps: Int64)</code></li>
 <li>New function <code>setUserUniqueID(uniqueID:String)</code></li>
 <li>New Class <code><a href="Classes.html#/c:@M@speedifysdk@objc(cs)UUIDProvider">UUIDProvider</a></code>. This will help get a unique Id of the device</li>

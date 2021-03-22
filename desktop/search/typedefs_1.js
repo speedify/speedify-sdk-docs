@@ -33,6 +33,7 @@ var searchData=
   ['speedifysdk_5fserversettingscallback',['SpeedifySDK_ServerSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga156fdc69be1aa6a123c66b1026ee1e5e',1,'callbacks.h']]],
   ['speedifysdk_5fsessionstatscallback',['SpeedifySDK_SessionStatsCallback',['../group___c_a_l_l_b_a_c_k_s.html#gadacf41ce7012c5e10adbbc01894f301a',1,'callbacks.h']]],
   ['speedifysdk_5fsettingscallback',['SpeedifySDK_SettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70',1,'callbacks.h']]],
+  ['speedifysdk_5fspeedtestcallback',['SpeedifySDK_SpeedTestCallback',['../group___c_a_l_l_b_a_c_k_s.html#gaa74a2160e61cd88c36d75dd740e37bf1',1,'callbacks.h']]],
   ['speedifysdk_5fstatecallback',['SpeedifySDK_StateCallback',['../group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160',1,'callbacks.h']]],
   ['speedifysdk_5fstreamingport',['SpeedifySDK_StreamingPort',['../group___t_y_p_e_s.html#ga7cd6f8cc5fe6b43e6b16e6430251b244',1,'types.h']]],
   ['speedifysdk_5fstreamingsettingscallback',['SpeedifySDK_StreamingSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga68c7fec405a2264a24684f34da424648',1,'callbacks.h']]],

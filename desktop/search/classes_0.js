@@ -52,6 +52,8 @@ var searchData=
   ['speedifysdk_5fsessionstatsresult',['SpeedifySDK_SessionStatsResult',['../struct_speedify_s_d_k___session_stats_result.html',1,'']]],
   ['speedifysdk_5fsettings',['SpeedifySDK_Settings',['../struct_speedify_s_d_k___settings.html',1,'']]],
   ['speedifysdk_5fsettingsresult',['SpeedifySDK_SettingsResult',['../struct_speedify_s_d_k___settings_result.html',1,'']]],
+  ['speedifysdk_5fspeedtestresult',['SpeedifySDK_SpeedTestResult',['../struct_speedify_s_d_k___speed_test_result.html',1,'']]],
+  ['speedifysdk_5fspeedtestresultdata',['SpeedifySDK_SpeedTestResultData',['../struct_speedify_s_d_k___speed_test_result_data.html',1,'']]],
   ['speedifysdk_5fstateresult',['SpeedifySDK_StateResult',['../struct_speedify_s_d_k___state_result.html',1,'']]],
   ['speedifysdk_5fstreamingsessionstats',['SpeedifySDK_StreamingSessionStats',['../struct_speedify_s_d_k___streaming_session_stats.html',1,'']]],
   ['speedifysdk_5fstreamingsettings',['SpeedifySDK_StreamingSettings',['../struct_speedify_s_d_k___streaming_settings.html',1,'']]],
