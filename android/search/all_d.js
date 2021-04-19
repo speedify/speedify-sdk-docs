@@ -6,14 +6,18 @@ var searchData=
   ['never',['NEVER',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a32959b613c04b917487bb342babeac10',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['no_5fendpoint_5furl',['NO_ENDPOINT_URL',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a11d27e63c73b74d44f44212308b1ff83',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['no_5fmemory',['NO_MEMORY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a7793316adbd80995ce869def5f820c4b',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
+  ['none',['NONE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_safe_network_override.html#a7121752d69da0c51128a119e0d59f0fd',1,'com::speedify::speedifysdk::Types::SafeBrowsingSafeNetworkOverride']]],
   ['not_5fconfigured',['NOT_CONFIGURED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a42f4a1d326f00e45883e809ce4192ae6',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['notificationhelper',['NotificationHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html',1,'com::speedify::speedifysdk']]],
   ['notificationhelper_2ejava',['NotificationHelper.java',['../_notification_helper_8java.html',1,'']]],
   ['num',['num',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af740b9cb245ba9dcd94dca942293a6c5',1,'com.speedify.speedifysdk.Types.ServerInformation.num()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html#abe39ecac725e3b0ce82df083bffaca67',1,'com.speedify.speedifysdk.Types.ServerSettings.num()']]],
   ['numberofsockets',['numberOfSockets',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ac880d80efc65ad81c9470950042fb7b8',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['numblockresponses',['numBlockResponses',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a0e9aa3dfc0fd49804682c2542ee20b94',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
   ['numblocks',['numBlocks',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a878d209020e738b8970f3a444aef7f28',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
   ['numconnections',['numConnections',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a84d7a4d46d29f70e45474a65a9eae559',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
   ['numerrors',['numErrors',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a0b5a24aecd0bd4305cae29031fb6ca20',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
   ['numfailovers',['numFailovers',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#afdc9f5ce53631140ef7c57968c5208f8',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['numlookups',['numLookups',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a94f8c8460e46fec78ef54e6dadd50791',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
+  ['numpacketsfiltered',['numPacketsFiltered',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#aaaab7899bca4f665adac06554606cf4a',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
   ['numsessions',['numSessions',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a8cb5b34ba43b066d11b4c6cf4046aa40',1,'com::speedify::speedifysdk::Types::SessionStats']]]
 ];

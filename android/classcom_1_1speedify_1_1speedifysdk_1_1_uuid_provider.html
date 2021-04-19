@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.0.1</span>
+   &#160;<span id="projectnumber">11.1.0</span>
    </div>
   </td>
  </tr>
@@ -93,13 +93,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1190e4bee06382174576a878c64fbdff"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#a1190e4bee06382174576a878c64fbdff">GetUuid</a> ()</td></tr>
 <tr class="memdesc:a1190e4bee06382174576a878c64fbdff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the UUID of the device.  <a href="#a1190e4bee06382174576a878c64fbdff">More...</a><br /></td></tr>
 <tr class="separator:a1190e4bee06382174576a878c64fbdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92466573fd17b4947552c73adcef636"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#af92466573fd17b4947552c73adcef636">GetUuid</a> (Context context)</td></tr>
+<tr class="memdesc:af92466573fd17b4947552c73adcef636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the UUID of the device.  <a href="#af92466573fd17b4947552c73adcef636">More...</a><br /></td></tr>
+<tr class="separator:af92466573fd17b4947552c73adcef636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9d5d9f69e451cac203ad9597762bf4d"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#ac9d5d9f69e451cac203ad9597762bf4d">GetUuid</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider_1_1_uuid_handler.html">UuidHandler</a> handlerCallback)</td></tr>
 <tr class="memdesc:ac9d5d9f69e451cac203ad9597762bf4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the UUID of the device, possibly asynchronously.  <a href="#ac9d5d9f69e451cac203ad9597762bf4d">More...</a><br /></td></tr>
 <tr class="separator:ac9d5d9f69e451cac203ad9597762bf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165046c369fdfb2fe7a1f9de6662c0fe"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#a165046c369fdfb2fe7a1f9de6662c0fe">GetUuid</a> (Context context, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider_1_1_uuid_handler.html">UuidHandler</a> handlerCallback)</td></tr>
+<tr class="memdesc:a165046c369fdfb2fe7a1f9de6662c0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the UUID of the device, possibly asynchronously.  <a href="#a165046c369fdfb2fe7a1f9de6662c0fe">More...</a><br /></td></tr>
+<tr class="separator:a165046c369fdfb2fe7a1f9de6662c0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1190e4bee06382174576a878c64fbdff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1190e4bee06382174576a878c64fbdff">&#9670;&nbsp;</a></span>GetUuid() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1190e4bee06382174576a878c64fbdff">&#9670;&nbsp;</a></span>GetUuid() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,12 +129,49 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Gets the UUID of the device. </p>
 <p>Note that this may be null or empty, as querying Play Services is asynchronous. </p><dl class="section return"><dt>Returns</dt><dd>unique identifier for this device </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>As of 11.1. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#af92466573fd17b4947552c73adcef636">GetUuid(Context)</a>. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>6.0 </dd></dl>
 
 </div>
 </div>
+<a id="af92466573fd17b4947552c73adcef636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92466573fd17b4947552c73adcef636">&#9670;&nbsp;</a></span>GetUuid() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String com.speedify.speedifysdk.UuidProvider.GetUuid </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the UUID of the device. </p>
+<p>Note that this may be null or empty, as querying Play Services is asynchronous. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context to load uuid </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unique identifier for this device </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
+
+</div>
+</div>
 <a id="ac9d5d9f69e451cac203ad9597762bf4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9d5d9f69e451cac203ad9597762bf4d">&#9670;&nbsp;</a></span>GetUuid() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d5d9f69e451cac203ad9597762bf4d">&#9670;&nbsp;</a></span>GetUuid() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +202,55 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unique identifier for this device </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>As of 11.1. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#a165046c369fdfb2fe7a1f9de6662c0fe">GetUuid(Context,UuidHandler)</a>. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>11.0 </dd></dl>
+
+</div>
+</div>
+<a id="a165046c369fdfb2fe7a1f9de6662c0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a165046c369fdfb2fe7a1f9de6662c0fe">&#9670;&nbsp;</a></span>GetUuid() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String com.speedify.speedifysdk.UuidProvider.GetUuid </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider_1_1_uuid_handler.html">UuidHandler</a>&#160;</td>
+          <td class="paramname"><em>handlerCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the UUID of the device, possibly asynchronously. </p>
+<p>Note that the return may be null or empty, as querying Play Services is asynchronous. The callback will be called when the uuid is available. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context to load uuid </td></tr>
+    <tr><td class="paramname">handlerCallback</td><td>callback with uuid, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unique identifier for this device </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>

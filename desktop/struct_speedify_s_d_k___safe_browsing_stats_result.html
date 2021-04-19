@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.0.1</span>
+   &#160;<span id="projectnumber">11.1.0</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,15 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a6d697de11a9469021154b14d12f6e37d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___safe_browsing_stats_result.html#a6d697de11a9469021154b14d12f6e37d">failureRate</a></td></tr>
 <tr class="memdesc:a6d697de11a9469021154b14d12f6e37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lookup failure rate.  <a href="#a6d697de11a9469021154b14d12f6e37d">More...</a><br /></td></tr>
 <tr class="separator:a6d697de11a9469021154b14d12f6e37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db58041cc8def67e307cf7f97edb841"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___safe_browsing_stats_result.html#a8db58041cc8def67e307cf7f97edb841">numBlockResponses</a></td></tr>
+<tr class="memdesc:a8db58041cc8def67e307cf7f97edb841"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of server responses requesting the SDK block or redirect the connection.  <a href="#a8db58041cc8def67e307cf7f97edb841">More...</a><br /></td></tr>
+<tr class="separator:a8db58041cc8def67e307cf7f97edb841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a6ad35425b394c1f77c5a86938c868"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___safe_browsing_stats_result.html#ad8a6ad35425b394c1f77c5a86938c868">numLookups</a></td></tr>
+<tr class="memdesc:ad8a6ad35425b394c1f77c5a86938c868"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of completed requests to the safe browsing server.  <a href="#ad8a6ad35425b394c1f77c5a86938c868">More...</a><br /></td></tr>
+<tr class="separator:ad8a6ad35425b394c1f77c5a86938c868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea411a7c6f7504e531c6768425bd427"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___safe_browsing_stats_result.html#aeea411a7c6f7504e531c6768425bd427">numPacketsFiltered</a></td></tr>
+<tr class="memdesc:aeea411a7c6f7504e531c6768425bd427"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of safe browsing filtered packets.  <a href="#aeea411a7c6f7504e531c6768425bd427">More...</a><br /></td></tr>
+<tr class="separator:aeea411a7c6f7504e531c6768425bd427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a02ad92dfd79561a810aa7bb26482984e"></a>
@@ -245,6 +254,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a8db58041cc8def67e307cf7f97edb841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db58041cc8def67e307cf7f97edb841">&#9670;&nbsp;</a></span>numBlockResponses</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SpeedifySDK_SafeBrowsingStatsResult::numBlockResponses</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The number of server responses requesting the SDK block or redirect the connection. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+
+</div>
+</div>
 <a id="a75059aececebfeb2096ebd632c589036"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75059aececebfeb2096ebd632c589036">&#9670;&nbsp;</a></span>numBlocks</h2>
 
@@ -276,6 +302,40 @@ Data Fields</h2></td></tr>
 
 <p>The number of safe browsing errors. </p>
 <dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
+
+</div>
+</div>
+<a id="ad8a6ad35425b394c1f77c5a86938c868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a6ad35425b394c1f77c5a86938c868">&#9670;&nbsp;</a></span>numLookups</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SpeedifySDK_SafeBrowsingStatsResult::numLookups</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The number of completed requests to the safe browsing server. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+
+</div>
+</div>
+<a id="aeea411a7c6f7504e531c6768425bd427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea411a7c6f7504e531c6768425bd427">&#9670;&nbsp;</a></span>numPacketsFiltered</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SpeedifySDK_SafeBrowsingStatsResult::numPacketsFiltered</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The number of safe browsing filtered packets. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
 
 </div>
 </div>

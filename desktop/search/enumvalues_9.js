@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['sn_5foverride_5fnone',['SN_OVERRIDE_NONE',['../types_8h.html#a640cd287e9ab0198f00cf4dc75771504a45428df4eef153003d6497b4c33e39f4',1,'types.h']]],
+  ['sn_5foverride_5fsafe',['SN_OVERRIDE_SAFE',['../types_8h.html#a640cd287e9ab0198f00cf4dc75771504a70d5e47b28419d124cf2f6b3d013465e',1,'types.h']]],
+  ['sn_5foverride_5funsafe',['SN_OVERRIDE_UNSAFE',['../types_8h.html#a640cd287e9ab0198f00cf4dc75771504a676371f7bfee5890d5feb06fdd709a31',1,'types.h']]],
   ['state_5fauto_5fconnecting',['STATE_AUTO_CONNECTING',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a49e04ca25b83812a21e1e59879e46ed1',1,'types.h']]],
   ['state_5fconnected',['STATE_CONNECTED',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a5b0f1cbce9b9f72772747cdedfc7b8e1',1,'types.h']]],
   ['state_5fconnecting',['STATE_CONNECTING',['../group___t_y_p_e_s.html#ggaa7c8c7559160aeec64a6625079ac4ee0a28b97e301232f1b841d146187844c7a5',1,'types.h']]],

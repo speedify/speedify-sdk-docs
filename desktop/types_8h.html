@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.0.1</span>
+   &#160;<span id="projectnumber">11.1.0</span>
    </div>
   </td>
  </tr>
@@ -384,12 +384,15 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3cad584a24dfb54178ad9e4293c97fd1550">CUJO_ERR_INVALID_NSP_TOKEN</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3cade07cc0374b4b23b253fcc0ec37bcda4">CUJO_ERR_ON_PROTECTED_NETWORK</a>, 
-<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca87b974b08a244afd4915d08f7b7cdaa2">CUJO_ERR</a>, 
-<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca6b57c57b0796e04a3d140b627e4064b7">CUJO_ERR_CUJO_SERVER_ERROR</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3caf325937991572e78a30ece0bea718e69">CUJO_ERR_ASYNC_INIT_FAILURE</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca95bdfe312690c2f2a1a1022835f50f53">CUJO_ERR_INTERRUPTED_EVENT_LOOP</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3caf1e79c76f8e99aa43396e7adf54063d0">CUJO_ERR_CLIENT_UNAUTHORIZED</a>, 
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca87b974b08a244afd4915d08f7b7cdaa2">CUJO_ERR</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca6b57c57b0796e04a3d140b627e4064b7">CUJO_ERR_CUJO_SERVER_ERROR</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3caf1e79c76f8e99aa43396e7adf54063d0">CUJO_ERR_CLIENT_UNAUTHORIZED</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3cadff68080a952b206e167291d7d7ea8b6">CUJO_ERR_CLIENT_FORBIDDEN</a>, 
-<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca44d1f6b5cdeac3465e92d4f062301d32">CUJO_ERR_CLIENT_RESOURCE_NOT_FOUND</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca44d1f6b5cdeac3465e92d4f062301d32">CUJO_ERR_CLIENT_RESOURCE_NOT_FOUND</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca9f8c211952568e2d585bbd9372bbc801">CUJO_ERR_CLIENT_SENT_BAD_REQUEST</a>
 <br />
  }</td></tr>
@@ -401,6 +404,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad2de182c4b58b299104638840d48e186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log levels in the SDK.  <a href="types_8h.html#ad2de182c4b58b299104638840d48e186">More...</a><br /></td></tr>
 <tr class="separator:ad2de182c4b58b299104638840d48e186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640cd287e9ab0198f00cf4dc75771504"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504">SpeedifySDK_SafeBrowsingSafeNetworkOverride</a> { <a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504a45428df4eef153003d6497b4c33e39f4">SN_OVERRIDE_NONE</a>, 
+<a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504a676371f7bfee5890d5feb06fdd709a31">SN_OVERRIDE_UNSAFE</a>, 
+<a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504a70d5e47b28419d124cf2f6b3d013465e">SN_OVERRIDE_SAFE</a>
+ }</td></tr>
+<tr class="memdesc:a640cd287e9ab0198f00cf4dc75771504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override safe network decisions.  <a href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504">More...</a><br /></td></tr>
+<tr class="separator:a640cd287e9ab0198f00cf4dc75771504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -467,6 +476,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga9841624fb8d0ec1f6393304bc422b2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80730d9499ef801f90796f586ce4e3ea"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a80730d9499ef801f90796f586ce4e3ea">SpeedifySDK_SafeBrowsing_LogLevel_toString</a> (<a class="el" href="types_8h.html#ad2de182c4b58b299104638840d48e186">SpeedifySDK_SafeBrowsingLogLevel</a> level)</td></tr>
 <tr class="separator:a80730d9499ef801f90796f586ce4e3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d1ba4e7a8d8ec3f17fa01f37a468e6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a65d1ba4e7a8d8ec3f17fa01f37a468e6">SpeedifySDK_SafeBrowsing_SafeNetworkOverride_toString</a> (<a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504">SpeedifySDK_SafeBrowsingSafeNetworkOverride</a> level)</td></tr>
+<tr class="separator:a65d1ba4e7a8d8ec3f17fa01f37a468e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ad2de182c4b58b299104638840d48e186"></a>
@@ -491,6 +502,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a640cd287e9ab0198f00cf4dc75771504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a640cd287e9ab0198f00cf4dc75771504">&#9670;&nbsp;</a></span>SpeedifySDK_SafeBrowsingSafeNetworkOverride</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504">SpeedifySDK_SafeBrowsingSafeNetworkOverride</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Override safe network decisions. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a640cd287e9ab0198f00cf4dc75771504a45428df4eef153003d6497b4c33e39f4"></a>SN_OVERRIDE_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a640cd287e9ab0198f00cf4dc75771504a676371f7bfee5890d5feb06fdd709a31"></a>SN_OVERRIDE_UNSAFE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a640cd287e9ab0198f00cf4dc75771504a70d5e47b28419d124cf2f6b3d013465e"></a>SN_OVERRIDE_SAFE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a80730d9499ef801f90796f586ce4e3ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80730d9499ef801f90796f586ce4e3ea">&#9670;&nbsp;</a></span>SpeedifySDK_SafeBrowsing_LogLevel_toString()</h2>
@@ -502,6 +535,24 @@ Functions</h2></td></tr>
           <td class="memname">const char* SpeedifySDK_SafeBrowsing_LogLevel_toString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#ad2de182c4b58b299104638840d48e186">SpeedifySDK_SafeBrowsingLogLevel</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65d1ba4e7a8d8ec3f17fa01f37a468e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d1ba4e7a8d8ec3f17fa01f37a468e6">&#9670;&nbsp;</a></span>SpeedifySDK_SafeBrowsing_SafeNetworkOverride_toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SpeedifySDK_SafeBrowsing_SafeNetworkOverride_toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504">SpeedifySDK_SafeBrowsingSafeNetworkOverride</a>&#160;</td>
           <td class="paramname"><em>level</em></td><td>)</td>
           <td></td>
         </tr>

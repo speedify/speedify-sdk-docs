@@ -9,6 +9,7 @@ var searchData=
   ['allowtunnelbypass',['allowTunnelBypass',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a09696181c8282bf329ec9499ada742fb',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['already_5fin_5fprogress',['ALREADY_IN_PROGRESS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#af118b728c0440a8274fb5d7391452587',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['always',['ALWAYS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a91776f0b98e54fefcb4ef24fe6e59f5b',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
+  ['async_5finit_5ffailure',['ASYNC_INIT_FAILURE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#af2ddebd2f2035859a19f258cd35d10f6',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['auto',['AUTO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd',1,'com::speedify::speedifysdk::Types::TransportMode']]],
   ['auto_5fconnecting',['AUTO_CONNECTING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a05b5a305aebbbe7abcb77ea003cbbe96',1,'com::speedify::speedifysdk::Types::State']]],
   ['averagedownloadspeed',['averageDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2dd660dc84a6db3f734925dbcd0bae9f',1,'com::speedify::speedifysdk::Types::StreamStats']]],

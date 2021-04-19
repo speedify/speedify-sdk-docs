@@ -8,6 +8,7 @@ var searchData=
   ['settings',['settings',['../struct_speedify_s_d_k___settings_result.html#a8e51651fe0d2b1eb0556604510112c9a',1,'SpeedifySDK_SettingsResult']]],
   ['settingsjson',['settingsJson',['../struct_speedify_s_d_k___vendor_settings_result.html#ab0b8af602adba4ad42d9f38386411667',1,'SpeedifySDK_VendorSettingsResult']]],
   ['sleeping',['sleeping',['../struct_speedify_s_d_k___connection_stats.html#a85465e681022a375efd1d0da63088cee',1,'SpeedifySDK_ConnectionStats']]],
+  ['snoverride',['snOverride',['../struct_speedify_s_d_k___safe_browsing_result.html#a60f4b458bca38d050e2593b54f0a2158',1,'SpeedifySDK_SafeBrowsingResult']]],
   ['sockets',['sockets',['../struct_speedify_s_d_k___per_connection_parallel_sockets.html#a1b5c2981bcdd82702a3c0a2b0f18f444',1,'SpeedifySDK_PerConnectionParallelSockets']]],
   ['speedmodesaves',['speedModeSaves',['../struct_speedify_s_d_k___stream_stats.html#a34321423add905a84b7f35b294a9e1c0',1,'SpeedifySDK_StreamStats']]],
   ['starttime',['startTime',['../struct_speedify_s_d_k___stream_stats.html#a3d6ff70ca5fdf973ad195ee72f0e7e2a',1,'SpeedifySDK_StreamStats']]],

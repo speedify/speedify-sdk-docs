@@ -86,6 +86,9 @@
                 <a href="../Enums.html#/s:11speedifysdk20SafeBrowsingLogLevelO">SafeBrowsingLogLevel</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk012SafeBrowsingB15NetworkOverrideO">SafeBrowsingSafeNetworkOverride</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
               </li>
               <li class="nav-group-task">
@@ -3775,6 +3778,70 @@ Please add the following key to the Container and PacketTunnel info.plist
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)setOnDemandWithRulesWith:onDemandEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setOnDemandWithRules(with:onDemandEnabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)setOnDemandWithRulesWith:onDemandEnabled:">setOnDemandWithRules(with:<wbr>onDemandEnabled:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggles VPN On Demand.
+When On Demand is on, the operating system will automatically reconnect the VPN whenever internet is available.  This setting persists across reboots (so if you set it on, the device will automatically reconnect the VPN after reboot).</p>
+
+<ul>
+<li>@since 11.1</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setOnDemandWithRules</span><span class="p">(</span><span class="n">with</span> <span class="nv">onDemandRules</span><span class="p">:</span> <span class="p">[</span><span class="kt">NEOnDemandRule</span><span class="p">]?,</span> <span class="nv">onDemandEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onDemandRules</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>OnDemand Connect or Disconnect rules</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onDemandEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Boolean that toggles the VPN onDemand feature.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC17isOnDemandEnabledSbyF"></a>
                     <a name="//apple_ref/swift/Method/isOnDemandEnabled()" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC17isOnDemandEnabledSbyF">isOnDemandEnabled()</a>
@@ -4076,6 +4143,69 @@ Triggers {@link ISpeedifyHandler#OnStreamingSettings OnStreamingSettings}.
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC17startSafeBrowsing04safeE6ConfigySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/startSafeBrowsing(safeBrowsingConfig:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17startSafeBrowsing04safeE6ConfigySS_tF">startSafeBrowsing(safeBrowsingConfig:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Start Safe Browsing. Wrapper for initSafeBrowsing and setSafeBrowsingEnabled.</li>
+<li>If initialized and enabled available from <code>safebrowsingDelegate</code>.</li>
+<li>After this call Safe Browsing is initialized and enabled.</li>
+<li>@since future</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startSafeBrowsing</span><span class="p">(</span><span class="nv">safeBrowsingConfig</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC16stopSafeBrowsingyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopSafeBrowsing()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16stopSafeBrowsingyyF">stopSafeBrowsing()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Terminate Safe Browsing. Wrapper for initSafeBrowsing and setSafeBrowsingEnabled
+After this call Safe Browsing is not initialized, and disabled
+If initialized and enabled available from <code>safebrowsingDelegate</code>.
+@since future</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopSafeBrowsing</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC16initSafeBrowsing04safeE6ConfigySS_tF"></a>
                     <a name="//apple_ref/swift/Method/initSafeBrowsing(safeBrowsingConfig:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC16initSafeBrowsing04safeE6ConfigySS_tF">initSafeBrowsing(safeBrowsingConfig:<wbr>)</a>
@@ -4090,6 +4220,7 @@ Triggers {@link ISpeedifyHandler#OnStreamingSettings OnStreamingSettings}.
 <ul>
 <li>Initialize Safe Browsing library</li>
 <li>If initialized available from <code>safebrowsingDelegate</code>.</li>
+<li>Call with empty string to terminate safe browsing, and reset initialized state (@since future)</li>
 <li>@since 10.6</li>
 </ul>
 
@@ -4218,8 +4349,10 @@ Triggers {@link ISpeedifyHandler#OnStreamingSettings OnStreamingSettings}.
                         <p>Report the current connected network is a home network
 If current network is Safe Browsing protected, ON_PROTECTED_NETWORK
 will be returned from SpeedifySafeBrowsingDelegate connectErrorReported(connectError:SafeBrowsingConnectError),
-and a disconnect will occur.
-Otherwise, triggers SpeedifySafeBrowsingDelegate safeBrowsingSettingsDidUpdate(settings: SafeBrowsingSettings).
+and a disconnect will occur. If current network is not protected, will return OK. May also return any
+other error type in case of error.
+(Deprecated @since future) Used to trigger
+SpeedifySafeBrowsingDelegate safeBrowsingSettingsDidUpdate(settings: SafeBrowsingSettings).
 @since 11.0</p>
 
                       </div>
@@ -4260,6 +4393,39 @@ Otherwise, triggers SpeedifySafeBrowsingDelegate safeBrowsingSettingsDidUpdate(s
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingLogLevel</span><span class="p">(</span><span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/s:11speedifysdk20SafeBrowsingLogLevelO">SafeBrowsingLogLevel</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC015setSafeBrowsingD15NetworkOverride02snG0yAA0dedfG0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/setSafeBrowsingSafeNetworkOverride(snOverride:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC015setSafeBrowsingD15NetworkOverride02snG0yAA0dedfG0O_tF">setSafeBrowsingSafeNetworkOverride(snOverride:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Override the safe network decision</li>
+<li>This setting overrides the safe/unsafe network decision made by the SDK when calling reportSafeBrowsingHomeNetwork().</li>
+<li>Current value available <code>safebrowsingDelegate</code>.</li>
+<li>@since future</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSafeBrowsingSafeNetworkOverride</span><span class="p">(</span><span class="nv">snOverride</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/s:11speedifysdk012SafeBrowsingB15NetworkOverrideO">SafeBrowsingSafeNetworkOverride</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

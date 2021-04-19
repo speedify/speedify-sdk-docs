@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.0.1</span>
+   &#160;<span id="projectnumber">11.1.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,17 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1101"></a>Speedify SDK for Android 11.0.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1110"></a>Speedify SDK for Android 11.1 </h2>
+<ul>
+<li><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd">AUTO</a> transport mode now automatically scales the number of tcp sockets it uses, providing better performance.</li>
+<li>It is now possible to receive SDK callback methods of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a> from the background process (:vpnservice), in addition to the main process. To enable this, set <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aad4135515ed9fb3ea443995337e1043d">EnableSDKHandlerFromBackground</a> to true prior to initializing the SDK.</li>
+<li>Application packages can now be specified to use the local proxy, via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a308329fb6d8258fcd4b8f5a36a939322">setLocalProxyPackages</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#abc5caa1b141644cb3a427c5389d7f67a">proxiedPackages</a> the member in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1a4da4aa940649ebfdc7e744b2be7c8b">setLocalProxyDomainWatchlist</a>.</li>
+<li>Deprecations<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#a1190e4bee06382174576a878c64fbdff">GetUuid()</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#ac9d5d9f69e451cac203ad9597762bf4d">GetUuid(UuidHandler)</a> - These methods now take a context, so that they may be called prior to initialization of a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html">SpeedifySDK</a> object. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#af92466573fd17b4947552c73adcef636">GetUuid(Context)</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#a165046c369fdfb2fe7a1f9de6662c0fe">GetUuid(Context,UuidHandler)</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1101"></a>Speedify SDK for Android 11.0.1 </h2>
 <ul>
 <li>No new features. This is a stability release.</li>
 </ul>
