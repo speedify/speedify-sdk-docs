@@ -14,6 +14,7 @@ var searchData=
   ['sessionstatperiods',['SessionStatPeriods',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html',1,'com::speedify::speedifysdk::Types']]],
   ['sessionstats',['SessionStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html',1,'com::speedify::speedifysdk::Types']]],
   ['settings',['Settings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html',1,'com::speedify::speedifysdk::Types']]],
+  ['settingslockreason',['SettingsLockReason',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings_lock_reason.html',1,'com::speedify::speedifysdk::Types']]],
   ['speedifyhandler',['SpeedifyHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html',1,'com::speedify::speedifysdk']]],
   ['speedifysdk',['SpeedifySDK',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html',1,'com::speedify::speedifysdk']]],
   ['speedtestresultdata',['SpeedTestResultData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html',1,'com::speedify::speedifysdk::Types']]],

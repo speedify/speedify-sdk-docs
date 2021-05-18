@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.1.1</span>
+   &#160;<span id="projectnumber">11.2.0</span>
    </div>
   </td>
  </tr>
@@ -342,6 +342,9 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 <tr class="memitem:gaef3f39b63ff31b5adb5c9621bb6da4eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaef3f39b63ff31b5adb5c9621bb6da4eb">SpeedifySDK_SetLocalProxyIPv4</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, struct in_addr *ipv4, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaef3f39b63ff31b5adb5c9621bb6da4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv4 address to proxy locally, instead of going through the VPN. IP addresses should be in network byte order.  <a href="#gaef3f39b63ff31b5adb5c9621bb6da4eb">More...</a><br /></td></tr>
 <tr class="separator:gaef3f39b63ff31b5adb5c9621bb6da4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30f80f79eb22d78261022c1e728f7f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga30f80f79eb22d78261022c1e728f7f6c">SpeedifySDK_SetLocalProxyIPv6</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, struct in6_addr *ipv6, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga30f80f79eb22d78261022c1e728f7f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv6 address to proxy locally, instead of going through the VPN. IP addresses should be in network byte order.  <a href="#ga30f80f79eb22d78261022c1e728f7f6c">More...</a><br /></td></tr>
+<tr class="separator:ga30f80f79eb22d78261022c1e728f7f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbb20259225196d9884d8b65994f7c70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gafbb20259225196d9884d8b65994f7c70">SpeedifySDK_SetLocalProxyPorts</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="group___t_y_p_e_s.html#ga4f739c4c25fcfc2476a0631e1d610cad">SpeedifySDK_LocalProxyPort</a> *ports, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gafbb20259225196d9884d8b65994f7c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ports to proxy locally, instead of going through the VPN. Ports should be in host byte order.  <a href="#gafbb20259225196d9884d8b65994f7c70">More...</a><br /></td></tr>
 <tr class="separator:gafbb20259225196d9884d8b65994f7c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,8 +427,11 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 <tr class="memdesc:gabcf6e4eb43562a052c53553be2fc4a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the NSP token. Only call if previous token has become invalid, as told through receiving a CUJO_ERR_INVALID_NSP_TOKEN error. If connecting to safebrowsing for the first time with a token, use the SpeedifySDK_InitSafeBrowsing call.  <a href="#gabcf6e4eb43562a052c53553be2fc4a4f">More...</a><br /></td></tr>
 <tr class="separator:gabcf6e4eb43562a052c53553be2fc4a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4718443f9cd5d253f4c372f9fb54ddd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___safe_browsing_result.html">SpeedifySDK_SafeBrowsingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaf4718443f9cd5d253f4c372f9fb54ddd">SpeedifySDK_ReportSafeBrowsingHomeNetwork</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gab1521738e91f61e12491a7f48820d0b2">SpeedifySDK_SafeBrowsingCallback</a> cb, void *userData)</td></tr>
-<tr class="memdesc:gaf4718443f9cd5d253f4c372f9fb54ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network. If current network is Safe Browsing protected, CUJO_ERR_ON_PROTECTED_NETWORK will be returned, and a disconnect will occur.  <a href="#gaf4718443f9cd5d253f4c372f9fb54ddd">More...</a><br /></td></tr>
+<tr class="memdesc:gaf4718443f9cd5d253f4c372f9fb54ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network. Use default retry/delay/timeout values If current network is Safe Browsing protected, CUJO_ERR_ON_PROTECTED_NETWORK will be returned.  <a href="#gaf4718443f9cd5d253f4c372f9fb54ddd">More...</a><br /></td></tr>
 <tr class="separator:gaf4718443f9cd5d253f4c372f9fb54ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga721c3aaa27ef7be9da550f25d5f487ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___safe_browsing_result.html">SpeedifySDK_SafeBrowsingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga721c3aaa27ef7be9da550f25d5f487ce">SpeedifySDK_ReportSafeBrowsingHomeNetworkWithParameters</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint32_t retries, uint64_t delay, uint64_t timeout, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gab1521738e91f61e12491a7f48820d0b2">SpeedifySDK_SafeBrowsingCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga721c3aaa27ef7be9da550f25d5f487ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network. If current network is Safe Browsing protected, CUJO_ERR_ON_PROTECTED_NETWORK will be returned.  <a href="#ga721c3aaa27ef7be9da550f25d5f487ce">More...</a><br /></td></tr>
+<tr class="separator:ga721c3aaa27ef7be9da550f25d5f487ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17eb74aeb1f4e6ecc857890120c2a5b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___safe_browsing_result.html">SpeedifySDK_SafeBrowsingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga17eb74aeb1f4e6ecc857890120c2a5b7">SpeedifySDK_SetSafeBrowsingSafeNetworkOverride</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504">SpeedifySDK_SafeBrowsingSafeNetworkOverride</a> snOverride, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gab1521738e91f61e12491a7f48820d0b2">SpeedifySDK_SafeBrowsingCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga17eb74aeb1f4e6ecc857890120c2a5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the safe network decision. This setting overrides the safe/unsafe network decision made by the SDK when calling SpeedifySDK_ReportSafeBrowsingHomeNetwork.  <a href="#ga17eb74aeb1f4e6ecc857890120c2a5b7">More...</a><br /></td></tr>
 <tr class="separator:ga17eb74aeb1f4e6ecc857890120c2a5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3481,7 +3487,8 @@ An expired access token will give an error of type <a class="el" href="group___t
       </table>
 </div><div class="memdoc">
 
-<p>Report the current connected network is a home network. If current network is Safe Browsing protected, CUJO_ERR_ON_PROTECTED_NETWORK will be returned, and a disconnect will occur. </p>
+<p>Report the current connected network is a home network. Use default retry/delay/timeout values If current network is Safe Browsing protected, CUJO_ERR_ON_PROTECTED_NETWORK will be returned. </p>
+<dl class="section since"><dt>Since</dt><dd>11.2 A disconnect will not occur. In previous versions, this may cause a disconnect if on a protected network </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
@@ -3492,6 +3499,73 @@ An expired access token will give an error of type <a class="el" href="group___t
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>safe browsing result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>11.0 </dd></dl>
+
+</div>
+</div>
+<a id="ga721c3aaa27ef7be9da550f25d5f487ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga721c3aaa27ef7be9da550f25d5f487ce">&#9670;&nbsp;</a></span>SpeedifySDK_ReportSafeBrowsingHomeNetworkWithParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___safe_browsing_result.html">SpeedifySDK_SafeBrowsingResult</a> SpeedifySDK_ReportSafeBrowsingHomeNetworkWithParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>retries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>delay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gab1521738e91f61e12491a7f48820d0b2">SpeedifySDK_SafeBrowsingCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report the current connected network is a home network. If current network is Safe Browsing protected, CUJO_ERR_ON_PROTECTED_NETWORK will be returned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">retries</td><td>Number of times to retry report in event of error </td></tr>
+    <tr><td class="paramname">delay</td><td>Delay between retries (ms) </td></tr>
+    <tr><td class="paramname">timeout</td><td>Retry timeout (ms) </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>safe browsing result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
 
 </div>
 </div>
@@ -5857,6 +5931,66 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 
 </div>
 </div>
+<a id="ga30f80f79eb22d78261022c1e728f7f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30f80f79eb22d78261022c1e728f7f6c">&#9670;&nbsp;</a></span>SpeedifySDK_SetLocalProxyIPv6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a> SpeedifySDK_SetLocalProxyIPv6 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct in6_addr *&#160;</td>
+          <td class="paramname"><em>ipv6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set IPv6 address to proxy locally, instead of going through the VPN. IP addresses should be in network byte order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">count</td><td>number of domain objects </td></tr>
+    <tr><td class="paramname">ipv6</td><td>ipv6 addresses to redirect through the local proxy </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>local proxy result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
+
+</div>
+</div>
 <a id="ga6ef89cc596dbb5ba7d30e917f5a66461"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6ef89cc596dbb5ba7d30e917f5a66461">&#9670;&nbsp;</a></span>SpeedifySDK_SetLocalProxyMatchMode()</h2>
 
@@ -6436,7 +6570,7 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>safe browsing result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>
@@ -6888,7 +7022,7 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>safe browsing result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>
@@ -6980,7 +7114,7 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>safe browsing result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>

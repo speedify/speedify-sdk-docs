@@ -16,7 +16,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (73% documented)</p>
+        <p><a href="index.html"> Docs</a> (74% documented)</p>
         <p class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -86,6 +86,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums.html#/s:11speedifysdk012SafeBrowsingB15NetworkOverrideO">SafeBrowsingSafeNetworkOverride</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SettingsLockReason.html">SettingsLockReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
@@ -324,7 +327,13 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
-<h3 id='strong-speedify-11-01-strong' class='heading'><strong>Speedify 11.01</strong></h3>
+<h3 id='strong-speedify-11-2-strong' class='heading'><strong>Speedify 11.2</strong></h3>
+
+<ul>
+<li>New Full IPv6 support through the tunnel, including firewall and local proxy including functions <code>setLocalProxyIPv6</code></li>
+<li>New ability to subscribe to events in the extension <code>enableEventUpdates</code>. Currently only <code>streamingStats</code> is supported</li>
+</ul>
+<h3 id='strong-speedify-11-0-1-strong' class='heading'><strong>Speedify 11.0.1</strong></h3>
 
 <ul>
 <li>New function <code>func setOnDemandWithRules(with onDemandRules:[NEOnDemandRule]?, onDemandEnabled: Bool)</code> to allow onDemand rules to be set on the fly.</li>
@@ -482,8 +491,8 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <h4 id='code-streamingstats-code-has-new-property-fields' class='heading'><code><a href="Structs/StreamingStats.html">StreamingStats</a></code> has new property fields</h4>
 
 <ul>
-<li><code>totalRedundantSaves</code> - Total number of redundant saves per session. Please see <code><a href="Structs/StreamStats.html#/s:11speedifysdk11StreamStatsV14redundantSavesSdvp">StreamStats.redundantSaves</a></code></li>
-<li><code>totalSpeedSaves</code> - Total number of speed saves per session. Please see <code><a href="Structs/StreamStats.html#/s:11speedifysdk11StreamStatsV10speedSavesSdvp">StreamStats.speedSaves</a></code></li>
+<li><code>totalRedundantSaves</code> - Total number of redundant saves per session. Please see <code><a href="Structs/StreamStats.html#/s:11speedifysdk11StreamStatsV14redundantSavess6UInt64Vvp">StreamStats.redundantSaves</a></code></li>
+<li><code>totalSpeedSaves</code> - Total number of speed saves per session. Please see <code><a href="Structs/StreamStats.html#/s:11speedifysdk11StreamStatsV10speedSavess6UInt64Vvp">StreamStats.speedSaves</a></code></li>
 <li><code>totalStreams</code> - Total number of streams per session</li>
 <li><code>uniqueSaves</code> -  A stream can be saved multiple times, but the unique save count will only go up by one
 #### Function changes</li>

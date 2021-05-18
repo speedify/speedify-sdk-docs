@@ -17,7 +17,7 @@
     <a title="Speedify Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (73% documented)</p>
+        <p><a href="../index.html"> Docs</a> (74% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -87,6 +87,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/s:11speedifysdk012SafeBrowsingB15NetworkOverrideO">SafeBrowsingSafeNetworkOverride</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
@@ -638,8 +641,11 @@ This checks the app extension state for</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@method profileIncludesAllRoutes:
- This checks the current profiles value for it&rsquo;s protocol configuration&rsquo;s key <code>includesAllNetworks</code></p>
+                        
+<ul>
+<li>@method profileIncludesAllRoutes:
+This checks the current profiles value for it&rsquo;s protocol configuration&rsquo;s key <code>includesAllNetworks</code></li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -2286,6 +2292,160 @@ Triggers delegate localProxySettingsDidUpdate
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22setLocalProxyWatchList06domainfG0yAA0de6DomainfG4ItemV_tF"></a>
+                    <a name="//apple_ref/swift/Method/setLocalProxyWatchList(domainWatchList:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setLocalProxyWatchList06domainfG0yAA0de6DomainfG4ItemV_tF">setLocalProxyWatchList(domainWatchList:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set domain watchlist settings for the local proxy
+If connected, this triggers a reconnect.
+Triggers delegate localProxySettingsDidUpdate
+@param domainWatchlist domain watchlist items
+@since 11.2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocalProxyWatchList</span><span class="p">(</span><span class="nv">domainWatchList</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20setLocalProxyEnabled7enabledySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/setLocalProxyEnabled(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20setLocalProxyEnabled7enabledySb_tF">setLocalProxyEnabled(enabled:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables or disables the local proxy.</p>
+
+<ul>
+<li>@param enabled enable the local proxy</li>
+<li>Triggers delegate localProxySettingsDidUpdate</li>
+<li>@since 11.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocalProxyEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22setLocalProxyMatchMode05matchG0yAA0efG0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/setLocalProxyMatchMode(matchMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setLocalProxyMatchMode05matchG0yAA0efG0O_tF">setLocalProxyMatchMode(matchMode:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the match mode used by the local proxy.
+@param matchMode how matches are treated
+Triggers delegate localProxySettingsDidUpdate
+@since 11.2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocalProxyMatchMode</span><span class="p">(</span><span class="nv">matchMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20setLocalProxyDomains7domainsySaySSG_tF"></a>
+                    <a name="//apple_ref/swift/Method/setLocalProxyDomains(domains:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20setLocalProxyDomains7domainsySaySSG_tF">setLocalProxyDomains(domains:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set domains to proxy locally, instead of going through the VPN.
+@param domains domain names to redirect through the local proxy
+Triggers LocalProxySettingsDelegate.
+@since 11.2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocalProxyDomains</span><span class="p">(</span><span class="nv">domains</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC17setLocalProxyIPv44ipv4ySaySSG_tF"></a>
+                    <a name="//apple_ref/swift/Method/setLocalProxyIPv4(ipv4:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17setLocalProxyIPv44ipv4ySaySSG_tF">setLocalProxyIPv4(ipv4:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set IPv4 address to proxy locally, instead of going through the VPN.
+@param ipv4 ipv4 addresses to redirect through the local proxy
+Triggers delegate localProxySettingsDidUpdate
+@since 11.2</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocalProxyIPv4</span><span class="p">(</span><span class="nv">ipv4</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC15setFirewallIPv44ipv4ySaySSG_tF"></a>
                     <a name="//apple_ref/swift/Method/setFirewallIPv4(ipv4:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC15setFirewallIPv44ipv4ySaySSG_tF">setFirewallIPv4(ipv4:<wbr>)</a>
@@ -3178,6 +3338,33 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshHistoricalConnectionStats</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt">ConnectionStatsGroup</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC18enableEventUpdates7enabledySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/enableEventUpdates(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18enableEventUpdates7enabledySb_tF">enableEventUpdates(enabled:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This allows the extension to request supported event updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enableEventUpdates</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4158,7 +4345,7 @@ Triggers {@link ISpeedifyHandler#OnStreamingSettings OnStreamingSettings}.
 <li>Start Safe Browsing. Wrapper for initSafeBrowsing and setSafeBrowsingEnabled.</li>
 <li>If initialized and enabled available from <code>safebrowsingDelegate</code>.</li>
 <li>After this call Safe Browsing is initialized and enabled.</li>
-<li>@since future</li>
+<li>@since 11.1</li>
 </ul>
 
                       </div>
@@ -4189,7 +4376,7 @@ Triggers {@link ISpeedifyHandler#OnStreamingSettings OnStreamingSettings}.
                         <p>Terminate Safe Browsing. Wrapper for initSafeBrowsing and setSafeBrowsingEnabled
 After this call Safe Browsing is not initialized, and disabled
 If initialized and enabled available from <code>safebrowsingDelegate</code>.
-@since future</p>
+@since 11.1</p>
 
                       </div>
                       <div class="declaration">
@@ -4220,7 +4407,7 @@ If initialized and enabled available from <code>safebrowsingDelegate</code>.
 <ul>
 <li>Initialize Safe Browsing library</li>
 <li>If initialized available from <code>safebrowsingDelegate</code>.</li>
-<li>Call with empty string to terminate safe browsing, and reset initialized state (@since future)</li>
+<li>Call with empty string to terminate safe browsing, and reset initialized state (@since 11.1)</li>
 <li>@since 10.6</li>
 </ul>
 
@@ -4336,9 +4523,9 @@ If initialized and enabled available from <code>safebrowsingDelegate</code>.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk8SpeedifyC29reportSafeBrowsingHomeNetworkyyF"></a>
-                    <a name="//apple_ref/swift/Method/reportSafeBrowsingHomeNetwork()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC29reportSafeBrowsingHomeNetworkyyF">reportSafeBrowsingHomeNetwork()</a>
+                    <a name="/s:11speedifysdk8SpeedifyC29reportSafeBrowsingHomeNetwork7retries5delay7timeoutys6UInt32V_s6UInt64VAKtF"></a>
+                    <a name="//apple_ref/swift/Method/reportSafeBrowsingHomeNetwork(retries:delay:timeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC29reportSafeBrowsingHomeNetwork7retries5delay7timeoutys6UInt32V_s6UInt64VAKtF">reportSafeBrowsingHomeNetwork(retries:<wbr>delay:<wbr>timeout:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -4346,21 +4533,26 @@ If initialized and enabled available from <code>safebrowsingDelegate</code>.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Report the current connected network is a home network
-If current network is Safe Browsing protected, ON_PROTECTED_NETWORK
-will be returned from SpeedifySafeBrowsingDelegate connectErrorReported(connectError:SafeBrowsingConnectError),
-and a disconnect will occur. If current network is not protected, will return OK. May also return any
-other error type in case of error.
-(Deprecated @since future) Used to trigger
-SpeedifySafeBrowsingDelegate safeBrowsingSettingsDidUpdate(settings: SafeBrowsingSettings).
-@since 11.0</p>
+                        
+<ul>
+<li>Report the current connected network is a home network</li>
+<li>If current network is Safe Browsing protected, ON_PROTECTED_NETWORK</li>
+<li>will be returned from SpeedifySafeBrowsingDelegate connectErrorReported(connectError:SafeBrowsingConnectError)</li>
+<li>If current network is not protected, will return OK. May also return any</li>
+<li>other error type in case of error.</li>
+<li>(Deprecated @since 11.1) Used to trigger</li>
+<li>SpeedifySafeBrowsingDelegate safeBrowsingSettingsDidUpdate(settings: SafeBrowsingSettings).</li>
+<li>@since 11.2 A disconnect will not occur. In previous versions, this may cause a disconnect if on</li>
+<li>a protected network</li>
+<li>@since 11.0</li>
+</ul>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reportSafeBrowsingHomeNetwork</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reportSafeBrowsingHomeNetwork</span><span class="p">(</span><span class="nv">retries</span><span class="p">:</span> <span class="kt">UInt32</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">delay</span><span class="p">:</span> <span class="kt">UInt64</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">UInt64</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4417,7 +4609,7 @@ SpeedifySafeBrowsingDelegate safeBrowsingSettingsDidUpdate(settings: SafeBrowsin
 <li>Override the safe network decision</li>
 <li>This setting overrides the safe/unsafe network decision made by the SDK when calling reportSafeBrowsingHomeNetwork().</li>
 <li>Current value available <code>safebrowsingDelegate</code>.</li>
-<li>@since future</li>
+<li>@since 11.1</li>
 </ul>
 
                       </div>
@@ -4735,33 +4927,6 @@ Triggers LocalProxySettingsDelegate.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">adapterDataDidUpdate</span><span class="p">(</span><span class="nv">adapterData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/AdapterData.html">AdapterData</a></span><span class="p">])</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11speedifysdk8SpeedifyC18settingLockedErroryyF"></a>
-                    <a name="//apple_ref/swift/Method/settingLockedError()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18settingLockedErroryyF">settingLockedError()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Reports any setting error from settings being locked.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">settingLockedError</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

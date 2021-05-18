@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['account',['ACCOUNT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ab6c5d3c4ea0d901ebf1fc9fab24249e7',1,'com::speedify::speedifysdk::Types::ErrorType']]],
+  ['account',['ACCOUNT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ab6c5d3c4ea0d901ebf1fc9fab24249e7',1,'com.speedify.speedifysdk.Types.ErrorType.ACCOUNT()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings_lock_reason.html#a15b83c97c67cae47c13c8bce268c4897',1,'com.speedify.speedifysdk.Types.SettingsLockReason.ACCOUNT()']]],
   ['accountcheck',['accountCheck',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8dee616188cadf9c2d49379916d56b70',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['accountcreate',['accountCreate',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3221247de8d8f920932f9927d9c93190',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['accountingdata',['AccountingData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html',1,'com::speedify::speedifysdk::Types']]],

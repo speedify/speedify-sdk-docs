@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.1.1</span>
+   &#160;<span id="projectnumber">11.2.0</span>
    </div>
   </td>
  </tr>
@@ -185,9 +185,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7de775ad7df0ef1e9ee3d06b27c9370d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a7de775ad7df0ef1e9ee3d06b27c9370d">OnNonVPNApplications</a> (List&lt; String &gt; nonVpnApps)</td></tr>
 <tr class="memdesc:a7de775ad7df0ef1e9ee3d06b27c9370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of apps configured to go around the VPN.  <a href="#a7de775ad7df0ef1e9ee3d06b27c9370d">More...</a><br /></td></tr>
 <tr class="separator:a7de775ad7df0ef1e9ee3d06b27c9370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a232ba243c7d2cb563b3ad2191fd2607a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a232ba243c7d2cb563b3ad2191fd2607a">OnLockedSetting</a> (String settingAction)</td></tr>
-<tr class="memdesc:a232ba243c7d2cb563b3ad2191fd2607a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in response to attempt to change a setting that is locked by the server.  <a href="#a232ba243c7d2cb563b3ad2191fd2607a">More...</a><br /></td></tr>
-<tr class="separator:a232ba243c7d2cb563b3ad2191fd2607a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824a56f7d4f452d3cb961f9d4366a493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a824a56f7d4f452d3cb961f9d4366a493">OnLockedSetting</a> (String settingAction, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings_lock_reason.html">SettingsLockReason</a> lockReason)</td></tr>
+<tr class="memdesc:a824a56f7d4f452d3cb961f9d4366a493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in response to attempt to change a setting that is locked by the server.  <a href="#a824a56f7d4f452d3cb961f9d4366a493">More...</a><br /></td></tr>
+<tr class="separator:a824a56f7d4f452d3cb961f9d4366a493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6506f86aa74b15e1e1bc377225c9e27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ae6506f86aa74b15e1e1bc377225c9e27">OnLocalVendorSettings</a> (JSONObject settings)</td></tr>
 <tr class="memdesc:ae6506f86aa74b15e1e1bc377225c9e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local vendor settings update.  <a href="#ae6506f86aa74b15e1e1bc377225c9e27">More...</a><br /></td></tr>
 <tr class="separator:ae6506f86aa74b15e1e1bc377225c9e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -818,8 +818,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a232ba243c7d2cb563b3ad2191fd2607a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a232ba243c7d2cb563b3ad2191fd2607a">&#9670;&nbsp;</a></span>OnLockedSetting()</h2>
+<a id="a824a56f7d4f452d3cb961f9d4366a493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824a56f7d4f452d3cb961f9d4366a493">&#9670;&nbsp;</a></span>OnLockedSetting()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -828,8 +828,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void com.speedify.speedifysdk.ISpeedifyHandler.OnLockedSetting </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>settingAction</em></td><td>)</td>
+          <td class="paramname"><em>settingAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings_lock_reason.html">SettingsLockReason</a>&#160;</td>
+          <td class="paramname"><em>lockReason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -838,12 +848,13 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">settingAction</td><td>string identifying the setting that is locked </td></tr>
+    <tr><td class="paramname">lockReason</td><td>the reason for the lock </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
 
-<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a39303004b2e8d4a72906aaefaf898185">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a5d7bf24af94efb2e07dfbdb49be25791">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>

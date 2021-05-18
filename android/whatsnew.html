@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.1.1</span>
+   &#160;<span id="projectnumber">11.2.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,25 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1111"></a>Speedify SDK for Android 11.1.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1120"></a>Speedify SDK for Android 11.2 </h2>
+<ul>
+<li>Full IPv6 support through the tunnel, including firewall and local proxy.<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aaf875e483d64386c4d543587463da107">setLocalProxyIPv6</a> added.</li>
+</ul>
+</li>
+<li>The <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> handler in log generation calls may now be passed in separately from the Activity/Context.<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5bd6ec0c7e5a5f0e15d2918debeb7bc9">generateLogs(Context,ILogCompleteCallback)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a6c4860ac9bbffb9571a3453ee86a46fb">generateLogs(Context,ILogCompleteCallback,String)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a4097ab85257c8713120045147cafc396">shareLogs(Activity,ILogCompleteCallback)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a0b22838c5cdb62772aabcd07f37fff1c">shareLogs(Activity,ILogCompleteCallback,String,String,String,String)</a></li>
+</ul>
+</li>
+<li>Deprecations<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a39303004b2e8d4a72906aaefaf898185">OnLockedSetting(String)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a824a56f7d4f452d3cb961f9d4366a493">OnLockedSetting(String,SettingsLockReason)</a>.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1111"></a>Speedify SDK for Android 11.1.1 </h2>
 <ul>
 <li>The default service notification now uses a MessagingStyle style on Xioami devices running Nougat and higher to avoid a crash in MIUI.</li>
 </ul>

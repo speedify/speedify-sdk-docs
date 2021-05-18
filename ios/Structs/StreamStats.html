@@ -17,7 +17,7 @@
     <a title="StreamStats Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (73% documented)</p>
+        <p><a href="../index.html"> Docs</a> (74% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -87,6 +87,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/s:11speedifysdk012SafeBrowsingB15NetworkOverrideO">SafeBrowsingSafeNetworkOverride</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
@@ -285,7 +288,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamStats</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamStats</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
@@ -330,9 +333,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk11StreamStatsV8durationSdvp"></a>
+                    <a name="/s:11speedifysdk11StreamStatsV8durations6UInt64Vvp"></a>
                     <a name="//apple_ref/swift/Property/duration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk11StreamStatsV8durationSdvp">duration</a>
+                    <a class="token" href="#/s:11speedifysdk11StreamStatsV8durations6UInt64Vvp">duration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -343,6 +346,7 @@
                         <p>Time, in seconds, this stream has been active</p>
 
 <ul>
+<li>@since 11.2 type changed from Double to UInt64</li>
 <li>@since 9.6</li>
 </ul>
 
@@ -351,7 +355,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
 
                         </div>
                       </div>
@@ -361,9 +365,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk11StreamStatsV2idSdvp"></a>
+                    <a name="/s:11speedifysdk11StreamStatsV2ids6UInt64Vvp"></a>
                     <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk11StreamStatsV2idSdvp">id</a>
+                    <a class="token" href="#/s:11speedifysdk11StreamStatsV2ids6UInt64Vvp">id</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -374,6 +378,7 @@
                         <p>ID number of this stream</p>
 
 <ul>
+<li>@since 11.2 type changed from Double to UInt64</li>
 <li>@since 9.6</li>
 </ul>
 
@@ -382,7 +387,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
 
                         </div>
                       </div>
@@ -392,9 +397,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk11StreamStatsV9startTimeSdvp"></a>
+                    <a name="/s:11speedifysdk11StreamStatsV9startTimes6UInt64Vvp"></a>
                     <a name="//apple_ref/swift/Property/startTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk11StreamStatsV9startTimeSdvp">startTime</a>
+                    <a class="token" href="#/s:11speedifysdk11StreamStatsV9startTimes6UInt64Vvp">startTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -413,7 +418,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">startTime</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">startTime</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
 
                         </div>
                       </div>
@@ -547,9 +552,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk11StreamStatsV7groupIDSdvp"></a>
+                    <a name="/s:11speedifysdk11StreamStatsV7groupIDs6UInt64Vvp"></a>
                     <a name="//apple_ref/swift/Property/groupID" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk11StreamStatsV7groupIDSdvp">groupID</a>
+                    <a class="token" href="#/s:11speedifysdk11StreamStatsV7groupIDs6UInt64Vvp">groupID</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -560,6 +565,7 @@
                         <p>Unique identifier of this stream</p>
 
 <ul>
+<li>@since 11.2 type changed from Double to UInt64</li>
 <li>@since 9.8</li>
 </ul>
 
@@ -568,7 +574,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">groupID</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">groupID</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
 
                         </div>
                       </div>
@@ -609,9 +615,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk11StreamStatsV14redundantSavesSdvp"></a>
+                    <a name="/s:11speedifysdk11StreamStatsV14redundantSavess6UInt64Vvp"></a>
                     <a name="//apple_ref/swift/Property/redundantSaves" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk11StreamStatsV14redundantSavesSdvp">redundantSaves</a>
+                    <a class="token" href="#/s:11speedifysdk11StreamStatsV14redundantSavess6UInt64Vvp">redundantSaves</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -622,6 +628,7 @@
                         <p>When a stream has switched to redundant mode</p>
 
 <ul>
+<li>@since 11.2 type changed from Double to UInt64</li>
 <li>@since 9.8</li>
 </ul>
 
@@ -630,7 +637,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">redundantSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">redundantSaves</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
 
                         </div>
                       </div>
@@ -640,9 +647,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk11StreamStatsV10speedSavesSdvp"></a>
+                    <a name="/s:11speedifysdk11StreamStatsV10speedSavess6UInt64Vvp"></a>
                     <a name="//apple_ref/swift/Property/speedSaves" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk11StreamStatsV10speedSavesSdvp">speedSaves</a>
+                    <a class="token" href="#/s:11speedifysdk11StreamStatsV10speedSavess6UInt64Vvp">speedSaves</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -653,6 +660,7 @@
                         <p>When the network speed dips below the speed of the stream and speedify bonds the connection for more speed</p>
 
 <ul>
+<li>@since 11.2 type changed from Double to UInt64</li>
 <li>@since 9.8</li>
 </ul>
 
@@ -661,7 +669,38 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">speedSaves</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">speedSaves</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk11StreamStatsV13failoverSavess6UInt64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/failoverSaves" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk11StreamStatsV13failoverSavess6UInt64Vvp">failoverSaves</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of saves through connection failover</p>
+
+<ul>
+<li>@since 11.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">failoverSaves</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
 
                         </div>
                       </div>

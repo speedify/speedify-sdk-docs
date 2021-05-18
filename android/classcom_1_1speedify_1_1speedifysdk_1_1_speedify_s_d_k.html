@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.1.1</span>
+   &#160;<span id="projectnumber">11.2.0</span>
    </div>
   </td>
  </tr>
@@ -362,6 +362,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb3b6bf3030c04fd1762c4678bd619dd"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#adb3b6bf3030c04fd1762c4678bd619dd">setLocalProxyIPv4</a> (List&lt; String &gt; ipv4)</td></tr>
 <tr class="memdesc:adb3b6bf3030c04fd1762c4678bd619dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv4 address to proxy locally, instead of going through the VPN.  <a href="#adb3b6bf3030c04fd1762c4678bd619dd">More...</a><br /></td></tr>
 <tr class="separator:adb3b6bf3030c04fd1762c4678bd619dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf875e483d64386c4d543587463da107"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aaf875e483d64386c4d543587463da107">setLocalProxyIPv6</a> (List&lt; String &gt; ipv6)</td></tr>
+<tr class="memdesc:aaf875e483d64386c4d543587463da107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv6 address to proxy locally, instead of going through the VPN.  <a href="#aaf875e483d64386c4d543587463da107">More...</a><br /></td></tr>
+<tr class="separator:aaf875e483d64386c4d543587463da107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a649903a4d1d19b5b78467f128d93d8a0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a649903a4d1d19b5b78467f128d93d8a0">setLocalProxyPorts</a> (List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_port.html">LocalProxyPort</a> &gt; ports)</td></tr>
 <tr class="memdesc:a649903a4d1d19b5b78467f128d93d8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ports to proxy.  <a href="#a649903a4d1d19b5b78467f128d93d8a0">More...</a><br /></td></tr>
 <tr class="separator:a649903a4d1d19b5b78467f128d93d8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -438,14 +441,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2ed8ba39e155d70bd2ef3ff0fea67eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Safe Browsing logging level Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>.  <a href="#a2ed8ba39e155d70bd2ef3ff0fea67eaf">More...</a><br /></td></tr>
 <tr class="separator:a2ed8ba39e155d70bd2ef3ff0fea67eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c04a6f28988afc2a023617c86dfaa0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a57c04a6f28988afc2a023617c86dfaa0">setSafeBrowsingSafeNetworkOverride</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_safe_network_override.html">SafeBrowsingSafeNetworkOverride</a> snOverride)</td></tr>
-<tr class="memdesc:a57c04a6f28988afc2a023617c86dfaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the safe network decision This setting overrides the safe/unsafe network decision made by <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0" title="Report the current connected network is a home network If current network is Safe Browsing protected,...">reportSafeBrowsingHomeNetwork()</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>.  <a href="#a57c04a6f28988afc2a023617c86dfaa0">More...</a><br /></td></tr>
+<tr class="memdesc:a57c04a6f28988afc2a023617c86dfaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the safe network decision This setting overrides the safe/unsafe network decision made by <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0" title="Report the current connected network is a home network.">reportSafeBrowsingHomeNetwork()</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>.  <a href="#a57c04a6f28988afc2a023617c86dfaa0">More...</a><br /></td></tr>
 <tr class="separator:a57c04a6f28988afc2a023617c86dfaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8d2c1bc3adb33f17fb8f79601e7479"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8a8d2c1bc3adb33f17fb8f79601e7479">refreshSafeBrowsingToken</a> (String token)</td></tr>
 <tr class="memdesc:a8a8d2c1bc3adb33f17fb8f79601e7479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the NSP token Only call if previous token has become invalid, as told through receiving a INVALID_NSP_TOKEN error from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a> Errors refreshing token will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>.  <a href="#a8a8d2c1bc3adb33f17fb8f79601e7479">More...</a><br /></td></tr>
 <tr class="separator:a8a8d2c1bc3adb33f17fb8f79601e7479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a35b8a5780df460f909607fa2b9db0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0">reportSafeBrowsingHomeNetwork</a> ()</td></tr>
-<tr class="memdesc:ad8a35b8a5780df460f909607fa2b9db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>, and a disconnect will occur.  <a href="#ad8a35b8a5780df460f909607fa2b9db0">More...</a><br /></td></tr>
+<tr class="memdesc:ad8a35b8a5780df460f909607fa2b9db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network.  <a href="#ad8a35b8a5780df460f909607fa2b9db0">More...</a><br /></td></tr>
 <tr class="separator:ad8a35b8a5780df460f909607fa2b9db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1862d80be9b14659e6c03752af1b2305"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1862d80be9b14659e6c03752af1b2305">reportSafeBrowsingHomeNetwork</a> (int retries, long delay, long timeout)</td></tr>
+<tr class="memdesc:a1862d80be9b14659e6c03752af1b2305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>, If current network is not protected, will return OK.  <a href="#a1862d80be9b14659e6c03752af1b2305">More...</a><br /></td></tr>
+<tr class="separator:a1862d80be9b14659e6c03752af1b2305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a149873feb4f58d2b469906ad14a45017"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a149873feb4f58d2b469906ad14a45017">refreshSafeBrowsing</a> ()</td></tr>
 <tr class="memdesc:a149873feb4f58d2b469906ad14a45017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets Safe Browsing settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>.  <a href="#a149873feb4f58d2b469906ad14a45017">More...</a><br /></td></tr>
 <tr class="separator:a149873feb4f58d2b469906ad14a45017"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1218,7 +1224,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This is equivalent to <code>enableStatUpdates(enabled,Arrays.asList(<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a8159c89debf0a758b3a672635cbae573" title="Requests total stats updates.">SessionStatPeriods.PERIOD_TOTAL</a>));</code> </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 10.0. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of 10.0. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a>. </dd></dl>
 
 </div>
 </div>
@@ -1517,7 +1523,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize Safe Browsing library If initialized is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>. </p>
-<p>Errors initializing will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>. Call with empty string to terminate safe browsing, and reset initialized state (</p><dl class="section since"><dt>Since</dt><dd>future) </dd></dl>
+<p>Errors initializing will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>. Call with empty string to terminate safe browsing, and reset initialized state (</p><dl class="section since"><dt>Since</dt><dd>11.1) </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initConfig</td><td>a configuration string for the safe browsing service </td></tr>
@@ -1967,7 +1973,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>as of 10.5. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>as of 10.5. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a> </dd></dl>
 
 </div>
 </div>
@@ -2399,7 +2405,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad8a35b8a5780df460f909607fa2b9db0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a35b8a5780df460f909607fa2b9db0">&#9670;&nbsp;</a></span>reportSafeBrowsingHomeNetwork()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a35b8a5780df460f909607fa2b9db0">&#9670;&nbsp;</a></span>reportSafeBrowsingHomeNetwork() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2413,10 +2419,57 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Report the current connected network is a home network If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>, and a disconnect will occur. </p>
-<p>If current network is not protected, will return OK. May also return any other error type in case of error. (Deprecated </p><dl class="section since"><dt>Since</dt><dd>future) used to trigger <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>. </dd>
+<p>Report the current connected network is a home network. </p>
+<p>Uses default retry/delay/timeout values If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a> If current network is not protected, will return OK. May also return any other error type in case of error. (Deprecated </p><dl class="section since"><dt>Since</dt><dd>11.1) used to trigger <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>. </dd>
+<dd>
+11.2 A disconnect will not occur. In previous versions, this may cause a disconnect if on a protected network </dd>
 <dd>
 11.0 </dd></dl>
+
+</div>
+</div>
+<a id="a1862d80be9b14659e6c03752af1b2305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1862d80be9b14659e6c03752af1b2305">&#9670;&nbsp;</a></span>reportSafeBrowsingHomeNetwork() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.reportSafeBrowsingHomeNetwork </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>retries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>delay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report the current connected network is a home network If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>, If current network is not protected, will return OK. </p>
+<p>May also return any other error type in case of error. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">retries</td><td>the number of times to retry the report in event of error </td></tr>
+    <tr><td class="paramname">delay</td><td>the delay between retries (ms) </td></tr>
+    <tr><td class="paramname">timeout</td><td>the request timeout (ms) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
 
 </div>
 </div>
@@ -3055,7 +3108,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>As of 10.5. Functionality removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>As of 10.5. Functionality removed. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>6.3 </dd></dl>
 
 </div>
@@ -3773,6 +3826,33 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf875e483d64386c4d543587463da107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf875e483d64386c4d543587463da107">&#9670;&nbsp;</a></span>setLocalProxyIPv6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setLocalProxyIPv6 </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>ipv6</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set IPv6 address to proxy locally, instead of going through the VPN. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ipv6</td><td>ipv6 addresses to redirect through the local proxy Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a9d42fcdd9bd3b0195350cc46cf9012cd">OnLocalProxySettings</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
+
+</div>
+</div>
 <a id="ab08b2456dc5d38429c45088e9f0490c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab08b2456dc5d38429c45088e9f0490c0">&#9670;&nbsp;</a></span>setLocalProxyMatchMode()</h2>
 
@@ -4124,14 +4204,14 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Override the safe network decision This setting overrides the safe/unsafe network decision made by <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0" title="Report the current connected network is a home network If current network is Safe Browsing protected,...">reportSafeBrowsingHomeNetwork()</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>. </p>
+<p>Override the safe network decision This setting overrides the safe/unsafe network decision made by <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0" title="Report the current connected network is a home network.">reportSafeBrowsingHomeNetwork()</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">snOverride</td><td>The override enum </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>
@@ -4401,7 +4481,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>
@@ -4441,7 +4521,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Terminate Safe Browsing. </p>
-<p>Wrapper for initSafeBrowsing and setSafeBrowsingEnabled After this call Safe Browsing is not initialized, and disabled If initialized and enabled is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>. </p><dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<p>Wrapper for initSafeBrowsing and setSafeBrowsingEnabled After this call Safe Browsing is not initialized, and disabled If initialized and enabled is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>. </p><dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>

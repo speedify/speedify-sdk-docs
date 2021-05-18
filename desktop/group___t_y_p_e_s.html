@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.1.1</span>
+   &#160;<span id="projectnumber">11.2.0</span>
    </div>
   </td>
  </tr>
@@ -300,8 +300,9 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a7f46fc245dd01ebf20c1b6a8e41f9c9a">ET_SDK_PLATFORM_NO_SUPPORT</a>, 
 <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a71d735910f4cd03c618ce8cd0a3e68c6">ET_SDK_NO_CONNECTION</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2ad0bd2f79bdf821162e4cda68276b86ba">ET_SDK_SETTING_LOCKED</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a84b42d05579e21f21c6734f134899c5d">ET_SDK_SYNC_FROM_ASYNC</a>
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3">ET_SDK_SETTING_LOCKED_TEAM</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a84b42d05579e21f21c6734f134899c5d">ET_SDK_SYNC_FROM_ASYNC</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7">ET_SDK_SETTING_LOCKED_ACCOUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga2c6cd395ee7068fe5c85f3c861b0c7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type classification for errors.  <a href="group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2">More...</a><br /></td></tr>
@@ -847,11 +848,14 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a71d735910f4cd03c618ce8cd0a3e68c6"></a>ET_SDK_NO_CONNECTION&#160;</td><td class="fielddoc"><p>No connection to the Speedify daemon. </p>
 <dl class="section since"><dt>Since</dt><dd>8.0 </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2ad0bd2f79bdf821162e4cda68276b86ba"></a>ET_SDK_SETTING_LOCKED&#160;</td><td class="fielddoc"><p>Setting locked by server configuration. </p>
+<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3"></a>ET_SDK_SETTING_LOCKED_TEAM&#160;</td><td class="fielddoc"><p>Setting locked by server configuration. </p>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a84b42d05579e21f21c6734f134899c5d"></a>ET_SDK_SYNC_FROM_ASYNC&#160;</td><td class="fielddoc"><p>Synchronous call used from within asynchronous callback. Not supported. </p>
 <dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7"></a>ET_SDK_SETTING_LOCKED_ACCOUNT&#160;</td><td class="fielddoc"><p>Setting locked by account configuration. </p>
+<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
 </td></tr>
 </table>
 
@@ -1052,9 +1056,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggad486e8c4796944b3b6b9ad4e5f2d7c3cade07cc0374b4b23b253fcc0ec37bcda4"></a>CUJO_ERR_ON_PROTECTED_NETWORK&#160;</td><td class="fielddoc"><dl class="section since"><dt>Since</dt><dd>11.0 </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="ggad486e8c4796944b3b6b9ad4e5f2d7c3caf325937991572e78a30ece0bea718e69"></a>CUJO_ERR_ASYNC_INIT_FAILURE&#160;</td><td class="fielddoc"><dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<tr><td class="fieldname"><a id="ggad486e8c4796944b3b6b9ad4e5f2d7c3caf325937991572e78a30ece0bea718e69"></a>CUJO_ERR_ASYNC_INIT_FAILURE&#160;</td><td class="fielddoc"><dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="ggad486e8c4796944b3b6b9ad4e5f2d7c3ca95bdfe312690c2f2a1a1022835f50f53"></a>CUJO_ERR_INTERRUPTED_EVENT_LOOP&#160;</td><td class="fielddoc"><dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<tr><td class="fieldname"><a id="ggad486e8c4796944b3b6b9ad4e5f2d7c3ca95bdfe312690c2f2a1a1022835f50f53"></a>CUJO_ERR_INTERRUPTED_EVENT_LOOP&#160;</td><td class="fielddoc"><dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggad486e8c4796944b3b6b9ad4e5f2d7c3ca87b974b08a244afd4915d08f7b7cdaa2"></a>CUJO_ERR&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>As of 10.9. Never set </dd></dl>
 </td></tr>
