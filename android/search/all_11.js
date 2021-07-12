@@ -25,6 +25,8 @@ var searchData=
   ['serversettings',['ServerSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html',1,'com::speedify::speedifysdk::Types']]],
   ['service_20notification',['Service Notification',['../servicenotification.html',1,'']]],
   ['servicenotification_2edox',['servicenotification.dox',['../servicenotification_8dox.html',1,'']]],
+  ['sessionend',['sessionEnd',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html#a61ce7f35107a0667588c226cc9a9a14e',1,'com::speedify::speedifysdk::Types::DisconnectEvent']]],
+  ['sessionlength',['sessionLength',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html#a83f0be5597b5b41d322a259ad03d87d5',1,'com::speedify::speedifysdk::Types::DisconnectEvent']]],
   ['sessionstatperiods',['SessionStatPeriods',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html',1,'com::speedify::speedifysdk::Types']]],
   ['sessionstats',['SessionStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html',1,'com::speedify::speedifysdk::Types']]],
   ['setadapterdailydatalimit',['setAdapterDailyDataLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aeac98ac9357b58d22859a251f894d4c1',1,'com::speedify::speedifysdk::SpeedifySDK']]],

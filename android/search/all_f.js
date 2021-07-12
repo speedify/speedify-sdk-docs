@@ -8,6 +8,8 @@ var searchData=
   ['packetwaits',['packetWaits',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#a7a1e869fe251a31114fa02b743b4a123',1,'com::speedify::speedifysdk::Types::TunStats']]],
   ['parse_5ferror',['PARSE_ERROR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#ac818b35b24d1b52a41e4b48c9078afa8',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['paymenttype',['paymentType',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a506adad72e4a2a42d149d152bc4add9a',1,'com::speedify::speedifysdk::Types::AccountingData']]],
+  ['pendingintenthelper',['PendingIntentHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_pending_intent_helper.html',1,'com::speedify::speedifysdk']]],
+  ['pendingintenthelper_2ejava',['PendingIntentHelper.java',['../_pending_intent_helper_8java.html',1,'']]],
   ['period',['period',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a9ed1e12fc9f6335ebdf7cff46f763654',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['period_5fcurrent',['PERIOD_CURRENT',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a1c940703f3de9190a83fab2de467aa47',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],
   ['period_5fday',['PERIOD_DAY',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a02d6ed2796a1a3b25b620f34fc124bd7',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],

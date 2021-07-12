@@ -7,6 +7,8 @@ var searchData=
   ['sendestimatembps',['sendEstimateMbps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9f2157a241a0ea8e7dfc89018c2aad33',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['server',['SERVER',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ace2c1d28fa386ab68472f0f611950062',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['server_5ferror',['SERVER_ERROR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a281f4c51875fd7d9c05c51247309f7ab',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
+  ['sessionend',['sessionEnd',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html#a61ce7f35107a0667588c226cc9a9a14e',1,'com::speedify::speedifysdk::Types::DisconnectEvent']]],
+  ['sessionlength',['sessionLength',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html#a83f0be5597b5b41d322a259ad03d87d5',1,'com::speedify::speedifysdk::Types::DisconnectEvent']]],
   ['settingchangereconnect',['SETTINGCHANGERECONNECT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#af6ab6180114ad62535b6f7199b4f97af',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['sleep',['SLEEP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#acbccd6f15acbaa0c9d9c4df2a6659291',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['sleeping',['sleeping',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a2e5edb6ad04b04b7b546a67b9b739654',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],

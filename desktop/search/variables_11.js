@@ -4,6 +4,8 @@ var searchData=
   ['sendestimatembps',['sendEstimateMbps',['../struct_speedify_s_d_k___connection_stats.html#a67a651f635d792f069ec334ef6028a82',1,'SpeedifySDK_ConnectionStats']]],
   ['servers',['servers',['../struct_speedify_s_d_k___directory_result.html#acd93cecc4693a03288aaee44987af94d',1,'SpeedifySDK_DirectoryResult']]],
   ['serversettings',['serverSettings',['../struct_speedify_s_d_k___server_settings_result.html#a6c7242e97a427403e1f3c7bfb67d6364',1,'SpeedifySDK_ServerSettingsResult']]],
+  ['sessionend',['sessionEnd',['../struct_speedify_s_d_k___disconnect_event.html#a91d683fc83cf70febc0d7ab41cd16f2d',1,'SpeedifySDK_DisconnectEvent']]],
+  ['sessionlength',['sessionLength',['../struct_speedify_s_d_k___disconnect_event.html#ad76692151437a2b1da66fcffc6cf6a20',1,'SpeedifySDK_DisconnectEvent']]],
   ['sessionstats',['sessionStats',['../struct_speedify_s_d_k___session_stats_result.html#a6636df7425ecb1309161706c147d9119',1,'SpeedifySDK_SessionStatsResult']]],
   ['settings',['settings',['../struct_speedify_s_d_k___settings_result.html#a8e51651fe0d2b1eb0556604510112c9a',1,'SpeedifySDK_SettingsResult']]],
   ['settingsjson',['settingsJson',['../struct_speedify_s_d_k___vendor_settings_result.html#ab0b8af602adba4ad42d9f38386411667',1,'SpeedifySDK_VendorSettingsResult']]],

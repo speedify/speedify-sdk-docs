@@ -126,10 +126,16 @@
                 <a href="../Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk29SpeedifyCaptivePortalDelegateP">SpeedifyCaptivePortalDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
@@ -209,7 +215,7 @@
                 <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:11speedifysdk15DisconnectEventV">DisconnectEvent</a>
+                <a href="../Structs/DisconnectEvent.html">DisconnectEvent</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/FirewallPort.html">FirewallPort</a>
@@ -4060,6 +4066,93 @@ When On Demand is on, the operating system will automatically reconnect the VPN 
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC21refreshCaptivePortalsyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshCaptivePortals()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC21refreshCaptivePortalsyyF">refreshCaptivePortals()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks connected networks for captive portals
+Triggers {@link ISpeedifyHandler#OnCaptivePortals OnCaptivePortals}.
+@since 11.3</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshCaptivePortals</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23enableCaptivePortalMode9adapterIDySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/enableCaptivePortalMode(adapterID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23enableCaptivePortalMode9adapterIDySS_tF">enableCaptivePortalMode(adapterID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable captive portal mode, sending all traffic over the specified network
+@param adapterID network to operate captive portal mode over
+@since 11.3</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enableCaptivePortalMode</span><span class="p">(</span><span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24disableCaptivePortalModeyyF"></a>
+                    <a name="//apple_ref/swift/Method/disableCaptivePortalMode()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24disableCaptivePortalModeyyF">disableCaptivePortalMode()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable captive portal mode, sending all traffic over the specified network
+@param adapterID network to operate captive portal mode over
+@since 11.3</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disableCaptivePortalMode</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC16eraseAllLogFilesyyF"></a>
                     <a name="//apple_ref/swift/Method/eraseAllLogFiles()" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC16eraseAllLogFilesyyF">eraseAllLogFiles()</a>
@@ -4993,7 +5086,7 @@ Triggers LocalProxySettingsDelegate.
         </section>
         <section id="footer">
           <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
