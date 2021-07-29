@@ -9,6 +9,6 @@ var searchData=
   ['logging_5fin',['LOGGING_IN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a4aebabafadd053c64dbbc702a29bd14f',1,'com::speedify::speedifysdk::Types::State']]],
   ['loglevel',['logLevel',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_settings.html#a4503e24bd16ff980fe982d427fe5b12a',1,'com.speedify.speedifysdk.Types.SafeBrowsingSettings.logLevel()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html#a6847126f8c7fbdd53477e913f9eb6e86',1,'com.speedify.speedifysdk.Types.DaemonLogSettings.logLevel()']]],
   ['loopback',['LOOPBACK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#a3f911e238d93ba55511af7b472750ad5',1,'com::speedify::speedifysdk::Types::NetworkType']]],
-  ['lossreceive',['lossReceive',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a442ac48118f2ce0c40e1b9b00c37b39e',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
-  ['losssend',['lossSend',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a449cc4326398c473c22132043dd1149c',1,'com::speedify::speedifysdk::Types::ConnectionStats']]]
+  ['lossreceive',['lossReceive',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aba9ae24ca2c02bf095164f80bed3f678',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['losssend',['lossSend',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aec1aefd36bb15218ca915d8d5e056b6d',1,'com::speedify::speedifysdk::Types::ConnectionStats']]]
 ];

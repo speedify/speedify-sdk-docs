@@ -36,5 +36,6 @@ var searchData=
   ['cujo_5flog_5ferror',['CUJO_LOG_ERROR',['../types_8h.html#ad2de182c4b58b299104638840d48e186ae4533d3213610d11bc4bffa35b5534a9',1,'types.h']]],
   ['cujo_5flog_5finfo',['CUJO_LOG_INFO',['../types_8h.html#ad2de182c4b58b299104638840d48e186aadfc44e33e2380193518606fa34ff1ed',1,'types.h']]],
   ['cujo_5flog_5ftrace',['CUJO_LOG_TRACE',['../types_8h.html#ad2de182c4b58b299104638840d48e186a53ce56e1ea51fcc1963e1c128f2c7d28',1,'types.h']]],
+  ['cujo_5flog_5fwarning',['CUJO_LOG_WARNING',['../types_8h.html#ad2de182c4b58b299104638840d48e186ac1f33e1d1b399dd539d565ff972ad58f',1,'types.h']]],
   ['cujo_5fok',['CUJO_OK',['../group___t_y_p_e_s.html#ggad486e8c4796944b3b6b9ad4e5f2d7c3ca9f44adec4cb6ef04977057139625abd6',1,'types.h']]]
 ];

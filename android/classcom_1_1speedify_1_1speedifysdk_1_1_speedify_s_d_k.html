@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.3.0</span>
+   &#160;<span id="projectnumber">11.4.0</span>
    </div>
   </td>
  </tr>
@@ -452,6 +452,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1862d80be9b14659e6c03752af1b2305"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1862d80be9b14659e6c03752af1b2305">reportSafeBrowsingHomeNetwork</a> (int retries, long delay, long timeout)</td></tr>
 <tr class="memdesc:a1862d80be9b14659e6c03752af1b2305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>, If current network is not protected, will return OK.  <a href="#a1862d80be9b14659e6c03752af1b2305">More...</a><br /></td></tr>
 <tr class="separator:a1862d80be9b14659e6c03752af1b2305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc15ee0396eeea6a4e6bb6d089102e36"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abc15ee0396eeea6a4e6bb6d089102e36">updateSafeBrowsingExtraInfo</a> (String info)</td></tr>
+<tr class="memdesc:abc15ee0396eeea6a4e6bb6d089102e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update extra safe browsing info, such as device MAC example input: {"mac":"0102030a0b0c"} Errors will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>.  <a href="#abc15ee0396eeea6a4e6bb6d089102e36">More...</a><br /></td></tr>
+<tr class="separator:abc15ee0396eeea6a4e6bb6d089102e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a149873feb4f58d2b469906ad14a45017"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a149873feb4f58d2b469906ad14a45017">refreshSafeBrowsing</a> ()</td></tr>
 <tr class="memdesc:a149873feb4f58d2b469906ad14a45017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets Safe Browsing settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a>.  <a href="#a149873feb4f58d2b469906ad14a45017">More...</a><br /></td></tr>
 <tr class="separator:a149873feb4f58d2b469906ad14a45017"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,6 +509,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a135122347640280ea550350ee2f04ff0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html">SpeedifySDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a135122347640280ea550350ee2f04ff0">getInstance</a> ()</td></tr>
 <tr class="memdesc:a135122347640280ea550350ee2f04ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SDK API.">SpeedifySDK</a> instance.  <a href="#a135122347640280ea550350ee2f04ff0">More...</a><br /></td></tr>
 <tr class="separator:a135122347640280ea550350ee2f04ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca1d666f61f66ddbe6436a4ffc982b5"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7ca1d666f61f66ddbe6436a4ffc982b5">isSdkAlive</a> ()</td></tr>
+<tr class="memdesc:a7ca1d666f61f66ddbe6436a4ffc982b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is an active instance of the Speedify SDK.  <a href="#a7ca1d666f61f66ddbe6436a4ffc982b5">More...</a><br /></td></tr>
+<tr class="separator:a7ca1d666f61f66ddbe6436a4ffc982b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e50b099b15178340662f43c55ed5fa5"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4e50b099b15178340662f43c55ed5fa5">IsBackgroundProcess</a> (Application application)</td></tr>
 <tr class="memdesc:a4e50b099b15178340662f43c55ed5fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if currently in sdk background process (:vpnservice).  <a href="#a4e50b099b15178340662f43c55ed5fa5">More...</a><br /></td></tr>
 <tr class="separator:a4e50b099b15178340662f43c55ed5fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1624,6 +1630,35 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if running from background process </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>5.9 </dd></dl>
+
+</div>
+</div>
+<a id="a7ca1d666f61f66ddbe6436a4ffc982b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca1d666f61f66ddbe6436a4ffc982b5">&#9670;&nbsp;</a></span>isSdkAlive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static boolean com.speedify.speedifysdk.SpeedifySDK.isSdkAlive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if there is an active instance of the Speedify SDK. </p>
+<dl class="section return"><dt>Returns</dt><dd>if a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SDK API.">SpeedifySDK</a> instance is present </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.4 </dd></dl>
 
 </div>
 </div>
@@ -4556,6 +4591,33 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abc15ee0396eeea6a4e6bb6d089102e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc15ee0396eeea6a4e6bb6d089102e36">&#9670;&nbsp;</a></span>updateSafeBrowsingExtraInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.updateSafeBrowsingExtraInfo </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update extra safe browsing info, such as device MAC example input: {"mac":"0102030a0b0c"} Errors will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a59878c838fed5a3cfde83df3cc09de5c">OnSafeBrowsingConnectError</a>. </p>
+<p>Otherwise, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a6bd54ee565c11896baf3c7bf7b1c2f37">OnSafeBrowsing</a> is called </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>the info to update </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>11.4 </dd></dl>
 
 </div>
 </div>

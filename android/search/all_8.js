@@ -26,6 +26,7 @@ var searchData=
   ['ispeedifyhandler',['ISpeedifyHandler',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html',1,'com::speedify::speedifysdk']]],
   ['ispeedifyhandler_2ejava',['ISpeedifyHandler.java',['../_i_speedify_handler_8java.html',1,'']]],
   ['isprivate',['isPrivate',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af95cbcc9eab26731861344fa2e66ef82',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
+  ['issdkalive',['isSdkAlive',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7ca1d666f61f66ddbe6436a4ffc982b5',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['isteam',['isTeam',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a01908994e38582ae3cd9d044f402cf5b',1,'com::speedify::speedifysdk::Types::AccountingData']]],
   ['initializing_20the_20sdk',['Initializing the SDK',['../sdkinit.html',1,'']]]
 ];

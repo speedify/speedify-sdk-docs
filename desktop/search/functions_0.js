@@ -153,6 +153,7 @@ var searchData=
   ['speedifysdk_5fstopsafebrowsing',['SpeedifySDK_StopSafeBrowsing',['../group___s_d_k.html#ga279767db6004146d6899d032d7de2a9f',1,'speedifysdk.h']]],
   ['speedifysdk_5ftransportmode_5ftostring',['SpeedifySDK_TransportMode_toString',['../group___t_y_p_e_s.html#ga62e003c739d9ad534fc37640fbc1d3d4',1,'types.h']]],
   ['speedifysdk_5funregistercallback',['SpeedifySDK_UnregisterCallback',['../group___s_d_k.html#gae00990b78fbb6f32f43599083b6d3bfa',1,'speedifysdk.h']]],
+  ['speedifysdk_5fupdatesafebrowsingextrainfo',['SpeedifySDK_UpdateSafeBrowsingExtraInfo',['../group___s_d_k.html#ga540f1741a4def674f806fa6802d87972',1,'speedifysdk.h']]],
   ['speedifysdk_5fversion_5ftostring',['SpeedifySDK_Version_toString',['../group___t_y_p_e_s.html#ga0f41b8335b631fe26481f53fa5b8b962',1,'types.h']]],
   ['speedifysdk_5fwaitoncallback',['SpeedifySDK_WaitOnCallback',['../group___s_d_k.html#gaa9200813e3991fe0e2786e24f149ea1f',1,'speedifysdk.h']]]
 ];

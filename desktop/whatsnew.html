@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.3.0</span>
+   &#160;<span id="projectnumber">11.4.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,11 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1130"></a>Speedify SDK for Desktop 11.3 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1140"></a>Speedify SDK for Desktop 11.4 </h2>
+<ul>
+<li>Fix type on <a class="el" href="struct_speedify_s_d_k___connection_stats.html#a423fdb67805a37efc298fa35324c4fef">lossReceive</a> and <a class="el" href="struct_speedify_s_d_k___connection_stats.html#ae1804e4bb485175562690dbfd4d2bd62">lossSend</a> to be doubles.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1130"></a>Speedify SDK for Desktop 11.3 </h2>
 <ul>
 <li>When using a local-proxy-only VPN by calling <a class="el" href="group___s_d_k.html#gadf45c59dff623a3ab56aeae5ab3ade4b">SpeedifySDK_ConnectProxy</a> and using default DNS server settings, or setting an empty DNS server list via <a class="el" href="group___s_d_k.html#ga8c5cb702a9ab8ff29cbf737fdd52f59d">SpeedifySDK_SetDNSServers</a> with 0 addresses, the DNS servers of the other physical connections will be used instead of setting an explicit DNS server over the VPN connection.</li>
 <li><a class="el" href="struct_speedify_s_d_k___disconnect_event.html">SpeedifySDK_DisconnectEvent</a> objects have 2 new fields: <a class="el" href="struct_speedify_s_d_k___disconnect_event.html#a91d683fc83cf70febc0d7ab41cd16f2d">sessionEnd</a> and <a class="el" href="struct_speedify_s_d_k___disconnect_event.html#ad76692151437a2b1da66fcffc6cf6a20">sessionLength</a></li>

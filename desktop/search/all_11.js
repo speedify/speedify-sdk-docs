@@ -332,6 +332,7 @@ var searchData=
   ['speedifysdk_5ftransportmode_5ftostring',['SpeedifySDK_TransportMode_toString',['../group___t_y_p_e_s.html#ga62e003c739d9ad534fc37640fbc1d3d4',1,'types.h']]],
   ['speedifysdk_5ftunstats',['SpeedifySDK_TunStats',['../struct_speedify_s_d_k___tun_stats.html',1,'']]],
   ['speedifysdk_5funregistercallback',['SpeedifySDK_UnregisterCallback',['../group___s_d_k.html#gae00990b78fbb6f32f43599083b6d3bfa',1,'speedifysdk.h']]],
+  ['speedifysdk_5fupdatesafebrowsingextrainfo',['SpeedifySDK_UpdateSafeBrowsingExtraInfo',['../group___s_d_k.html#ga540f1741a4def674f806fa6802d87972',1,'speedifysdk.h']]],
   ['speedifysdk_5fvendorsettingscallback',['SpeedifySDK_VendorSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga7815bfd1565eb312cb9322dd42ef3bfa',1,'callbacks.h']]],
   ['speedifysdk_5fvendorsettingsresult',['SpeedifySDK_VendorSettingsResult',['../struct_speedify_s_d_k___vendor_settings_result.html',1,'']]],
   ['speedifysdk_5fvendoruserdatacallback',['SpeedifySDK_VendorUserDataCallback',['../group___c_a_l_l_b_a_c_k_s.html#gad9f707573c84a9aaaa22b09af11573ce',1,'callbacks.h']]],
