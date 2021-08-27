@@ -22,6 +22,7 @@ var searchData=
   ['pooledbroadcastreceiver_2ejava',['PooledBroadcastReceiver.java',['../_pooled_broadcast_receiver_8java.html',1,'']]],
   ['pooledexecutor',['PooledExecutor',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html',1,'com::speedify::speedifysdk']]],
   ['pooledexecutor_2ejava',['PooledExecutor.java',['../_pooled_executor_8java.html',1,'']]],
+  ['poor',['POOR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_health.html#a277a107eefdd0ed121fe641b2c942f2a',1,'com::speedify::speedifysdk::Types::StreamHealth']]],
   ['port',['port',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_protocol_port_pair.html#af8ea58d152abb523917eb4ced2c2a7c1',1,'com::speedify::speedifysdk::Types::ProtocolPortPair']]],
   ['portprotocol',['PortProtocol',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_port_protocol.html',1,'com::speedify::speedifysdk::Types']]],
   ['ports',['ports',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#ace42661a8c632453df0ccb7801fe34ff',1,'com.speedify.speedifysdk.Types.LocalProxySettings.ports()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#ace132e9ab02f689c5559b161dc58fed1',1,'com.speedify.speedifysdk.Types.FirewallSettings.ports()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_settings.html#ac70ff2dd570f52918c0c79fd5cc19926',1,'com.speedify.speedifysdk.Types.StreamingSettings.ports()']]],

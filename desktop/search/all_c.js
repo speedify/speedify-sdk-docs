@@ -12,5 +12,6 @@ var searchData=
   ['mintime',['minTime',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a7414ab9fb43a1fa93464002d61a7e89c',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
   ['minutesavailable',['minutesAvailable',['../struct_speedify_s_d_k___accounting_data.html#a50bdde67f4a20477e0cacb914bf0259f',1,'SpeedifySDK_AccountingData']]],
   ['minutesused',['minutesUsed',['../struct_speedify_s_d_k___accounting_data.html#ab5b67fbb73ad5d160cac9bee0ea158c8',1,'SpeedifySDK_AccountingData']]],
-  ['mode',['mode',['../struct_speedify_s_d_k___firewall_settings.html#a070c838a7e9409c8395e062e3074d546',1,'SpeedifySDK_FirewallSettings']]]
+  ['mode',['mode',['../struct_speedify_s_d_k___firewall_settings.html#a070c838a7e9409c8395e062e3074d546',1,'SpeedifySDK_FirewallSettings']]],
+  ['mos',['mos',['../struct_speedify_s_d_k___connection_stats.html#a5b5de7ce8180aaefbabc01b06d4e172e',1,'SpeedifySDK_ConnectionStats']]]
 ];

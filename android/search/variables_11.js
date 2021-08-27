@@ -19,6 +19,7 @@ var searchData=
   ['starttimeout',['STARTTIMEOUT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a6380ac88458fc47ac7759a50f39bc00b',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['startupconnect',['startupConnect',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6980d9cc9b8519b5cf6cd454a92937c7',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['state',['state',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a32a1c06be95208485f169fe3366d5d8d',1,'com::speedify::speedifysdk::Types::AdapterData']]],
+  ['stopped',['STOPPED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_health.html#a8288d28e18bf8a69fac6344dfeaa2513',1,'com::speedify::speedifysdk::Types::StreamHealth']]],
   ['streaming',['STREAMING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a18b205d3113d83c8e6d30e8e32bf91f0',1,'com::speedify::speedifysdk::Types::BondingMode']]],
   ['streamingstats',['streamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a700488c9f27def5cfe6616bc5353b65f',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['streams',['streams',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a518476f2a6e0c0e4a434c5b3b204db27',1,'com::speedify::speedifysdk::Types::StreamingStats']]],

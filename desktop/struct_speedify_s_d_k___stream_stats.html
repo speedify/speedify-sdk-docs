@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">11.5.0</span>
    </div>
   </td>
  </tr>
@@ -117,8 +117,11 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a3d940cbae5ac79e8a97ab89e152ff92d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a3d940cbae5ac79e8a97ab89e152ff92d">failoverSaves</a></td></tr>
 <tr class="separator:a3d940cbae5ac79e8a97ab89e152ff92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6d694b73fbfad4da4b7f1aea2d80c1"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#aab6d694b73fbfad4da4b7f1aea2d80c1">name</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gac1024979a356c2d730e6b537468440d0">SPEEDIFYSDK_MAX_STREAM_NAME_LEN</a>]</td></tr>
-<tr class="memdesc:aab6d694b73fbfad4da4b7f1aea2d80c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the application or domain of this stream.  <a href="#aab6d694b73fbfad4da4b7f1aea2d80c1">More...</a><br /></td></tr>
+<tr class="memdesc:aab6d694b73fbfad4da4b7f1aea2d80c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the application or domain of this stream, or 'stream_test' for testing streams.  <a href="#aab6d694b73fbfad4da4b7f1aea2d80c1">More...</a><br /></td></tr>
 <tr class="separator:aab6d694b73fbfad4da4b7f1aea2d80c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bfc1dddbea3e3c6a34db0bdb06696b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga4023d15f20a3c455a6d0ab65893a889b">SpeedifySDK_StreamHealth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a20bfc1dddbea3e3c6a34db0bdb06696b">health</a></td></tr>
+<tr class="memdesc:a20bfc1dddbea3e3c6a34db0bdb06696b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream health.  <a href="#a20bfc1dddbea3e3c6a34db0bdb06696b">More...</a><br /></td></tr>
+<tr class="separator:a20bfc1dddbea3e3c6a34db0bdb06696b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="abecf87b902cc7f5524635e28b6491dfa"></a>
@@ -238,6 +241,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a20bfc1dddbea3e3c6a34db0bdb06696b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bfc1dddbea3e3c6a34db0bdb06696b">&#9670;&nbsp;</a></span>health</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga4023d15f20a3c455a6d0ab65893a889b">SpeedifySDK_StreamHealth</a> SpeedifySDK_StreamStats::health</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stream health. </p>
+<dl class="section since"><dt>Since</dt><dd>11.5 </dd></dl>
+
+</div>
+</div>
 <a id="acb1d4eac3a1233dfa7cc189208dee37d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb1d4eac3a1233dfa7cc189208dee37d">&#9670;&nbsp;</a></span>id</h2>
 
@@ -267,7 +287,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Name of the application or domain of this stream. </p>
+<p>Name of the application or domain of this stream, or 'stream_test' for testing streams. </p>
 <dl class="section since"><dt>Since</dt><dd>9.8 </dd></dl>
 
 </div>

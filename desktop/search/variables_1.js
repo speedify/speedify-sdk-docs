@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['badcpu',['badCpu',['../struct_speedify_s_d_k___streaming_stats.html#a8602528d14401e3827887d36401f3474',1,'SpeedifySDK_StreamingStats']]],
+  ['badlatency',['badLatency',['../struct_speedify_s_d_k___streaming_stats.html#ae9f06bf917d183f7a59ad31361146134',1,'SpeedifySDK_StreamingStats']]],
+  ['badloss',['badLoss',['../struct_speedify_s_d_k___streaming_stats.html#a636729bd0dea8b2a5e03e165695c6cf2',1,'SpeedifySDK_StreamingStats']]],
+  ['badmemory',['badMemory',['../struct_speedify_s_d_k___streaming_stats.html#a0ed8c85172675fc7a186e06fb4628fcd',1,'SpeedifySDK_StreamingStats']]],
   ['bondingmode',['bondingMode',['../struct_speedify_s_d_k___settings.html#af34245c012ae56719b7043d5b28d78a2',1,'SpeedifySDK_Settings::bondingMode()'],['../struct_speedify_s_d_k___streaming_stats.html#a56c18f371dd778e3e8a16bdc4cda712c',1,'SpeedifySDK_StreamingStats::bondingMode()']]],
   ['bufferwaits',['bufferWaits',['../struct_speedify_s_d_k___tun_stats.html#a7344909eecf766fb10222fb7e4e37b11',1,'SpeedifySDK_TunStats']]],
   ['bugfix',['bugfix',['../struct_speedify_s_d_k___version.html#acc185ed419011f89f30c1dd241316089',1,'SpeedifySDK_Version']]],

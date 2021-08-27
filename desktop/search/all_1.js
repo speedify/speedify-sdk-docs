@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['badcpu',['badCpu',['../struct_speedify_s_d_k___streaming_stats.html#a8602528d14401e3827887d36401f3474',1,'SpeedifySDK_StreamingStats']]],
+  ['badlatency',['badLatency',['../struct_speedify_s_d_k___streaming_stats.html#ae9f06bf917d183f7a59ad31361146134',1,'SpeedifySDK_StreamingStats']]],
+  ['badloss',['badLoss',['../struct_speedify_s_d_k___streaming_stats.html#a636729bd0dea8b2a5e03e165695c6cf2',1,'SpeedifySDK_StreamingStats']]],
+  ['badmemory',['badMemory',['../struct_speedify_s_d_k___streaming_stats.html#a0ed8c85172675fc7a186e06fb4628fcd',1,'SpeedifySDK_StreamingStats']]],
   ['basic_20usage',['Basic Usage',['../basicusage.html',1,'']]],
   ['basicusage_2edox',['basicusage.dox',['../basicusage_8dox.html',1,'']]],
   ['bmode_5fredundant',['BMODE_REDUNDANT',['../group___t_y_p_e_s.html#gga673980be58fe205ac13216bd9c934128af5717c3f2f4577f2f0bbc7b30725bea8',1,'types.h']]],

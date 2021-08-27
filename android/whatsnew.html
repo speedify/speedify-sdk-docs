@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">11.5.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,36 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1140"></a>Speedify SDK for Android 11.4 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1150"></a>Speedify SDK for Android 11.5 </h2>
+<ul>
+<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html">StreamStats</a> field <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a5380e82b22b64d03c1dd9e1e37fd67f1">health</a>, giving an indication of how well the stream is performing.</li>
+<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html">StreamingStats</a> fields:<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a8135220bf00cfe88d300913f713ba752">badLoss</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a6085a423475c7c966dfbf507926e6c90">badLatency</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#ad6db4ba73469d8c7e71836bc0ce93679">badMemory</a></li>
+</ul>
+</li>
+<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a> fields:<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a7072118becc14fb0683d9e50502a83f1">jitterMs</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a96655c94a67905ff09f351b029588210">mos</a></li>
+</ul>
+</li>
+<li>New stream test for testing supported video streaming capability, started via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6fd9c2bd9fad927142e883ce2d9c7b92">startStreamTest</a></li>
+<li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html">SpeedTestResultData</a> fields:<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#ad2caac435fad561c798d6b1393a3d70e">testType</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a172131d8793fdfa84b2058df875b081d">resolution</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a7cb33d7ee071fb7dee7844c94ac2e302">fps</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a32bb2fe7f87509f82fe1da5f810817d8">jitter</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#ab4057e6ebc4782b39c3b8494545d6e82">latency</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a3e52ac51e0d2245ed61838fd31901b10">loss</a></li>
+</ul>
+</li>
+<li>Deprecations<ul>
+<li>Versions of the <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html">SpeedifySDK</a> constructor using ports are now deprecated. Use the port-less versions instead to avoid port conflicts.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1140"></a>Speedify SDK for Android 11.4 </h2>
 <ul>
 <li>Compatibility with devices running Android 12.</li>
 <li>Fix type on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aba9ae24ca2c02bf095164f80bed3f678">lossReceive</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aec1aefd36bb15218ca915d8d5e056b6d">lossSend</a> to be doubles.</li>

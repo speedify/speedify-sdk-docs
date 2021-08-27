@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">11.5.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,33 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1140"></a>Speedify SDK for Desktop 11.4 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1150"></a>Speedify SDK for Desktop 11.5 </h2>
+<ul>
+<li>New <a class="el" href="struct_speedify_s_d_k___stream_stats.html">SpeedifySDK_StreamStats</a> field <a class="el" href="struct_speedify_s_d_k___stream_stats.html#a20bfc1dddbea3e3c6a34db0bdb06696b">health</a>, giving an indication of how well the stream is performing.</li>
+<li>New <a class="el" href="struct_speedify_s_d_k___streaming_stats.html">SpeedifySDK_StreamingStats</a> fields:<ul>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#a636729bd0dea8b2a5e03e165695c6cf2">badLoss</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#ae9f06bf917d183f7a59ad31361146134">badLatency</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#a0ed8c85172675fc7a186e06fb4628fcd">badMemory</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___streaming_stats.html#a8602528d14401e3827887d36401f3474">badCpu</a></li>
+</ul>
+</li>
+<li>New <a class="el" href="struct_speedify_s_d_k___connection_stats.html">SpeedifySDK_ConnectionStats</a> fields:<ul>
+<li><a class="el" href="struct_speedify_s_d_k___connection_stats.html#abc74e9a40ba7a9e52f09033ff225b7c7">jitterMs</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___connection_stats.html#a5b5de7ce8180aaefbabc01b06d4e172e">mos</a></li>
+</ul>
+</li>
+<li>New stream test for testing supported video streaming capability, started via <a class="el" href="group___s_d_k.html#ga53725baf1fd49db9d78cf942bd50b036">SpeedifySDK_StartStreamTest</a>.</li>
+<li>New <a class="el" href="struct_speedify_s_d_k___speed_test_result_data.html">SpeedifySDK_SpeedTestResultData</a> fields:<ul>
+<li><a class="el" href="struct_speedify_s_d_k___speed_test_result_data.html#ab251d14ee3dfcb844278697b96355cba">testType</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___speed_test_result_data.html#a78aa471009516bb5cb2fb205e6e1388e">resolution</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___speed_test_result_data.html#a8138d584a7d2eeca1cd0179b1425fb1a">fps</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___speed_test_result_data.html#a0210fa1faed79b2072465ca8a7742759">jitter</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___speed_test_result_data.html#aa8fc2a77a25d9e50d298898b80f9c95c">latency</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___speed_test_result_data.html#aafc9125faeea51567506631e45187420">loss</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1140"></a>Speedify SDK for Desktop 11.4 </h2>
 <ul>
 <li>Fix type on <a class="el" href="struct_speedify_s_d_k___connection_stats.html#a423fdb67805a37efc298fa35324c4fef">lossReceive</a> and <a class="el" href="struct_speedify_s_d_k___connection_stats.html#ae1804e4bb485175562690dbfd4d2bd62">lossSend</a> to be doubles.</li>
 </ul>

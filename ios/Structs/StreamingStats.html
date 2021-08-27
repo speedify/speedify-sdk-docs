@@ -92,10 +92,16 @@
                 <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk13SpeedTestTypeO">SpeedTestType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/s:11speedifysdk4TypeO">Type</a>
@@ -355,6 +361,135 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">streams</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/StreamStats.html">StreamStats</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk14StreamingStatsV7badLossSbvp"></a>
+                    <a name="//apple_ref/swift/Property/badLoss" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk14StreamingStatsV7badLossSbvp">badLoss</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>brief Indicator of high loss, greater than 3%.</p>
+
+<ul>
+<li>Only tracked while active streams are running.</li>
+<li>@since 11.5</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">badLoss</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk14StreamingStatsV10badLatencySbvp"></a>
+                    <a name="//apple_ref/swift/Property/badLatency" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk14StreamingStatsV10badLatencySbvp">badLatency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>brief Indicator of high latency, greater than 300ms.</p>
+
+<ul>
+<li>Only tracked while active streams are running.</li>
+<li>@since 11.5</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">badLatency</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk14StreamingStatsV9badMemorySbvp"></a>
+                    <a name="//apple_ref/swift/Property/badMemory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk14StreamingStatsV9badMemorySbvp">badMemory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>\brief Indicator of high memory usage on the system, greater than 90%.</p>
+
+<ul>
+<li>Only tracked while active streams are running.</li>
+<li>@since 11.5</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">badMemory</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk14StreamingStatsV6badCPUSbvp"></a>
+                    <a name="//apple_ref/swift/Property/badCPU" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk14StreamingStatsV6badCPUSbvp">badCPU</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>brief Indicator of high CPU usage on the system, greater than 90%.</p>
+
+<ul>
+<li>Only tracked while active streams are running.
+*</li>
+<li>@since 11.5</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">badCPU</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>

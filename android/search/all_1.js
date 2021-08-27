@@ -2,6 +2,9 @@ var searchData=
 [
   ['backup',['BACKUP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a664faa9746bbce0137bb63cc8a0f7ee7',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['bad_5ffunction_5fargument',['BAD_FUNCTION_ARGUMENT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a290c67d485aa10eaa5f470bfa972845a',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
+  ['badlatency',['badLatency',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a6085a423475c7c966dfbf507926e6c90',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
+  ['badloss',['badLoss',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a8135220bf00cfe88d300913f713ba752',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
+  ['badmemory',['badMemory',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#ad6db4ba73469d8c7e71836bc0ce93679',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
   ['bluetooth',['BLUETOOTH',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#a7937753e54b7f7b17cdcdb0332ae0eee',1,'com::speedify::speedifysdk::Types::NetworkType']]],
   ['bondingmode',['BondingMode',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html',1,'com.speedify.speedifysdk.Types.BondingMode'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a72aead37981ae9c9c8a79dca81ff0ca0',1,'com.speedify.speedifysdk.Types.Settings.bondingMode()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a87025724cfdff9c1a0efb4807800816b',1,'com.speedify.speedifysdk.Types.StreamingStats.bondingMode()']]],
   ['bufferwaits',['bufferWaits',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_tun_stats.html#af1bdf1f279d3e04469d64522769dc75f',1,'com::speedify::speedifysdk::Types::TunStats']]],

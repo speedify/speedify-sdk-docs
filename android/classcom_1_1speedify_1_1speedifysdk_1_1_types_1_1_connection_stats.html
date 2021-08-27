@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.4.0</span>
+   &#160;<span id="projectnumber">11.5.0</span>
    </div>
   </td>
  </tr>
@@ -141,6 +141,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ace4da62624db5f8b60ff62abe5f233c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ace4da62624db5f8b60ff62abe5f233c2">receiveEstimateMbps</a></td></tr>
 <tr class="memdesc:ace4da62624db5f8b60ff62abe5f233c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">estimated maximum megabits per second received.  <a href="#ace4da62624db5f8b60ff62abe5f233c2">More...</a><br /></td></tr>
 <tr class="separator:ace4da62624db5f8b60ff62abe5f233c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7072118becc14fb0683d9e50502a83f1"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a7072118becc14fb0683d9e50502a83f1">jitterMs</a></td></tr>
+<tr class="memdesc:a7072118becc14fb0683d9e50502a83f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jitter, in milliseconds.  <a href="#a7072118becc14fb0683d9e50502a83f1">More...</a><br /></td></tr>
+<tr class="separator:a7072118becc14fb0683d9e50502a83f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96655c94a67905ff09f351b029588210"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a96655c94a67905ff09f351b029588210">mos</a></td></tr>
+<tr class="memdesc:a96655c94a67905ff09f351b029588210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mean Opinion Score, 1-5.  <a href="#a96655c94a67905ff09f351b029588210">More...</a><br /></td></tr>
+<tr class="separator:a96655c94a67905ff09f351b029588210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a08bd33e926464a34b7394c39ae6a355f"></a>
@@ -228,6 +234,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7072118becc14fb0683d9e50502a83f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7072118becc14fb0683d9e50502a83f1">&#9670;&nbsp;</a></span>jitterMs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long com.speedify.speedifysdk.Types.ConnectionStats.jitterMs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Jitter, in milliseconds. </p>
+<p>Not available on historic tunnel stat updates. Not available on 'speedify' adapter. </p><dl class="section since"><dt>Since</dt><dd>11.5 </dd></dl>
+
+</div>
+</div>
 <a id="a4dc0170430b1cac386f7af3c7e821e81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dc0170430b1cac386f7af3c7e821e81">&#9670;&nbsp;</a></span>latencyMs</h2>
 
@@ -293,6 +316,23 @@ Public Attributes</h2></td></tr>
 
 <p>send loss ratio (0.0-1.0) </p>
 <p>Not available on 'speedify' adapter. </p><dl class="section since"><dt>Since</dt><dd>5.8 </dd></dl>
+
+</div>
+</div>
+<a id="a96655c94a67905ff09f351b029588210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96655c94a67905ff09f351b029588210">&#9670;&nbsp;</a></span>mos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double com.speedify.speedifysdk.Types.ConnectionStats.mos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mean Opinion Score, 1-5. </p>
+<p>Not available on historic tunnel stat updates. Not available on 'speedify' adapter. </p><dl class="section since"><dt>Since</dt><dd>11.5 </dd></dl>
 
 </div>
 </div>
