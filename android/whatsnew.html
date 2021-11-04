@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.6.0</span>
+   &#160;<span id="projectnumber">11.7.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,20 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1160"></a>Speedify SDK for Android 11.6 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1170"></a>Speedify SDK for Android 11.7 </h2>
+<ul>
+<li>On Oreo+, the VPN service will now create a temporary minimal foreground notification at the start of its onCreate, in order to prevent devices with slow IO from hitting a timeout during startup. This is not overridable.</li>
+<li>Settings updates reported through <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a> are now debounced, to avoid a flurry or reports when changing multiple settings in a row.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aec7b2bcf223aa3864a2af4813414f0c5">OnLastDisconnectEvent</a> will now be called automatically after a disconnect event it recorded, instead of only after calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa87d44348fbcc7cc58430c2edb7862d4">refreshLastDisconnectEvent</a>.</li>
+<li>API Compatibility Changes<ul>
+<li>SpeedifyHandler<ul>
+<li>If you are overriding <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8c963b5e0a24b7989d3cbde64c034258">UpdateForegroundNotification</a> to provide your own custom foreground notificaiton, you must now use a notification ID of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3b7796fd1987a2ded35980a54cbc99e">SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</a> to replace the aforementioned temporary minimal foreground notification. The notification channel used is <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab8f0d85a09ee4065be9691436db077d9">SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1160"></a>Speedify SDK for Android 11.6 </h2>
 <ul>
 <li>Full compatibility with Android 12 (S). Speedify SDK's targetSdkVersion is now 31.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html">LogGeneration</a> is now thread-safe.</li>
