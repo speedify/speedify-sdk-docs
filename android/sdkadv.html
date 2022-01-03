@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.7.0</span>
+   &#160;<span id="projectnumber">11.8.0</span>
    </div>
   </td>
  </tr>
@@ -74,7 +74,7 @@ $(function() {
 <div class="textblock"><h2>Conditional Setup </h2>
 <p>If you do not want Speedify SDK's notification to be always present when running your app, you can conditionally initialize the SpeedifySDK object in your Application's onCreate only in the background process. You can then initialize the SpeedifySDK in your application's main process whenever you want. If you do this, be careful that your use the same name and port number in the constructor, or your application's main process won't be able to communicate with Speedify SDK's background process.</p>
 <p>YourApplication.java </p><div class="fragment"><div class="line">@Override</div><div class="line"><span class="keyword">public</span> <span class="keywordtype">void</span> onCreate() {</div><div class="line">  super.onCreate();</div><div class="line"></div><div class="line">  <span class="comment">// ... other boilerplate initialization ...</span></div><div class="line"></div><div class="line">  <span class="keywordflow">if</span> (SpeedifySDK.IsBackgroundProcess(<span class="keyword">this</span>)) {</div><div class="line">    SpeedifySDK SDK = <span class="keyword">new</span> SpeedifySDK(getApplicationContext(), <span class="stringliteral">&quot;My App Title&quot;</span>, 5678);</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// ... other initialization specific to your app ...</span></div><div class="line">}</div></div><!-- fragment --><p> YourVPNControlActivity.java </p><div class="fragment"><div class="line"><span class="keyword">private</span> <span class="keywordtype">void</span> initializeSpeedifySDK() {</div><div class="line">  SpeedifySDK SDK = <span class="keyword">new</span> SpeedifySDK(getApplicationContext(), <span class="stringliteral">&quot;My App Title&quot;</span>, 5678);</div><div class="line">}</div></div><!-- fragment --><h2>SDK Cleanup </h2>
-<p>To close down the SDK entirely without exiting your application, call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3e56b3a94d421d8759a447f979f031a1">SpeedifySDK.ForceExit(context)</a>. To restart the SDK, you must either reconstruct a new SpeedifySDK object or call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac7131def996ac642a67a79c5cc900e81">restartServices</a> on your old SpeedifySDK object. </p>
+<p>To close down the SDK entirely without exiting your application, call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1576bc08e3d680f363260f1c38ab27d9">SpeedifySDK.ForceExit(context)</a>. To restart the SDK, you must either reconstruct a new SpeedifySDK object or call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac7131def996ac642a67a79c5cc900e81">restartServices</a> on your old SpeedifySDK object. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.15-->

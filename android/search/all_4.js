@@ -1,13 +1,13 @@
 var searchData=
 [
   ['email',['email',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a44d99b2abbfbf22e2e044aac008948b1',1,'com::speedify::speedifysdk::Types::AccountingData']]],
-  ['enablecaptiveportalmode',['enableCaptivePortalMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a169a1634e86fe269dbd86c62c99e29de',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['enablecaptiveportalmode',['enableCaptivePortalMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a33aed37f95e72f57554d3aa3e327b4b9',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['enableconnectionstatupdates',['enableConnectionStatUpdates',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab51c7f8e6d1a1a9d8491c1485cdbf291',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['enabled',['enabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a39a4dadd384e5042031f6cfa55f92f78',1,'com.speedify.speedifysdk.Types.LocalProxyDomainWatchlistItem.enabled()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#ac56ab789a01caf37fc0e0003dd97e32e',1,'com.speedify.speedifysdk.Types.LocalProxySettings.enabled()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_settings.html#a28d8e5e37ceed9df77037af0be388afc',1,'com.speedify.speedifysdk.Types.SafeBrowsingSettings.enabled()']]],
   ['enabledefaultroute',['enableDefaultRoute',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a8981f5a1e54eaced9b2a9c121d3fdbc7',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['enableesni',['enableEsni',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_directory_settings.html#ac52a3612c82a0b94563d5a517f9b4a06',1,'com::speedify::speedifysdk::Types::DirectorySettings']]],
   ['enablesdkhandlerfrombackground',['EnableSDKHandlerFromBackground',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aad4135515ed9fb3ea443995337e1043d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['enablestatupdates',['enableStatUpdates',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['enablestatupdates',['enableStatUpdates',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abefc2866126cda2a2e47cfdc37a1b9a3',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['encrypted',['encrypted',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a09f78260a36f70f63dbc40eb2b83d82e',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['encryptedbytesreceived',['encryptedBytesReceived',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ad055aacc818969b2da413ac03a59f7d1',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['encryptedbytessent',['encryptedBytesSent',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a75127283e4e6858aa977435abee2e139',1,'com::speedify::speedifysdk::Types::SessionStats']]],

@@ -6,6 +6,7 @@ var searchData=
   ['speedifysdk_5faccountpasswordchangecallback',['SpeedifySDK_AccountPasswordChangeCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga602e009ffb97e8244ed65a5c4d32c942',1,'callbacks.h']]],
   ['speedifysdk_5fadapteroverlimitcallback',['SpeedifySDK_AdapterOverlimitCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga86c29a010cc64f70a118f345f687a79c',1,'callbacks.h']]],
   ['speedifysdk_5fadapterscallback',['SpeedifySDK_AdaptersCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga3019cfa17dc99dd15edd53b6f0b61bdb',1,'callbacks.h']]],
+  ['speedifysdk_5fappnamestring',['SpeedifySDK_AppNameString',['../group___t_y_p_e_s.html#gac9d6764306b6539110d8947273100a36',1,'types.h']]],
   ['speedifysdk_5fbasecallback',['SpeedifySDK_BaseCallback',['../group___c_a_l_l_b_a_c_k_s.html#gaef7ad0779565124919dc49d377ad54c1',1,'callbacks.h']]],
   ['speedifysdk_5fcaptiveportalcheckcallback',['SpeedifySDK_CaptivePortalCheckCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga825d94635c7ea5972edd4d1bcc337dd9',1,'callbacks.h']]],
   ['speedifysdk_5fcaptiveportallogincallback',['SpeedifySDK_CaptivePortalLoginCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga5ffb57733a269cacf0a58b762109ef60',1,'callbacks.h']]],

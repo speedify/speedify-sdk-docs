@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../struct_speedify_s_d_k___adapter_data.html#a299b40d13ec1bbdd8ea30b79dfbeefca',1,'SpeedifySDK_AdapterData::name()'],['../struct_speedify_s_d_k___stream_stats.html#aab6d694b73fbfad4da4b7f1aea2d80c1',1,'SpeedifySDK_StreamStats::name()']]],
+  ['name',['name',['../struct_speedify_s_d_k___create_settings.html#ad6024af07aa98f5d0fb08a06ae696940',1,'SpeedifySDK_CreateSettings::name()'],['../struct_speedify_s_d_k___adapter_data.html#a299b40d13ec1bbdd8ea30b79dfbeefca',1,'SpeedifySDK_AdapterData::name()'],['../struct_speedify_s_d_k___stream_stats.html#aab6d694b73fbfad4da4b7f1aea2d80c1',1,'SpeedifySDK_StreamStats::name()']]],
   ['networktype_5fbluetooth',['NETWORKTYPE_BLUETOOTH',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba8f5cd60eff300be459749f30cf3f05de',1,'types.h']]],
   ['networktype_5fcellular',['NETWORKTYPE_CELLULAR',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baee15d79f90293e228aadeef700a54d8a',1,'types.h']]],
   ['networktype_5fethernet',['NETWORKTYPE_ETHERNET',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba1eb038a7b01236f57976d434e6467cba',1,'types.h']]],

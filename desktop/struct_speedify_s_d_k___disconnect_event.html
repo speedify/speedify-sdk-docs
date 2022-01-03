@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.7.0</span>
+   &#160;<span id="projectnumber">11.8.0</span>
    </div>
   </td>
  </tr>
@@ -85,7 +85,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a385a30979bdff0eb99aa847f444e8991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for the disconnect.  <a href="#a385a30979bdff0eb99aa847f444e8991">More...</a><br /></td></tr>
 <tr class="separator:a385a30979bdff0eb99aa847f444e8991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d683fc83cf70febc0d7ab41cd16f2d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___disconnect_event.html#a91d683fc83cf70febc0d7ab41cd16f2d">sessionEnd</a></td></tr>
-<tr class="memdesc:a91d683fc83cf70febc0d7ab41cd16f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time of the disconnect, in seconds since epoch.  <a href="#a91d683fc83cf70febc0d7ab41cd16f2d">More...</a><br /></td></tr>
+<tr class="memdesc:a91d683fc83cf70febc0d7ab41cd16f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time of the disconnect, in seconds since epoch. If 0, there has been no disconnect event to report. This field can be used to track uniqueness of DisconnectEvent objects.  <a href="#a91d683fc83cf70febc0d7ab41cd16f2d">More...</a><br /></td></tr>
 <tr class="separator:a91d683fc83cf70febc0d7ab41cd16f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad76692151437a2b1da66fcffc6cf6a20"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___disconnect_event.html#ad76692151437a2b1da66fcffc6cf6a20">sessionLength</a></td></tr>
 <tr class="memdesc:ad76692151437a2b1da66fcffc6cf6a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the session in seconds.  <a href="#ad76692151437a2b1da66fcffc6cf6a20">More...</a><br /></td></tr>
@@ -121,7 +121,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Time of the disconnect, in seconds since epoch. </p>
+<p>Time of the disconnect, in seconds since epoch. If 0, there has been no disconnect event to report. This field can be used to track uniqueness of DisconnectEvent objects. </p>
 <dl class="section since"><dt>Since</dt><dd>11.3 </dd></dl>
 
 </div>

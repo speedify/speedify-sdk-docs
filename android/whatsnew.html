@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.7.0</span>
+   &#160;<span id="projectnumber">11.8.0</span>
    </div>
   </td>
  </tr>
@@ -71,14 +71,20 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1170"></a>Speedify SDK for Android 11.7 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1180"></a>Speedify SDK for Android 11.8 </h2>
+<ul>
+<li>SDK now takes an app name parameter to identify your app on the server side. This may be set manually via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#afb94eab8a5e3bba1dff957b9eace74ea">setAppName</a> or automatically via the <code>name</code> parameter of the <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef5272e74f30d04349b5941924d70979">SpeedifySDK</a> constructor. If setting manually, this must be called before any login method.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html">SpeedifySDK</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a>, and <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html">ISpeedifyHandler</a> now use <code>@Nullable</code> and <code>@NonNull</code> annotations on method parameters and returns.</li>
+<li>The default service notification no longer uses a MessagingStyle style on Xiaomi devices. Xiaomi has fixed their MIUI bug that lead to crashes.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1170"></a>Speedify SDK for Android 11.7 </h2>
 <ul>
 <li>On Oreo+, the VPN service will now create a temporary minimal foreground notification at the start of its onCreate, in order to prevent devices with slow IO from hitting a timeout during startup. This is not overridable.</li>
 <li>Settings updates reported through <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a> are now debounced, to avoid a flurry or reports when changing multiple settings in a row.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aec7b2bcf223aa3864a2af4813414f0c5">OnLastDisconnectEvent</a> will now be called automatically after a disconnect event it recorded, instead of only after calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa87d44348fbcc7cc58430c2edb7862d4">refreshLastDisconnectEvent</a>.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae1edd50fab09277dadaebb0f4f0df0a0">OnLastDisconnectEvent</a> will now be called automatically after a disconnect event it recorded, instead of only after calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa87d44348fbcc7cc58430c2edb7862d4">refreshLastDisconnectEvent</a>.</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifyHandler<ul>
-<li>If you are overriding <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8c963b5e0a24b7989d3cbde64c034258">UpdateForegroundNotification</a> to provide your own custom foreground notificaiton, you must now use a notification ID of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3b7796fd1987a2ded35980a54cbc99e">SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</a> to replace the aforementioned temporary minimal foreground notification. The notification channel used is <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab8f0d85a09ee4065be9691436db077d9">SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</a>.</li>
+<li>If you are overriding <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab07549428228c0d8e532b6e531fad4bd">UpdateForegroundNotification</a> to provide your own custom foreground notificaiton, you must now use a notification ID of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3b7796fd1987a2ded35980a54cbc99e">SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</a> to replace the aforementioned temporary minimal foreground notification. The notification channel used is <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab8f0d85a09ee4065be9691436db077d9">SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</a>.</li>
 </ul>
 </li>
 </ul>
@@ -130,7 +136,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_1130"></a>Speedify SDK for Android 11.3 </h2>
 <ul>
-<li>When using a local-proxy-only VPN by calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a891b3e67a44106afb1b8be9b6db9600b">connectProxy</a> and using default DNS server settings, or setting an empty DNS server list via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef0319bb8e304e64cd656ea4b7b05ae0">setDNSServers</a> with an empty list, the DNS servers of the other physical connections will be used instead of setting an explicit DNS server over the VPN connection.</li>
+<li>When using a local-proxy-only VPN by calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a891b3e67a44106afb1b8be9b6db9600b">connectProxy</a> and using default DNS server settings, or setting an empty DNS server list via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a31b03db893fb7beb5166a3877b46ae77">setDNSServers</a> with an empty list, the DNS servers of the other physical connections will be used instead of setting an explicit DNS server over the VPN connection.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html">DisconnectEvent</a> objects have 2 new fields: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html#a61ce7f35107a0667588c226cc9a9a14e">sessionEnd</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_event.html#a83f0be5597b5b41d322a259ad03d87d5">sessionLength</a></li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1123"></a>Speedify SDK for Android 11.2.3 </h2>
@@ -148,7 +154,7 @@ $(function() {
 <h2><a class="anchor" id="whatsnew_1120"></a>Speedify SDK for Android 11.2 </h2>
 <ul>
 <li>Full IPv6 support through the tunnel, including firewall and local proxy.<ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aaf875e483d64386c4d543587463da107">setLocalProxyIPv6</a> added.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1e68a5c7ca19d08006fdb5c1eb734e09">setLocalProxyIPv6</a> added.</li>
 </ul>
 </li>
 <li>The <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> handler in log generation calls may now be passed in separately from the Activity/Context.<ul>
@@ -159,19 +165,19 @@ $(function() {
 </ul>
 </li>
 <li>Deprecations<ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a39303004b2e8d4a72906aaefaf898185">OnLockedSetting(String)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a824a56f7d4f452d3cb961f9d4366a493">OnLockedSetting(String,SettingsLockReason)</a>.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaa2d5b3acc91d7b7db49b721b31a9b12">OnLockedSetting(String)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ae81073e02c69c5203f3611f873c324a4">OnLockedSetting(String,SettingsLockReason)</a>.</li>
 </ul>
 </li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1111"></a>Speedify SDK for Android 11.1.1 </h2>
 <ul>
-<li>The default service notification now uses a MessagingStyle style on Xioami devices running Nougat and higher to avoid a crash in MIUI.</li>
+<li>The default service notification now uses a MessagingStyle style on Xiaomi devices running Nougat and higher to avoid a crash in MIUI.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1110"></a>Speedify SDK for Android 11.1 </h2>
 <ul>
 <li><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd">AUTO</a> transport mode now automatically scales the number of tcp sockets it uses, providing better performance.</li>
 <li>It is now possible to receive SDK callback methods of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a> from the background process (:vpnservice), in addition to the main process. To enable this, set <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aad4135515ed9fb3ea443995337e1043d">EnableSDKHandlerFromBackground</a> to true prior to initializing the SDK.</li>
-<li>Application packages can now be specified to use the local proxy, via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a308329fb6d8258fcd4b8f5a36a939322">setLocalProxyPackages</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#abc5caa1b141644cb3a427c5389d7f67a">proxiedPackages</a> the member in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1a4da4aa940649ebfdc7e744b2be7c8b">setLocalProxyDomainWatchlist</a>.</li>
+<li>Application packages can now be specified to use the local proxy, via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acba061e1dfbae3e8eefbd3a63ef5a5fd">setLocalProxyPackages</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#abc5caa1b141644cb3a427c5389d7f67a">proxiedPackages</a> the member in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a64d06d7aae325e3eb18996bad26bc1c7">setLocalProxyDomainWatchlist</a>.</li>
 <li>Deprecations<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#a1190e4bee06382174576a878c64fbdff">GetUuid()</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#ac9d5d9f69e451cac203ad9597762bf4d">GetUuid(UuidHandler)</a> - These methods now take a context, so that they may be called prior to initialization of a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html">SpeedifySDK</a> object. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#af92466573fd17b4947552c73adcef636">GetUuid(Context)</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html#a165046c369fdfb2fe7a1f9de6662c0fe">GetUuid(Context,UuidHandler)</a></li>
 </ul>
@@ -183,7 +189,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_1100"></a>Speedify SDK for Android 11.0 </h2>
 <ul>
-<li>New simple speed test. This runs an iPerf3 speed test for 10 seconds in both directions over the VPN tunnel. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad3b5fc4fea89d2a8859345878a6f9f79">startSpeedTest</a> to initiate a new test. Results are provided via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae2ed72dd80319076a50336aa1c56caf2">OnSpeedTestResults</a>. Results of prior tests can be retrieved with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0bb6074964ed6b0aa017da8a6ca07259">refreshSpeedTestResults</a>.</li>
+<li>New simple speed test. This runs an iPerf3 speed test for 10 seconds in both directions over the VPN tunnel. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad3b5fc4fea89d2a8859345878a6f9f79">startSpeedTest</a> to initiate a new test. Results are provided via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0017cbc6db72e04969f0514a30100b86">OnSpeedTestResults</a>. Results of prior tests can be retrieved with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0bb6074964ed6b0aa017da8a6ca07259">refreshSpeedTestResults</a>.</li>
 <li>The fileName arguments for <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a1918ef726fef0b76baaebf76611d118b">shareLogs</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a07e739a061a31244318a91dfdb97d19c">generateLogs</a> now support absolute paths. If required, you must request write permission to this path prior to calling.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1095"></a>Speedify SDK for Android 10.9.5 </h2>
@@ -200,7 +206,7 @@ $(function() {
 <h2><a class="anchor" id="whatsnew_1090"></a>Speedify SDK for Android 10.9 </h2>
 <ul>
 <li>Corrected documentation on <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#aac2de2792427d9f10d9b60263c305627">OVERLIMIT</a> state.</li>
-<li>Support for custom <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_settings.html">StreamingSettings</a>. These can be set via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a903abf948113f1fd0893113f7a501211">setStreamingDomains</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6c196295b121a6fc4a62786035405ab7">setStreamingIPv4</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7767084987edaba15821624895268b41">setStreamingIPv6</a>, and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a81f6f9e06e241231bb17587cefe8beae">setStreamingPorts</a>. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac0e82fd3c240b7febfe4e4010a8a59e8">refreshStreamingSettings</a> to pull current settings.</li>
+<li>Support for custom <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_settings.html">StreamingSettings</a>. These can be set via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3ce91239dbf75ae29cffca777936d8a9">setStreamingDomains</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa8d7d68fdfffad9008fcc4953449d28f">setStreamingIPv4</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a5510679e427ea69ba7c3432308b106a3">setStreamingIPv6</a>, and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9ab818b46f7a05ef6af2f3159488c9d0">setStreamingPorts</a>. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac0e82fd3c240b7febfe4e4010a8a59e8">refreshStreamingSettings</a> to pull current settings.</li>
 <li>New <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a6d88b9131e3166c71313d8d824387616">OVERQUOTA</a> disconnect reason.</li>
 <li>Speed test calls have been removed.</li>
 <li>Corrected <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a37e4c430aa1d38ab769d2a4c58326def">sendBps</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed">receiveBps</a> on to be in bits per second, matching <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a768c88e5cf5caf6dcc5e6c65ed4e7fe5">totalBps</a>.</li>
@@ -211,7 +217,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_1080"></a>Speedify SDK for Android 10.8 </h2>
 <ul>
-<li>The language used for error messages can now be set with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ae7cb2ee0228d20184539c847c50886a9">setLanguage</a>. This takes a 2-character ISO language code. Supported languages include 'en', 'ar, 'de', 'es', 'fr', 'pt', 'ro', 'ru', 'tr', 'zh'.</li>
+<li>The language used for error messages can now be set with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abc155d6d778718d20111773e7aef994b">setLanguage</a>. This takes a 2-character ISO language code. Supported languages include 'en', 'ar, 'de', 'es', 'fr', 'pt', 'ro', 'ru', 'tr', 'zh'.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1071"></a>Speedify SDK for Android 10.7.1 </h2>
 <ul>
@@ -221,15 +227,15 @@ $(function() {
 <ul>
 <li>Header compression now defaults to on.</li>
 <li>Disconnect Reasons have been expanded to include <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#acdb96e5a3752d019c95ec32a00662174">DNSTIMEOUT</a> and <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a06f53ea1c79b8c8e0f40ea7426b7e99c">TUNNELTIMEOUT</a>.</li>
-<li>The default behavior of removing running services on task swipe when disconnect may be stopped via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aefd9a17d7b72d19e1748bd69e21b81f4">setNeverExitOnSwipe</a>. Services may be manually stopped with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3e56b3a94d421d8759a447f979f031a1">ForceExit</a>.</li>
+<li>The default behavior of removing running services on task swipe when disconnect may be stopped via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aefd9a17d7b72d19e1748bd69e21b81f4">setNeverExitOnSwipe</a>. Services may be manually stopped with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1576bc08e3d680f363260f1c38ab27d9">ForceExit</a>.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1060"></a>Speedify SDK for Android 10.6 </h2>
 <ul>
 <li>Calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7f35ca0ad17c0fc03b8a04448198522">logout</a> will now reset your connect method to <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a7572c9e226ddc2e00dfe941f43c66ed3">CLOSEST</a>.</li>
 <li>Header compression can be enabled via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa9d56c2a4b8833f692d6698167c3faeb">setHeaderCompression</a>. Currently support extends to IPv4, UDP, and partial TCP (ports only).</li>
 <li>New portless SpeedifySDK constructor methods<ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9b59b8a94f5e528fa6b6f66491f0e249">SpeedifySDK(Context,String)</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a404f1217ca8c488d21a20c7fd7e35e3c">SpeedifySDK(Context,String,ISpeedifyHandler)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef5272e74f30d04349b5941924d70979">SpeedifySDK(Context,String)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3d0ffe303418a5c91906da72c2468b95">SpeedifySDK(Context,String,ISpeedifyHandler)</a></li>
 <li>The above SDK constructors, lacking the port argument, allows the Speedify SDK to automatically choose an internal endpoint based on the installed package's uid that is unique from any other application using the Speedify SDK.</li>
 <li>Android Work Profile and Samsung Secure Folder are now supported with no additional work when using one of the above SDK constructors.</li>
 <li>The SDK constructor calls with port arguments will continue to construct the internal endpoint at 127.0.0.1:<code>port</code></li>
@@ -238,18 +244,18 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_1050"></a>Speedify SDK for Android 10.5 </h2>
 <ul>
-<li>Speedify SDK now supports a centralized OAuth gateway for authentication. Setup the gateway URI with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8649444213cb3fbe1c5a5231ba6a678c">setDirectoryGatewayURI</a> before logging in with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">loginOAuth</a>.</li>
-<li>Log settings in the daemon service are now configurable through <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6fcfd6413bab4360acca2a69ea2576af">setDaemonLogSettings</a>.</li>
+<li>Speedify SDK now supports a centralized OAuth gateway for authentication. Setup the gateway URI with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a49c7862b1d4aad9bb86d2598588db30b">setDirectoryGatewayURI</a> before logging in with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0ec4552a5e448276f629a14c464c4310">loginOAuth</a>.</li>
+<li>Log settings in the daemon service are now configurable through <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a50d561f496ead5d103940104ccf3b4f4">setDaemonLogSettings</a>.</li>
 <li>You can now generate a log zip without triggering a share dialog with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a07e739a061a31244318a91dfdb97d19c">generateLogs</a>. The resulting zip file will be placed in a folder named <code>logs</code> under your application's files directory.</li>
 <li>Log files and generated log zips may be deleted with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a71ec7a377038174ab36595a11b153eb2">eraseAllLogFiles</a>. Note that the current active log file is not erased.</li>
 <li>Credentials, like oauth tokens and passwords, can be restricted from being saved locally using <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3729a911fe4bcf7777397f6731977ff5">setDoNotStoreCredentials</a>. Note that you will have to manually call a login method on every new SDK daemon run.</li>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a>'s <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#a9db09e559e8531a3a5f0e11e33b2095e">logComplete</a> callback now takes a boolean indicating successful log generation.</li>
-<li>loginOauth has been changed to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">loginOAuth</a>.</li>
+<li>loginOauth has been changed to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0ec4552a5e448276f629a14c464c4310">loginOAuth</a>.</li>
 </ul>
 </li>
 <li>Deprecations<ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaab5f7dd7bada25a1c1bdd2a0ba7b8f0">OnDirectoryDomain(String,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ab3dbb522659ffa88b0808c9245efb87e">OnDirectorySettings</a>.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a05bd4c21fe85d5c2f6936b971dee6ea6">OnDirectoryDomain(String,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a1b57b2c32fe5e675ae604a8c69db4ddb">OnDirectorySettings</a>.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> has been deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a10892665b1312d439363a2068a19543b">refreshDirectorySettings</a>.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a74bf34fadb64d702ab4596a07f9d8cd3">setCrashReporting</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a04351369bc30e907f7d43e6f8519c5e0">crashReports</a> - Crash reporting has been removed from the SDK for several releases.</li>
 </ul>
@@ -271,7 +277,7 @@ $(function() {
 </li>
 <li>Deprecations<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9413aeb08f153f6f44a5672c26c524d2">OnServiceRestart(State,boolean)</a> has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa69ee1f83e2a0a78566db640b52ebccd">OnServiceRestart(State,RestartReason)</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8d3202983f79516ca4ca698a7ef6b6ae">OnDirectoryDomain(String)</a> has been deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaab5f7dd7bada25a1c1bdd2a0ba7b8f0">OnDirectoryDomain(String,boolean)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a3b8df889411e60a424c36478100ba848">OnDirectoryDomain(String)</a> has been deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a05bd4c21fe85d5c2f6936b971dee6ea6">OnDirectoryDomain(String,boolean)</a></li>
 </ul>
 </li>
 </ul>
@@ -309,7 +315,7 @@ $(function() {
 <ul>
 <li>New Session Stats API<ul>
 <li>The named time period members (current, day, week, month, total) are removed in favor of custom time periods. The <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#ad0cf9a09d563aab96b5c2fdf8fc61362">periods</a> member now contains a list of all requested time periods. Use the <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#a9ed1e12fc9f6335ebdf7cff46f763654">period</a> member of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html">SessionStats</a> to identify the period the stats are for.</li>
-<li>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> to specify wanted time periods.</li>
+<li>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abefc2866126cda2a2e47cfdc37a1b9a3">enableStatUpdates</a> to specify wanted time periods.</li>
 </ul>
 </li>
 <li>Session Stats now include <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html">StreamingSessionStats</a> for each period.</li>
@@ -319,7 +325,7 @@ $(function() {
 </li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab51c7f8e6d1a1a9d8491c1485cdbf291">enableConnectionStatUpdates</a> is deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7815d1b7b4591407fa253f0773aaf66">enableStatUpdates</a> instead.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab51c7f8e6d1a1a9d8491c1485cdbf291">enableConnectionStatUpdates</a> is deprecated. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abefc2866126cda2a2e47cfdc37a1b9a3">enableStatUpdates</a> instead.</li>
 </ul>
 </li>
 <li>SessionStatPeriods<ul>
@@ -346,12 +352,12 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_990"></a>Speedify SDK for Android 9.9 </h2>
 <ul>
-<li>The Local Proxy API now supports matching by TCP and UDP port: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a649903a4d1d19b5b78467f128d93d8a0">setLocalProxyPorts</a>.</li>
+<li>The Local Proxy API now supports matching by TCP and UDP port: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a858a077f7ebfe7adab242afb04b477fd">setLocalProxyPorts</a>.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_980"></a>Speedify SDK for Android 9.8 </h2>
 <ul>
 <li>Multicast Support - Receiving multicast packets while the VPN is connected has been restricted by the VPN not allowing apps to send/receive traffic around the VPN. This is the default VPN behavior on Android, and is the most secure setting. If you need multicast support, you can allow apps to communicate around the VPN by setting <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a83fdcd0d1fadb7c33c329ea7a48f3652">setAllowTunnelBypass</a>. Note that this opens up all apps to be able to create sockets that bypass the VPN, thus decreasing security.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac4239bb495d63bf6cedbf775cd47f048">setVendorUserData</a> can be used to provide a string of user data for an account.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3a7dfad754cd6cffeafb588563278783">setVendorUserData</a> can be used to provide a string of user data for an account.</li>
 <li>New <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html">StreamingStats</a> fields: (these are now under <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_session_stats.html">StreamingSessionStats</a> as of 10.0)<ul>
 <li>totalRedundantModeSaves</li>
 <li>totalSpeedModeSaves</li>
@@ -389,10 +395,10 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_950"></a>Speedify SDK for Android 9.5 </h2>
 <ul>
-<li>Session stats in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">OnSessionStats</a> are now tracked over multiple time periods, including current session, last day, last week, last month, and total.</li>
+<li>Session stats in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3113c1ccbd288cf3d0d2e4fedcb094bb">OnSessionStats</a> are now tracked over multiple time periods, including current session, last day, last week, last month, and total.</li>
 <li>API Compatibility Changes<ul>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html">ISpeedifyHandler</a><ul>
-<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3c881bdaef8b16e64ef5b96c344f9fc8">OnSessionStats</a> now passes in a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html">SessionStatPeriods</a> object instead of a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html">SessionStats</a> to accommodate stats over various time periods.</li>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a3113c1ccbd288cf3d0d2e4fedcb094bb">OnSessionStats</a> now passes in a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html">SessionStatPeriods</a> object instead of a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html">SessionStats</a> to accommodate stats over various time periods.</li>
 </ul>
 </li>
 </ul>
@@ -400,7 +406,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_940"></a>Speedify SDK for Android 9.4 </h2>
 <ul>
-<li>Connect at boot is now supported via a <a class="el" href="onboot.html">boot handler</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0825a47f582698ee62cab30e5144f0b5">setStartupConnect</a>. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a17b2f00221a04792a6be29706ce41b8d">setConnectMethodAuto</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ae353b1e51ef960d4f4c71fbde24c28df">setConnectMethodCountry</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa23ded634cfc40ea6b2f3b8ae0366fb3">setConnectMethodCity</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa4f4c71935a54d407beaaa7a1a9bfeb5">setConnectMethodServer</a> to control how servers are chosen at boot.</li>
+<li>Connect at boot is now supported via a <a class="el" href="onboot.html">boot handler</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0825a47f582698ee62cab30e5144f0b5">setStartupConnect</a>. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a17b2f00221a04792a6be29706ce41b8d">setConnectMethodAuto</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa309b9ed7832c7ee64222a8ad61e0033">setConnectMethodCountry</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a86ac3a8d66d18511913d7125205b039e">setConnectMethodCity</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a29f68484845713a40942ec3e225892bf">setConnectMethodServer</a> to control how servers are chosen at boot.</li>
 <li>Killswitch functionality has been added to Speedify for Android. Enable the option via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6b8e54786ac67a0e6158f0d7dc9e09ad">setKillswitch</a> and implement a <a class="el" href="onboot.html">boot handler</a> to initialize the killswitch at device startup.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfe4ddbddf1e8ca62bb266eafc454b01">setEnableDefaultRoute</a> can be used to disable Speedify from obtaining the default route and handling all Internet traffic.</li>
 <li>API Compatibility Changes<ul>
@@ -417,38 +423,38 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_930"></a>Speedify SDK for Android 9.3 </h2>
 <ul>
-<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4892769037411666f998c44a39810b55">OnCaptivePortals</a> callbacks when captive portals are detected.</li>
-<li>The Firewall API now supports filtering by IPv6: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a40a13663c1252cc145d6ef55248cb8ef">setFirewallIPv6</a>. ICMP and other protocols are now also blockable by domain and IP.</li>
-<li>The Local Proxy API now supports Domain Watchlists. Watchlists are lists of domains grouped by the service they represent, configurable via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1a4da4aa940649ebfdc7e744b2be7c8b">setLocalProxyDomainWatchlist</a>. When an attempt to access a watched domain is seen, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aea213bd554b177777942184dfb587f90">OnLocalProxyDomainWatchlistHit</a> is triggered. <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a834aa60247c7741c18d4484f58447551">setLocalProxyDomainWatchlistEnable</a> can then be used to enable that service's domains to be sent through the local proxy instead of the VPN.</li>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#af9a82d1f892bee31c06e01faee19d342">OnCaptivePortals</a> callbacks when captive portals are detected.</li>
+<li>The Firewall API now supports filtering by IPv6: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8a7c88466a5ee1a92fbafefbf79aa12f">setFirewallIPv6</a>. ICMP and other protocols are now also blockable by domain and IP.</li>
+<li>The Local Proxy API now supports Domain Watchlists. Watchlists are lists of domains grouped by the service they represent, configurable via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a64d06d7aae325e3eb18996bad26bc1c7">setLocalProxyDomainWatchlist</a>. When an attempt to access a watched domain is seen, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4fcdc76fd8985ef2212dbaf7b8ae5d9d">OnLocalProxyDomainWatchlistHit</a> is triggered. <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a793736d4135f68be822dcc9e792015d9">setLocalProxyDomainWatchlistEnable</a> can then be used to enable that service's domains to be sent through the local proxy instead of the VPN.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_920"></a>Speedify SDK for Android 9.2 </h2>
 <ul>
 <li>The Firewall API is used to block traffic over the VPN tunnel.<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad3b41bbb9c2b079fde95351e6a1f6aa7">setFirewallMode</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acb32f9195d98043664242bb796f119a8">setFirewallDomains</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6693bc5e19783e7feb3cd4cc5e589ea2">setFirewallIPv4</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a00095faf4abadacf72026e100669b657">setFirewallPorts</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1c7c7e64910f36543da73c1a83777917">setFirewallDomains</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6b9d1d1887a171b3a11cf98dcf177b08">setFirewallIPv4</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a503103c58d11695ff6b04b880df2e686">setFirewallPorts</a></li>
 </ul>
 </li>
 <li>Speedify SDK can now be configured to send certain domains and IP addresses around the VPN and straight out the local network.<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#affec008431de6d53683c4588047410ab">setLocalProxyEnabled</a></li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab08b2456dc5d38429c45088e9f0490c0">setLocalProxyMatchMode</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a31d25250ddcdb23ac6b2f718fb3bf7db">setLocalProxyDomains</a></li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#adb3b6bf3030c04fd1762c4678bd619dd">setLocalProxyIPv4</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aab7ae6785812d44e2d0e95ff5830536f">setLocalProxyDomains</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2f90040cecd4e9e5e54785b4afccdb58">setLocalProxyIPv4</a></li>
 </ul>
 </li>
-<li>Speedify SDK provides <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abd91fc14cf03cf59c6a3eda50f098e8e">setLocalVendorSettings</a> for saving a custom JSON object for later consumption.</li>
+<li>Speedify SDK provides <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a18fbfb87d9bb3f9b951d6f7a62fbb3ec">setLocalVendorSettings</a> for saving a custom JSON object for later consumption.</li>
 <li>The dependency on play-services-ads has been reduced in scope to play-services-ads-identifier, version 17.0.0.</li>
 <li>Deprecation removals - Longtime methods marked as Deprecated have been removed<ul>
 <li>SpeedifyHandler<ul>
 <li>OnServiceRestart() - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9413aeb08f153f6f44a5672c26c524d2">OnServiceRestart</a></li>
-<li>OnConnectedServer(ServerInformation) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a18c9d6c7d334c10ad726c644dca3b6e6">OnConnectedServer</a></li>
-<li>OnNewAdapter(String) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aed01db667447cc835ba547324ddcdf48">OnNewAdapter</a></li>
-<li>OnAdapterOverlimit(String,AdapterUsageData) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab5d0d87f91cad7e90b2f2bdc981fff73">OnAdapterOverlimit</a></li>
+<li>OnConnectedServer(ServerInformation) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9567c455da8c7f324fcdec1f44c87d10">OnConnectedServer</a></li>
+<li>OnNewAdapter(String) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0a906ca56b197bff620044797ea49cd6">OnNewAdapter</a></li>
+<li>OnAdapterOverlimit(String,AdapterUsageData) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a135f55794b6e601005e6c992b6376041">OnAdapterOverlimit</a></li>
 </ul>
 </li>
 <li>SpeedifySDK<ul>
-<li>setDirectoryURL(String) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a22d502292a8d8002340a78d487007797">setDirectoryDomain</a></li>
+<li>setDirectoryURL(String) - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a86af970025bf4b28d7ec91cac276a434">setDirectoryDomain</a></li>
 <li>resetDirectoryURL() - use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8d43b451e0ebc24feb97a16996d6bf40">resetDirectoryDomain</a></li>
 </ul>
 </li>
@@ -471,7 +477,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_820"></a>Speedify SDK for Android 8.2 </h2>
 <ul>
-<li>Port forwarding has been added. Call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac356455954faaa9541395f1f412372fa">setForwardPorts</a> to forward ports on a dedicated server to the client device.</li>
+<li>Port forwarding has been added. Call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a54fe9e4a4e3f69552fef99ac9dd461ac">setForwardPorts</a> to forward ports on a dedicated server to the client device.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_810"></a>Speedify SDK for Android 8.1 </h2>
 <ul>
@@ -515,30 +521,30 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_761"></a>Speedify SDK for Android 7.6.1 </h2>
 <ul>
-<li>Set other apps to not use the VPN with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6db1558f07b6aefc0264856184c41470">setNonVPNApplications</a></li>
+<li>Set other apps to not use the VPN with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a593bd7b10f8d88aa4e28e793dd7a5cba">setNonVPNApplications</a></li>
 </ul>
 <h2><a class="anchor" id="whatsnew_750"></a>Speedify SDK for Android 7.5 </h2>
 <ul>
 <li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa69ee1f83e2a0a78566db640b52ebccd">OnServiceRestart</a> to stop this behavior.</li>
-<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a268b556f9223c327e47cc2374030cb75">OnNewAdapter</a> now has a <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> argument.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> can be used to get the current directory domain via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a8d3202983f79516ca4ca698a7ef6b6ae">OnDirectoryDomain</a> .</li>
-<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a58bd66a2c3a3d4cc4fd97fb514035e62">OnConnectedServer</a> now sends a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> object with more information on the connect server..</li>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a649c30039d3eaaec147fa961039e6f90">OnNewAdapter</a> now has a <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> argument.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a665e4d5e66ca49c8e8deddfd54e23a1e">refreshDirectoryDomain</a> can be used to get the current directory domain via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a3b8df889411e60a424c36478100ba848">OnDirectoryDomain</a> .</li>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a4bdb773c315a3a3a5228cee16b78c57b">OnConnectedServer</a> now sends a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> object with more information on the connect server..</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>
-<li>setDirectoryURL -&gt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a22d502292a8d8002340a78d487007797">setDirectoryDomain</a></li>
-<li>resetDirectoryURL -&gt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a22d502292a8d8002340a78d487007797">resetDirectoryDomain</a></li>
+<li>setDirectoryURL -&gt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a86af970025bf4b28d7ec91cac276a434">setDirectoryDomain</a></li>
+<li>resetDirectoryURL -&gt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a86af970025bf4b28d7ec91cac276a434">resetDirectoryDomain</a></li>
 </ul>
 </li>
 <li>ISpeedifyHandler<ul>
-<li>OnAdapterOverlimit -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aac6fdef6d6045e75cb057dddc212c454">OnAdapterOverlimit</a></li>
+<li>OnAdapterOverlimit -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#aa081f2ef9f8d79acf22294b3d1f55b7a">OnAdapterOverlimit</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Deprecation removals - Longtime methods marked as Deprecated have been removed<ul>
 <li>ISpeedifyHandler<ul>
-<li>OnLoginError(String message) - use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ad51bd6dd1b6af898b37e7433ab3cbce1">OnLoginError</a></li>
-<li>OnConnectError(String message) - use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a475cf80d525a686fcfca52cb860a4b1a">OnConnectError</a></li>
+<li>OnLoginError(String message) - use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a207fa2aee386dc1c07e29d6e6130e29c">OnLoginError</a></li>
+<li>OnConnectError(String message) - use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a34cf49b6a7dde541b085e4ec2c828ead">OnConnectError</a></li>
 </ul>
 </li>
 <li>SpeedifySDK<ul>
@@ -550,7 +556,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_740"></a>Speedify SDK for Android 7.4 </h2>
 <ul>
-<li>You can now set DNS servers used by the VPN via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aef0319bb8e304e64cd656ea4b7b05ae0">setDNSServers</a></li>
+<li>You can now set DNS servers used by the VPN via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a31b03db893fb7beb5166a3877b46ae77">setDNSServers</a></li>
 </ul>
 <h2><a class="anchor" id="whatsnew_724"></a>Speedify SDK for Android 7.2.4 </h2>
 <ul>
@@ -584,7 +590,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_634"></a>Speedify SDK for Android 6.3.4 </h2>
 <ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa1f2563b2c55b0ce5c534e285664b7a6">com.speedify.speedifysdk.SpeedifySDK#loginOAuth</a> - When using your own directory server that supports it, OAuth access tokens can be used to authenticate a user. It is the application's responsibility to refresh their access token if a login or connect error of type <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44">TOKEN_EXPIRED</a> is returned.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0ec4552a5e448276f629a14c464c4310">com.speedify.speedifysdk.SpeedifySDK#loginOAuth</a> - When using your own directory server that supports it, OAuth access tokens can be used to authenticate a user. It is the application's responsibility to refresh their access token if a login or connect error of type <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44">TOKEN_EXPIRED</a> is returned.</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>
 <li>Previous SDK version incorrectly described the overlfow threshold as being in bits per second. This is actually in megabits per second. The documentation on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5">setOverflowThreshold</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6047bf51cab4f774f6b1840664f1ae60">overflowThreshold</a> have been updated to reflect this.</li>
@@ -596,7 +602,7 @@ $(function() {
 <h2><a class="anchor" id="whatsnew_630"></a>Speedify SDK for Android 6.3 </h2>
 <ul>
 <li>Crash and optimization reporting can be controlled via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a74bf34fadb64d702ab4596a07f9d8cd3">SpeedifySDK.setCrashReporting</a> and SpeedifySDK.setOptimizationReporting</li>
-<li>Encryption key used on optimization reports can be set via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8e7a7509ab0f1fc2fdaee4651c32a378">SpeedifySDK.setReportingEncryptionKey</a></li>
+<li>Encryption key used on optimization reports can be set via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#af45f0797d05674c1a3e6b308b06b7ad9">SpeedifySDK.setReportingEncryptionKey</a></li>
 </ul>
 <h2><a class="anchor" id="whatsnew_620"></a>Speedify SDK for Android 6.2 </h2>
 <ul>
@@ -607,7 +613,7 @@ $(function() {
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html">com.speedify.speedifysdk.LogGeneration</a> - Creates a zip file of all Speedify SDK logs and shares it via an Android Share dialog.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html">com.speedify.speedifysdk.NotificationHelper</a> - Manages notifications and their associated channels.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8c03b7892aac0bb58ef0adad37b81f6c">SpeedifySDK.loginAutoAccount</a> - Log in with an automatically generated account. This takes over for setUserUniqueID.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html">AccountingData</a> / <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a8ad2685bc6372a467937a439f7621e4f">OnAccountingData</a> - Obtain information about the account being used.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html">AccountingData</a> / <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ac0b62b0d883aa0447821f87f2e2d7470">OnAccountingData</a> - Obtain information about the account being used.</li>
 <li>Application Stats : Speedify SDK tracks data usage by app. Call refreshAppUsage enable application stats reports via OnAppUsage reports.</li>
 <li>Android KitKat (4.4) is no longer supported. The minimum supported Android version is now Lollipop (5.0). As such, minSdkVersion in your build.gradle needs to be atleast 21</li>
 <li>The Android SDK (compileSdkVersion) and build tools versions used for Speedify SDK are now 26 and 26.0.2, respectively, and targetSdkVersion is also 26.</li>
@@ -624,7 +630,7 @@ $(function() {
 <h2><a class="anchor" id="whatsnew_600"></a>Speedify SDK for Android 6.0 </h2>
 <ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html">com.speedify.speedifysdk.UuidProvider</a> - Obtain the device's unique ID.</li>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aae9fb995d7f77004cb7d0463078f7246">SpeedifySDK.setAdapterOverlimitRatelimit</a> - Control behavior of an adapter when it reaches it's data limit.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abd98a1239a4503308af01ed9877c3508">SpeedifySDK.setAdapterOverlimitRatelimit</a> - Control behavior of an adapter when it reaches it's data limit.</li>
 <li>The Google maven repository is now required for building. Add it to your build.gradle repositories : <pre>
       repositories {
         ...
@@ -632,8 +638,8 @@ $(function() {
       }</pre></li>
 <li>API Compatibility Changes<ul>
 <li>ISpeedifyHandler<ul>
-<li>OnLoginError(String) -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#ad51bd6dd1b6af898b37e7433ab3cbce1">OnLoginError(String,ErrorType)</a> : The default SpeedifyHandler implementation provides an OnLoginError(String) for compatibility</li>
-<li>OnConnectError(String) -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a475cf80d525a686fcfca52cb860a4b1a">OnConnectError(String,ErrorType)</a> : The default SpeedifyHandler implementation provides an OnConnectError(String) for compatibility </li>
+<li>OnLoginError(String) -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a207fa2aee386dc1c07e29d6e6130e29c">OnLoginError(String,ErrorType)</a> : The default SpeedifyHandler implementation provides an OnLoginError(String) for compatibility</li>
+<li>OnConnectError(String) -&gt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a34cf49b6a7dde541b085e4ec2c828ead">OnConnectError(String,ErrorType)</a> : The default SpeedifyHandler implementation provides an OnConnectError(String) for compatibility </li>
 </ul>
 </li>
 </ul>
