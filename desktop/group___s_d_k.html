@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">11.9.0</span>
    </div>
   </td>
  </tr>
@@ -4727,7 +4727,7 @@ An expired access token will give an error of type <a class="el" href="group___t
 <p>If using your own directory server, this must be called before <a class="el" href="group___s_d_k.html#ga98d605031f5e7877854ec031a5438861" title="Authenticate a new user.">SpeedifySDK_Login()</a>, <a class="el" href="group___s_d_k.html#ga9f5ba9243b8b709306197dd14af7a140" title="Authenticate a new user using an oauth access token.">SpeedifySDK_LoginOAuth()</a>, or <a class="el" href="group___s_d_k.html#gacd8e0ac2b766bd2c9c6cb00b35645e8a" title="Logs out of any current account and logs in to an automatically generated account for this device.">SpeedifySDK_LoginAutoAccount()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">domain</td><td>directory server domain </td></tr>
+    <tr><td class="paramname">domain</td><td>directory server domain, ie: directory.company.com </td></tr>
     <tr><td class="paramname">cb</td><td>optional callback </td></tr>
     <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
   </table>
@@ -4780,7 +4780,7 @@ An expired access token will give an error of type <a class="el" href="group___t
 <p>If using your own directory gateway, this must be called before <a class="el" href="group___s_d_k.html#ga9f5ba9243b8b709306197dd14af7a140" title="Authenticate a new user using an oauth access token.">SpeedifySDK_LoginOAuth()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">gatewayUri</td><td>directory gateway uri </td></tr>
+    <tr><td class="paramname">gatewayUri</td><td>directory gateway uri, ie: <a href="https://directory.company.com/my/path/">https://directory.company.com/my/path/</a> </td></tr>
     <tr><td class="paramname">cb</td><td>optional callback </td></tr>
     <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
   </table>

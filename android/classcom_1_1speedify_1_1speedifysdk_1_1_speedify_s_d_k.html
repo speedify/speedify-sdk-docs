@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">11.9.0</span>
    </div>
   </td>
  </tr>
@@ -3229,7 +3229,7 @@ Protected Member Functions</h2></td></tr>
 <p>Change directory server used for user authentication and server management. </p>
 <p>If using your own directory server, this must be called before <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a250a39a0e8bd9634d1b125536257c908">login</a> or <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8c03b7892aac0bb58ef0adad37b81f6c">loginAutoAccount</a>. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a1b57b2c32fe5e675ae604a8c69db4ddb">OnDirectorySettings</a>, and (if logged in) <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#afc303d65e0ff8f5b3c2fbabfe1de6b2b">OnDirectory</a> on domain change. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">domain</td><td>directory server domain </td></tr>
+    <tr><td class="paramname">domain</td><td>directory server domain, ie: directory.company.com </td></tr>
   </table>
   </dd>
 </dl>
@@ -3256,7 +3256,7 @@ Protected Member Functions</h2></td></tr>
 <p>Set an oauth gateway to use for directory server requests. </p>
 <p>If using your own directory gateway, this must be called before <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0ec4552a5e448276f629a14c464c4310">loginOAuth</a>. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#a1b57b2c32fe5e675ae604a8c69db4ddb">OnDirectorySettings</a>, and (if logged in) <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html#afc303d65e0ff8f5b3c2fbabfe1de6b2b">OnDirectory</a> on domain change. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gatewayUri</td><td>directory gateway uri </td></tr>
+    <tr><td class="paramname">gatewayUri</td><td>directory gateway uri, ie: <a href="https://directory.company.com/my/path/">https://directory.company.com/my/path/</a> </td></tr>
   </table>
   </dd>
 </dl>

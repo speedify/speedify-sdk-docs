@@ -510,6 +510,38 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC10vpnManagerSo12NEVPNManagerCvp"></a>
+                    <a name="//apple_ref/swift/Property/vpnManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10vpnManagerSo12NEVPNManagerCvp">vpnManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current VPN Manager <code>NEVPNManager</code>. This property
+allows a user to determine the existing profile settings</p>
+
+<ul>
+<li>@since 11.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">vpnManager</span><span class="p">:</span> <span class="kt">NEVPNManager</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)startTunnel"></a>
                     <a name="//apple_ref/swift/Method/startTunnel()" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)startTunnel">startTunnel()</a>
@@ -561,7 +593,7 @@ This checks the app extension state for</p>
                       <div class="abstract">
                         <p>Sets the app name used for autoaccounts.
 @param name new app name
-@since future</p>
+@since 11.8</p>
 
                       </div>
                       <div class="declaration">
@@ -1099,6 +1131,8 @@ If already connected, this will disconnect before reconnecting.</p>
                       <div class="abstract">
                         <p>Authenticate a new user.</p>
 
+<p><code>setAppName</code> must be called before this.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -1160,6 +1194,7 @@ If already connected, this will disconnect before reconnecting.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Logs out of any current account and logs in to an automatically generated account for this device.
+<code>setAppName</code> must be called before this.
 If setting a custom directory, call &lsquo;changeDirectoryURL(url: String)&rsquo; before calling this.
 This may take several seconds as the OS is queryied for the device id
 Login or auto-account creation errors will be signalled in &lsquo;ErrorType&rsquo; return in the
@@ -1210,8 +1245,12 @@ Automatic accounts have false email address in the form of <platform>.<device id
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Comcast Loopback Function
-@since 10.6</p>
+                        
+<ul>
+<li>Comcast Loopback Function
+<code>setAppName</code> must be called before this.</li>
+<li>@since 10.6</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -1239,6 +1278,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Logs out of any current account and logs in to an automatically generated account for this device.
+<code>setAppName</code> must be called before this.
 If setting a custom directory, call &lsquo;changeDirectoryURL(url: String)&rsquo; before calling this.
 This may take several seconds as the OS is queryied for the device id
 Login or auto-account creation errors will be signalled in &lsquo;ErrorType&rsquo; return in the
@@ -1302,6 +1342,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Logs out of any current account and logs in to an automatically generated account for this device.
+<code>setAppName</code> must be called before this.
 If setting a custom directory, call &lsquo;changeDirectoryURL(url: String)&rsquo; before calling this.
 This may take several seconds as the OS is queryied for the device id
 Login or auto-account creation errors will be signalled in &lsquo;ErrorType&rsquo; return in the
@@ -1359,6 +1400,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         
 <ul>
 <li>Authenticate a new user using oauth access token. You are responsible for fetching updated access tokens if you use this method.</li>
+<li><code>setAppName</code> must be called before this.</li>
 <li>If setting a custom directory, call <code>changeDirectoryURL(url: String)</code> before calling this.</li>
 <li>Login errors will be signalled in completionHandler <code>error</code>.</li>
 <li>An expired access token will give an error of <code>ErrorType.token_expired</code>, while invalid tokens will give <code>ErrorType.credential</code>.
@@ -1394,6 +1436,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         
 <ul>
 <li>Authenticate a new user using oauth access token. You are responsible for fetching updated access tokens if you use this method.</li>
+<li><code>setAppName</code> must be called before this.</li>
 <li>If setting a custom directory, call <code>changeDirectoryURL(url: String)</code> before calling this.</li>
 <li>Login errors will be signalled in completionHandler <code>error</code>.</li>
 <li>An expired access token will give an error of <code>ErrorType.token_expired</code>, while invalid tokens will give <code>ErrorType.credential</code>.
@@ -1568,7 +1611,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         
 <ul>
 <li>Change directory server used for user authentication and server management.</li>
-<li>If using your own directory server, this should be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
+<li>If using your own directory server, this must be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
 </ul>
 
                       </div>
@@ -1600,7 +1643,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         
 <ul>
 <li>Change directory server used for user authentication and server management.</li>
-<li><p>If using your own directory server, this should be called before <code>login</code> or <code>loginAutoAccount</code>.</p></li>
+<li><p>If using your own directory server, this must be called before <code>login</code> or <code>loginAutoAccount</code>.</p></li>
 </ul>
 
                       </div>
@@ -1631,7 +1674,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         
 <ul>
 <li>Set an oauth gateway to use for directory server requests.</li>
-<li>If using your own directory gateway, this should be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
+<li>If using your own directory gateway, this must be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
 <li>Triggers <code>SpeedifyDirectoryDomainDelegate</code>, and (if logged in) {@link ISpeedifyHandler#OnDirectory OnDirectory} on domain change.</li>
 <li>@since 10.5</li>
 </ul>
@@ -1755,7 +1798,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                         
 <ul>
 <li>Sets if ESNI is used when talking to the directory domain</li>
-<li>If using your own directory server, this should be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
+<li>If using your own directory server, this must be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
 <li>Triggers <code>SpeedifyDirectoryDomainDelegate</code>.</li>
 <li>@since 10.4</li>
 </ul>
@@ -5197,7 +5240,7 @@ Triggers LocalProxySettingsDelegate.
         </section>
         <section id="footer">
           <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
