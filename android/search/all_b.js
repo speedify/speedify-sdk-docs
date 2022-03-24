@@ -7,6 +7,8 @@ var searchData=
   ['localbroadcasthelper',['LocalBroadcastHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html',1,'com::speedify::speedifysdk']]],
   ['localbroadcasthelper_2ejava',['LocalBroadcastHelper.java',['../_local_broadcast_helper_8java.html',1,'']]],
   ['localip',['localIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a7f8aafde30794f9a2eb6b540fdea17f3',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['local_20proxy_20configuration',['Local Proxy Configuration',['../localproxy.html',1,'']]],
+  ['localproxy_2edox',['localproxy.dox',['../localproxy_8dox.html',1,'']]],
   ['localproxydomainwatchlistitem',['LocalProxyDomainWatchlistItem',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html',1,'com::speedify::speedifysdk::Types']]],
   ['localproxyport',['LocalProxyPort',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_port.html',1,'com::speedify::speedifysdk::Types']]],
   ['localproxysettings',['LocalProxySettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html',1,'com::speedify::speedifysdk::Types']]],

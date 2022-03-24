@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['advanced_20initialization',['Advanced Initialization',['../sdkadv.html',1,'']]]
+  ['disable_20always_2don_20support',['Disable Always-On Support',['../alwayson.html',1,'']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]]
 ];

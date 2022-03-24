@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tracking_20disconnect_20events',['Tracking Disconnect Events',['../disconnectevents.html',1,'']]]
+  ['what_27s_20new',['What&apos;s New',['../whatsnew.html',1,'']]]
 ];

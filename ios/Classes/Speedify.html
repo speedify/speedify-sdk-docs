@@ -17,7 +17,7 @@
     <a title="Speedify Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (74% documented)</p>
+        <p><a href="../index.html"> Docs</a> (84% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -56,10 +56,16 @@
                 <a href="../Enums/BondingMode.html">BondingMode</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/Connection.html">Connection</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/ConnectionPriority.html">ConnectionPriority</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DisconnectReason.html">DisconnectReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/FirewallMode.html">FirewallMode</a>
@@ -72,6 +78,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PERIODS.html">PERIODS</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PortProtocol.html">PortProtocol</a>
@@ -92,7 +101,7 @@
                 <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:11speedifysdk13SpeedTestTypeO">SpeedTestType</a>
+                <a href="../Enums/SpeedTestType.html">SpeedTestType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
@@ -102,6 +111,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/StreamHealth.html">StreamHealth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransportMode.html">TransportMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums.html#/s:11speedifysdk4TypeO">Type</a>
@@ -141,6 +153,9 @@
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -172,6 +187,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a>
@@ -221,7 +239,13 @@
                 <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/DirectorySettings.html">DirectorySettings</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/DisconnectEvent.html">DisconnectEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorType.html">ErrorType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/FirewallPort.html">FirewallPort</a>
@@ -248,6 +272,9 @@
                 <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ProtocolPortPair.html">ProtocolPortPair</a>
               </li>
               <li class="nav-group-task">
@@ -269,10 +296,16 @@
                 <a href="../Structs/ServerSettings.html">ServerSettings</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/SessionStatPeriod.html">SessionStatPeriod</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpeedTestResultsData.html">SpeedTestResultsData</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/StreamStats.html">StreamStats</a>
@@ -288,6 +321,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TunStats.html">TunStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
               </li>
             </ul>
           </li>
@@ -347,6 +383,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(cpy)sharedInstance"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(cpy)sharedInstance">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current shared Instance of <code>Speedify</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">Speedify</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC5stateAA5StateOSgvp"></a>
                     <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC5stateAA5StateOSgvp">state</a>
@@ -384,14 +448,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Current Daemon <code>Version</code>.</p>
+                        <p>Current Daemon <code><a href="../Structs/Version.html">Version</a></code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Version</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt"><a href="../Structs/Version.html">Version</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -455,9 +519,171 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk8SpeedifyC22daemonMessagingIsReadySbSgvp"></a>
+                    <a name="/s:11speedifysdk8SpeedifyC8settingsAA8SettingsVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/settings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC8settingsAA8SettingsVSgvp">settings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code><a href="../Structs/Settings.html">Settings</a></code>. If set to nil, no settings are present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15connectionStatsSayAA010ConnectionD0VGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/connectionStats" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15connectionStatsSayAA010ConnectionD0VGSgvp">connectionStats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code><a href="../Structs/ConnectionStats.html">ConnectionStats</a></code>. If set to nil, no ConnectionStats are present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">connectionStats</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ConnectionStats.html">ConnectionStats</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC14accountingDataAA010AccountingD0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accountingData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14accountingDataAA010AccountingD0VSgvp">accountingData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code>accountingData</code>. If set to nil, no accountingData is present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">accountingData</span><span class="p">:</span> <span class="kt"><a href="../Structs/AccountingData.html">AccountingData</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15privacySettingsAA07PrivacyD0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/privacySettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15privacySettingsAA07PrivacyD0VSgvp">privacySettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code>privacySettings</code>. If set to nil, no privacySettings are present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">privacySettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/PrivacySettings.html">PrivacySettings</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC14extensionStateSo11NEVPNStatusVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/extensionState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14extensionStateSo11NEVPNStatusVSgvp">extensionState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code>extensionState</code>. If set to nil, the extension has not been started.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">extensionState</span><span class="p">:</span> <span class="kt">NEVPNStatus</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20lastDisconnectReasonAA0dE0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastDisconnectReason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20lastDisconnectReasonAA0dE0OSgvp">lastDisconnectReason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code><a href="../Enums/DisconnectReason.html">DisconnectReason</a></code>. If set to nil, there are no current disconnect reasons.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">lastDisconnectReason</span><span class="p">:</span> <span class="kt"><a href="../Enums/DisconnectReason.html">DisconnectReason</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22daemonMessagingIsReadySbvp"></a>
                     <a name="//apple_ref/swift/Property/daemonMessagingIsReady" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22daemonMessagingIsReadySbSgvp">daemonMessagingIsReady</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22daemonMessagingIsReadySbvp">daemonMessagingIsReady</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -472,7 +698,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">daemonMessagingIsReady</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">daemonMessagingIsReady</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -533,6 +759,754 @@ allows a user to determine the existing profile settings</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">vpnManager</span><span class="p">:</span> <span class="kt">NEVPNManager</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC13stateDelegateAA0b5StateD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/stateDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13stateDelegateAA0b5StateD0_pSgvp">stateDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">stateDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22vendorUserDataDelegateAA0b6VendordeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vendorUserDataDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22vendorUserDataDelegateAA0b6VendordeF0_pSgvp">vendorUserDataDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">vendorUserDataDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15adapterDelegateAA0b7AdapterD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/adapterDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15adapterDelegateAA0b7AdapterD0_pSgvp">adapterDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">adapterDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC18accountingDelegateAA0b10AccountingD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accountingDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18accountingDelegateAA0b10AccountingD0_pSgvp">accountingDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">accountingDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC26sessionStatsPeriodDelegateAA0b7SessiondeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sessionStatsPeriodDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26sessionStatsPeriodDelegateAA0b7SessiondeF0_pSgvp">sessionStatsPeriodDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">sessionStatsPeriodDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23connectionStatsDelegateAA0b10ConnectiondE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/connectionStatsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23connectionStatsDelegateAA0b10ConnectiondE0_pSgvp">connectionStatsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">connectionStatsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC16settingsDelegateAA0b8SettingsD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/settingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16settingsDelegateAA0b8SettingsD0_pSgvp">settingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">settingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC21settingsErrorDelegateAA0b8SettingsdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/settingsErrorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC21settingsErrorDelegateAA0b8SettingsdE0_pSgvp">settingsErrorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">settingsErrorDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC27vendorLocalSettingsDelegateAA0b6VendordeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vendorLocalSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27vendorLocalSettingsDelegateAA0b6VendordeF0_pSgvp">vendorLocalSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">vendorLocalSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28vendorRemoteSettingsDelegateAA0b6VendordeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vendorRemoteSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28vendorRemoteSettingsDelegateAA0b6VendordeF0_pSgvp">vendorRemoteSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">vendorRemoteSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24firewallSettingsDelegateAA0b8FirewalldE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/firewallSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24firewallSettingsDelegateAA0b8FirewalldE0_pSgvp">firewallSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">firewallSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28localDomainWatchListDelegateAA0bdefG0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localDomainWatchListDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28localDomainWatchListDelegateAA0bdefG0_pSgvp">localDomainWatchListDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">localDomainWatchListDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22streamingStatsDelegateAA0b9StreamingdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/streamingStatsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22streamingStatsDelegateAA0b9StreamingdE0_pSgvp">streamingStatsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">streamingStatsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC14tunnelDelegateAA0b6TunnelD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tunnelDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14tunnelDelegateAA0b6TunnelD0_pSgvp">tunnelDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">tunnelDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC26localProxySettingsDelegateAA0b5LocaldeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localProxySettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26localProxySettingsDelegateAA0b5LocaldeF0_pSgvp">localProxySettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">localProxySettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23directoryDomainDelegateAA0b9DirectorydE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/directoryDomainDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23directoryDomainDelegateAA0b9DirectorydE0_pSgvp">directoryDomainDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">directoryDomainDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28safeBrowsingSettingsDelegateAA0b4SafedF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/safeBrowsingSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28safeBrowsingSettingsDelegateAA0b4SafedF0_pSgvp">safeBrowsingSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">safeBrowsingSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23connectedServerDelegateAA0b9ConnecteddE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/connectedServerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23connectedServerDelegateAA0b9ConnecteddE0_pSgvp">connectedServerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">connectedServerDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23disconnectEventDelegateAA0b14LastDisconnectE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/disconnectEventDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23disconnectEventDelegateAA0b14LastDisconnectE0_pSgvp">disconnectEventDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">disconnectEventDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC19logSettingsDelegateAA0b3LogdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/logSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC19logSettingsDelegateAA0b3LogdE0_pSgvp">logSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">logSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC25streamingSettingsDelegateAA0b9StreamingdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/streamingSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC25streamingSettingsDelegateAA0b9StreamingdE0_pSgvp">streamingSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">streamingSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk33SpeedifyStreamingSettingsDelegateP">SpeedifyStreamingSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24speedTestResutlsDelegateAA0b5Speedd7ResultsF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/speedTestResutlsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24speedTestResutlsDelegateAA0b5Speedd7ResultsF0_pSgvp">speedTestResutlsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">speedTestResutlsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22serverSettingsDelegateAA0b6ServerdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/serverSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22serverSettingsDelegateAA0b6ServerdE0_pSgvp">serverSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk30SpeedifyServerSettingsDelegateP">SpeedifyServerSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">serverSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk30SpeedifyServerSettingsDelegateP">SpeedifyServerSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC27lastDisconnectEventDelegateAA0bdeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastDisconnectEventDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27lastDisconnectEventDelegateAA0bdeF0_pSgvp">lastDisconnectEventDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">lastDisconnectEventDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC10cpDelegateAA0b13CaptivePortalD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cpDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10cpDelegateAA0b13CaptivePortalD0_pSgvp">cpDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk29SpeedifyCaptivePortalDelegateP">SpeedifyCaptivePortalDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">cpDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk29SpeedifyCaptivePortalDelegateP">SpeedifyCaptivePortalDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC6update17completionHandleryySbSgc_tF"></a>
+                    <a name="//apple_ref/swift/Method/update(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC6update17completionHandleryySbSgc_tF">update(completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This calls update to refresh the current state, version, settings, connections and privacy settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">done</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A handler returning when this has completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC10refreshAllyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshAll()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10refreshAllyyF">refreshAll()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The will refresh state, accounting, connections, directory, settings, privacy settings, vendor local settings, remote vendor settings, vendor user data, firewall and directory</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshAll</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -790,7 +1764,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectAuto</span><span class="p">(</span><span class="nv">connectOption</span><span class="p">:</span> <span class="kt"><a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectAuto</span><span class="p">(</span><span class="nv">connectOption</span><span class="p">:</span> <span class="kt"><a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a></span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -888,7 +1862,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCity</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCity</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -951,7 +1925,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCountry</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByCountry</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1002,7 +1976,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByServer</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByServer</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1138,7 +2112,7 @@ If already connected, this will disconnect before reconnecting.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1354,7 +2328,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginAutoAccount</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginAutoAccount</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1413,7 +2387,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use loginOAuth(oauthAccessToken: String, completionHandler:@escaping (_ error: ErrorType?﹚-&gt;Void﹚"</span><span class="p">)</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginOAuth</span><span class="p">(</span><span class="nv">oauthAccessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">serviceAccount</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginOAuth</span><span class="p">(</span><span class="nv">oauthAccessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">serviceAccount</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1448,7 +2422,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginOAuth</span><span class="p">(</span><span class="nv">oauthAccessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loginOAuth</span><span class="p">(</span><span class="nv">oauthAccessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1651,7 +2625,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDirectoryWithDomain</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt">DirectorySettings</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDirectoryWithDomain</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt"><a href="../Structs/DirectorySettings.html">DirectorySettings</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1675,7 +2649,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
 <ul>
 <li>Set an oauth gateway to use for directory server requests.</li>
 <li>If using your own directory gateway, this must be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
-<li>Triggers <code>SpeedifyDirectoryDomainDelegate</code>, and (if logged in) {@link ISpeedifyHandler#OnDirectory OnDirectory} on domain change.</li>
+<li>Triggers <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a></code>, and (if logged in) {@link ISpeedifyHandler#OnDirectory OnDirectory} on domain change.</li>
 <li>@since 10.5</li>
 </ul>
 
@@ -1740,7 +2714,7 @@ Automatic accounts have false email address in the form of <platform>.<device id
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Reset the directory oauth gateway to defaults.
-Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
+Triggers <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a></code>.
 @since 10.5</p>
 
                       </div>
@@ -1799,7 +2773,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
 <ul>
 <li>Sets if ESNI is used when talking to the directory domain</li>
 <li>If using your own directory server, this must be called before <code>login</code> or <code>loginAutoAccount</code>.</li>
-<li>Triggers <code>SpeedifyDirectoryDomainDelegate</code>.</li>
+<li>Triggers <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a></code>.</li>
 <li>@since 10.4</li>
 </ul>
 
@@ -1894,13 +2868,13 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getVersion</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Version</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getVersion</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Structs/Version.html">Version</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>completionHandler: <code>Version</code></p>
+                        <p>completionHandler: <code><a href="../Structs/Version.html">Version</a></code></p>
                       </div>
                     </section>
                   </div>
@@ -2006,7 +2980,7 @@ Triggers <code>SpeedifyDirectoryDomainDelegate</code>.
                               </td>
                               <td>
                                 <div>
-                                  <p>periods timeframes of requested session  stats, values in hours. <code>SessionStatPeriod</code></p>
+                                  <p>periods timeframes of requested session  stats, values in hours. <code><a href="../Structs/SessionStatPeriod.html">SessionStatPeriod</a></code></p>
                                 </div>
                               </td>
                             </tr>
@@ -2141,9 +3115,9 @@ Triggers <code><a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySe
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk8SpeedifyC22setVendorLocalSettings8settings6mergedyAA0F0V_SbtF"></a>
+                    <a name="/s:11speedifysdk8SpeedifyC22setVendorLocalSettings8settings6mergedySDySSypG_SbtF"></a>
                     <a name="//apple_ref/swift/Method/setVendorLocalSettings(settings:merged:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setVendorLocalSettings8settings6mergedyAA0F0V_SbtF">setVendorLocalSettings(settings:<wbr>merged:<wbr>)</a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setVendorLocalSettings8settings6mergedySDySSypG_SbtF">setVendorLocalSettings(settings:<wbr>merged:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2165,7 +3139,7 @@ Triggers <code><a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySe
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setVendorLocalSettings</span><span class="p">(</span><span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">,</span> <span class="nv">merged</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setVendorLocalSettings</span><span class="p">(</span><span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">merged</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3701,7 +4675,7 @@ Current value available from delegate <code>settingsDidUpdate</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets the <code>TransportMode</code> selection used for each connection.
+                        <p>Sets the <code><a href="../Enums/TransportMode.html">TransportMode</a></code> selection used for each connection.
 Current value available from delegate <code>settingsDidUpdate</code>.</p>
 
                       </div>
@@ -3709,7 +4683,7 @@ Current value available from delegate <code>settingsDidUpdate</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setConnectionTransportMode</span><span class="p">(</span><span class="nv">transportMode</span><span class="p">:</span> <span class="kt">TransportMode</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setConnectionTransportMode</span><span class="p">(</span><span class="nv">transportMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransportMode.html">TransportMode</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3725,7 +4699,7 @@ Current value available from delegate <code>settingsDidUpdate</code>.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p><code>TransportMode</code></p>
+                                  <p><code><a href="../Enums/TransportMode.html">TransportMode</a></code></p>
                                 </div>
                               </td>
                             </tr>
@@ -3824,9 +4798,9 @@ Triggers &lsquo;SpeedifySettingsDelegate&rsquo;.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)setAllowTunnelBypass:"></a>
-                    <a name="//apple_ref/swift/Method/setAllowTunnelBypass(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)setAllowTunnelBypass:">setAllowTunnelBypass(_:<wbr>)</a>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)setIPLeakProtection:"></a>
+                    <a name="//apple_ref/swift/Method/setIPLeakProtection(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)setIPLeakProtection:">setIPLeakProtection(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3835,7 +4809,8 @@ Triggers &lsquo;SpeedifySettingsDelegate&rsquo;.
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Allows other apps to bind their sockets around the VPN tunnel, directly on other network adapters.
-Current value available from delegate <code>settingsDidUpdate</code>. Default Value is true.</p>
+Current value available from delegate <code>privacySettingsDidUpdate</code>. Default Value is true.
+@since 11.9.2</p>
 
                       </div>
                       <div class="declaration">
@@ -3844,7 +4819,7 @@ Current value available from delegate <code>settingsDidUpdate</code>. Default Va
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">macOS</span> <span class="mf">10.15</span><span class="p">,</span> <span class="n">iOS</span> <span class="mf">14.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
 <span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setAllowTunnelBypass</span><span class="p">(</span><span class="n">_</span> <span class="nv">allowTunnelBypass</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setIPLeakProtection</span><span class="p">(</span><span class="n">_</span> <span class="nv">ipLeakProtection</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3930,6 +4905,52 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22handleAdapterOverlimit9adapterIDySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/handleAdapterOverlimit(adapterID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22handleAdapterOverlimit9adapterIDySS_tF">handleAdapterOverlimit(adapterID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the daemon to stop alerting the SDK about an adapter&rsquo;s overlimit status</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handleAdapterOverlimit</span><span class="p">(</span><span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adapterID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Current adapter to handle i.e en0</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)generateLogsWithCompletionHandler:"></a>
                     <a name="//apple_ref/swift/Method/generateLogs(completionHandler:)" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)generateLogsWithCompletionHandler:">generateLogs(completionHandler:<wbr>)</a>
@@ -3996,7 +5017,7 @@ Possible extension states:
                         
 <ul>
 <li>Set IP addresses of the DNS servers to use</li>
-<li><p>Current value available from <code>PrivacySettings</code>.</p></li>
+<li><p>Current value available from <code><a href="../Structs/PrivacySettings.html">PrivacySettings</a></code>.</p></li>
 </ul>
 
                       </div>
@@ -4355,7 +5376,7 @@ reason will not be updated in the database until the next extension launch.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCheck</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">accountExists</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCheck</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">accountExists</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4417,7 +5438,7 @@ reason will not be updated in the database until the next extension launch.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCreate</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountCreate</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4505,7 +5526,7 @@ Triggers {@link ISpeedifyHandler#OnStreamingSettings OnStreamingSettings}.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountPasswordChange</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">originalPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">ErrorType</span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accountPasswordChange</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">originalPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Structs/ErrorType.html">ErrorType</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -5050,6 +6071,64 @@ Triggers LocalProxySettingsDelegate.
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)stopSpeedTest"></a>
+                    <a name="//apple_ref/swift/Method/stopSpeedTest()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)stopSpeedTest">stopSpeedTest()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests the daemon to stop the current speed test.
+@since 11.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopSpeedTest</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)requestSpeedTestResults"></a>
+                    <a name="//apple_ref/swift/Method/requestSpeedTestResults()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)requestSpeedTestResults">requestSpeedTestResults()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests the current speed test results.
+@since 11.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">requestSpeedTestResults</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC13clearSettings17completionHandleryySbc_tF"></a>
                     <a name="//apple_ref/swift/Method/clearSettings(completionHandler:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC13clearSettings17completionHandleryySbc_tF">clearSettings(completionHandler:<wbr>)</a>
@@ -5239,7 +6318,7 @@ Triggers LocalProxySettingsDelegate.
           </section>
         </section>
         <section id="footer">
-          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>© 2022 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

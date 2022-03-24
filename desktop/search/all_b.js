@@ -10,6 +10,8 @@ var searchData=
   ['ll_5fverbose',['LL_VERBOSE',['../group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfaf8183bf220ce3ac3b3a1ab2cac1aeed1',1,'types.h']]],
   ['ll_5fwarn',['LL_WARN',['../group___t_y_p_e_s.html#ggae1b620799799836a6f78e3113a2884bfa7413c537cbbee6447b4d2a2fd90bd1c9',1,'types.h']]],
   ['localip',['localIp',['../struct_speedify_s_d_k___connection_stats.html#a9c24a35f808f788fcdf92cd213989f54',1,'SpeedifySDK_ConnectionStats']]],
+  ['local_20proxy_20configuration',['Local Proxy Configuration',['../localproxy.html',1,'']]],
+  ['localproxy_2edox',['localproxy.dox',['../localproxy_8dox.html',1,'']]],
   ['localproxysettings',['localProxySettings',['../struct_speedify_s_d_k___local_proxy_settings_result.html#aa0b163269be23f6a002bc02e9755aba9',1,'SpeedifySDK_LocalProxySettingsResult']]],
   ['loglevel',['logLevel',['../struct_speedify_s_d_k___safe_browsing_result.html#a92d3153b26f4d60c119a02dfa58d3cc6',1,'SpeedifySDK_SafeBrowsingResult::logLevel()'],['../struct_speedify_s_d_k___daemon_log_settings.html#aa29622e7731795bf8dc44f0198f24f1a',1,'SpeedifySDK_DaemonLogSettings::logLevel()']]],
   ['loss',['loss',['../struct_speedify_s_d_k___speed_test_result_data.html#aafc9125faeea51567506631e45187420',1,'SpeedifySDK_SpeedTestResultData']]],

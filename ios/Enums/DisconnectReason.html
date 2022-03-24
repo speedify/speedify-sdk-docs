@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DisconnectReason Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/DisconnectReason" class="dashAnchor"></a>
+    <a title="DisconnectReason Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (84% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DisconnectReason Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Speedify.html">Speedify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@speedifysdk@objc(cs)UUIDProvider">UUIDProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BondingMode.html">BondingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Connection.html">Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionPriority.html">ConnectionPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DisconnectReason.html">DisconnectReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FirewallMode.html">FirewallMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk7JSONKeyO">JSONKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PERIODS.html">PERIODS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PortProtocol.html">PortProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SafeBrowsingError.html">SafeBrowsingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SafeBrowsingLogLevel.html">SafeBrowsingLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk012SafeBrowsingB15NetworkOverrideO">SafeBrowsingSafeNetworkOverride</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpeedTestType.html">SpeedTestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamHealth.html">StreamHealth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransportMode.html">TransportMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:11speedifysdk4TypeO">Type</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NEVPNStatus.html">NEVPNStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk29SpeedifyCaptivePortalDelegateP">SpeedifyCaptivePortalDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyServerSettingsDelegateP">SpeedifyServerSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk33SpeedifyStreamingSettingsDelegateP">SpeedifyStreamingSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountingData.html">AccountingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterData.html">AdapterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CaptivePortalStats.html">CaptivePortalStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DirectorySettings.html">DirectorySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DisconnectEvent.html">DisconnectEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FirewallPort.html">FirewallPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FirewallSettings.html">FirewallSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ForwardedPort.html">ForwardedPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HandlerStats.html">HandlerStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyPort.html">LocalProxyPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProtocolPortPair.html">ProtocolPortPair</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingBlock.html">SafeBrowsingBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingConnectError.html">SafeBrowsingConnectError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingLookupError.html">SafeBrowsingLookupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingSettings.html">SafeBrowsingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SafeBrowsingStats.html">SafeBrowsingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerSettings.html">ServerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStatPeriod.html">SessionStatPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpeedTestResultsData.html">SpeedTestResultsData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamStats.html">StreamStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingPort.html">StreamingPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingSettings.html">StreamingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingStats.html">StreamingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TunStats.html">TunStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DisconnectReason</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">DisconnectReason</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                </div>
+              </div>
+            <p>Current disconnect reason</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO7UNKNOWNyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/UNKNOWN" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO7UNKNOWNyA2CmF">UNKNOWN</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unknown reason</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">UNKNOWN</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO12CONNECTIVITYyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/CONNECTIVITY" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO12CONNECTIVITYyA2CmF">CONNECTIVITY</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>No network connectivity</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">CONNECTIVITY</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO8AIRPLANEyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/AIRPLANE" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO8AIRPLANEyA2CmF">AIRPLANE</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Airplane mode activated, or no networks available</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">AIRPLANE</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO11INTERRUPTEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/INTERRUPTED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO11INTERRUPTEDyA2CmF">INTERRUPTED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interrupted by another VPN</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">INTERRUPTED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO6REBOOTyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/REBOOT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO6REBOOTyA2CmF">REBOOT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device reboot</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">REBOOT</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO6UPDATEyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/UPDATE" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO6UPDATEyA2CmF">UPDATE</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Software update</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">UPDATE</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO5CRASHyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/CRASH" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO5CRASHyA2CmF">CRASH</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Daemon crash</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">CRASH</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO5SLEEPyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/SLEEP" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO5SLEEPyA2CmF">SLEEP</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device sleep</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">SLEEP</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO13USERINITIATEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/USERINITIATED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO13USERINITIATEDyA2CmF">USERINITIATED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User initiated</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">USERINITIATED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO7TORRENTyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/TORRENT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO7TORRENTyA2CmF">TORRENT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Automatic disconnect from torrent activity</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">TORRENT</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO12STARTTIMEOUTyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/STARTTIMEOUT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO12STARTTIMEOUTyA2CmF">STARTTIMEOUT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Timeout initializing the connection</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">STARTTIMEOUT</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO15INACTIVETIMEOUTyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/INACTIVETIMEOUT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO15INACTIVETIMEOUTyA2CmF">INACTIVETIMEOUT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tunnel timeout</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">INACTIVETIMEOUT</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO22SETTINGCHANGERECONNECTyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/SETTINGCHANGERECONNECT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO22SETTINGCHANGERECONNECTyA2CmF">SETTINGCHANGERECONNECT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Automatic reconnect from setting change</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">SETTINGCHANGERECONNECT</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO14TUNUNAVAILABLEyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/TUNUNAVAILABLE" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO14TUNUNAVAILABLEyA2CmF">TUNUNAVAILABLE</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unable to bring up VPN adapter</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">TUNUNAVAILABLE</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO10DNSTIMEOUTyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/DNSTIMEOUT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO10DNSTIMEOUTyA2CmF">DNSTIMEOUT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>DNS timeout</p>
+
+<ul>
+<li>@since 10.7</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">DNSTIMEOUT</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO13TUNNELTIMEOUTyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/TUNNELTIMEOUT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO13TUNNELTIMEOUTyA2CmF">TUNNELTIMEOUT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>VPN tunnel blocked</p>
+
+<ul>
+<li>@since 10.7</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">TUNNELTIMEOUT</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO9OVERQUOTAyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/OVERQUOTA" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO9OVERQUOTAyA2CmF">OVERQUOTA</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Account out of data</p>
+
+<ul>
+<li>@since 10.9</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">OVERQUOTA</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO11SAFENETWORKyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/SAFENETWORK" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO11SAFENETWORKyA2CmF">SAFENETWORK</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>On a safe network, determined by safe browsing</p>
+
+<ul>
+<li>@since 11.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">SAFENETWORK</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO9RESOURCESyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/RESOURCES" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO9RESOURCESyA2CmF">RESOURCES</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the VPN Extension exceeds 15MB of memory</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">RESOURCES</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO14PROVIDERFAILEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/PROVIDERFAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO14PROVIDERFAILEDyA2CmF">PROVIDERFAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The VPN Provi1der failed</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">PROVIDERFAILED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO16PROVIDERDISABLEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/PROVIDERDISABLED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO16PROVIDERDISABLEDyA2CmF">PROVIDERDISABLED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The VPN Provider was disabled</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">PROVIDERDISABLED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO19CONFIGUARTIONFAILEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/CONFIGUARTIONFAILED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO19CONFIGUARTIONFAILEDyA2CmF">CONFIGUARTIONFAILED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The VPN configuration was failed</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">CONFIGUARTIONFAILED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO21CONFIGURATIONDISABLEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/CONFIGURATIONDISABLED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO21CONFIGURATIONDISABLEDyA2CmF">CONFIGURATIONDISABLED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The VPN configuration was disabled</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">CONFIGURATIONDISABLED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO20CONFIGURATIONREMOVEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/CONFIGURATIONREMOVED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO20CONFIGURATIONREMOVEDyA2CmF">CONFIGURATIONREMOVED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The VPN configuration was removed</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">CONFIGURATIONREMOVED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk16DisconnectReasonO10SUPERCEDEDyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/SUPERCEDED" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk16DisconnectReasonO10SUPERCEDEDyA2CmF">SUPERCEDED</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The VPN was superceded by another VPN</p>
+
+<ul>
+<li>@since 10.4</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="kt">SUPERCEDED</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2022 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
