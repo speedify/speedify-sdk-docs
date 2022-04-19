@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.9.2</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,21 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1192"></a>Speedify SDK for Android 11.9.2 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1200"></a>Speedify SDK for Android 12.0 </h2>
+<ul>
+<li>Set overflow threshold for active priority traffic via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a89f887403ab60cde9b84ce616fc8c60c">setPriorityOverflowThreshold</a>.</li>
+<li>The default service notificaiton provided by SpeedifyHandler now produces a vibration when killswitch is engaged (disconnected, with killswitch set to on). This is configurable via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9d14af8c9b0bbac9b8a1edf9d843af54">setServiceNotificationKillswitchVibeEnabled</a>.</li>
+<li>Deprecations<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a84ea0f4613031e54d35b412af4172047">SpeedifySDK.setServiceNotificationLaunchIntent</a> - This is now a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae86eb9258e54507dc5d06cdbfa91a425">SpeedifyHandler.setServiceNotificationLaunchIntent</a>.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a885e9ea8ac5bca92c83a2dbc90fcebc5">SpeedifySDK.setServiceNotificationIcon</a> - This is now a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aba0c53bca630a3d3654a84b7dd45d745">SpeedifyHandler.setServiceNotificationIcon</a>.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1194"></a>Speedify SDK for Android 11.9.4 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1192"></a>Speedify SDK for Android 11.9.2 </h2>
 <ul>
 <li>Android Lollipop and Marshmallow are no longer supported. Android Nougat is now the minimum supported version.</li>
 <li>Many changes went in to make it easier to use the Speedify SDK for Android, and with less code. Best practices from older SDK are still compatible.<ul>

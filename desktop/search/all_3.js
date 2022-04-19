@@ -5,6 +5,7 @@ var searchData=
   ['datausage',['dataUsage',['../struct_speedify_s_d_k___adapter_data.html#a442956f87d72497c71dfa9bafe852547',1,'SpeedifySDK_AdapterData']]],
   ['dayssincefirst',['daysSinceFirst',['../struct_speedify_s_d_k___session_stats.html#a2899d03bed1f76a24823c8740956444b',1,'SpeedifySDK_SessionStats']]],
   ['data_20limits',['Data Limits',['../group___d_e_f_i_n_e_l_i_m_i_t_s.html',1,'']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['description',['description',['../struct_speedify_s_d_k___adapter_data.html#a8dde27d17766dcb52fc861ca663af628',1,'SpeedifySDK_AdapterData']]],
   ['detections',['detections',['../struct_speedify_s_d_k___captive_portal_stats.html#abade7ea4b053647fa0be77e871bfe7c4',1,'SpeedifySDK_CaptivePortalStats']]],
   ['directorysettings',['directorySettings',['../struct_speedify_s_d_k___directory_settings_result.html#a5ea0d7671336ba6df8462bf537c2cc19',1,'SpeedifySDK_DirectorySettingsResult']]],

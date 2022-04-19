@@ -134,6 +134,7 @@ var searchData=
   ['speedifysdk_5fsetmode',['SpeedifySDK_SetMode',['../group___s_d_k.html#ga4cc3b3a24b056db0b416331f1f9e63a0',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetoverflowthreshold',['SpeedifySDK_SetOverflowThreshold',['../group___s_d_k.html#gab1ade44b44c1c91c954a9d25afe16c26',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetpacketaggregation',['SpeedifySDK_SetPacketAggregation',['../group___s_d_k.html#ga5a18a759be68b355954f5b44c21c9ee7',1,'speedifysdk.h']]],
+  ['speedifysdk_5fsetpriorityoverflowthreshold',['SpeedifySDK_SetPriorityOverflowThreshold',['../group___s_d_k.html#ga56f4ad24d0ecd018d8657c9b433e9c42',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetreportingencryptionkey',['SpeedifySDK_SetReportingEncryptionKey',['../group___s_d_k.html#gaa2abf58eebc653f520ce5981bbbf765b',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetsafebrowsingconfig',['SpeedifySDK_SetSafeBrowsingConfig',['../group___s_d_k.html#ga9692eb1bd7b64c6657b58c129fc229a3',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetsafebrowsingenabled',['SpeedifySDK_SetSafeBrowsingEnabled',['../group___s_d_k.html#ga7f3bdc971fa692672440a1fca3eea6c0',1,'speedifysdk.h']]],

@@ -30,6 +30,7 @@ var searchData=
   ['preferences_2ejava',['Preferences.java',['../_preferences_8java.html',1,'']]],
   ['prefixlength',['prefixLength',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#aed82f494ab7e3a4d35e07c2552f6d9ac',1,'com::speedify::speedifysdk::Types::IPRange']]],
   ['priority',['priority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a59fabf110e0330b8c8fa38a7c62e9721',1,'com::speedify::speedifysdk::Types::AdapterData']]],
+  ['priorityoverflowthreshold',['priorityOverflowThreshold',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a784b2aee27b4f10097e07a7eb57acb87',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['privacysettings',['PrivacySettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html',1,'com::speedify::speedifysdk::Types']]],
   ['privateip',['privateIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a14f91217d13fe79167d4eb397f8001bb',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['protocol',['protocol',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9205ab3f596e449ef6be69adffecb127',1,'com.speedify.speedifysdk.Types.ConnectionStats.protocol()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_protocol_port_pair.html#af0afd813fb8a3f461b79f7e805a78c6f',1,'com.speedify.speedifysdk.Types.ProtocolPortPair.protocol()']]],

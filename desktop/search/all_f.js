@@ -22,6 +22,7 @@ var searchData=
   ['pproto_5ftcp',['PPROTO_TCP',['../group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44ea9b480fd1da16f2b74b8732c4756217f9',1,'types.h']]],
   ['pproto_5fudp',['PPROTO_UDP',['../group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44eaca15f369269ee3980fafa67a63f4ede4',1,'types.h']]],
   ['priority',['priority',['../struct_speedify_s_d_k___adapter_data.html#a87028c1d5a8f310f888b608ff91f1c8f',1,'SpeedifySDK_AdapterData']]],
+  ['priorityoverflowthreshold',['priorityOverflowThreshold',['../struct_speedify_s_d_k___settings.html#adc55d0e577ec5c221e99d816bf54a58e',1,'SpeedifySDK_Settings']]],
   ['privacysettings',['privacySettings',['../struct_speedify_s_d_k___privacy_settings_result.html#a972a47b9eb0e3df83842c4b9aac7bbfa',1,'SpeedifySDK_PrivacySettingsResult']]],
   ['privateip',['privateIp',['../struct_speedify_s_d_k___connection_stats.html#aa7d9396aa466f93861e6c051d62344fa',1,'SpeedifySDK_ConnectionStats']]],
   ['protocol',['protocol',['../struct_speedify_s_d_k___protocol_port_pair.html#ae4e763e72c8bc9153c6d9616ab32d0e7',1,'SpeedifySDK_ProtocolPortPair::protocol()'],['../struct_speedify_s_d_k___connection_stats.html#afb8eb8d9465837008418f4462868267e',1,'SpeedifySDK_ConnectionStats::protocol()']]],

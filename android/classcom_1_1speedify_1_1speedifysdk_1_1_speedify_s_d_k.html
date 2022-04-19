@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.9.2</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
  </tr>
@@ -188,6 +188,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8aad5db8ad5c147557339c54e8598e5"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5">setOverflowThreshold</a> (double mbpsOverflow)</td></tr>
 <tr class="memdesc:ad8aad5db8ad5c147557339c54e8598e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the overflow threshold.  <a href="#ad8aad5db8ad5c147557339c54e8598e5">More...</a><br /></td></tr>
 <tr class="separator:ad8aad5db8ad5c147557339c54e8598e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f887403ab60cde9b84ce616fc8c60c"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a89f887403ab60cde9b84ce616fc8c60c">setPriorityOverflowThreshold</a> (double mbpsOverflow)</td></tr>
+<tr class="memdesc:a89f887403ab60cde9b84ce616fc8c60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the priority overflow threshold, which is used when there is active priority traffic (i.e.  <a href="#a89f887403ab60cde9b84ce616fc8c60c">More...</a><br /></td></tr>
+<tr class="separator:a89f887403ab60cde9b84ce616fc8c60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86af970025bf4b28d7ec91cac276a434"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a86af970025bf4b28d7ec91cac276a434">setDirectoryDomain</a> (@NonNull String domain)</td></tr>
 <tr class="memdesc:a86af970025bf4b28d7ec91cac276a434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change directory server used for user authentication and server management.  <a href="#a86af970025bf4b28d7ec91cac276a434">More...</a><br /></td></tr>
 <tr class="separator:a86af970025bf4b28d7ec91cac276a434"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2823,7 +2826,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>9.8</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 11.9.2. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8a20b051df35346dd925d1c2bcd24079">setIPLeakProtection</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>As of 11.9.2. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8a20b051df35346dd925d1c2bcd24079">setIPLeakProtection</a> </dd></dl>
 
 </div>
 </div>
@@ -4133,6 +4136,33 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a89f887403ab60cde9b84ce616fc8c60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f887403ab60cde9b84ce616fc8c60c">&#9670;&nbsp;</a></span>setPriorityOverflowThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setPriorityOverflowThreshold </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>mbpsOverflow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the priority overflow threshold, which is used when there is active priority traffic (i.e. </p>
+<p>real-time streams). Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aac3bad95f80aece10d02b2baaa2b9f64">OnSettings</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mbpsOverflow</td><td>priority overflow threshold, in megabits per second </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.0 </dd></dl>
+
+</div>
+</div>
 <a id="af45f0797d05674c1a3e6b308b06b7ad9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af45f0797d05674c1a3e6b308b06b7ad9">&#9670;&nbsp;</a></span>setReportingEncryptionKey()</h2>
 
@@ -4292,6 +4322,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of future, this is just a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aba0c53bca630a3d3654a84b7dd45d745" title="Sets the icon used by the service foreground notification.">SpeedifyHandler.setServiceNotificationIcon</a> </dd></dl>
 
 </div>
 </div>
@@ -4319,6 +4350,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of future, this is just a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae86eb9258e54507dc5d06cdbfa91a425" title="Sets the Intent used when use clicks the service foreground notification.">SpeedifyHandler.setServiceNotificationLaunchIntent</a> </dd></dl>
 
 </div>
 </div>
@@ -4673,7 +4705,8 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>11.4 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.4</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>As of 11.9.2. Functionality removed. </dd></dl>
 
 </div>
 </div>

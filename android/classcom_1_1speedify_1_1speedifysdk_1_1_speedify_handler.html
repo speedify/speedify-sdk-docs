@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.9.2</span>
+   &#160;<span id="projectnumber">12.0.0</span>
    </div>
   </td>
  </tr>
@@ -74,6 +74,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">com.speedify.speedifysdk.SpeedifyHandler Class Reference</div>  </div>
@@ -100,6 +101,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab07549428228c0d8e532b6e531fad4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab07549428228c0d8e532b6e531fad4bd">UpdateForegroundNotification</a> (@NonNull Service service, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> state, @NonNull String serverName, boolean killswitchActive)</td></tr>
 <tr class="memdesc:ab07549428228c0d8e532b6e531fad4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to show a notification of the service state.  <a href="#ab07549428228c0d8e532b6e531fad4bd">More...</a><br /></td></tr>
 <tr class="separator:ab07549428228c0d8e532b6e531fad4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86eb9258e54507dc5d06cdbfa91a425"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae86eb9258e54507dc5d06cdbfa91a425">setServiceNotificationLaunchIntent</a> (@Nullable Intent intent)</td></tr>
+<tr class="memdesc:ae86eb9258e54507dc5d06cdbfa91a425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Intent used when use clicks the service foreground notification.  <a href="#ae86eb9258e54507dc5d06cdbfa91a425">More...</a><br /></td></tr>
+<tr class="separator:ae86eb9258e54507dc5d06cdbfa91a425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0c53bca630a3d3654a84b7dd45d745"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aba0c53bca630a3d3654a84b7dd45d745">setServiceNotificationIcon</a> (int drawableId)</td></tr>
+<tr class="memdesc:aba0c53bca630a3d3654a84b7dd45d745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the icon used by the service foreground notification.  <a href="#aba0c53bca630a3d3654a84b7dd45d745">More...</a><br /></td></tr>
+<tr class="separator:aba0c53bca630a3d3654a84b7dd45d745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d14af8c9b0bbac9b8a1edf9d843af54"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9d14af8c9b0bbac9b8a1edf9d843af54">setServiceNotificationKillswitchVibeEnabled</a> (boolean enabled)</td></tr>
+<tr class="memdesc:a9d14af8c9b0bbac9b8a1edf9d843af54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether a vibration is triggered when entering killswitch mode.  <a href="#a9d14af8c9b0bbac9b8a1edf9d843af54">More...</a><br /></td></tr>
+<tr class="separator:a9d14af8c9b0bbac9b8a1edf9d843af54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4577b9f6fc750d00bec0e85d14985c28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a4577b9f6fc750d00bec0e85d14985c28">HideForegroundNotification</a> (@NonNull Service service)</td></tr>
 <tr class="memdesc:a4577b9f6fc750d00bec0e85d14985c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service task is removed.  <a href="#a4577b9f6fc750d00bec0e85d14985c28">More...</a><br /></td></tr>
 <tr class="separator:a4577b9f6fc750d00bec0e85d14985c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +270,15 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:ac3b7796fd1987a2ded35980a54cbc99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f0d85a09ee4065be9691436db077d9"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab8f0d85a09ee4065be9691436db077d9">SPEEDIFY_FOREGROUND_CHANNEL_ID</a> = &quot;VPN&quot;</td></tr>
 <tr class="separator:ab8f0d85a09ee4065be9691436db077d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae20485ae217e1e472871cca98b365d63"><td class="memItemLeft" align="right" valign="top">Intent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae20485ae217e1e472871cca98b365d63">serviceNotificationLaunchIntent</a> = null</td></tr>
+<tr class="separator:ae20485ae217e1e472871cca98b365d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603382c843f7d9a607a0cc85877c4b92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a603382c843f7d9a607a0cc85877c4b92">serviceNotificationIcon</a> = R.drawable.speedify_notification_icon</td></tr>
+<tr class="separator:a603382c843f7d9a607a0cc85877c4b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9e4079b5805f6ef1e0a4f2e43d1648"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0c9e4079b5805f6ef1e0a4f2e43d1648">serviceNotificaitonVibeOnKillswitch</a> = true</td></tr>
+<tr class="separator:a0c9e4079b5805f6ef1e0a4f2e43d1648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4577b9f6fc750d00bec0e85d14985c28"></a>
@@ -480,6 +499,87 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aba0c53bca630a3d3654a84b7dd45d745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0c53bca630a3d3654a84b7dd45d745">&#9670;&nbsp;</a></span>setServiceNotificationIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifyHandler.setServiceNotificationIcon </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>drawableId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the icon used by the service foreground notification. </p>
+<p>This defaults to a drawable resource named <code>speedify_notification_icon</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drawableId</td><td>resource id of the drawable to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.0 </dd></dl>
+
+</div>
+</div>
+<a id="a9d14af8c9b0bbac9b8a1edf9d843af54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d14af8c9b0bbac9b8a1edf9d843af54">&#9670;&nbsp;</a></span>setServiceNotificationKillswitchVibeEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifyHandler.setServiceNotificationKillswitchVibeEnabled </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether a vibration is triggered when entering killswitch mode. </p>
+<p>This defaults to true. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>if vibration is enabled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.0 </dd></dl>
+
+</div>
+</div>
+<a id="ae86eb9258e54507dc5d06cdbfa91a425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86eb9258e54507dc5d06cdbfa91a425">&#9670;&nbsp;</a></span>setServiceNotificationLaunchIntent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifyHandler.setServiceNotificationLaunchIntent </td>
+          <td>(</td>
+          <td class="paramtype">@Nullable Intent&#160;</td>
+          <td class="paramname"><em>intent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the Intent used when use clicks the service foreground notification. </p>
+<p>This defaults to the application's default launcher intent. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">intent</td><td>Intent launched when clicking default foreground notification </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.0 </dd></dl>
+
+</div>
+</div>
 <a id="ab07549428228c0d8e532b6e531fad4bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab07549428228c0d8e532b6e531fad4bd">&#9670;&nbsp;</a></span>UpdateForegroundNotification()</h2>
 
@@ -535,6 +635,72 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0c9e4079b5805f6ef1e0a4f2e43d1648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9e4079b5805f6ef1e0a4f2e43d1648">&#9670;&nbsp;</a></span>serviceNotificaitonVibeOnKillswitch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.speedify.speedifysdk.SpeedifyHandler.serviceNotificaitonVibeOnKillswitch = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a603382c843f7d9a607a0cc85877c4b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603382c843f7d9a607a0cc85877c4b92">&#9670;&nbsp;</a></span>serviceNotificationIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.speedify.speedifysdk.SpeedifyHandler.serviceNotificationIcon = R.drawable.speedify_notification_icon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae20485ae217e1e472871cca98b365d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20485ae217e1e472871cca98b365d63">&#9670;&nbsp;</a></span>serviceNotificationLaunchIntent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Intent com.speedify.speedifysdk.SpeedifyHandler.serviceNotificationLaunchIntent = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab8f0d85a09ee4065be9691436db077d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8f0d85a09ee4065be9691436db077d9">&#9670;&nbsp;</a></span>SPEEDIFY_FOREGROUND_CHANNEL_ID</h2>
 
