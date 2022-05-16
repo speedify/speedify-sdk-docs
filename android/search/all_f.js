@@ -18,6 +18,8 @@ var searchData=
   ['period_5fweek',['PERIOD_WEEK',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#a1856691f546e6de1e3ff2382d0e5fd00',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],
   ['periods',['periods',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stat_periods.html#ad0cf9a09d563aab96b5c2fdf8fc61362',1,'com::speedify::speedifysdk::Types::SessionStatPeriods']]],
   ['periodstarttime',['periodStartTime',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#aad6ecf2b3b0648e5b2fb11a3442a3384',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['permissions',['Permissions',['../permissions.html',1,'']]],
+  ['permissions_2edox',['permissions.dox',['../permissions_8dox.html',1,'']]],
   ['pooledbroadcastreceiver',['PooledBroadcastReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html',1,'com::speedify::speedifysdk']]],
   ['pooledbroadcastreceiver_2ejava',['PooledBroadcastReceiver.java',['../_pooled_broadcast_receiver_8java.html',1,'']]],
   ['pooledexecutor',['PooledExecutor',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html',1,'com::speedify::speedifysdk']]],
