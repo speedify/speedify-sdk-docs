@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">12.1.1</span>
+   &#160;<span id="projectnumber">12.2.1</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,17 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1211"></a>Speedify SDK for Android 12.1.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1221"></a>Speedify SDK for Android 12.2.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1220"></a>Speedify SDK for Android 12.2 </h2>
+<ul>
+<li>When connected over VPN, Speedify will request that browsers do not use DNS over HTTPS. This is controllable via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a45d228295cf1e88e4302aafbd0c34945">setRequestToDisableDoH</a>.</li>
+<li>Support for port ranges and wildcard port (0) have been added to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a858a077f7ebfe7adab242afb04b477fd">setLocalProxyPorts</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a503103c58d11695ff6b04b880df2e686">setFirewallPorts</a>, and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9ab818b46f7a05ef6af2f3159488c9d0">setStreamingPorts</a></li>
+<li>Traffic going over the proxy now produces <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a> objects with a transport type of <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a64e3daa3f65db1aa37e892a89a19dc90">PROXY</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1211"></a>Speedify SDK for Android 12.1.1 </h2>
 <ul>
 <li>No new features. This is a stability release.</li>
 </ul>

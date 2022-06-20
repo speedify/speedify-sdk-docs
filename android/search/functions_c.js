@@ -59,6 +59,7 @@ var searchData=
   ['setoverflowthreshold',['setOverflowThreshold',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setpriorityoverflowthreshold',['setPriorityOverflowThreshold',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a89f887403ab60cde9b84ce616fc8c60c',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setreportingencryptionkey',['setReportingEncryptionKey',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#af45f0797d05674c1a3e6b308b06b7ad9',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['setrequesttodisabledoh',['setRequestToDisableDoH',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a45d228295cf1e88e4302aafbd0c34945',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setsafebrowsingconfig',['setSafeBrowsingConfig',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab4edb2b2568b3a4bd979bf4fc60c49b0',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setsafebrowsingenabled',['setSafeBrowsingEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a00adc4b8df5b94a8e2e37ef2a8e81f10',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setsafebrowsingloglevel',['setSafeBrowsingLogLevel',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2ed8ba39e155d70bd2ef3ff0fea67eaf',1,'com::speedify::speedifysdk::SpeedifySDK']]],
@@ -80,7 +81,7 @@ var searchData=
   ['startsafebrowsing',['startSafeBrowsing',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa2332a2f44305f909bb241320edd479d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['startspeedtest',['startSpeedTest',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad3b5fc4fea89d2a8859345878a6f9f79',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['startstreamtest',['startStreamTest',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6fd9c2bd9fad927142e883ce2d9c7b92',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['state',['State',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#aec7c744d9e3f5facf1a541825b4870d4',1,'com.speedify.speedifysdk.Types.State.State(int state, boolean stable, boolean loggedIn)'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a86203961af20aa479117327b55ac84d2',1,'com.speedify.speedifysdk.Types.State.state()']]],
+  ['state',['state',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a86203961af20aa479117327b55ac84d2',1,'com.speedify.speedifysdk.Types.State.state()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#aec7c744d9e3f5facf1a541825b4870d4',1,'com.speedify.speedifysdk.Types.State.State(int state, boolean stable, boolean loggedIn)']]],
   ['stopsafebrowsing',['stopSafeBrowsing',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab4063768a495962cef71151ac939fab0',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['subscribetoevent',['subscribeToEvent',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7d36a3989feb08c105de3bd3e2afc9eb',1,'com::speedify::speedifysdk::SpeedifySDK']]]
 ];

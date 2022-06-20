@@ -27,6 +27,7 @@ var searchData=
   ['poor',['POOR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_health.html#a277a107eefdd0ed121fe641b2c942f2a',1,'com::speedify::speedifysdk::Types::StreamHealth']]],
   ['port',['port',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_protocol_port_pair.html#af8ea58d152abb523917eb4ced2c2a7c1',1,'com::speedify::speedifysdk::Types::ProtocolPortPair']]],
   ['portprotocol',['PortProtocol',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_port_protocol.html',1,'com::speedify::speedifysdk::Types']]],
+  ['portrangeend',['portRangeEnd',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_protocol_port_pair.html#a0dd50d59d3609dc819e2bb33bbeed524',1,'com::speedify::speedifysdk::Types::ProtocolPortPair']]],
   ['ports',['ports',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#ace42661a8c632453df0ccb7801fe34ff',1,'com.speedify.speedifysdk.Types.LocalProxySettings.ports()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#ace132e9ab02f689c5559b161dc58fed1',1,'com.speedify.speedifysdk.Types.FirewallSettings.ports()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_settings.html#ac70ff2dd570f52918c0c79fd5cc19926',1,'com.speedify.speedifysdk.Types.StreamingSettings.ports()']]],
   ['preferences',['Preferences',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html',1,'com::speedify::speedifysdk']]],
   ['preferences_2ejava',['Preferences.java',['../_preferences_8java.html',1,'']]],
@@ -39,7 +40,7 @@ var searchData=
   ['protocolportpair',['ProtocolPortPair',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_protocol_port_pair.html',1,'com::speedify::speedifysdk::Types']]],
   ['proxieddomains',['proxiedDomains',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a1b7e6732ce780639a058ac4d94bd411e',1,'com::speedify::speedifysdk::Types::LocalProxyDomainWatchlistItem']]],
   ['proxiedpackages',['proxiedPackages',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#abc5caa1b141644cb3a427c5389d7f67a',1,'com::speedify::speedifysdk::Types::LocalProxyDomainWatchlistItem']]],
-  ['proxy',['PROXY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a3b82a12093b5f52e82e256344bb4dd61',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
+  ['proxy',['PROXY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a3b82a12093b5f52e82e256344bb4dd61',1,'com.speedify.speedifysdk.Types.AutoConnectMethod.PROXY()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a64e3daa3f65db1aa37e892a89a19dc90',1,'com.speedify.speedifysdk.Types.TransportMode.PROXY()']]],
   ['proxymatchmode',['ProxyMatchMode',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_proxy_match_mode.html',1,'com::speedify::speedifysdk::Types']]],
   ['publicip',['publicIP',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html#aa684f7342502080902629ca33b0a6069',1,'com::speedify::speedifysdk::Types::ServerInformationDetailed']]],
   ['put',['put',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#a652aa29912e7cdaa9028394d7630ce3f',1,'com::speedify::speedifysdk::Preferences']]]

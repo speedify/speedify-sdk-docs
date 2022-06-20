@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">12.1.1</span>
+   &#160;<span id="projectnumber">12.2.1</span>
    </div>
   </td>
  </tr>
@@ -425,6 +425,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b8e54786ac67a0e6158f0d7dc9e09ad"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6b8e54786ac67a0e6158f0d7dc9e09ad">setKillswitch</a> (boolean enabled)</td></tr>
 <tr class="memdesc:a6b8e54786ac67a0e6158f0d7dc9e09ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if Internet Killswitch should be enabled.  <a href="#a6b8e54786ac67a0e6158f0d7dc9e09ad">More...</a><br /></td></tr>
 <tr class="separator:a6b8e54786ac67a0e6158f0d7dc9e09ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d228295cf1e88e4302aafbd0c34945"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a45d228295cf1e88e4302aafbd0c34945">setRequestToDisableDoH</a> (boolean disableDoH)</td></tr>
+<tr class="memdesc:a45d228295cf1e88e4302aafbd0c34945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests that browsers do not use DNS over HTTPS.  <a href="#a45d228295cf1e88e4302aafbd0c34945">More...</a><br /></td></tr>
+<tr class="separator:a45d228295cf1e88e4302aafbd0c34945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0825a47f582698ee62cab30e5144f0b5"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0825a47f582698ee62cab30e5144f0b5">setStartupConnect</a> (boolean enabled)</td></tr>
 <tr class="memdesc:a0825a47f582698ee62cab30e5144f0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if Speedify should autmatically connect when the daemon starts.  <a href="#a0825a47f582698ee62cab30e5144f0b5">More...</a><br /></td></tr>
 <tr class="separator:a0825a47f582698ee62cab30e5144f0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4187,6 +4190,33 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>6.3 </dd></dl>
+
+</div>
+</div>
+<a id="a45d228295cf1e88e4302aafbd0c34945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d228295cf1e88e4302aafbd0c34945">&#9670;&nbsp;</a></span>setRequestToDisableDoH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setRequestToDisableDoH </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>disableDoH</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests that browsers do not use DNS over HTTPS. </p>
+<p>DoH can interfere with domain-based local proxy, firewall, and streaming settings. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#abf0370a9782331fd20e7541091d87bad">OnPrivacySettings</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disableDoH</td><td>If DoH is requested to be disabled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.2 </dd></dl>
 
 </div>
 </div>

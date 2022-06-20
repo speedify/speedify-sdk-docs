@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">12.1.1</span>
+   &#160;<span id="projectnumber">12.2.1</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,17 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1211"></a>Speedify SDK for Desktop 12.1.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1221"></a>Speedify SDK for Desktop 12.2.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1220"></a>Speedify SDK for Desktop 12.2 </h2>
+<ul>
+<li>When connected over VPN, Speedify will request that browsers do not use DNS over HTTPS. This is controllable via <a class="el" href="group___s_d_k.html#ga181b161a2a5c18e2182d5bb5172fc444">SpeedifySDK_SetRequestToDisableDoH</a>.</li>
+<li>Support for port ranges and wildcard port (0) have been added to <a class="el" href="group___s_d_k.html#gafbb20259225196d9884d8b65994f7c70">SpeedifySDK_SetLocalProxyPorts</a>, <a class="el" href="group___s_d_k.html#ga53d1f6c87ba0ab9e6133258b87a0f0d7">SpeedifySDK_SetFirewallPorts</a>, and <a class="el" href="group___s_d_k.html#ga771f33e772bd47d644f9e03a25293422">SpeedifySDK_SetStreamingPorts</a></li>
+<li>Traffic going over the proxy now produces <a class="el" href="struct_speedify_s_d_k___connection_stats.html">SpeedifySDK_ConnectionStats</a> objects with a transport type of <a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea3856481864cf208eb4d404e02c956007">TMODE_PROXY</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1211"></a>Speedify SDK for Desktop 12.1.1 </h2>
 <ul>
 <li>No new features. This is a stability release.</li>
 </ul>
