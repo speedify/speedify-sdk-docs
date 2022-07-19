@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">12.2.1</span>
+   &#160;<span id="projectnumber">12.3.0</span>
    </div>
   </td>
  </tr>
@@ -73,22 +73,21 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h2>Files </h2>
 <ul>
-<li>bin/[x86|x64|arm64]<ul>
+<li>bin/[x64|arm64]<ul>
 <li>speedify.exe - main daemon</li>
 <li>bondingsdk.dll - Speedify SDK Library DLL for communicating with the daemon</li>
 <li>tap-driver/ - driver and driver installer. <b>Everything in this folder is architecture-dependent</b><ul>
 <li>TapDriverInstallCheck.exe - driver install manager</li>
-<li>[i386|amd64|arm64]/ - Windows drivers<ul>
+<li>[amd64|arm64]/ - Windows drivers<ul>
 <li>devcon.exe - driver installer</li>
-<li>win7/ - windows 7/8/8.1 drivers</li>
-<li>win10/ - windows 10 drivers</li>
+<li>win10/ - windows 10/11 drivers</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li>libs/[x86|x64|arm64]<ul>
+<li>libs/[x64|arm64]<ul>
 <li>bondingsdk.lib - Speedify SDK Library Lib</li>
 </ul>
 </li>
@@ -104,7 +103,7 @@ $(function() {
 </ul>
 <h2>Distributing </h2>
 <ul>
-<li>Include the contents of the bin/[x86|x64|arm64] folder in your installation path.<ul>
+<li>Include the contents of the bin/[x64|arm64] folder in your installation path.<ul>
 <li>If you are creating an app that controls a standard Speedify install, you only need bondingsdk.dll</li>
 </ul>
 </li>
