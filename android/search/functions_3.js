@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['enableautomaticconnectionpriority',['enableAutomaticConnectionPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aac54c1e29f6b0b462e9e52081abc48c2',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['enablecaptiveportalmode',['enableCaptivePortalMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a33aed37f95e72f57554d3aa3e327b4b9',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['enablestatupdates',['enableStatUpdates',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abefc2866126cda2a2e47cfdc37a1b9a3',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['erasealllogfiles',['eraseAllLogFiles',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a71ec7a377038174ab36595a11b153eb2',1,'com::speedify::speedifysdk::SpeedifySDK']]],

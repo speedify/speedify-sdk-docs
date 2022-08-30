@@ -92,6 +92,7 @@ var searchData=
   ['speedifysdk_5fdisconnectreason',['SpeedifySDK_DisconnectReason',['../group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994',1,'types.h']]],
   ['speedifysdk_5fdisconnectreason_5ftostring',['SpeedifySDK_DisconnectReason_toString',['../group___t_y_p_e_s.html#ga1d4615616242a3b3fe438822123eaf95',1,'types.h']]],
   ['speedifysdk_5fdomainstring',['SpeedifySDK_DomainString',['../group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326',1,'types.h']]],
+  ['speedifysdk_5fenableautomaticconnectionpriority',['SpeedifySDK_EnableAutomaticConnectionPriority',['../group___s_d_k.html#ga324aa14fa32e65aa734f0ce6b371685e',1,'speedifysdk.h']]],
   ['speedifysdk_5fenablestatupdates',['SpeedifySDK_EnableStatUpdates',['../group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf',1,'speedifysdk.h']]],
   ['speedifysdk_5ferasealllogfiles',['SpeedifySDK_EraseAllLogFiles',['../group___s_d_k.html#ga7ee343ff692d04d4407b73f02929d188',1,'speedifysdk.h']]],
   ['speedifysdk_5ferrortype',['SpeedifySDK_ErrorType',['../group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2',1,'types.h']]],

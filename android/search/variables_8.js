@@ -15,6 +15,7 @@ var searchData=
   ['ipv6',['ipv6',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#adae7431e1c26e8009b1de70c57176977',1,'com.speedify.speedifysdk.Types.LocalProxySettings.ipv6()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#a75192ed9f5cdbc1fa4bd5daf7a01248a',1,'com.speedify.speedifysdk.Types.FirewallSettings.ipv6()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_settings.html#af082b40a390005132f7e68e6e225daeb',1,'com.speedify.speedifysdk.Types.StreamingSettings.ipv6()']]],
   ['isautoaccount',['isAutoAccount',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a2d4cab8504ccd416d1e17901653361c1',1,'com::speedify::speedifysdk::Types::AccountingData']]],
   ['iserror',['isError',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#ad665169e05ea2af39fdcef8633a99e99',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
+  ['isp',['isp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a69519e2e4b6c082b2ab7cad59e4dbe58',1,'com::speedify::speedifysdk::Types::AdapterData']]],
   ['isprivate',['isPrivate',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af95cbcc9eab26731861344fa2e66ef82',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['isteam',['isTeam',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a01908994e38582ae3cd9d044f402cf5b',1,'com::speedify::speedifysdk::Types::AccountingData']]]
 ];

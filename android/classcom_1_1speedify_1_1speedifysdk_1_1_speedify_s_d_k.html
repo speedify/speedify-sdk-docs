@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">12.3.0</span>
+   &#160;<span id="projectnumber">12.4.1</span>
    </div>
   </td>
  </tr>
@@ -173,6 +173,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04c075044a4db142736ee6d110e0c28e"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a04c075044a4db142736ee6d110e0c28e">setConnectionPriorities</a> (@NonNull String adapterID, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html">ConnectionPriority</a> priority)</td></tr>
 <tr class="memdesc:a04c075044a4db142736ee6d110e0c28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change priorities of a connection.  <a href="#a04c075044a4db142736ee6d110e0c28e">More...</a><br /></td></tr>
 <tr class="separator:a04c075044a4db142736ee6d110e0c28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac54c1e29f6b0b462e9e52081abc48c2"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aac54c1e29f6b0b462e9e52081abc48c2">enableAutomaticConnectionPriority</a> (boolean enabled)</td></tr>
+<tr class="memdesc:aac54c1e29f6b0b462e9e52081abc48c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if automatic priority is allowed.  <a href="#aac54c1e29f6b0b462e9e52081abc48c2">More...</a><br /></td></tr>
+<tr class="separator:aac54c1e29f6b0b462e9e52081abc48c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7f4af16a39ee491d529ae5779d6f609"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa7f4af16a39ee491d529ae5779d6f609">setConnectionEncryption</a> (@NonNull String adapterID, boolean encrypted)</td></tr>
 <tr class="memdesc:aa7f4af16a39ee491d529ae5779d6f609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change encryption settings per connection.  <a href="#aa7f4af16a39ee491d529ae5779d6f609">More...</a><br /></td></tr>
 <tr class="separator:aa7f4af16a39ee491d529ae5779d6f609"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1202,6 +1205,34 @@ Protected Member Functions</h2></td></tr>
 
 <p>Disconnect from the server if connected, or cancel a connection attempt if currenty connecting. </p>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+
+</div>
+</div>
+<a id="aac54c1e29f6b0b462e9e52081abc48c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac54c1e29f6b0b462e9e52081abc48c2">&#9670;&nbsp;</a></span>enableAutomaticConnectionPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.enableAutomaticConnectionPriority </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set if automatic priority is allowed. </p>
+<p>Current settings available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aac3bad95f80aece10d02b2baaa2b9f64">OnSettings</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>if allowed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.4 </dd></dl>
 
 </div>
 </div>
@@ -4352,7 +4383,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of future, this is just a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aba0c53bca630a3d3654a84b7dd45d745" title="Sets the icon used by the service foreground notification.">SpeedifyHandler.setServiceNotificationIcon</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 12.0, this is just a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aba0c53bca630a3d3654a84b7dd45d745" title="Sets the icon used by the service foreground notification.">SpeedifyHandler.setServiceNotificationIcon</a> </dd></dl>
 
 </div>
 </div>
@@ -4380,7 +4411,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of future, this is just a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae86eb9258e54507dc5d06cdbfa91a425" title="Sets the Intent used when use clicks the service foreground notification.">SpeedifyHandler.setServiceNotificationLaunchIntent</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of 12.0, this is just a passthrough to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae86eb9258e54507dc5d06cdbfa91a425" title="Sets the Intent used when use clicks the service foreground notification.">SpeedifyHandler.setServiceNotificationLaunchIntent</a> </dd></dl>
 
 </div>
 </div>

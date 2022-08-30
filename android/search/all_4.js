@@ -1,6 +1,8 @@
 var searchData=
 [
   ['email',['email',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a44d99b2abbfbf22e2e044aac008948b1',1,'com::speedify::speedifysdk::Types::AccountingData']]],
+  ['enableautomaticconnectionpriority',['enableAutomaticConnectionPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aac54c1e29f6b0b462e9e52081abc48c2',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['enableautomaticpriority',['enableAutomaticPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a70897c25b763b7d8a9ebcec2a274d2a2',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['enablecaptiveportalmode',['enableCaptivePortalMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a33aed37f95e72f57554d3aa3e327b4b9',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['enabled',['enabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a39a4dadd384e5042031f6cfa55f92f78',1,'com.speedify.speedifysdk.Types.LocalProxyDomainWatchlistItem.enabled()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#ac56ab789a01caf37fc0e0003dd97e32e',1,'com.speedify.speedifysdk.Types.LocalProxySettings.enabled()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_settings.html#a28d8e5e37ceed9df77037af0be388afc',1,'com.speedify.speedifysdk.Types.SafeBrowsingSettings.enabled()']]],
   ['enabledefaultroute',['enableDefaultRoute',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a8981f5a1e54eaced9b2a9c121d3fdbc7',1,'com::speedify::speedifysdk::Types::Settings']]],

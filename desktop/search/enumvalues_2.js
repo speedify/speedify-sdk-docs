@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cp_5falways',['CP_ALWAYS',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303a41a610598477b1d08e0d19be53f79557',1,'types.h']]],
+  ['cp_5fautomatic',['CP_AUTOMATIC',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303ad30fb394b9b7b53b4b6573bc0bcc8aa9',1,'types.h']]],
   ['cp_5fbackup',['CP_BACKUP',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303aa7f8a0e80dbf3fe551c1d7e02bc07fe7',1,'types.h']]],
   ['cp_5fnever',['CP_NEVER',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303af6bdf48e9f9233062b861bca6e3900c9',1,'types.h']]],
   ['cp_5fsecondary',['CP_SECONDARY',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303aff9f71c65818822fff2398e20b9d42dc',1,'types.h']]],

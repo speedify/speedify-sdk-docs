@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">12.3.0</span>
+   &#160;<span id="projectnumber">12.4.1</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,20 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1230"></a>Speedify SDK for Android 12.3 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1241"></a>Speedify SDK for Android 12.4.1 </h2>
+<ul>
+<li>The rules for local proxy denylist mode have been modified. See <a class="el" href="localproxy.html">Local Proxy Configuration</a> for details.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1240"></a>Speedify SDK for Android 12.4 </h2>
+<ul>
+<li>Adapters now support <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a39599e3fea7ecac3e92cc2695f1e3431">AUTOMATIC</a> connection priorities, where Speedify will manage the priority based on the dynamically discovered connection type. This feature is enabled via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aac54c1e29f6b0b462e9e52081abc48c2">enableAutomaticConnectionPriority</a>.</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html">AdapterData</a> has 2 new fields:<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#ac89dcded9fffe8d92cee4f6fc9522aac">workingPriority</a> - the priority the adapter is functioning under</li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a69519e2e4b6c082b2ab7cad59e4dbe58">isp</a> - the discovered Internet Service Provider of the connection</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1230"></a>Speedify SDK for Android 12.3 </h2>
 <ul>
 <li>The <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9205ab3f596e449ef6be69adffecb127">protocol</a> field on <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html">ConnectionStats</a> objects is now available on historic tunnel stats.</li>
 </ul>

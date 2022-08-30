@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">12.3.0</span>
+   &#160;<span id="projectnumber">12.4.1</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,20 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1230"></a>Speedify SDK for Desktop 12.3 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1241"></a>Speedify SDK for Desktop 12.4.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1240"></a>Speedify SDK for Desktop 12.4 </h2>
+<ul>
+<li>Adapters now support <a class="el" href="group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303ad30fb394b9b7b53b4b6573bc0bcc8aa9">CP_AUTOMATIC</a> connection priorities, where Speedify will manage the priority based on the dynamically discovered connection type. This feature is enabled via <a class="el" href="group___s_d_k.html#ga324aa14fa32e65aa734f0ce6b371685e">SpeedifySDK_EnableAutomaticConnectionPriority</a>.</li>
+<li><a class="el" href="struct_speedify_s_d_k___adapter_data.html">SpeedifySDK_AdapterData</a> has 2 new fields:<ul>
+<li><a class="el" href="struct_speedify_s_d_k___adapter_data.html#a7301873c14929df3ea49d36225b1495a">workingPriority</a> - the priority the adapter is functioning under</li>
+<li><a class="el" href="struct_speedify_s_d_k___adapter_data.html#a0f565bc4647edfc850b5d43d21917334">isp</a> - the discovered Internet Service Provider of the connection</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1230"></a>Speedify SDK for Desktop 12.3 </h2>
 <ul>
 <li>Windows support is now limited to Windows 10 &amp; 11 on x86_64 and arm64 processors. Windows 7, 8, and 8.1 are no longer supported. Windows 10 x86 is also no longer supported.</li>
 <li>The <a class="el" href="struct_speedify_s_d_k___connection_stats.html#afb8eb8d9465837008418f4462868267e">protocol</a> field on <a class="el" href="struct_speedify_s_d_k___connection_stats.html">SpeedifySDK_ConnectionStats</a> objects is now available on historic tunnel stats.</li>
