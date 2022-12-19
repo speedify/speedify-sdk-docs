@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">12.5.0</span>
+   &#160;<span id="projectnumber">12.8.0</span>
    </div>
   </td>
  </tr>
@@ -164,6 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ec4552a5e448276f629a14c464c4310"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0ec4552a5e448276f629a14c464c4310">loginOAuth</a> (@NonNull String oauthAccessToken)</td></tr>
 <tr class="memdesc:a0ec4552a5e448276f629a14c464c4310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a new user using an oauth access token.  <a href="#a0ec4552a5e448276f629a14c464c4310">More...</a><br /></td></tr>
 <tr class="separator:a0ec4552a5e448276f629a14c464c4310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accab2c451a8c5046651034b26c67f2a1"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#accab2c451a8c5046651034b26c67f2a1">refreshOAuthToken</a> (String newOAuthAccessToken)</td></tr>
+<tr class="memdesc:accab2c451a8c5046651034b26c67f2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the current oauth access token.  <a href="#accab2c451a8c5046651034b26c67f2a1">More...</a><br /></td></tr>
+<tr class="separator:accab2c451a8c5046651034b26c67f2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7f35ca0ad17c0fc03b8a04448198522"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7f35ca0ad17c0fc03b8a04448198522">logout</a> ()</td></tr>
 <tr class="memdesc:ab7f35ca0ad17c0fc03b8a04448198522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logout the current user.  <a href="#ab7f35ca0ad17c0fc03b8a04448198522">More...</a><br /></td></tr>
 <tr class="separator:ab7f35ca0ad17c0fc03b8a04448198522"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,45 +434,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0825a47f582698ee62cab30e5144f0b5"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0825a47f582698ee62cab30e5144f0b5">setStartupConnect</a> (boolean enabled)</td></tr>
 <tr class="memdesc:a0825a47f582698ee62cab30e5144f0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if Speedify should autmatically connect when the daemon starts.  <a href="#a0825a47f582698ee62cab30e5144f0b5">More...</a><br /></td></tr>
 <tr class="separator:a0825a47f582698ee62cab30e5144f0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2332a2f44305f909bb241320edd479d"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa2332a2f44305f909bb241320edd479d">startSafeBrowsing</a> (@NonNull String initConfig)</td></tr>
-<tr class="memdesc:aa2332a2f44305f909bb241320edd479d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Safe Browsing.  <a href="#aa2332a2f44305f909bb241320edd479d">More...</a><br /></td></tr>
-<tr class="separator:aa2332a2f44305f909bb241320edd479d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4063768a495962cef71151ac939fab0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab4063768a495962cef71151ac939fab0">stopSafeBrowsing</a> ()</td></tr>
-<tr class="memdesc:ab4063768a495962cef71151ac939fab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate Safe Browsing.  <a href="#ab4063768a495962cef71151ac939fab0">More...</a><br /></td></tr>
-<tr class="separator:ab4063768a495962cef71151ac939fab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da762f708eb68fee313a532233d7c71"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3da762f708eb68fee313a532233d7c71">initSafeBrowsing</a> (@NonNull String initConfig)</td></tr>
-<tr class="memdesc:a3da762f708eb68fee313a532233d7c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Safe Browsing library If initialized is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>.  <a href="#a3da762f708eb68fee313a532233d7c71">More...</a><br /></td></tr>
-<tr class="separator:a3da762f708eb68fee313a532233d7c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4edb2b2568b3a4bd979bf4fc60c49b0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab4edb2b2568b3a4bd979bf4fc60c49b0">setSafeBrowsingConfig</a> (@NonNull String safeBrowsingConfig)</td></tr>
-<tr class="memdesc:ab4edb2b2568b3a4bd979bf4fc60c49b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the optional Safe Browsing config If config set is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>.  <a href="#ab4edb2b2568b3a4bd979bf4fc60c49b0">More...</a><br /></td></tr>
-<tr class="separator:ab4edb2b2568b3a4bd979bf4fc60c49b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00adc4b8df5b94a8e2e37ef2a8e81f10"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a00adc4b8df5b94a8e2e37ef2a8e81f10">setSafeBrowsingEnabled</a> (boolean enabled)</td></tr>
-<tr class="memdesc:a00adc4b8df5b94a8e2e37ef2a8e81f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if Safe Browsing is enabled Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>.  <a href="#a00adc4b8df5b94a8e2e37ef2a8e81f10">More...</a><br /></td></tr>
-<tr class="separator:a00adc4b8df5b94a8e2e37ef2a8e81f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed8ba39e155d70bd2ef3ff0fea67eaf"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2ed8ba39e155d70bd2ef3ff0fea67eaf">setSafeBrowsingLogLevel</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_log_level.html">SafeBrowsingLogLevel</a> logLevel)</td></tr>
-<tr class="memdesc:a2ed8ba39e155d70bd2ef3ff0fea67eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Safe Browsing logging level Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>.  <a href="#a2ed8ba39e155d70bd2ef3ff0fea67eaf">More...</a><br /></td></tr>
-<tr class="separator:a2ed8ba39e155d70bd2ef3ff0fea67eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c04a6f28988afc2a023617c86dfaa0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a57c04a6f28988afc2a023617c86dfaa0">setSafeBrowsingSafeNetworkOverride</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_safe_network_override.html">SafeBrowsingSafeNetworkOverride</a> snOverride)</td></tr>
-<tr class="memdesc:a57c04a6f28988afc2a023617c86dfaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the safe network decision This setting overrides the safe/unsafe network decision made by <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0" title="Report the current connected network is a home network.">reportSafeBrowsingHomeNetwork()</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>.  <a href="#a57c04a6f28988afc2a023617c86dfaa0">More...</a><br /></td></tr>
-<tr class="separator:a57c04a6f28988afc2a023617c86dfaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688974d7af951acbe7430d74fcd5ccd6"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a688974d7af951acbe7430d74fcd5ccd6">refreshSafeBrowsingToken</a> (@NonNull String token)</td></tr>
-<tr class="memdesc:a688974d7af951acbe7430d74fcd5ccd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the NSP token Only call if previous token has become invalid, as told through receiving a INVALID_NSP_TOKEN error from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a> Errors refreshing token will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>.  <a href="#a688974d7af951acbe7430d74fcd5ccd6">More...</a><br /></td></tr>
-<tr class="separator:a688974d7af951acbe7430d74fcd5ccd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a35b8a5780df460f909607fa2b9db0"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0">reportSafeBrowsingHomeNetwork</a> ()</td></tr>
-<tr class="memdesc:ad8a35b8a5780df460f909607fa2b9db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network.  <a href="#ad8a35b8a5780df460f909607fa2b9db0">More...</a><br /></td></tr>
-<tr class="separator:ad8a35b8a5780df460f909607fa2b9db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1862d80be9b14659e6c03752af1b2305"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1862d80be9b14659e6c03752af1b2305">reportSafeBrowsingHomeNetwork</a> (int retries, long delay, long timeout)</td></tr>
-<tr class="memdesc:a1862d80be9b14659e6c03752af1b2305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current connected network is a home network If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>, If current network is not protected, will return OK.  <a href="#a1862d80be9b14659e6c03752af1b2305">More...</a><br /></td></tr>
-<tr class="separator:a1862d80be9b14659e6c03752af1b2305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e9ef8e57ba03fefba49be3d5ce4b08"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a79e9ef8e57ba03fefba49be3d5ce4b08">updateSafeBrowsingExtraInfo</a> (@Nullable String info)</td></tr>
-<tr class="memdesc:a79e9ef8e57ba03fefba49be3d5ce4b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update extra safe browsing info, such as device MAC example input: {"mac":"0102030a0b0c"} Errors will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>.  <a href="#a79e9ef8e57ba03fefba49be3d5ce4b08">More...</a><br /></td></tr>
-<tr class="separator:a79e9ef8e57ba03fefba49be3d5ce4b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149873feb4f58d2b469906ad14a45017"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a149873feb4f58d2b469906ad14a45017">refreshSafeBrowsing</a> ()</td></tr>
-<tr class="memdesc:a149873feb4f58d2b469906ad14a45017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets Safe Browsing settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>.  <a href="#a149873feb4f58d2b469906ad14a45017">More...</a><br /></td></tr>
-<tr class="separator:a149873feb4f58d2b469906ad14a45017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4bd0061c5a800c28ce2b0ed0cf0b0fd"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad4bd0061c5a800c28ce2b0ed0cf0b0fd">refreshSafeBrowsingStats</a> ()</td></tr>
-<tr class="memdesc:ad4bd0061c5a800c28ce2b0ed0cf0b0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets Safe Browsing stats Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a277e6ac0c76ec058f43a1e33a4f38906">OnSafeBrowsingStats</a>.  <a href="#ad4bd0061c5a800c28ce2b0ed0cf0b0fd">More...</a><br /></td></tr>
-<tr class="separator:ad4bd0061c5a800c28ce2b0ed0cf0b0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87d44348fbcc7cc58430c2edb7862d4"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa87d44348fbcc7cc58430c2edb7862d4">refreshLastDisconnectEvent</a> ()</td></tr>
 <tr class="memdesc:aa87d44348fbcc7cc58430c2edb7862d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last session disconnect event Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a9e27790625d7b546d9879a2869e3f3e0">OnLastDisconnectEvent</a>.  <a href="#aa87d44348fbcc7cc58430c2edb7862d4">More...</a><br /></td></tr>
 <tr class="separator:aa87d44348fbcc7cc58430c2edb7862d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -503,6 +467,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0bb6074964ed6b0aa017da8a6ca07259"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0bb6074964ed6b0aa017da8a6ca07259">refreshSpeedTestResults</a> ()</td></tr>
 <tr class="memdesc:a0bb6074964ed6b0aa017da8a6ca07259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets last 5 speed test results Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aad487888de655b7812a7aa406f9007c2">OnSpeedTestResults</a>.  <a href="#a0bb6074964ed6b0aa017da8a6ca07259">More...</a><br /></td></tr>
 <tr class="separator:a0bb6074964ed6b0aa017da8a6ca07259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6a2e3c0e397e7a60bc9b79ae80d408c6">setUlpReportIntervalSeconds</a> (long interval)</td></tr>
+<tr class="memdesc:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the ULP reporting inverval in seconds.  <a href="#a6a2e3c0e397e7a60bc9b79ae80d408c6">More...</a><br /></td></tr>
+<tr class="separator:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd8b43f20d0eb08df91c909474956a1"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfd8b43f20d0eb08df91c909474956a1">sendMessage</a> (String messageType, JSONObject data)</td></tr>
+<tr class="separator:acfd8b43f20d0eb08df91c909474956a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b19036d97afcd7264a241ddd7e7a728"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9b19036d97afcd7264a241ddd7e7a728">sendMessage</a> (String messageType, JSONArray data)</td></tr>
+<tr class="separator:a9b19036d97afcd7264a241ddd7e7a728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb67d29f0dc10bd3e397a323f34631c"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abcb67d29f0dc10bd3e397a323f34631c">sendMessage</a> (String messageType)</td></tr>
+<tr class="separator:abcb67d29f0dc10bd3e397a323f34631c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48d2a07f1cb461a0c3e5d25c8595ec9"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab48d2a07f1cb461a0c3e5d25c8595ec9">sendRawMessage</a> (@NonNull String messageType, @Nullable JSONObject data)</td></tr>
 <tr class="memdesc:ab48d2a07f1cb461a0c3e5d25c8595ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal use  <a href="#ab48d2a07f1cb461a0c3e5d25c8595ec9">More...</a><br /></td></tr>
 <tr class="separator:ab48d2a07f1cb461a0c3e5d25c8595ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,6 +489,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5cdae208c875935163188bd93040bd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fedfe3f0b7b1980d7b9b89793831e0d"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7fedfe3f0b7b1980d7b9b89793831e0d">unregisterSdkStateReceiver</a> (<a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html">ISdkStateReceiver</a> handler)</td></tr>
 <tr class="separator:a7fedfe3f0b7b1980d7b9b89793831e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3dc265577639dd4dbf364f38944110"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0c3dc265577639dd4dbf364f38944110">registerWsMessageHandler</a> (IWsHandler handler)</td></tr>
+<tr class="separator:a0c3dc265577639dd4dbf364f38944110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -531,6 +506,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a75af06ec1dba8a2dbfa801b207166995"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a75af06ec1dba8a2dbfa801b207166995">Version</a> ()</td></tr>
 <tr class="memdesc:a75af06ec1dba8a2dbfa801b207166995"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SDK API.">SpeedifySDK</a> version.  <a href="#a75af06ec1dba8a2dbfa801b207166995">More...</a><br /></td></tr>
 <tr class="separator:a75af06ec1dba8a2dbfa801b207166995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7570cb44af2bebba4657a05238c5da68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7570cb44af2bebba4657a05238c5da68">subscribeToEvent</a> (String event)</td></tr>
+<tr class="memdesc:a7570cb44af2bebba4657a05238c5da68"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal use  <a href="#a7570cb44af2bebba4657a05238c5da68">More...</a><br /></td></tr>
+<tr class="separator:a7570cb44af2bebba4657a05238c5da68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2df71904e20818de268f68fd40c3b43"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad2df71904e20818de268f68fd40c3b43">IsBackgroundProcess</a> (@NonNull Application application)</td></tr>
 <tr class="memdesc:ad2df71904e20818de268f68fd40c3b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if currently in sdk background process (:vpnservice).  <a href="#ad2df71904e20818de268f68fd40c3b43">More...</a><br /></td></tr>
 <tr class="separator:ad2df71904e20818de268f68fd40c3b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -540,6 +518,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1576bc08e3d680f363260f1c38ab27d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1576bc08e3d680f363260f1c38ab27d9">ForceExit</a> (@NonNull Context context)</td></tr>
 <tr class="memdesc:a1576bc08e3d680f363260f1c38ab27d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force Speedify SDK to exit and all <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html" title="Main SDK API.">SpeedifySDK</a> objects to cleanup themselves.  <a href="#a1576bc08e3d680f363260f1c38ab27d9">More...</a><br /></td></tr>
 <tr class="separator:a1576bc08e3d680f363260f1c38ab27d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace30ecbb5e11a579b83c41a13f85e34d"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ace30ecbb5e11a579b83c41a13f85e34d">replaceSdkNameInString</a> (String message)</td></tr>
+<tr class="separator:ace30ecbb5e11a579b83c41a13f85e34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -560,9 +540,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac01c87326683c13225d0ebc3cca5fd0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac01c87326683c13225d0ebc3cca5fd0d">onMessage</a> (String messageType)</td></tr>
 <tr class="memdesc:ac01c87326683c13225d0ebc3cca5fd0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal use  <a href="#ac01c87326683c13225d0ebc3cca5fd0d">More...</a><br /></td></tr>
 <tr class="separator:ac01c87326683c13225d0ebc3cca5fd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d36a3989feb08c105de3bd3e2afc9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7d36a3989feb08c105de3bd3e2afc9eb">subscribeToEvent</a> (String event)</td></tr>
-<tr class="memdesc:a7d36a3989feb08c105de3bd3e2afc9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal use  <a href="#a7d36a3989feb08c105de3bd3e2afc9eb">More...</a><br /></td></tr>
-<tr class="separator:a7d36a3989feb08c105de3bd3e2afc9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5ddf149ef60fb1ddb6e65e9ff3e5372"></a>
@@ -1541,34 +1518,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3da762f708eb68fee313a532233d7c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3da762f708eb68fee313a532233d7c71">&#9670;&nbsp;</a></span>initSafeBrowsing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.initSafeBrowsing </td>
-          <td>(</td>
-          <td class="paramtype">@NonNull String&#160;</td>
-          <td class="paramname"><em>initConfig</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize Safe Browsing library If initialized is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </p>
-<p>Errors initializing will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>. Call with empty string to terminate safe browsing, and reset initialized state (</p><dl class="section since"><dt>Since</dt><dd>11.1) </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">initConfig</td><td>a configuration string for the safe browsing service </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
-
-</div>
-</div>
 <a id="ad2df71904e20818de268f68fd40c3b43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2df71904e20818de268f68fd40c3b43">&#9670;&nbsp;</a></span>IsBackgroundProcess() <span class="overload">[1/2]</span></h2>
 
@@ -1978,7 +1927,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shortcut to refresh all data. </p>
-<p>Recommended to call when starting up or reshowing a UI. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab49c7b0ec42d5d478a73e8a04ecd78cd">OnState</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab5b8d24008d11fa14034baa7f4496219">OnAccountingData</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a992ed278f31706e6781939580a4f042b">OnConnectedServer</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aa701a17d55e069d93278ae9402478d0b">OnAdaptersList</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a5bafba1143936ece3bd4247f4e79c109">OnDirectory</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aac3bad95f80aece10d02b2baaa2b9f64">OnSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#abf0370a9782331fd20e7541091d87bad">OnPrivacySettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#adb3e5c59175505718b9d703d4a4398a9">OnLocalVendorSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aecea866a905b527e675903c530687439">OnRemoteVendorSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ac7e364f062665882e23920e1945c91e1">OnVendorUserData</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#acd9304eedfd345506f8d1f4c773c4448">OnLocalProxySettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a7ae65e705a60d74e1ebf46f3b187918a">OnFirewallSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ad764feee6628ec98f518519d9e7ec150">OnStreamingSettings</a>. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<p>Recommended to call when starting up or reshowing a UI. Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab49c7b0ec42d5d478a73e8a04ecd78cd">OnState</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab5b8d24008d11fa14034baa7f4496219">OnAccountingData</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a992ed278f31706e6781939580a4f042b">OnConnectedServer</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aa701a17d55e069d93278ae9402478d0b">OnAdaptersList</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a5bafba1143936ece3bd4247f4e79c109">OnDirectory</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aac3bad95f80aece10d02b2baaa2b9f64">OnSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#abf0370a9782331fd20e7541091d87bad">OnPrivacySettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#adb3e5c59175505718b9d703d4a4398a9">OnLocalVendorSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aecea866a905b527e675903c530687439">OnRemoteVendorSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ac7e364f062665882e23920e1945c91e1">OnVendorUserData</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#acd9304eedfd345506f8d1f4c773c4448">OnLocalProxySettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a7ae65e705a60d74e1ebf46f3b187918a">OnFirewallSettings</a>, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ad764feee6628ec98f518519d9e7ec150">OnStreamingSettings</a>. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
 
 </div>
 </div>
@@ -2202,6 +2151,34 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="accab2c451a8c5046651034b26c67f2a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accab2c451a8c5046651034b26c67f2a1">&#9670;&nbsp;</a></span>refreshOAuthToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.refreshOAuthToken </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>newOAuthAccessToken</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refreshes the current oauth access token. </p>
+<p>The application is responsible for fetching updated access tokens if using this method. If not logged in or logged in not using oauth, this will initiate a new login. Otherwise, the new token is stored to be used for future requests. Calling this from a logged in state presumes this is a token for the same user. If setting a custom directory, call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a86af970025bf4b28d7ec91cac276a434">setDirectoryDomain</a> before calling this. Login errors will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a5e21ab222fdfe23d186aeaf03809dac2">OnLoginError</a>. An expired access token will give an error of type <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a5ca9f7909317013a301600401da1fa44">TOKEN_EXPIRED</a>, while invalid tokens will give <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a4ca83a3aeaea352742b831c3f93bdefc">CREDENTIAL</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newOAuthAccessToken</td><td>New access token for the user you wish to authenticate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.7 </dd></dl>
+
+</div>
+</div>
 <a id="ad9df57534a030dc309a05742f680c09b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9df57534a030dc309a05742f680c09b">&#9670;&nbsp;</a></span>refreshPrivacy()</h2>
 
@@ -2239,73 +2216,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Gets the remote vendor settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aecea866a905b527e675903c530687439">OnRemoteVendorSettings</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
-
-</div>
-</div>
-<a id="a149873feb4f58d2b469906ad14a45017"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a149873feb4f58d2b469906ad14a45017">&#9670;&nbsp;</a></span>refreshSafeBrowsing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.refreshSafeBrowsing </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets Safe Browsing settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </p>
-<dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
-
-</div>
-</div>
-<a id="ad4bd0061c5a800c28ce2b0ed0cf0b0fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4bd0061c5a800c28ce2b0ed0cf0b0fd">&#9670;&nbsp;</a></span>refreshSafeBrowsingStats()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.refreshSafeBrowsingStats </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets Safe Browsing stats Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a277e6ac0c76ec058f43a1e33a4f38906">OnSafeBrowsingStats</a>. </p>
-<dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
-
-</div>
-</div>
-<a id="a688974d7af951acbe7430d74fcd5ccd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a688974d7af951acbe7430d74fcd5ccd6">&#9670;&nbsp;</a></span>refreshSafeBrowsingToken()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.refreshSafeBrowsingToken </td>
-          <td>(</td>
-          <td class="paramtype">@NonNull String&#160;</td>
-          <td class="paramname"><em>token</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update the NSP token Only call if previous token has become invalid, as told through receiving a INVALID_NSP_TOKEN error from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a> Errors refreshing token will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">token</td><td>the new token to set </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>11.0 </dd></dl>
 
 </div>
 </div>
@@ -2467,72 +2377,47 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8a35b8a5780df460f909607fa2b9db0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a35b8a5780df460f909607fa2b9db0">&#9670;&nbsp;</a></span>reportSafeBrowsingHomeNetwork() <span class="overload">[1/2]</span></h2>
+<a id="a0c3dc265577639dd4dbf364f38944110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c3dc265577639dd4dbf364f38944110">&#9670;&nbsp;</a></span>registerWsMessageHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.reportSafeBrowsingHomeNetwork </td>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.registerWsMessageHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">IWsHandler&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Report the current connected network is a home network. </p>
-<p>Uses default retry/delay/timeout values If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a> If current network is not protected, will return OK. May also return any other error type in case of error. (Deprecated </p><dl class="section since"><dt>Since</dt><dd>11.1) used to trigger <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </dd>
-<dd>
-11.2 A disconnect will not occur. In previous versions, this may cause a disconnect if on a protected network </dd>
-<dd>
-11.0 </dd></dl>
-
 </div>
 </div>
-<a id="a1862d80be9b14659e6c03752af1b2305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1862d80be9b14659e6c03752af1b2305">&#9670;&nbsp;</a></span>reportSafeBrowsingHomeNetwork() <span class="overload">[2/2]</span></h2>
+<a id="ace30ecbb5e11a579b83c41a13f85e34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace30ecbb5e11a579b83c41a13f85e34d">&#9670;&nbsp;</a></span>replaceSdkNameInString()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.reportSafeBrowsingHomeNetwork </td>
+          <td class="memname">static String com.speedify.speedifysdk.SpeedifySDK.replaceSdkNameInString </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>retries</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>delay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Report the current connected network is a home network If current network is Safe Browsing protected, ON_PROTECTED_NETWORK will be returned from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>, If current network is not protected, will return OK. </p>
-<p>May also return any other error type in case of error. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">retries</td><td>the number of times to retry the report in event of error </td></tr>
-    <tr><td class="paramname">delay</td><td>the delay between retries (ms) </td></tr>
-    <tr><td class="paramname">timeout</td><td>the request timeout (ms) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
 
 </div>
 </div>
@@ -2648,6 +2533,80 @@ Protected Member Functions</h2></td></tr>
 
 <p>Ensures relevant services are started. </p>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+
+</div>
+</div>
+<a id="acfd8b43f20d0eb08df91c909474956a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd8b43f20d0eb08df91c909474956a1">&#9670;&nbsp;</a></span>sendMessage() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.sendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JSONObject&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b19036d97afcd7264a241ddd7e7a728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b19036d97afcd7264a241ddd7e7a728">&#9670;&nbsp;</a></span>sendMessage() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.sendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JSONArray&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcb67d29f0dc10bd3e397a323f34631c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb67d29f0dc10bd3e397a323f34631c">&#9670;&nbsp;</a></span>sendMessage() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.sendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3685,7 +3644,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>since future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>since 11.9.2 </dd></dl>
 
 </div>
 </div>
@@ -4251,114 +4210,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab4edb2b2568b3a4bd979bf4fc60c49b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4edb2b2568b3a4bd979bf4fc60c49b0">&#9670;&nbsp;</a></span>setSafeBrowsingConfig()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setSafeBrowsingConfig </td>
-          <td>(</td>
-          <td class="paramtype">@NonNull String&#160;</td>
-          <td class="paramname"><em>safeBrowsingConfig</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the optional Safe Browsing config If config set is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">safeBrowsingConfig</td><td>a configuration string for the safe browsing service </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
-
-</div>
-</div>
-<a id="a00adc4b8df5b94a8e2e37ef2a8e81f10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00adc4b8df5b94a8e2e37ef2a8e81f10">&#9670;&nbsp;</a></span>setSafeBrowsingEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setSafeBrowsingEnabled </td>
-          <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>enabled</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets if Safe Browsing is enabled Current value available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enabled</td><td>if safe browsing should be enabled </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
-
-</div>
-</div>
-<a id="a2ed8ba39e155d70bd2ef3ff0fea67eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ed8ba39e155d70bd2ef3ff0fea67eaf">&#9670;&nbsp;</a></span>setSafeBrowsingLogLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setSafeBrowsingLogLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_log_level.html">SafeBrowsingLogLevel</a>&#160;</td>
-          <td class="paramname"><em>logLevel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the Safe Browsing logging level Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">logLevel</td><td>The logging verbosity level </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>10.8 </dd></dl>
-
-</div>
-</div>
-<a id="a57c04a6f28988afc2a023617c86dfaa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57c04a6f28988afc2a023617c86dfaa0">&#9670;&nbsp;</a></span>setSafeBrowsingSafeNetworkOverride()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setSafeBrowsingSafeNetworkOverride </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_safe_network_override.html">SafeBrowsingSafeNetworkOverride</a>&#160;</td>
-          <td class="paramname"><em>snOverride</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Override the safe network decision This setting overrides the safe/unsafe network decision made by <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8a35b8a5780df460f909607fa2b9db0" title="Report the current connected network is a home network.">reportSafeBrowsingHomeNetwork()</a> Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">snOverride</td><td>The override enum </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
-
-</div>
-</div>
 <a id="a885e9ea8ac5bca92c83a2dbc90fcebc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a885e9ea8ac5bca92c83a2dbc90fcebc5">&#9670;&nbsp;</a></span>setServiceNotificationIcon()</h2>
 
@@ -4577,6 +4428,33 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6a2e3c0e397e7a60bc9b79ae80d408c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a2e3c0e397e7a60bc9b79ae80d408c6">&#9670;&nbsp;</a></span>setUlpReportIntervalSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setUlpReportIntervalSeconds </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the ULP reporting inverval in seconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>The interval in seconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>12.8 </dd></dl>
+
+</div>
+</div>
 <a id="a3a7dfad754cd6cffeafb588563278783"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a7dfad754cd6cffeafb588563278783">&#9670;&nbsp;</a></span>setVendorUserData()</h2>
 
@@ -4601,33 +4479,6 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>9.8 </dd></dl>
-
-</div>
-</div>
-<a id="aa2332a2f44305f909bb241320edd479d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2332a2f44305f909bb241320edd479d">&#9670;&nbsp;</a></span>startSafeBrowsing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.startSafeBrowsing </td>
-          <td>(</td>
-          <td class="paramtype">@NonNull String&#160;</td>
-          <td class="paramname"><em>initConfig</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start Safe Browsing. </p>
-<p>Wrapper for initSafeBrowsing and setSafeBrowsingEnabled. After this call Safe Browsing is initialized and enabled. If initialized and enabled is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. Errors initializing will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">initConfig</td><td>a configuration string for the safe browsing service </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
 
 </div>
 </div>
@@ -4671,28 +4522,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab4063768a495962cef71151ac939fab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4063768a495962cef71151ac939fab0">&#9670;&nbsp;</a></span>stopSafeBrowsing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.stopSafeBrowsing </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Terminate Safe Browsing. </p>
-<p>Wrapper for initSafeBrowsing and setSafeBrowsingEnabled After this call Safe Browsing is not initialized, and disabled If initialized and enabled is available from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a>. </p><dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
-
-</div>
-</div>
-<a id="a7d36a3989feb08c105de3bd3e2afc9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d36a3989feb08c105de3bd3e2afc9eb">&#9670;&nbsp;</a></span>subscribeToEvent()</h2>
+<a id="a7570cb44af2bebba4657a05238c5da68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7570cb44af2bebba4657a05238c5da68">&#9670;&nbsp;</a></span>subscribeToEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4701,7 +4532,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void com.speedify.speedifysdk.SpeedifySDK.subscribeToEvent </td>
+          <td class="memname">static void com.speedify.speedifysdk.SpeedifySDK.subscribeToEvent </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>event</em></td><td>)</td>
@@ -4710,7 +4541,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -4740,34 +4571,6 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a79e9ef8e57ba03fefba49be3d5ce4b08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79e9ef8e57ba03fefba49be3d5ce4b08">&#9670;&nbsp;</a></span>updateSafeBrowsingExtraInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.updateSafeBrowsingExtraInfo </td>
-          <td>(</td>
-          <td class="paramtype">@Nullable String&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update extra safe browsing info, such as device MAC example input: {"mac":"0102030a0b0c"} Errors will be signalled in <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a">OnSafeBrowsingConnectError</a>. </p>
-<p>Otherwise, <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6">OnSafeBrowsing</a> is called </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">info</td><td>the info to update </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>11.4</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>As of 11.9.2. Functionality removed. </dd></dl>
 
 </div>
 </div>

@@ -1,8 +1,7 @@
 var searchData=
 [
   ['off',['OFF',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#aa8762812ba57b91833dfb095e033e187',1,'com::speedify::speedifysdk::Types::FirewallMode']]],
-  ['ok',['OK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a893ea51e7455e7d655bfe8faeda0267b',1,'com.speedify.speedifysdk.Types.ErrorType.OK()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#a1440bc7e117f63ecf0d59c8f532d37ab',1,'com.speedify.speedifysdk.Types.SafeBrowsingError.OK()']]],
-  ['on_5fprotected_5fnetwork',['ON_PROTECTED_NETWORK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#ae4d233d7a82438f9be4bcc089efed19f',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
+  ['ok',['OK',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a893ea51e7455e7d655bfe8faeda0267b',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['onaccountcheckresult',['OnAccountCheckResult',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a2e17ee9665e8b74bf40b73c27adecbf2',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onaccountcreateresult',['OnAccountCreateResult',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a97d7f5b1960f99e90c29844d97b43c9f',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onaccountingdata',['OnAccountingData',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab5b8d24008d11fa14034baa7f4496219',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
@@ -32,12 +31,6 @@ var searchData=
   ['onprivacysettings',['OnPrivacySettings',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#abf0370a9782331fd20e7541091d87bad',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onreceive',['onReceive',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html#ab2234ac04ccf0bec6ea9d1bdfa01c495',1,'com::speedify::speedifysdk::PooledBroadcastReceiver']]],
   ['onremotevendorsettings',['OnRemoteVendorSettings',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aecea866a905b527e675903c530687439',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
-  ['onsafebrowsing',['OnSafeBrowsing',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a26765442903fd919a92e3a82112470d6',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
-  ['onsafebrowsingblock',['OnSafeBrowsingBlock',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a29fe9b38d30573bd3424721c1440072d',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
-  ['onsafebrowsingconnecterror',['OnSafeBrowsingConnectError',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae0ccf1ccb41812d02ab261001c53a50a',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
-  ['onsafebrowsinglookuperror',['OnSafeBrowsingLookupError',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a5a9023ed9d73de29824491ac98c0a119',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
-  ['onsafebrowsingstats',['OnSafeBrowsingStats',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a277e6ac0c76ec058f43a1e33a4f38906',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
-  ['onsafebrowsingtokenrefreshrequest',['OnSafeBrowsingTokenRefreshRequest',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a0deefe2d8b74b1dc6f7a180c74bc474e',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onserversettings',['OnServerSettings',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a56c6f3840e68c3ebaf617d365657dcf1',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onservicecreate',['OnServiceCreate',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a03def0d6629fa896c90fa46b625688fd',1,'com::speedify::speedifysdk::receivers::IForegroundServiceReceiver']]],
   ['onservicedestroy',['OnServiceDestroy',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a95b08a933ae7958bd2c67bdeccbdff97',1,'com::speedify::speedifysdk::receivers::IForegroundServiceReceiver']]],
