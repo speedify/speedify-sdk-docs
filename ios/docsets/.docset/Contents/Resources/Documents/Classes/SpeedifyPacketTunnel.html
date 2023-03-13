@@ -8,19 +8,27 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/SpeedifyPacketTunnel" class="dashAnchor"></a>
     <a title="SpeedifyPacketTunnel Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (68% documented)</p>
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         SpeedifyPacketTunnel Class Reference
       </p>
     </div>
@@ -63,7 +71,7 @@
                 <a href="../Enums/ConnectionState.html">ConnectionState</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/ErrorType.html">ErrorType</a>
+                <a href="../Enums/DisconnectReason.html">DisconnectReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/FirewallMode.html">FirewallMode</a>
@@ -73,6 +81,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/JSONKey.html">JSONKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/NetworkType.html">NetworkType</a>
@@ -87,7 +98,19 @@
                 <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpeedTestType.html">SpeedTestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/TransportMode.html">TransportMode</a>
@@ -95,11 +118,17 @@
               <li class="nav-group-task">
                 <a href="../Enums/Type.html">Type</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/iAPCode.html">iAPCode</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/JSON.html">JSON</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Extensions/NEVPNStatus.html">NEVPNStatus</a>
               </li>
@@ -135,13 +164,31 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/PacketTunnelSafeBrowsingBlockDelegate.html">PacketTunnelSafeBrowsingBlockDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SafeBrowsingInternalMessageDelegate.html">SafeBrowsingInternalMessageDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyCaptivePortalDelegate.html">SpeedifyCaptivePortalDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyConnectedServerDelegate.html">SpeedifyConnectedServerDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDirectoryDomainDelegate.html">SpeedifyDirectoryDomainDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDisconnectEventDelegate.html">SpeedifyDisconnectEventDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a>
@@ -150,19 +197,31 @@
                 <a href="../Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/SpeedifyLocalSettingsVendorDelegate.html">SpeedifyLocalSettingsVendorDelegate</a>
+                <a href="../Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/SpeedifyRemoteSettingsVendorDelegate.html">SpeedifyRemoteSettingsVendorDelegate</a>
+                <a href="../Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLocalProxySettingsDelegate.html">SpeedifyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLogSettingsDelegate.html">SpeedifyLogSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLoginErrorDelegate.html">SpeedifyLoginErrorDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/SpeedifySessionPeriodStatsDelegate.html">SpeedifySessionPeriodStatsDelegate</a>
+                <a href="../Protocols/SpeedifyServerSettingsDelegate.html">SpeedifyServerSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionStatsPeriodDelegate.html">SpeedifySessionStatsPeriodDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a>
@@ -171,7 +230,13 @@
                 <a href="../Protocols/SpeedifySettingsErrorDelegate.html">SpeedifySettingsErrorDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySpeedTestResultsDelegate.html">SpeedifySpeedTestResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyStreamingSettingsDelegate.html">SpeedifyStreamingSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
@@ -180,10 +245,13 @@
                 <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/SpeeidfyLocalProxySettingsDelegate.html">SpeeidfyLocalProxySettingsDelegate</a>
+                <a href="../Protocols/SpeedifyVendorLocalSettingsDelegate.html">SpeedifyVendorLocalSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/VendorDataDelegate.html">VendorDataDelegate</a>
+                <a href="../Protocols/SpeedifyVendorRemoteSettingsDelegate.html">SpeedifyVendorRemoteSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyVendorUserDataDelegate.html">SpeedifyVendorUserDataDelegate</a>
               </li>
             </ul>
           </li>
@@ -207,6 +275,18 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DirectorySettings.html">DirectorySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DisconnectEvent.html">DisconnectEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorType.html">ErrorType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/FirewallPort.html">FirewallPort</a>
@@ -236,10 +316,16 @@
                 <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/ProtocolPortPair.html">ProtocolPortPair</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ServerInformation.html">ServerInformation</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SessionStatPeriods.html">SessionStatPeriods</a>
+                <a href="../Structs/ServerSettings.html">ServerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStatPeriod.html">SessionStatPeriod</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
@@ -248,10 +334,19 @@
                 <a href="../Structs/Settings.html">Settings</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/SpeedTestResultsData.html">SpeedTestResultsData</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/StreamStats.html">StreamStats</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/StreamingPort.html">StreamingPort</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/StreamingSessionStats.html">StreamingSessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingSettings.html">StreamingSettings</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/StreamingStats.html">StreamingStats</a>
@@ -283,13 +378,14 @@
             <h1>SpeedifyPacketTunnel</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="kt">SpeedifyPacketTunnel</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">SpeedifyPacketTunnel</span><span class="p">:</span> <span class="kt">MXMetricManagerSubscriber</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -325,9 +421,61 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon8provider15currentDefaults18connectWithHandler010completionL0ySo08NEPacketD8ProviderC_So06NSUserI0CSgSbys5Error_pSgctF"></a>
-                    <a name="//apple_ref/swift/Method/runDaemon(provider:currentDefaults:connectWithHandler:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon8provider15currentDefaults18connectWithHandler010completionL0ySo08NEPacketD8ProviderC_So06NSUserI0CSgSbys5Error_pSgctF">runDaemon(provider:<wbr>currentDefaults:<wbr>connectWithHandler:<wbr>completionHandler:<wbr>)</a>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC25safeBrowsingBlockDelegateAA0cd4SafefgH0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/safeBrowsingBlockDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC25safeBrowsingBlockDelegateAA0cd4SafefgH0_pSgvp">safeBrowsingBlockDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">safeBrowsingBlockDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PacketTunnelSafeBrowsingBlockDelegate.html">PacketTunnelSafeBrowsingBlockDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC12currentStateSivp"></a>
+                    <a name="//apple_ref/swift/Property/currentState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC12currentStateSivp">currentState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">currentState</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon2in8provider18connectWithHandler010completionK0ySi_So08NEPacketD8ProviderCSbys5Error_pSgctF"></a>
+                    <a name="//apple_ref/swift/Method/runDaemon(in:provider:connectWithHandler:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon2in8provider18connectWithHandler010completionK0ySi_So08NEPacketD8ProviderCSbys5Error_pSgctF">runDaemon(in:<wbr>provider:<wbr>connectWithHandler:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -342,7 +490,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">runDaemon</span><span class="p">(</span><span class="nv">provider</span><span class="p">:</span> <span class="kt">NEPacketTunnelProvider</span><span class="p">,</span> <span class="nv">currentDefaults</span><span class="p">:</span> <span class="kt">UserDefaults</span><span class="p">?,</span> <span class="nv">connectWithHandler</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use runDaemon(in port: Int, provider: NEPacketTunnelProvider,  options: [String : NSObject]?, connectWithHandler: Bool, completionHandler: @escaping (Error?﹚-&gt; Void﹚"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">runDaemon</span><span class="p">(</span><span class="k">in</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">NEPacketTunnelProvider</span><span class="p">,</span> <span class="nv">connectWithHandler</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -353,12 +502,107 @@
                             <tr>
                               <td>
                                 <code>
+                                <em>port</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Port used for websocket communication with the SpeedifySDK service</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
                                 <em>provider</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The principal class for a packet tunnel provider app extension.</p>
+                                  <p>The principal class for a packet tunnel provider app extension. This should always be <code>self</code> of the users implementation of the PacketTunnelProvider</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connectWithHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tells the tunnel to connect right away or wait for Speedify. Default should be false</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that must be executed when the tunnel is fully established, or when the tunnel cannot be started due to an error. If the tunnel was successfully established, then the error parameter must be set to nil. If an error occurred, the error parameter passed to this block must be set to a non-nil NSError object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon2in8provider15currentDefaults18connectWithHandler010completionM0ySi_So08NEPacketD8ProviderCSo06NSUserJ0CSbys5Error_pSgctF"></a>
+                    <a name="//apple_ref/swift/Method/runDaemon(in:provider:currentDefaults:connectWithHandler:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon2in8provider15currentDefaults18connectWithHandler010completionM0ySi_So08NEPacketD8ProviderCSo06NSUserJ0CSbys5Error_pSgctF">runDaemon(in:<wbr>provider:<wbr>currentDefaults:<wbr>connectWithHandler:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>runDaemon</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use runDaemon(in port: Int, provider: NEPacketTunnelProvider, connectWithHandler: Bool, completionHandler: @escaping (Error?﹚-&gt; Void﹚"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">runDaemon</span><span class="p">(</span><span class="k">in</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">NEPacketTunnelProvider</span><span class="p">,</span> <span class="nv">currentDefaults</span><span class="p">:</span> <span class="kt">UserDefaults</span><span class="p">,</span> <span class="nv">connectWithHandler</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>port</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Port used for websocket communication with the SpeedifySDK service</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The principal class for a packet tunnel provider app extension. This should always be <code>self</code> of the users implementation of the PacketTunnelProvider</p>
                                 </div>
                               </td>
                             </tr>
@@ -370,7 +614,101 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Optional path to set App Group defaults. *IMPORTANT: App groups must still reside in the plist.</p>
+                                  <p>User preferences that Speedify can read. NOTE: If you would like to connect to a speed server from the settings app on a device you MUST pass in a security group default and the same default must be used in the containing application</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connectWithHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tells the tunnel to connect right away or wait for Speedify. Default should be false</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that must be executed when the tunnel is fully established, or when the tunnel cannot be started due to an error. If the tunnel was successfully established, then the error parameter must be set to nil. If an error occurred, the error parameter passed to this block must be set to a non-nil NSError object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon2in8provider7options18connectWithHandler010completionL0ySi_So08NEPacketD8ProviderCSDySSSo8NSObjectCGSgSbys5Error_pSgctF"></a>
+                    <a name="//apple_ref/swift/Method/runDaemon(in:provider:options:connectWithHandler:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC9runDaemon2in8provider7options18connectWithHandler010completionL0ySi_So08NEPacketD8ProviderCSDySSSo8NSObjectCGSgSbys5Error_pSgctF">runDaemon(in:<wbr>provider:<wbr>options:<wbr>connectWithHandler:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>runDaemon</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">runDaemon</span><span class="p">(</span><span class="k">in</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">NEPacketTunnelProvider</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">]?,</span> <span class="nv">connectWithHandler</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>port</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Port used for websocket communication with the SpeedifySDK service</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The principal class for a packet tunnel provider app extension. This should always be <code>self</code> of the users implementation of the PacketTunnelProvider</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User options passed in when starting a tunnel. These options should be passed from a users implemenation of PacketTunnelPrivider.swift so the SDK can ingest these options from the container</p>
                                 </div>
                               </td>
                             </tr>
@@ -445,7 +783,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Add this inside of the <code>sleep(completionHandler: @escaping () -&gt; Void)</code> delegate of the Parent Provider
+                        <p>Add this inside of t.he <code>sleep(completionHandler: @escaping () -&gt; Void)</code> delegate of the Parent Provider
 <a href="https://developer.apple.com/documentation/networkextension/neprovider/1406731-sleep">https://developer.apple.com/documentation/networkextension/neprovider/1406731-sleep</a></p>
 
                       </div>
@@ -463,9 +801,35 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC14tunnelWillStop17completionHandleryyycSg_tF"></a>
-                    <a name="//apple_ref/swift/Method/tunnelWillStop(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC14tunnelWillStop17completionHandleryyycSg_tF">tunnelWillStop(completionHandler:<wbr>)</a>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC29reportSafeBrowsingHomeNetworkyyF"></a>
+                    <a name="//apple_ref/swift/Method/reportSafeBrowsingHomeNetwork()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC29reportSafeBrowsingHomeNetworkyyF">reportSafeBrowsingHomeNetwork()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reportSafeBrowsingHomeNetwork</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC14tunnelWillStop4with17completionHandlerySo010NEProviderG6ReasonV_yycSgtF"></a>
+                    <a name="//apple_ref/swift/Method/tunnelWillStop(with:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC14tunnelWillStop4with17completionHandlerySo010NEProviderG6ReasonV_yycSgtF">tunnelWillStop(with:<wbr>completionHandler:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -480,7 +844,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tunnelWillStop</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tunnelWillStop</span><span class="p">(</span><span class="n">with</span> <span class="nv">reason</span><span class="p">:</span> <span class="kt">NEProviderStopReason</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
 
                         </div>
                       </div>
@@ -557,16 +921,67 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC14sendExtMessage7command10Foundation4DataVSSSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/sendExtMessage(command:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC14sendExtMessage7command10Foundation4DataVSSSg_tF">sendExtMessage(command:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendExtMessage</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@speedifysdk@objc(cs)SpeedifyPacketTunnel(im)didReceiveMetricPayloads:"></a>
+                    <a name="//apple_ref/swift/Method/didReceive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@speedifysdk@objc(cs)SpeedifyPacketTunnel(im)didReceiveMetricPayloads:">didReceive(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didReceive</span><span class="p">(</span><span class="n">_</span> <span class="nv">payloads</span><span class="p">:</span> <span class="p">[</span><span class="kt">MXMetricPayload</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>© 2020 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2022 <a class="link" href="http://speedify.com" target="_blank" rel="external noopener">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

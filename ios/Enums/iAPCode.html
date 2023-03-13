@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SafeBrowsingStats Structure Reference</title>
+    <title>iAPCode Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,23 +13,23 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/SafeBrowsingStats" class="dashAnchor"></a>
-    <a title="SafeBrowsingStats Structure Reference"></a>
+    <a name="//apple_ref/swift/Enum/iAPCode" class="dashAnchor"></a>
+    <a title="iAPCode Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (84% documented)</p>
-        <p class="header-right">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
           </form>
-        </p>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
-        <img id="carat" src="../img/carat.png" />
-        SafeBrowsingStats Structure Reference
+        <img id="carat" src="../img/carat.png" alt=""/>
+        iAPCode Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -42,7 +42,13 @@
                 <a href="../Classes/Speedify.html">Speedify</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes.html#/c:@M@speedifysdk@objc(cs)UUIDProvider">UUIDProvider</a>
+                <a href="../Classes/SpeedifyPacketTunnel.html">SpeedifyPacketTunnel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TunnelHelper.html">TunnelHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
               </li>
             </ul>
           </li>
@@ -71,7 +77,10 @@
                 <a href="../Enums/FirewallMode.html">FirewallMode</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:11speedifysdk7JSONKeyO">JSONKey</a>
+                <a href="../Enums/Index.html">Index</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JSONKey.html">JSONKey</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/LogLevel.html">LogLevel</a>
@@ -87,15 +96,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/SafeBrowsingError.html">SafeBrowsingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/SafeBrowsingLogLevel.html">SafeBrowsingLogLevel</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums.html#/s:11speedifysdk012SafeBrowsingB15NetworkOverrideO">SafeBrowsingSafeNetworkOverride</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
@@ -116,13 +116,19 @@
                 <a href="../Enums/TransportMode.html">TransportMode</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:11speedifysdk4TypeO">Type</a>
+                <a href="../Enums/Type.html">Type</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/iAPCode.html">iAPCode</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/JSON.html">JSON</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Extensions/NEVPNStatus.html">NEVPNStatus</a>
               </li>
@@ -135,85 +141,117 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk1loiySbAA4JSONV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk2leoiySbAA4JSONV_ADtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk2eeoiySbAA4JSONV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk1goiySbAA4JSONV_ADtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk2geoiySbAA4JSONV_ADtF">&gt;=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a>
+                <a href="../Protocols/PacketTunnelSafeBrowsingBlockDelegate.html">PacketTunnelSafeBrowsingBlockDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
+                <a href="../Protocols/SafeBrowsingInternalMessageDelegate.html">SafeBrowsingInternalMessageDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk29SpeedifyCaptivePortalDelegateP">SpeedifyCaptivePortalDelegate</a>
+                <a href="../Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a>
+                <a href="../Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
+                <a href="../Protocols/SpeedifyCaptivePortalDelegate.html">SpeedifyCaptivePortalDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a>
+                <a href="../Protocols/SpeedifyConnectedServerDelegate.html">SpeedifyConnectedServerDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a>
+                <a href="../Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
+                <a href="../Protocols/SpeedifyDirectoryDomainDelegate.html">SpeedifyDirectoryDomainDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a>
+                <a href="../Protocols/SpeedifyDisconnectEventDelegate.html">SpeedifyDisconnectEventDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a>
+                <a href="../Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a>
+                <a href="../Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a>
+                <a href="../Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a>
+                <a href="../Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyServerSettingsDelegateP">SpeedifyServerSettingsDelegate</a>
+                <a href="../Protocols/SpeedifyLocalProxySettingsDelegate.html">SpeedifyLocalProxySettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
+                <a href="../Protocols/SpeedifyLogSettingsDelegate.html">SpeedifyLogSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a>
+                <a href="../Protocols/SpeedifyLoginErrorDelegate.html">SpeedifyLoginErrorDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
+                <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a>
+                <a href="../Protocols/SpeedifyServerSettingsDelegate.html">SpeedifyServerSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a>
+                <a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a>
+                <a href="../Protocols/SpeedifySessionStatsPeriodDelegate.html">SpeedifySessionStatsPeriodDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk33SpeedifyStreamingSettingsDelegateP">SpeedifyStreamingSettingsDelegate</a>
+                <a href="../Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a>
+                <a href="../Protocols/SpeedifySettingsErrorDelegate.html">SpeedifySettingsErrorDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a>
+                <a href="../Protocols/SpeedifySpeedTestResultsDelegate.html">SpeedifySpeedTestResultsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a>
+                <a href="../Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a>
+                <a href="../Protocols/SpeedifyStreamingSettingsDelegate.html">SpeedifyStreamingSettingsDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a>
+                <a href="../Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyVendorLocalSettingsDelegate.html">SpeedifyVendorLocalSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyVendorRemoteSettingsDelegate.html">SpeedifyVendorRemoteSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyVendorUserDataDelegate.html">SpeedifyVendorUserDataDelegate</a>
               </li>
             </ul>
           </li>
@@ -234,6 +272,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
@@ -278,19 +319,7 @@
                 <a href="../Structs/ProtocolPortPair.html">ProtocolPortPair</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SafeBrowsingBlock.html">SafeBrowsingBlock</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/SafeBrowsingConnectError.html">SafeBrowsingConnectError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/SafeBrowsingLookupError.html">SafeBrowsingLookupError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/SafeBrowsingSettings.html">SafeBrowsingSettings</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/SafeBrowsingStats.html">SafeBrowsingStats</a>
+                <a href="../Structs/ServerInformation.html">ServerInformation</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ServerSettings.html">ServerSettings</a>
@@ -314,6 +343,9 @@
                 <a href="../Structs/StreamingPort.html">StreamingPort</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/StreamingSessionStats.html">StreamingSessionStats</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/StreamingSettings.html">StreamingSettings</a>
               </li>
               <li class="nav-group-task">
@@ -327,22 +359,31 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11speedifysdk9JSONIndexa">JSONIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11speedifysdk12JSONRawIndexa">JSONRawIndex</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SafeBrowsingStats</h1>
+            <h1>iAPCode</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SafeBrowsingStats</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="nv">iAPCode</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                 </div>
               </div>
-            <p>Safe Browsing lookup statistics
-@since 10.6</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -350,9 +391,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV7minTimes6UInt32Vvp"></a>
-                    <a name="//apple_ref/swift/Property/minTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV7minTimes6UInt32Vvp">minTime</a>
+                    <a name="/s:11speedifysdk7iAPCodeO7successyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/success" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk7iAPCodeO7successyA2CmF">success</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -360,18 +401,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The fastest lookup time (ms)</p>
-
-<ul>
-<li>@since 10.6</li>
-</ul>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minTime</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">success</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
                       </div>
@@ -381,9 +417,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV7maxTimes6UInt32Vvp"></a>
-                    <a name="//apple_ref/swift/Property/maxTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV7maxTimes6UInt32Vvp">maxTime</a>
+                    <a name="/s:11speedifysdk7iAPCodeO17alreadyAuthorizedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/alreadyAuthorized" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk7iAPCodeO17alreadyAuthorizedyA2CmF">alreadyAuthorized</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -391,18 +427,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The slowest lookup time (ms)</p>
-
-<ul>
-<li>@since 10.6</li>
-</ul>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maxTime</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">alreadyAuthorized</span> <span class="o">=</span> <span class="mi">433</span></code></pre>
 
                         </div>
                       </div>
@@ -412,9 +443,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV7avgTimes6UInt32Vvp"></a>
-                    <a name="//apple_ref/swift/Property/avgTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV7avgTimes6UInt32Vvp">avgTime</a>
+                    <a name="/s:11speedifysdk7iAPCodeO10noProductsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/noProducts" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk7iAPCodeO10noProductsyA2CmF">noProducts</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -422,18 +453,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The average lookup time (ms)</p>
-
-<ul>
-<li>@since 10.6</li>
-</ul>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">avgTime</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">noProducts</span> <span class="o">=</span> <span class="mi">432</span></code></pre>
 
                         </div>
                       </div>
@@ -443,9 +469,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV9numErrorss6UInt32Vvp"></a>
-                    <a name="//apple_ref/swift/Property/numErrors" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV9numErrorss6UInt32Vvp">numErrors</a>
+                    <a name="/s:11speedifysdk7iAPCodeO11deviceLimityA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/deviceLimit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk7iAPCodeO11deviceLimityA2CmF">deviceLimit</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -453,18 +479,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The number of lookup errors</p>
-
-<ul>
-<li>@since 10.6</li>
-</ul>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">numErrors</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">deviceLimit</span> <span class="o">=</span> <span class="mi">434</span></code></pre>
 
                         </div>
                       </div>
@@ -474,9 +495,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV11failureRateSdvp"></a>
-                    <a name="//apple_ref/swift/Property/failureRate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV11failureRateSdvp">failureRate</a>
+                    <a name="/s:11speedifysdk7iAPCodeO9rateLimityA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/rateLimit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk7iAPCodeO9rateLimityA2CmF">rateLimit</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -484,18 +505,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The lookup failure rate</p>
-
-<ul>
-<li>@since 10.6</li>
-</ul>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">failureRate</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">rateLimit</span> <span class="o">=</span> <span class="mi">429</span></code></pre>
 
                         </div>
                       </div>
@@ -505,9 +521,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV9numBlockss6UInt32Vvp"></a>
-                    <a name="//apple_ref/swift/Property/numBlocks" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV9numBlockss6UInt32Vvp">numBlocks</a>
+                    <a name="/s:11speedifysdk7iAPCodeO7unknownyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/unknown" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk7iAPCodeO7unknownyA2CmF">unknown</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -515,18 +531,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The number of sites blocked</p>
-
-<ul>
-<li>@since 10.6</li>
-</ul>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">numBlocks</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown</span> <span class="o">=</span> <span class="mi">520</span></code></pre>
 
                         </div>
                       </div>
@@ -536,9 +547,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV17numBlockResponsess6UInt32Vvp"></a>
-                    <a name="//apple_ref/swift/Property/numBlockResponses" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV17numBlockResponsess6UInt32Vvp">numBlockResponses</a>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -546,81 +557,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The number of server responses requesting the SDK </p>
-
-<ul>
-<li>block or redirect the connection</li>
-<li>@since 11.1</li>
-</ul>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">numBlockResponses</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV10numLookupss6UInt64Vvp"></a>
-                    <a name="//apple_ref/swift/Property/numLookups" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV10numLookupss6UInt64Vvp">numLookups</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The number of completed requests to the safe browsing server</p>
-
-<ul>
-<li>@since 11.1</li>
-</ul>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">numLookups</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11speedifysdk17SafeBrowsingStatsV18numPacketsFiltereds6UInt64Vvp"></a>
-                    <a name="//apple_ref/swift/Property/numPacketsFiltered" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11speedifysdk17SafeBrowsingStatsV18numPacketsFiltereds6UInt64Vvp">numPacketsFiltered</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The number of safe browsing filtered packets</p>
-
-<ul>
-<li>@since 11.1</li>
-</ul>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">numPacketsFiltered</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -632,11 +575,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>© 2022 <a class="link" href="http://speedify.com" target="_blank" rel="external">Connectify</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>© 2022 <a class="link" href="http://speedify.com" target="_blank" rel="external noopener">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>
