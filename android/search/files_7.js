@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sdkadv_2edox',['sdkadv.dox',['../sdkadv_8dox.html',1,'']]],
   ['sdkinit_2edox',['sdkinit.dox',['../sdkinit_8dox.html',1,'']]],
   ['servicenotification_2edox',['servicenotification.dox',['../servicenotification_8dox.html',1,'']]],
   ['speedifyhandler_2ejava',['SpeedifyHandler.java',['../_speedify_handler_8java.html',1,'']]],

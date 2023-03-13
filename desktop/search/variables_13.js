@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ulpreportintervalseconds',['ulpReportIntervalSeconds',['../struct_speedify_s_d_k___settings.html#ab743257d312a3a03281bd30b922c38c7',1,'SpeedifySDK_Settings']]],
   ['uniquesaves',['uniqueSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#a0916cce0dd4e0033160a51219f9fc8f6',1,'SpeedifySDK_StreamingSessionStats']]],
   ['uploadspeed',['uploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#ad11e911f815224f96e4b08b412164bbc',1,'SpeedifySDK_StreamStats::uploadSpeed()'],['../struct_speedify_s_d_k___speed_test_result_data.html#a8d3b39b26d4509bf2d10ecca8cbfdc0b',1,'SpeedifySDK_SpeedTestResultData::uploadSpeed()']]],
   ['usagedaily',['usageDaily',['../struct_speedify_s_d_k___adapter_usage_data.html#a1ef112f8a79d821cef7fab6a03e16401',1,'SpeedifySDK_AdapterUsageData']]],

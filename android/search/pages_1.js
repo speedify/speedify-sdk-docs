@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['disable_20always_2don_20support',['Disable Always-On Support',['../alwayson.html',1,'']]],
-  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]]
+  ['introduction_20to_20the_20speedify_20sdk_20for_20android',['Introduction to the Speedify SDK for Android',['../index.html',1,'']]],
+  ['integration_20guide',['Integration Guide',['../integration.html',1,'']]],
+  ['initializing_20the_20sdk',['Initializing the SDK',['../sdkinit.html',1,'']]]
 ];

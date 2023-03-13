@@ -328,6 +328,9 @@
                 <a href="../Structs/SessionStatPeriod.html">SessionStatPeriod</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/SessionStatPeriod.html">SessionStatPeriod</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/SessionStats.html">SessionStats</a>
               </li>
               <li class="nav-group-task">
@@ -416,7 +419,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">SpeedifySDKDelegate</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -545,6 +548,958 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <p>Current <code>ServerInformation</code>. If set to nil, no server is connected.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">serverInformation</span><span class="p">:</span> <span class="kt">ServerInformation</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC8settingsAA8SettingsVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/settings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC8settingsAA8SettingsVSgvp">settings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code><a href="../Structs/Settings.html">Settings</a></code>. If set to nil, no settings are present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15connectionStatsSayAA010ConnectionD0VGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/connectionStats" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15connectionStatsSayAA010ConnectionD0VGSgvp">connectionStats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code><a href="../Structs/ConnectionStats.html">ConnectionStats</a></code>. If set to nil, no ConnectionStats are present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">connectionStats</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ConnectionStats.html">ConnectionStats</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC14accountingDataAA010AccountingD0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accountingData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14accountingDataAA010AccountingD0VSgvp">accountingData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code>accountingData</code>. If set to nil, no accountingData is present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">accountingData</span><span class="p">:</span> <span class="kt"><a href="../Structs/AccountingData.html">AccountingData</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15privacySettingsAA07PrivacyD0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/privacySettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15privacySettingsAA07PrivacyD0VSgvp">privacySettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code>privacySettings</code>. If set to nil, no privacySettings are present.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">privacySettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/PrivacySettings.html">PrivacySettings</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC14extensionStateSo11NEVPNStatusVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/extensionState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14extensionStateSo11NEVPNStatusVSgvp">extensionState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code>extensionState</code>. If set to nil, the extension has not been started.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">extensionState</span><span class="p">:</span> <span class="kt">NEVPNStatus</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20lastDisconnectReasonAA0dE0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastDisconnectReason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20lastDisconnectReasonAA0dE0OSgvp">lastDisconnectReason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current <code><a href="../Enums/DisconnectReason.html">DisconnectReason</a></code>. If set to nil, there are no current disconnect reasons.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">lastDisconnectReason</span><span class="p">:</span> <span class="kt"><a href="../Enums/DisconnectReason.html">DisconnectReason</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22daemonMessagingIsReadySbvp"></a>
+                    <a name="//apple_ref/swift/Property/daemonMessagingIsReady" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22daemonMessagingIsReadySbvp">daemonMessagingIsReady</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When &lsquo;true&rsquo; the extensions daemon is ready to receive messages.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">daemonMessagingIsReady</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(py)waitUntilConnected"></a>
+                    <a name="//apple_ref/swift/Property/waitUntilConnected" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(py)waitUntilConnected">waitUntilConnected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setting to true will tell the sdk not to send any messages to the extension until it is fully connected</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">waitUntilConnected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC10vpnManagerSo12NEVPNManagerCvp"></a>
+                    <a name="//apple_ref/swift/Property/vpnManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10vpnManagerSo12NEVPNManagerCvp">vpnManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current VPN Manager <code>NEVPNManager</code>. This property
+allows a user to determine the existing profile settings</p>
+
+<ul>
+<li>@since 11.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">vpnManager</span><span class="p">:</span> <span class="kt">NEVPNManager</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC13stateDelegateAA0b5StateD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/stateDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13stateDelegateAA0b5StateD0_pSgvp">stateDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">stateDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22vendorUserDataDelegateAA0b6VendordeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vendorUserDataDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22vendorUserDataDelegateAA0b6VendordeF0_pSgvp">vendorUserDataDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">vendorUserDataDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15adapterDelegateAA0b7AdapterD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/adapterDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15adapterDelegateAA0b7AdapterD0_pSgvp">adapterDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">adapterDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC18accountingDelegateAA0b10AccountingD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/accountingDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18accountingDelegateAA0b10AccountingD0_pSgvp">accountingDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">accountingDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC26sessionStatsPeriodDelegateAA0b7SessiondeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sessionStatsPeriodDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26sessionStatsPeriodDelegateAA0b7SessiondeF0_pSgvp">sessionStatsPeriodDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">sessionStatsPeriodDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23connectionStatsDelegateAA0b10ConnectiondE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/connectionStatsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23connectionStatsDelegateAA0b10ConnectiondE0_pSgvp">connectionStatsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">connectionStatsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC16settingsDelegateAA0b8SettingsD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/settingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16settingsDelegateAA0b8SettingsD0_pSgvp">settingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">settingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC21settingsErrorDelegateAA0b8SettingsdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/settingsErrorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC21settingsErrorDelegateAA0b8SettingsdE0_pSgvp">settingsErrorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">settingsErrorDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC27vendorLocalSettingsDelegateAA0b6VendordeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vendorLocalSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27vendorLocalSettingsDelegateAA0b6VendordeF0_pSgvp">vendorLocalSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">vendorLocalSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28vendorRemoteSettingsDelegateAA0b6VendordeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vendorRemoteSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28vendorRemoteSettingsDelegateAA0b6VendordeF0_pSgvp">vendorRemoteSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">vendorRemoteSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24firewallSettingsDelegateAA0b8FirewalldE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/firewallSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24firewallSettingsDelegateAA0b8FirewalldE0_pSgvp">firewallSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">firewallSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28localDomainWatchListDelegateAA0bdefG0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localDomainWatchListDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28localDomainWatchListDelegateAA0bdefG0_pSgvp">localDomainWatchListDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">localDomainWatchListDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22streamingStatsDelegateAA0b9StreamingdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/streamingStatsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22streamingStatsDelegateAA0b9StreamingdE0_pSgvp">streamingStatsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">streamingStatsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC14tunnelDelegateAA0b6TunnelD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tunnelDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC14tunnelDelegateAA0b6TunnelD0_pSgvp">tunnelDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">tunnelDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC26localProxySettingsDelegateAA0b5LocaldeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localProxySettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26localProxySettingsDelegateAA0b5LocaldeF0_pSgvp">localProxySettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">localProxySettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23directoryDomainDelegateAA0b9DirectorydE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/directoryDomainDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23directoryDomainDelegateAA0b9DirectorydE0_pSgvp">directoryDomainDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">directoryDomainDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28safeBrowsingSettingsDelegateAA0b4SafedF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/safeBrowsingSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28safeBrowsingSettingsDelegateAA0b4SafedF0_pSgvp">safeBrowsingSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">safeBrowsingSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifySafeBrowsingDelegate.html">SpeedifySafeBrowsingDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23connectedServerDelegateAA0b9ConnecteddE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/connectedServerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23connectedServerDelegateAA0b9ConnecteddE0_pSgvp">connectedServerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">connectedServerDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23disconnectEventDelegateAA0b14LastDisconnectE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/disconnectEventDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23disconnectEventDelegateAA0b14LastDisconnectE0_pSgvp">disconnectEventDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">disconnectEventDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC19logSettingsDelegateAA0b3LogdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/logSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC19logSettingsDelegateAA0b3LogdE0_pSgvp">logSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">logSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC25streamingSettingsDelegateAA0b9StreamingdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/streamingSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC25streamingSettingsDelegateAA0b9StreamingdE0_pSgvp">streamingSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(cpy)sharedInstance"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(cpy)sharedInstance">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current shared Instance of <code>Speedify</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">Speedify</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24speedTestResutlsDelegateAA0b5Speedd7ResultsF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/speedTestResutlsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24speedTestResutlsDelegateAA0b5Speedd7ResultsF0_pSgvp">speedTestResutlsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">speedTestResutlsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22serverSettingsDelegateAA0b6ServerdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/serverSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22serverSettingsDelegateAA0b6ServerdE0_pSgvp">serverSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current Daemon <code><a href="../Structs/Version.html">Version</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt"><a href="../Structs/Version.html">Version</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC27lastDisconnectEventDelegateAA0bdeF0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastDisconnectEventDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27lastDisconnectEventDelegateAA0bdeF0_pSgvp">lastDisconnectEventDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">lastDisconnectEventDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC10cpDelegateAA0b13CaptivePortalD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cpDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC10cpDelegateAA0b13CaptivePortalD0_pSgvp">cpDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Current <code><a href="../Structs/ServerInformation.html">ServerInformation</a></code>. If set to nil, no server is connected.</p>
 
                       </div>
@@ -582,6 +1537,25 @@
                           <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/Settings.html">Settings</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A handler returning when this has completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -4205,6 +5179,56 @@ Current value available from <code><a href="../Structs/Settings.html">Settings</
                               <td>
                                 <div>
                                   <p>The overflow threshold, in <code>megabits per second</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>This will show updated information inside of the delegate function <code>func settingsDidUpdate(settings: Settings)</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28setPriorityOverflowThreshold04mbpsE0ySd_tF"></a>
+                    <a name="//apple_ref/swift/Method/setPriorityOverflowThreshold(mbpsOverflow:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28setPriorityOverflowThreshold04mbpsE0ySd_tF">setPriorityOverflowThreshold(mbpsOverflow:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the priority overflow threshold, which is used when there is active priority traffic (i.e. real-time streams).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPriorityOverflowThreshold</span><span class="p">(</span><span class="nv">mbpsOverflow</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mbpsOverflow</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The priority overflow threshold, in <code>megabits per second</code>.</p>
                                 </div>
                               </td>
                             </tr>

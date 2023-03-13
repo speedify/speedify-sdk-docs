@@ -1,6 +1,7 @@
 var searchData=
 [
   ['email',['email',['../struct_speedify_s_d_k___accounting_data.html#a6f3899279d07471a08d8739672040264',1,'SpeedifySDK_AccountingData']]],
+  ['enableautomaticpriority',['enableAutomaticPriority',['../struct_speedify_s_d_k___settings.html#a6982a372b37777fa8dfea1f711759cfc',1,'SpeedifySDK_Settings']]],
   ['enabled',['enabled',['../struct_speedify_s_d_k___captive_portal_login_result.html#a26f8fe1f94c186f52bb4ffc72c9f91f3',1,'SpeedifySDK_CaptivePortalLoginResult::enabled()'],['../struct_speedify_s_d_k___safe_browsing_result.html#ad7f7a07713a500afae9610b8a0cff4bb',1,'SpeedifySDK_SafeBrowsingResult::enabled()'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a42f2cc4fbfdb77061ac9a1c92084ac19',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::enabled()'],['../struct_speedify_s_d_k___local_proxy_settings.html#a53c3cb5c48f5685fcefd75b9d0d2672b',1,'SpeedifySDK_LocalProxySettings::enabled()']]],
   ['enabledefaultroute',['enableDefaultRoute',['../struct_speedify_s_d_k___settings.html#a7b4cbbc5f29f748a367fed124b30de8e',1,'SpeedifySDK_Settings']]],
   ['enableesni',['enableEsni',['../struct_speedify_s_d_k___directory_settings.html#a056c810e6ff66e125f10056ab143a4d7',1,'SpeedifySDK_DirectorySettings']]],

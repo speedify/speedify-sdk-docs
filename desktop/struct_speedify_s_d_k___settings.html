@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">12.8.0</span>
    </div>
   </td>
  </tr>
@@ -123,6 +123,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a197cf0fd1972391e8f79ee2a044c5926"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a197cf0fd1972391e8f79ee2a044c5926">overflowThreshold</a></td></tr>
 <tr class="memdesc:a197cf0fd1972391e8f79ee2a044c5926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overflow threshold, in megabits per second.  <a href="#a197cf0fd1972391e8f79ee2a044c5926">More...</a><br /></td></tr>
 <tr class="separator:a197cf0fd1972391e8f79ee2a044c5926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc55d0e577ec5c221e99d816bf54a58e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#adc55d0e577ec5c221e99d816bf54a58e">priorityOverflowThreshold</a></td></tr>
+<tr class="memdesc:adc55d0e577ec5c221e99d816bf54a58e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Priority overflow threshold, in megabits per second.  <a href="#adc55d0e577ec5c221e99d816bf54a58e">More...</a><br /></td></tr>
+<tr class="separator:adc55d0e577ec5c221e99d816bf54a58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac9afaa9408ebf5cb1f5daa081c68224"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#aac9afaa9408ebf5cb1f5daa081c68224">packetAggregation</a></td></tr>
 <tr class="memdesc:aac9afaa9408ebf5cb1f5daa081c68224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether packet aggregation is enabled.  <a href="#aac9afaa9408ebf5cb1f5daa081c68224">More...</a><br /></td></tr>
 <tr class="separator:aac9afaa9408ebf5cb1f5daa081c68224"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +138,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ac0a154bee3ad38b312e995b98076517a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#ac0a154bee3ad38b312e995b98076517a">language</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gaa557ef04437faed783993b7f474c9a71">SPEEDIFYSDK_MAX_LANGUAGE_LEN</a>]</td></tr>
 <tr class="memdesc:ac0a154bee3ad38b312e995b98076517a"><td class="mdescLeft">&#160;</td><td class="mdescRight">2-character ISO language code used for error messages, ie: 'en'.  <a href="#ac0a154bee3ad38b312e995b98076517a">More...</a><br /></td></tr>
 <tr class="separator:ac0a154bee3ad38b312e995b98076517a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6982a372b37777fa8dfea1f711759cfc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a6982a372b37777fa8dfea1f711759cfc">enableAutomaticPriority</a></td></tr>
+<tr class="memdesc:a6982a372b37777fa8dfea1f711759cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">If automatic connection priorites are enabled.  <a href="#a6982a372b37777fa8dfea1f711759cfc">More...</a><br /></td></tr>
+<tr class="separator:a6982a372b37777fa8dfea1f711759cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab743257d312a3a03281bd30b922c38c7"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#ab743257d312a3a03281bd30b922c38c7">ulpReportIntervalSeconds</a></td></tr>
+<tr class="memdesc:ab743257d312a3a03281bd30b922c38c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the ULP reporting interval in seconds.  <a href="#ab743257d312a3a03281bd30b922c38c7">More...</a><br /></td></tr>
+<tr class="separator:ab743257d312a3a03281bd30b922c38c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a7ebf7b124efed02a3a88f15a068ddf23"></a>
@@ -168,6 +177,23 @@ Data Fields</h2></td></tr>
 
 <p>The current bonding mode. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a6982a372b37777fa8dfea1f711759cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6982a372b37777fa8dfea1f711759cfc">&#9670;&nbsp;</a></span>enableAutomaticPriority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_Settings::enableAutomaticPriority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If automatic connection priorites are enabled. </p>
+<dl class="section since"><dt>Since</dt><dd>12.4 </dd></dl>
 
 </div>
 </div>
@@ -409,6 +435,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="adc55d0e577ec5c221e99d816bf54a58e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc55d0e577ec5c221e99d816bf54a58e">&#9670;&nbsp;</a></span>priorityOverflowThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SpeedifySDK_Settings::priorityOverflowThreshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Priority overflow threshold, in megabits per second. </p>
+<dl class="section since"><dt>Since</dt><dd>12.0 </dd></dl>
+
+</div>
+</div>
 <a id="a85977be4a6178041250de9b4caa5fd78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85977be4a6178041250de9b4caa5fd78">&#9670;&nbsp;</a></span>startupConnect</h2>
 
@@ -440,6 +483,23 @@ Data Fields</h2></td></tr>
 
 <p>Currently used connection transport mode selection. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="ab743257d312a3a03281bd30b922c38c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab743257d312a3a03281bd30b922c38c7">&#9670;&nbsp;</a></span>ulpReportIntervalSeconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long SpeedifySDK_Settings::ulpReportIntervalSeconds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the ULP reporting interval in seconds. </p>
+<dl class="section since"><dt>Since</dt><dd>12.8 </dd></dl>
 
 </div>
 </div>

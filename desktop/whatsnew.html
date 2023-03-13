@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">12.8.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,99 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1180"></a>Speedify SDK for Desktop 11.8 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1280"></a>Speedify SDK for Desktop 12.8 </h2>
+<ul>
+<li>Added the <a class="el" href="struct_speedify_s_d_k___settings.html#ab743257d312a3a03281bd30b922c38c7">ulpReportIntervalSeconds</a> setting to represent the ULP reporting interval in seconds.</li>
+<li>Added the <a class="el" href="group___s_d_k.html#ga7a8a0e11cb64136980b530fc2fe8865c">SpeedifySDK_SetUlpReportIntervalSeconds</a> function.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1270"></a>Speedify SDK for Desktop 12.7 </h2>
+<ul>
+<li>Added <a class="el" href="group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a8e7dae540d176d083fce5c761132068f">DR_NONE</a>, for cases when there is nothing to report, to the disconnect reasons.</li>
+<li>Added <a class="el" href="group___s_d_k.html#ga487679b3cebd2ea50e8d9583aae9798a">SpeedifySDK_RefreshOAuthToken</a> to refresh token without triggering a login.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1260"></a>Speedify SDK for Desktop 12.6 </h2>
+<ul>
+<li>Added a new connect option <a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a9fd0746fe743f36b5a50cf5feffc3162">ACM_IGNORELAST</a> to reconnect while ignoring the most recently used server.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1251"></a>Speedify SDK for Desktop 12.5.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1250"></a>Speedify SDK for Desktop 12.5 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1241"></a>Speedify SDK for Desktop 12.4.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1240"></a>Speedify SDK for Desktop 12.4 </h2>
+<ul>
+<li>Adapters now support <a class="el" href="group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303ad30fb394b9b7b53b4b6573bc0bcc8aa9">CP_AUTOMATIC</a> connection priorities, where Speedify will manage the priority based on the dynamically discovered connection type. This feature is enabled via <a class="el" href="group___s_d_k.html#ga324aa14fa32e65aa734f0ce6b371685e">SpeedifySDK_EnableAutomaticConnectionPriority</a>.</li>
+<li><a class="el" href="struct_speedify_s_d_k___adapter_data.html">SpeedifySDK_AdapterData</a> has 2 new fields:<ul>
+<li><a class="el" href="struct_speedify_s_d_k___adapter_data.html#a7301873c14929df3ea49d36225b1495a">workingPriority</a> - the priority the adapter is functioning under</li>
+<li><a class="el" href="struct_speedify_s_d_k___adapter_data.html#a0f565bc4647edfc850b5d43d21917334">isp</a> - the discovered Internet Service Provider of the connection</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1230"></a>Speedify SDK for Desktop 12.3 </h2>
+<ul>
+<li>Windows support is now limited to Windows 10 &amp; 11 on x86_64 and arm64 processors. Windows 7, 8, and 8.1 are no longer supported. Windows 10 x86 is also no longer supported.</li>
+<li>The <a class="el" href="struct_speedify_s_d_k___connection_stats.html#afb8eb8d9465837008418f4462868267e">protocol</a> field on <a class="el" href="struct_speedify_s_d_k___connection_stats.html">SpeedifySDK_ConnectionStats</a> objects is now available on historic tunnel stats.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1221"></a>Speedify SDK for Desktop 12.2.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1220"></a>Speedify SDK for Desktop 12.2 </h2>
+<ul>
+<li>When connected over VPN, Speedify will request that browsers do not use DNS over HTTPS. This is controllable via <a class="el" href="group___s_d_k.html#ga181b161a2a5c18e2182d5bb5172fc444">SpeedifySDK_SetRequestToDisableDoH</a>.</li>
+<li>Support for port ranges and wildcard port (0) have been added to <a class="el" href="group___s_d_k.html#gafbb20259225196d9884d8b65994f7c70">SpeedifySDK_SetLocalProxyPorts</a>, <a class="el" href="group___s_d_k.html#ga53d1f6c87ba0ab9e6133258b87a0f0d7">SpeedifySDK_SetFirewallPorts</a>, and <a class="el" href="group___s_d_k.html#ga771f33e772bd47d644f9e03a25293422">SpeedifySDK_SetStreamingPorts</a></li>
+<li>Traffic going over the proxy now produces <a class="el" href="struct_speedify_s_d_k___connection_stats.html">SpeedifySDK_ConnectionStats</a> objects with a transport type of <a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea3856481864cf208eb4d404e02c956007">TMODE_PROXY</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1211"></a>Speedify SDK for Desktop 12.1.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1210"></a>Speedify SDK for Desktop 12.1 </h2>
+<ul>
+<li>Fixes for ICMP traffic in proxy mode</li>
+<li>Teams settings now support proxy mode</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1200"></a>Speedify SDK for Desktop 12.0 </h2>
+<ul>
+<li>Set overflow threshold for active priority traffic via <a class="el" href="group___s_d_k.html#ga56f4ad24d0ecd018d8657c9b433e9c42">SpeedifySDK_SetPriorityOverflowThreshold</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1194"></a>Speedify SDK for Desktop 11.9.4 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1192"></a>Speedify SDK for Desktop 11.9.2 </h2>
+<ul>
+<li>API Compatibility Changes<ul>
+<li>SpeedifySDK_SetDnsLeak has been renamed to <a class="el" href="group___s_d_k.html#ga14871ec09803c3023e7907be628874f4">SpeedifySDK_SetDNSLeakProtection</a></li>
+<li>SpeedifySDK_SetIpLeak has been renamed to <a class="el" href="group___s_d_k.html#ga769bbcb3391d36190898b788315b092a">SpeedifySDK_SetIPLeakProtection</a></li>
+<li>PrivacySettings<ul>
+<li>dnsleak has been renamed to <a class="el" href="struct_speedify_s_d_k___privacy_settings.html#afda6b3e84b90b5931ded04140545f90c">dnsLeakProtection</a></li>
+<li>ipleak has been renamed to <a class="el" href="struct_speedify_s_d_k___privacy_settings.html#afda6b3e84b90b5931ded04140545f90c">ipLeakProtection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Deprecation removals - Methods marked as Deprecated prior to 11.0 have been removed<ul>
+<li>SpeedifySDK_DirectoryDomainCallback - Use <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a>.</li>
+<li>SpeedifySDK_DirectoryDomainResult - Use <a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>.</li>
+<li>SpeedifySDK_GetDirectoryDomain - Use <a class="el" href="group___s_d_k.html#ga176a1f61d24f517dabc184a749f6b2b5">SpeedifySDK_GetDirectorySettings</a>.</li>
+<li>SpeedifySDK_SetCrashReports/SpeedifySDK_PrivacySettings.crashReports - Functionality removed.</li>
+<li>SpeedifySDK_EnableConnectionStatUpdates - Use <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> instead.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1190"></a>Speedify SDK for Desktop 11.9 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1180"></a>Speedify SDK for Desktop 11.8 </h2>
 <ul>
 <li>SDK now takes an app name parameter to identify your app on the server side. This may be set manually via <a class="el" href="group___s_d_k.html#ga3eec9888fd0567fc9463f6855bc6d2ce">SpeedifySDK_SetAppName</a> or automatically by using the <a class="el" href="struct_speedify_s_d_k___create_settings.html#ad6024af07aa98f5d0fb08a06ae696940">name</a> field of <a class="el" href="struct_speedify_s_d_k___create_settings.html">SpeedifySDK_CreateSettings</a>. If setting manually, this should be called before any login method.</li>
 </ul>
@@ -98,7 +190,7 @@ $(function() {
 </ul>
 </li>
 <li>New <a class="el" href="struct_speedify_s_d_k___connection_stats.html">SpeedifySDK_ConnectionStats</a> fields:<ul>
-<li><a class="el" href="struct_speedify_s_d_k___connection_stats.html#abc74e9a40ba7a9e52f09033ff225b7c7">jitterMs</a></li>
+<li><a class="el" href="struct_speedify_s_d_k___connection_stats.html#ab600b6148a699460e219ebfba60d6405">jitterMs</a></li>
 <li><a class="el" href="struct_speedify_s_d_k___connection_stats.html#a5b5de7ce8180aaefbabc01b06d4e172e">mos</a></li>
 </ul>
 </li>
@@ -215,10 +307,10 @@ $(function() {
 </ul>
 </li>
 <li>Deprecations<ul>
-<li><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga0225389631fe7ab3c3beac200244fd6f">SpeedifySDK_DirectoryDomainCallback</a> has been deprecated. Use <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a>.</li>
-<li><a class="el" href="group___r_e_s_u_l_t.html#ga8a69e50d038cef8a3df192835707a14a">SpeedifySDK_DirectoryDomainResult</a> has been deprecated. Use <a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>.</li>
-<li><a class="el" href="group___s_d_k.html#gaa99bbc06bb86ac2eaee40e2c7de22fe7">SpeedifySDK_GetDirectoryDomain</a> has been deprecated. Use <a class="el" href="group___s_d_k.html#ga176a1f61d24f517dabc184a749f6b2b5">SpeedifySDK_GetDirectorySettings</a>.</li>
-<li><a class="el" href="group___s_d_k.html#ga0930afedd0d56e7ffdd823cb1cd8738e">SpeedifySDK_SetCrashReports</a>/<a class="el" href="struct_speedify_s_d_k___privacy_settings.html#a82d080b7bafe0ea6de97a5de58a626dd">crashReports</a> - Crash reporting has been removed from the SDK for several releases.</li>
+<li>SpeedifySDK_DirectoryDomainCallback has been deprecated. Use <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a>.</li>
+<li>SpeedifySDK_DirectoryDomainResult has been deprecated. Use <a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>.</li>
+<li>SpeedifySDK_GetDirectoryDomain has been deprecated. Use <a class="el" href="group___s_d_k.html#ga176a1f61d24f517dabc184a749f6b2b5">SpeedifySDK_GetDirectorySettings</a>.</li>
+<li>SpeedifySDK_SetCrashReports/crashReports - Crash reporting has been removed from the SDK for several releases.</li>
 </ul>
 </li>
 </ul>
@@ -234,7 +326,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_1030"></a>Speedify SDK for Desktop 10.3 </h2>
 <ul>
-<li>On Windows, Speedify will set DisableDefaultRoute to true on all network interfaces while running so that traffic doesn't leak around the VPN. This can interfere with hosting servers on the speedify device. This functionality can be disabled via <a class="el" href="group___s_d_k.html#gaf5e135d158dbc836af9b81b8298d9acd">SpeedifySDK_SetIpLeak</a>.</li>
+<li>On Windows, Speedify will set DisableDefaultRoute to true on all network interfaces while running so that traffic doesn't leak around the VPN. This can interfere with hosting servers on the speedify device. This functionality can be disabled via <a class="el" href="group___s_d_k.html#gab403125a05c1bb4c144f95c42a7cd98e">SpeedifySDK_SetIpLeak</a>.</li>
 <li>Fixes an issue with calling other SDK methods from within an asynchronous SDK callback.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1020"></a>Speedify SDK for Desktop 10.2 </h2>
@@ -270,7 +362,7 @@ $(function() {
 <li>When using asynchronous SDK methods, you can now wait for the callback to occur via <a class="el" href="group___s_d_k.html#gaa9200813e3991fe0e2786e24f149ea1f">SpeedifySDK_WaitOnCallback</a>. This will wait in the current thread until the desired callback has returned.</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifySDK<ul>
-<li><a class="el" href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">SpeedifySDK_EnableConnectionStatUpdates</a> is deprecated. Use <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> instead.</li>
+<li>SpeedifySDK_EnableConnectionStatUpdates is deprecated. Use <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> instead.</li>
 </ul>
 </li>
 <li><a class="el" href="struct_speedify_s_d_k___session_stat_periods.html">SpeedifySDK_SessionStatPeriods</a><ul>
@@ -315,7 +407,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_960"></a>Speedify SDK for Desktop 9.6 </h2>
 <ul>
-<li>Speedify has a new Streaming Mode to better support video streamers. This can be set via <a class="el" href="group___s_d_k.html#ga4cc3b3a24b056db0b416331f1f9e63a0">SpeedifySDK_SetMode</a> with <a class="el" href="group___t_y_p_e_s.html#gga673980be58fe205ac13216bd9c934128a59c5dff6ddeebfbe94852f4ce25faae6">BMODE_STREAMING</a>. Statistics on individual streams are available from <a class="el" href="group___s_d_k.html#ga7725452fee63dcd3fcba2947e0f861d5">SpeedifySDK_GetStreamingStats</a>, and are provided once per second when enabling <a class="el" href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">SpeedifySDK_EnableConnectionStatUpdates</a>.</li>
+<li>Speedify has a new Streaming Mode to better support video streamers. This can be set via <a class="el" href="group___s_d_k.html#ga4cc3b3a24b056db0b416331f1f9e63a0">SpeedifySDK_SetMode</a> with <a class="el" href="group___t_y_p_e_s.html#gga673980be58fe205ac13216bd9c934128a59c5dff6ddeebfbe94852f4ce25faae6">BMODE_STREAMING</a>. Statistics on individual streams are available from <a class="el" href="group___s_d_k.html#ga7725452fee63dcd3fcba2947e0f861d5">SpeedifySDK_GetStreamingStats</a>, and are provided once per second when enabling <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a>.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_950"></a>Speedify SDK for Desktop 9.5 </h2>
 <ul>

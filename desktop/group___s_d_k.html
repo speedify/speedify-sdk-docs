@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">12.8.0</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">SDK Methods</div>  </div>
@@ -80,6 +81,13 @@ For all methods that take a callback, specifying a callback of NULL will perform
 Methods marked 'Supports Subscription' support subscribing to updates for that result. Return true from the callback to continue receiving updates. Return false to stop. The result object returned from these methods includes an eventId that can be used to disable further updates;<br />
 Methods marked 'Subscription Only' must be given a callback. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga71d0872f84d764b1777b71ac45d1589d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga71d0872f84d764b1777b71ac45d1589d">SpeedifySDK_SetDnsLeak</a>&#160;&#160;&#160;<a class="el" href="group___s_d_k.html#ga14871ec09803c3023e7907be628874f4">SpeedifySDK_SetDNSLeakProtection</a></td></tr>
+<tr class="separator:ga71d0872f84d764b1777b71ac45d1589d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab403125a05c1bb4c144f95c42a7cd98e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gab403125a05c1bb4c144f95c42a7cd98e">SpeedifySDK_SetIpLeak</a>&#160;&#160;&#160;<a class="el" href="group___s_d_k.html#ga769bbcb3391d36190898b788315b092a">SpeedifySDK_SetIPLeakProtection</a></td></tr>
+<tr class="separator:gab403125a05c1bb4c144f95c42a7cd98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga75d631f0d13deee1ed37f8d6992365d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga75d631f0d13deee1ed37f8d6992365d3">SpeedifySDK_Create</a> (uint16_t port)</td></tr>
@@ -114,6 +122,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gadf45c59dff623a3ab56aeae5ab3ade4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___connect_result.html">SpeedifySDK_ConnectResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gadf45c59dff623a3ab56aeae5ab3ade4b">SpeedifySDK_ConnectProxy</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga0fc7e44e9d764609225eb17d201088c5">SpeedifySDK_ConnectCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gadf45c59dff623a3ab56aeae5ab3ade4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the Speedify VPN as a local proxy, without a connection to a remote server.  <a href="#gadf45c59dff623a3ab56aeae5ab3ade4b">More...</a><br /></td></tr>
 <tr class="separator:gadf45c59dff623a3ab56aeae5ab3ade4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d2db61150fb8a9b80cdc14457883e51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___connect_result.html">SpeedifySDK_ConnectResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga1d2db61150fb8a9b80cdc14457883e51">SpeedifySDK_ConnectIgnoreLast</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga0fc7e44e9d764609225eb17d201088c5">SpeedifySDK_ConnectCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga1d2db61150fb8a9b80cdc14457883e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect using the current selection setting, but choose a different server instance than the one last used.  <a href="#ga1d2db61150fb8a9b80cdc14457883e51">More...</a><br /></td></tr>
+<tr class="separator:ga1d2db61150fb8a9b80cdc14457883e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae4e89d1a97e874d639956cd57cfd7334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gae4e89d1a97e874d639956cd57cfd7334">SpeedifySDK_Disconnect</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gae4e89d1a97e874d639956cd57cfd7334"><td class="mdescLeft">&#160;</td><td class="mdescRight"><ul>
 <li>Disconnect from the server if connected, or cancel a connection attempt if currenty connecting. </li>
@@ -126,6 +137,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9f5ba9243b8b709306197dd14af7a140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga9f5ba9243b8b709306197dd14af7a140">SpeedifySDK_LoginOAuth</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *oauthAccessToken, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga9f5ba9243b8b709306197dd14af7a140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a new user using an oauth access token.  <a href="#ga9f5ba9243b8b709306197dd14af7a140">More...</a><br /></td></tr>
 <tr class="separator:ga9f5ba9243b8b709306197dd14af7a140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga487679b3cebd2ea50e8d9583aae9798a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga487679b3cebd2ea50e8d9583aae9798a">SpeedifySDK_RefreshOAuthToken</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *newOAuthAccessToken, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga487679b3cebd2ea50e8d9583aae9798a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the current oauth access token. The application is responsible for fetching updated access tokens if using this method. If not logged in or logged in not using oauth, this will initiate a new login. Otherwise, the new token is stored to be used for future requests. Calling this from a logged in state presumes this is a token for the same user.  <a href="#ga487679b3cebd2ea50e8d9583aae9798a">More...</a><br /></td></tr>
+<tr class="separator:ga487679b3cebd2ea50e8d9583aae9798a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacd8e0ac2b766bd2c9c6cb00b35645e8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gacd8e0ac2b766bd2c9c6cb00b35645e8a">SpeedifySDK_LoginAutoAccount</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gacd8e0ac2b766bd2c9c6cb00b35645e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs out of any current account and logs in to an automatically generated account for this device.  <a href="#gacd8e0ac2b766bd2c9c6cb00b35645e8a">More...</a><br /></td></tr>
 <tr class="separator:gacd8e0ac2b766bd2c9c6cb00b35645e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,9 +179,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9d978d8d02451140d2357e0116cb1cc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga9d978d8d02451140d2357e0116cb1cc0">SpeedifySDK_ResetDirectoryGatewayURI</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga9d978d8d02451140d2357e0116cb1cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the directory oauth gateway to defaults.  <a href="#ga9d978d8d02451140d2357e0116cb1cc0">More...</a><br /></td></tr>
 <tr class="separator:ga9d978d8d02451140d2357e0116cb1cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa99bbc06bb86ac2eaee40e2c7de22fe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaa99bbc06bb86ac2eaee40e2c7de22fe7">SpeedifySDK_GetDirectoryDomain</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a> cb, void *userData)</td></tr>
-<tr class="memdesc:gaa99bbc06bb86ac2eaee40e2c7de22fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the directory server being used.  <a href="#gaa99bbc06bb86ac2eaee40e2c7de22fe7">More...</a><br /></td></tr>
-<tr class="separator:gaa99bbc06bb86ac2eaee40e2c7de22fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga176a1f61d24f517dabc184a749f6b2b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga176a1f61d24f517dabc184a749f6b2b5">SpeedifySDK_GetDirectorySettings</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga176a1f61d24f517dabc184a749f6b2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the directory settings.  <a href="#ga176a1f61d24f517dabc184a749f6b2b5">More...</a><br /></td></tr>
 <tr class="separator:ga176a1f61d24f517dabc184a749f6b2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,27 +230,30 @@ Functions</h2></td></tr>
 <tr class="memitem:gab1ade44b44c1c91c954a9d25afe16c26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gab1ade44b44c1c91c954a9d25afe16c26">SpeedifySDK_SetOverflowThreshold</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, double mbpsOverflow, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gab1ade44b44c1c91c954a9d25afe16c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the overflow threshold.  <a href="#gab1ade44b44c1c91c954a9d25afe16c26">More...</a><br /></td></tr>
 <tr class="separator:gab1ade44b44c1c91c954a9d25afe16c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56f4ad24d0ecd018d8657c9b433e9c42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga56f4ad24d0ecd018d8657c9b433e9c42">SpeedifySDK_SetPriorityOverflowThreshold</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, double mbpsOverflow, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga56f4ad24d0ecd018d8657c9b433e9c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the priority overflow threshold, which is used when there is active priority traffic (i.e. real-time streams).  <a href="#ga56f4ad24d0ecd018d8657c9b433e9c42">More...</a><br /></td></tr>
+<tr class="separator:ga56f4ad24d0ecd018d8657c9b433e9c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a18a759be68b355954f5b44c21c9ee7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga5a18a759be68b355954f5b44c21c9ee7">SpeedifySDK_SetPacketAggregation</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga5a18a759be68b355954f5b44c21c9ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to allow aggregating smaller packets sent over the VPN.  <a href="#ga5a18a759be68b355954f5b44c21c9ee7">More...</a><br /></td></tr>
 <tr class="separator:ga5a18a759be68b355954f5b44c21c9ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6fd41d78efd434d150db1a0d3659961f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga6fd41d78efd434d150db1a0d3659961f">SpeedifySDK_GetPrivacySettings</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga6fd41d78efd434d150db1a0d3659961f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets privacy settings.  <a href="#ga6fd41d78efd434d150db1a0d3659961f">More...</a><br /></td></tr>
 <tr class="separator:ga6fd41d78efd434d150db1a0d3659961f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0930afedd0d56e7ffdd823cb1cd8738e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga0930afedd0d56e7ffdd823cb1cd8738e">SpeedifySDK_SetCrashReports</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
-<tr class="memdesc:ga0930afedd0d56e7ffdd823cb1cd8738e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if crash reporting should be enabled.  <a href="#ga0930afedd0d56e7ffdd823cb1cd8738e">More...</a><br /></td></tr>
-<tr class="separator:ga0930afedd0d56e7ffdd823cb1cd8738e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae842ac40a54706954dec78169500b268"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gae842ac40a54706954dec78169500b268">SpeedifySDK_SetDoNotStoreCredentials</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool doNotStore, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gae842ac40a54706954dec78169500b268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if credentials will not be stored.  <a href="#gae842ac40a54706954dec78169500b268">More...</a><br /></td></tr>
 <tr class="separator:gae842ac40a54706954dec78169500b268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf597ce561a5169d5a889018464b7ca57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaf597ce561a5169d5a889018464b7ca57">SpeedifySDK_SetKillswitch</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaf597ce561a5169d5a889018464b7ca57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if Internet Killswitch should be enabled.  <a href="#gaf597ce561a5169d5a889018464b7ca57">More...</a><br /></td></tr>
 <tr class="separator:gaf597ce561a5169d5a889018464b7ca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c8a1364b2f81b86cf058b21412b8873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga6c8a1364b2f81b86cf058b21412b8873">SpeedifySDK_SetDnsLeak</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
-<tr class="memdesc:ga6c8a1364b2f81b86cf058b21412b8873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if DNS Leak protection is enabled.  <a href="#ga6c8a1364b2f81b86cf058b21412b8873">More...</a><br /></td></tr>
-<tr class="separator:ga6c8a1364b2f81b86cf058b21412b8873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5e135d158dbc836af9b81b8298d9acd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaf5e135d158dbc836af9b81b8298d9acd">SpeedifySDK_SetIpLeak</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
-<tr class="memdesc:gaf5e135d158dbc836af9b81b8298d9acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if IP Leak protection is enabled.  <a href="#gaf5e135d158dbc836af9b81b8298d9acd">More...</a><br /></td></tr>
-<tr class="separator:gaf5e135d158dbc836af9b81b8298d9acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14871ec09803c3023e7907be628874f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga14871ec09803c3023e7907be628874f4">SpeedifySDK_SetDNSLeakProtection</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga14871ec09803c3023e7907be628874f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if DNS Leak protection is enabled.  <a href="#ga14871ec09803c3023e7907be628874f4">More...</a><br /></td></tr>
+<tr class="separator:ga14871ec09803c3023e7907be628874f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga769bbcb3391d36190898b788315b092a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga769bbcb3391d36190898b788315b092a">SpeedifySDK_SetIPLeakProtection</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga769bbcb3391d36190898b788315b092a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if IP Leak protection is enabled.  <a href="#ga769bbcb3391d36190898b788315b092a">More...</a><br /></td></tr>
+<tr class="separator:ga769bbcb3391d36190898b788315b092a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga181b161a2a5c18e2182d5bb5172fc444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga181b161a2a5c18e2182d5bb5172fc444">SpeedifySDK_SetRequestToDisableDoH</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool disableDoH, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga181b161a2a5c18e2182d5bb5172fc444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests that browsers do not use DNS over HTTPS.  <a href="#ga181b161a2a5c18e2182d5bb5172fc444">More...</a><br /></td></tr>
+<tr class="separator:ga181b161a2a5c18e2182d5bb5172fc444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c5cb702a9ab8ff29cbf737fdd52f59d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga8c5cb702a9ab8ff29cbf737fdd52f59d">SpeedifySDK_SetDNSServers</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a> *dnsAddrs, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga8c5cb702a9ab8ff29cbf737fdd52f59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets DNS servers to use.  <a href="#ga8c5cb702a9ab8ff29cbf737fdd52f59d">More...</a><br /></td></tr>
 <tr class="separator:ga8c5cb702a9ab8ff29cbf737fdd52f59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +263,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab1f9becb004d6480e3f25291f4054918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___adapters_result.html">SpeedifySDK_AdaptersResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gab1f9becb004d6480e3f25291f4054918">SpeedifySDK_SetConnectionPriorities</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *adapterID, <a class="el" href="group___t_y_p_e_s.html#gab1b46926c678d641667187a42ab9e303">SpeedifySDK_ConnectionPriority</a> priority, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3019cfa17dc99dd15edd53b6f0b61bdb">SpeedifySDK_AdaptersCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gab1f9becb004d6480e3f25291f4054918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change priorities of a connection.  <a href="#gab1f9becb004d6480e3f25291f4054918">More...</a><br /></td></tr>
 <tr class="separator:gab1f9becb004d6480e3f25291f4054918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga324aa14fa32e65aa734f0ce6b371685e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga324aa14fa32e65aa734f0ce6b371685e">SpeedifySDK_EnableAutomaticConnectionPriority</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga324aa14fa32e65aa734f0ce6b371685e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if automatic priority is allowed.  <a href="#ga324aa14fa32e65aa734f0ce6b371685e">More...</a><br /></td></tr>
+<tr class="separator:ga324aa14fa32e65aa734f0ce6b371685e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa514beb7c30faea7819185426abce652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___adapters_result.html">SpeedifySDK_AdaptersResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaa514beb7c30faea7819185426abce652">SpeedifySDK_ResetConnectionRateLimit</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *adapterID, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3019cfa17dc99dd15edd53b6f0b61bdb">SpeedifySDK_AdaptersCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaa514beb7c30faea7819185426abce652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the speed rate limit on a connection to unlimited.  <a href="#gaa514beb7c30faea7819185426abce652">More...</a><br /></td></tr>
 <tr class="separator:gaa514beb7c30faea7819185426abce652"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,9 +296,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaf93f8c2a4b02c9f1eac82e688706afb5">SpeedifySDK_SetConnectionEncryption</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *adapterID, bool encrypted, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change encryption settings per connection.  <a href="#gaf93f8c2a4b02c9f1eac82e688706afb5">More...</a><br /></td></tr>
 <tr class="separator:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9248dbadb01305a0fc84ccef8f23a6a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga9248dbadb01305a0fc84ccef8f23a6a2">SpeedifySDK_EnableConnectionStatUpdates</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled)</td></tr>
-<tr class="memdesc:ga9248dbadb01305a0fc84ccef8f23a6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#ga9248dbadb01305a0fc84ccef8f23a6a2">More...</a><br /></td></tr>
-<tr class="separator:ga9248dbadb01305a0fc84ccef8f23a6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66a0e29cbf114627a3420a567415a5cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, uint8_t periodCount, uint32_t *periods)</td></tr>
 <tr class="memdesc:ga66a0e29cbf114627a3420a567415a5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#ga66a0e29cbf114627a3420a567415a5cf">More...</a><br /></td></tr>
 <tr class="separator:ga66a0e29cbf114627a3420a567415a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,7 +505,39 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 <tr class="memitem:gadd209bb0f7766a7c5502abbba6c20e7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gadd209bb0f7766a7c5502abbba6c20e7c">SpeedifySDK_SetHeaderCompression</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gadd209bb0f7766a7c5502abbba6c20e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to allow header compression of packets sent over the VPN.  <a href="#gadd209bb0f7766a7c5502abbba6c20e7c">More...</a><br /></td></tr>
 <tr class="separator:gadd209bb0f7766a7c5502abbba6c20e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a8a0e11cb64136980b530fc2fe8865c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga7a8a0e11cb64136980b530fc2fe8865c">SpeedifySDK_SetUlpReportIntervalSeconds</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, unsigned long interval, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga7a8a0e11cb64136980b530fc2fe8865c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the interval between ULP reports.  <a href="#ga7a8a0e11cb64136980b530fc2fe8865c">More...</a><br /></td></tr>
+<tr class="separator:ga7a8a0e11cb64136980b530fc2fe8865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga71d0872f84d764b1777b71ac45d1589d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71d0872f84d764b1777b71ac45d1589d">&#9670;&nbsp;</a></span>SpeedifySDK_SetDnsLeak</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SpeedifySDK_SetDnsLeak&#160;&#160;&#160;<a class="el" href="group___s_d_k.html#ga14871ec09803c3023e7907be628874f4">SpeedifySDK_SetDNSLeakProtection</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab403125a05c1bb4c144f95c42a7cd98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab403125a05c1bb4c144f95c42a7cd98e">&#9670;&nbsp;</a></span>SpeedifySDK_SetIpLeak</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SpeedifySDK_SetIpLeak&#160;&#160;&#160;<a class="el" href="group___s_d_k.html#ga769bbcb3391d36190898b788315b092a">SpeedifySDK_SetIPLeakProtection</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga15971af6e53bc950d9afa5feecb9f2d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga15971af6e53bc950d9afa5feecb9f2d4">&#9670;&nbsp;</a></span>SpeedifySDK_AccountCheck()</h2>
@@ -945,6 +991,52 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 
 </div>
 </div>
+<a id="ga1d2db61150fb8a9b80cdc14457883e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d2db61150fb8a9b80cdc14457883e51">&#9670;&nbsp;</a></span>SpeedifySDK_ConnectIgnoreLast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___connect_result.html">SpeedifySDK_ConnectResult</a> SpeedifySDK_ConnectIgnoreLast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga0fc7e44e9d764609225eb17d201088c5">SpeedifySDK_ConnectCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connect using the current selection setting, but choose a different server instance than the one last used. </p>
+<p>If already connected, this will disconnect before reconnecting. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>connect result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>12.6 </dd></dl>
+
+</div>
+</div>
 <a id="gadf45c59dff623a3ab56aeae5ab3ade4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadf45c59dff623a3ab56aeae5ab3ade4b">&#9670;&nbsp;</a></span>SpeedifySDK_ConnectProxy()</h2>
 
@@ -1324,14 +1416,14 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 
 </div>
 </div>
-<a id="ga9248dbadb01305a0fc84ccef8f23a6a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9248dbadb01305a0fc84ccef8f23a6a2">&#9670;&nbsp;</a></span>SpeedifySDK_EnableConnectionStatUpdates()</h2>
+<a id="ga324aa14fa32e65aa734f0ce6b371685e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga324aa14fa32e65aa734f0ce6b371685e">&#9670;&nbsp;</a></span>SpeedifySDK_EnableAutomaticConnectionPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a> SpeedifySDK_EnableConnectionStatUpdates </td>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a> SpeedifySDK_EnableAutomaticConnectionPriority </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
           <td class="paramname"><em>sdk</em>, </td>
@@ -1340,7 +1432,19 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enabled</em>&#160;</td>
+          <td class="paramname"><em>enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1350,16 +1454,17 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
       </table>
 </div><div class="memdoc">
 
-<p>Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected. </p>
-<p>This is equivalent to <code>SpeedifySDK_EnableStatUpdates(sdk,enabled,1,(uint32_t[]){SPEEDIFYSDK_STAT_PERIOD_TOTAL});</code> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 10.0. Use <a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> </dd></dl>
+<p>Set if automatic priority is allowed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">enabled</td><td>if connection stat updates should be continuously received </td></tr>
+    <tr><td class="paramname">enabled</td><td>if allowed </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>result object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>settings result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -1744,53 +1849,6 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>directory result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
-
-</div>
-</div>
-<a id="gaa99bbc06bb86ac2eaee40e2c7de22fe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa99bbc06bb86ac2eaee40e2c7de22fe7">&#9670;&nbsp;</a></span>SpeedifySDK_GetDirectoryDomain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_speedify_s_d_k___directory_settings_result.html">SpeedifySDK_DirectorySettingsResult</a> SpeedifySDK_GetDirectoryDomain </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
-          <td class="paramname"><em>sdk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3">SpeedifySDK_DirectorySettingsCallback</a>&#160;</td>
-          <td class="paramname"><em>cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>userData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the directory server being used. </p>
-<p>Supports Subscription </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>As of 10.5. Use <a class="el" href="group___s_d_k.html#ga176a1f61d24f517dabc184a749f6b2b5">SpeedifySDK_GetDirectorySettings</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
-    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>directory domain result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -3410,6 +3468,61 @@ An expired access token will give an error of type <a class="el" href="group___t
 
 </div>
 </div>
+<a id="ga487679b3cebd2ea50e8d9583aae9798a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga487679b3cebd2ea50e8d9583aae9798a">&#9670;&nbsp;</a></span>SpeedifySDK_RefreshOAuthToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___state_result.html">SpeedifySDK_StateResult</a> SpeedifySDK_RefreshOAuthToken </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>newOAuthAccessToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaf65e99d7155a5b7c2512371d4c7ca160">SpeedifySDK_StateCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refreshes the current oauth access token. The application is responsible for fetching updated access tokens if using this method. If not logged in or logged in not using oauth, this will initiate a new login. Otherwise, the new token is stored to be used for future requests. Calling this from a logged in state presumes this is a token for the same user. </p>
+<p>The application is responsible for fetching updated access tokens if using this method.<br />
+If setting a custom directory, call <a class="el" href="group___s_d_k.html#ga023414693a66d6459d944aa0c6de27f3" title="Change directory server used for user authentication and server management.">SpeedifySDK_SetDirectoryDomain()</a> before calling this.<br />
+An expired access token will give an error of type <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a8da2dc7d08025e78e78e531e8bc05421" title="The provided OAUTH token is expired.">ET_TOKEN_EXPIRED</a>, while invalid tokens will give <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a61910b1dbb91c6b431c0f6691e88ef8c" title="Invalid credentials.">ET_CREDENTIAL</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">newOAuthAccessToken</td><td>Access token for the user you wish to authenticate </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>state result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>12.7 </dd></dl>
+
+</div>
+</div>
 <a id="gabcf6e4eb43562a052c53553be2fc4a4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabcf6e4eb43562a052c53553be2fc4a4f">&#9670;&nbsp;</a></span>SpeedifySDK_RefreshSafeBrowsingToken()</h2>
 
@@ -4578,60 +4691,6 @@ An expired access token will give an error of type <a class="el" href="group___t
 
 </div>
 </div>
-<a id="ga0930afedd0d56e7ffdd823cb1cd8738e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0930afedd0d56e7ffdd823cb1cd8738e">&#9670;&nbsp;</a></span>SpeedifySDK_SetCrashReports()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetCrashReports </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
-          <td class="paramname"><em>sdk</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enabled</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a>&#160;</td>
-          <td class="paramname"><em>cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>userData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets if crash reporting should be enabled. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">enabled</td><td>If reporting is enabled </td></tr>
-    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
-    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>privacy settings result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>As of 10.5. Functionality removed. </dd></dl>
-
-</div>
-</div>
 <a id="ga687e2c63845b5a47c87ebde42dce0d34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga687e2c63845b5a47c87ebde42dce0d34">&#9670;&nbsp;</a></span>SpeedifySDK_SetDaemonLogSettings()</h2>
 
@@ -4727,7 +4786,7 @@ An expired access token will give an error of type <a class="el" href="group___t
 <p>If using your own directory server, this must be called before <a class="el" href="group___s_d_k.html#ga98d605031f5e7877854ec031a5438861" title="Authenticate a new user.">SpeedifySDK_Login()</a>, <a class="el" href="group___s_d_k.html#ga9f5ba9243b8b709306197dd14af7a140" title="Authenticate a new user using an oauth access token.">SpeedifySDK_LoginOAuth()</a>, or <a class="el" href="group___s_d_k.html#gacd8e0ac2b766bd2c9c6cb00b35645e8a" title="Logs out of any current account and logs in to an automatically generated account for this device.">SpeedifySDK_LoginAutoAccount()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">domain</td><td>directory server domain </td></tr>
+    <tr><td class="paramname">domain</td><td>directory server domain, ie: directory.company.com </td></tr>
     <tr><td class="paramname">cb</td><td>optional callback </td></tr>
     <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
   </table>
@@ -4780,7 +4839,7 @@ An expired access token will give an error of type <a class="el" href="group___t
 <p>If using your own directory gateway, this must be called before <a class="el" href="group___s_d_k.html#ga9f5ba9243b8b709306197dd14af7a140" title="Authenticate a new user using an oauth access token.">SpeedifySDK_LoginOAuth()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">gatewayUri</td><td>directory gateway uri </td></tr>
+    <tr><td class="paramname">gatewayUri</td><td>directory gateway uri, ie: <a href="https://directory.company.com/my/path/">https://directory.company.com/my/path/</a> </td></tr>
     <tr><td class="paramname">cb</td><td>optional callback </td></tr>
     <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
   </table>
@@ -4791,14 +4850,14 @@ An expired access token will give an error of type <a class="el" href="group___t
 
 </div>
 </div>
-<a id="ga6c8a1364b2f81b86cf058b21412b8873"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c8a1364b2f81b86cf058b21412b8873">&#9670;&nbsp;</a></span>SpeedifySDK_SetDnsLeak()</h2>
+<a id="ga14871ec09803c3023e7907be628874f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14871ec09803c3023e7907be628874f4">&#9670;&nbsp;</a></span>SpeedifySDK_SetDNSLeakProtection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetDnsLeak </td>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetDNSLeakProtection </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
           <td class="paramname"><em>sdk</em>, </td>
@@ -4833,14 +4892,14 @@ An expired access token will give an error of type <a class="el" href="group___t
 <p>Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">enabled</td><td>If dns leak protection is enabled </td></tr>
+    <tr><td class="paramname">enabled</td><td>If DNS leak protection is enabled </td></tr>
     <tr><td class="paramname">cb</td><td>optional callback </td></tr>
     <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>privacy settings result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.9.2 </dd></dl>
 
 </div>
 </div>
@@ -5470,14 +5529,14 @@ Windows &amp; Mac Only </p><dl class="params"><dt>Parameters</dt><dd>
 
 </div>
 </div>
-<a id="gaf5e135d158dbc836af9b81b8298d9acd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf5e135d158dbc836af9b81b8298d9acd">&#9670;&nbsp;</a></span>SpeedifySDK_SetIpLeak()</h2>
+<a id="ga769bbcb3391d36190898b788315b092a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga769bbcb3391d36190898b788315b092a">&#9670;&nbsp;</a></span>SpeedifySDK_SetIPLeakProtection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetIpLeak </td>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetIPLeakProtection </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
           <td class="paramname"><em>sdk</em>, </td>
@@ -5512,14 +5571,14 @@ Windows &amp; Mac Only </p><dl class="params"><dt>Parameters</dt><dd>
 <p>Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
-    <tr><td class="paramname">enabled</td><td>If ip leak protection is enabled </td></tr>
+    <tr><td class="paramname">enabled</td><td>If IP leak protection is enabled </td></tr>
     <tr><td class="paramname">cb</td><td>optional callback </td></tr>
     <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>privacy settings result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>10.3 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.9.2 </dd></dl>
 
 </div>
 </div>
@@ -6368,6 +6427,59 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 
 </div>
 </div>
+<a id="ga56f4ad24d0ecd018d8657c9b433e9c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56f4ad24d0ecd018d8657c9b433e9c42">&#9670;&nbsp;</a></span>SpeedifySDK_SetPriorityOverflowThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a> SpeedifySDK_SetPriorityOverflowThreshold </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>mbpsOverflow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the priority overflow threshold, which is used when there is active priority traffic (i.e. real-time streams). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">mbpsOverflow</td><td>priority overflow threshold, in megabits per second </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>settings result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>12.0 </dd></dl>
+
+</div>
+</div>
 <a id="gaa2abf58eebc653f520ce5981bbbf765b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa2abf58eebc653f520ce5981bbbf765b">&#9670;&nbsp;</a></span>SpeedifySDK_SetReportingEncryptionKey()</h2>
 
@@ -6404,6 +6516,59 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="ga181b161a2a5c18e2182d5bb5172fc444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga181b161a2a5c18e2182d5bb5172fc444">&#9670;&nbsp;</a></span>SpeedifySDK_SetRequestToDisableDoH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetRequestToDisableDoH </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disableDoH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests that browsers do not use DNS over HTTPS. </p>
+<p>DoH can interfere with domain-based local proxy, firewall, and streaming settings. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">disableDoH</td><td>If DoH is requested to be disabled </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>privacy settings result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>12.2 </dd></dl>
 
 </div>
 </div>
@@ -6965,6 +7130,59 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 
 </div>
 </div>
+<a id="ga7a8a0e11cb64136980b530fc2fe8865c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a8a0e11cb64136980b530fc2fe8865c">&#9670;&nbsp;</a></span>SpeedifySDK_SetUlpReportIntervalSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a> SpeedifySDK_SetUlpReportIntervalSeconds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the interval between ULP reports. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">interval</td><td>the ULP report interval in seconds </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>settings result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>12.8 </dd></dl>
+
+</div>
+</div>
 <a id="gaeb65cc18ae259e086ebf814b8aefc516"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaeb65cc18ae259e086ebf814b8aefc516">&#9670;&nbsp;</a></span>SpeedifySDK_SetVendorUserData()</h2>
 
@@ -7296,7 +7514,8 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>safe browsing result object </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>11.4 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>11.4</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>As of 11.9.2. Functionality removed. </dd></dl>
 
 </div>
 </div>

@@ -15,15 +15,13 @@ var searchData=
   ['allowchachaencryption',['allowChaChaEncryption',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a9b0de0b5b035b6a199a3beccba290787',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['allowlist',['ALLOWLIST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_proxy_match_mode.html#a55a3077422efd558169a639bb733a0cf',1,'com.speedify.speedifysdk.Types.ProxyMatchMode.ALLOWLIST()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html#a45889c4ba455285912785e43ecac9767',1,'com.speedify.speedifysdk.Types.FirewallMode.ALLOWLIST()']]],
   ['allowtunnelbypass',['allowTunnelBypass',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a09696181c8282bf329ec9499ada742fb',1,'com::speedify::speedifysdk::Types::Settings']]],
-  ['already_5fin_5fprogress',['ALREADY_IN_PROGRESS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#af118b728c0440a8274fb5d7391452587',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['always',['ALWAYS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a91776f0b98e54fefcb4ef24fe6e59f5b',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['alwayson_2edox',['alwayson.dox',['../alwayson_8dox.html',1,'']]],
-  ['async_5finit_5ffailure',['ASYNC_INIT_FAILURE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_error.html#af2ddebd2f2035859a19f258cd35d10f6',1,'com::speedify::speedifysdk::Types::SafeBrowsingError']]],
   ['auto',['AUTO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a599fcc70ab4d7b18d03039dd6b9340cd',1,'com::speedify::speedifysdk::Types::TransportMode']]],
   ['auto_5fconnecting',['AUTO_CONNECTING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a05b5a305aebbbe7abcb77ea003cbbe96',1,'com::speedify::speedifysdk::Types::State']]],
   ['autoconnectmethod',['AutoConnectMethod',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html',1,'com::speedify::speedifysdk::Types']]],
+  ['autoconstruct',['AutoConstruct',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k_1_1_auto_construct.html',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['automatic',['AUTOMATIC',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a39599e3fea7ecac3e92cc2695f1e3431',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['averagedownloadspeed',['averageDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2dd660dc84a6db3f734925dbcd0bae9f',1,'com::speedify::speedifysdk::Types::StreamStats']]],
-  ['averageuploadspeed',['averageUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a42fa867975d8e16bc06571c725d8bba9',1,'com::speedify::speedifysdk::Types::StreamStats']]],
-  ['avgtime',['avgTime',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_stats.html#a35362e3786b30c0cb89f175ad2a41f62',1,'com::speedify::speedifysdk::Types::SafeBrowsingStats']]],
-  ['advanced_20initialization',['Advanced Initialization',['../sdkadv.html',1,'']]]
+  ['averageuploadspeed',['averageUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a42fa867975d8e16bc06571c725d8bba9',1,'com::speedify::speedifysdk::Types::StreamStats']]]
 ];

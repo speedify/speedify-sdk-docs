@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Speedify SDK for Android: Member List</title>
+<title>Speedify SDK for Android: Permissions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">12.8.0</span>
    </div>
   </td>
  </tr>
@@ -65,22 +65,53 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacecom.html">com</a></li><li class="navelem"><a class="el" href="namespacecom_1_1speedify.html">speedify</a></li><li class="navelem"><a class="el" href="namespacecom_1_1speedify_1_1speedifysdk.html">speedifysdk</a></li><li class="navelem"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types.html">Types</a></li><li class="navelem"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_connect_error.html">SafeBrowsingConnectError</a></li>  </ul>
-</div>
 </div><!-- top -->
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">com.speedify.speedifysdk.Types.SafeBrowsingConnectError Member List</div>  </div>
+<div class="title">Permissions </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_connect_error.html">com.speedify.speedifysdk.Types.SafeBrowsingConnectError</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_connect_error.html#a04339d8626fb388c89f370eea2a9f415">errorCode</a></td><td class="entry"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_connect_error.html">com.speedify.speedifysdk.Types.SafeBrowsingConnectError</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_connect_error.html#adc03cd18094144545ff6b858b9831785">message</a></td><td class="entry"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_safe_browsing_connect_error.html">com.speedify.speedifysdk.Types.SafeBrowsingConnectError</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><h2>Required Permissions </h2>
+<ul>
+<li><code>INTERNET</code><ul>
+<li>Talk to speed servers on the internet</li>
+</ul>
+</li>
+<li><code>FOREGROUND_SERVICE</code><ul>
+<li>Ability to run VPN service in background</li>
+</ul>
+</li>
+<li><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>, <code>CHANGE_NETWORK_STATE</code><ul>
+<li>Check and control network adapter state</li>
+</ul>
+</li>
+<li><code>USE_FULL_SCREEN_INTENT</code><ul>
+<li>Needed to show initial VPN permission on Android Q+</li>
+</ul>
+</li>
+<li><code>AD_ID</code>, via <a class="el" href="integration.html#integrate_aar">play-services-ads-identifier</a> dependency<ul>
+<li>Identifier for anonymous stats</li>
+<li>Pre-Oreo autoaccounts</li>
+</ul>
+</li>
+</ul>
+<h2>Optional Permissions </h2>
+<ul>
+<li><code>RECEIVE_BOOT_COMPLETED</code><ul>
+<li><a class="el" href="onboot.html">Automatic reconnect</a> after boot</li>
+</ul>
+</li>
+<li><code>QUERY_ALL_PACKAGES</code><ul>
+<li>Better Streaming mode performance, Allow apps that use P2P for legal purposes to stay on normal servers</li>
+</ul>
+</li>
+<li><code>VIBRATE</code><ul>
+<li>Default <a class="el" href="servicenotification.html">foreground notification</a> will vibrate when entering kill switch mode </li>
+</ul>
+</li>
+</ul>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

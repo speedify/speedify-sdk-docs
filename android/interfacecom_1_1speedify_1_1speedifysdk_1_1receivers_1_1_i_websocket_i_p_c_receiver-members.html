@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Speedify SDK for Android: Advanced Initialization</title>
+<title>Speedify SDK for Android: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">12.8.0</span>
    </div>
   </td>
  </tr>
@@ -65,18 +65,21 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecom.html">com</a></li><li class="navelem"><a class="el" href="namespacecom_1_1speedify.html">speedify</a></li><li class="navelem"><a class="el" href="namespacecom_1_1speedify_1_1speedifysdk.html">speedifysdk</a></li><li class="navelem"><a class="el" href="namespacecom_1_1speedify_1_1speedifysdk_1_1receivers.html">receivers</a></li><li class="navelem"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html">IWebsocketIPCReceiver</a></li>  </ul>
+</div>
 </div><!-- top -->
-<div class="PageDoc"><div class="header">
+<div class="header">
   <div class="headertitle">
-<div class="title">Advanced Initialization </div>  </div>
+<div class="title">com.speedify.speedifysdk.receivers.IWebsocketIPCReceiver Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Conditional Setup </h2>
-<p>If you do not want Speedify SDK's notification to be always present when running your app, you can conditionally initialize the SpeedifySDK object in your Application's onCreate only in the background process. You can then initialize the SpeedifySDK in your application's main process whenever you want. If you do this, be careful that your use the same name and port number in the constructor, or your application's main process won't be able to communicate with Speedify SDK's background process.</p>
-<p>YourApplication.java </p><div class="fragment"><div class="line">@Override</div><div class="line"><span class="keyword">public</span> <span class="keywordtype">void</span> onCreate() {</div><div class="line">  super.onCreate();</div><div class="line"></div><div class="line">  <span class="comment">// ... other boilerplate initialization ...</span></div><div class="line"></div><div class="line">  <span class="keywordflow">if</span> (SpeedifySDK.IsBackgroundProcess(<span class="keyword">this</span>)) {</div><div class="line">    SpeedifySDK SDK = <span class="keyword">new</span> SpeedifySDK(getApplicationContext(), <span class="stringliteral">&quot;My App Title&quot;</span>, 5678);</div><div class="line">    <span class="keywordflow">return</span>;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// ... other initialization specific to your app ...</span></div><div class="line">}</div></div><!-- fragment --><p> YourVPNControlActivity.java </p><div class="fragment"><div class="line"><span class="keyword">private</span> <span class="keywordtype">void</span> initializeSpeedifySDK() {</div><div class="line">  SpeedifySDK SDK = <span class="keyword">new</span> SpeedifySDK(getApplicationContext(), <span class="stringliteral">&quot;My App Title&quot;</span>, 5678);</div><div class="line">}</div></div><!-- fragment --><h2>SDK Cleanup </h2>
-<p>To close down the SDK entirely without exiting your application, call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1576bc08e3d680f363260f1c38ab27d9">SpeedifySDK.ForceExit(context)</a>. To restart the SDK, you must either reconstruct a new SpeedifySDK object or call <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac7131def996ac642a67a79c5cc900e81">restartServices</a> on your old SpeedifySDK object. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+
+<p>This is the complete list of members for <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html">com.speedify.speedifysdk.receivers.IWebsocketIPCReceiver</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html#a3291ccbf27d6ea189fdb8c6add35f703">OnWebsocketCreate</a>()</td><td class="entry"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html">com.speedify.speedifysdk.receivers.IWebsocketIPCReceiver</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.15-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

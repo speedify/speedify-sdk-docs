@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">11.8.0</span>
+   &#160;<span id="projectnumber">12.8.0</span>
    </div>
   </td>
  </tr>
@@ -85,8 +85,11 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:ae4e763e72c8bc9153c6d9616ab32d0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transport layer protocol.  <a href="#ae4e763e72c8bc9153c6d9616ab32d0e7">More...</a><br /></td></tr>
 <tr class="separator:ae4e763e72c8bc9153c6d9616ab32d0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accff9e7d977d84e182bc531e480992bf"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___protocol_port_pair.html#accff9e7d977d84e182bc531e480992bf">port</a></td></tr>
-<tr class="memdesc:accff9e7d977d84e182bc531e480992bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port number.  <a href="#accff9e7d977d84e182bc531e480992bf">More...</a><br /></td></tr>
+<tr class="memdesc:accff9e7d977d84e182bc531e480992bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port number, or 0 for any port.  <a href="#accff9e7d977d84e182bc531e480992bf">More...</a><br /></td></tr>
 <tr class="separator:accff9e7d977d84e182bc531e480992bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e265afccc6273da5e13f9c099aeccc7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___protocol_port_pair.html#a5e265afccc6273da5e13f9c099aeccc7">portRangeEnd</a></td></tr>
+<tr class="memdesc:a5e265afccc6273da5e13f9c099aeccc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of port range. If this entry is a single port, then this is 0.  <a href="#a5e265afccc6273da5e13f9c099aeccc7">More...</a><br /></td></tr>
+<tr class="separator:a5e265afccc6273da5e13f9c099aeccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="accff9e7d977d84e182bc531e480992bf"></a>
@@ -101,8 +104,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Port number. </p>
+<p>Port number, or 0 for any port. </p>
 <dl class="section since"><dt>Since</dt><dd>10.9 </dd></dl>
+
+</div>
+</div>
+<a id="a5e265afccc6273da5e13f9c099aeccc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e265afccc6273da5e13f9c099aeccc7">&#9670;&nbsp;</a></span>portRangeEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SpeedifySDK_ProtocolPortPair::portRangeEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End of port range. If this entry is a single port, then this is 0. </p>
+<dl class="section since"><dt>Since</dt><dd>12.2 </dd></dl>
 
 </div>
 </div>
