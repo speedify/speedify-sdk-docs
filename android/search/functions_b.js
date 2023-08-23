@@ -34,5 +34,6 @@ var searchData=
   ['resetconnectionratelimit',['resetConnectionRateLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#af93c96edbaf89cf16aa220003243752d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['resetdirectorydomain',['resetDirectoryDomain',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a8d43b451e0ebc24feb97a16996d6bf40',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['resetdirectorygatewayuri',['resetDirectoryGatewayURI',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a62d03ab3a4fd73de7ddea3d4f4d0105d',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['resetlocalproxydomainwatchlist',['resetLocalProxyDomainWatchlist',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3cf1be783fb325eec7b9d424f24a93b6',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['restartservices',['restartServices',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac7131def996ac642a67a79c5cc900e81',1,'com::speedify::speedifysdk::SpeedifySDK']]]
 ];

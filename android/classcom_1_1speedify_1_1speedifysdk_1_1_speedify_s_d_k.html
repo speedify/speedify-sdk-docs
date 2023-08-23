@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">12.8.0</span>
+   &#160;<span id="projectnumber">13.3.1</span>
    </div>
   </td>
  </tr>
@@ -383,6 +383,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a793736d4135f68be822dcc9e792015d9"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a793736d4135f68be822dcc9e792015d9">setLocalProxyDomainWatchlistEnable</a> (@NonNull String title, boolean enabled)</td></tr>
 <tr class="memdesc:a793736d4135f68be822dcc9e792015d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle a single domain watchlist item from being enabled over the local proxy.  <a href="#a793736d4135f68be822dcc9e792015d9">More...</a><br /></td></tr>
 <tr class="separator:a793736d4135f68be822dcc9e792015d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df5f978b9b8ad0d8efd94a4c13d3972"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9df5f978b9b8ad0d8efd94a4c13d3972">setLocalProxyGlobalDomainWatchlistEnable</a> (boolean watchlistEnabled)</td></tr>
+<tr class="memdesc:a9df5f978b9b8ad0d8efd94a4c13d3972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if settings in the local proxy domain watchlist entries are applied.  <a href="#a9df5f978b9b8ad0d8efd94a4c13d3972">More...</a><br /></td></tr>
+<tr class="separator:a9df5f978b9b8ad0d8efd94a4c13d3972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf1be783fb325eec7b9d424f24a93b6"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3cf1be783fb325eec7b9d424f24a93b6">resetLocalProxyDomainWatchlist</a> ()</td></tr>
+<tr class="memdesc:a3cf1be783fb325eec7b9d424f24a93b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the local proxy domain watchlist entries to their default settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#acd9304eedfd345506f8d1f4c773c4448">OnLocalProxySettings</a>.  <a href="#a3cf1be783fb325eec7b9d424f24a93b6">More...</a><br /></td></tr>
+<tr class="separator:a3cf1be783fb325eec7b9d424f24a93b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1483aa4fe6cff812382ba363c1b3377"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac1483aa4fe6cff812382ba363c1b3377">refreshCaptivePortals</a> ()</td></tr>
 <tr class="memdesc:ac1483aa4fe6cff812382ba363c1b3377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks connected networks for captive portals Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#adb3fee54694ec545a83d62d09d591ee9">OnCaptivePortals</a>.  <a href="#ac1483aa4fe6cff812382ba363c1b3377">More...</a><br /></td></tr>
 <tr class="separator:ac1483aa4fe6cff812382ba363c1b3377"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2516,6 +2522,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3cf1be783fb325eec7b9d424f24a93b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf1be783fb325eec7b9d424f24a93b6">&#9670;&nbsp;</a></span>resetLocalProxyDomainWatchlist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.resetLocalProxyDomainWatchlist </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the local proxy domain watchlist entries to their default settings Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#acd9304eedfd345506f8d1f4c773c4448">OnLocalProxySettings</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>13.2 </dd></dl>
+
+</div>
+</div>
 <a id="ac7131def996ac642a67a79c5cc900e81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7131def996ac642a67a79c5cc900e81">&#9670;&nbsp;</a></span>restartServices()</h2>
 
@@ -3845,6 +3871,33 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+</div>
+</div>
+<a id="a9df5f978b9b8ad0d8efd94a4c13d3972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df5f978b9b8ad0d8efd94a4c13d3972">&#9670;&nbsp;</a></span>setLocalProxyGlobalDomainWatchlistEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setLocalProxyGlobalDomainWatchlistEnable </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>watchlistEnabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets if settings in the local proxy domain watchlist entries are applied. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">watchlistEnabled</td><td>if the domain watchlist is enabled Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#acd9304eedfd345506f8d1f4c773c4448">OnLocalProxySettings</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>13.2 </dd></dl>
 
 </div>
 </div>

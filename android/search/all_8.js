@@ -7,6 +7,7 @@ var searchData=
   ['ilogcompletecallback',['ILogCompleteCallback',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html',1,'com::speedify::speedifysdk::LogGeneration']]],
   ['inactivetimeout',['INACTIVETIMEOUT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a9f3a721c531a24ba2a5d8387b46be305',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['introduction_20to_20the_20speedify_20sdk_20for_20android',['Introduction to the Speedify SDK for Android',['../index.html',1,'']]],
+  ['inetworksharingreceiver_2ejava',['INetworkSharingReceiver.java',['../_i_network_sharing_receiver_8java.html',1,'']]],
   ['inflight',['inFlight',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a4cecf6e26f1b888599f00e991d41fd0d',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['inflightwindow',['inFlightWindow',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a91aff05d023297e352276f886593f031',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['info',['INFO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_log_level.html#aafb9a0cb81e988217ce5eab2aa029892',1,'com.speedify.speedifysdk.Types.LogLevel.INFO()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#a38d6ad29df4d1df8c470ee8fdf4038a9',1,'com.speedify.speedifysdk.Logging.LogHandler.info()']]],

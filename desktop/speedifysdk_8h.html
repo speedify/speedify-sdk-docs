@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">12.8.0</span>
+   &#160;<span id="projectnumber">13.3.1</span>
    </div>
   </td>
  </tr>
@@ -82,6 +82,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="sdkdefines_8h_source.html">sdkdefines.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="results_8h_source.html">results.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="callbacks_8h_source.html">callbacks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8h_source.html">types.h</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
@@ -380,6 +381,12 @@ Supports Subscription.  <a href="group___s_d_k.html#ga7725452fee63dcd3fcba2947e0
 <tr class="memitem:gab0775c2f20bcd8489c39beae53d3bf55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gab0775c2f20bcd8489c39beae53d3bf55">SpeedifySDK_SetLocalProxyDomainWatchlistEnable</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *title, bool enabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gab0775c2f20bcd8489c39beae53d3bf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle a single domain watchlist item from being enabled over the local proxy.  <a href="group___s_d_k.html#gab0775c2f20bcd8489c39beae53d3bf55">More...</a><br /></td></tr>
 <tr class="separator:gab0775c2f20bcd8489c39beae53d3bf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71f005fa697331966a5746b106c4a6b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga71f005fa697331966a5746b106c4a6b2">SpeedifySDK_SetLocalProxyGlobalDomainWatchlistEnable</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool watchlistEnabled, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga71f005fa697331966a5746b106c4a6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if settings in the local proxy domain watchlist entries are applied.  <a href="group___s_d_k.html#ga71f005fa697331966a5746b106c4a6b2">More...</a><br /></td></tr>
+<tr class="separator:ga71f005fa697331966a5746b106c4a6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48ce8cbe99210b8d0cc569487e576fce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_settings_result.html">SpeedifySDK_LocalProxySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga48ce8cbe99210b8d0cc569487e576fce">SpeedifySDK_ResetLocalProxyDomainWatchlist</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687">SpeedifySDK_LocalProxySettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga48ce8cbe99210b8d0cc569487e576fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the local proxy domain watchlist entries to their default settings.  <a href="group___s_d_k.html#ga48ce8cbe99210b8d0cc569487e576fce">More...</a><br /></td></tr>
+<tr class="separator:ga48ce8cbe99210b8d0cc569487e576fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacdf907ba9b0e167f7e54dd3cf3472f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html">SpeedifySDK_LocalProxyDomainWatchlistHitResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gacdf907ba9b0e167f7e54dd3cf3472f6a">SpeedifySDK_ListenForLocalProxyDomainWatchlistHit</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga7638efb3a350b3db3b2e2dae3cfe11cf">SpeedifySDK_LocalProxyDomainWatchlistHitCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gacdf907ba9b0e167f7e54dd3cf3472f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive messages when a domain watchlist domain is detected.  <a href="group___s_d_k.html#gacdf907ba9b0e167f7e54dd3cf3472f6a">More...</a><br /></td></tr>
 <tr class="separator:gacdf907ba9b0e167f7e54dd3cf3472f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
