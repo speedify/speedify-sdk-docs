@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -79,6 +79,9 @@ $(function() {
 <li>OnAccountingData()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab5b8d24008d11fa14034baa7f4496219">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
 </li>
+<li>OnActivationCode()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a8e0a7ef349a1aeb07a0f60833adedd15">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
+</li>
 <li>OnAdapterOverlimit()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a56313c06c06dc3dc7e38113dcef79fe3">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
 , <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a135f55794b6e601005e6c992b6376041">com.speedify.speedifysdk.SpeedifyHandler</a>
@@ -93,7 +96,8 @@ $(function() {
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#adb3fee54694ec545a83d62d09d591ee9">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
 </li>
 <li>OnConnectedServer()
-: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a992ed278f31706e6781939580a4f042b">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
+, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a18c9d6c7d334c10ad726c644dca3b6e6">com.speedify.speedifysdk.SpeedifyHandler</a>
 </li>
 <li>OnConnectError()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a1258ccdc63f2192de39930a0a52db286">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
@@ -123,8 +127,7 @@ $(function() {
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#adb3e5c59175505718b9d703d4a4398a9">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
 </li>
 <li>OnLockedSetting()
-: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a0eb8ee4e84e6d889076c4ff3558577ba">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
-, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaa2d5b3acc91d7b7db49b721b31a9b12">com.speedify.speedifysdk.SpeedifyHandler</a>
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad54044c564d19e6ba493f191608e351b">com.speedify.speedifysdk.SpeedifyHandler</a>
 </li>
 <li>OnLoginError()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a5e21ab222fdfe23d186aeaf03809dac2">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
@@ -134,6 +137,24 @@ $(function() {
 </li>
 <li>onMessage()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a688a61fcecdf35887af6c1793c053301">com.speedify.speedifysdk.SpeedifySDK</a>
+</li>
+<li>OnNetworkSharesAvailable()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a204885456ab5ca96f42151b895ea5b44">com.speedify.speedifysdk.receivers.INetworkSharingReceiver</a>
+</li>
+<li>OnNetworkSharingDiscovery()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a2545d5309c12418bd06605eed81f4716">com.speedify.speedifysdk.receivers.INetworkSharingReceiver</a>
+</li>
+<li>OnNetworkSharingNewPeerAvailable()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a5699491849f495b2db631488b69390da">com.speedify.speedifysdk.receivers.INetworkSharingReceiver</a>
+</li>
+<li>OnNetworkSharingPairRequest()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a3e50337a238c1a80953f0a0e73a15fce">com.speedify.speedifysdk.receivers.INetworkSharingReceiver</a>
+</li>
+<li>OnNetworkSharingPeerStatusChange()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a42f0e1cb2186dc638fbc241e42fdd274">com.speedify.speedifysdk.receivers.INetworkSharingReceiver</a>
+</li>
+<li>OnNetworkSharingSettings()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a7197b7ee07afc717481a9e4738da7b83">com.speedify.speedifysdk.receivers.INetworkSharingReceiver</a>
 </li>
 <li>OnNewAdapter()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aa448d3a5ed0ceb0271efc505bdfd2c0e">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
@@ -158,16 +179,19 @@ $(function() {
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a56c6f3840e68c3ebaf617d365657dcf1">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
 </li>
 <li>OnServiceCreate()
-: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a03def0d6629fa896c90fa46b625688fd">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a4d2afe1faf6e69dc59eb43d5277e4c2d">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
+, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aacbad7bf96967ed8093f8c930764327c">com.speedify.speedifysdk.SpeedifyHandler</a>
 </li>
 <li>OnServiceDestroy()
-: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a95b08a933ae7958bd2c67bdeccbdff97">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a3bf8345f54003a979f2a827da75dcfe2">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
+, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3f7a7e80dcbeded14988e4964878be5">com.speedify.speedifysdk.SpeedifyHandler</a>
 </li>
 <li>OnServiceInterruptedError()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a64a58d9c5eb49f2a1859f7ceb0fcdc19">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
 </li>
 <li>OnServiceRemoved()
-: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a030f748a543c19354ff4ffcc60a8732b">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#ac35f26175ce85f76ec45fe5a08c14d6f">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
+, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a89ce6f836ac6294f1dc9bcb15d20b001">com.speedify.speedifysdk.SpeedifyHandler</a>
 </li>
 <li>OnServiceRestart()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a08d999aa9c336ea4034e2967a8cfdf32">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>
@@ -178,6 +202,10 @@ $(function() {
 </li>
 <li>OnSessionStats()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a0536c97657404e2a42878e7f5e1ad404">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
+</li>
+<li>OnSettingError()
+: <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aca4aa36161e17d011603b85af3960c33">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
+, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0f2995b2d8d6b36b67ed04423b601687">com.speedify.speedifysdk.SpeedifyHandler</a>
 </li>
 <li>OnSettings()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aac3bad95f80aece10d02b2baaa2b9f64">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>
@@ -205,6 +233,9 @@ $(function() {
 </li>
 <li>OnWebsocketCreate()
 : <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html#a3291ccbf27d6ea189fdb8c6add35f703">com.speedify.speedifysdk.receivers.IWebsocketIPCReceiver</a>
+</li>
+<li>Options()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper_1_1_options.html#a73ca42d2ddfa9596434059e773b11435">com.speedify.speedifysdk.NotificationHelper.Options</a>
 </li>
 </ul>
 </div><!-- contents -->

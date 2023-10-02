@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -122,6 +122,18 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a20bfc1dddbea3e3c6a34db0bdb06696b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga4023d15f20a3c455a6d0ab65893a889b">SpeedifySDK_StreamHealth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a20bfc1dddbea3e3c6a34db0bdb06696b">health</a></td></tr>
 <tr class="memdesc:a20bfc1dddbea3e3c6a34db0bdb06696b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream health.  <a href="#a20bfc1dddbea3e3c6a34db0bdb06696b">More...</a><br /></td></tr>
 <tr class="separator:a20bfc1dddbea3e3c6a34db0bdb06696b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6053227578b21d2e0ef2738c0a8412c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#ac6053227578b21d2e0ef2738c0a8412c">remoteIp</a></td></tr>
+<tr class="memdesc:ac6053227578b21d2e0ef2738c0a8412c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The remote ip that this stream is connected to.  <a href="#ac6053227578b21d2e0ef2738c0a8412c">More...</a><br /></td></tr>
+<tr class="separator:ac6053227578b21d2e0ef2738c0a8412c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c50ea3ae0cc8c1f00053ade8005419"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a46c50ea3ae0cc8c1f00053ade8005419">remotePort</a></td></tr>
+<tr class="memdesc:a46c50ea3ae0cc8c1f00053ade8005419"><td class="mdescLeft">&#160;</td><td class="mdescRight">The remote port that this stream is connected to.  <a href="#a46c50ea3ae0cc8c1f00053ade8005419">More...</a><br /></td></tr>
+<tr class="separator:a46c50ea3ae0cc8c1f00053ade8005419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89da30990ecf10a24744a602836eb59d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a89da30990ecf10a24744a602836eb59d">protocol</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gacb004a7a29c3898fc247b440776e6172">SPEEDIFYSDK_MAX_PROTOCOL_LENGTH</a>]</td></tr>
+<tr class="memdesc:a89da30990ecf10a24744a602836eb59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The protocol of this stream. This is typically VNC, RTP, RTMP, RDP, Wifi Calling, TCP, UDP or HTTPS, if known.  <a href="#a89da30990ecf10a24744a602836eb59d">More...</a><br /></td></tr>
+<tr class="separator:a89da30990ecf10a24744a602836eb59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d270ec54f75fdbb9d771f7d8aca9c84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga8ae66183f85e398dcc950c5886bac4f6">SpeedifySDK_HostnameString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___stream_stats.html#a0d270ec54f75fdbb9d771f7d8aca9c84">hostname</a></td></tr>
+<tr class="memdesc:a0d270ec54f75fdbb9d771f7d8aca9c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hostname of the service that this stream is connected to.  <a href="#a0d270ec54f75fdbb9d771f7d8aca9c84">More...</a><br /></td></tr>
+<tr class="separator:a0d270ec54f75fdbb9d771f7d8aca9c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="abecf87b902cc7f5524635e28b6491dfa"></a>
@@ -258,6 +270,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a0d270ec54f75fdbb9d771f7d8aca9c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d270ec54f75fdbb9d771f7d8aca9c84">&#9670;&nbsp;</a></span>hostname</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga8ae66183f85e398dcc950c5886bac4f6">SpeedifySDK_HostnameString</a> SpeedifySDK_StreamStats::hostname</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The hostname of the service that this stream is connected to. </p>
+<dl class="section since"><dt>Since</dt><dd>14.1 </dd></dl>
+
+</div>
+</div>
 <a id="acb1d4eac3a1233dfa7cc189208dee37d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb1d4eac3a1233dfa7cc189208dee37d">&#9670;&nbsp;</a></span>id</h2>
 
@@ -292,6 +321,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a89da30990ecf10a24744a602836eb59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89da30990ecf10a24744a602836eb59d">&#9670;&nbsp;</a></span>protocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SpeedifySDK_StreamStats::protocol[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gacb004a7a29c3898fc247b440776e6172">SPEEDIFYSDK_MAX_PROTOCOL_LENGTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The protocol of this stream. This is typically VNC, RTP, RTMP, RDP, Wifi Calling, TCP, UDP or HTTPS, if known. </p>
+<dl class="section since"><dt>Since</dt><dd>14.1 </dd></dl>
+
+</div>
+</div>
 <a id="acbb8d7ee60dcff367912d9edc3168cc9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbb8d7ee60dcff367912d9edc3168cc9">&#9670;&nbsp;</a></span>redundantModeSaves</h2>
 
@@ -306,6 +352,40 @@ Data Fields</h2></td></tr>
 
 <p>Number of saves while in redundant mode. </p>
 <dl class="section since"><dt>Since</dt><dd>9.8 </dd></dl>
+
+</div>
+</div>
+<a id="ac6053227578b21d2e0ef2738c0a8412c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6053227578b21d2e0ef2738c0a8412c">&#9670;&nbsp;</a></span>remoteIp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a> SpeedifySDK_StreamStats::remoteIp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The remote ip that this stream is connected to. </p>
+<dl class="section since"><dt>Since</dt><dd>14.1 </dd></dl>
+
+</div>
+</div>
+<a id="a46c50ea3ae0cc8c1f00053ade8005419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c50ea3ae0cc8c1f00053ade8005419">&#9670;&nbsp;</a></span>remotePort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SpeedifySDK_StreamStats::remotePort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The remote port that this stream is connected to. </p>
+<dl class="section since"><dt>Since</dt><dd>14.1 </dd></dl>
 
 </div>
 </div>

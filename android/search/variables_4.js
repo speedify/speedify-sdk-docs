@@ -13,6 +13,7 @@ var searchData=
   ['error',['ERROR',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_log_level.html#a391d50c4696c52a629d77159e5d61ea1',1,'com::speedify::speedifysdk::Types::LogLevel']]],
   ['errormessage',['errorMessage',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a5ed9d9c165f7df0c020678822fec4ecf',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
   ['ethernet',['ETHERNET',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#abaa041a2dfa13161cbf6a7a16471948d',1,'com::speedify::speedifysdk::Types::NetworkType']]],
+  ['exact',['EXACT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a963213723c2aa3bba3dd2d489c16102b',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['excludedefaultprivateipranges',['excludeDefaultPrivateIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a799cbf8072f0be49078a1b3a971c92a3',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['excludedipranges',['excludedIPRanges',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a3f14782468fc4e7f6c217c78872f3651',1,'com::speedify::speedifysdk::Types::Settings']]]
 ];

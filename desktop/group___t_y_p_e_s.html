@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -88,10 +88,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version structure.  <a href="struct_speedify_s_d_k___version.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html">SpeedifySDK_ServerInformation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a server.  <a href="struct_speedify_s_d_k___server_information.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information_detailed.html">SpeedifySDK_ServerInformationDetailed</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detailed information about a server.  <a href="struct_speedify_s_d_k___server_information_detailed.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detailed information about a server.  <a href="struct_speedify_s_d_k___server_information.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___accounting_data.html">SpeedifySDK_AccountingData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data on an account.  <a href="struct_speedify_s_d_k___accounting_data.html#details">More...</a><br /></td></tr>
@@ -107,6 +104,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___protocol_port_pair.html">SpeedifySDK_ProtocolPortPair</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A protocol/port pair.  <a href="struct_speedify_s_d_k___protocol_port_pair.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___subnet.html">SpeedifySDK_Subnet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A subnet.  <a href="struct_speedify_s_d_k___subnet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___per_connection_encryption.html">SpeedifySDK_PerConnectionEncryption</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter setting for per-connection encryption.  <a href="struct_speedify_s_d_k___per_connection_encryption.html#details">More...</a><br /></td></tr>
@@ -178,14 +178,20 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ga3eee6ad672e51836e3557d157b9acbb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of an IP address.  <a href="#ga3eee6ad672e51836e3557d157b9acbb2">More...</a><br /></td></tr>
 <tr class="separator:ga3eee6ad672e51836e3557d157b9acbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffaec6a9ce68f94b60c8b62767207326"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a>[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gad43b5b70f908994cb8ef02a34103ac6c">SPEEDIFYSDK_MAX_DOMAIN_LENGTH</a>]</td></tr>
-<tr class="memdesc:gaffaec6a9ce68f94b60c8b62767207326"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of an IP address.  <a href="#gaffaec6a9ce68f94b60c8b62767207326">More...</a><br /></td></tr>
+<tr class="memdesc:gaffaec6a9ce68f94b60c8b62767207326"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a domain or hostname.  <a href="#gaffaec6a9ce68f94b60c8b62767207326">More...</a><br /></td></tr>
 <tr class="separator:gaffaec6a9ce68f94b60c8b62767207326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac9d6764306b6539110d8947273100a36"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gac9d6764306b6539110d8947273100a36">SpeedifySDK_AppNameString</a>[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gaa48c93a29e76d4e0d5a5bdfa4d697ac9">SPEEDIFYSDK_MAX_APP_NAME_LENGTH</a>]</td></tr>
 <tr class="memdesc:gac9d6764306b6539110d8947273100a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SDK App name.  <a href="#gac9d6764306b6539110d8947273100a36">More...</a><br /></td></tr>
 <tr class="separator:gac9d6764306b6539110d8947273100a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8545c4d5b44127641b5e26188694a165"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_speedify_s_d_k___server_information.html">SpeedifySDK_ServerInformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a></td></tr>
+<tr class="memdesc:ga8545c4d5b44127641b5e26188694a165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a.  <a href="#ga8545c4d5b44127641b5e26188694a165">More...</a><br /></td></tr>
+<tr class="separator:ga8545c4d5b44127641b5e26188694a165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga694a887cd8a34b186f6728b6865856f9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_speedify_s_d_k___protocol_port_pair.html">SpeedifySDK_ProtocolPortPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga694a887cd8a34b186f6728b6865856f9">SpeedifySDK_ForwardedPort</a></td></tr>
 <tr class="memdesc:ga694a887cd8a34b186f6728b6865856f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A forwarded port.  <a href="#ga694a887cd8a34b186f6728b6865856f9">More...</a><br /></td></tr>
 <tr class="separator:ga694a887cd8a34b186f6728b6865856f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ae66183f85e398dcc950c5886bac4f6"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga8ae66183f85e398dcc950c5886bac4f6">SpeedifySDK_HostnameString</a>[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gae506af70c495ac48c6b119d2f70cc80b">SPEEDIFYSDK_MAX_HOSTNAME_LENGTH</a>]</td></tr>
+<tr class="memdesc:ga8ae66183f85e398dcc950c5886bac4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of an IP address.  <a href="#ga8ae66183f85e398dcc950c5886bac4f6">More...</a><br /></td></tr>
+<tr class="separator:ga8ae66183f85e398dcc950c5886bac4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4f739c4c25fcfc2476a0631e1d610cad"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_speedify_s_d_k___protocol_port_pair.html">SpeedifySDK_ProtocolPortPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga4f739c4c25fcfc2476a0631e1d610cad">SpeedifySDK_LocalProxyPort</a></td></tr>
 <tr class="memdesc:ga4f739c4c25fcfc2476a0631e1d610cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A proxied port.  <a href="#ga4f739c4c25fcfc2476a0631e1d610cad">More...</a><br /></td></tr>
 <tr class="separator:ga4f739c4c25fcfc2476a0631e1d610cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,9 +229,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a80f2edd8f0fbd0721a9d74ff99d309a9">ACM_P2P</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a46ffa50c2278f79d933ee9152072acb5">ACM_BYSETTING</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2aa3e6b80efc1fad5567694feb4f697270">ACM_COUNTRYCITYSERVER</a>, 
-<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a84625c4e1a93023a6f45853b39df5824">ACM_PROXY</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2ae56a6dc14a6a1f4ed21ef095dc66a90e">ACM_EXACT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a9fd0746fe743f36b5a50cf5feffc3162">ACM_IGNORELAST</a>
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a84625c4e1a93023a6f45853b39df5824">ACM_PROXY</a>, 
+<a class="el" href="group___t_y_p_e_s.html#ggab919eb84f5459fa31364b2a5a24088f2a9fd0746fe743f36b5a50cf5feffc3162">ACM_IGNORELAST</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gab919eb84f5459fa31364b2a5a24088f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods for automatic server selection.  <a href="group___t_y_p_e_s.html#gab919eb84f5459fa31364b2a5a24088f2">More...</a><br /></td></tr>
@@ -250,7 +257,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887bab43d42b3b44a5333e08f7958aba938bb">NETWORKTYPE_LOOPBACK</a>, 
 <a class="el" href="group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba8f5cd60eff300be459749f30cf3f05de">NETWORKTYPE_BLUETOOTH</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baf51a69e0a2c5a3e644f50f786cbc9992">NETWORKTYPE_UNKNOWN</a>
+<a class="el" href="group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba518a1d150cfea31d3b0e2ab3c5fa63ed">NETWORKTYPE_NETWORKSHARE_CLIENT</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baf7b44676b9e1f8cfd4132b56e0082aaa">NETWORKTYPE_NETWORKSHARE_HOST</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baf51a69e0a2c5a3e644f50f786cbc9992">NETWORKTYPE_UNKNOWN</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga1b0e167436dde4e47d01f7057280887b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of network adapter.  <a href="group___t_y_p_e_s.html#ga1b0e167436dde4e47d01f7057280887b">More...</a><br /></td></tr>
@@ -279,7 +289,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeaf2a7c5e2bfdb2e93d8902a680c9193cf">TMODE_HTTPS</a>, 
 <br />
 &#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeeae9ca04bbf83e4a7e27f43107a359d1ad">TMODE_MULTITCP</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea3856481864cf208eb4d404e02c956007">TMODE_PROXY</a>
+<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea3856481864cf208eb4d404e02c956007">TMODE_PROXY</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga088bd5be74c1566ce9093bf8701fbdeea4a3c18f4a7c8d80d46f848326d9c3ade">TMODE_SHARE</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga088bd5be74c1566ce9093bf8701fbdee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transport Protocol modes.  <a href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">More...</a><br /></td></tr>
@@ -302,18 +313,22 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a19419fd98e337bee0c4b6ecf9ce0f5b2">ET_VPN_ADAPTER</a> = 8, 
 <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2aa07300931df40c32b45d813897ad2c92">ET_DEVICE_LIMIT</a> = 10, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2aeada313ed52fe5db8f190efbb8463220">ET_LOCK_TEAM</a> =11, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2aaf24494395ccb34df21d39e8b271e8c2">ET_LOCK_ACCOUNT</a> =12, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2ac81dbc8326fcca5d82fb8655f7da325f">ET_INVALID_ARGUMENT</a> =13, 
 <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a0e5a96d90bf580ee1af8ac1e1941ac09">ET_SDK_ASYNC</a> = 0xE00, 
 <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2af27f8b9631b6098fa645e8e0ff0852b5">ET_SDK_ERROR</a> = 0xF00, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a5ead18bac8736c96ca7446202bc49a98">ET_SDK_TIMEOUT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a5ead18bac8736c96ca7446202bc49a98">ET_SDK_TIMEOUT</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a884bdad7bd03c834d97cc1be1c05fa7d">ET_SDK_INVALID_ARGUMENT</a>, 
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a884bdad7bd03c834d97cc1be1c05fa7d">ET_SDK_INVALID_ARGUMENT</a>, 
 <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a02c2da178718dbe68635f551e7e915ea">ET_SDK_CALLBACK_REQUIRED</a>, 
 <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a7f46fc245dd01ebf20c1b6a8e41f9c9a">ET_SDK_PLATFORM_NO_SUPPORT</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a71d735910f4cd03c618ce8cd0a3e68c6">ET_SDK_NO_CONNECTION</a>, 
 <br />
-&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a71d735910f4cd03c618ce8cd0a3e68c6">ET_SDK_NO_CONNECTION</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3">ET_SDK_SETTING_LOCKED_TEAM</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a84b42d05579e21f21c6734f134899c5d">ET_SDK_SYNC_FROM_ASYNC</a>, 
-<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7">ET_SDK_SETTING_LOCKED_ACCOUNT</a>
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a84b42d05579e21f21c6734f134899c5d">ET_SDK_SYNC_FROM_ASYNC</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3">ET_SDK_SETTING_LOCKED_TEAM</a> = ET_LOCK_TEAM, 
+<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7">ET_SDK_SETTING_LOCKED_ACCOUNT</a> = ET_LOCK_ACCOUNT
 <br />
  }</td></tr>
 <tr class="memdesc:ga2c6cd395ee7068fe5c85f3c861b0c7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type classification for errors.  <a href="group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2">More...</a><br /></td></tr>
@@ -414,22 +429,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae04cb4a9ef11417d92807e0e1c0c7d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_AutoConnectMethod.  <a href="#gae04cb4a9ef11417d92807e0e1c0c7d24">More...</a><br /></td></tr>
 <tr class="separator:gae04cb4a9ef11417d92807e0e1c0c7d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa19d0e3d06b7081168830830098a9e44"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gaa19d0e3d06b7081168830830098a9e44">SpeedifySDK_ServerInformation_GetCountryName</a> (<a class="el" href="struct_speedify_s_d_k___server_information.html">SpeedifySDK_ServerInformation</a> server)</td></tr>
-<tr class="memdesc:gaa19d0e3d06b7081168830830098a9e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Information about a server.">SpeedifySDK_ServerInformation</a>'s country.  <a href="#gaa19d0e3d06b7081168830830098a9e44">More...</a><br /></td></tr>
+<tr class="memdesc:gaa19d0e3d06b7081168830830098a9e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a>'s country.  <a href="#gaa19d0e3d06b7081168830830098a9e44">More...</a><br /></td></tr>
 <tr class="separator:gaa19d0e3d06b7081168830830098a9e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga651a12b11fedfe85a9028c75133945bd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga651a12b11fedfe85a9028c75133945bd">SpeedifySDK_ServerInformation_GetCityName</a> (<a class="el" href="struct_speedify_s_d_k___server_information.html">SpeedifySDK_ServerInformation</a> server)</td></tr>
-<tr class="memdesc:ga651a12b11fedfe85a9028c75133945bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Information about a server.">SpeedifySDK_ServerInformation</a>'s city.  <a href="#ga651a12b11fedfe85a9028c75133945bd">More...</a><br /></td></tr>
+<tr class="memdesc:ga651a12b11fedfe85a9028c75133945bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a>'s city.  <a href="#ga651a12b11fedfe85a9028c75133945bd">More...</a><br /></td></tr>
 <tr class="separator:ga651a12b11fedfe85a9028c75133945bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga78d849f55df97d73294d71c6d0ab4a75"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga78d849f55df97d73294d71c6d0ab4a75">SpeedifySDK_ServerInformation_toString</a> (<a class="el" href="struct_speedify_s_d_k___server_information.html">SpeedifySDK_ServerInformation</a> server)</td></tr>
-<tr class="memdesc:ga78d849f55df97d73294d71c6d0ab4a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Information about a server.">SpeedifySDK_ServerInformation</a>.  <a href="#ga78d849f55df97d73294d71c6d0ab4a75">More...</a><br /></td></tr>
+<tr class="memdesc:ga78d849f55df97d73294d71c6d0ab4a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a>.  <a href="#ga78d849f55df97d73294d71c6d0ab4a75">More...</a><br /></td></tr>
 <tr class="separator:ga78d849f55df97d73294d71c6d0ab4a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53ca8ce8d15482116abaa97d9c64c3d4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga53ca8ce8d15482116abaa97d9c64c3d4">SpeedifySDK_ServerInformationDetailed_GetCountryName</a> (<a class="el" href="struct_speedify_s_d_k___server_information_detailed.html">SpeedifySDK_ServerInformationDetailed</a> server)</td></tr>
-<tr class="memdesc:ga53ca8ce8d15482116abaa97d9c64c3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information_detailed.html" title="Detailed information about a server.">SpeedifySDK_ServerInformationDetailed</a>'s country.  <a href="#ga53ca8ce8d15482116abaa97d9c64c3d4">More...</a><br /></td></tr>
+<tr class="memitem:ga53ca8ce8d15482116abaa97d9c64c3d4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga53ca8ce8d15482116abaa97d9c64c3d4">SpeedifySDK_ServerInformationDetailed_GetCountryName</a> (<a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a> server)</td></tr>
+<tr class="memdesc:ga53ca8ce8d15482116abaa97d9c64c3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_ServerInformationDetailed's country.  <a href="#ga53ca8ce8d15482116abaa97d9c64c3d4">More...</a><br /></td></tr>
 <tr class="separator:ga53ca8ce8d15482116abaa97d9c64c3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ccec1243f09e17025111e1ca50c7b3f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga3ccec1243f09e17025111e1ca50c7b3f">SpeedifySDK_ServerInformationDetailed_GetCityName</a> (<a class="el" href="struct_speedify_s_d_k___server_information_detailed.html">SpeedifySDK_ServerInformationDetailed</a> server)</td></tr>
-<tr class="memdesc:ga3ccec1243f09e17025111e1ca50c7b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information_detailed.html" title="Detailed information about a server.">SpeedifySDK_ServerInformationDetailed</a>'s city.  <a href="#ga3ccec1243f09e17025111e1ca50c7b3f">More...</a><br /></td></tr>
+<tr class="memitem:ga3ccec1243f09e17025111e1ca50c7b3f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga3ccec1243f09e17025111e1ca50c7b3f">SpeedifySDK_ServerInformationDetailed_GetCityName</a> (<a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a> server)</td></tr>
+<tr class="memdesc:ga3ccec1243f09e17025111e1ca50c7b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_ServerInformationDetailed's city.  <a href="#ga3ccec1243f09e17025111e1ca50c7b3f">More...</a><br /></td></tr>
 <tr class="separator:ga3ccec1243f09e17025111e1ca50c7b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ae23ac331db8c5905a32e4c993a59f3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga0ae23ac331db8c5905a32e4c993a59f3">SpeedifySDK_ServerInformationDetailed_toString</a> (<a class="el" href="struct_speedify_s_d_k___server_information_detailed.html">SpeedifySDK_ServerInformationDetailed</a> server)</td></tr>
-<tr class="memdesc:ga0ae23ac331db8c5905a32e4c993a59f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a <a class="el" href="struct_speedify_s_d_k___server_information_detailed.html" title="Detailed information about a server.">SpeedifySDK_ServerInformationDetailed</a>.  <a href="#ga0ae23ac331db8c5905a32e4c993a59f3">More...</a><br /></td></tr>
+<tr class="memitem:ga0ae23ac331db8c5905a32e4c993a59f3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga0ae23ac331db8c5905a32e4c993a59f3">SpeedifySDK_ServerInformationDetailed_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a> server)</td></tr>
+<tr class="memdesc:ga0ae23ac331db8c5905a32e4c993a59f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_ServerInformationDetailed.  <a href="#ga0ae23ac331db8c5905a32e4c993a59f3">More...</a><br /></td></tr>
 <tr class="separator:ga0ae23ac331db8c5905a32e4c993a59f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6823f682b3bc5fb8d664ddaf5f76fe1b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga6823f682b3bc5fb8d664ddaf5f76fe1b">SpeedifySDK_AccountPaymentType_toString</a> (<a class="el" href="group___t_y_p_e_s.html#gafddea3bcdbce77ede80928a7fb218600">SpeedifySDK_AccountPaymentType</a> paymentType)</td></tr>
 <tr class="memdesc:ga6823f682b3bc5fb8d664ddaf5f76fe1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_AccountPaymentType.  <a href="#ga6823f682b3bc5fb8d664ddaf5f76fe1b">More...</a><br /></td></tr>
@@ -499,8 +514,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>String representation of an IP address. </p>
-<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+<p>String representation of a domain or hostname. </p>
+<dl class="section since"><dt>Since</dt><dd>14.1 </dd></dl>
 
 </div>
 </div>
@@ -538,6 +553,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8ae66183f85e398dcc950c5886bac4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ae66183f85e398dcc950c5886bac4f6">&#9670;&nbsp;</a></span>SpeedifySDK_HostnameString</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char SpeedifySDK_HostnameString[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gae506af70c495ac48c6b119d2f70cc80b">SPEEDIFYSDK_MAX_HOSTNAME_LENGTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>String representation of an IP address. </p>
+<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
 <a id="ga3eee6ad672e51836e3557d157b9acbb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3eee6ad672e51836e3557d157b9acbb2">&#9670;&nbsp;</a></span>SpeedifySDK_IPAddressString</h2>
 
@@ -569,6 +601,24 @@ Functions</h2></td></tr>
 
 <p>A proxied port. </p>
 <dl class="section since"><dt>Since</dt><dd>9.9 </dd></dl>
+
+</div>
+</div>
+<a id="ga8545c4d5b44127641b5e26188694a165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8545c4d5b44127641b5e26188694a165">&#9670;&nbsp;</a></span>SpeedifySDK_ServerInformationDetailed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_speedify_s_d_k___server_information.html">SpeedifySDK_ServerInformation</a> <a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Information about a. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>as of 14.0. Use <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a> instead. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
 </div>
@@ -653,6 +703,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab919eb84f5459fa31364b2a5a24088f2aa3e6b80efc1fad5567694feb4f697270"></a>ACM_COUNTRYCITYSERVER&#160;</td><td class="fielddoc"><p>By specific country/city/server. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab919eb84f5459fa31364b2a5a24088f2ae56a6dc14a6a1f4ed21ef095dc66a90e"></a>ACM_EXACT&#160;</td><td class="fielddoc"><p>By exact specific country/city/server. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ggab919eb84f5459fa31364b2a5a24088f2a84625c4e1a93023a6f45853b39df5824"></a>ACM_PROXY&#160;</td><td class="fielddoc"><p>Local-proxy only connection. </p>
 <dl class="section since"><dt>Since</dt><dd>10.4 </dd></dl>
@@ -872,6 +925,15 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2aa07300931df40c32b45d813897ad2c92"></a>ET_DEVICE_LIMIT&#160;</td><td class="fielddoc"><p>The device limit has been reached. </p>
 <dl class="section since"><dt>Since</dt><dd>13.3 </dd></dl>
 </td></tr>
+<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2aeada313ed52fe5db8f190efbb8463220"></a>ET_LOCK_TEAM&#160;</td><td class="fielddoc"><p>Setting locked by server configuration. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2aaf24494395ccb34df21d39e8b271e8c2"></a>ET_LOCK_ACCOUNT&#160;</td><td class="fielddoc"><p>Setting locked by account configuration. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2ac81dbc8326fcca5d82fb8655f7da325f"></a>ET_INVALID_ARGUMENT&#160;</td><td class="fielddoc"><p>An invalid argument was supplied. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+</td></tr>
 <tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a0e5a96d90bf580ee1af8ac1e1941ac09"></a>ET_SDK_ASYNC&#160;</td><td class="fielddoc"><p>Result is an async call SDK. Not an error. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 </td></tr>
@@ -893,13 +955,15 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a71d735910f4cd03c618ce8cd0a3e68c6"></a>ET_SDK_NO_CONNECTION&#160;</td><td class="fielddoc"><p>No connection to the Speedify daemon. </p>
 <dl class="section since"><dt>Since</dt><dd>8.0 </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3"></a>ET_SDK_SETTING_LOCKED_TEAM&#160;</td><td class="fielddoc"><p>Setting locked by server configuration. </p>
-<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
-</td></tr>
 <tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a84b42d05579e21f21c6734f134899c5d"></a>ET_SDK_SYNC_FROM_ASYNC&#160;</td><td class="fielddoc"><p>Synchronous call used from within asynchronous callback. Not supported. </p>
 <dl class="section since"><dt>Since</dt><dd>9.3 </dd></dl>
 </td></tr>
+<tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3"></a>ET_SDK_SETTING_LOCKED_TEAM&#160;</td><td class="fielddoc"><p>Setting locked by server configuration. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 14.0. Use ET_LOCK_TEAM instead. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+</td></tr>
 <tr><td class="fieldname"><a id="gga2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7"></a>ET_SDK_SETTING_LOCKED_ACCOUNT&#160;</td><td class="fielddoc"><p>Setting locked by account configuration. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of 14.0. Use ET_LOCK_ACCOUNT instead. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
 </td></tr>
 </table>
@@ -997,6 +1061,12 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga1b0e167436dde4e47d01f7057280887ba8f5cd60eff300be459749f30cf3f05de"></a>NETWORKTYPE_BLUETOOTH&#160;</td><td class="fielddoc"><p>Bluetooth. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1b0e167436dde4e47d01f7057280887ba518a1d150cfea31d3b0e2ab3c5fa63ed"></a>NETWORKTYPE_NETWORKSHARE_CLIENT&#160;</td><td class="fielddoc"><p>Network Share Client. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1b0e167436dde4e47d01f7057280887baf7b44676b9e1f8cfd4132b56e0082aaa"></a>NETWORKTYPE_NETWORKSHARE_HOST&#160;</td><td class="fielddoc"><p>Network Share Host. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="gga1b0e167436dde4e47d01f7057280887baf51a69e0a2c5a3e644f50f786cbc9992"></a>NETWORKTYPE_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
@@ -1215,6 +1285,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga088bd5be74c1566ce9093bf8701fbdeea3856481864cf208eb4d404e02c956007"></a>TMODE_PROXY&#160;</td><td class="fielddoc"><p>Proxy-only. This is not valid for <a class="el" href="group___s_d_k.html#ga1259d3b2a108ddbf5d7837e12ad0027a">SpeedifySDK_SetConnectionTransportMode</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>12.2 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga088bd5be74c1566ce9093bf8701fbdeea4a3c18f4a7c8d80d46f848326d9c3ade"></a>TMODE_SHARE&#160;</td><td class="fielddoc"><p>shared traffic. This is not valid for <a class="el" href="group___s_d_k.html#ga1259d3b2a108ddbf5d7837e12ad0027a">SpeedifySDK_SetConnectionTransportMode</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
 </td></tr>
 </table>
 
@@ -1504,7 +1577,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Information about a server.">SpeedifySDK_ServerInformation</a>'s city. </p>
+<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a>'s city. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -1525,7 +1598,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Information about a server.">SpeedifySDK_ServerInformation</a>'s country. </p>
+<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a>'s country. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -1546,7 +1619,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Information about a server.">SpeedifySDK_ServerInformation</a>. </p>
+<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -1560,14 +1633,15 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* SpeedifySDK_ServerInformationDetailed_GetCityName </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_speedify_s_d_k___server_information_detailed.html">SpeedifySDK_ServerInformationDetailed</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a>&#160;</td>
           <td class="paramname"><em>server</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information_detailed.html" title="Detailed information about a server.">SpeedifySDK_ServerInformationDetailed</a>'s city. </p>
+<p>String representation of a SpeedifySDK_ServerInformationDetailed's city. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>as of 14.0. Use SpeedifySDK_ServerInformation_GetCityName instead. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -1581,14 +1655,15 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* SpeedifySDK_ServerInformationDetailed_GetCountryName </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_speedify_s_d_k___server_information_detailed.html">SpeedifySDK_ServerInformationDetailed</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a>&#160;</td>
           <td class="paramname"><em>server</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information_detailed.html" title="Detailed information about a server.">SpeedifySDK_ServerInformationDetailed</a>'s country. </p>
+<p>String representation of a SpeedifySDK_ServerInformationDetailed's country. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>as of 14.0. Use SpeedifySDK_ServerInformation_GetCountryName instead. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>
@@ -1602,14 +1677,15 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* SpeedifySDK_ServerInformationDetailed_toString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_speedify_s_d_k___server_information_detailed.html">SpeedifySDK_ServerInformationDetailed</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a>&#160;</td>
           <td class="paramname"><em>server</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>String representation of a <a class="el" href="struct_speedify_s_d_k___server_information_detailed.html" title="Detailed information about a server.">SpeedifySDK_ServerInformationDetailed</a>. </p>
+<p>String representation of a SpeedifySDK_ServerInformationDetailed. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>as of 14.0. Use SpeedifySDK_ServerInformation_toString instead. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>

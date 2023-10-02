@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Information about a server. </p>
+<div class="textblock"><p>Detailed information about a server. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 </div>
 <p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
@@ -87,12 +87,27 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a80095b794057db9630d37805e5e8f4fe"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#a80095b794057db9630d37805e5e8f4fe">city</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadde1ac5c7f5b19c9df9f0a7385ed149d">SPEEDIFYSDK_MAX_CITY_LEN</a>]</td></tr>
 <tr class="memdesc:a80095b794057db9630d37805e5e8f4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">City code, ie: 'atlanta'.  <a href="#a80095b794057db9630d37805e5e8f4fe">More...</a><br /></td></tr>
 <tr class="separator:a80095b794057db9630d37805e5e8f4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3168056b6e8da102c24f457cb71e0588"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#a3168056b6e8da102c24f457cb71e0588">num</a></td></tr>
-<tr class="memdesc:a3168056b6e8da102c24f457cb71e0588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server number. Each specific server in an area is given a number unique to that region, as in "us-atlanta-3".  <a href="#a3168056b6e8da102c24f457cb71e0588">More...</a><br /></td></tr>
-<tr class="separator:a3168056b6e8da102c24f457cb71e0588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c972f82b27c417f85999bce4645acaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#a8c972f82b27c417f85999bce4645acaa">num</a></td></tr>
+<tr class="memdesc:a8c972f82b27c417f85999bce4645acaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server number. Each specific server in an area is given a number unique to that region, as in "us-atlanta-3".  <a href="#a8c972f82b27c417f85999bce4645acaa">More...</a><br /></td></tr>
+<tr class="separator:a8c972f82b27c417f85999bce4645acaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1d557ba404e446f9455517c82e54e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#acc1d557ba404e446f9455517c82e54e1">isPrivate</a></td></tr>
 <tr class="memdesc:acc1d557ba404e446f9455517c82e54e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this is a private or public server.  <a href="#acc1d557ba404e446f9455517c82e54e1">More...</a><br /></td></tr>
 <tr class="separator:acc1d557ba404e446f9455517c82e54e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e02fe4c36af88326d559a42e3caaea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#aa1e02fe4c36af88326d559a42e3caaea">isPremium</a></td></tr>
+<tr class="memdesc:aa1e02fe4c36af88326d559a42e3caaea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this is a premium-only server.  <a href="#aa1e02fe4c36af88326d559a42e3caaea">More...</a><br /></td></tr>
+<tr class="separator:aa1e02fe4c36af88326d559a42e3caaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab337fda0a1de9ab56399c4ebdc5ae25c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#ab337fda0a1de9ab56399c4ebdc5ae25c">torrentAllowed</a></td></tr>
+<tr class="memdesc:ab337fda0a1de9ab56399c4ebdc5ae25c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this server allows bittorrent/P2P.  <a href="#ab337fda0a1de9ab56399c4ebdc5ae25c">More...</a><br /></td></tr>
+<tr class="separator:ab337fda0a1de9ab56399c4ebdc5ae25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c630f60a1653404eb70edcfe8455137"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#a4c630f60a1653404eb70edcfe8455137">publicIPCount</a></td></tr>
+<tr class="memdesc:a4c630f60a1653404eb70edcfe8455137"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many public IPs are in the list. Only available on connected server calls.  <a href="#a4c630f60a1653404eb70edcfe8455137">More...</a><br /></td></tr>
+<tr class="separator:a4c630f60a1653404eb70edcfe8455137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1a925df09f34ca955754b6f68173c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#a8f1a925df09f34ca955754b6f68173c8">publicIP</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga4dce2560d948ee96372aa46c316ae5b9">SPEEDIFYSDK_MAX_IP_COUNT</a>]</td></tr>
+<tr class="memdesc:a8f1a925df09f34ca955754b6f68173c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public IP addresses of the server Only available on connected server calls.  <a href="#a8f1a925df09f34ca955754b6f68173c8">More...</a><br /></td></tr>
+<tr class="separator:a8f1a925df09f34ca955754b6f68173c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7f0e13af1a12e025b2c7fc6b8d1fc4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_information.html#a4e7f0e13af1a12e025b2c7fc6b8d1fc4">dataCenter</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga682892a3ca00fcc9619a66d106f9ce35">SPEEDIFYSDK_MAX_DATACENTER_LENGTH</a>]</td></tr>
+<tr class="memdesc:a4e7f0e13af1a12e025b2c7fc6b8d1fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data center the server is in.  <a href="#a4e7f0e13af1a12e025b2c7fc6b8d1fc4">More...</a><br /></td></tr>
+<tr class="separator:a4e7f0e13af1a12e025b2c7fc6b8d1fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a80095b794057db9630d37805e5e8f4fe"></a>
@@ -129,6 +144,40 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a4e7f0e13af1a12e025b2c7fc6b8d1fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7f0e13af1a12e025b2c7fc6b8d1fc4">&#9670;&nbsp;</a></span>dataCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SpeedifySDK_ServerInformation::dataCenter[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga682892a3ca00fcc9619a66d106f9ce35">SPEEDIFYSDK_MAX_DATACENTER_LENGTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data center the server is in. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+</div>
+</div>
+<a id="aa1e02fe4c36af88326d559a42e3caaea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e02fe4c36af88326d559a42e3caaea">&#9670;&nbsp;</a></span>isPremium</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_ServerInformation::isPremium</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether this is a premium-only server. </p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+</div>
+</div>
 <a id="acc1d557ba404e446f9455517c82e54e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc1d557ba404e446f9455517c82e54e1">&#9670;&nbsp;</a></span>isPrivate</h2>
 
@@ -146,19 +195,70 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a3168056b6e8da102c24f457cb71e0588"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3168056b6e8da102c24f457cb71e0588">&#9670;&nbsp;</a></span>num</h2>
+<a id="a8c972f82b27c417f85999bce4645acaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c972f82b27c417f85999bce4645acaa">&#9670;&nbsp;</a></span>num</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t SpeedifySDK_ServerInformation::num</td>
+          <td class="memname">int SpeedifySDK_ServerInformation::num</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Server number. Each specific server in an area is given a number unique to that region, as in "us-atlanta-3". </p>
+<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a8f1a925df09f34ca955754b6f68173c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1a925df09f34ca955754b6f68173c8">&#9670;&nbsp;</a></span>publicIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a> SpeedifySDK_ServerInformation::publicIP[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga4dce2560d948ee96372aa46c316ae5b9">SPEEDIFYSDK_MAX_IP_COUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Public IP addresses of the server Only available on connected server calls. </p>
+<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a4c630f60a1653404eb70edcfe8455137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c630f60a1653404eb70edcfe8455137">&#9670;&nbsp;</a></span>publicIPCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SpeedifySDK_ServerInformation::publicIPCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How many public IPs are in the list. Only available on connected server calls. </p>
+<dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="ab337fda0a1de9ab56399c4ebdc5ae25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab337fda0a1de9ab56399c4ebdc5ae25c">&#9670;&nbsp;</a></span>torrentAllowed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_ServerInformation::torrentAllowed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether this server allows bittorrent/P2P. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 
 </div>

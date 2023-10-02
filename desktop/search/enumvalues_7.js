@@ -4,7 +4,21 @@ var searchData=
   ['networktype_5fcellular',['NETWORKTYPE_CELLULAR',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baee15d79f90293e228aadeef700a54d8a',1,'types.h']]],
   ['networktype_5fethernet',['NETWORKTYPE_ETHERNET',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba1eb038a7b01236f57976d434e6467cba',1,'types.h']]],
   ['networktype_5floopback',['NETWORKTYPE_LOOPBACK',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887bab43d42b3b44a5333e08f7958aba938bb',1,'types.h']]],
+  ['networktype_5fnetworkshare_5fclient',['NETWORKTYPE_NETWORKSHARE_CLIENT',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba518a1d150cfea31d3b0e2ab3c5fa63ed',1,'types.h']]],
+  ['networktype_5fnetworkshare_5fhost',['NETWORKTYPE_NETWORKSHARE_HOST',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baf7b44676b9e1f8cfd4132b56e0082aaa',1,'types.h']]],
   ['networktype_5funknown',['NETWORKTYPE_UNKNOWN',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887baf51a69e0a2c5a3e644f50f786cbc9992',1,'types.h']]],
   ['networktype_5fvpn',['NETWORKTYPE_VPN',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887ba277d6ee1babf5d8abbf2865c58ca66c2',1,'types.h']]],
-  ['networktype_5fwifi',['NETWORKTYPE_WIFI',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887bac0371be8f103c110f715d063499845c5',1,'types.h']]]
+  ['networktype_5fwifi',['NETWORKTYPE_WIFI',['../group___t_y_p_e_s.html#gga1b0e167436dde4e47d01f7057280887bac0371be8f103c110f715d063499845c5',1,'types.h']]],
+  ['nps_5fauthenticated',['NPS_AUTHENTICATED',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4a2bc3c1752e83f78106776cf59788a131',1,'types.h']]],
+  ['nps_5fdisconnected',['NPS_DISCONNECTED',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4a54c763ea999bfb42e013adff4d7fe047',1,'types.h']]],
+  ['nps_5funauthenticated',['NPS_UNAUTHENTICATED',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4a34521f0d8b7b68c22682333a93cdb354',1,'types.h']]],
+  ['nts_5factive',['NTS_ACTIVE',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2a332ed710858feb772ba40ac4951e38fc',1,'types.h']]],
+  ['nts_5fdisabled_5fon_5fclient',['NTS_DISABLED_ON_CLIENT',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2a3f6a67d535ef1012f32798ba4d2b45e1',1,'types.h']]],
+  ['nts_5fdisabled_5fon_5fhost',['NTS_DISABLED_ON_HOST',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2a562311f666081ade41c89ed9fa7f3a02',1,'types.h']]],
+  ['nts_5finactive',['NTS_INACTIVE',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2acdaaf61109b6e71a75ade07ba26df5f5',1,'types.h']]],
+  ['nts_5fnetworks_5foverlimit',['NTS_NETWORKS_OVERLIMIT',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2ae6a383eaa379fb5a42ad006ea50944aa',1,'types.h']]],
+  ['nts_5fno_5fnetworks',['NTS_NO_NETWORKS',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2aec2704ada31976f38deb64c675078246',1,'types.h']]],
+  ['nts_5fnot_5fauthenticated',['NTS_NOT_AUTHENTICATED',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2ae0e5f6dd1a6ed74d447d16c4da1474e1',1,'types.h']]],
+  ['nts_5ftunnel_5ferror',['NTS_TUNNEL_ERROR',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2a478236817939b40d3eb65e2c0f3a7f2c',1,'types.h']]],
+  ['nts_5fvpn_5fnot_5fconnected',['NTS_VPN_NOT_CONNECTED',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2a8e6ee0537665b4654a856f513c4be57f',1,'types.h']]]
 ];

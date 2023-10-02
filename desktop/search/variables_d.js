@@ -1,7 +1,7 @@
 var searchData=
 [
   ['name',['name',['../struct_speedify_s_d_k___create_settings.html#ad6024af07aa98f5d0fb08a06ae696940',1,'SpeedifySDK_CreateSettings::name()'],['../struct_speedify_s_d_k___adapter_data.html#a299b40d13ec1bbdd8ea30b79dfbeefca',1,'SpeedifySDK_AdapterData::name()'],['../struct_speedify_s_d_k___stream_stats.html#aab6d694b73fbfad4da4b7f1aea2d80c1',1,'SpeedifySDK_StreamStats::name()']]],
-  ['num',['num',['../struct_speedify_s_d_k___server_information.html#a3168056b6e8da102c24f457cb71e0588',1,'SpeedifySDK_ServerInformation::num()'],['../struct_speedify_s_d_k___server_information_detailed.html#aa65cb9fc725ad8201be7eefa2ec6ce7b',1,'SpeedifySDK_ServerInformationDetailed::num()'],['../struct_speedify_s_d_k___server_settings.html#af5bbd90f4fdd8eb5be5f53ff0a769663',1,'SpeedifySDK_ServerSettings::num()']]],
+  ['num',['num',['../struct_speedify_s_d_k___server_information.html#a8c972f82b27c417f85999bce4645acaa',1,'SpeedifySDK_ServerInformation::num()'],['../struct_speedify_s_d_k___server_settings.html#af5bbd90f4fdd8eb5be5f53ff0a769663',1,'SpeedifySDK_ServerSettings::num()']]],
   ['numberofsockets',['numberOfSockets',['../struct_speedify_s_d_k___connection_stats.html#a07b6beef7b0274c4146baed895203980',1,'SpeedifySDK_ConnectionStats']]],
   ['numblockresponses',['numBlockResponses',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a8db58041cc8def67e307cf7f97edb841',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
   ['numblocks',['numBlocks',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a75059aececebfeb2096ebd632c589036',1,'SpeedifySDK_SafeBrowsingStatsResult']]],

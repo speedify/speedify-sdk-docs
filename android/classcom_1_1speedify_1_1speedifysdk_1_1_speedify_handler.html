@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -93,14 +93,32 @@ Inheritance diagram for com.speedify.speedifysdk.SpeedifyHandler:</div>
 <area href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html" title="SDK State Update Reciever Interface." alt="com.speedify.speedifysdk.receivers.ISdkStateReceiver" shape="rect" coords="0,56,385,80"/>
 <area href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html" title="Foreground Service Event Interface." alt="com.speedify.speedifysdk.receivers.IForegroundServiceReceiver" shape="rect" coords="395,56,780,80"/>
 <area href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html" title="Websocket IPC Event Interface." alt="com.speedify.speedifysdk.receivers.IWebsocketIPCReceiver" shape="rect" coords="790,56,1175,80"/>
+<area href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html" title="Network Sharing Reciever Interface." alt="com.speedify.speedifysdk.receivers.INetworkSharingReceiver" shape="rect" coords="0,0,385,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab07549428228c0d8e532b6e531fad4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab07549428228c0d8e532b6e531fad4bd">UpdateForegroundNotification</a> (@NonNull Service service, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> state, @NonNull String serverName, boolean killswitchActive)</td></tr>
-<tr class="memdesc:ab07549428228c0d8e532b6e531fad4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to show a notification of the service state.  <a href="#ab07549428228c0d8e532b6e531fad4bd">More...</a><br /></td></tr>
-<tr class="separator:ab07549428228c0d8e532b6e531fad4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bbb3322fcfdc2b5dc9f67ea158a8be0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9bbb3322fcfdc2b5dc9f67ea158a8be0">OnServiceCreate</a> (@NonNull Service service)</td></tr>
+<tr class="memdesc:a9bbb3322fcfdc2b5dc9f67ea158a8be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnCreate.  <a href="#a9bbb3322fcfdc2b5dc9f67ea158a8be0">More...</a><br /></td></tr>
+<tr class="separator:a9bbb3322fcfdc2b5dc9f67ea158a8be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac042bbb5e488176500f34dcb00152457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac042bbb5e488176500f34dcb00152457">OnServiceDestroy</a> (@NonNull Service service)</td></tr>
+<tr class="memdesc:ac042bbb5e488176500f34dcb00152457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnDestroy.  <a href="#ac042bbb5e488176500f34dcb00152457">More...</a><br /></td></tr>
+<tr class="separator:ac042bbb5e488176500f34dcb00152457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a803a5b2b26e93b83598aeb84cfd6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a90a803a5b2b26e93b83598aeb84cfd6e">OnServiceRemoved</a> (@NonNull Service service)</td></tr>
+<tr class="memdesc:a90a803a5b2b26e93b83598aeb84cfd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnRemoved.  <a href="#a90a803a5b2b26e93b83598aeb84cfd6e">More...</a><br /></td></tr>
+<tr class="separator:a90a803a5b2b26e93b83598aeb84cfd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbad7bf96967ed8093f8c930764327c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aacbad7bf96967ed8093f8c930764327c">OnServiceCreate</a> ()</td></tr>
+<tr class="memdesc:aacbad7bf96967ed8093f8c930764327c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnCreate.  <a href="#aacbad7bf96967ed8093f8c930764327c">More...</a><br /></td></tr>
+<tr class="separator:aacbad7bf96967ed8093f8c930764327c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f7a7e80dcbeded14988e4964878be5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3f7a7e80dcbeded14988e4964878be5">OnServiceDestroy</a> ()</td></tr>
+<tr class="memdesc:ac3f7a7e80dcbeded14988e4964878be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnDestroy.  <a href="#ac3f7a7e80dcbeded14988e4964878be5">More...</a><br /></td></tr>
+<tr class="separator:ac3f7a7e80dcbeded14988e4964878be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ce6f836ac6294f1dc9bcb15d20b001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a89ce6f836ac6294f1dc9bcb15d20b001">OnServiceRemoved</a> ()</td></tr>
+<tr class="memdesc:a89ce6f836ac6294f1dc9bcb15d20b001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnRemoved.  <a href="#a89ce6f836ac6294f1dc9bcb15d20b001">More...</a><br /></td></tr>
+<tr class="separator:a89ce6f836ac6294f1dc9bcb15d20b001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23374b2c7d8897eb37cb384079f941a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a23374b2c7d8897eb37cb384079f941a8">UpdateForegroundNotification</a> (@NonNull Service service, @NonNull IForegroundServiceReceiver.ServiceData serviceData)</td></tr>
+<tr class="separator:a23374b2c7d8897eb37cb384079f941a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae86eb9258e54507dc5d06cdbfa91a425"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae86eb9258e54507dc5d06cdbfa91a425">setServiceNotificationLaunchIntent</a> (@Nullable Intent intent)</td></tr>
 <tr class="memdesc:ae86eb9258e54507dc5d06cdbfa91a425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Intent used when use clicks the service foreground notification.  <a href="#ae86eb9258e54507dc5d06cdbfa91a425">More...</a><br /></td></tr>
 <tr class="separator:ae86eb9258e54507dc5d06cdbfa91a425"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,25 +140,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a135f55794b6e601005e6c992b6376041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a135f55794b6e601005e6c992b6376041">OnAdapterOverlimit</a> (@NonNull String adapterID, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> type, @NonNull <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html">AdapterUsageData</a> usageData)</td></tr>
 <tr class="memdesc:a135f55794b6e601005e6c992b6376041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification when an adapter is near its daily or monthly data usage limit.  <a href="#a135f55794b6e601005e6c992b6376041">More...</a><br /></td></tr>
 <tr class="separator:a135f55794b6e601005e6c992b6376041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa2d5b3acc91d7b7db49b721b31a9b12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aaa2d5b3acc91d7b7db49b721b31a9b12">OnLockedSetting</a> (@NonNull String settingAction)</td></tr>
-<tr class="memdesc:aaa2d5b3acc91d7b7db49b721b31a9b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad54044c564d19e6ba493f191608e351b">OnLockedSetting(String,SettingsLockReason)</a>.  <a href="#aaa2d5b3acc91d7b7db49b721b31a9b12">More...</a><br /></td></tr>
-<tr class="separator:aaa2d5b3acc91d7b7db49b721b31a9b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad54044c564d19e6ba493f191608e351b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad54044c564d19e6ba493f191608e351b">OnLockedSetting</a> (@NonNull String settingAction, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings_lock_reason.html">SettingsLockReason</a> lockReason)</td></tr>
 <tr class="memdesc:ad54044c564d19e6ba493f191608e351b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in response to attempt to change a setting that is locked by the server.  <a href="#ad54044c564d19e6ba493f191608e351b">More...</a><br /></td></tr>
 <tr class="separator:ad54044c564d19e6ba493f191608e351b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2995b2d8d6b36b67ed04423b601687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0f2995b2d8d6b36b67ed04423b601687">OnSettingError</a> (@NonNull String settingAction, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html">ErrorType</a> errorType, @Nullable String message)</td></tr>
+<tr class="memdesc:a0f2995b2d8d6b36b67ed04423b601687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called in response to an error changing a setting.  <a href="#a0f2995b2d8d6b36b67ed04423b601687">More...</a><br /></td></tr>
+<tr class="separator:a0f2995b2d8d6b36b67ed04423b601687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c9d6c7d334c10ad726c644dca3b6e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a18c9d6c7d334c10ad726c644dca3b6e6">OnConnectedServer</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> serverInfo)</td></tr>
+<tr class="memdesc:a18c9d6c7d334c10ad726c644dca3b6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected update received.  <a href="#a18c9d6c7d334c10ad726c644dca3b6e6">More...</a><br /></td></tr>
+<tr class="separator:a18c9d6c7d334c10ad726c644dca3b6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025eefc5725b7dbe3b5257f543d02ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a025eefc5725b7dbe3b5257f543d02ce6">OnConnectedServer</a> (<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html">ServerInformation</a> serverInfo)</td></tr>
+<tr class="separator:a025eefc5725b7dbe3b5257f543d02ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a></td></tr>
 <tr class="memitem:a5e21ab222fdfe23d186aeaf03809dac2 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a5e21ab222fdfe23d186aeaf03809dac2">OnLoginError</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html">ErrorType</a> errorType, @Nullable String message)</td></tr>
 <tr class="memdesc:a5e21ab222fdfe23d186aeaf03809dac2 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error when logging in.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a5e21ab222fdfe23d186aeaf03809dac2">More...</a><br /></td></tr>
 <tr class="separator:a5e21ab222fdfe23d186aeaf03809dac2 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0a7ef349a1aeb07a0f60833adedd15 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a8e0a7ef349a1aeb07a0f60833adedd15">OnActivationCode</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html">ErrorType</a> errorType, @Nullable String message, @NonNull String activationCode, @NonNull String activationUrl)</td></tr>
+<tr class="memdesc:a8e0a7ef349a1aeb07a0f60833adedd15 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activation code result.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a8e0a7ef349a1aeb07a0f60833adedd15">More...</a><br /></td></tr>
+<tr class="separator:a8e0a7ef349a1aeb07a0f60833adedd15 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1258ccdc63f2192de39930a0a52db286 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a1258ccdc63f2192de39930a0a52db286">OnConnectError</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html">ErrorType</a> errorType, @Nullable String message)</td></tr>
 <tr class="memdesc:a1258ccdc63f2192de39930a0a52db286 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error when connecting to a server.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a1258ccdc63f2192de39930a0a52db286">More...</a><br /></td></tr>
 <tr class="separator:a1258ccdc63f2192de39930a0a52db286 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab49c7b0ec42d5d478a73e8a04ecd78cd inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab49c7b0ec42d5d478a73e8a04ecd78cd">OnState</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> state)</td></tr>
 <tr class="memdesc:ab49c7b0ec42d5d478a73e8a04ecd78cd inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">State update received.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ab49c7b0ec42d5d478a73e8a04ecd78cd">More...</a><br /></td></tr>
 <tr class="separator:ab49c7b0ec42d5d478a73e8a04ecd78cd inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992ed278f31706e6781939580a4f042b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a992ed278f31706e6781939580a4f042b">OnConnectedServer</a> (@Nullable <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> serverInfo)</td></tr>
-<tr class="memdesc:a992ed278f31706e6781939580a4f042b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected update received.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a992ed278f31706e6781939580a4f042b">More...</a><br /></td></tr>
-<tr class="separator:a992ed278f31706e6781939580a4f042b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a9fc02298b29923c809dda6df0c554 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">OnConnectedServer</a> (@Nullable <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html">ServerInformation</a> serverInfo)</td></tr>
+<tr class="memdesc:a39a9fc02298b29923c809dda6df0c554 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected update received.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">More...</a><br /></td></tr>
+<tr class="separator:a39a9fc02298b29923c809dda6df0c554 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa701a17d55e069d93278ae9402478d0b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aa701a17d55e069d93278ae9402478d0b">OnAdaptersList</a> (@NonNull List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html">AdapterData</a> &gt; adapters)</td></tr>
 <tr class="memdesc:aa701a17d55e069d93278ae9402478d0b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network adapters list update received.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aa701a17d55e069d93278ae9402478d0b">More...</a><br /></td></tr>
 <tr class="separator:aa701a17d55e069d93278ae9402478d0b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,16 +251,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad487888de655b7812a7aa406f9007c2 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aad487888de655b7812a7aa406f9007c2">OnSpeedTestResults</a> (@NonNull List&lt; <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html">SpeedTestResultData</a> &gt; results)</td></tr>
 <tr class="memdesc:aad487888de655b7812a7aa406f9007c2 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Speed test result data.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aad487888de655b7812a7aa406f9007c2">More...</a><br /></td></tr>
 <tr class="separator:aad487888de655b7812a7aa406f9007c2 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html">com.speedify.speedifysdk.receivers.INetworkSharingReceiver</a></td></tr>
+<tr class="memitem:a7197b7ee07afc717481a9e4738da7b83 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a7197b7ee07afc717481a9e4738da7b83">OnNetworkSharingSettings</a> (NetworkSharing.Settings settings)</td></tr>
+<tr class="memdesc:a7197b7ee07afc717481a9e4738da7b83 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network sharing settings.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a7197b7ee07afc717481a9e4738da7b83">More...</a><br /></td></tr>
+<tr class="separator:a7197b7ee07afc717481a9e4738da7b83 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2545d5309c12418bd06605eed81f4716 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a2545d5309c12418bd06605eed81f4716">OnNetworkSharingDiscovery</a> (boolean discoveryActive)</td></tr>
+<tr class="memdesc:a2545d5309c12418bd06605eed81f4716 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network sharing discovery state.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a2545d5309c12418bd06605eed81f4716">More...</a><br /></td></tr>
+<tr class="separator:a2545d5309c12418bd06605eed81f4716 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204885456ab5ca96f42151b895ea5b44 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a204885456ab5ca96f42151b895ea5b44">OnNetworkSharesAvailable</a> (List&lt; NetworkSharing.Peer &gt; availableShares)</td></tr>
+<tr class="memdesc:a204885456ab5ca96f42151b895ea5b44 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available network shares.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a204885456ab5ca96f42151b895ea5b44">More...</a><br /></td></tr>
+<tr class="separator:a204885456ab5ca96f42151b895ea5b44 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f0e1cb2186dc638fbc241e42fdd274 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a42f0e1cb2186dc638fbc241e42fdd274">OnNetworkSharingPeerStatusChange</a> (NetworkSharing.PeerRole role, NetworkSharing.PeerUuid uuid, NetworkSharing.PeerStatus peerStatus, NetworkSharing.TunnelStatus tunnelStatus, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html">ErrorType</a> errorType, String errorMessage)</td></tr>
+<tr class="memdesc:a42f0e1cb2186dc638fbc241e42fdd274 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">state changes and connection errors with peers  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a42f0e1cb2186dc638fbc241e42fdd274">More...</a><br /></td></tr>
+<tr class="separator:a42f0e1cb2186dc638fbc241e42fdd274 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e50337a238c1a80953f0a0e73a15fce inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a3e50337a238c1a80953f0a0e73a15fce">OnNetworkSharingPairRequest</a> (NetworkSharing.PeerUuid uuid, String displayName)</td></tr>
+<tr class="memdesc:a3e50337a238c1a80953f0a0e73a15fce inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event when a peer requests a pairing.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a3e50337a238c1a80953f0a0e73a15fce">More...</a><br /></td></tr>
+<tr class="separator:a3e50337a238c1a80953f0a0e73a15fce inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5699491849f495b2db631488b69390da inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a5699491849f495b2db631488b69390da">OnNetworkSharingNewPeerAvailable</a> (NetworkSharing.PeerUuid uuid, String displayName)</td></tr>
+<tr class="memdesc:a5699491849f495b2db631488b69390da inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event when a new peer is available.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a5699491849f495b2db631488b69390da">More...</a><br /></td></tr>
+<tr class="separator:a5699491849f495b2db631488b69390da inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a></td></tr>
-<tr class="memitem:a03def0d6629fa896c90fa46b625688fd inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a03def0d6629fa896c90fa46b625688fd">OnServiceCreate</a> ()</td></tr>
-<tr class="memdesc:a03def0d6629fa896c90fa46b625688fd inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnCreate.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a03def0d6629fa896c90fa46b625688fd">More...</a><br /></td></tr>
-<tr class="separator:a03def0d6629fa896c90fa46b625688fd inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95b08a933ae7958bd2c67bdeccbdff97 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a95b08a933ae7958bd2c67bdeccbdff97">OnServiceDestroy</a> ()</td></tr>
-<tr class="memdesc:a95b08a933ae7958bd2c67bdeccbdff97 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnDestroy.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a95b08a933ae7958bd2c67bdeccbdff97">More...</a><br /></td></tr>
-<tr class="separator:a95b08a933ae7958bd2c67bdeccbdff97 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030f748a543c19354ff4ffcc60a8732b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a030f748a543c19354ff4ffcc60a8732b">OnServiceRemoved</a> ()</td></tr>
-<tr class="memdesc:a030f748a543c19354ff4ffcc60a8732b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnRemoved.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a030f748a543c19354ff4ffcc60a8732b">More...</a><br /></td></tr>
-<tr class="separator:a030f748a543c19354ff4ffcc60a8732b inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643b710fb39a9a0ba71538a10c6bddfb inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a643b710fb39a9a0ba71538a10c6bddfb">UpdateForegroundNotification</a> (@NonNull Service service, @NonNull <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html">ServiceData</a> serviceData)</td></tr>
+<tr class="memdesc:a643b710fb39a9a0ba71538a10c6bddfb inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to show a notification of the service state.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a643b710fb39a9a0ba71538a10c6bddfb">More...</a><br /></td></tr>
+<tr class="separator:a643b710fb39a9a0ba71538a10c6bddfb inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80e9946f9f161e563ab7c4c98e5cb6e9 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memItemLeft" align="right" valign="top">default boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a80e9946f9f161e563ab7c4c98e5cb6e9">OnServiceStartError</a> ()</td></tr>
 <tr class="memdesc:a80e9946f9f161e563ab7c4c98e5cb6e9 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error starting the vpn service.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a80e9946f9f161e563ab7c4c98e5cb6e9">More...</a><br /></td></tr>
 <tr class="separator:a80e9946f9f161e563ab7c4c98e5cb6e9 inherit pub_methods_interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,30 +378,53 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa2d5b3acc91d7b7db49b721b31a9b12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa2d5b3acc91d7b7db49b721b31a9b12">&#9670;&nbsp;</a></span>OnLockedSetting() <span class="overload">[1/2]</span></h2>
+<a id="a18c9d6c7d334c10ad726c644dca3b6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c9d6c7d334c10ad726c644dca3b6e6">&#9670;&nbsp;</a></span>OnConnectedServer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnLockedSetting </td>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnConnectedServer </td>
           <td>(</td>
-          <td class="paramtype">@NonNull String&#160;</td>
-          <td class="paramname"><em>settingAction</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a>&#160;</td>
+          <td class="paramname"><em>serverInfo</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad54044c564d19e6ba493f191608e351b">OnLockedSetting(String,SettingsLockReason)</a>. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>As of 11.2.</dd></dl>
-<p>Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ad54044c564d19e6ba493f191608e351b">OnLockedSetting(String,SettingsLockReason)</a> </p>
+<p>Connected update received. </p>
+<p>Send on start of connection attempt and connection completion. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serverInfo</td><td>currently connected server </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 14.0. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">OnConnectedServer(ServerInformation)</a> </dd></dl>
+
+</div>
+</div>
+<a id="a025eefc5725b7dbe3b5257f543d02ce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025eefc5725b7dbe3b5257f543d02ce6">&#9670;&nbsp;</a></span>OnConnectedServer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnConnectedServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html">ServerInformation</a>&#160;</td>
+          <td class="paramname"><em>serverInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="ad54044c564d19e6ba493f191608e351b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad54044c564d19e6ba493f191608e351b">&#9670;&nbsp;</a></span>OnLockedSetting() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54044c564d19e6ba493f191608e351b">&#9670;&nbsp;</a></span>OnLockedSetting()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -395,9 +457,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
-
-<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a0eb8ee4e84e6d889076c4ff3558577ba">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>As of 14.0. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0f2995b2d8d6b36b67ed04423b601687">OnSettingError(String,ErrorType,String)</a> </dd></dl>
 
 </div>
 </div>
@@ -441,6 +501,138 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9bbb3322fcfdc2b5dc9f67ea158a8be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bbb3322fcfdc2b5dc9f67ea158a8be0">&#9670;&nbsp;</a></span>OnServiceCreate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnServiceCreate </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull Service&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for vpn service OnCreate. </p>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a4d2afe1faf6e69dc59eb43d5277e4c2d">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>.</p>
+
+</div>
+</div>
+<a id="aacbad7bf96967ed8093f8c930764327c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacbad7bf96967ed8093f8c930764327c">&#9670;&nbsp;</a></span>OnServiceCreate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnServiceCreate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for vpn service OnCreate. </p>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>as of 14.0. use OnServiceCreate(Service) instead </dd></dl>
+
+</div>
+</div>
+<a id="ac042bbb5e488176500f34dcb00152457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac042bbb5e488176500f34dcb00152457">&#9670;&nbsp;</a></span>OnServiceDestroy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnServiceDestroy </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull Service&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for vpn service OnDestroy. </p>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a3bf8345f54003a979f2a827da75dcfe2">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>.</p>
+
+</div>
+</div>
+<a id="ac3f7a7e80dcbeded14988e4964878be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f7a7e80dcbeded14988e4964878be5">&#9670;&nbsp;</a></span>OnServiceDestroy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnServiceDestroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for vpn service OnDestroy. </p>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>as of 14.0. use OnServiceDestroy(Service) instead </dd></dl>
+
+</div>
+</div>
+<a id="a90a803a5b2b26e93b83598aeb84cfd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a803a5b2b26e93b83598aeb84cfd6e">&#9670;&nbsp;</a></span>OnServiceRemoved() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnServiceRemoved </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull Service&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for vpn service OnRemoved. </p>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#ac35f26175ce85f76ec45fe5a08c14d6f">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>.</p>
+
+</div>
+</div>
+<a id="a89ce6f836ac6294f1dc9bcb15d20b001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ce6f836ac6294f1dc9bcb15d20b001">&#9670;&nbsp;</a></span>OnServiceRemoved() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnServiceRemoved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for vpn service OnRemoved. </p>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>as of 14.0. use OnServiceRemoved(Service) instead </dd></dl>
+
+</div>
+</div>
 <a id="ab66c9197d2b8e9aeea084b2eb6a12f2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab66c9197d2b8e9aeea084b2eb6a12f2c">&#9670;&nbsp;</a></span>OnServiceRestart()</h2>
 
@@ -478,6 +670,53 @@ Protected Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>10.4 </dd></dl>
 
 <p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a08d999aa9c336ea4034e2967a8cfdf32">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>.</p>
+
+</div>
+</div>
+<a id="a0f2995b2d8d6b36b67ed04423b601687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2995b2d8d6b36b67ed04423b601687">&#9670;&nbsp;</a></span>OnSettingError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnSettingError </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull String&#160;</td>
+          <td class="paramname"><em>settingAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html">ErrorType</a>&#160;</td>
+          <td class="paramname"><em>errorType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@Nullable String&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called in response to an error changing a setting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settingAction</td><td>string identifying the setting that failed to change </td></tr>
+    <tr><td class="paramname">errorType</td><td>type of error </td></tr>
+    <tr><td class="paramname">message</td><td>error message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>fyouture </dd></dl>
+
+<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aca4aa36161e17d011603b85af3960c33">com.speedify.speedifysdk.receivers.ISdkStateReceiver</a>.</p>
 
 </div>
 </div>
@@ -562,8 +801,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab07549428228c0d8e532b6e531fad4bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab07549428228c0d8e532b6e531fad4bd">&#9670;&nbsp;</a></span>UpdateForegroundNotification()</h2>
+<a id="a23374b2c7d8897eb37cb384079f941a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23374b2c7d8897eb37cb384079f941a8">&#9670;&nbsp;</a></span>UpdateForegroundNotification()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -577,20 +816,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a>&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">@NonNull String&#160;</td>
-          <td class="paramname"><em>serverName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>killswitchActive</em>&#160;</td>
+          <td class="paramtype">@NonNull IForegroundServiceReceiver.ServiceData&#160;</td>
+          <td class="paramname"><em>serviceData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -599,20 +826,6 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Callback to show a notification of the service state. </p>
-<p>A default implementation is provided. If overriding, it is required on Oreo and higher that you call service.startForeground so that Android does not automatically stop the service after a few seconds. Prior to Oreo it is still recommended to use service.startForeground so that Android is less likely to destroy the service in low memory situations. Called from secondary (:vpnservice) process. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">service</td><td>Reference to the vpn service </td></tr>
-    <tr><td class="paramname">state</td><td>Current state </td></tr>
-    <tr><td class="paramname">serverName</td><td>Name of current server connected to </td></tr>
-    <tr><td class="paramname">killswitchActive</td><td>if killswitch setting is on </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
-
-<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a166b17e8b05cd4d6e71cfc786b7853ac">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver</a>.</p>
 
 </div>
 </div>

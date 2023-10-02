@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -73,6 +73,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">com.speedify.speedifysdk.Logging.LogHandler Class Reference</div>  </div>
@@ -108,6 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c7f806523821b9b00c826818e82f745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#a8c7f806523821b9b00c826818e82f745">error</a> (String message, Throwable th)</td></tr>
 <tr class="memdesc:a8c7f806523821b9b00c826818e82f745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs to 'error' level.  <a href="#a8c7f806523821b9b00c826818e82f745">More...</a><br /></td></tr>
 <tr class="separator:a8c7f806523821b9b00c826818e82f745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae0971153e4b33e137791d19133857c88"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#ae0971153e4b33e137791d19133857c88">setVendorLogListener</a> (<a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_listener.html">LogListener</a> loglistener)</td></tr>
+<tr class="memdesc:ae0971153e4b33e137791d19133857c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an a callback which will receive all log messages.  <a href="#ae0971153e4b33e137791d19133857c88">More...</a><br /></td></tr>
+<tr class="separator:ae0971153e4b33e137791d19133857c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4b284b454b8d93490f5b114cdb9b5b94"></a>
@@ -292,6 +299,41 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+
+</div>
+</div>
+<a id="ae0971153e4b33e137791d19133857c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0971153e4b33e137791d19133857c88">&#9670;&nbsp;</a></span>setVendorLogListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void com.speedify.speedifysdk.Logging.LogHandler.setVendorLogListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_listener.html">LogListener</a>&#160;</td>
+          <td class="paramname"><em>loglistener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds an a callback which will receive all log messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loglistener</td><td>An implementation of the <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_listener.html" title="Interface to allow developers to get callbacks on all Java logging.">LogListener</a> inferface </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
 
 </div>
 </div>

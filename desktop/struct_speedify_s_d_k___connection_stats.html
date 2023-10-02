@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a5b5de7ce8180aaefbabc01b06d4e172e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___connection_stats.html#a5b5de7ce8180aaefbabc01b06d4e172e">mos</a></td></tr>
 <tr class="memdesc:a5b5de7ce8180aaefbabc01b06d4e172e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mean Opinion Score, 1-5.  <a href="#a5b5de7ce8180aaefbabc01b06d4e172e">More...</a><br /></td></tr>
 <tr class="separator:a5b5de7ce8180aaefbabc01b06d4e172e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475706a0fb6308ee11be2f3a35fe902f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___connection_stats.html#a475706a0fb6308ee11be2f3a35fe902f">sendBytes</a></td></tr>
+<tr class="memdesc:a475706a0fb6308ee11be2f3a35fe902f"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes sent  <a href="#a475706a0fb6308ee11be2f3a35fe902f">More...</a><br /></td></tr>
+<tr class="separator:a475706a0fb6308ee11be2f3a35fe902f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95539e2abe8e0175d95a3b688b70477e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___connection_stats.html#a95539e2abe8e0175d95a3b688b70477e">receiveBytes</a></td></tr>
+<tr class="memdesc:a95539e2abe8e0175d95a3b688b70477e"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes received  <a href="#a95539e2abe8e0175d95a3b688b70477e">More...</a><br /></td></tr>
+<tr class="separator:a95539e2abe8e0175d95a3b688b70477e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a9ad3d5e57e2b2be82bd9205191637a2c"></a>
@@ -402,6 +408,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a95539e2abe8e0175d95a3b688b70477e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95539e2abe8e0175d95a3b688b70477e">&#9670;&nbsp;</a></span>receiveBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SpeedifySDK_ConnectionStats::receiveBytes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bytes received </p>
+<p>Not available on historic tunnel stat updates. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+</div>
+</div>
 <a id="ac607ae60efde70a0e6703098991845da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac607ae60efde70a0e6703098991845da">&#9670;&nbsp;</a></span>receiveEstimateMbps</h2>
 
@@ -450,6 +473,23 @@ Data Fields</h2></td></tr>
 
 <p>bits per second sent through this tunnel. </p>
 <p>Not available on historic tunnel stat updates. </p><dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a475706a0fb6308ee11be2f3a35fe902f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475706a0fb6308ee11be2f3a35fe902f">&#9670;&nbsp;</a></span>sendBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SpeedifySDK_ConnectionStats::sendBytes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bytes sent </p>
+<p>Not available on historic tunnel stat updates. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
 
 </div>
 </div>

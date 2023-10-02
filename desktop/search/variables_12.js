@@ -4,7 +4,7 @@ var searchData=
   ['testtype',['testType',['../struct_speedify_s_d_k___speed_test_result_data.html#ab251d14ee3dfcb844278697b96355cba',1,'SpeedifySDK_SpeedTestResultData']]],
   ['time',['time',['../struct_speedify_s_d_k___connection_stats_group.html#aff8e62b6fcd54ba39eede11dbe4a5956',1,'SpeedifySDK_ConnectionStatsGroup']]],
   ['title',['title',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html#a65785dad720219c29ac820912164b10f',1,'SpeedifySDK_LocalProxyDomainWatchlistHitResult::title()'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a26b83d082b0d3cffb8d261639112ec18',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::title()']]],
-  ['torrentallowed',['torrentAllowed',['../struct_speedify_s_d_k___server_information_detailed.html#ad5707ddd194493e6b541cc26c1a863c7',1,'SpeedifySDK_ServerInformationDetailed']]],
+  ['torrentallowed',['torrentAllowed',['../struct_speedify_s_d_k___server_information.html#ab337fda0a1de9ab56399c4ebdc5ae25c',1,'SpeedifySDK_ServerInformation']]],
   ['totalbps',['totalBps',['../struct_speedify_s_d_k___connection_stats.html#a229dd9fac65cb930100fc60da0fd8644',1,'SpeedifySDK_ConnectionStats']]],
   ['totalconnectedminutes',['totalConnectedMinutes',['../struct_speedify_s_d_k___session_stats.html#a66371088fe0e6f2ea1a13a72b543d61d',1,'SpeedifySDK_SessionStats']]],
   ['totalfailoversaves',['totalFailoverSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#aef5c04251f4f44199a3ed39119c2c26d',1,'SpeedifySDK_StreamingSessionStats']]],
@@ -13,6 +13,7 @@ var searchData=
   ['totalspeedmodesaves',['totalSpeedModeSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#afa9f0c6733adf925cee2493d1c6f19ea',1,'SpeedifySDK_StreamingSessionStats']]],
   ['totalstreams',['totalStreams',['../struct_speedify_s_d_k___streaming_session_stats.html#a3570f959444a699c827bf42a4fb8877e',1,'SpeedifySDK_StreamingSessionStats']]],
   ['transportmode',['transportMode',['../struct_speedify_s_d_k___settings.html#aba5fb1a5c8ff54a8d0c6404a0ef23098',1,'SpeedifySDK_Settings']]],
+  ['tunnelstatus',['tunnelStatus',['../struct_speedify_s_d_k___network_sharing_connection_result.html#ae50c77c95822e5cac389767ce448bd41',1,'SpeedifySDK_NetworkSharingConnectionResult::tunnelStatus()'],['../struct_speedify_s_d_k___network_sharing_connection.html#a4329bdbb20f76bf9ed3918ce8bb1dd16',1,'SpeedifySDK_NetworkSharingConnection::tunnelStatus()']]],
   ['tunstats',['tunStats',['../struct_speedify_s_d_k___session_stats.html#a428c79a93ec260f524e7a759f646a3af',1,'SpeedifySDK_SessionStats']]],
   ['type',['type',['../struct_speedify_s_d_k___new_adapter_result.html#ad1c52d24b27227a3e384af8288f296f2',1,'SpeedifySDK_NewAdapterResult::type()'],['../struct_speedify_s_d_k___adapter_overlimit_result.html#a45ee79e89d0151c22fb9a0c963a4e76f',1,'SpeedifySDK_AdapterOverlimitResult::type()'],['../struct_speedify_s_d_k___adapter_data.html#a3e3fba2959ab5b6beba8aeb465fd7444',1,'SpeedifySDK_AdapterData::type()']]]
 ];

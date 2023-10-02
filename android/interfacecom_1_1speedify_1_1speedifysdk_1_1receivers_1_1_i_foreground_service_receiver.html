@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -72,6 +72,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -93,23 +94,29 @@ Inheritance diagram for com.speedify.speedifysdk.receivers.IForegroundServiceRec
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html">ServiceData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common status data used in default foreground notification.  <a href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a166b17e8b05cd4d6e71cfc786b7853ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a166b17e8b05cd4d6e71cfc786b7853ac">UpdateForegroundNotification</a> (@NonNull Service service, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> state, @NonNull String serverName, boolean killswitchActive)</td></tr>
-<tr class="memdesc:a166b17e8b05cd4d6e71cfc786b7853ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to show a notification of the service state.  <a href="#a166b17e8b05cd4d6e71cfc786b7853ac">More...</a><br /></td></tr>
-<tr class="separator:a166b17e8b05cd4d6e71cfc786b7853ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643b710fb39a9a0ba71538a10c6bddfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a643b710fb39a9a0ba71538a10c6bddfb">UpdateForegroundNotification</a> (@NonNull Service service, @NonNull <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html">ServiceData</a> serviceData)</td></tr>
+<tr class="memdesc:a643b710fb39a9a0ba71538a10c6bddfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to show a notification of the service state.  <a href="#a643b710fb39a9a0ba71538a10c6bddfb">More...</a><br /></td></tr>
+<tr class="separator:a643b710fb39a9a0ba71538a10c6bddfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8feaca7f8240a278a892a6b5375590ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a8feaca7f8240a278a892a6b5375590ed">HideForegroundNotification</a> (@NonNull Service service)</td></tr>
 <tr class="memdesc:a8feaca7f8240a278a892a6b5375590ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service task is removed.  <a href="#a8feaca7f8240a278a892a6b5375590ed">More...</a><br /></td></tr>
 <tr class="separator:a8feaca7f8240a278a892a6b5375590ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03def0d6629fa896c90fa46b625688fd"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a03def0d6629fa896c90fa46b625688fd">OnServiceCreate</a> ()</td></tr>
-<tr class="memdesc:a03def0d6629fa896c90fa46b625688fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnCreate.  <a href="#a03def0d6629fa896c90fa46b625688fd">More...</a><br /></td></tr>
-<tr class="separator:a03def0d6629fa896c90fa46b625688fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95b08a933ae7958bd2c67bdeccbdff97"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a95b08a933ae7958bd2c67bdeccbdff97">OnServiceDestroy</a> ()</td></tr>
-<tr class="memdesc:a95b08a933ae7958bd2c67bdeccbdff97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnDestroy.  <a href="#a95b08a933ae7958bd2c67bdeccbdff97">More...</a><br /></td></tr>
-<tr class="separator:a95b08a933ae7958bd2c67bdeccbdff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030f748a543c19354ff4ffcc60a8732b"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a030f748a543c19354ff4ffcc60a8732b">OnServiceRemoved</a> ()</td></tr>
-<tr class="memdesc:a030f748a543c19354ff4ffcc60a8732b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnRemoved.  <a href="#a030f748a543c19354ff4ffcc60a8732b">More...</a><br /></td></tr>
-<tr class="separator:a030f748a543c19354ff4ffcc60a8732b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2afe1faf6e69dc59eb43d5277e4c2d"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a4d2afe1faf6e69dc59eb43d5277e4c2d">OnServiceCreate</a> (@NonNull Service service)</td></tr>
+<tr class="memdesc:a4d2afe1faf6e69dc59eb43d5277e4c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnCreate.  <a href="#a4d2afe1faf6e69dc59eb43d5277e4c2d">More...</a><br /></td></tr>
+<tr class="separator:a4d2afe1faf6e69dc59eb43d5277e4c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf8345f54003a979f2a827da75dcfe2"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a3bf8345f54003a979f2a827da75dcfe2">OnServiceDestroy</a> (@NonNull Service service)</td></tr>
+<tr class="memdesc:a3bf8345f54003a979f2a827da75dcfe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnDestroy.  <a href="#a3bf8345f54003a979f2a827da75dcfe2">More...</a><br /></td></tr>
+<tr class="separator:a3bf8345f54003a979f2a827da75dcfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35f26175ce85f76ec45fe5a08c14d6f"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#ac35f26175ce85f76ec45fe5a08c14d6f">OnServiceRemoved</a> (@NonNull Service service)</td></tr>
+<tr class="memdesc:ac35f26175ce85f76ec45fe5a08c14d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnRemoved.  <a href="#ac35f26175ce85f76ec45fe5a08c14d6f">More...</a><br /></td></tr>
+<tr class="separator:ac35f26175ce85f76ec45fe5a08c14d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d999aa9c336ea4034e2967a8cfdf32"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a08d999aa9c336ea4034e2967a8cfdf32">OnServiceRestart</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> lastState, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html">RestartReason</a> reason)</td></tr>
 <tr class="memdesc:a08d999aa9c336ea4034e2967a8cfdf32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown.  <a href="#a08d999aa9c336ea4034e2967a8cfdf32">More...</a><br /></td></tr>
 <tr class="separator:a08d999aa9c336ea4034e2967a8cfdf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,8 +157,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a03def0d6629fa896c90fa46b625688fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03def0d6629fa896c90fa46b625688fd">&#9670;&nbsp;</a></span>OnServiceCreate()</h2>
+<a id="a4d2afe1faf6e69dc59eb43d5277e4c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2afe1faf6e69dc59eb43d5277e4c2d">&#9670;&nbsp;</a></span>OnServiceCreate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,19 +166,22 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">default void com.speedify.speedifysdk.receivers.IForegroundServiceReceiver.OnServiceCreate </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">@NonNull Service&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Callback for vpn service OnCreate. </p>
-<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a9bbb3322fcfdc2b5dc9f67ea158a8be0">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>
-<a id="a95b08a933ae7958bd2c67bdeccbdff97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95b08a933ae7958bd2c67bdeccbdff97">&#9670;&nbsp;</a></span>OnServiceDestroy()</h2>
+<a id="a3bf8345f54003a979f2a827da75dcfe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf8345f54003a979f2a827da75dcfe2">&#9670;&nbsp;</a></span>OnServiceDestroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,14 +189,17 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">default void com.speedify.speedifysdk.receivers.IForegroundServiceReceiver.OnServiceDestroy </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">@NonNull Service&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Callback for vpn service OnDestroy. </p>
-<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac042bbb5e488176500f34dcb00152457">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>
@@ -211,8 +224,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a030f748a543c19354ff4ffcc60a8732b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a030f748a543c19354ff4ffcc60a8732b">&#9670;&nbsp;</a></span>OnServiceRemoved()</h2>
+<a id="ac35f26175ce85f76ec45fe5a08c14d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35f26175ce85f76ec45fe5a08c14d6f">&#9670;&nbsp;</a></span>OnServiceRemoved()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,14 +233,17 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">default void com.speedify.speedifysdk.receivers.IForegroundServiceReceiver.OnServiceRemoved </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">@NonNull Service&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Callback for vpn service OnRemoved. </p>
-<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
+<p>Called from secondary (:vpnservice) process. </p><dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
+
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a90a803a5b2b26e93b83598aeb84cfd6e">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>
@@ -292,8 +308,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a166b17e8b05cd4d6e71cfc786b7853ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a166b17e8b05cd4d6e71cfc786b7853ac">&#9670;&nbsp;</a></span>UpdateForegroundNotification()</h2>
+<a id="a643b710fb39a9a0ba71538a10c6bddfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643b710fb39a9a0ba71538a10c6bddfb">&#9670;&nbsp;</a></span>UpdateForegroundNotification()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,20 +323,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a>&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">@NonNull String&#160;</td>
-          <td class="paramname"><em>serverName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>killswitchActive</em>&#160;</td>
+          <td class="paramtype">@NonNull <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html">ServiceData</a>&#160;</td>
+          <td class="paramname"><em>serviceData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -334,15 +338,11 @@ Public Member Functions</h2></td></tr>
 <p>A default implementation is provided. If overriding, it is required on Oreo and higher that you call service.startForeground so that Android does not automatically stop the service after a few seconds. Prior to Oreo it is still recommended to use service.startForeground so that Android is less likely to destroy the service in low memory situations. Called from secondary (:vpnservice) process. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">service</td><td>Reference to the vpn service </td></tr>
-    <tr><td class="paramname">state</td><td>Current state </td></tr>
-    <tr><td class="paramname">serverName</td><td>Name of current server connected to </td></tr>
-    <tr><td class="paramname">killswitchActive</td><td>if killswitch setting is on </td></tr>
+    <tr><td class="paramname">serviceData</td><td>Data to use in the notification </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>5.6 </dd></dl>
-
-<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab07549428228c0d8e532b6e531fad4bd">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>14.0 </dd></dl>
 
 </div>
 </div>

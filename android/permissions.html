@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -86,12 +86,16 @@ $(function() {
 </ul>
 </li>
 <li><code>USE_FULL_SCREEN_INTENT</code><ul>
-<li>Needed to show initial VPN permission on Android Q+</li>
+<li>Needed to show initial VPN permission on Android Q+, unused since Android U</li>
 </ul>
 </li>
 <li><code>AD_ID</code>, via <a class="el" href="integration.html#integrate_aar">play-services-ads-identifier</a> dependency<ul>
 <li>Identifier for anonymous stats</li>
 <li>Pre-Oreo autoaccounts</li>
+</ul>
+</li>
+<li><code>FOREGROUND_SERVICE_CONNECTED_DEVICE</code><ul>
+<li>Ability to run VPN service in background as of Android U</li>
 </ul>
 </li>
 </ul>
@@ -106,7 +110,11 @@ $(function() {
 </ul>
 </li>
 <li><code>VIBRATE</code><ul>
-<li>Default <a class="el" href="servicenotification.html">foreground notification</a> will vibrate when entering kill switch mode </li>
+<li>Default <a class="el" href="servicenotification.html">foreground notification</a> will vibrate when entering kill switch mode</li>
+</ul>
+</li>
+<li><code>CHANGE_WIFI_MULTICAST_STATE</code><ul>
+<li>Required for network sharing </li>
 </ul>
 </li>
 </ul>

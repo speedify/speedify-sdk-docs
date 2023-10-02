@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">13.3.1</span>
+   &#160;<span id="projectnumber">14.1.0</span>
    </div>
   </td>
  </tr>
@@ -91,8 +91,14 @@ $(function() {
 <li>receiveBps
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed">com.speedify.speedifysdk.Types.ConnectionStats</a>
 </li>
+<li>receiveBytes
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a1665d6c526c59ecbf3ef2e5aebbad825">com.speedify.speedifysdk.Types.ConnectionStats</a>
+</li>
 <li>receiveEstimateMbps
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ace4da62624db5f8b60ff62abe5f233c2">com.speedify.speedifysdk.Types.ConnectionStats</a>
+</li>
+<li>reconnectToNetworkShare()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#add2c7114816c33666139cf1171a42878">com.speedify.speedifysdk.SpeedifySDK</a>
 </li>
 <li>REDUNDANT
 : <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a99278b454b2ca49335aec1d661798ad8">com.speedify.speedifysdk.Types.BondingMode</a>
@@ -108,6 +114,9 @@ $(function() {
 </li>
 <li>refreshCaptivePortals()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac1483aa4fe6cff812382ba363c1b3377">com.speedify.speedifysdk.SpeedifySDK</a>
+</li>
+<li>refreshConnectedServer()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a641df3c0ee280c65b01209c8df4d9284">com.speedify.speedifysdk.SpeedifySDK</a>
 </li>
 <li>refreshDirectory()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab7d926e0a8bb87cddc5421abfb87c381">com.speedify.speedifysdk.SpeedifySDK</a>
@@ -135,6 +144,15 @@ $(function() {
 </li>
 <li>refreshNetworks()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab8baf6efb218d16c751b818f98a8cc67">com.speedify.speedifysdk.SpeedifySDK</a>
+</li>
+<li>refreshNetworkSharesAvailable()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a624611cda2871e7c148081abf1c57765">com.speedify.speedifysdk.SpeedifySDK</a>
+</li>
+<li>refreshNetworkSharingDiscovery()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab8fbea5d2eb3b479d9229ec16a34078a">com.speedify.speedifysdk.SpeedifySDK</a>
+</li>
+<li>refreshNetworkSharingSettings()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a5229bfc0dd932e7d56983f67ab584a12">com.speedify.speedifysdk.SpeedifySDK</a>
 </li>
 <li>refreshNonVPNApplications()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a47269635f9513a9e23f694b9e3284330">com.speedify.speedifysdk.SpeedifySDK</a>
@@ -178,17 +196,17 @@ $(function() {
 <li>registerWsMessageHandler()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0c3dc265577639dd4dbf364f38944110">com.speedify.speedifysdk.SpeedifySDK</a>
 </li>
+<li>REJECT
+: <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_pair_request_behavior.html#aaea48878fbaffdeec8a94049441c9e10">com.speedify.speedifysdk.Types.NetworkSharing.PairRequestBehavior</a>
+</li>
 <li>remoteIp
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aca783cf8aa6edd1c8b5d8f496dc19c93">com.speedify.speedifysdk.Types.ConnectionStats</a>
 </li>
 <li>remove()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#a96daf7c11353ce1199a931c314f0a3da">com.speedify.speedifysdk.Preferences</a>
 </li>
-<li>removeWithPrefix()
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#acc38381e1419ff25274c09ecdb2735ce">com.speedify.speedifysdk.Preferences</a>
-</li>
-<li>replaceSdkNameInString()
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ace30ecbb5e11a579b83c41a13f85e34d">com.speedify.speedifysdk.SpeedifySDK</a>
+<li>requestNetworkSharingPair()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7e27590bafbc36a8cd62e584c22665ed">com.speedify.speedifysdk.SpeedifySDK</a>
 </li>
 <li>requestToDisableDoH
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a67f025496aa6c365af15ae7840c96c0d">com.speedify.speedifysdk.Types.PrivacySettings</a>

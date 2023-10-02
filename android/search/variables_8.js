@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['id',['id',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ae357a0f1aff6c9a64e5239fb03dd1e54',1,'com::speedify::speedifysdk::Types::StreamStats']]],
+  ['id',['id',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ae357a0f1aff6c9a64e5239fb03dd1e54',1,'com.speedify.speedifysdk.Types.StreamStats.id()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper_1_1_options.html#a724436996f9bc86f1f19106a27cab28f',1,'com.speedify.speedifysdk.NotificationHelper.Options.id()']]],
   ['ignorelast',['IGNORELAST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a026c233869d1afaaffd92bdae6fbc2a9',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
+  ['inactive',['INACTIVE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_tunnel_status.html#a850d2f02e012891420d0f9c4a62a711b',1,'com::speedify::speedifysdk::Types::NetworkSharing::TunnelStatus']]],
   ['inactivetimeout',['INACTIVETIMEOUT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a9f3a721c531a24ba2a5d8387b46be305',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
   ['inflight',['inFlight',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a4cecf6e26f1b888599f00e991d41fd0d',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['inflightwindow',['inFlightWindow',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a91aff05d023297e352276f886593f031',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['info',['INFO',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_log_level.html#aafb9a0cb81e988217ce5eab2aa029892',1,'com::speedify::speedifysdk::Types::LogLevel']]],
   ['interrupted',['INTERRUPTED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html#a6aa5d78e35585ec9648af18040ac5054',1,'com.speedify.speedifysdk.Types.RestartReason.INTERRUPTED()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#aa26e0a4c9e23848c8151c61508208211',1,'com.speedify.speedifysdk.Types.DisconnectReason.INTERRUPTED()']]],
+  ['invalid_5fargument',['INVALID_ARGUMENT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a0579279d6bb53d45467bafede4759a08',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['ipaddress',['ipAddress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#a763c986b37f74a17049098c3d19c695a',1,'com::speedify::speedifysdk::Types::IPRange']]],
   ['ipleakprotection',['ipLeakProtection',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#abedb65feaacfa1b7b66f2116fe1b86f6',1,'com::speedify::speedifysdk::Types::PrivacySettings']]],
   ['ipv4',['ipv4',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a39c2166bdb16e5e2cc0a70427e9a37c9',1,'com.speedify.speedifysdk.Types.LocalProxySettings.ipv4()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#abda3993d0d67c4eb69bf8964ddce2fe4',1,'com.speedify.speedifysdk.Types.FirewallSettings.ipv4()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_settings.html#a6bda483d3919f20814556a865dffd5ff',1,'com.speedify.speedifysdk.Types.StreamingSettings.ipv4()']]],
@@ -14,6 +16,7 @@ var searchData=
   ['isautoaccount',['isAutoAccount',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a2d4cab8504ccd416d1e17901653361c1',1,'com::speedify::speedifysdk::Types::AccountingData']]],
   ['iserror',['isError',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#ad665169e05ea2af39fdcef8633a99e99',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
   ['isp',['isp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a69519e2e4b6c082b2ab7cad59e4dbe58',1,'com::speedify::speedifysdk::Types::AdapterData']]],
+  ['ispremium',['isPremium',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#a2c573cbb682be1a4a3566ff7fab0b5d9',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['isprivate',['isPrivate',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af95cbcc9eab26731861344fa2e66ef82',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['isteam',['isTeam',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a01908994e38582ae3cd9d044f402cf5b',1,'com::speedify::speedifysdk::Types::AccountingData']]]
 ];

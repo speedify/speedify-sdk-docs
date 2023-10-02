@@ -212,6 +212,9 @@
                 <a href="../Protocols/SpeedifyLoginErrorDelegate.html">SpeedifyLoginErrorDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyPasDelegate.html">SpeedifyPasDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -260,6 +263,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/AccountingData.html">AccountingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActivationCode.html">ActivationCode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/AdapterData.html">AdapterData</a>
@@ -313,6 +319,39 @@
                 <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing.html">NetworkSharing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PeerRole.html">– PeerRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PairRequestBehavior.html">– PairRequestBehavior</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PeerStatus.html">– PeerStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/TunnelStatus.html">– TunnelStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/ConnectCode.html">– ConnectCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PeerUuid.html">– PeerUuid</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Settings.html">– Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Usage.html">– Usage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Connection.html">– Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Peer.html">– Peer</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
               </li>
               <li class="nav-group-task">
@@ -350,6 +389,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/StreamingStats.html">StreamingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Subnet.html">Subnet</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TunStats.html">TunStats</a>
@@ -1539,6 +1581,32 @@ allows a user to determine the existing profile settings</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC11pasDelegateAA0b3PasD0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/pasDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC11pasDelegateAA0b3PasD0_pSgvp">pasDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">pasDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyPasDelegate.html">SpeedifyPasDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC11sbiDelegateAA027SafeBrowsingInternalMessageD0_pSgvp"></a>
                     <a name="//apple_ref/swift/Property/sbiDelegate" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC11sbiDelegateAA027SafeBrowsingInternalMessageD0_pSgvp">sbiDelegate</a>
@@ -2201,6 +2269,75 @@ If already connected, this will disconnect before reconnecting.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>completionHandler: <code><a href="../Structs/ServerInformation.html">ServerInformation</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20connectByServerExact7country4city3numySS_SSSitF"></a>
+                    <a name="//apple_ref/swift/Method/connectByServerExact(country:city:num:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20connectByServerExact7country4city3numySS_SSSitF">connectByServerExact(country:<wbr>city:<wbr>num:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect to a specific server, without fallback.
+ If already connected, this will disconnect before reconnecting.
+ A list of valid servers can be obtained from {@link ISdkStateReceiver#OnDirectory OnDirectory}.
+ Connect errors will be signalled in {@link ISdkStateReceiver#OnConnectError OnConnectError}.
+ Chosen server will be signalled via {@link ISdkStateReceiver#OnConnectedServer OnConnectedServer} as connections to them are attempted.</p>
+
+<p>@param  country 2-char ISO country code
+ @param city city name
+ @param num server number
+ @since 14.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectByServerExact</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC27setConnectMethodServerExact7country4city3numySS_SSSitF"></a>
+                    <a name="//apple_ref/swift/Method/setConnectMethodServerExact(country:city:num:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27setConnectMethodServerExact7country4city3numySS_SSSitF">setConnectMethodServerExact(country:<wbr>city:<wbr>num:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the default connection method to a specific server, without fallback.
+ Current settings available from {@link ISdkStateReceiver#OnServerSettings OnServerSettings}.</p>
+
+<p>@param  country 2-char ISO country code
+ @param city city name
+ @param num server number
+ @since 14.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setConnectMethodServerExact</span><span class="p">(</span><span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -3003,6 +3140,36 @@ Triggers <code><a href="../Protocols/SpeedifyDirectoryDomainDelegate.html">Speed
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20setDownstreamSubnets7subnetsySayAA6SubnetVG_tF"></a>
+                    <a name="//apple_ref/swift/Method/setDownstreamSubnets(subnets:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20setDownstreamSubnets7subnetsySayAA6SubnetVG_tF">setDownstreamSubnets(subnets:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the downstream subnets available on this device.
+Current value available from <code><a href="../Classes/Speedify.html#/s:11speedifysdk8SpeedifyC8settingsAA8SettingsVSgvp">settings</a></code> delegate.
+@param subnets the downstream subnets available on this device
+@since 14.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDownstreamSubnets</span><span class="p">(</span><span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Subnet.html">Subnet</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC8getState17completionHandleryyAA0D0OSgc_tF"></a>
                     <a name="//apple_ref/swift/Method/getState(completionHandler:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC8getState17completionHandleryyAA0D0OSgc_tF">getState(completionHandler:<wbr>)</a>
@@ -3086,6 +3253,38 @@ Triggers <code><a href="../Protocols/SpeedifyDirectoryDomainDelegate.html">Speed
                       <div>
                         <h4>Return Value</h4>
                         <p>completionHandler: <code><a href="../Structs/Version.html">Version</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC17getActivationCode17completionHandleryyAA0dE0Vc_tF"></a>
+                    <a name="//apple_ref/swift/Method/getActivationCode(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC17getActivationCode17completionHandleryyAA0dE0Vc_tF">getActivationCode(completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets an activation code usable to login on the website.</p>
+
+<ul>
+<li>If setting a custom directory, call <code>SetDirectoryDomain()</code> before calling this.</li>
+<li>@since 14.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getActivationCode</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">code</span><span class="p">:</span> <span class="kt"><a href="../Structs/ActivationCode.html">ActivationCode</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -3317,6 +3516,35 @@ Triggers <code><a href="../Protocols/SpeedifyVendorUserDataDelegate.html">Speedi
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshVendorUserData</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22refreshConnectedServeryyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshConnectedServer()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22refreshConnectedServeryyF">refreshConnectedServer()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests information about the current connected VPN server
+You can read the value back via <code><a href="../Classes/Speedify.html#/s:11speedifysdk8SpeedifyC17serverInformationAA06ServerD0VSgvp">serverInformation</a></code> or subscribe to <code>serverSettingsReported</code> or <code>serverInformationDidUpdate</code>
+@since 14.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshConnectedServer</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -6591,6 +6819,33 @@ DoH can interfere with domain-based local proxy, firewall, and streaming setting
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">iAPResultReported</span><span class="p">(</span><span class="nv">code</span><span class="p">:</span> <span class="n"><a href="../Enums/iAPCode.html">iAPCode</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@speedifysdk@objc(cs)Speedify(im)sendBatteryState"></a>
+                    <a name="//apple_ref/swift/Method/sendBatteryState()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@speedifysdk@objc(cs)Speedify(im)sendBatteryState">sendBatteryState()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendBatteryState</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
