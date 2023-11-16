@@ -7,5 +7,6 @@ var searchData=
   ['host',['HOST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer_role.html#ac9bee545b1cf76ed8edb5d801145f1f3',1,'com::speedify::speedifysdk::Types::NetworkSharing::PeerRole']]],
   ['hostconnectcode',['hostConnectCode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#a516a704f212a33aa66fbd96391f5728b',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
   ['hostenabled',['hostEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#aa3ed37b307b70e3c1fa780bd19e96b20',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
+  ['hostname',['hostname',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a937033b069eff2376425afdd263e8f21',1,'com::speedify::speedifysdk::Types::StreamStats']]],
   ['https',['HTTPS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a2cba02d5cb9e4f790154eecffd10878a',1,'com::speedify::speedifysdk::Types::TransportMode']]]
 ];

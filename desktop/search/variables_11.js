@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sameuserautopair',['sameUserAutoPair',['../struct_speedify_s_d_k___network_sharing_settings.html#a43d2e374c5ea5ca22a66e2ec767b5870',1,'SpeedifySDK_NetworkSharingSettings']]],
   ['sendbps',['sendBps',['../struct_speedify_s_d_k___connection_stats.html#ad1520c0d71d80d219635d448a3744ce5',1,'SpeedifySDK_ConnectionStats']]],
   ['sendbytes',['sendBytes',['../struct_speedify_s_d_k___connection_stats.html#a475706a0fb6308ee11be2f3a35fe902f',1,'SpeedifySDK_ConnectionStats']]],
   ['sendestimatembps',['sendEstimateMbps',['../struct_speedify_s_d_k___connection_stats.html#a67a651f635d792f069ec334ef6028a82',1,'SpeedifySDK_ConnectionStats']]],

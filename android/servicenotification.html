@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.1.0</span>
+   &#160;<span id="projectnumber">14.3.1</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The main processing and VPN service of the Speedify SDK is done in an Android foreground service running in a background process. Starting with Android Oreo, foreground services are required to have a notification visible at all times. Prior to Oreo it is still recommened to have this notification so that the OS knows that the service is important, and that it should not be killed in low memory situations.</p>
-<p>The default <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a> provided by the Speedify SDK implements a notification for the foreground service, complete with connect, disconnect, and exit controls.</p>
+<p>As of Android 13, <code>POST_NOTIFICATIONS</code> permission is required to show the foreground service notification. </p><div class="fragment"><div class="line"><span class="comment">// notification permission is required for foreground service notification to show</span></div><div class="line"><span class="keywordflow">if</span> (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.TIRAMISU) {</div><div class="line">  NotificationManager mNotifyMgr = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);</div><div class="line">  <span class="keywordflow">if</span> (!mNotifyMgr.areNotificationsEnabled()) {</div><div class="line">    ActivityCompat.requestPermissions(<span class="keyword">this</span>, <span class="keyword">new</span> String[] { android.Manifest.permission.POST_NOTIFICATIONS }, 100);</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><p>The default <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a> provided by the Speedify SDK implements a notification for the foreground service, complete with connect, disconnect, and exit controls.</p>
 <p>The text of this notification is customizable via the default service notification resource strings outlined in <a class="el" href="userstrings.html">SDK Strings</a>.</p>
 <p>The default icon used is drawable resource named <code>speedify_notification_icon</code>. This can be overridden via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aba0c53bca630a3d3654a84b7dd45d745">setServiceNotificationIcon</a>.</p>
 <p>The default click action is to launch the main launcher intent of the application, as returned by <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getLaunchIntentForPackage(java.lang.String)">PackageManager.getLaunchIntentForPackage</a>. This can be overridden via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ae86eb9258e54507dc5d06cdbfa91a425">setServiceNotificationLaunchIntent</a>.</p>

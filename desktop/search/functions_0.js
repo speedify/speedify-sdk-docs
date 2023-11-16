@@ -162,6 +162,7 @@ var searchData=
   ['speedifysdk_5fsetnetworksharingpeerallowasclient',['SpeedifySDK_SetNetworkSharingPeerAllowAsClient',['../group___s_d_k.html#ga44e7fca7d34dbbc630b696d4bd5bff7a',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetnetworksharingpeerallowashost',['SpeedifySDK_SetNetworkSharingPeerAllowAsHost',['../group___s_d_k.html#ga5d4dcf0d2949062026ac2266edebfd1c',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetnetworksharingpeerautoreconnect',['SpeedifySDK_SetNetworkSharingPeerAutoReconnect',['../group___s_d_k.html#ga9e7e98804dd0e10fa10ba89fddf8c513',1,'speedifysdk.h']]],
+  ['speedifysdk_5fsetnetworksharingsameuserautopair',['SpeedifySDK_SetNetworkSharingSameUserAutoPair',['../group___s_d_k.html#gaed20753e679ff19f516121bf3279e352',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetoverflowthreshold',['SpeedifySDK_SetOverflowThreshold',['../group___s_d_k.html#gab1ade44b44c1c91c954a9d25afe16c26',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetpacketaggregation',['SpeedifySDK_SetPacketAggregation',['../group___s_d_k.html#ga5a18a759be68b355954f5b44c21c9ee7',1,'speedifysdk.h']]],
   ['speedifysdk_5fsetpriorityoverflowthreshold',['SpeedifySDK_SetPriorityOverflowThreshold',['../group___s_d_k.html#ga56f4ad24d0ecd018d8657c9b433e9c42',1,'speedifysdk.h']]],

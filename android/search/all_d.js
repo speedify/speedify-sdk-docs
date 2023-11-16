@@ -14,7 +14,6 @@ var searchData=
   ['not_5fauthenticated',['NOT_AUTHENTICATED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_tunnel_status.html#af15e0494098c48d779e962272a8a4b69',1,'com::speedify::speedifysdk::Types::NetworkSharing::TunnelStatus']]],
   ['notificationhelper',['NotificationHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html',1,'com::speedify::speedifysdk']]],
   ['notificationhelper_2ejava',['NotificationHelper.java',['../_notification_helper_8java.html',1,'']]],
-  ['notificationsenabled',['notificationsEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#ac1effb08c9f5ed6c0c5a88c3582ec495',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
   ['num',['num',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#af740b9cb245ba9dcd94dca942293a6c5',1,'com.speedify.speedifysdk.Types.ServerInformation.num()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_settings.html#abe39ecac725e3b0ce82df083bffaca67',1,'com.speedify.speedifysdk.Types.ServerSettings.num()']]],
   ['numberofsockets',['numberOfSockets',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ac880d80efc65ad81c9470950042fb7b8',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['numconnections',['numConnections',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a84d7a4d46d29f70e45474a65a9eae559',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],

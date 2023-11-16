@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.1.0</span>
+   &#160;<span id="projectnumber">14.3.1</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,25 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1410"></a>Speedify SDK for Android 14.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1430"></a>Speedify SDK for Android 14.3 </h2>
+<ul>
+<li>This is a performance release.</li>
+<li>The SDK now uses the proper FOREGROUND_SERVICE_SYSTEM_EXEMPTED permission on Android 14+ for VPNs that use a foreground notification. You must <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a43d8aee228eb303357ed460fe65f28ba">initialize</a> the VPN permission prior to initializing the SDK for the first time. See <a class="el" href="sdkinit.html">Initializing the SDK</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1420"></a>Speedify SDK for Android 14.2 </h2>
+<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html">StreamStats</a> expanded to include <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a5380e82b22b64d03c1dd9e1e37fd67f1">health</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ac6d983cfbdf6c76427e6b2142287a88d">remoteIp</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a0ed13938f4a1c1d36511db8b929c69d4">remotePort</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2ba7a538ac2cd96c80b5215489fc9822">protocol</a></li>
+<li>Automatic pairing with network peers using the same account is controllable via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1de4c80ac93606fa0eb9479e216eeb71">setNetworkSharingSameUserAutoPair</a>.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1412"></a>Speedify SDK for Android 14.1.2 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1411"></a>Speedify SDK for Android 14.1.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1410"></a>Speedify SDK for Android 14.1 </h2>
 <ul>
 <li>No new features. This is a stability release.</li>
 </ul>
@@ -111,6 +129,7 @@ $(function() {
 <li>SpeedifySDK.setServiceNotificationIcon - Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#aba0c53bca630a3d3654a84b7dd45d745">SpeedifyHandler.setServiceNotificationIcon</a>.</li>
 </ul>
 </li>
+<li>All strings coming out of the SDK are now pre-translated using the configured application name. The undocumented SpeedifySDK.replaceSdkNameInString function has been removed.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1331"></a>Speedify SDK for Android 13.3.1 </h2>
 <ul>

@@ -64,6 +64,7 @@ var searchData=
   ['setnetworksharingpeerallowasclient',['setNetworkSharingPeerAllowAsClient',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aeef6646ab95e3473d5d48c3e5fc39dcd',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setnetworksharingpeerallowashost',['setNetworkSharingPeerAllowAsHost',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4702fb4cbefbca07605287ab904461dd',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setnetworksharingpeerautoreconnect',['setNetworkSharingPeerAutoReconnect',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#adc94007b80cbcf5a2fb79929045e08ac',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['setnetworksharingsameuserautopair',['setNetworkSharingSameUserAutoPair',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1de4c80ac93606fa0eb9479e216eeb71',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setneverexitonswipe',['setNeverExitOnSwipe',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aefd9a17d7b72d19e1748bd69e21b81f4',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setnonvpnapplications',['setNonVPNApplications',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a593bd7b10f8d88aa4e28e793dd7a5cba',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setoverflowthreshold',['setOverflowThreshold',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad8aad5db8ad5c147557339c54e8598e5',1,'com::speedify::speedifysdk::SpeedifySDK']]],
