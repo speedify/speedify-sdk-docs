@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TCPTransport Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/TCPTransport" class="dashAnchor"></a>
+    <a title="TCPTransport Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TCPTransport Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTPHandler.html">FoundationHTTPHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationHTTPServerHandler.html">FoundationHTTPServerHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationSecurity.html">FoundationSecurity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FoundationTransport.html">FoundationTransport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameCollector.html">FrameCollector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FrameCollector/Event.html">– Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NativeEngine.html">NativeEngine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ServerConnection.html">ServerConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Speedify.html">Speedify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SpeedifyPacketTunnel.html">SpeedifyPacketTunnel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StringHTTPHandler.html">StringHTTPHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TCPTransport.html">TCPTransport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TunnelHelper.html">TunnelHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UUIDProvider.html">UUIDProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WSCompression.html">WSCompression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WSEngine.html">WSEngine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WSFramer.html">WSFramer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebSocket.html">WebSocket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebSocketServer.html">WebSocketServer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AutoConnectMethod.html">AutoConnectMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BondingMode.html">BondingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CloseCode.html">CloseCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Connection.html">Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionEvent.html">ConnectionEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionPriority.html">ConnectionPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DisconnectReason.html">DisconnectReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FirewallMode.html">FirewallMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FoundationSecurityError.html">FoundationSecurityError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FoundationTransportError.html">FoundationTransportError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FrameEvent.html">FrameEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FrameOpCode.html">FrameOpCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPEvent.html">HTTPEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPUpgradeError.html">HTTPUpgradeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Index.html">Index</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JSONKey.html">JSONKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PERIODS.html">PERIODS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PinningState.html">PinningState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PortProtocol.html">PortProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProxyMatchMode.html">ProxyMatchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SecurityErrorCode.html">SecurityErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ServerEvent.html">ServerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SettingsLockReason.html">SettingsLockReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpeedTestType.html">SpeedTestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StarscreamConnectionState.html">StarscreamConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StarscreamErrorType.html">StarscreamErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamHealth.html">StreamHealth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TCPTransportError.html">TCPTransportError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransportMode.html">TransportMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Type.html">Type</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WebSocketEvent.html">WebSocketEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/iAPCode.html">iAPCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSON.html">JSON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NEVPNStatus.html">NEVPNStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s5UInt8V">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk1loiySbAA4JSONV_ADtF">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk2leoiySbAA4JSONV_ADtF">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk2eeoiySbAA4JSONV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk1goiySbAA4JSONV_ADtF">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk2geoiySbAA4JSONV_ADtF">&gt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk11writeUint16_6offset5valueySays5UInt8VGz_Sis6UInt16VtF">writeUint16(_:offset:value:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk11writeUint32_6offset5valueySays5UInt8VGz_Sis6UInt32VtF">writeUint32(_:offset:value:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11speedifysdk11writeUint64_6offset5valueySays5UInt8VGz_Sis6UInt64VtF">writeUint64(_:offset:value:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CertificatePinning.html">CertificatePinning</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CompressionHandler.html">CompressionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConnectionDelegate.html">ConnectionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Engine.html">Engine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EngineDelegate.html">EngineDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FrameCollectorDelegate.html">FrameCollectorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Framer.html">Framer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FramerEventClient.html">FramerEventClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HTTPHandler.html">HTTPHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HTTPHandlerDelegate.html">HTTPHandlerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HTTPServerDelegate.html">HTTPServerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HTTPServerHandler.html">HTTPServerHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HeaderValidator.html">HeaderValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11speedifysdk13MyWSArrayTypeP">MyWSArrayType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PacketTunnelSafeBrowsingBlockDelegate.html">PacketTunnelSafeBrowsingBlockDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SafeBrowsingInternalMessageDelegate.html">SafeBrowsingInternalMessageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Server.html">Server</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyCaptivePortalDelegate.html">SpeedifyCaptivePortalDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyConnectedServerDelegate.html">SpeedifyConnectedServerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDirectoryDomainDelegate.html">SpeedifyDirectoryDomainDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDisconnectEventDelegate.html">SpeedifyDisconnectEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLocalProxySettingsDelegate.html">SpeedifyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLogSettingsDelegate.html">SpeedifyLogSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyLoginErrorDelegate.html">SpeedifyLoginErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyPasDelegate.html">SpeedifyPasDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyServerSettingsDelegate.html">SpeedifyServerSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySessionStatsPeriodDelegate.html">SpeedifySessionStatsPeriodDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySettingsErrorDelegate.html">SpeedifySettingsErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifySpeedTestResultsDelegate.html">SpeedifySpeedTestResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyStreamingSettingsDelegate.html">SpeedifyStreamingSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyVendorLocalSettingsDelegate.html">SpeedifyVendorLocalSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyVendorRemoteSettingsDelegate.html">SpeedifyVendorRemoteSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyVendorUserDataDelegate.html">SpeedifyVendorUserDataDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StarScreamConnection.html">StarScreamConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Transport.html">Transport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransportEventClient.html">TransportEventClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WebSocketClient.html">WebSocketClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WebSocketDelegate.html">WebSocketDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountingData.html">AccountingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActivationCode.html">ActivationCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterData.html">AdapterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CaptivePortalStats.html">CaptivePortalStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStats.html">ConnectionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DaemonLogSettings.html">DaemonLogSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DirectorySettings.html">DirectorySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DisconnectEvent.html">DisconnectEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FirewallPort.html">FirewallPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FirewallSettings.html">FirewallSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ForwardedPort.html">ForwardedPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:11speedifysdk5FrameV">Frame</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HTTPWSHeader.html">HTTPWSHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HandlerStats.html">HandlerStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxyPort.html">LocalProxyPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalProxySettings.html">LocalProxySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing.html">NetworkSharing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PeerRole.html">– PeerRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PairRequestBehavior.html">– PairRequestBehavior</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PeerStatus.html">– PeerStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/TunnelStatus.html">– TunnelStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/ConnectCode.html">– ConnectCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/PeerUuid.html">– PeerUuid</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Settings.html">– Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Usage.html">– Usage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Connection.html">– Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkSharing/Peer.html">– Peer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivacySettings.html">PrivacySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProtocolPortPair.html">ProtocolPortPair</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerInformation.html">ServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ServerSettings.html">ServerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStatPeriod.html">SessionStatPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpeedTestResultsData.html">SpeedTestResultsData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamStats.html">StreamStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingPort.html">StreamingPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingSessionStats.html">StreamingSessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingSettings.html">StreamingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreamingStats.html">StreamingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Subnet.html">Subnet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TunStats.html">TunStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:11speedifysdk8URLPartsV">URLParts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WSError.html">WSError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/FoundationHTTPHandler">FoundationHTTPHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11speedifysdk9JSONIndexa">JSONIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11speedifysdk12JSONRawIndexa">JSONRawIndex</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TCPTransport</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TCPTransport</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Transport.html">Transport</a></span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk12TCPTransportC8usingTLSSbvp"></a>
+                    <a name="//apple_ref/swift/Property/usingTLS" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk12TCPTransportC8usingTLSSbvp">usingTLS</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">usingTLS</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk12TCPTransportC10connectionAC7Network12NWConnectionC_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(connection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk12TCPTransportC10connectionAC7Network12NWConnectionC_tcfc">init(connection:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">connection</span><span class="p">:</span> <span class="kt">NWConnection</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk12TCPTransportCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk12TCPTransportCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk12TCPTransportC7connect3url7timeout18certificatePinningy10Foundation3URLV_SdAA011CertificateG0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/connect(url:timeout:certificatePinning:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk12TCPTransportC7connect3url7timeout18certificatePinningy10Foundation3URLV_SdAA011CertificateG0_pSgtF">connect(url:<wbr>timeout:<wbr>certificatePinning:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">certificatePinning</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CertificatePinning.html">CertificatePinning</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk12TCPTransportC10disconnectyyF"></a>
+                    <a name="//apple_ref/swift/Method/disconnect()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk12TCPTransportC10disconnectyyF">disconnect()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disconnect</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk12TCPTransportC8register8delegateyAA20TransportEventClient_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/register(delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk12TCPTransportC8register8delegateyAA20TransportEventClient_p_tF">register(delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TransportEventClient.html">TransportEventClient</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk12TCPTransportC5write4data10completiony10Foundation4DataV_ys5Error_pSgctF"></a>
+                    <a name="//apple_ref/swift/Method/write(data:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk12TCPTransportC5write4data10completiony10Foundation4DataV_ys5Error_pSgctF">write(data:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">write</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2022 <a class="link" href="https://speedify.com" target="_blank" rel="external noopener">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
