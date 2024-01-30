@@ -30,6 +30,7 @@ var searchData=
   ['refreshstreamingstats',['refreshStreamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7ccb948f7d4f12dcf440546a60705a67',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshvendoruserdata',['refreshVendorUserData',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2d388b7b54b6417ea2423e2b85c7f86c',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['register',['register',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#a70e0927195da2d837779f70a2f725012',1,'com::speedify::speedifysdk::LocalBroadcastHelper']]],
+  ['registerreceiver',['RegisterReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_internal_intent_helper.html#af42403b8afef3bdfd2de6960e7f43cf2',1,'com::speedify::speedifysdk::InternalIntentHelper']]],
   ['registersdkstatereceiver',['registerSdkStateReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a5cdae208c875935163188bd93040bd40',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['registerwsmessagehandler',['registerWsMessageHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0c3dc265577639dd4dbf364f38944110',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['remove',['remove',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#a96daf7c11353ce1199a931c314f0a3da',1,'com::speedify::speedifysdk::Preferences']]],

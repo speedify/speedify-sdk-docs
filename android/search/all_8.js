@@ -17,6 +17,8 @@ var searchData=
   ['initializevpnpermission',['initializeVPNPermission',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a43d8aee228eb303357ed460fe65f28ba',1,'com.speedify.speedifysdk.SpeedifySDK.initializeVPNPermission()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab5dff6b3af427f9ed16a172d36b988ff',1,'com.speedify.speedifysdk.SpeedifySDK.initializeVPNPermission(Context appContext)']]],
   ['integration_20guide',['Integration Guide',['../integration.html',1,'']]],
   ['integration_2edox',['integration.dox',['../integration_8dox.html',1,'']]],
+  ['internalintenthelper',['InternalIntentHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_internal_intent_helper.html',1,'com::speedify::speedifysdk']]],
+  ['internalintenthelper_2ejava',['InternalIntentHelper.java',['../_internal_intent_helper_8java.html',1,'']]],
   ['interrupted',['INTERRUPTED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html#a6aa5d78e35585ec9648af18040ac5054',1,'com.speedify.speedifysdk.Types.RestartReason.INTERRUPTED()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#aa26e0a4c9e23848c8151c61508208211',1,'com.speedify.speedifysdk.Types.DisconnectReason.INTERRUPTED()']]],
   ['invalid_5fargument',['INVALID_ARGUMENT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#a0579279d6bb53d45467bafede4759a08',1,'com::speedify::speedifysdk::Types::ErrorType']]],
   ['ipaddress',['ipAddress',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#a763c986b37f74a17049098c3d19c695a',1,'com::speedify::speedifysdk::Types::IPRange']]],
