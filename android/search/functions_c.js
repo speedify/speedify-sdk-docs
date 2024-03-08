@@ -56,6 +56,8 @@ var searchData=
   ['setlocalproxypackages',['setLocalProxyPackages',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acba061e1dfbae3e8eefbd3a63ef5a5fd',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setlocalproxyports',['setLocalProxyPorts',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a858a077f7ebfe7adab242afb04b477fd',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setlocalvendorsettings',['setLocalVendorSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a18fbfb87d9bb3f9b951d6f7a62fbb3ec',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['setmaximumconnectretry',['setMaximumConnectRetry',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2ceab132af4e21bb388936157e3ed3fe',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['setmaximumtransportretry',['setMaximumTransportRetry',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acea0ac72ea3e66f5319b4014196139f6',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setmode',['setMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a48de02e22bf046a35e56c7f33eac34b3',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setnetworksharingclientenabled',['setNetworkSharingClientEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a57e7be6acb89c5efabb64c07d377ea2e',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['setnetworksharingdisplayname',['setNetworkSharingDisplayName',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a83a76a4fecc1ef36aecfa4396ea18f6d',1,'com::speedify::speedifysdk::SpeedifySDK']]],

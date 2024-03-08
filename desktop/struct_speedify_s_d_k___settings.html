@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">14.5.3</span>
+   &#160;<span id="projectnumber">14.6.1</span>
    </div>
   </td>
  </tr>
@@ -150,6 +150,15 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ab743257d312a3a03281bd30b922c38c7"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#ab743257d312a3a03281bd30b922c38c7">ulpReportIntervalSeconds</a></td></tr>
 <tr class="memdesc:ab743257d312a3a03281bd30b922c38c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the ULP reporting interval in seconds.  <a href="#ab743257d312a3a03281bd30b922c38c7">More...</a><br /></td></tr>
 <tr class="separator:ab743257d312a3a03281bd30b922c38c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ecfb6b53e4fa0e5c411913afce387e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a68ecfb6b53e4fa0e5c411913afce387e">maxRedundant</a></td></tr>
+<tr class="memdesc:a68ecfb6b53e4fa0e5c411913afce387e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of connections used to send redundant packets.  <a href="#a68ecfb6b53e4fa0e5c411913afce387e">More...</a><br /></td></tr>
+<tr class="separator:a68ecfb6b53e4fa0e5c411913afce387e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4368a5b5bc8a4244bec27b746ec4f5d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#ad4368a5b5bc8a4244bec27b746ec4f5d">maximumConnectRetry</a></td></tr>
+<tr class="memdesc:ad4368a5b5bc8a4244bec27b746ec4f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum time between login/connect retries, in seconds  <a href="#ad4368a5b5bc8a4244bec27b746ec4f5d">More...</a><br /></td></tr>
+<tr class="separator:ad4368a5b5bc8a4244bec27b746ec4f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a88500340ab7d1f70c5ce5184fb8dbe"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a1a88500340ab7d1f70c5ce5184fb8dbe">maximumTransportRetry</a></td></tr>
+<tr class="memdesc:a1a88500340ab7d1f70c5ce5184fb8dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum time between transport connection retries, in seconds  <a href="#a1a88500340ab7d1f70c5ce5184fb8dbe">More...</a><br /></td></tr>
+<tr class="separator:a1a88500340ab7d1f70c5ce5184fb8dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a7ebf7b124efed02a3a88f15a068ddf23"></a>
@@ -336,6 +345,57 @@ Data Fields</h2></td></tr>
 
 <p>2-character ISO language code used for error messages, ie: 'en'. </p>
 <dl class="section since"><dt>Since</dt><dd>10.8 </dd></dl>
+
+</div>
+</div>
+<a id="ad4368a5b5bc8a4244bec27b746ec4f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4368a5b5bc8a4244bec27b746ec4f5d">&#9670;&nbsp;</a></span>maximumConnectRetry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SpeedifySDK_Settings::maximumConnectRetry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>maximum time between login/connect retries, in seconds </p>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
+
+</div>
+</div>
+<a id="a1a88500340ab7d1f70c5ce5184fb8dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a88500340ab7d1f70c5ce5184fb8dbe">&#9670;&nbsp;</a></span>maximumTransportRetry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SpeedifySDK_Settings::maximumTransportRetry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>maximum time between transport connection retries, in seconds </p>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
+
+</div>
+</div>
+<a id="a68ecfb6b53e4fa0e5c411913afce387e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ecfb6b53e4fa0e5c411913afce387e">&#9670;&nbsp;</a></span>maxRedundant</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SpeedifySDK_Settings::maxRedundant</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum number of connections used to send redundant packets. </p>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
 
 </div>
 </div>

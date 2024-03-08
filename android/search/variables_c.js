@@ -2,6 +2,8 @@ var searchData=
 [
   ['matchmode',['matchMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a2743a9f0c3ee4ea85ef9349fe67128ed',1,'com::speedify::speedifysdk::Types::LocalProxySettings']]],
   ['maxdownloadspeed',['maxDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#af6eec00df3e669eaafee69379b5e18b6',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['maximumconnectretry',['maximumConnectRetry',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#af2ac391e9d699d7032d01606a546bdc6',1,'com::speedify::speedifysdk::Types::Settings']]],
+  ['maximumtransportretry',['maximumTransportRetry',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a17340f4f14386af08f333c838cd64a8b',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['maxuploadspeed',['maxUploadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#aa925cd7fbf14487fd5e117b9a20d4f06',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['mbpsdownbenefit',['mbpsDownBenefit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ac7a47b6a29d1eb451415ab8906b84f29',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['mbpsupbenefit',['mbpsUpBenefit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#adfce30860e75988c7cbba6430ca34dd4',1,'com::speedify::speedifysdk::Types::SessionStats']]],

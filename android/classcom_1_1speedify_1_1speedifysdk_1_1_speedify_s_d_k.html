@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.5.3</span>
+   &#160;<span id="projectnumber">14.6.1</span>
    </div>
   </td>
  </tr>
@@ -524,6 +524,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6a2e3c0e397e7a60bc9b79ae80d408c6">setUlpReportIntervalSeconds</a> (long interval)</td></tr>
 <tr class="memdesc:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the ULP reporting inverval in seconds.  <a href="#a6a2e3c0e397e7a60bc9b79ae80d408c6">More...</a><br /></td></tr>
 <tr class="separator:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ceab132af4e21bb388936157e3ed3fe"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2ceab132af4e21bb388936157e3ed3fe">setMaximumConnectRetry</a> (int timeout)</td></tr>
+<tr class="memdesc:a2ceab132af4e21bb388936157e3ed3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Speedify follows a backoff pattern for repeated errors when logging in or connecting to VPN servers.  <a href="#a2ceab132af4e21bb388936157e3ed3fe">More...</a><br /></td></tr>
+<tr class="separator:a2ceab132af4e21bb388936157e3ed3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea0ac72ea3e66f5319b4014196139f6"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acea0ac72ea3e66f5319b4014196139f6">setMaximumTransportRetry</a> (int timeout)</td></tr>
+<tr class="memdesc:acea0ac72ea3e66f5319b4014196139f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">When Speedify fails to establish VPN transport connections over an Internet connection, it will use a backoff pattern to wait before attempting to establish a transport over that connection again.  <a href="#acea0ac72ea3e66f5319b4014196139f6">More...</a><br /></td></tr>
+<tr class="separator:acea0ac72ea3e66f5319b4014196139f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd8b43f20d0eb08df91c909474956a1"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfd8b43f20d0eb08df91c909474956a1">sendMessage</a> (String messageType, JSONObject data)</td></tr>
 <tr class="separator:acfd8b43f20d0eb08df91c909474956a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b19036d97afcd7264a241ddd7e7a728"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9b19036d97afcd7264a241ddd7e7a728">sendMessage</a> (String messageType, JSONArray data)</td></tr>
@@ -4338,6 +4344,60 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>9.2 </dd></dl>
+
+</div>
+</div>
+<a id="a2ceab132af4e21bb388936157e3ed3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ceab132af4e21bb388936157e3ed3fe">&#9670;&nbsp;</a></span>setMaximumConnectRetry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setMaximumConnectRetry </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Speedify follows a backoff pattern for repeated errors when logging in or connecting to VPN servers. </p>
+<p>With each subsequent failure, the wait time increases before attempting to login or connect again. The backoff's timeout limit can be set with this call. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>Timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
+
+</div>
+</div>
+<a id="acea0ac72ea3e66f5319b4014196139f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea0ac72ea3e66f5319b4014196139f6">&#9670;&nbsp;</a></span>setMaximumTransportRetry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setMaximumTransportRetry </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When Speedify fails to establish VPN transport connections over an Internet connection, it will use a backoff pattern to wait before attempting to establish a transport over that connection again. </p>
+<p>This call is used to set that backoff timeout limit. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>Timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
 
 </div>
 </div>
