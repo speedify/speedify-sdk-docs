@@ -13,5 +13,9 @@ var searchData=
   ['mode',['mode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html#a75e902f374321cc7e24738879ea32da6',1,'com::speedify::speedifysdk::Types::FirewallSettings']]],
   ['monthly',['MONTHLY',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_payment_type.html#ab55be96386ff998f77f212cf748d3833',1,'com::speedify::speedifysdk::Types::AccountPaymentType']]],
   ['mos',['mos',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a96655c94a67905ff09f351b029588210',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['multireceivermanager',['MultiReceiverManager',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html',1,'com::speedify::speedifysdk']]],
+  ['multireceivermanager_2ejava',['MultiReceiverManager.java',['../_multi_receiver_manager_8java.html',1,'']]],
+  ['multireceivermanager_3c_20com_3a_3aspeedify_3a_3aspeedifysdk_3a_3areceivers_3a_3aiforegroundservicestatereceiver_20_3e',['MultiReceiverManager&lt; com::speedify::speedifysdk::receivers::IForegroundServiceStateReceiver &gt;',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html',1,'com::speedify::speedifysdk']]],
+  ['multireceivermanager_3c_20com_3a_3aspeedify_3a_3aspeedifysdk_3a_3areceivers_3a_3aisdkstatereceiver_20_3e',['MultiReceiverManager&lt; com::speedify::speedifysdk::receivers::ISdkStateReceiver &gt;',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html',1,'com::speedify::speedifysdk']]],
   ['multitcp',['MULTITCP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a95a1969e0e84e48a99942060ad880a38',1,'com::speedify::speedifysdk::Types::TransportMode']]]
 ];

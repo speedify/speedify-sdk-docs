@@ -22,6 +22,7 @@ var searchData=
   ['nts_5fnetworks_5foverlimit',['NTS_NETWORKS_OVERLIMIT',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2ae6a383eaa379fb5a42ad006ea50944aa',1,'types.h']]],
   ['nts_5fno_5fnetworks',['NTS_NO_NETWORKS',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2aec2704ada31976f38deb64c675078246',1,'types.h']]],
   ['nts_5fnot_5fauthenticated',['NTS_NOT_AUTHENTICATED',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2ae0e5f6dd1a6ed74d447d16c4da1474e1',1,'types.h']]],
+  ['nts_5fpaused',['NTS_PAUSED',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2ac6264de5d9d3fda94432c2a699088469',1,'types.h']]],
   ['nts_5ftunnel_5ferror',['NTS_TUNNEL_ERROR',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2a478236817939b40d3eb65e2c0f3a7f2c',1,'types.h']]],
   ['nts_5fvpn_5fnot_5fconnected',['NTS_VPN_NOT_CONNECTED',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2a8e6ee0537665b4654a856f513c4be57f',1,'types.h']]],
   ['num',['num',['../struct_speedify_s_d_k___server_information.html#a8c972f82b27c417f85999bce4645acaa',1,'SpeedifySDK_ServerInformation::num()'],['../struct_speedify_s_d_k___server_settings.html#af5bbd90f4fdd8eb5be5f53ff0a769663',1,'SpeedifySDK_ServerSettings::num()']]],

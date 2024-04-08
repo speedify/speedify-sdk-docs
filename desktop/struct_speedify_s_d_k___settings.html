@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">14.6.1</span>
+   &#160;<span id="projectnumber">14.7.0</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a86934847771ded16202ca7dc6234b55a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___per_connection_encryption.html">SpeedifySDK_PerConnectionEncryption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a86934847771ded16202ca7dc6234b55a">perConnectionEncryptionSettings</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>]</td></tr>
 <tr class="memdesc:a86934847771ded16202ca7dc6234b55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per connection encryption settings.  <a href="#a86934847771ded16202ca7dc6234b55a">More...</a><br /></td></tr>
 <tr class="separator:a86934847771ded16202ca7dc6234b55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35fc74726c18298cd986cfd9a3dc936c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a35fc74726c18298cd986cfd9a3dc936c">perConnectionExposeDscpCount</a></td></tr>
+<tr class="memdesc:a35fc74726c18298cd986cfd9a3dc936c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of configured per-connection expose DSCP settings. Only supported on Linux.  <a href="#a35fc74726c18298cd986cfd9a3dc936c">More...</a><br /></td></tr>
+<tr class="separator:a35fc74726c18298cd986cfd9a3dc936c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e883fabf8209ea74273aca76e5332d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___per_connection_expose_dscp.html">SpeedifySDK_PerConnectionExposeDscp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#a71e883fabf8209ea74273aca76e5332d">perConnectionExposeDscpSettings</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>]</td></tr>
+<tr class="memdesc:a71e883fabf8209ea74273aca76e5332d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per connection expose DSCP settings. Only supported on Linux.  <a href="#a71e883fabf8209ea74273aca76e5332d">More...</a><br /></td></tr>
+<tr class="separator:a71e883fabf8209ea74273aca76e5332d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad149d0db4ab44e5753656ba00ab7dd79"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___settings.html#ad149d0db4ab44e5753656ba00ab7dd79">perConnectionParallelSocketsCount</a></td></tr>
 <tr class="memdesc:ad149d0db4ab44e5753656ba00ab7dd79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of configured per-connection parallel socket settings.  <a href="#ad149d0db4ab44e5753656ba00ab7dd79">More...</a><br /></td></tr>
 <tr class="separator:ad149d0db4ab44e5753656ba00ab7dd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,6 +487,40 @@ Data Fields</h2></td></tr>
 
 <p>Per connection encryption settings. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a35fc74726c18298cd986cfd9a3dc936c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fc74726c18298cd986cfd9a3dc936c">&#9670;&nbsp;</a></span>perConnectionExposeDscpCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SpeedifySDK_Settings::perConnectionExposeDscpCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of configured per-connection expose DSCP settings. Only supported on Linux. </p>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
+
+</div>
+</div>
+<a id="a71e883fabf8209ea74273aca76e5332d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e883fabf8209ea74273aca76e5332d">&#9670;&nbsp;</a></span>perConnectionExposeDscpSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___per_connection_expose_dscp.html">SpeedifySDK_PerConnectionExposeDscp</a> SpeedifySDK_Settings::perConnectionExposeDscpSettings[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per connection expose DSCP settings. Only supported on Linux. </p>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
 
 </div>
 </div>

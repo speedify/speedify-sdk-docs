@@ -1,8 +1,12 @@
 var searchData=
 [
   ['id',['id',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ae357a0f1aff6c9a64e5239fb03dd1e54',1,'com.speedify.speedifysdk.Types.StreamStats.id()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper_1_1_options.html#a724436996f9bc86f1f19106a27cab28f',1,'com.speedify.speedifysdk.NotificationHelper.Options.id()']]],
+  ['iforegroundnotificationreceiver',['IForegroundNotificationReceiver',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_notification_receiver.html',1,'com::speedify::speedifysdk::receivers']]],
+  ['iforegroundnotificationreceiver_2ejava',['IForegroundNotificationReceiver.java',['../_i_foreground_notification_receiver_8java.html',1,'']]],
   ['iforegroundservicereceiver',['IForegroundServiceReceiver',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html',1,'com::speedify::speedifysdk::receivers']]],
   ['iforegroundservicereceiver_2ejava',['IForegroundServiceReceiver.java',['../_i_foreground_service_receiver_8java.html',1,'']]],
+  ['iforegroundservicestatereceiver',['IForegroundServiceStateReceiver',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html',1,'com::speedify::speedifysdk::receivers']]],
+  ['iforegroundservicestatereceiver_2ejava',['IForegroundServiceStateReceiver.java',['../_i_foreground_service_state_receiver_8java.html',1,'']]],
   ['ignorelast',['IGNORELAST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#a026c233869d1afaaffd92bdae6fbc2a9',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['ilogcompletecallback',['ILogCompleteCallback',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html',1,'com::speedify::speedifysdk::LogGeneration']]],
   ['inactive',['INACTIVE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_tunnel_status.html#a850d2f02e012891420d0f9c4a62a711b',1,'com::speedify::speedifysdk::Types::NetworkSharing::TunnelStatus']]],

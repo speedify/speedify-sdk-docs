@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.6.1</span>
+   &#160;<span id="projectnumber">14.7.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,13 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1461"></a>Speedify SDK for Android 14.6.1 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1470"></a>Speedify SDK for Android 14.7 </h2>
+<ul>
+<li>Feedback can be added to the ULP data stream with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a25b5943728f7e8a5578e1282c1582a89">sendFeedback</a>.</li>
+<li>Network sharing tunnel status has new state <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_tunnel_status.html#a248513fad5225d355430b5a8b28959b6">PAUSED</a>.</li>
+<li>SDK and foreground service state receivers are now registered via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ae58c2d4eae8dc0e300dd2358e07462d6">sdkStateReceivers</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad669263cd8d8b92bbd854f04c2572328">foregroundServiceReceivers</a> objects.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1461"></a>Speedify SDK for Android 14.6.1 </h2>
 <ul>
 <li>No new features. This is a stability release.</li>
 </ul>
@@ -146,7 +152,7 @@ $(function() {
 </ul>
 </li>
 <li>API Compatibility<ul>
-<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a643b710fb39a9a0ba71538a10c6bddfb">UpdateForegroundNotification</a> has had its arguments changed to receive a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html">ServiceData</a> object with common SDK state information.</li>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_notification_receiver.html#ab01c616baa3c60e2f39401f4858deb09">UpdateForegroundNotification</a> has had its arguments changed to receive a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_notification_receiver_1_1_service_data.html">ServiceData</a> object with common SDK state information.</li>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a8608177a70152812926594456aed71ad">createNotification(Context,Options)</a> and <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a55d4685ed327bd0c4f86f2a4c0eab623">createBackgroundActivityNotification(Context,Options)</a> were added to simplify option passing for notifications. <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#afafac8c1810182708bd8a009e4131f5a">clear(Context,String,int)</a> was added to clear notifications created with a tag.</li>
 </ul>
 </li>
@@ -283,8 +289,8 @@ $(function() {
 <ul>
 <li>Android Lollipop and Marshmallow are no longer supported. Android Nougat is now the minimum supported version.</li>
 <li>Many changes went in to make it easier to use the Speedify SDK for Android, and with less code. Best practices from older SDK are still compatible.<ul>
-<li>New, simpler method of providing a constructed SpeedifySDK object via <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k_1_1_auto_construct.html">SpeedifySDK.AutoContruct</a>. No code required in Application.onCreate. Details in <a class="el" href="sdkinit.html">Initializing the SDK</a>.</li>
-<li>Multiple receivers for SDK state updates may be registered, in addition to the main <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html">ISpeedifyHandler</a> provided through the constructor or <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a713b52cefd18b78f2cbcd3ce59a136b2">setHandler</a>. Objects implementing <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html">ISdkStateReceiver</a> may be registered via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a5cdae208c875935163188bd93040bd40">registerSdkStateReceiver</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7fedfe3f0b7b1980d7b9b89793831e0d">unregisterSdkStateReceiver</a>. The main <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html">ISpeedifyHandler</a> remains the only object for customizing the foreground service notification.</li>
+<li>New, simpler method of providing a constructed SpeedifySDK object via <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k_1_1_auto_construct.html">SpeedifySDK.AutoConstruct</a>. No code required in Application.onCreate. Details in <a class="el" href="sdkinit.html">Initializing the SDK</a>.</li>
+<li>Multiple receivers for SDK state updates may be registered, in addition to the main <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html">ISpeedifyHandler</a> provided through the constructor or <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a713b52cefd18b78f2cbcd3ce59a136b2">setHandler</a>. Objects implementing <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html">ISdkStateReceiver</a> may be registered via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#af1456dd4460c13f6cf61ef4e07aa3eb9">registerSdkStateReceiver</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a5de62b69691416be5d5e8df5ddf3eabc">unregisterSdkStateReceiver</a>. The main <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_i_speedify_handler.html">ISpeedifyHandler</a> remains the only object for customizing the foreground service notification.</li>
 <li>The intent launched on click from the service notification and any notifications produced by the sdk now defaults to the application's default launcher intent, as returned by <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getLaunchIntentForPackage(java.lang.String)">PackageManager.getLaunchIntentForPackage</a>.</li>
 <li>Default values for <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html">LogGeneration</a>, including filename, email address, and messaging, are configurable via resource strings. For more information, see <a class="el" href="userstrings.html">SDK Strings</a>.</li>
 </ul>
@@ -294,7 +300,7 @@ $(function() {
 </ul>
 </li>
 <li>Deprecation removals - Methods marked as Deprecated prior to 11.0 have been removed<ul>
-<li>ISpeedifyHandler.OnServiceRestart(State,boolean) Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a08d999aa9c336ea4034e2967a8cfdf32">OnServiceRestart(State,RestartReason)</a></li>
+<li>ISpeedifyHandler.OnServiceRestart(State,boolean) Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">OnServiceRestart(State,RestartReason)</a></li>
 <li>ISpeedifyHandler.OnAdapterOverlimit(String adapterID, AdapterUsageData usageData) - Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a56313c06c06dc3dc7e38113dcef79fe3">OnAdapterOverlimit(String,NetworkType,AdapterUsageData)</a></li>
 <li>ISpeedifyHandler.OnDirectoryDomain(String) - Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a484c7f2e5a38b618a7794c7915e6584b">OnDirectorySettings</a>.</li>
 <li>ISpeedifyHandler.OnDirectoryDomain(String,boolean) - Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a484c7f2e5a38b618a7794c7915e6584b">OnDirectorySettings</a>.</li>
@@ -321,7 +327,7 @@ $(function() {
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a9e27790625d7b546d9879a2869e3f3e0">OnLastDisconnectEvent</a> will now be called automatically after a disconnect event is recorded, instead of only after calling <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa87d44348fbcc7cc58430c2edb7862d4">refreshLastDisconnectEvent</a>.</li>
 <li>API Compatibility Changes<ul>
 <li>SpeedifyHandler<ul>
-<li>If you are overriding <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a23374b2c7d8897eb37cb384079f941a8">UpdateForegroundNotification</a> to provide your own custom foreground notificaiton, you must now use a notification ID of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3b7796fd1987a2ded35980a54cbc99e">SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</a> to replace the aforementioned temporary minimal foreground notification. The notification channel used is <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab8f0d85a09ee4065be9691436db077d9">SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</a>.</li>
+<li>If you are overriding <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a3901b7ccdcdd13e12d83ddd123a5f8ab">UpdateForegroundNotification</a> to provide your own custom foreground notificaiton, you must now use a notification ID of <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3b7796fd1987a2ded35980a54cbc99e">SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</a> to replace the aforementioned temporary minimal foreground notification. The notification channel used is <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab8f0d85a09ee4065be9691436db077d9">SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</a>.</li>
 </ul>
 </li>
 </ul>
@@ -513,7 +519,7 @@ $(function() {
 </ul>
 </li>
 <li>Deprecations<ul>
-<li>OnServiceRestart(State,boolean) has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a08d999aa9c336ea4034e2967a8cfdf32">OnServiceRestart(State,RestartReason)</a></li>
+<li>OnServiceRestart(State,boolean) has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">OnServiceRestart(State,RestartReason)</a></li>
 <li>OnDirectoryDomain(String) has been deprecated. Use OnDirectoryDomain(String,boolean)</li>
 </ul>
 </li>
@@ -761,7 +767,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_750"></a>Speedify SDK for Android 7.5 </h2>
 <ul>
-<li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver.html#a08d999aa9c336ea4034e2967a8cfdf32">OnServiceRestart</a> to stop this behavior.</li>
+<li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">OnServiceRestart</a> to stop this behavior.</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aa448d3a5ed0ceb0271efc505bdfd2c0e">OnNewAdapter</a> now has a <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> argument.</li>
 <li>refreshDirectoryDomain can be used to get the current directory domain via OnDirectoryDomain.</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">OnConnectedServer</a> now sends a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> object with more information on the connect server..</li>

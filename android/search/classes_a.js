@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['options',['Options',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper_1_1_options.html',1,'com::speedify::speedifysdk::NotificationHelper']]]
+  ['networksharing',['NetworkSharing',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing.html',1,'com::speedify::speedifysdk::Types']]],
+  ['networktype',['NetworkType',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html',1,'com::speedify::speedifysdk::Types']]],
+  ['notificationhelper',['NotificationHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html',1,'com::speedify::speedifysdk']]]
 ];

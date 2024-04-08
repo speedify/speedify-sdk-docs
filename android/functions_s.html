@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.6.1</span>
+   &#160;<span id="projectnumber">14.7.0</span>
    </div>
   </td>
  </tr>
@@ -79,6 +79,9 @@ $(function() {
 <li>schedule()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html#a06f32b7179e334b5bb712e2f2d8fc453">com.speedify.speedifysdk.PooledExecutor</a>
 </li>
+<li>sdkStateReceivers
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ae58c2d4eae8dc0e300dd2358e07462d6">com.speedify.speedifysdk.SpeedifySDK</a>
+</li>
 <li>SECONDARY
 : <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#ae29d8cb0bf92099eb656b88c60c29862">com.speedify.speedifysdk.Types.ConnectionPriority</a>
 </li>
@@ -94,11 +97,11 @@ $(function() {
 <li>sendEstimateMbps
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a9f2157a241a0ea8e7dfc89018c2aad33">com.speedify.speedifysdk.Types.ConnectionStats</a>
 </li>
+<li>sendFeedback()
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a25b5943728f7e8a5578e1282c1582a89">com.speedify.speedifysdk.SpeedifySDK</a>
+</li>
 <li>sendMessage()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfd8b43f20d0eb08df91c909474956a1">com.speedify.speedifysdk.SpeedifySDK</a>
-</li>
-<li>sendRawMessage()
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab48d2a07f1cb461a0c3e5d25c8595ec9">com.speedify.speedifysdk.SpeedifySDK</a>
 </li>
 <li>SERVER
 : <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_error_type.html#ace2c1d28fa386ab68472f0f611950062">com.speedify.speedifysdk.Types.ErrorType</a>
@@ -110,7 +113,7 @@ $(function() {
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html#a900cd6cb23dee374ef79bd05159700a5">com.speedify.speedifysdk.Types.ServerInformationDetailed</a>
 </li>
 <li>serverName
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html#ad3f68be21adbf3f3c005ee4fc7a91385">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver.ServiceData</a>
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_notification_receiver_1_1_service_data.html#a9ae418599897c7a7d8a50fd50c371b05">com.speedify.speedifysdk.receivers.IForegroundNotificationReceiver.ServiceData</a>
 </li>
 <li>serviceNotificaitonVibeOnKillswitch
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0c9e4079b5805f6ef1e0a4f2e43d1648">com.speedify.speedifysdk.SpeedifyHandler</a>
@@ -374,10 +377,10 @@ $(function() {
 : <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#ab469bca225d19ca7daa376ee508fe9e6">com.speedify.speedifysdk.Types.TransportMode</a>
 </li>
 <li>sharedNetworks
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html#aae54f5fc3640ac6c8213f425edf8c43a">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver.ServiceData</a>
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_notification_receiver_1_1_service_data.html#ac3c18a18f40d2c81349bcce7a56cccf8">com.speedify.speedifysdk.receivers.IForegroundNotificationReceiver.ServiceData</a>
 </li>
 <li>shareLogs()
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a1918ef726fef0b76baaebf76611d118b">com.speedify.speedifysdk.LogGeneration</a>
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a4097ab85257c8713120045147cafc396">com.speedify.speedifysdk.LogGeneration</a>
 </li>
 <li>SLEEP
 : <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#acbccd6f15acbaa0c9d9c4df2a6659291">com.speedify.speedifysdk.Types.DisconnectReason</a>
@@ -422,7 +425,7 @@ $(function() {
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a6980d9cc9b8519b5cf6cd454a92937c7">com.speedify.speedifysdk.Types.Settings</a>
 </li>
 <li>state
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_receiver_1_1_service_data.html#a4f9499cdb1aaeca420ff2bba1b06b72c">com.speedify.speedifysdk.receivers.IForegroundServiceReceiver.ServiceData</a>
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_notification_receiver_1_1_service_data.html#ad980e33f44662a60fea9cd5a46a95a34">com.speedify.speedifysdk.receivers.IForegroundNotificationReceiver.ServiceData</a>
 , <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#a32a1c06be95208485f169fe3366d5d8d">com.speedify.speedifysdk.Types.AdapterData</a>
 </li>
 <li>State()
@@ -444,7 +447,7 @@ $(function() {
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a518476f2a6e0c0e4a434c5b3b204db27">com.speedify.speedifysdk.Types.StreamingStats</a>
 </li>
 <li>Subnet()
-: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_subnet.html#aa38dfdb1a19ee7826a15fa23b58b20e7">com.speedify.speedifysdk.Types.Subnet</a>
+: <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_subnet.html#a687f85544256a80f6aefe1e031bd4742">com.speedify.speedifysdk.Types.Subnet</a>
 </li>
 <li>subscribeToEvent()
 : <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7570cb44af2bebba4657a05238c5da68">com.speedify.speedifysdk.SpeedifySDK</a>

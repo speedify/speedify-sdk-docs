@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['networksharing',['NetworkSharing',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing.html',1,'com::speedify::speedifysdk::Types']]],
-  ['networktype',['NetworkType',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html',1,'com::speedify::speedifysdk::Types']]],
-  ['notificationhelper',['NotificationHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html',1,'com::speedify::speedifysdk']]]
+  ['multireceivermanager',['MultiReceiverManager',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html',1,'com::speedify::speedifysdk']]],
+  ['multireceivermanager_3c_20com_3a_3aspeedify_3a_3aspeedifysdk_3a_3areceivers_3a_3aiforegroundservicestatereceiver_20_3e',['MultiReceiverManager&lt; com::speedify::speedifysdk::receivers::IForegroundServiceStateReceiver &gt;',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html',1,'com::speedify::speedifysdk']]],
+  ['multireceivermanager_3c_20com_3a_3aspeedify_3a_3aspeedifysdk_3a_3areceivers_3a_3aisdkstatereceiver_20_3e',['MultiReceiverManager&lt; com::speedify::speedifysdk::receivers::ISdkStateReceiver &gt;',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html',1,'com::speedify::speedifysdk']]]
 ];

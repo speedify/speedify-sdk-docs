@@ -44,6 +44,7 @@ var searchData=
   ['speedifysdk_5fnetworksharingusage',['SpeedifySDK_NetworkSharingUsage',['../struct_speedify_s_d_k___network_sharing_usage.html',1,'']]],
   ['speedifysdk_5fnewadapterresult',['SpeedifySDK_NewAdapterResult',['../struct_speedify_s_d_k___new_adapter_result.html',1,'']]],
   ['speedifysdk_5fperconnectionencryption',['SpeedifySDK_PerConnectionEncryption',['../struct_speedify_s_d_k___per_connection_encryption.html',1,'']]],
+  ['speedifysdk_5fperconnectionexposedscp',['SpeedifySDK_PerConnectionExposeDscp',['../struct_speedify_s_d_k___per_connection_expose_dscp.html',1,'']]],
   ['speedifysdk_5fperconnectionparallelsockets',['SpeedifySDK_PerConnectionParallelSockets',['../struct_speedify_s_d_k___per_connection_parallel_sockets.html',1,'']]],
   ['speedifysdk_5fprivacysettings',['SpeedifySDK_PrivacySettings',['../struct_speedify_s_d_k___privacy_settings.html',1,'']]],
   ['speedifysdk_5fprivacysettingsresult',['SpeedifySDK_PrivacySettingsResult',['../struct_speedify_s_d_k___privacy_settings_result.html',1,'']]],

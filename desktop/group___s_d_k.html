@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">14.6.1</span>
+   &#160;<span id="projectnumber">14.7.0</span>
    </div>
   </td>
  </tr>
@@ -308,6 +308,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaf93f8c2a4b02c9f1eac82e688706afb5">SpeedifySDK_SetConnectionEncryption</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *adapterID, bool encrypted, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change encryption settings per connection.  <a href="#gaf93f8c2a4b02c9f1eac82e688706afb5">More...</a><br /></td></tr>
 <tr class="separator:gaf93f8c2a4b02c9f1eac82e688706afb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab134c3bf3cec9e74a6f515ab91e05d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gab134c3bf3cec9e74a6f515ab91e05d18">SpeedifySDK_SetConnectionExposeDscp</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *adapterID, bool exposed, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gab134c3bf3cec9e74a6f515ab91e05d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change expose DSCP setting per connection, which allows DSCP values of internal packets to be exposed on the VPN transport connections. Only supported on Linux.  <a href="#gab134c3bf3cec9e74a6f515ab91e05d18">More...</a><br /></td></tr>
+<tr class="separator:gab134c3bf3cec9e74a6f515ab91e05d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66a0e29cbf114627a3420a567415a5cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga66a0e29cbf114627a3420a567415a5cf">SpeedifySDK_EnableStatUpdates</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, uint8_t periodCount, uint32_t *periods)</td></tr>
 <tr class="memdesc:ga66a0e29cbf114627a3420a567415a5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable periodic connection stats, adapter list updates, session stats, and streaming stats to be sent while Speedify is connected.  <a href="#ga66a0e29cbf114627a3420a567415a5cf">More...</a><br /></td></tr>
 <tr class="separator:ga66a0e29cbf114627a3420a567415a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -580,6 +583,9 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 <tr class="memitem:gaed20753e679ff19f516121bf3279e352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___network_sharing_settings_result.html">SpeedifySDK_NetworkSharingSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaed20753e679ff19f516121bf3279e352">SpeedifySDK_SetNetworkSharingSameUserAutoPair</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const bool allow, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga4bf9960db6454da35b707bba9c5134f9">SpeedifySDK_NetworkSharingSettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaed20753e679ff19f516121bf3279e352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if devices from the same user are automatically paired.  <a href="#gaed20753e679ff19f516121bf3279e352">More...</a><br /></td></tr>
 <tr class="separator:gaed20753e679ff19f516121bf3279e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae734aaaa618eeec627066dc13702ff4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___network_sharing_settings_result.html">SpeedifySDK_NetworkSharingSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gae734aaaa618eeec627066dc13702ff4d">SpeedifySDK_SetNetworkSharingAlwaysOnDiscovery</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const bool enable, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga4bf9960db6454da35b707bba9c5134f9">SpeedifySDK_NetworkSharingSettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:gae734aaaa618eeec627066dc13702ff4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if discovery is always active. This can cause excessive battery usage.  <a href="#gae734aaaa618eeec627066dc13702ff4d">More...</a><br /></td></tr>
+<tr class="separator:gae734aaaa618eeec627066dc13702ff4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d39cef5fcfb7986d565b9c466cb8917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___network_sharing_pair_result.html">SpeedifySDK_NetworkSharingPairResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga4d39cef5fcfb7986d565b9c466cb8917">SpeedifySDK_ListenForNetworkSharePairRequest</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga771936d649beefb2765479ce2de40157">SpeedifySDK_NetworkSharingPairCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga4d39cef5fcfb7986d565b9c466cb8917"><td class="mdescLeft">&#160;</td><td class="mdescRight">listen for network share pair requests  <a href="#ga4d39cef5fcfb7986d565b9c466cb8917">More...</a><br /></td></tr>
 <tr class="separator:ga4d39cef5fcfb7986d565b9c466cb8917"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -590,6 +596,8 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 <tr class="separator:ga5e4ba18afa2e8c6889415292ef6f8c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga745298f792827a585eafccd6e061b11e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga745298f792827a585eafccd6e061b11e">SpeedifySDK_SetMaximumTransportRetry</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint32_t timeout, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="separator:ga745298f792827a585eafccd6e061b11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga727723ccd49b187bb30dd40bb55ddb0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga727723ccd49b187bb30dd40bb55ddb0c">SpeedifySDK_SendFeedback</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *feedback)</td></tr>
+<tr class="separator:ga727723ccd49b187bb30dd40bb55ddb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga71d0872f84d764b1777b71ac45d1589d"></a>
@@ -4624,6 +4632,34 @@ An expired access token will give an error of type <a class="el" href="group___t
 
 </div>
 </div>
+<a id="ga727723ccd49b187bb30dd40bb55ddb0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga727723ccd49b187bb30dd40bb55ddb0c">&#9670;&nbsp;</a></span>SpeedifySDK_SendFeedback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___base_result.html">SpeedifySDK_BaseResult</a> SpeedifySDK_SendFeedback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>feedback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaa3cb32c34c59fda5a2f08984673290ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa3cb32c34c59fda5a2f08984673290ba">&#9670;&nbsp;</a></span>SpeedifySDK_SetAdapterDailyDataLimit()</h2>
 
@@ -5018,6 +5054,66 @@ An expired access token will give an error of type <a class="el" href="group___t
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>settings result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="gab134c3bf3cec9e74a6f515ab91e05d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab134c3bf3cec9e74a6f515ab91e05d18">&#9670;&nbsp;</a></span>SpeedifySDK_SetConnectionExposeDscp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___settings_result.html">SpeedifySDK_SettingsResult</a> SpeedifySDK_SetConnectionExposeDscp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>adapterID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exposed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change expose DSCP setting per connection, which allows DSCP values of internal packets to be exposed on the VPN transport connections. Only supported on Linux. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">adapterID</td><td>ID of the adapterID </td></tr>
+    <tr><td class="paramname">exposed</td><td>whether to expose DSCP values for this connection </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>settings result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>14.6 </dd></dl>
 
 </div>
 </div>
@@ -7368,6 +7464,59 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>settings result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="gae734aaaa618eeec627066dc13702ff4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae734aaaa618eeec627066dc13702ff4d">&#9670;&nbsp;</a></span>SpeedifySDK_SetNetworkSharingAlwaysOnDiscovery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___network_sharing_settings_result.html">SpeedifySDK_NetworkSharingSettingsResult</a> SpeedifySDK_SetNetworkSharingAlwaysOnDiscovery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga4bf9960db6454da35b707bba9c5134f9">SpeedifySDK_NetworkSharingSettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets if discovery is always active. This can cause excessive battery usage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">enable</td><td>whether to enable discovery always </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>network sharing settings result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>14.7 </dd></dl>
 
 </div>
 </div>

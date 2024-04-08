@@ -8,6 +8,7 @@ var searchData=
   ['receivebps',['receiveBps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#adbee338d810be84c2481a82b31a6bbed',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['receivebytes',['receiveBytes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#a1665d6c526c59ecbf3ef2e5aebbad825',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['receiveestimatembps',['receiveEstimateMbps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#ace4da62624db5f8b60ff62abe5f233c2',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
+  ['receiverscallback',['ReceiversCallback',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager_1_1_receivers_callback.html',1,'com::speedify::speedifysdk::MultiReceiverManager']]],
   ['reconnecttonetworkshare',['reconnectToNetworkShare',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#add2c7114816c33666139cf1171a42878',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['redundant',['REDUNDANT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#a99278b454b2ca49335aec1d661798ad8',1,'com::speedify::speedifysdk::Types::BondingMode']]],
   ['redundantmodesaves',['redundantModeSaves',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a4352ac361fa12a4636de8640987dfc88',1,'com::speedify::speedifysdk::Types::StreamStats']]],
@@ -38,9 +39,9 @@ var searchData=
   ['refreshstreamingsettings',['refreshStreamingSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac0e82fd3c240b7febfe4e4010a8a59e8',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshstreamingstats',['refreshStreamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a7ccb948f7d4f12dcf440546a60705a67',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['refreshvendoruserdata',['refreshVendorUserData',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2d388b7b54b6417ea2423e2b85c7f86c',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['register',['register',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#a70e0927195da2d837779f70a2f725012',1,'com::speedify::speedifysdk::LocalBroadcastHelper']]],
+  ['register',['register',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html#a70e0927195da2d837779f70a2f725012',1,'com.speedify.speedifysdk.LocalBroadcastHelper.register()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a982e0c8990d12ffa23c8b092aec263c2',1,'com.speedify.speedifysdk.MultiReceiverManager.register()']]],
   ['registerreceiver',['RegisterReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_internal_intent_helper.html#af42403b8afef3bdfd2de6960e7f43cf2',1,'com::speedify::speedifysdk::InternalIntentHelper']]],
-  ['registersdkstatereceiver',['registerSdkStateReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a5cdae208c875935163188bd93040bd40',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['registersdkstatereceiver',['registerSdkStateReceiver',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#af1456dd4460c13f6cf61ef4e07aa3eb9',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['registerwsmessagehandler',['registerWsMessageHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0c3dc265577639dd4dbf364f38944110',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['reject',['REJECT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_pair_request_behavior.html#aaea48878fbaffdeec8a94049441c9e10',1,'com::speedify::speedifysdk::Types::NetworkSharing::PairRequestBehavior']]],
   ['remoteip',['remoteIp',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aca783cf8aa6edd1c8b5d8f496dc19c93',1,'com.speedify.speedifysdk.Types.ConnectionStats.remoteIp()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ac6d983cfbdf6c76427e6b2142287a88d',1,'com.speedify.speedifysdk.Types.StreamStats.remoteIp()']]],
@@ -57,5 +58,6 @@ var searchData=
   ['restartreason',['RestartReason',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html',1,'com::speedify::speedifysdk::Types']]],
   ['restartservices',['restartServices',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ac7131def996ac642a67a79c5cc900e81',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['retransbytes',['retransBytes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ace654b641593d5ae67ac3ef2af035193',1,'com::speedify::speedifysdk::Types::SessionStats']]],
-  ['retries',['retries',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#aa785eff5043e55ed5041f35a86789f79',1,'com::speedify::speedifysdk::Types::HandlerStats']]]
+  ['retries',['retries',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#aa785eff5043e55ed5041f35a86789f79',1,'com::speedify::speedifysdk::Types::HandlerStats']]],
+  ['run',['run',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager_1_1_receivers_callback.html#a188ab74ddd0760c8991fc6935d2b0c7d',1,'com::speedify::speedifysdk::MultiReceiverManager::ReceiversCallback']]]
 ];

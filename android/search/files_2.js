@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['iforegroundnotificationreceiver_2ejava',['IForegroundNotificationReceiver.java',['../_i_foreground_notification_receiver_8java.html',1,'']]],
   ['iforegroundservicereceiver_2ejava',['IForegroundServiceReceiver.java',['../_i_foreground_service_receiver_8java.html',1,'']]],
+  ['iforegroundservicestatereceiver_2ejava',['IForegroundServiceStateReceiver.java',['../_i_foreground_service_state_receiver_8java.html',1,'']]],
   ['inetworksharingreceiver_2ejava',['INetworkSharingReceiver.java',['../_i_network_sharing_receiver_8java.html',1,'']]],
   ['integration_2edox',['integration.dox',['../integration_8dox.html',1,'']]],
   ['internalintenthelper_2ejava',['InternalIntentHelper.java',['../_internal_intent_helper_8java.html',1,'']]],
