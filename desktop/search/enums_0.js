@@ -9,6 +9,7 @@ var searchData=
   ['speedifysdk_5ferrortype',['SpeedifySDK_ErrorType',['../group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2',1,'types.h']]],
   ['speedifysdk_5ffirewallmode',['SpeedifySDK_FirewallMode',['../group___t_y_p_e_s.html#gaa0999d1c8d7d3eaf8d6cea85609364c8',1,'types.h']]],
   ['speedifysdk_5floglevel',['SpeedifySDK_LogLevel',['../group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf',1,'types.h']]],
+  ['speedifysdk_5fnetworksharingautopairbehavior',['SpeedifySDK_NetworkSharingAutoPairBehavior',['../types_8h.html#a96d1882fb645f53efcaa865084c12b6a',1,'types.h']]],
   ['speedifysdk_5fnetworksharingpairrequestbehavior',['SpeedifySDK_NetworkSharingPairRequestBehavior',['../types_8h.html#af1be67b63c5f12f9e080f7824a3d123e',1,'types.h']]],
   ['speedifysdk_5fnetworksharingpeerrole',['SpeedifySDK_NetworkSharingPeerRole',['../types_8h.html#a098a9c305c844a82d9da76bf4e38f1c6',1,'types.h']]],
   ['speedifysdk_5fnetworksharingpeerstatus',['SpeedifySDK_NetworkSharingPeerStatus',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4',1,'types.h']]],

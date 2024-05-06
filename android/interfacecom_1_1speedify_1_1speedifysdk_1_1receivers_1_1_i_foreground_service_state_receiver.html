@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.7.0</span>
+   &#160;<span id="projectnumber">14.8.0</span>
    </div>
   </td>
  </tr>
@@ -105,9 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6471a75afe369dc87a67b2c5da59f7f2"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a6471a75afe369dc87a67b2c5da59f7f2">OnServiceRemoved</a> (@NonNull Service service)</td></tr>
 <tr class="memdesc:a6471a75afe369dc87a67b2c5da59f7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for vpn service OnRemoved.  <a href="#a6471a75afe369dc87a67b2c5da59f7f2">More...</a><br /></td></tr>
 <tr class="separator:a6471a75afe369dc87a67b2c5da59f7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38474e6cc8370581b7a9b043e899d065"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">OnServiceRestart</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> lastState, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html">RestartReason</a> reason)</td></tr>
-<tr class="memdesc:a38474e6cc8370581b7a9b043e899d065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown.  <a href="#a38474e6cc8370581b7a9b043e899d065">More...</a><br /></td></tr>
-<tr class="separator:a38474e6cc8370581b7a9b043e899d065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4ce2f3d4c28b8e599949e89efc25cb"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a1d4ce2f3d4c28b8e599949e89efc25cb">OnServiceRestart</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> lastState)</td></tr>
+<tr class="memdesc:a1d4ce2f3d4c28b8e599949e89efc25cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown.  <a href="#a1d4ce2f3d4c28b8e599949e89efc25cb">More...</a><br /></td></tr>
+<tr class="separator:a1d4ce2f3d4c28b8e599949e89efc25cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6925637ac74be505b7af3e02f5ec4ed4"><td class="memItemLeft" align="right" valign="top">default boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a6925637ac74be505b7af3e02f5ec4ed4">OnServiceStartError</a> ()</td></tr>
 <tr class="memdesc:a6925637ac74be505b7af3e02f5ec4ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error starting the vpn service.  <a href="#a6925637ac74be505b7af3e02f5ec4ed4">More...</a><br /></td></tr>
 <tr class="separator:a6925637ac74be505b7af3e02f5ec4ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,8 +206,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a38474e6cc8370581b7a9b043e899d065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38474e6cc8370581b7a9b043e899d065">&#9670;&nbsp;</a></span>OnServiceRestart()</h2>
+<a id="a1d4ce2f3d4c28b8e599949e89efc25cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4ce2f3d4c28b8e599949e89efc25cb">&#9670;&nbsp;</a></span>OnServiceRestart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,33 +216,22 @@ Public Member Functions</h2></td></tr>
           <td class="memname">default void com.speedify.speedifysdk.receivers.IForegroundServiceStateReceiver.OnServiceRestart </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a>&#160;</td>
-          <td class="paramname"><em>lastState</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>lastState</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html">RestartReason</a>&#160;</td>
-          <td class="paramname"><em>reason</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown. </p>
-<p>A default implementation is provided that reconnects if lastState was connecting/connected. Called from secondary (:vpnservice) process. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Called from secondary (:vpnservice) process. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lastState</td><td>the last known vpn state </td></tr>
-    <tr><td class="paramname">reason</td><td>reason for the restart </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>10.4 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>14.8 </dd></dl>
 
-<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab66c9197d2b8e9aeea084b2eb6a12f2c">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
+<p>Implemented in <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a2546b255a2df560e3742419f47d9a19e">com.speedify.speedifysdk.SpeedifyHandler</a>.</p>
 
 </div>
 </div>

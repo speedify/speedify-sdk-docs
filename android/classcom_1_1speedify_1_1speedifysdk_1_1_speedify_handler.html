@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.7.0</span>
+   &#160;<span id="projectnumber">14.8.0</span>
    </div>
   </td>
  </tr>
@@ -136,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab66c9197d2b8e9aeea084b2eb6a12f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab66c9197d2b8e9aeea084b2eb6a12f2c">OnServiceRestart</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> lastState, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_restart_reason.html">RestartReason</a> reason)</td></tr>
 <tr class="memdesc:ab66c9197d2b8e9aeea084b2eb6a12f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown.  <a href="#ab66c9197d2b8e9aeea084b2eb6a12f2c">More...</a><br /></td></tr>
 <tr class="separator:ab66c9197d2b8e9aeea084b2eb6a12f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2546b255a2df560e3742419f47d9a19e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a2546b255a2df560e3742419f47d9a19e">OnServiceRestart</a> (<a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a> lastState)</td></tr>
+<tr class="memdesc:a2546b255a2df560e3742419f47d9a19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown.  <a href="#a2546b255a2df560e3742419f47d9a19e">More...</a><br /></td></tr>
+<tr class="separator:a2546b255a2df560e3742419f47d9a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a906ca56b197bff620044797ea49cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0a906ca56b197bff620044797ea49cd6">OnNewAdapter</a> (@NonNull String adapterID, <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> type)</td></tr>
 <tr class="memdesc:a0a906ca56b197bff620044797ea49cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification for the first time seeing a new adapter.  <a href="#a0a906ca56b197bff620044797ea49cd6">More...</a><br /></td></tr>
 <tr class="separator:a0a906ca56b197bff620044797ea49cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,8 +294,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ac3b7796fd1987a2ded35980a54cbc99e"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ac3b7796fd1987a2ded35980a54cbc99e">SPEEDIFY_FOREGROUND_NOTIFICATION_ID</a> = 55501</td></tr>
+<tr class="memdesc:ac3b7796fd1987a2ded35980a54cbc99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification ID used for the foreground service's notification.  <a href="#ac3b7796fd1987a2ded35980a54cbc99e">More...</a><br /></td></tr>
 <tr class="separator:ac3b7796fd1987a2ded35980a54cbc99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f0d85a09ee4065be9691436db077d9"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab8f0d85a09ee4065be9691436db077d9">SPEEDIFY_FOREGROUND_CHANNEL_ID</a> = &quot;VPN&quot;</td></tr>
+<tr class="memdesc:ab8f0d85a09ee4065be9691436db077d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel ID used for the foreground service's notification.  <a href="#ab8f0d85a09ee4065be9691436db077d9">More...</a><br /></td></tr>
 <tr class="separator:ab8f0d85a09ee4065be9691436db077d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -404,7 +409,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 14.0. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">OnConnectedServer(ServerInformation)</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of 14.0. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">OnConnectedServer(ServerInformation)</a> </dd></dl>
 
 </div>
 </div>
@@ -460,7 +465,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>As of 14.0. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0f2995b2d8d6b36b67ed04423b601687">OnSettingError(String,ErrorType,String)</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>As of 14.0. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a0f2995b2d8d6b36b67ed04423b601687">OnSettingError(String,ErrorType,String)</a> </dd></dl>
 
 </div>
 </div>
@@ -637,7 +642,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ab66c9197d2b8e9aeea084b2eb6a12f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab66c9197d2b8e9aeea084b2eb6a12f2c">&#9670;&nbsp;</a></span>OnServiceRestart()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66c9197d2b8e9aeea084b2eb6a12f2c">&#9670;&nbsp;</a></span>OnServiceRestart() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,7 +668,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown. </p>
-<p>A default implementation is provided that reconnects if lastState was connecting/connected. Called from secondary (:vpnservice) process. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Called from secondary (:vpnservice) process. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lastState</td><td>the last known vpn state </td></tr>
     <tr><td class="paramname">reason</td><td>reason for the restart </td></tr>
@@ -671,8 +676,36 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>10.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>as of 14.8. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a1d4ce2f3d4c28b8e599949e89efc25cb">OnServiceRestart(State)</a> and/or <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a9e27790625d7b546d9879a2869e3f3e0">OnLastDisconnectEvent(DisconnectEvent)</a> </dd></dl>
 
-<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">com.speedify.speedifysdk.receivers.IForegroundServiceStateReceiver</a>.</p>
+</div>
+</div>
+<a id="a2546b255a2df560e3742419f47d9a19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2546b255a2df560e3742419f47d9a19e">&#9670;&nbsp;</a></span>OnServiceRestart() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.speedify.speedifysdk.SpeedifyHandler.OnServiceRestart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html">State</a>&#160;</td>
+          <td class="paramname"><em>lastState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback when vpn service restarts after a crash, an application update, or any other unclean shutdown. </p>
+<p>Called from secondary (:vpnservice) process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lastState</td><td>the last known vpn state </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.8 </dd></dl>
+
+<p>Implements <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a1d4ce2f3d4c28b8e599949e89efc25cb">com.speedify.speedifysdk.receivers.IForegroundServiceStateReceiver</a>.</p>
 
 </div>
 </div>
@@ -919,6 +952,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Channel ID used for the foreground service's notification. </p>
+<p>This cannot be overridden. </p><dl class="section since"><dt>Since</dt><dd>11.7 </dd></dl>
+
 </div>
 </div>
 <a id="ac3b7796fd1987a2ded35980a54cbc99e"></a>
@@ -940,6 +976,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Notification ID used for the foreground service's notification. </p>
+<p>This cannot be overridden. </p><dl class="section since"><dt>Since</dt><dd>11.7 </dd></dl>
 
 </div>
 </div>

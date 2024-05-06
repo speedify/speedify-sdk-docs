@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop
-   &#160;<span id="projectnumber">14.7.0</span>
+   &#160;<span id="projectnumber">14.8.0</span>
    </div>
   </td>
  </tr>
@@ -583,6 +583,9 @@ Supports Subscription.  <a href="#ga7725452fee63dcd3fcba2947e0f861d5">More...</a
 <tr class="memitem:gaed20753e679ff19f516121bf3279e352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___network_sharing_settings_result.html">SpeedifySDK_NetworkSharingSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gaed20753e679ff19f516121bf3279e352">SpeedifySDK_SetNetworkSharingSameUserAutoPair</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const bool allow, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga4bf9960db6454da35b707bba9c5134f9">SpeedifySDK_NetworkSharingSettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gaed20753e679ff19f516121bf3279e352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if devices from the same user are automatically paired.  <a href="#gaed20753e679ff19f516121bf3279e352">More...</a><br /></td></tr>
 <tr class="separator:gaed20753e679ff19f516121bf3279e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27934f4d75b2b87a1723f5c978ad7123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___network_sharing_settings_result.html">SpeedifySDK_NetworkSharingSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#ga27934f4d75b2b87a1723f5c978ad7123">SpeedifySDK_SetNetworkSharingAutoPairBehavior</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const <a class="el" href="types_8h.html#a96d1882fb645f53efcaa865084c12b6a">SpeedifySDK_NetworkSharingAutoPairBehavior</a> behavior, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga4bf9960db6454da35b707bba9c5134f9">SpeedifySDK_NetworkSharingSettingsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga27934f4d75b2b87a1723f5c978ad7123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if and how devices are automatically paired when discovered.  <a href="#ga27934f4d75b2b87a1723f5c978ad7123">More...</a><br /></td></tr>
+<tr class="separator:ga27934f4d75b2b87a1723f5c978ad7123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae734aaaa618eeec627066dc13702ff4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___network_sharing_settings_result.html">SpeedifySDK_NetworkSharingSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_d_k.html#gae734aaaa618eeec627066dc13702ff4d">SpeedifySDK_SetNetworkSharingAlwaysOnDiscovery</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const bool enable, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga4bf9960db6454da35b707bba9c5134f9">SpeedifySDK_NetworkSharingSettingsCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:gae734aaaa618eeec627066dc13702ff4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if discovery is always active. This can cause excessive battery usage.  <a href="#gae734aaaa618eeec627066dc13702ff4d">More...</a><br /></td></tr>
 <tr class="separator:gae734aaaa618eeec627066dc13702ff4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7520,6 +7523,59 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 
 </div>
 </div>
+<a id="ga27934f4d75b2b87a1723f5c978ad7123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27934f4d75b2b87a1723f5c978ad7123">&#9670;&nbsp;</a></span>SpeedifySDK_SetNetworkSharingAutoPairBehavior()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___network_sharing_settings_result.html">SpeedifySDK_NetworkSharingSettingsResult</a> SpeedifySDK_SetNetworkSharingAutoPairBehavior </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a>&#160;</td>
+          <td class="paramname"><em>sdk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a96d1882fb645f53efcaa865084c12b6a">SpeedifySDK_NetworkSharingAutoPairBehavior</a>&#160;</td>
+          <td class="paramname"><em>behavior</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga4bf9960db6454da35b707bba9c5134f9">SpeedifySDK_NetworkSharingSettingsCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets if and how devices are automatically paired when discovered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">behavior</td><td>behavior when discovering a peer </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>network sharing settings result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>14.8 </dd></dl>
+
+</div>
+</div>
 <a id="gab984b3ffaa60c508b1f1b8c2e44d7b33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab984b3ffaa60c508b1f1b8c2e44d7b33">&#9670;&nbsp;</a></span>SpeedifySDK_SetNetworkSharingClientEnabled()</h2>
 
@@ -7962,6 +8018,7 @@ Windows Only </p><dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>network sharing settings result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>14.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>as of 14.8 Use SpeedifySDK_SetNetworkSharingAutoPair behavior instead </dd></dl>
 
 </div>
 </div>

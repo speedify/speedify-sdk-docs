@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.7.0</span>
+   &#160;<span id="projectnumber">14.8.0</span>
    </div>
   </td>
  </tr>
@@ -73,7 +73,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcom_1_1speedify_1_1speedifysdk_1_1_state_tracking_s_b_r-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">com.speedify.speedifysdk.StateTrackingSBR Class Reference</div>  </div>
@@ -82,14 +81,14 @@ $(function() {
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for tracking startup/disconnect reasons. </p>
 <dl class="section since"><dt>Since</dt><dd>10.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>as of 14.8 </dd></dl>
 </div><div class="dynheader">
 Inheritance diagram for com.speedify.speedifysdk.StateTrackingSBR:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classcom_1_1speedify_1_1speedifysdk_1_1_state_tracking_s_b_r.png" usemap="#com.speedify.speedifysdk.StateTrackingSBR_map" alt=""/>
   <map id="com.speedify.speedifysdk.StateTrackingSBR_map" name="com.speedify.speedifysdk.StateTrackingSBR_map">
-<area href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html" title="Helper class for running BroadcastReceiver code off the main thread in a shared threadpool." alt="com.speedify.speedifysdk.PooledBroadcastReceiver" shape="rect" coords="0,56,310,80"/>
-<area href="classcom_1_1speedify_1_1speedifysdk_1_1_startup_broadcast_receiver.html" title="Base class for on-boot connect and killswitch functionality." alt="com.speedify.speedifysdk.StartupBroadcastReceiver" shape="rect" coords="0,168,310,192"/>
+<area href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html" title="Helper class for running BroadcastReceiver code off the main thread in a shared threadpool." alt="com.speedify.speedifysdk.PooledBroadcastReceiver" shape="rect" coords="0,56,309,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -105,49 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0bba0859c80e010ffc6b0741d7dc7641 inherit pub_methods_classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html#a0bba0859c80e010ffc6b0741d7dc7641">receive</a> (Context context, Intent intent)</td></tr>
 <tr class="memdesc:a0bba0859c80e010ffc6b0741d7dc7641 inherit pub_methods_classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this with your BroadcastReceiver code.  <a href="classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver.html#a0bba0859c80e010ffc6b0741d7dc7641">More...</a><br /></td></tr>
 <tr class="separator:a0bba0859c80e010ffc6b0741d7dc7641 inherit pub_methods_classcom_1_1speedify_1_1speedifysdk_1_1_pooled_broadcast_receiver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af7efa430c48e7b93f7558c0664a587af"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_state_tracking_s_b_r.html#af7efa430c48e7b93f7558c0664a587af">CheckStartupEvent</a> (Context context, Intent intent)</td></tr>
-<tr class="separator:af7efa430c48e7b93f7558c0664a587af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af7efa430c48e7b93f7558c0664a587af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7efa430c48e7b93f7558c0664a587af">&#9670;&nbsp;</a></span>CheckStartupEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void com.speedify.speedifysdk.StateTrackingSBR.CheckStartupEvent </td>
-          <td>(</td>
-          <td class="paramtype">Context&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Intent&#160;</td>
-          <td class="paramname"><em>intent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4bcb73b5e710080a4f796dcc48955e6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bcb73b5e710080a4f796dcc48955e6b">&#9670;&nbsp;</a></span>receive()</h2>
 

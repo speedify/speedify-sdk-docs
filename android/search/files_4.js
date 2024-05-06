@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['multireceivermanager_2ejava',['MultiReceiverManager.java',['../_multi_receiver_manager_8java.html',1,'']]]
+  ['networksharing_2edox',['networksharing.dox',['../networksharing_8dox.html',1,'']]],
+  ['notificationhelper_2ejava',['NotificationHelper.java',['../_notification_helper_8java.html',1,'']]]
 ];

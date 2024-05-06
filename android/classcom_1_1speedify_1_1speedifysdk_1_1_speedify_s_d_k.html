@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.7.0</span>
+   &#160;<span id="projectnumber">14.8.0</span>
    </div>
   </td>
  </tr>
@@ -520,6 +520,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1de4c80ac93606fa0eb9479e216eeb71"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1de4c80ac93606fa0eb9479e216eeb71">setNetworkSharingSameUserAutoPair</a> (boolean allow)</td></tr>
 <tr class="memdesc:a1de4c80ac93606fa0eb9479e216eeb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if devices from the same user are automatically paired.  <a href="#a1de4c80ac93606fa0eb9479e216eeb71">More...</a><br /></td></tr>
 <tr class="separator:a1de4c80ac93606fa0eb9479e216eeb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83cf9a9eef6c556638e827b920cfb7d"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad83cf9a9eef6c556638e827b920cfb7d">setNetworkSharingAutoPairBehavior</a> (NetworkSharing.AutoPairBehavior behavior)</td></tr>
+<tr class="memdesc:ad83cf9a9eef6c556638e827b920cfb7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if and how devices are automatically paired when discovered.  <a href="#ad83cf9a9eef6c556638e827b920cfb7d">More...</a><br /></td></tr>
+<tr class="separator:ad83cf9a9eef6c556638e827b920cfb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6a2e3c0e397e7a60bc9b79ae80d408c6">setUlpReportIntervalSeconds</a> (long interval)</td></tr>
 <tr class="memdesc:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the ULP reporting inverval in seconds.  <a href="#a6a2e3c0e397e7a60bc9b79ae80d408c6">More...</a><br /></td></tr>
 <tr class="separator:a6a2e3c0e397e7a60bc9b79ae80d408c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2625,7 +2628,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>11.9.2 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>as of 14.7. use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a982e0c8990d12ffa23c8b092aec263c2">sdkStateReceivers.register</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>as of 14.7. use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a982e0c8990d12ffa23c8b092aec263c2">sdkStateReceivers.register</a> instead </dd></dl>
 
 </div>
 </div>
@@ -3656,7 +3659,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>10.4 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>as of 14.3.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>as of 14.3.2 </dd></dl>
 
 </div>
 </div>
@@ -4438,6 +4441,33 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad83cf9a9eef6c556638e827b920cfb7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83cf9a9eef6c556638e827b920cfb7d">&#9670;&nbsp;</a></span>setNetworkSharingAutoPairBehavior()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.setNetworkSharingAutoPairBehavior </td>
+          <td>(</td>
+          <td class="paramtype">NetworkSharing.AutoPairBehavior&#160;</td>
+          <td class="paramname"><em>behavior</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets if and how devices are automatically paired when discovered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">behavior</td><td>behavior when discovering a peer Triggers <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_network_sharing_receiver.html#a7197b7ee07afc717481a9e4738da7b83">OnNetworkSharingSettings</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.8 </dd></dl>
+
+</div>
+</div>
 <a id="a57e7be6acb89c5efabb64c07d377ea2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57e7be6acb89c5efabb64c07d377ea2e">&#9670;&nbsp;</a></span>setNetworkSharingClientEnabled()</h2>
 
@@ -4684,6 +4714,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>14.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>as of 14.8. Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad83cf9a9eef6c556638e827b920cfb7d">setNetworkSharingAutoPairBehavior</a> </dd></dl>
 
 </div>
 </div>
@@ -5210,7 +5241,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>11.9.2 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>as of 14.7. use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a094d6346640bfb67f0581376f93dcc92">sdkStateReceivers.unregister</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>as of 14.7. use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a094d6346640bfb67f0581376f93dcc92">sdkStateReceivers.unregister</a> instead </dd></dl>
 
 </div>
 </div>

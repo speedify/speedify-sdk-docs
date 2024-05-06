@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['manual',['MANUAL',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_auto_pair_behavior.html#a8061db69083fbd9f6be62a5896548db7',1,'com::speedify::speedifysdk::Types::NetworkSharing::AutoPairBehavior']]],
   ['matchmode',['matchMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#a2743a9f0c3ee4ea85ef9349fe67128ed',1,'com::speedify::speedifysdk::Types::LocalProxySettings']]],
   ['maxdownloadspeed',['maxDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#af6eec00df3e669eaafee69379b5e18b6',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['maximumconnectretry',['maximumConnectRetry',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#af2ac391e9d699d7032d01606a546bdc6',1,'com::speedify::speedifysdk::Types::Settings']]],

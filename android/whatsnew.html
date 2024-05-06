@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.7.0</span>
+   &#160;<span id="projectnumber">14.8.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,17 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1470"></a>Speedify SDK for Android 14.7 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1480"></a>Speedify SDK for Android 14.8 </h2>
+<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad83cf9a9eef6c556638e827b920cfb7d">setNetworkSharingAutoPairBehavior</a> controls how network sharing automatically pairs with other devices on the same account and/or team</li>
+<li>Deprecations<ul>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#ab66c9197d2b8e9aeea084b2eb6a12f2c">OnServiceRestart(State,RestartReason)</a> - Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a1d4ce2f3d4c28b8e599949e89efc25cb">OnServiceRestart(State)</a> and/or <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a9e27790625d7b546d9879a2869e3f3e0">OnLastDisconnectEvent(DisconnectEvent)</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1de4c80ac93606fa0eb9479e216eeb71">setNetworkSharingSameUserAutoPair</a> - Use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad83cf9a9eef6c556638e827b920cfb7d">setNetworkSharingAutoPairBehavior</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_state_tracking_s_b_r.html">StateTrackingSBR</a> - no longer necessary for tracking startup/disconnect reasons</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1470"></a>Speedify SDK for Android 14.7 </h2>
 <ul>
 <li>Feedback can be added to the ULP data stream with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a25b5943728f7e8a5578e1282c1582a89">sendFeedback</a>.</li>
 <li>Network sharing tunnel status has new state <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_tunnel_status.html#a248513fad5225d355430b5a8b28959b6">PAUSED</a>.</li>
@@ -300,7 +310,7 @@ $(function() {
 </ul>
 </li>
 <li>Deprecation removals - Methods marked as Deprecated prior to 11.0 have been removed<ul>
-<li>ISpeedifyHandler.OnServiceRestart(State,boolean) Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">OnServiceRestart(State,RestartReason)</a></li>
+<li>ISpeedifyHandler.OnServiceRestart(State,boolean) Use OnServiceRestart(State,RestartReason)</li>
 <li>ISpeedifyHandler.OnAdapterOverlimit(String adapterID, AdapterUsageData usageData) - Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a56313c06c06dc3dc7e38113dcef79fe3">OnAdapterOverlimit(String,NetworkType,AdapterUsageData)</a></li>
 <li>ISpeedifyHandler.OnDirectoryDomain(String) - Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a484c7f2e5a38b618a7794c7915e6584b">OnDirectorySettings</a>.</li>
 <li>ISpeedifyHandler.OnDirectoryDomain(String,boolean) - Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a484c7f2e5a38b618a7794c7915e6584b">OnDirectorySettings</a>.</li>
@@ -514,12 +524,12 @@ $(function() {
 <li>You can now disable ESNI in directory and speed server requests with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a595d59f60f5727ba06036b815e4f55a4">setESNIEnabled</a> if your custom directory server does not support ESNI.</li>
 <li>Android Always-On VPN support may now be disabled. See <a class="el" href="alwayson.html">Disable Always-On Support</a> for details.</li>
 <li>Disconnect Events<ul>
-<li>To track reboot and upgrade disconnect events, see <a class="el" href="disconnectevents.html">Tracking Disconnect Events</a>.</li>
+<li>To track reboot and upgrade disconnect events, see Tracking Disconnect Events.</li>
 <li>The reason for the last disconnect may be queried via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa87d44348fbcc7cc58430c2edb7862d4">refreshLastDisconnectEvent</a>.</li>
 </ul>
 </li>
 <li>Deprecations<ul>
-<li>OnServiceRestart(State,boolean) has been deprecated. Use <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">OnServiceRestart(State,RestartReason)</a></li>
+<li>OnServiceRestart(State,boolean) has been deprecated. Use OnServiceRestart(State,RestartReason)</li>
 <li>OnDirectoryDomain(String) has been deprecated. Use OnDirectoryDomain(String,boolean)</li>
 </ul>
 </li>
@@ -767,7 +777,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_750"></a>Speedify SDK for Android 7.5 </h2>
 <ul>
-<li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a38474e6cc8370581b7a9b043e899d065">OnServiceRestart</a> to stop this behavior.</li>
+<li>The Speedify SDK will not automatically reconnect if the VPN was terminated abnormally while in a connected state. Override <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_service_state_receiver.html#a1d4ce2f3d4c28b8e599949e89efc25cb">OnServiceRestart</a> to stop this behavior.</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#aa448d3a5ed0ceb0271efc505bdfd2c0e">OnNewAdapter</a> now has a <a class="el" href="enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html">NetworkType</a> argument.</li>
 <li>refreshDirectoryDomain can be used to get the current directory domain via OnDirectoryDomain.</li>
 <li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a39a9fc02298b29923c809dda6df0c554">OnConnectedServer</a> now sends a <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information_detailed.html">ServerInformationDetailed</a> object with more information on the connect server..</li>

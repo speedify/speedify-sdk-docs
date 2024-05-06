@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tracking_20disconnect_20events',['Tracking Disconnect Events',['../disconnectevents.html',1,'']]],
   ['tag',['tag',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper_1_1_options.html#a12ca9a53612a6dea996c0515847ee73f',1,'com::speedify::speedifysdk::NotificationHelper::Options']]],
   ['tcp',['TCP',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a39a86cd0fda16c451f893a9af2ffaa01',1,'com.speedify.speedifysdk.Types.TransportMode.TCP()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_port_protocol.html#afa22fcdb304e5a1039a30473c4adf142',1,'com.speedify.speedifysdk.Types.PortProtocol.TCP()']]],
   ['team',['TEAM',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings_lock_reason.html#a75bceccde2b3b476d6b9eab03bcda32b',1,'com::speedify::speedifysdk::Types::SettingsLockReason']]],

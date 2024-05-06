@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['checkstartupevent',['CheckStartupEvent',['../classcom_1_1speedify_1_1speedifysdk_1_1_state_tracking_s_b_r.html#af7efa430c48e7b93f7558c0664a587af',1,'com::speedify::speedifysdk::StateTrackingSBR']]],
   ['cleanupoldjavalog',['cleanupOldJavalog',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#af6e25ef8f1e3e8f5730856f0ddf3dd14',1,'com::speedify::speedifysdk::LogGeneration']]],
   ['clear',['clear',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#a3b22327f2170437e0f6531757c59a50c',1,'com.speedify.speedifysdk.NotificationHelper.clear(Context context, int notificationId)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html#afafac8c1810182708bd8a009e4131f5a',1,'com.speedify.speedifysdk.NotificationHelper.clear(Context context, String notificationTag, int notificationId)']]],
   ['connectauto',['connectAuto',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2044f8af335757aebb88580abf145355',1,'com::speedify::speedifysdk::SpeedifySDK']]],

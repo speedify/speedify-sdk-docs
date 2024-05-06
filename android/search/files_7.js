@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['package_2dinfo_2ejava',['package-info.java',['../package-info_8java.html',1,'']]],
-  ['pendingintenthelper_2ejava',['PendingIntentHelper.java',['../_pending_intent_helper_8java.html',1,'']]],
-  ['permissions_2edox',['permissions.dox',['../permissions_8dox.html',1,'']]],
-  ['pooledbroadcastreceiver_2ejava',['PooledBroadcastReceiver.java',['../_pooled_broadcast_receiver_8java.html',1,'']]],
-  ['pooledexecutor_2ejava',['PooledExecutor.java',['../_pooled_executor_8java.html',1,'']]],
-  ['preferences_2ejava',['Preferences.java',['../_preferences_8java.html',1,'']]]
+  ['sdkinit_2edox',['sdkinit.dox',['../sdkinit_8dox.html',1,'']]],
+  ['servicenotification_2edox',['servicenotification.dox',['../servicenotification_8dox.html',1,'']]],
+  ['speedifyhandler_2ejava',['SpeedifyHandler.java',['../_speedify_handler_8java.html',1,'']]],
+  ['speedifysdk_2ejava',['SpeedifySDK.java',['../_speedify_s_d_k_8java.html',1,'']]],
+  ['startupbroadcastreceiver_2ejava',['StartupBroadcastReceiver.java',['../_startup_broadcast_receiver_8java.html',1,'']]],
+  ['statetrackingsbr_2ejava',['StateTrackingSBR.java',['../_state_tracking_s_b_r_8java.html',1,'']]]
 ];
