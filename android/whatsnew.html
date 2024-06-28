@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.8.0</span>
+   &#160;<span id="projectnumber">14.8.6</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,18 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1480"></a>Speedify SDK for Android 14.8 </h2>
+<div class="textblock"><p><a class="anchor" id="whatsnew_1486"></a>Speedify SDK for Android 14.8.6</p><ul>
+<li>New API <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a53416178e1a8a1cf10846bb2e1cfa55d">sendLogReport</a> to send logs to the directory server for automatic processing</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1485"></a>Speedify SDK for Android 14.8.5 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1481"></a>Speedify SDK for Android 14.8.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1480"></a>Speedify SDK for Android 14.8 </h2>
 <ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad83cf9a9eef6c556638e827b920cfb7d">setNetworkSharingAutoPairBehavior</a> controls how network sharing automatically pairs with other devices on the same account and/or team</li>
 <li>Deprecations<ul>
@@ -132,7 +143,7 @@ $(function() {
 </ul>
 <h2><a class="anchor" id="whatsnew_1420"></a>Speedify SDK for Android 14.2 </h2>
 <ul>
-<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html">StreamStats</a> expanded to include <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a5380e82b22b64d03c1dd9e1e37fd67f1">health</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ac6d983cfbdf6c76427e6b2142287a88d">remoteIp</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a0ed13938f4a1c1d36511db8b929c69d4">remotePort</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2ba7a538ac2cd96c80b5215489fc9822">protocol</a></li>
+<li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html">StreamStats</a> expanded to include <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a5380e82b22b64d03c1dd9e1e37fd67f1">health</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#ac6d983cfbdf6c76427e6b2142287a88d">remoteIp</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a463fd1794ac03f5cca9d3c8d58d879ef">remotePort</a>, <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a2ba7a538ac2cd96c80b5215489fc9822">protocol</a></li>
 <li>Automatic pairing with network peers using the same account is controllable via <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1de4c80ac93606fa0eb9479e216eeb71">setNetworkSharingSameUserAutoPair</a>.</li>
 </ul>
 <h2><a class="anchor" id="whatsnew_1412"></a>Speedify SDK for Android 14.1.2 </h2>
@@ -503,7 +514,7 @@ $(function() {
 <li>Log files and generated log zips may be deleted with <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a71ec7a377038174ab36595a11b153eb2">eraseAllLogFiles</a>. Note that the current active log file is not erased.</li>
 <li>Credentials, like oauth tokens and passwords, can be restricted from being saved locally using <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a3729a911fe4bcf7777397f6731977ff5">setDoNotStoreCredentials</a>. Note that you will have to manually call a login method on every new SDK daemon run.</li>
 <li>API Compatibility Changes<ul>
-<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a>'s <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#a9db09e559e8531a3a5f0e11e33b2095e">logComplete</a> callback now takes a boolean indicating successful log generation.</li>
+<li><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a>'s <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#a917adaed9d85e33bfb463a9980208ef0">logComplete</a> callback now takes a boolean indicating successful log generation.</li>
 <li>loginOauth has been changed to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0ec4552a5e448276f629a14c464c4310">loginOAuth</a>.</li>
 </ul>
 </li>

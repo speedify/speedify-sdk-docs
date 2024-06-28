@@ -21,5 +21,6 @@ var searchData=
   ['streamingsettings',['StreamingSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_settings.html',1,'com::speedify::speedifysdk::Types']]],
   ['streamingstats',['StreamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html',1,'com::speedify::speedifysdk::Types']]],
   ['streamstats',['StreamStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html',1,'com::speedify::speedifysdk::Types']]],
+  ['submittodirectory',['SubmitToDirectory',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_submit_to_directory.html',1,'com::speedify::speedifysdk::LogGeneration']]],
   ['subnet',['Subnet',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_subnet.html',1,'com::speedify::speedifysdk::Types']]]
 ];

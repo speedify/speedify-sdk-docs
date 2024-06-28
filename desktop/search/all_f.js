@@ -1,6 +1,7 @@
 var searchData=
 [
   ['packetaggregation',['packetAggregation',['../struct_speedify_s_d_k___settings.html#aac9afaa9408ebf5cb1f5daa081c68224',1,'SpeedifySDK_Settings']]],
+  ['packetpoolsize',['packetPoolSize',['../struct_speedify_s_d_k___settings.html#a0d23a119899512a063948baae5e4d203',1,'SpeedifySDK_Settings']]],
   ['packetsin',['packetsIn',['../struct_speedify_s_d_k___tun_stats.html#a44039e9f5ef3113c1d213704b658fcb4',1,'SpeedifySDK_TunStats::packetsIn()'],['../struct_speedify_s_d_k___handler_stats.html#ad84b15c082a9a9ebcb07834507cf058d',1,'SpeedifySDK_HandlerStats::packetsIn()']]],
   ['packetsout',['packetsOut',['../struct_speedify_s_d_k___tun_stats.html#a71325d64ee983838f66bd229592b2dee',1,'SpeedifySDK_TunStats::packetsOut()'],['../struct_speedify_s_d_k___handler_stats.html#aa23c39f7037c0032af11f5df1933b72d',1,'SpeedifySDK_HandlerStats::packetsOut()']]],
   ['packetwaits',['packetWaits',['../struct_speedify_s_d_k___tun_stats.html#af3bb24525b67e6e704de7f79fa3dd123',1,'SpeedifySDK_TunStats']]],

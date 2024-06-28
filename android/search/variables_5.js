@@ -1,6 +1,7 @@
 var searchData=
 [
   ['failoversaves',['failoverSaves',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a12e609c72bb4f3ffa3e4c5ca2509573c',1,'com::speedify::speedifysdk::Types::StreamStats']]],
+  ['file',['file',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback_1_1_completion_data.html#a632a0c7b8f531fa9d83cf0b8a0a02e40',1,'com::speedify::speedifysdk::LogGeneration::ILogCompleteCallback::CompletionData']]],
   ['filesize',['fileSize',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html#a4fe638d660ec54fc9c47f9814fba7b52',1,'com::speedify::speedifysdk::Types::DaemonLogSettings']]],
   ['filesperdaemon',['filesPerDaemon',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html#a146c61282ab1e644e6d3ccdf24fa4d0b',1,'com::speedify::speedifysdk::Types::DaemonLogSettings']]],
   ['foregroundservicereceivers',['foregroundServiceReceivers',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad669263cd8d8b92bbd854f04c2572328',1,'com::speedify::speedifysdk::SpeedifySDK']]],

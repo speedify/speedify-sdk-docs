@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.8.0</span>
+   &#160;<span id="projectnumber">14.8.6</span>
    </div>
   </td>
  </tr>
@@ -535,6 +535,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25b5943728f7e8a5578e1282c1582a89"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a25b5943728f7e8a5578e1282c1582a89">sendFeedback</a> (String feedback)</td></tr>
 <tr class="memdesc:a25b5943728f7e8a5578e1282c1582a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates new ulp data report with feedback message attached.  <a href="#a25b5943728f7e8a5578e1282c1582a89">More...</a><br /></td></tr>
 <tr class="separator:a25b5943728f7e8a5578e1282c1582a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53416178e1a8a1cf10846bb2e1cfa55d"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a53416178e1a8a1cf10846bb2e1cfa55d">sendLogReport</a> (String email, String message, File file)</td></tr>
+<tr class="memdesc:a53416178e1a8a1cf10846bb2e1cfa55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a log report to the Speedify team.  <a href="#a53416178e1a8a1cf10846bb2e1cfa55d">More...</a><br /></td></tr>
+<tr class="separator:a53416178e1a8a1cf10846bb2e1cfa55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd8b43f20d0eb08df91c909474956a1"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#acfd8b43f20d0eb08df91c909474956a1">sendMessage</a> (String messageType, JSONObject data)</td></tr>
 <tr class="separator:acfd8b43f20d0eb08df91c909474956a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b19036d97afcd7264a241ddd7e7a728"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a9b19036d97afcd7264a241ddd7e7a728">sendMessage</a> (String messageType, JSONArray data)</td></tr>
@@ -2836,6 +2839,51 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>14.7 </dd></dl>
+
+</div>
+</div>
+<a id="a53416178e1a8a1cf10846bb2e1cfa55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53416178e1a8a1cf10846bb2e1cfa55d">&#9670;&nbsp;</a></span>sendLogReport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void com.speedify.speedifysdk.SpeedifySDK.sendLogReport </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>email</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">File&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends a log report to the Speedify team. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>email address of the user sending the report </td></tr>
+    <tr><td class="paramname">message</td><td>message to include with the report </td></tr>
+    <tr><td class="paramname">file</td><td>file to include with the report </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.8.6 </dd></dl>
 
 </div>
 </div>

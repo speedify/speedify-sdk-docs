@@ -6,6 +6,7 @@ var searchData=
   ['city',['city',['../struct_speedify_s_d_k___server_information.html#a80095b794057db9630d37805e5e8f4fe',1,'SpeedifySDK_ServerInformation::city()'],['../struct_speedify_s_d_k___server_settings.html#a03dfde6b0f98438a6d9b3291a7327bee',1,'SpeedifySDK_ServerSettings::city()'],['../struct_speedify_s_d_k___speed_test_result_data.html#a0a0daa6ffa1bfa8f82c502d5c515ce8b',1,'SpeedifySDK_SpeedTestResultData::city()']]],
   ['clientenabled',['clientEnabled',['../struct_speedify_s_d_k___network_sharing_settings.html#a7ea86c30fe8ca8ba824eb7df5a03d38a',1,'SpeedifySDK_NetworkSharingSettings']]],
   ['configset',['configSet',['../struct_speedify_s_d_k___safe_browsing_result.html#a8404fa478bc6f5bd7b2d838b0034b6ff',1,'SpeedifySDK_SafeBrowsingResult']]],
+  ['congested',['congested',['../struct_speedify_s_d_k___connection_stats.html#a8cf9d2a5e83358a4e8c37b9f27f1c699',1,'SpeedifySDK_ConnectionStats']]],
   ['connected',['connected',['../struct_speedify_s_d_k___connection_stats.html#a6d17c9262b43a7b5a780246b16b6f11e',1,'SpeedifySDK_ConnectionStats']]],
   ['connectednetworkbssid',['connectedNetworkBSSID',['../struct_speedify_s_d_k___adapter_data.html#af0a48a42029eac75e0c87601107f8f85',1,'SpeedifySDK_AdapterData']]],
   ['connectednetworkname',['connectedNetworkName',['../struct_speedify_s_d_k___adapter_data.html#acf27f20fe1dba4764d3bfb7f179388e7',1,'SpeedifySDK_AdapterData']]],

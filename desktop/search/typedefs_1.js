@@ -26,6 +26,7 @@ var searchData=
   ['speedifysdk_5flocalproxydomainwatchlisthitcallback',['SpeedifySDK_LocalProxyDomainWatchlistHitCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga7638efb3a350b3db3b2e2dae3cfe11cf',1,'callbacks.h']]],
   ['speedifysdk_5flocalproxyport',['SpeedifySDK_LocalProxyPort',['../group___t_y_p_e_s.html#ga4f739c4c25fcfc2476a0631e1d610cad',1,'types.h']]],
   ['speedifysdk_5flocalproxysettingscallback',['SpeedifySDK_LocalProxySettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga716043d7f9828e753736754d91271687',1,'callbacks.h']]],
+  ['speedifysdk_5flogreportcallback',['SpeedifySDK_LogReportCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga435f88cf36c6a56db8314f7682e866d9',1,'callbacks.h']]],
   ['speedifysdk_5flogsettingscallback',['SpeedifySDK_LogSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#gad0185ee6d04104083bc6b1eccc1f49e2',1,'callbacks.h']]],
   ['speedifysdk_5fnetworksharingavailablesharescallback',['SpeedifySDK_NetworkSharingAvailableSharesCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga10b64e3fcadd8d4b4af8a923da57eb21',1,'callbacks.h']]],
   ['speedifysdk_5fnetworksharingconnectcode',['SpeedifySDK_NetworkSharingConnectCode',['../types_8h.html#ade0f49785c520d4b9aa77e56c711c12a',1,'types.h']]],

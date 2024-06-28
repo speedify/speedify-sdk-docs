@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.8.0</span>
+   &#160;<span id="projectnumber">14.8.6</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the Activity you pass to <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a681b133c26a5edbda731306d2eb987e5">shareLogs</a> implements this, then this callback will be called after logs are created.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_launch_share_sheet.html">LaunchShareSheet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches the share sheet with the log file.  <a href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_launch_share_sheet.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html">LogAction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for a log action to be taken after log generation.  <a href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_submit_to_directory.html">SubmitToDirectory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits longs to the directory server using the <a class="el" href="">sendLogReport</a>.  <a href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_submit_to_directory.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -118,6 +127,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b22838c5cdb62772aabcd07f37fff1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a0b22838c5cdb62772aabcd07f37fff1c">shareLogs</a> (final Activity activity, final <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> callback, final String fileName, final String email, final String subject, final String body)</td></tr>
 <tr class="memdesc:a0b22838c5cdb62772aabcd07f37fff1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log zip using custom messaging.  <a href="#a0b22838c5cdb62772aabcd07f37fff1c">More...</a><br /></td></tr>
 <tr class="separator:a0b22838c5cdb62772aabcd07f37fff1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5747450cc5bacf5c763f666abf97242e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5747450cc5bacf5c763f666abf97242e">create</a> (Context context, final List&lt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html">LogAction</a> &gt; actions)</td></tr>
+<tr class="memdesc:a5747450cc5bacf5c763f666abf97242e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log zip with a list of actions to take after log generation.  <a href="#a5747450cc5bacf5c763f666abf97242e">More...</a><br /></td></tr>
+<tr class="separator:a5747450cc5bacf5c763f666abf97242e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715feba9d862a7811edd9b92795ed763"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a715feba9d862a7811edd9b92795ed763">create</a> (Context context, final <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> callback, final List&lt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html">LogAction</a> &gt; actions)</td></tr>
+<tr class="memdesc:a715feba9d862a7811edd9b92795ed763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log zip with a list of actions to take after log generation.  <a href="#a715feba9d862a7811edd9b92795ed763">More...</a><br /></td></tr>
+<tr class="separator:a715feba9d862a7811edd9b92795ed763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5400cedc5d2f5999af6eafad4af3f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5c5400cedc5d2f5999af6eafad4af3f4">create</a> (Context context, final <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> callback, final String fileName, final List&lt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html">LogAction</a> &gt; actions)</td></tr>
+<tr class="memdesc:a5c5400cedc5d2f5999af6eafad4af3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log zip with a list of actions to take after log generation.  <a href="#a5c5400cedc5d2f5999af6eafad4af3f4">More...</a><br /></td></tr>
+<tr class="separator:a5c5400cedc5d2f5999af6eafad4af3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af6e25ef8f1e3e8f5730856f0ddf3dd14"></a>
@@ -155,6 +173,165 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5747450cc5bacf5c763f666abf97242e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5747450cc5bacf5c763f666abf97242e">&#9670;&nbsp;</a></span>create() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void com.speedify.speedifysdk.LogGeneration.create </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final List&lt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html">LogAction</a> &gt;&#160;</td>
+          <td class="paramname"><em>actions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a log zip with a list of actions to take after log generation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context used for OS acess. Implement <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a> to be notified on completion. </td></tr>
+    <tr><td class="paramname">actions</td><td>list of actions to take after log generation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.8.6 </dd></dl>
+
+</div>
+</div>
+<a id="a715feba9d862a7811edd9b92795ed763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715feba9d862a7811edd9b92795ed763">&#9670;&nbsp;</a></span>create() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void com.speedify.speedifysdk.LogGeneration.create </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final List&lt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html">LogAction</a> &gt;&#160;</td>
+          <td class="paramname"><em>actions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a log zip with a list of actions to take after log generation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context used for OS acess. </td></tr>
+    <tr><td class="paramname">callback</td><td>object to be notified on completion </td></tr>
+    <tr><td class="paramname">actions</td><td>list of actions to take after log generation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.8.6 </dd></dl>
+
+</div>
+</div>
+<a id="a5c5400cedc5d2f5999af6eafad4af3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c5400cedc5d2f5999af6eafad4af3f4">&#9670;&nbsp;</a></span>create() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void com.speedify.speedifysdk.LogGeneration.create </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback.html">ILogCompleteCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final List&lt; <a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_log_action.html">LogAction</a> &gt;&#160;</td>
+          <td class="paramname"><em>actions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a log zip with a list of actions to take after log generation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>context used for OS acess. </td></tr>
+    <tr><td class="paramname">callback</td><td>object to be notified on completion </td></tr>
+    <tr><td class="paramname">fileName</td><td>the name of the zip file to create. If required, you must request write permission to this path prior to calling. </td></tr>
+    <tr><td class="paramname">actions</td><td>list of actions to take after log generation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>14.8.6 </dd></dl>
+
+</div>
+</div>
 <a id="a158fef61d69a5a8d84d09168c255d68c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a158fef61d69a5a8d84d09168c255d68c">&#9670;&nbsp;</a></span>generateLogs() <span class="overload">[1/4]</span></h2>
 
@@ -187,6 +364,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5747450cc5bacf5c763f666abf97242e">create(context, Arrays.asList())</a> instead </dd></dl>
 
 </div>
 </div>
@@ -233,6 +411,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a715feba9d862a7811edd9b92795ed763">create(context, callback, Arrays.asList())</a> instead </dd></dl>
 
 </div>
 </div>
@@ -279,6 +458,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>10.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="">create(context, fileName, Arrays.asList())</a> instead </dd></dl>
 
 </div>
 </div>
@@ -332,6 +512,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5c5400cedc5d2f5999af6eafad4af3f4">create(context, callback, fileName, Arrays.asList())</a> instead </dd></dl>
 
 </div>
 </div>
@@ -367,6 +548,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>6.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5747450cc5bacf5c763f666abf97242e">create(context, Arrays.asList(new LaunchShareSheet()))</a> instead </dd></dl>
 
 </div>
 </div>
@@ -413,6 +595,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a715feba9d862a7811edd9b92795ed763">create(context, callback, Arrays.asList(new LaunchShareSheet()))</a> instead </dd></dl>
 
 </div>
 </div>
@@ -480,6 +663,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>6.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="">create(context, fileName, Arrays.asList(LaunchShareSheet(email,subject,body)))</a> instead </dd></dl>
 
 </div>
 </div>
@@ -554,6 +738,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>11.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>as of 14.8.6, use <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5c5400cedc5d2f5999af6eafad4af3f4">create(context, callback, fileName, Arrays.asList(LaunchShareSheet(email,subject,body)))</a> instead </dd></dl>
 
 </div>
 </div>

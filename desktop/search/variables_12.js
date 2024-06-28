@@ -2,6 +2,7 @@ var searchData=
 [
   ['testtime',['testTime',['../struct_speedify_s_d_k___speed_test_result_data.html#a0e15f8213ca53ce676abc364c9f40256',1,'SpeedifySDK_SpeedTestResultData']]],
   ['testtype',['testType',['../struct_speedify_s_d_k___speed_test_result_data.html#ab251d14ee3dfcb844278697b96355cba',1,'SpeedifySDK_SpeedTestResultData']]],
+  ['ticketid',['ticketId',['../struct_speedify_s_d_k___log_report_result.html#ac431c0b8fdc185c22cd3194132b4990d',1,'SpeedifySDK_LogReportResult']]],
   ['time',['time',['../struct_speedify_s_d_k___connection_stats_group.html#aff8e62b6fcd54ba39eede11dbe4a5956',1,'SpeedifySDK_ConnectionStatsGroup']]],
   ['title',['title',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html#a65785dad720219c29ac820912164b10f',1,'SpeedifySDK_LocalProxyDomainWatchlistHitResult::title()'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a26b83d082b0d3cffb8d261639112ec18',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::title()']]],
   ['torrentallowed',['torrentAllowed',['../struct_speedify_s_d_k___server_information.html#ab337fda0a1de9ab56399c4ebdc5ae25c',1,'SpeedifySDK_ServerInformation']]],
