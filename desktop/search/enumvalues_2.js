@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['cdm_5fbackup_5foff',['CDM_BACKUP_OFF',['../group___t_y_p_e_s.html#gga8796437d8a333e0344d503c4e92c2cfea9e393b3f4bcea7deaba718ec60257758',1,'types.h']]],
+  ['cdm_5fon',['CDM_ON',['../group___t_y_p_e_s.html#gga8796437d8a333e0344d503c4e92c2cfeaf3b7ad1200add5115cc7b8d460040746',1,'types.h']]],
+  ['cdm_5fstrict_5foff',['CDM_STRICT_OFF',['../group___t_y_p_e_s.html#gga8796437d8a333e0344d503c4e92c2cfea4a5ab8c9626881f5d99fe7bd15636981',1,'types.h']]],
   ['cp_5falways',['CP_ALWAYS',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303a41a610598477b1d08e0d19be53f79557',1,'types.h']]],
   ['cp_5fautomatic',['CP_AUTOMATIC',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303ad30fb394b9b7b53b4b6573bc0bcc8aa9',1,'types.h']]],
   ['cp_5fbackup',['CP_BACKUP',['../group___t_y_p_e_s.html#ggab1b46926c678d641667187a42ab9e303aa7f8a0e80dbf3fe551c1d7e02bc07fe7',1,'types.h']]],

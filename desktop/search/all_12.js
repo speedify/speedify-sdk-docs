@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['targetnumberofconnections',['targetNumberOfConnections',['../struct_speedify_s_d_k___settings.html#a5f6a4f2f600396deff1c5708789bbf8f',1,'SpeedifySDK_Settings']]],
   ['test_5fspeed',['TEST_SPEED',['../types_8h.html#adddd3c19526cfad74565d52d47376ef4a42bfd997711a41ceeb224be34c4a8768',1,'types.h']]],
   ['test_5fstreaming',['TEST_STREAMING',['../types_8h.html#adddd3c19526cfad74565d52d47376ef4a094895b6f877020937da178f901cec10',1,'types.h']]],
   ['testtime',['testTime',['../struct_speedify_s_d_k___speed_test_result_data.html#a0e15f8213ca53ce676abc364c9f40256',1,'SpeedifySDK_SpeedTestResultData']]],

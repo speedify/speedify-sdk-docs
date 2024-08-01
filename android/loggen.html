@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">14.8.6</span>
+   &#160;<span id="projectnumber">14.8.7</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>You can generate and share a <code>zip</code> file of Speedify logs by using the <a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html">LogGeneration</a> class:</p>
-<div class="fragment"><div class="line"><span class="keyword">import</span> <a class="code" href="namespacecom.html">com</a>.<a class="code" href="namespacecom_1_1speedify.html">speedify</a>.<a class="code" href="namespacecom_1_1speedify_1_1speedifysdk.html">speedifysdk</a>.<a class="code" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html">LogGeneration</a>;</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line">LogGeneration.<a class="code" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a681b133c26a5edbda731306d2eb987e5">shareLogs</a>(currentActivity);</div></div><!-- fragment --><p>You may also generate logs via adb by launching it's intent, replacing <code>your.package.id</code> with the package ID of your application : </p><div class="fragment"><div class="line">adb shell am start -a your.package.id.speedifysdk.sharelogs</div></div><!-- fragment --><p>These will generate a Share dialog allowing you to choose where the log file is sent to. </p>
+<div class="fragment"><div class="line"><span class="keyword">import</span> <a class="code" href="namespacecom.html">com</a>.<a class="code" href="namespacecom_1_1speedify.html">speedify</a>.<a class="code" href="namespacecom_1_1speedify_1_1speedifysdk.html">speedifysdk</a>.<a class="code" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html">LogGeneration</a>;</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line"><span class="comment">// To submit log files directly to the directory server</span></div><div class="line">LogGeneration.<a class="code" href="classcom_1_1speedify_1_1speedifysdk_1_1_log_generation.html#a5747450cc5bacf5c763f666abf97242e">create</a>(currentActivity, Arrays.asList(<span class="keyword">new</span> LogGeneration.SubmitToDirectory(<span class="stringliteral">&quot;user@email.com&quot;</span>, <span class="stringliteral">&quot;description of issue&quot;</span>);));</div><div class="line"></div><div class="line"><span class="comment">// or</span></div><div class="line"></div><div class="line"><span class="comment">// To generate a share dialog with the log zip</span></div><div class="line">LogGeneration.create(currentActivity, Arrays.asList(<span class="keyword">new</span> LogGeneration.LaunchShareSheet()));</div></div><!-- fragment --><p>You may also generate logs via adb by launching it's intent, replacing <code>your.package.id</code> with the package ID of your application : </p><div class="fragment"><div class="line">adb shell am start -a your.package.id.speedifysdk.sharelogs</div></div><!-- fragment --><p>These will generate a Share dialog allowing you to choose where the log file is sent to. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.15-->
