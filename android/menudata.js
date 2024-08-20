@@ -23,7 +23,8 @@ for the JavaScript code in this file
 */
 var menudata={children:[
 {text:"Overview",url:"index.html"},
-{text:"Packages",url:"namespaces.html",children:[
+{text:"Pages",url:"pages.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
 {text:"Packages",url:"namespaces.html"}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
@@ -95,4 +96,6 @@ var menudata={children:[
 {text:"u",url:"functions_vars_u.html#index_u"},
 {text:"v",url:"functions_vars_v.html#index_v"},
 {text:"w",url:"functions_vars_w.html#index_w"},
-{text:"y",url:"functions_vars_y.html#index_y"}]}]}]}]}
+{text:"y",url:"functions_vars_y.html#index_y"}]}]}]},
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"}]}]}

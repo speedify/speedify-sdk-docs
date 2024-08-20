@@ -1,7 +1,7 @@
 var searchData=
 [
   ['id',['id',['../struct_speedify_s_d_k___stream_stats.html#acb1d4eac3a1233dfa7cc189208dee37d',1,'SpeedifySDK_StreamStats']]],
-  ['introduction_20to_20the_20speedify_20sdk_20for_20desktop',['Introduction to the Speedify SDK for Desktop',['../index.html',1,'']]],
+  ['introduction_20to_20the_20speedify_20sdk_20for_20desktop_2fembedded',['Introduction to the Speedify SDK for Desktop/Embedded',['../index.html',1,'']]],
   ['inflight',['inFlight',['../struct_speedify_s_d_k___connection_stats.html#a3ca6775f113be39f64adde18e231b068',1,'SpeedifySDK_ConnectionStats']]],
   ['inflightwindow',['inFlightWindow',['../struct_speedify_s_d_k___connection_stats.html#a9ab007b3e61eb1f49e3431be53999bd9',1,'SpeedifySDK_ConnectionStats']]],
   ['initialized',['initialized',['../struct_speedify_s_d_k___safe_browsing_result.html#a4086401dd7adbbb4b996a07820362855',1,'SpeedifySDK_SafeBrowsingResult']]],
