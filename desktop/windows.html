@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop/Embedded
-   &#160;<span id="projectnumber">14.8.8</span>
+   &#160;<span id="projectnumber">14.9.1</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,10 @@ $(function() {
 </ul>
 </li>
 <li>docs/ - SDK documentation</li>
+<li>resources/<ul>
+<li>cacert.pem - CA certificate for the SDK</li>
+</ul>
+</li>
 </ul>
 <h2>Building </h2>
 <ul>
@@ -112,7 +116,7 @@ $(function() {
 <h2>Running </h2>
 <ul>
 <li>Run speedify.exe as an admin process or install it as a Windows service.</li>
-<li>Pass in arguments to the daemon of '-p &lt;port number&gt; -r &lt;installation path&gt; -d &lt;log data path&gt;'.</li>
+<li>Pass in arguments to the daemon of '-p &lt;port number&gt; -r &lt;installation path of the resources folder&gt; -d &lt;log data path&gt;'.</li>
 <li>If running as a Windows service, also pass argument of '-s &lt;Service Name&gt;' with the name you installed the service as.</li>
 <li>In your code, instantiate a CSpeedifySDK object via <a class="el" href="group___s_d_k.html#ga14ebf162d7bb4e594ba981b34da2b6ab" title="Create a new SDK object.">SpeedifySDK_CreateWithSettings(SpeedifySDK_CreateSettings settings)</a> with the same port you passed to the speedify.exe daemon. </li>
 </ul>

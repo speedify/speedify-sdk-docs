@@ -15,5 +15,6 @@ var searchData=
   ['requesttodisabledoh',['requestToDisableDoH',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a67f025496aa6c365af15ae7840c96c0d',1,'com::speedify::speedifysdk::Types::PrivacySettings']]],
   ['resolution',['resolution',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a172131d8793fdfa84b2058df875b081d',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
   ['retransbytes',['retransBytes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ace654b641593d5ae67ac3ef2af035193',1,'com::speedify::speedifysdk::Types::SessionStats']]],
-  ['retries',['retries',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#aa785eff5043e55ed5041f35a86789f79',1,'com::speedify::speedifysdk::Types::HandlerStats']]]
+  ['retries',['retries',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#aa785eff5043e55ed5041f35a86789f79',1,'com::speedify::speedifysdk::Types::HandlerStats']]],
+  ['retry_5flogin',['RETRY_LOGIN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_action.html#a0e398cb54687a5e87611713fd44a57cf',1,'com::speedify::speedifysdk::Types::AccountAction']]]
 ];

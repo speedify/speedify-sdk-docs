@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['speedifysdk_5faccountaction',['SpeedifySDK_AccountAction',['../group___t_y_p_e_s.html#ga66bbbf6ae3bf6871397b47096af8bd36',1,'types.h']]],
   ['speedifysdk_5faccountpaymenttype',['SpeedifySDK_AccountPaymentType',['../group___t_y_p_e_s.html#gafddea3bcdbce77ede80928a7fb218600',1,'types.h']]],
   ['speedifysdk_5fautoconnectmethod',['SpeedifySDK_AutoConnectMethod',['../group___t_y_p_e_s.html#gab919eb84f5459fa31364b2a5a24088f2',1,'types.h']]],
   ['speedifysdk_5fbondingmode',['SpeedifySDK_BondingMode',['../group___t_y_p_e_s.html#ga673980be58fe205ac13216bd9c934128',1,'types.h']]],

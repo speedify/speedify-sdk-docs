@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop/Embedded
-   &#160;<span id="projectnumber">14.8.8</span>
+   &#160;<span id="projectnumber">14.9.1</span>
    </div>
   </td>
  </tr>
@@ -252,6 +252,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gafddea3bcdbce77ede80928a7fb218600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information on an account's payment type.  <a href="group___t_y_p_e_s.html#gafddea3bcdbce77ede80928a7fb218600">More...</a><br /></td></tr>
 <tr class="separator:gafddea3bcdbce77ede80928a7fb218600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66bbbf6ae3bf6871397b47096af8bd36"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga66bbbf6ae3bf6871397b47096af8bd36">SpeedifySDK_AccountAction</a> { <br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga66bbbf6ae3bf6871397b47096af8bd36a532bb054c746da3b1ac0bd2be96046f0">AA_NONE</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga66bbbf6ae3bf6871397b47096af8bd36ab108579203b2210ae7ad0052d3706837">AA_RETRY_LOGIN</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga66bbbf6ae3bf6871397b47096af8bd36ab46b84c3965ce4cd17328552eee6aa51">AA_CONNECT_INTERNET_AND_RETRY_LOGIN</a>, 
+<a class="el" href="group___t_y_p_e_s.html#gga66bbbf6ae3bf6871397b47096af8bd36a0c71dfbf3c75d720f674714862e2ee7e">AA_ACTIVATE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga66bbbf6ae3bf6871397b47096af8bd36af92b45a97cbf532aed18aecb23b0b36c">AA_ACTIVATE_OR_PURCHASE_LICENCE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga66bbbf6ae3bf6871397b47096af8bd36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actions that should be taken on an account.  <a href="group___t_y_p_e_s.html#ga66bbbf6ae3bf6871397b47096af8bd36">More...</a><br /></td></tr>
+<tr class="separator:ga66bbbf6ae3bf6871397b47096af8bd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc5444e7756604223c538c9417e89cbe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gabc5444e7756604223c538c9417e89cbe">SpeedifySDK_ConnectionState</a> { <a class="el" href="group___t_y_p_e_s.html#ggabc5444e7756604223c538c9417e89cbea2d152dc77c713c2c1e991737e137f8f3">CSTATE_DISCONNECTED</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggabc5444e7756604223c538c9417e89cbea721ea2b825ee3dc05fc07234fee62574">CSTATE_CONNECTING</a>, 
 <a class="el" href="group___t_y_p_e_s.html#ggabc5444e7756604223c538c9417e89cbeaa1fa11f367a7454366f2159c98c97098">CSTATE_CONNECTED</a>
@@ -464,6 +475,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6823f682b3bc5fb8d664ddaf5f76fe1b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga6823f682b3bc5fb8d664ddaf5f76fe1b">SpeedifySDK_AccountPaymentType_toString</a> (<a class="el" href="group___t_y_p_e_s.html#gafddea3bcdbce77ede80928a7fb218600">SpeedifySDK_AccountPaymentType</a> paymentType)</td></tr>
 <tr class="memdesc:ga6823f682b3bc5fb8d664ddaf5f76fe1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_AccountPaymentType.  <a href="#ga6823f682b3bc5fb8d664ddaf5f76fe1b">More...</a><br /></td></tr>
 <tr class="separator:ga6823f682b3bc5fb8d664ddaf5f76fe1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2974b4b4ad71f936366851a950ef3128"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga2974b4b4ad71f936366851a950ef3128">SpeedifySDK_AccountAction_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga66bbbf6ae3bf6871397b47096af8bd36">SpeedifySDK_AccountAction</a> action)</td></tr>
+<tr class="memdesc:ga2974b4b4ad71f936366851a950ef3128"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_AccountAction.  <a href="#ga2974b4b4ad71f936366851a950ef3128">More...</a><br /></td></tr>
+<tr class="separator:ga2974b4b4ad71f936366851a950ef3128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga672ab4f8950fd01b7a9e3f82e53db566"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga672ab4f8950fd01b7a9e3f82e53db566">SpeedifySDK_ConnectionState_toString</a> (<a class="el" href="group___t_y_p_e_s.html#gabc5444e7756604223c538c9417e89cbe">SpeedifySDK_ConnectionState</a> state)</td></tr>
 <tr class="memdesc:ga672ab4f8950fd01b7a9e3f82e53db566"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_ConnectionState.  <a href="#ga672ab4f8950fd01b7a9e3f82e53db566">More...</a><br /></td></tr>
 <tr class="separator:ga672ab4f8950fd01b7a9e3f82e53db566"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -657,6 +671,40 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga66bbbf6ae3bf6871397b47096af8bd36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66bbbf6ae3bf6871397b47096af8bd36">&#9670;&nbsp;</a></span>SpeedifySDK_AccountAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___t_y_p_e_s.html#ga66bbbf6ae3bf6871397b47096af8bd36">SpeedifySDK_AccountAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actions that should be taken on an account. </p>
+<dl class="section since"><dt>Since</dt><dd>14.9.1 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga66bbbf6ae3bf6871397b47096af8bd36a532bb054c746da3b1ac0bd2be96046f0"></a>AA_NONE&#160;</td><td class="fielddoc"><p>No action needed. </p>
+<dl class="section since"><dt>Since</dt><dd>14.9.1 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66bbbf6ae3bf6871397b47096af8bd36ab108579203b2210ae7ad0052d3706837"></a>AA_RETRY_LOGIN&#160;</td><td class="fielddoc"><p>A (possibly temporary) error occurred. Retry login. </p>
+<dl class="section since"><dt>Since</dt><dd>14.9.1 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66bbbf6ae3bf6871397b47096af8bd36ab46b84c3965ce4cd17328552eee6aa51"></a>AA_CONNECT_INTERNET_AND_RETRY_LOGIN&#160;</td><td class="fielddoc"><p>Connect to the internet and retry login. </p>
+<dl class="section since"><dt>Since</dt><dd>14.9.1 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66bbbf6ae3bf6871397b47096af8bd36a0c71dfbf3c75d720f674714862e2ee7e"></a>AA_ACTIVATE&#160;</td><td class="fielddoc"><p>No saved credentials/not previously activated. Activate the account. </p>
+<dl class="section since"><dt>Since</dt><dd>14.9.1 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66bbbf6ae3bf6871397b47096af8bd36af92b45a97cbf532aed18aecb23b0b36c"></a>AA_ACTIVATE_OR_PURCHASE_LICENCE&#160;</td><td class="fielddoc"><p>Current account does not have a license usable on this device. Activate or purchase a license. </p>
+<dl class="section since"><dt>Since</dt><dd>14.9.1 </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gafddea3bcdbce77ede80928a7fb218600"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafddea3bcdbce77ede80928a7fb218600">&#9670;&nbsp;</a></span>SpeedifySDK_AccountPaymentType</h2>
 
@@ -1339,6 +1387,27 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga2974b4b4ad71f936366851a950ef3128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2974b4b4ad71f936366851a950ef3128">&#9670;&nbsp;</a></span>SpeedifySDK_AccountAction_toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SpeedifySDK_AccountAction_toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___t_y_p_e_s.html#ga66bbbf6ae3bf6871397b47096af8bd36">SpeedifySDK_AccountAction</a>&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>String representation of a SpeedifySDK_AccountAction. </p>
+<dl class="section since"><dt>Since</dt><dd>14.9.1 </dd></dl>
+
+</div>
+</div>
 <a id="ga6823f682b3bc5fb8d664ddaf5f76fe1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6823f682b3bc5fb8d664ddaf5f76fe1b">&#9670;&nbsp;</a></span>SpeedifySDK_AccountPaymentType_toString()</h2>
 

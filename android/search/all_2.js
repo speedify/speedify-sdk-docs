@@ -13,6 +13,7 @@ var searchData=
   ['closestpublic',['CLOSESTPUBLIC',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html#ae1633f42a4026a6c69e9697beef202ad',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
   ['com',['com',['../namespacecom.html',1,'']]],
   ['completiondata',['CompletionData',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback_1_1_completion_data.html',1,'com.speedify.speedifysdk.LogGeneration.ILogCompleteCallback.CompletionData'],['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback_1_1_completion_data.html#a76393a35e15d5350fc67eaf6272fd6b9',1,'com.speedify.speedifysdk.LogGeneration.ILogCompleteCallback.CompletionData.CompletionData()']]],
+  ['connect_5finternet_5fand_5fretry_5flogin',['CONNECT_INTERNET_AND_RETRY_LOGIN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_action.html#a5db2ce61bf3c2ae4a9e4cae309f4997b',1,'com::speedify::speedifysdk::Types::AccountAction']]],
   ['connectauto',['connectAuto',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a2044f8af335757aebb88580abf145355',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['connectbycity',['connectByCity',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1531d365a52e84c52ef7e0568dd5abf0',1,'com::speedify::speedifysdk::SpeedifySDK']]],
   ['connectbycountry',['connectByCountry',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ab12f163c32c3b6816aaa85011b6194cb',1,'com::speedify::speedifysdk::SpeedifySDK']]],

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop/Embedded
-   &#160;<span id="projectnumber">14.8.8</span>
+   &#160;<span id="projectnumber">14.9.1</span>
    </div>
   </td>
  </tr>
@@ -73,7 +73,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h2>Files </h2>
 <ul>
-<li>bin/&lt;platform&gt; - Binaries for AMD64, ARM, and ARM64 platforms<ul>
+<li>bin/[amd64|arm64|arm]<ul>
 <li>speedify - main daemon</li>
 <li>libbondingsdk.so - Speedify SDK Library for communicating with the daemon</li>
 </ul>
@@ -83,6 +83,11 @@ $(function() {
 </ul>
 </li>
 <li>docs/ - SDK documentation</li>
+<li>resources/<ul>
+<li>cacert.pem - CA certificate for the SDK</li>
+<li>GenerateLogs.sh - script to generate logs</li>
+</ul>
+</li>
 </ul>
 <h2>Building </h2>
 <ul>
@@ -90,11 +95,23 @@ $(function() {
 </ul>
 <h2>Distributing </h2>
 <ul>
-<li>Install Speedify's dependencies : net-tools</li>
+<li>Install Speedify's dependencies<ul>
+<li>Debian-based:<ul>
+<li>net-tools, procps, libc-bin</li>
+</ul>
+</li>
+<li>OpenWrt-based:<ul>
+<li>kmod-tun, libstdcpp, libatomic1</li>
+<li>Provide a &lt;target-triple&gt;-compatible GNU libc runtime in /lib/&lt;target-triple&gt;, such as unpacked libc6 and libgcc1 tarballs</li>
+<li>Provide a GNU libc-compatible linker-loader in /lib/ld-linux-&lt;target-arch&gt;.so.&lt;linker-version&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2>Running </h2>
 <ul>
-<li>Pass in arguments to the daemon of '-p &lt;port number&gt; -r &lt;installation path&gt; -d &lt;log data path&gt;'. </li>
+<li>Pass in arguments to the daemon of '-p &lt;port number&gt; -r &lt;installation path of the resources folder&gt; -d &lt;log data path&gt;'. </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

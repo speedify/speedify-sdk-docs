@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['speedifysdk_5faccountaction_5ftostring',['SpeedifySDK_AccountAction_toString',['../group___t_y_p_e_s.html#ga2974b4b4ad71f936366851a950ef3128',1,'types.h']]],
   ['speedifysdk_5faccountcheck',['SpeedifySDK_AccountCheck',['../group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4',1,'speedifysdk.h']]],
   ['speedifysdk_5faccountcreate',['SpeedifySDK_AccountCreate',['../group___s_d_k.html#gaa9c05d2331dcc69b88817da5c1746928',1,'speedifysdk.h']]],
   ['speedifysdk_5faccountpasswordchange',['SpeedifySDK_AccountPasswordChange',['../group___s_d_k.html#ga737c02bfdc85c91d9605406df3434dc8',1,'speedifysdk.h']]],

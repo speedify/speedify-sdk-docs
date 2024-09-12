@@ -10,7 +10,7 @@ var searchData=
   ['networktype',['NetworkType',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html',1,'com::speedify::speedifysdk::Types']]],
   ['never',['NEVER',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_priority.html#a32959b613c04b917487bb342babeac10',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
   ['no_5fnetworks',['NO_NETWORKS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_tunnel_status.html#a37bf86a2630aa46a4c85a4feae433678',1,'com::speedify::speedifysdk::Types::NetworkSharing::TunnelStatus']]],
-  ['none',['NONE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a1243015ce5af991a60255b7f2b7c6917',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
+  ['none',['NONE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_action.html#a7b97e55034c2eb094849f819f8ab6c08',1,'com.speedify.speedifysdk.Types.AccountAction.NONE()'],['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#a1243015ce5af991a60255b7f2b7c6917',1,'com.speedify.speedifysdk.Types.DisconnectReason.NONE()']]],
   ['not_5fauthenticated',['NOT_AUTHENTICATED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_tunnel_status.html#af15e0494098c48d779e962272a8a4b69',1,'com::speedify::speedifysdk::Types::NetworkSharing::TunnelStatus']]],
   ['notificationhelper',['NotificationHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper.html',1,'com::speedify::speedifysdk']]],
   ['notificationhelper_2ejava',['NotificationHelper.java',['../_notification_helper_8java.html',1,'']]],

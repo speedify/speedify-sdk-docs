@@ -2,6 +2,7 @@ var searchData=
 [
   ['accountexists',['accountExists',['../struct_speedify_s_d_k___account_check_result.html#af70f398569716bf1d919acab745f2573',1,'SpeedifySDK_AccountCheckResult']]],
   ['accounting',['accounting',['../struct_speedify_s_d_k___accounting_result.html#a0ef20a9ead72cd1a968970a078bf9077',1,'SpeedifySDK_AccountingResult']]],
+  ['action',['action',['../struct_speedify_s_d_k___accounting_data.html#a02fe37059d30d800c953ad820cb0cecf',1,'SpeedifySDK_AccountingData']]],
   ['activationcode',['activationCode',['../struct_speedify_s_d_k___activation_code_result.html#a081d3a5cd5cacddd3886c4f677ebd077',1,'SpeedifySDK_ActivationCodeResult']]],
   ['activationurl',['activationUrl',['../struct_speedify_s_d_k___activation_code_result.html#a4489f03584afb62c3e9ecffb63298ddd',1,'SpeedifySDK_ActivationCodeResult']]],
   ['active',['active',['../struct_speedify_s_d_k___stream_stats.html#abecf87b902cc7f5524635e28b6491dfa',1,'SpeedifySDK_StreamStats']]],
