@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop/Embedded
-   &#160;<span id="projectnumber">14.9.3</span>
+   &#160;<span id="projectnumber">15.0.1</span>
    </div>
   </td>
  </tr>
@@ -155,6 +155,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___streaming_session_stats.html">SpeedifySDK_StreamingSessionStats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains session stats regarding streaming mode.  <a href="struct_speedify_s_d_k___streaming_session_stats.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___dscp_stats.html">SpeedifySDK_DscpStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains stats for a defined DSCP queue.  <a href="struct_speedify_s_d_k___dscp_stats.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___dscp_stats_array.html">SpeedifySDK_DscpStatsArray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of DSCP queue stats.  <a href="struct_speedify_s_d_k___dscp_stats_array.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___session_stats.html">SpeedifySDK_SessionStats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistics for a period.  <a href="struct_speedify_s_d_k___session_stats.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +208,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___network_share_peer.html">SpeedifySDK_NetworkSharePeer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a network share peer.  <a href="struct_speedify_s_d_k___network_share_peer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___d_s_c_p_queue.html">SpeedifySDK_DSCPQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP queue configuration.  <a href="struct_speedify_s_d_k___d_s_c_p_queue.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___d_s_c_p_settings.html">SpeedifySDK_DSCPSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP settings.  <a href="struct_speedify_s_d_k___d_s_c_p_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -533,6 +545,18 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:af67511c19bae90b5fce16afb71e801a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of a NetworkSharing tunnel.  <a href="types_8h.html#af67511c19bae90b5fce16afb71e801a2">More...</a><br /></td></tr>
 <tr class="separator:af67511c19bae90b5fce16afb71e801a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a834cd2194fde09ba10dbc4c22fdb46"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46">SpeedifySDK_DSCPReplication</a> { <a class="el" href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46a754e3b2e690d125ff3fc6f19269e1cfa">DSCP_REPLICATION_AUTO</a>, 
+<a class="el" href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46a2c670d61d28488cb41f945bdfb15982c">DSCP_REPLICATION_ON</a>, 
+<a class="el" href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46ace26fce71707cc5a406796b50956554e">DSCP_REPLICATION_OFF</a>
+ }</td></tr>
+<tr class="memdesc:a8a834cd2194fde09ba10dbc4c22fdb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP replication behavior.  <a href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46">More...</a><br /></td></tr>
+<tr class="separator:a8a834cd2194fde09ba10dbc4c22fdb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa2608cce60aa05e96892cc12b9e408"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408">SpeedifySDK_DSCPPriority</a> { <a class="el" href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408ac3d6c535f74e747717e64df281d4fdfd">DSCP_PRIORITY_AUTO</a>, 
+<a class="el" href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408abd82bdd7736b2a38627dc33c654e59f6">DSCP_PRIORITY_ON</a>, 
+<a class="el" href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408a638bca744c34690c2d089f305af4fdd0">DSCP_PRIORITY_OFF</a>
+ }</td></tr>
+<tr class="memdesc:aefa2608cce60aa05e96892cc12b9e408"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP priority behavior.  <a href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408">More...</a><br /></td></tr>
+<tr class="separator:aefa2608cce60aa05e96892cc12b9e408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -630,6 +654,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a38f7cf63628df0863c6389afaa32cbbb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a38f7cf63628df0863c6389afaa32cbbb">SpeedifySDK_NetworkSharingTunnelStatus_toString</a> (<a class="el" href="types_8h.html#af67511c19bae90b5fce16afb71e801a2">SpeedifySDK_NetworkSharingTunnelStatus</a> status)</td></tr>
 <tr class="memdesc:a38f7cf63628df0863c6389afaa32cbbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_NetworkSharingTunnelStatus.  <a href="#a38f7cf63628df0863c6389afaa32cbbb">More...</a><br /></td></tr>
 <tr class="separator:a38f7cf63628df0863c6389afaa32cbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d16eb94f365f77229bb129c2aec4ec"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ad2d16eb94f365f77229bb129c2aec4ec">SpeedifySDK_DSCPReplication_toString</a> (<a class="el" href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46">SpeedifySDK_DSCPReplication</a> replication)</td></tr>
+<tr class="memdesc:ad2d16eb94f365f77229bb129c2aec4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_DSCPReplication.  <a href="#ad2d16eb94f365f77229bb129c2aec4ec">More...</a><br /></td></tr>
+<tr class="separator:ad2d16eb94f365f77229bb129c2aec4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067c14ac87e15f509003f2be55596bc7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a067c14ac87e15f509003f2be55596bc7">SpeedifySDK_DSCPPriority_toString</a> (<a class="el" href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408">SpeedifySDK_DSCPPriority</a> priority)</td></tr>
+<tr class="memdesc:a067c14ac87e15f509003f2be55596bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_DSCPPriority.  <a href="#a067c14ac87e15f509003f2be55596bc7">More...</a><br /></td></tr>
+<tr class="separator:a067c14ac87e15f509003f2be55596bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ade0f49785c520d4b9aa77e56c711c12a"></a>
@@ -684,6 +714,62 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aefa2608cce60aa05e96892cc12b9e408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa2608cce60aa05e96892cc12b9e408">&#9670;&nbsp;</a></span>SpeedifySDK_DSCPPriority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408">SpeedifySDK_DSCPPriority</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSCP priority behavior. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aefa2608cce60aa05e96892cc12b9e408ac3d6c535f74e747717e64df281d4fdfd"></a>DSCP_PRIORITY_AUTO&#160;</td><td class="fielddoc"><p>Speedify stream detection. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="aefa2608cce60aa05e96892cc12b9e408abd82bdd7736b2a38627dc33c654e59f6"></a>DSCP_PRIORITY_ON&#160;</td><td class="fielddoc"><p>DSCP priority is on. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="aefa2608cce60aa05e96892cc12b9e408a638bca744c34690c2d089f305af4fdd0"></a>DSCP_PRIORITY_OFF&#160;</td><td class="fielddoc"><p>DSCP priority is off. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8a834cd2194fde09ba10dbc4c22fdb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a834cd2194fde09ba10dbc4c22fdb46">&#9670;&nbsp;</a></span>SpeedifySDK_DSCPReplication</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46">SpeedifySDK_DSCPReplication</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSCP replication behavior. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8a834cd2194fde09ba10dbc4c22fdb46a754e3b2e690d125ff3fc6f19269e1cfa"></a>DSCP_REPLICATION_AUTO&#160;</td><td class="fielddoc"><p>Speedify stream mode behavior. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a8a834cd2194fde09ba10dbc4c22fdb46a2c670d61d28488cb41f945bdfb15982c"></a>DSCP_REPLICATION_ON&#160;</td><td class="fielddoc"><p>DSCP replication is on. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a8a834cd2194fde09ba10dbc4c22fdb46ace26fce71707cc5a406796b50956554e"></a>DSCP_REPLICATION_OFF&#160;</td><td class="fielddoc"><p>DSCP replication is off. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a96d1882fb645f53efcaa865084c12b6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96d1882fb645f53efcaa865084c12b6a">&#9670;&nbsp;</a></span>SpeedifySDK_NetworkSharingAutoPairBehavior</h2>
 
@@ -912,6 +998,48 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a067c14ac87e15f509003f2be55596bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067c14ac87e15f509003f2be55596bc7">&#9670;&nbsp;</a></span>SpeedifySDK_DSCPPriority_toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SpeedifySDK_DSCPPriority_toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aefa2608cce60aa05e96892cc12b9e408">SpeedifySDK_DSCPPriority</a>&#160;</td>
+          <td class="paramname"><em>priority</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>String representation of a SpeedifySDK_DSCPPriority. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+
+</div>
+</div>
+<a id="ad2d16eb94f365f77229bb129c2aec4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d16eb94f365f77229bb129c2aec4ec">&#9670;&nbsp;</a></span>SpeedifySDK_DSCPReplication_toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SpeedifySDK_DSCPReplication_toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46">SpeedifySDK_DSCPReplication</a>&#160;</td>
+          <td class="paramname"><em>replication</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>String representation of a SpeedifySDK_DSCPReplication. </p>
+<dl class="section since"><dt>Since</dt><dd>15.0 </dd></dl>
+
+</div>
+</div>
 <a id="a819615043403158b7e849791e2cb8fa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a819615043403158b7e849791e2cb8fa3">&#9670;&nbsp;</a></span>SpeedifySDK_NetworkSharingAutoPairBehavior_toString()</h2>
 

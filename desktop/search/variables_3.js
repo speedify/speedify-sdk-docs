@@ -29,5 +29,9 @@ var searchData=
   ['downstreamsubnets',['downstreamSubnets',['../struct_speedify_s_d_k___settings.html#a5ce0b1d249c03e231f5366153c775966',1,'SpeedifySDK_Settings']]],
   ['downstreamsubnetscount',['downstreamSubnetsCount',['../struct_speedify_s_d_k___settings.html#a4fe7889567b7ccdbc36c90b6a93fd76a',1,'SpeedifySDK_Settings']]],
   ['droppedincoming',['droppedIncoming',['../struct_speedify_s_d_k___tun_stats.html#ab5b4d4f49683161431b90351bca636bc',1,'SpeedifySDK_TunStats']]],
+  ['dscp',['dscp',['../struct_speedify_s_d_k___dscp_stats.html#aac417adb9971163c55923f3d6a595de0',1,'SpeedifySDK_DscpStats::dscp()'],['../struct_speedify_s_d_k___stream_stats.html#a0c77665df71558a7bda12b957bb48c90',1,'SpeedifySDK_StreamStats::dscp()']]],
+  ['dscpqueues',['dscpQueues',['../struct_speedify_s_d_k___d_s_c_p_settings.html#a77d5cdda14d5e811163916120ad94733',1,'SpeedifySDK_DSCPSettings']]],
+  ['dscpstats',['dscpStats',['../struct_speedify_s_d_k___session_stats.html#a1951799d7dc2b9a7f4fc576f52f9c8fd',1,'SpeedifySDK_SessionStats']]],
+  ['dscpvalue',['dscpValue',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a0ab12153c58a5fef243b1eebb3f7441b',1,'SpeedifySDK_DSCPQueue']]],
   ['duration',['duration',['../struct_speedify_s_d_k___stream_stats.html#a1b65dab1d72b7be34bc4c834aae99592',1,'SpeedifySDK_StreamStats']]]
 ];

@@ -35,7 +35,7 @@ var searchData=
   ['prb_5fask',['PRB_ASK',['../types_8h.html#af1be67b63c5f12f9e080f7824a3d123eab6667b1608e1440bf177ea95fa0f914c',1,'types.h']]],
   ['prb_5freject',['PRB_REJECT',['../types_8h.html#af1be67b63c5f12f9e080f7824a3d123eaf1eca79a5342c2f912d83d7bd18cfd33',1,'types.h']]],
   ['prefixlength',['prefixLength',['../struct_speedify_s_d_k___subnet.html#ad338289366545864e67cc14e716866e7',1,'SpeedifySDK_Subnet']]],
-  ['priority',['priority',['../struct_speedify_s_d_k___adapter_data.html#a87028c1d5a8f310f888b608ff91f1c8f',1,'SpeedifySDK_AdapterData']]],
+  ['priority',['priority',['../struct_speedify_s_d_k___adapter_data.html#a87028c1d5a8f310f888b608ff91f1c8f',1,'SpeedifySDK_AdapterData::priority()'],['../struct_speedify_s_d_k___d_s_c_p_queue.html#a2982fe24dbf877a911f48f00346a45c7',1,'SpeedifySDK_DSCPQueue::priority()']]],
   ['priorityoverflowthreshold',['priorityOverflowThreshold',['../struct_speedify_s_d_k___settings.html#adc55d0e577ec5c221e99d816bf54a58e',1,'SpeedifySDK_Settings']]],
   ['privacysettings',['privacySettings',['../struct_speedify_s_d_k___privacy_settings_result.html#a972a47b9eb0e3df83842c4b9aac7bbfa',1,'SpeedifySDK_PrivacySettingsResult']]],
   ['privateip',['privateIp',['../struct_speedify_s_d_k___connection_stats.html#aa7d9396aa466f93861e6c051d62344fa',1,'SpeedifySDK_ConnectionStats']]],

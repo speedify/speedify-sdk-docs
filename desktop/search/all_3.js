@@ -49,6 +49,17 @@ var searchData=
   ['dr_5fupdate',['DR_UPDATE',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994a23a6dfbe604829a6e031420e2f5f4679',1,'types.h']]],
   ['dr_5fuserinitiated',['DR_USERINITIATED',['../group___t_y_p_e_s.html#gga081a8b9c8a0177d504aa84266b56a994aa64c8211c04109dbf4130f5dc323f931',1,'types.h']]],
   ['droppedincoming',['droppedIncoming',['../struct_speedify_s_d_k___tun_stats.html#ab5b4d4f49683161431b90351bca636bc',1,'SpeedifySDK_TunStats']]],
+  ['dscp',['dscp',['../struct_speedify_s_d_k___dscp_stats.html#aac417adb9971163c55923f3d6a595de0',1,'SpeedifySDK_DscpStats::dscp()'],['../struct_speedify_s_d_k___stream_stats.html#a0c77665df71558a7bda12b957bb48c90',1,'SpeedifySDK_StreamStats::dscp()']]],
+  ['dscp_5fpriority_5fauto',['DSCP_PRIORITY_AUTO',['../types_8h.html#aefa2608cce60aa05e96892cc12b9e408ac3d6c535f74e747717e64df281d4fdfd',1,'types.h']]],
+  ['dscp_5fpriority_5foff',['DSCP_PRIORITY_OFF',['../types_8h.html#aefa2608cce60aa05e96892cc12b9e408a638bca744c34690c2d089f305af4fdd0',1,'types.h']]],
+  ['dscp_5fpriority_5fon',['DSCP_PRIORITY_ON',['../types_8h.html#aefa2608cce60aa05e96892cc12b9e408abd82bdd7736b2a38627dc33c654e59f6',1,'types.h']]],
+  ['dscp_5freplication_5fauto',['DSCP_REPLICATION_AUTO',['../types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46a754e3b2e690d125ff3fc6f19269e1cfa',1,'types.h']]],
+  ['dscp_5freplication_5foff',['DSCP_REPLICATION_OFF',['../types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46ace26fce71707cc5a406796b50956554e',1,'types.h']]],
+  ['dscp_5freplication_5fon',['DSCP_REPLICATION_ON',['../types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46a2c670d61d28488cb41f945bdfb15982c',1,'types.h']]],
+  ['dscpqueues',['dscpQueues',['../struct_speedify_s_d_k___d_s_c_p_settings.html#a77d5cdda14d5e811163916120ad94733',1,'SpeedifySDK_DSCPSettings::dscpQueues()'],['../dscpqueues.html',1,'(Global Namespace)']]],
+  ['dscpqueues_2edox',['dscpqueues.dox',['../dscpqueues_8dox.html',1,'']]],
+  ['dscpstats',['dscpStats',['../struct_speedify_s_d_k___session_stats.html#a1951799d7dc2b9a7f4fc576f52f9c8fd',1,'SpeedifySDK_SessionStats']]],
+  ['dscpvalue',['dscpValue',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a0ab12153c58a5fef243b1eebb3f7441b',1,'SpeedifySDK_DSCPQueue']]],
   ['duration',['duration',['../struct_speedify_s_d_k___stream_stats.html#a1b65dab1d72b7be34bc4c834aae99592',1,'SpeedifySDK_StreamStats']]],
   ['data_20types',['Data Types',['../group___t_y_p_e_s.html',1,'']]]
 ];

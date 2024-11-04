@@ -6,6 +6,7 @@ var searchData=
   ['numblockresponses',['numBlockResponses',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a8db58041cc8def67e307cf7f97edb841',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
   ['numblocks',['numBlocks',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a75059aececebfeb2096ebd632c589036',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
   ['numconnections',['numConnections',['../struct_speedify_s_d_k___speed_test_result_data.html#a5b980a90ffc2a87b1d347ed38fd25a51',1,'SpeedifySDK_SpeedTestResultData']]],
+  ['numdscpqueues',['numDscpQueues',['../struct_speedify_s_d_k___d_s_c_p_settings.html#addd9122d9fe3c5a970626710f8ae5fe1',1,'SpeedifySDK_DSCPSettings']]],
   ['numerrors',['numErrors',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#acd4195d549cad89df0b20cf390346a81',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
   ['numfailovers',['numFailovers',['../struct_speedify_s_d_k___session_stats.html#a32d601edf3c73d7bf6a02257ce6e0655',1,'SpeedifySDK_SessionStats']]],
   ['numlookups',['numLookups',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#ad8a6ad35425b394c1f77c5a86938c868',1,'SpeedifySDK_SafeBrowsingStatsResult']]],

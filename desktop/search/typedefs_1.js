@@ -17,6 +17,7 @@ var searchData=
   ['speedifysdk_5fdirectorysettingscallback',['SpeedifySDK_DirectorySettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga959aa0888af216300b0d6841275e05d3',1,'callbacks.h']]],
   ['speedifysdk_5fdisconnecteventcallback',['SpeedifySDK_DisconnectEventCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga9bf3db057b483648829cced795a47898',1,'callbacks.h']]],
   ['speedifysdk_5fdomainstring',['SpeedifySDK_DomainString',['../group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326',1,'types.h']]],
+  ['speedifysdk_5fdscpsettingscallback',['SpeedifySDK_DSCPSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#ga30b0009e508d4eb55365409b56d99e96',1,'callbacks.h']]],
   ['speedifysdk_5feventid',['SpeedifySDK_EventID',['../group___r_e_s_u_l_t.html#ga4f4cea7755c8fea8ca022fb8cc4c21f3',1,'results.h']]],
   ['speedifysdk_5ffirewallport',['SpeedifySDK_FirewallPort',['../group___t_y_p_e_s.html#ga19f55b85224a68c1a65863964c448910',1,'types.h']]],
   ['speedifysdk_5ffirewallsettingscallback',['SpeedifySDK_FirewallSettingsCallback',['../group___c_a_l_l_b_a_c_k_s.html#gae8d7c56e166ac9703b6d2ad2c4420600',1,'callbacks.h']]],
