@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Speedify.html">Speedify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SpeedifyPacketTunnel.html">SpeedifyPacketTunnel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/UUIDProvider.html">UUIDProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/AccountAction.html">AccountAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AutoConnectMethod.html">AutoConnectMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AutoPairBehavior.html">AutoPairBehavior</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BondingMode.html">BondingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Connection.html">Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ConnectionPriority.html">ConnectionPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ConnectionState.html">ConnectionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DisconnectReason.html">DisconnectReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FirewallMode.html">FirewallMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PERIODS.html">PERIODS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PortProtocol.html">PortProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ProxyMatchMode.html">ProxyMatchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SettingsLockReason.html">SettingsLockReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SpeedTestType.html">SpeedTestType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SpeedifyErrorType.html">SpeedifyErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/StreamHealth.html">StreamHealth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransportMode.html">TransportMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/iAPCode.html">iAPCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Notification/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/PacketTunnelSafeBrowsingBlockDelegate.html">PacketTunnelSafeBrowsingBlockDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SafeBrowsingInternalMessageDelegate.html">SafeBrowsingInternalMessageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyCaptivePortalDelegate.html">SpeedifyCaptivePortalDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyConnectedServerDelegate.html">SpeedifyConnectedServerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyDirectoryDomainDelegate.html">SpeedifyDirectoryDomainDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyDisconnectEventDelegate.html">SpeedifyDisconnectEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyLocalProxySettingsDelegate.html">SpeedifyLocalProxySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyLogSettingsDelegate.html">SpeedifyLogSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyLoggerDelegate.html">SpeedifyLoggerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyLoginErrorDelegate.html">SpeedifyLoginErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyPrivacySettingsDelegate.html">SpeedifyPrivacySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifySDKDelegate.html">SpeedifySDKDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyServerSettingsDelegate.html">SpeedifyServerSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifySessionStatsDelegate.html">SpeedifySessionStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifySessionStatsPeriodDelegate.html">SpeedifySessionStatsPeriodDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifySettingsErrorDelegate.html">SpeedifySettingsErrorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifySpeedTestResultsDelegate.html">SpeedifySpeedTestResultsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyStreamingSettingsDelegate.html">SpeedifyStreamingSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyVendorLocalSettingsDelegate.html">SpeedifyVendorLocalSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyVendorRemoteSettingsDelegate.html">SpeedifyVendorRemoteSettingsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyVendorUserDataDelegate.html">SpeedifyVendorUserDataDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AccountingData.html">AccountingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ActivationCode.html">ActivationCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AdapterData.html">AdapterData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AdapterUsageData.html">AdapterUsageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CaptivePortalStats.html">CaptivePortalStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConnectionStats.html">ConnectionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DaemonLogSettings.html">DaemonLogSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DirectorySettings.html">DirectorySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DisconnectEvent.html">DisconnectEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/FirewallPort.html">FirewallPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/FirewallSettings.html">FirewallSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ForwardedPort.html">ForwardedPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/HandlerStats.html">HandlerStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LocalProxyPort.html">LocalProxyPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LocalProxySettings.html">LocalProxySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing.html">NetworkSharing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/PeerRole.html">– PeerRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/PairRequestBehavior.html">– PairRequestBehavior</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/PeerStatus.html">– PeerStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/TunnelStatus.html">– TunnelStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/ConnectCode.html">– ConnectCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/PeerUuid.html">– PeerUuid</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/Settings.html">– Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/Usage.html">– Usage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/Connection.html">– Connection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkSharing/Peer.html">– Peer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PrivacySettings.html">PrivacySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ProtocolPortPair.html">ProtocolPortPair</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ServerInformation.html">ServerInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ServerSettings.html">ServerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SessionStatPeriod.html">SessionStatPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SessionStats.html">SessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SpeedTestResultsData.html">SpeedTestResultsData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamStats.html">StreamStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamingPort.html">StreamingPort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamingSessionStats.html">StreamingSessionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamingSettings.html">StreamingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreamingStats.html">StreamingStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Subnet.html">Subnet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TunStats.html">TunStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Version.html">Version</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/iAPStatus.html">iAPStatus</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk19SpeedifySDKDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifySDKDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk19SpeedifySDKDelegateP">SpeedifySDKDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Protocols/SpeedifySDKDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySDKDelegate</span> <span class="p">:</span> <span class="kt"><a href="Protocols/SpeedifyAccountingDelegate.html">SpeedifyAccountingDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyAdapterDelegate.html">SpeedifyAdapterDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyConnectionStatsDelegate.html">SpeedifyConnectionStatsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyDomainWatchListDelegate.html">SpeedifyDomainWatchListDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyFirewallSettingsDelegate.html">SpeedifyFirewallSettingsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyPrivacySettingsDelegate.html">SpeedifyPrivacySettingsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifySessionStatsPeriodDelegate.html">SpeedifySessionStatsPeriodDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/SpeedifyStateDelegate.html">SpeedifyStateDelegate</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk31SpeedifyPrivacySettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyPrivacySettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyPrivacySettingsDelegateP">SpeedifyPrivacySettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens for <code><a href="Structs/PrivacySettings.html">PrivacySettings</a></code> updates.</p>
+
+                        <a href="Protocols/SpeedifyPrivacySettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyPrivacySettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk24SpeedifySettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifySettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk24SpeedifySettingsDelegateP">SpeedifySettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens for <code><a href="Structs/Settings.html">Settings</a></code> updates.</p>
+
+                        <a href="Protocols/SpeedifySettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk22SpeedifyTunnelDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyTunnelDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk22SpeedifyTunnelDelegateP">SpeedifyTunnelDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen for failure updates to the profile configuration.
+This will get triggered if a user denies the VPN permission</p>
+
+                        <a href="Protocols/SpeedifyTunnelDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyTunnelDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk21SpeedifyStateDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyStateDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk21SpeedifyStateDelegateP">SpeedifyStateDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen to <code><a href="Enums/State.html">State</a></code> updates for the VPN.</p>
+
+                        <a href="Protocols/SpeedifyStateDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyStateDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk30SpeedifyVendorUserDataDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyVendorUserDataDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk30SpeedifyVendorUserDataDelegateP">SpeedifyVendorUserDataDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remote vendor settings update
+@param userData current vendor user data
+@since 9.8</p>
+
+                        <a href="Protocols/SpeedifyVendorUserDataDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyVendorUserDataDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyVendorLocalSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk35SpeedifyVendorLocalSettingsDelegateP">SpeedifyVendorLocalSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Local vendor settings update
+@param settings current local vendor settings
+@since 9.2</p>
+
+                        <a href="Protocols/SpeedifyVendorLocalSettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyVendorLocalSettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyVendorRemoteSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk36SpeedifyVendorRemoteSettingsDelegateP">SpeedifyVendorRemoteSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remote vendor settings update
+@param settings current remote vendor settings
+@since 9.2</p>
+
+                        <a href="Protocols/SpeedifyVendorRemoteSettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyVendorRemoteSettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk23SpeedifyAdapterDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyAdapterDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk23SpeedifyAdapterDelegateP">SpeedifyAdapterDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen for <code><a href="Structs/AdapterData.html">AdapterData</a></code> updates.</p>
+
+                        <a href="Protocols/SpeedifyAdapterDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyAdapterDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk26SpeedifyAccountingDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyAccountingDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk26SpeedifyAccountingDelegateP">SpeedifyAccountingDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen for <code><a href="Structs/AccountingData.html">AccountingData</a></code> updates.</p>
+
+                        <a href="Protocols/SpeedifyAccountingDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyAccountingDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk28SpeedifySessionStatsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifySessionStatsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk28SpeedifySessionStatsDelegateP">SpeedifySessionStatsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens for <code><a href="Structs/SessionStats.html">SessionStats</a></code> updates.</p>
+
+                        <a href="Protocols/SpeedifySessionStatsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use `SpeedifySessionPeriodStatsDelegate` instead"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySessionStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk30SpeedifyStreamingStatsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyStreamingStatsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk30SpeedifyStreamingStatsDelegateP">SpeedifyStreamingStatsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Streaming stats update
+@param stats streaming stats object
+@since 9.6</p>
+
+                        <a href="Protocols/SpeedifyStreamingStatsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyStreamingStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifySessionStatsPeriodDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk34SpeedifySessionStatsPeriodDelegateP">SpeedifySessionStatsPeriodDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens for <code>SessionStatsPeriod</code> updates.
+Since 9.5</p>
+
+                        <a href="Protocols/SpeedifySessionStatsPeriodDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySessionStatsPeriodDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk31SpeedifyConnectionStatsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyConnectionStatsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyConnectionStatsDelegateP">SpeedifyConnectionStatsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens for <code><a href="Structs/ConnectionStats.html">ConnectionStats</a></code> updates.</p>
+
+                        <a href="Protocols/SpeedifyConnectionStatsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyConnectionStatsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk29SpeedifySettingsErrorDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifySettingsErrorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk29SpeedifySettingsErrorDelegateP">SpeedifySettingsErrorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listens for current Speedify setting errors.</p>
+
+                        <a href="Protocols/SpeedifySettingsErrorDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySettingsErrorDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyFirewallSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk32SpeedifyFirewallSettingsDelegateP">SpeedifyFirewallSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Firewall settings update
+@param settings current firewall settings
+@since 9.2</p>
+
+                        <a href="Protocols/SpeedifyFirewallSettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyFirewallSettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk31SpeedifyDomainWatchListDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyDomainWatchListDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyDomainWatchListDelegateP">SpeedifyDomainWatchListDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a domain from a disabled localproxy domainwatchlist is detected
+@param title title of the watchlist that was detected
+@since 9.3</p>
+
+                        <a href="Protocols/SpeedifyDomainWatchListDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyDomainWatchListDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyLocalProxySettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk34SpeedifyLocalProxySettingsDelegateP">SpeedifyLocalProxySettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Local proxy settings update
+@param settings current local proxy settings
+@since 9.2</p>
+
+                        <a href="Protocols/SpeedifyLocalProxySettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyLocalProxySettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyDirectoryDomainDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyDirectoryDomainDelegateP">SpeedifyDirectoryDomainDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="Structs/DirectorySettings.html">DirectorySettings</a></code> did update
+@param values for the current <code><a href="Structs/DirectorySettings.html">DirectorySettings</a></code></p>
+
+                        <a href="Protocols/SpeedifyDirectoryDomainDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyDirectoryDomainDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk30SpeedifyLastDisconnectDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyLastDisconnectDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk30SpeedifyLastDisconnectDelegateP">SpeedifyLastDisconnectDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result of request for the last disconnect reason
+@since 11.3</p>
+
+                        <a href="Protocols/SpeedifyLastDisconnectDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyLastDisconnectDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk31SpeedifyDisconnectEventDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyDisconnectEventDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyDisconnectEventDelegateP">SpeedifyDisconnectEventDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result of request for the last disconnect event
+@since 10.4</p>
+
+                        <a href="Protocols/SpeedifyDisconnectEventDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyDisconnectEventDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk31SpeedifyConnectedServerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyConnectedServerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk31SpeedifyConnectedServerDelegateP">SpeedifyConnectedServerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connected update received.
+Send on start of connection attempt and connection completion.
+@param serverInfo currently connected server
+@since 5.6</p>
+
+                        <a href="Protocols/SpeedifyConnectedServerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyConnectedServerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifySpeedTestResultsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk32SpeedifySpeedTestResultsDelegateP">SpeedifySpeedTestResultsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Speed test result data
+@since 11.0</p>
+
+                        <a href="Protocols/SpeedifySpeedTestResultsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifySpeedTestResultsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk33SpeedifyStreamingSettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyStreamingSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk33SpeedifyStreamingSettingsDelegateP">SpeedifyStreamingSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Streaming settings update
+@param settings current streaming settings
+@since 10.9</p>
+
+                        <a href="Protocols/SpeedifyStreamingSettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyStreamingSettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk27SpeedifyLogSettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyLogSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk27SpeedifyLogSettingsDelegateP">SpeedifyLogSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log settings result
+@since 10.5</p>
+
+                        <a href="Protocols/SpeedifyLogSettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyLogSettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk29SpeedifyCaptivePortalDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyCaptivePortalDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk29SpeedifyCaptivePortalDelegateP">SpeedifyCaptivePortalDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Captive Portal Results
+@since 11.0.1</p>
+
+                        <a href="Protocols/SpeedifyCaptivePortalDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyCaptivePortalDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk30SpeedifyServerSettingsDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyServerSettingsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk30SpeedifyServerSettingsDelegateP">SpeedifyServerSettingsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listener for server settings updates.</p>
+
+                        <a href="Protocols/SpeedifyServerSettingsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyServerSettingsDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk19SpeedifyIapDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyIapDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk19SpeedifyIapDelegateP">SpeedifyIapDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Protocols/SpeedifyIapDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyIapDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk22SpeedifyLoggerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyLoggerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk22SpeedifyLoggerDelegateP">SpeedifyLoggerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Protocols/SpeedifyLoggerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyLoggerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk35SafeBrowsingInternalMessageDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SafeBrowsingInternalMessageDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk35SafeBrowsingInternalMessageDelegateP">SafeBrowsingInternalMessageDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Protocols/SafeBrowsingInternalMessageDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SafeBrowsingInternalMessageDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk26SpeedifyLoginErrorDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/SpeedifyLoginErrorDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk26SpeedifyLoginErrorDelegateP">SpeedifyLoginErrorDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listener for login error updates.</p>
+
+                        <a href="Protocols/SpeedifyLoginErrorDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyLoginErrorDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk37PacketTunnelSafeBrowsingBlockDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/PacketTunnelSafeBrowsingBlockDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk37PacketTunnelSafeBrowsingBlockDelegateP">PacketTunnelSafeBrowsingBlockDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Protocols/PacketTunnelSafeBrowsingBlockDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PacketTunnelSafeBrowsingBlockDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2015-2024 <a class="link" href="https://speedify.com" target="_blank" rel="external noopener">Connectify</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
