@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Desktop/Embedded
-   &#160;<span id="projectnumber">15.0.1</span>
+   &#160;<span id="projectnumber">15.2.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,27 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1500"></a>Speedify SDK for Desktop 15.0 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1520"></a>Speedify SDK for Desktop 15.2 </h2>
+<ul>
+<li>Linux SDK now includes HTML UI files for router deployment.</li>
+<li>Big Endian MIPS removed from Linux SDK. These were incorrectly included earlier.</li>
+<li>Fix for race when issuing a new login while a prior connect request is in progress.</li>
+<li>Calls to login no longer automatically trigger a connect.</li>
+<li>A Jitter Buffer can be applied to LiveU streams with <a class="el" href="group___s_d_k.html#gaa7a7a11a720ef35f2dd9b3387cb6466f">SpeedifySDK_SetFixedDelay</a>.</li>
+<li>Deprecations<ul>
+<li><a class="el" href="group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4">SpeedifySDK_AccountCheck</a>/<a class="el" href="group___s_d_k.html#gaa9c05d2331dcc69b88817da5c1746928">SpeedifySDK_AccountCreate</a>/<a class="el" href="group___s_d_k.html#ga737c02bfdc85c91d9605406df3434dc8">SpeedifySDK_AccountPasswordChange</a> have been deprecated. Manage via SSO logins on my.speeedify.com instead.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1511"></a>Speedify SDK for Desktop 15.1.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1510"></a>Speedify SDK for Desktop 15.1 </h2>
+<ul>
+<li>No new features. This is a stability release.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1500"></a>Speedify SDK for Desktop 15.0 </h2>
 <ul>
 <li>Support for configuring DSCP queues. Use <a class="el" href="group___s_d_k.html#ga8bd2a6aacbadad5602ca58e5d4f673c5">SpeedifySDK_SetDSCPQueues</a>/<a class="el" href="group___s_d_k.html#ga01c9486d61675fba727e13ac8de76db7">SpeedifySDK_GetDSCPSettings</a> to set/get the DSCP queues used by the SDK. See <a class="el" href="dscpqueues.html">DSCP Queue Configuration</a> for more information.</li>
 </ul>

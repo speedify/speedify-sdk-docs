@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "s",
   7: "abcdeflnpst",
   8: "cdrs",
-  9: "bdilnsw"
+  9: "bdeilnsw"
 };
 
 var indexSectionNames =

@@ -19,5 +19,6 @@ var searchData=
   ['retransbytes',['retransBytes',['../struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578',1,'SpeedifySDK_SessionStats']]],
   ['retransmissionattempts',['retransmissionAttempts',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a9bc38bbb77fdde429a7a8d38eee5e312',1,'SpeedifySDK_DSCPQueue']]],
   ['retries',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]],
-  ['role',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult']]]
+  ['role',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult']]],
+  ['routerui_2edox',['routerui.dox',['../routerui_8dox.html',1,'']]]
 ];
