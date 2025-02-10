@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Speedify SDK for Android
-   &#160;<span id="projectnumber">15.2.0</span>
+   &#160;<span id="projectnumber">15.3.0</span>
    </div>
   </td>
  </tr>
@@ -71,11 +71,16 @@ $(function() {
 <div class="title">What's New </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="whatsnew_1520"></a>Speedify SDK for Android 15.2 </h2>
+<div class="textblock"><h2><a class="anchor" id="whatsnew_1530"></a>Speedify SDK for Android 15.3 </h2>
+<ul>
+<li>This release is compatible with Google Play Store's Mobile Application Security Assessment program.</li>
+</ul>
+<h2><a class="anchor" id="whatsnew_1520"></a>Speedify SDK for Android 15.2 </h2>
 <ul>
 <li>Fix for workingPriority not being read correctly on adapters.</li>
 <li>Fix for race when issuing a new login while a prior connect request is in progress.</li>
 <li>Calls to login no longer automatically trigger a connect.</li>
+<li>Updates to androidx.core library require apps built on the Speedify for Android SDK to target Android SDK 35 (Android 15) or higher.</li>
 <li>Deprecations<ul>
 <li><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a4de542e1b59fa0b05ebed07e66593311">accountCheck</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a72fbf38f95d063cf838c0268b41c981b">accountCreate</a>/<a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abab2126d680f22b80a7eb3d6951cbc4d">accountPasswordChange</a> have been deprecated. Manage via SSO logins on my.speeedify.com instead.</li>
 </ul>
