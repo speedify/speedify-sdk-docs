@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['speedify_20sdk_20for_20linux',['Speedify SDK for Linux',['../linux.html',1,'']]],
-  ['speedify_20sdk_20for_20macos',['Speedify SDK for MacOS',['../macos.html',1,'']]],
-  ['speedify_20sdk_20for_20windows',['Speedify SDK for Windows',['../windows.html',1,'']]]
+  ['linux_0',['Speedify SDK for Linux',['../linux.html',1,'']]],
+  ['list_1',['Deprecated List',['../deprecated.html',1,'']]],
+  ['local_20proxy_20configuration_2',['Local Proxy Configuration',['../localproxy.html',1,'']]]
 ];

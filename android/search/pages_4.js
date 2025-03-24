@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['on_2dboot_20resume_20and_20killswitch',['On-Boot Resume and Killswitch',['../onboot.html',1,'']]]
+  ['enhanced_20statistics_0',['Introduction to Enhanced Statistics',['../es_intro.html',1,'']]],
+  ['enhanced_20statistics_20permissions_1',['Enhanced Statistics Permissions',['../es_permissions.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basic_20usage',['Basic Usage',['../basicusage.html',1,'']]]
+  ['basic_20usage_0',['Basic Usage',['../basicusage.html',1,'']]]
 ];

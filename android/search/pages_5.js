@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['permissions',['Permissions',['../permissions.html',1,'']]]
+  ['for_20android_0',['Introduction to the Speedify SDK for Android',['../index.html',1,'']]]
 ];

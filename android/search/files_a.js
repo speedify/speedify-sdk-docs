@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['websocketautoconfig_2ejava',['WebsocketAutoConfig.java',['../_websocket_auto_config_8java.html',1,'']]],
-  ['whatsnew_2edox',['whatsnew.dox',['../whatsnew_8dox.html',1,'']]]
+  ['types_2ejava_0',['Types.java',['../Types_8java.html',1,'']]]
 ];

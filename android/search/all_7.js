@@ -1,17 +1,13 @@
 var searchData=
 [
-  ['handleadapteroverlimit',['handleAdapterOverlimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a31fd2e08efad3a9d2da0f51b4b9d9a78',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['handlenewadapter',['handleNewAdapter',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a5f4ad6e4986f05241979216ed011f933',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['handlerstats',['HandlerStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html',1,'com.speedify.speedifysdk.Types.HandlerStats'],['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ad831df42df78641d082abd547dbc5a72',1,'com.speedify.speedifysdk.Types.SessionStats.handlerStats()']]],
-  ['has',['has',['../classcom_1_1speedify_1_1speedifysdk_1_1_preferences.html#a629acb98bd94a118e207441ded2b32d7',1,'com::speedify::speedifysdk::Preferences']]],
-  ['hasvpnpermission',['hasVPNPermission',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a28168c54f50eb91a95cd551b51cf928a',1,'com.speedify.speedifysdk.SpeedifySDK.hasVPNPermission()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a549cfe04b06b2ccfe5e38f4f22d2223f',1,'com.speedify.speedifysdk.SpeedifySDK.hasVPNPermission(Context appContext)']]],
-  ['haveauthtoken',['haveAuthToken',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer.html#a8998450f37aee1112f9522b9f52d573f',1,'com::speedify::speedifysdk::Types::NetworkSharing::Peer']]],
-  ['headercompression',['headerCompression',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#abd1b8f25d1a2e298fa39276f29277c9f',1,'com::speedify::speedifysdk::Types::Settings']]],
-  ['health',['health',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a5380e82b22b64d03c1dd9e1e37fd67f1',1,'com::speedify::speedifysdk::Types::StreamStats']]],
-  ['hideforegroundnotification',['HideForegroundNotification',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html#a4577b9f6fc750d00bec0e85d14985c28',1,'com.speedify.speedifysdk.SpeedifyHandler.HideForegroundNotification()'],['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_foreground_notification_receiver.html#a8bf12da2dfec633db2283282339ffd73',1,'com.speedify.speedifysdk.receivers.IForegroundNotificationReceiver.HideForegroundNotification()']]],
-  ['host',['HOST',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer_role.html#ac9bee545b1cf76ed8edb5d801145f1f3',1,'com::speedify::speedifysdk::Types::NetworkSharing::PeerRole']]],
-  ['hostconnectcode',['hostConnectCode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#a516a704f212a33aa66fbd96391f5728b',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
-  ['hostenabled',['hostEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#aa3ed37b307b70e3c1fa780bd19e96b20',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
-  ['hostname',['hostname',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a937033b069eff2376425afdd263e8f21',1,'com::speedify::speedifysdk::Types::StreamStats']]],
-  ['https',['HTTPS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a2cba02d5cb9e4f790154eecffd10878a',1,'com::speedify::speedifysdk::Types::TransportMode']]]
+  ['7_0',['7',['../whatsnew.html#autotoc_md94',1,'Speedify SDK for Android 10.7'],['../whatsnew.html#autotoc_md74',1,'Speedify SDK for Android 11.7'],['../whatsnew.html#autotoc_md58',1,'Speedify SDK for Android 12.7'],['../whatsnew.html#autotoc_md31',1,'Speedify SDK for Android 14.7'],['../whatsnew.html#autotoc_md26',1,'Speedify SDK for Android 14.8.7'],['../whatsnew.html#autotoc_md107',1,'Speedify SDK for Android 9.7']]],
+  ['7_200_1',['Speedify SDK for Android 7.0',['../whatsnew.html#autotoc_md125',1,'']]],
+  ['7_201_2',['Speedify SDK for Android 10.7.1',['../whatsnew.html#autotoc_md93',1,'']]],
+  ['7_201_203_3',['Speedify SDK for Android 7.1.3',['../whatsnew.html#autotoc_md124',1,'']]],
+  ['7_202_4',['Speedify SDK for Android 7.2',['../whatsnew.html#autotoc_md123',1,'']]],
+  ['7_202_204_5',['Speedify SDK for Android 7.2.4',['../whatsnew.html#autotoc_md122',1,'']]],
+  ['7_204_6',['Speedify SDK for Android 7.4',['../whatsnew.html#autotoc_md121',1,'']]],
+  ['7_205_7',['Speedify SDK for Android 7.5',['../whatsnew.html#autotoc_md120',1,'']]],
+  ['7_206_201_8',['Speedify SDK for Android 7.6.1',['../whatsnew.html#autotoc_md119',1,'']]],
+  ['7_208_202_9',['Speedify SDK for Android 7.8.2',['../whatsnew.html#autotoc_md118',1,'']]]
 ];

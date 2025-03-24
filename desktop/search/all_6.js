@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gatewayuri',['gatewayUri',['../struct_speedify_s_d_k___directory_settings.html#a34d6abf5be3c1dd91f4c8537a0cf8484',1,'SpeedifySDK_DirectorySettings']]],
-  ['groupid',['groupId',['../struct_speedify_s_d_k___stream_stats.html#a2859fa44b6d815923ef1ec6371786d98',1,'SpeedifySDK_StreamStats']]]
+  ['6_0',['6',['../whatsnew.html#autotoc_md104',1,'Speedify SDK for Desktop 10.6'],['../whatsnew.html#autotoc_md84',1,'Speedify SDK for Desktop 11.6'],['../whatsnew.html#autotoc_md68',1,'Speedify SDK for Desktop 12.6'],['../whatsnew.html#autotoc_md45',1,'Speedify SDK for Desktop 14.6'],['../whatsnew.html#autotoc_md39',1,'Speedify SDK for Desktop 14.8.6'],['../whatsnew.html#autotoc_md116',1,'Speedify SDK for Desktop 9.6']]],
+  ['6_201_1',['Speedify SDK for Desktop 14.6.1',['../whatsnew.html#autotoc_md44',1,'']]]
 ];

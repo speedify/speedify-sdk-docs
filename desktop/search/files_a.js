@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['whatsnew_2edox',['whatsnew.dox',['../whatsnew_8dox.html',1,'']]],
-  ['windows_2edox',['windows.dox',['../windows_8dox.html',1,'']]]
+  ['whatsnew_2emd_0',['whatsnew.md',['../whatsnew_8md.html',1,'']]],
+  ['windows_2emd_1',['windows.md',['../windows_8md.html',1,'']]]
 ];

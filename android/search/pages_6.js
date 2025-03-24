@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['service_20notification',['Service Notification',['../servicenotification.html',1,'']]],
-  ['sdk_20strings',['SDK Strings',['../userstrings.html',1,'']]]
+  ['generation_0',['Log Generation',['../loggen.html',1,'']]],
+  ['guide_1',['Integration Guide',['../integration.html',1,'']]]
 ];

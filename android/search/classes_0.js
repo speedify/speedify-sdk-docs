@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['accountaction',['AccountAction',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_action.html',1,'com::speedify::speedifysdk::Types']]],
-  ['accountingdata',['AccountingData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html',1,'com::speedify::speedifysdk::Types']]],
-  ['accountpaymenttype',['AccountPaymentType',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_payment_type.html',1,'com::speedify::speedifysdk::Types']]],
-  ['adapterdata',['AdapterData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html',1,'com::speedify::speedifysdk::Types']]],
-  ['adapterusagedata',['AdapterUsageData',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html',1,'com::speedify::speedifysdk::Types']]],
-  ['autoconnectmethod',['AutoConnectMethod',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_auto_connect_method.html',1,'com::speedify::speedifysdk::Types']]],
-  ['autoconstruct',['AutoConstruct',['../interfacecom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k_1_1_auto_construct.html',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['autopairbehavior',['AutoPairBehavior',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_auto_pair_behavior.html',1,'com::speedify::speedifysdk::Types::NetworkSharing']]]
+  ['accountaction_0',['AccountAction',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AccountAction.html',1,'com::speedify::speedifysdk::Types']]],
+  ['accountingdata_1',['AccountingData',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AccountingData.html',1,'com::speedify::speedifysdk::Types']]],
+  ['accountpaymenttype_2',['AccountPaymentType',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AccountPaymentType.html',1,'com::speedify::speedifysdk::Types']]],
+  ['adapterdata_3',['AdapterData',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AdapterData.html',1,'com::speedify::speedifysdk::Types']]],
+  ['adapterusagedata_4',['AdapterUsageData',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AdapterUsageData.html',1,'com::speedify::speedifysdk::Types']]],
+  ['autoconnectmethod_5',['AutoConnectMethod',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AutoConnectMethod.html',1,'com::speedify::speedifysdk::Types']]],
+  ['autoconstruct_6',['AutoConstruct',['../interfacecom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK_1_1AutoConstruct.html',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['autopairbehavior_7',['AutoPairBehavior',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkSharing_1_1AutoPairBehavior.html',1,'com::speedify::speedifysdk::Types::NetworkSharing']]]
 ];

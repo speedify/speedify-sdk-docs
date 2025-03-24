@@ -1,20 +1,8 @@
 var searchData=
 [
-  ['failoversaves',['failoverSaves',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a12e609c72bb4f3ffa3e4c5ca2509573c',1,'com::speedify::speedifysdk::Types::StreamStats']]],
-  ['file',['file',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_i_log_complete_callback_1_1_completion_data.html#a632a0c7b8f531fa9d83cf0b8a0a02e40',1,'com::speedify::speedifysdk::LogGeneration::ILogCompleteCallback::CompletionData']]],
-  ['filesize',['fileSize',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html#a4fe638d660ec54fc9c47f9814fba7b52',1,'com::speedify::speedifysdk::Types::DaemonLogSettings']]],
-  ['filesperdaemon',['filesPerDaemon',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_daemon_log_settings.html#a146c61282ab1e644e6d3ccdf24fa4d0b',1,'com::speedify::speedifysdk::Types::DaemonLogSettings']]],
-  ['findstate',['findState',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#a58cbbb2c115e6c36081b068fb8a89fc8',1,'com::speedify::speedifysdk::Types::State']]],
-  ['firewallmode',['FirewallMode',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_mode.html',1,'com::speedify::speedifysdk::Types']]],
-  ['firewallport',['FirewallPort',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_port.html',1,'com::speedify::speedifysdk::Types']]],
-  ['firewallsettings',['FirewallSettings',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_firewall_settings.html',1,'com::speedify::speedifysdk::Types']]],
-  ['forceexit',['ForceExit',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1576bc08e3d680f363260f1c38ab27d9',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['foreachasync',['forEachAsync',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a176227cc7ddd3d72c0bf8a2522c46a60',1,'com::speedify::speedifysdk::MultiReceiverManager']]],
-  ['foreachsync',['forEachSync',['../classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a043c6bc3429d30a23a546b7633f77d01',1,'com::speedify::speedifysdk::MultiReceiverManager']]],
-  ['foregroundservicereceivers',['foregroundServiceReceivers',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#ad669263cd8d8b92bbd854f04c2572328',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['forwardedport',['ForwardedPort',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_forwarded_port.html',1,'com::speedify::speedifysdk::Types']]],
-  ['forwardedports',['forwardedPorts',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_settings.html#a769e67fc0bc51bef03f3e45adcabb1dd',1,'com::speedify::speedifysdk::Types::Settings']]],
-  ['fps',['fps',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a7cb33d7ee071fb7dee7844c94ac2e302',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
-  ['free',['FREE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_payment_type.html#a6d5ebd18a874c88e7e92b29d30a17f88',1,'com::speedify::speedifysdk::Types::AccountPaymentType']]],
-  ['fromstring',['fromString',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_i_p_range.html#ac7fa1ff25326dddbf86b3f8f89470f9f',1,'com::speedify::speedifysdk::Types::IPRange']]]
+  ['5_0',['5',['../whatsnew.html#autotoc_md96',1,'Speedify SDK for Android 10.5'],['../whatsnew.html#autotoc_md88',1,'Speedify SDK for Android 10.9.5'],['../whatsnew.html#autotoc_md77',1,'Speedify SDK for Android 11.5'],['../whatsnew.html#autotoc_md37',1,'Speedify SDK for Android 14.5'],['../whatsnew.html#autotoc_md28',1,'Speedify SDK for Android 14.8.5'],['../whatsnew.html#autotoc_md120',1,'Speedify SDK for Android 7.5'],['../whatsnew.html#autotoc_md109',1,'Speedify SDK for Android 9.5']]],
+  ['5_200_1',['Speedify SDK for Android 12.5.0',['../whatsnew.html#autotoc_md61',1,'']]],
+  ['5_201_2',['5 1',['../whatsnew.html#autotoc_md76',1,'Speedify SDK for Android 11.5.1'],['../whatsnew.html#autotoc_md60',1,'Speedify SDK for Android 12.5.1'],['../whatsnew.html#autotoc_md36',1,'Speedify SDK for Android 14.5.1']]],
+  ['5_202_3',['Speedify SDK for Android 14.5.2',['../whatsnew.html#autotoc_md35',1,'']]],
+  ['5_203_4',['Speedify SDK for Android 14.5.3',['../whatsnew.html#autotoc_md34',1,'']]]
 ];

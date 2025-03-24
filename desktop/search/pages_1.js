@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
-  ['dscp_20queue_20configuration',['DSCP Queue Configuration',['../dscpqueues.html',1,'']]]
+  ['configuration_0',['Configuration',['../dscpqueues.html',1,'DSCP Queue Configuration'],['../localproxy.html',1,'Local Proxy Configuration']]]
 ];

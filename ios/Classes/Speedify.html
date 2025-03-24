@@ -2064,7 +2064,7 @@ This checks the current profiles value for it&rsquo;s protocol configuration&rsq
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Connect to a server by an automatic selection method.
-If already connected, this will disconnect before reconnecting.</p>
+If already connected, this will disconnect before reconnecting. Unless called with <code>bysetting</code>, which will not trigger a reconnect.</p>
 
 <ul>
 <li>closest: Closest public or private server to user</li>
@@ -3403,6 +3403,58 @@ Current value available from <code><a href="../Classes/Speedify.html#/s:11speedi
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocalProxyGlobalDomainWatchlistEnable</span><span class="p">(</span><span class="nv">watchlistEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC25setNetworkShareHostEnable6enableySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkShareHostEnable(enable:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC25setNetworkShareHostEnable6enableySb_tF">setNetworkShareHostEnable(enable:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkShareHostEnable</span><span class="p">(</span><span class="nv">enable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC27setNetworkShareClientEnable6enableySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkShareClientEnable(enable:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC27setNetworkShareClientEnable6enableySb_tF">setNetworkShareClientEnable(enable:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkShareClientEnable</span><span class="p">(</span><span class="nv">enable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4997,7 +5049,11 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Set the speed rate limit on a connection.</p>
+                        <p>Set the download and upload speed rate limit on a connection.</p>
+
+<ul>
+<li>@deprecated as of 15.4. Use setConnectionRateLimit with download and upload separately</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -5033,6 +5089,76 @@ Current value available on <code><a href="../Structs/AdapterData.html">AdapterDa
                               <td>
                                 <div>
                                   <p>limit in bits per second</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC22setConnectionRateLimit9adapterID7downBps02upJ0ySS_s5Int64VAItF"></a>
+                    <a name="//apple_ref/swift/Method/setConnectionRateLimit(adapterID:downBps:upBps:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC22setConnectionRateLimit9adapterID7downBps02upJ0ySS_s5Int64VAItF">setConnectionRateLimit(adapterID:<wbr>downBps:<wbr>upBps:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the download and upload speed rate limit on a connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setConnectionRateLimit</span><span class="p">(</span><span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">downBps</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">,</span> <span class="nv">upBps</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adapterId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the adapter to be limited. ex &ldquo;en0&rdquo;</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>downBps</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>download limit in bits per second</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>upBps</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>upload limit in bits per second</p>
                                 </div>
                               </td>
                             </tr>
@@ -6193,7 +6319,7 @@ reason will not be updated in the database until the next extension launch.
 <ul>
 <li>Check if there is already an account using this email address.</li>
 <li><p>@since 7.4</p></li>
-<li><p>@deprecated as of future. Functionality removed</p></li>
+<li><p>@deprecated as of 15.4. Functionality removed</p></li>
 </ul>
 
                       </div>
@@ -6256,7 +6382,7 @@ reason will not be updated in the database until the next extension launch.
 <ul>
 <li>Create a new account using this email address.</li>
 <li><p>@since 7.4</p></li>
-<li><p>@deprecated as of future. Functionality removed</p></li>
+<li><p>@deprecated as of 15.4. Functionality removed</p></li>
 </ul>
 
                       </div>
@@ -6372,7 +6498,7 @@ Triggers {@link ISpeedifyHandler#OnStreamingSettings OnStreamingSettings}.
 <ul>
 <li>Change the password on the account.</li>
 <li>@since 7.4</li>
-<li>@deprecated as of future. Functionality removed</li>
+<li>@deprecated as of 15.4. Functionality removed</li>
 </ul>
 
                       </div>

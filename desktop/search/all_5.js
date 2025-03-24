@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['failoversaves',['failoverSaves',['../struct_speedify_s_d_k___stream_stats.html#a3d940cbae5ac79e8a97ab89e152ff92d',1,'SpeedifySDK_StreamStats']]],
-  ['failurerate',['failureRate',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a6d697de11a9469021154b14d12f6e37d',1,'SpeedifySDK_SafeBrowsingStatsResult']]],
-  ['filesize',['fileSize',['../struct_speedify_s_d_k___daemon_log_settings.html#a79b5d56d0d3c060c5e6cc22c24c73f33',1,'SpeedifySDK_DaemonLogSettings']]],
-  ['filesperdaemon',['filesPerDaemon',['../struct_speedify_s_d_k___daemon_log_settings.html#af6b5b71ea301f7eaa00129ad7a6263e5',1,'SpeedifySDK_DaemonLogSettings']]],
-  ['firewallsettings',['firewallSettings',['../struct_speedify_s_d_k___firewall_settings_result.html#a03686ec6f15b2ffd4d834bb429bf68d4',1,'SpeedifySDK_FirewallSettingsResult']]],
-  ['fixeddelay',['fixedDelay',['../struct_speedify_s_d_k___settings.html#aa0a7bcbf984e3ae5733dd1a7ac53fd9b',1,'SpeedifySDK_Settings']]],
-  ['forwardedports',['forwardedPorts',['../struct_speedify_s_d_k___settings.html#a8500ddc10abfce2aad30f069b5593248',1,'SpeedifySDK_Settings']]],
-  ['fps',['fps',['../struct_speedify_s_d_k___speed_test_result_data.html#a8138d584a7d2eeca1cd0179b1425fb1a',1,'SpeedifySDK_SpeedTestResultData']]],
-  ['fwm_5fallowlist',['FWM_ALLOWLIST',['../group___t_y_p_e_s.html#ggaa0999d1c8d7d3eaf8d6cea85609364c8a64ce499e666c6873366ca0f8f3216aa1',1,'types.h']]],
-  ['fwm_5fdenylist',['FWM_DENYLIST',['../group___t_y_p_e_s.html#ggaa0999d1c8d7d3eaf8d6cea85609364c8a214ae9e39fb4efe35112b54cd473fb8e',1,'types.h']]],
-  ['fwm_5foff',['FWM_OFF',['../group___t_y_p_e_s.html#ggaa0999d1c8d7d3eaf8d6cea85609364c8a8b946670c50d4b506af187ec9f4caa82',1,'types.h']]]
+  ['5_0',['5',['../whatsnew.html#autotoc_md105',1,'Speedify SDK for Desktop 10.5'],['../whatsnew.html#autotoc_md97',1,'Speedify SDK for Desktop 10.9.5'],['../whatsnew.html#autotoc_md86',1,'Speedify SDK for Desktop 11.5'],['../whatsnew.html#autotoc_md70',1,'Speedify SDK for Desktop 12.5'],['../whatsnew.html#autotoc_md49',1,'Speedify SDK for Desktop 14.5'],['../whatsnew.html#autotoc_md40',1,'Speedify SDK for Desktop 14.8.5'],['../whatsnew.html#autotoc_md117',1,'Speedify SDK for Desktop 9.5']]],
+  ['5_201_1',['5 1',['../whatsnew.html#autotoc_md85',1,'Speedify SDK for Desktop 11.5.1'],['../whatsnew.html#autotoc_md69',1,'Speedify SDK for Desktop 12.5.1'],['../whatsnew.html#autotoc_md48',1,'Speedify SDK for Desktop 14.5.1']]],
+  ['5_202_2',['Speedify SDK for Desktop 14.5.2',['../whatsnew.html#autotoc_md47',1,'']]],
+  ['5_203_3',['Speedify SDK for Desktop 14.5.3',['../whatsnew.html#autotoc_md46',1,'']]]
 ];

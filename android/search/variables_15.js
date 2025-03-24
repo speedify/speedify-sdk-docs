@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['warn',['WARN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_log_level.html#aea04e18b7def516260dcf798932f54b6',1,'com::speedify::speedifysdk::Types::LogLevel']]],
-  ['watcheddomains',['watchedDomains',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_domain_watchlist_item.html#a3f1165e7dab2a32abd836ce639cbbb16',1,'com::speedify::speedifysdk::Types::LocalProxyDomainWatchlistItem']]],
-  ['wifi',['WIFI',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_type.html#a45d4e4c9d9f56b583200f92b81662504',1,'com::speedify::speedifysdk::Types::NetworkType']]],
-  ['workingpriority',['workingPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#ac89dcded9fffe8d92cee4f6fc9522aac',1,'com::speedify::speedifysdk::Types::AdapterData']]]
+  ['verbose_0',['VERBOSE',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1LogLevel.html#a03169c2c7e2ff706233c78422b0daf3a',1,'com::speedify::speedifysdk::Types::LogLevel']]],
+  ['vpn_1',['VPN',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkType.html#a850a488d723c61602f7e2fbf72936bdd',1,'com::speedify::speedifysdk::Types::NetworkType']]],
+  ['vpn_5fadapter_2',['VPN_ADAPTER',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1ErrorType.html#ae952198a39c0937128f2abcd235360ed',1,'com::speedify::speedifysdk::Types::ErrorType']]],
+  ['vpn_5fnot_5fconnected_3',['VPN_NOT_CONNECTED',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkSharing_1_1TunnelStatus.html#affa017649386c928a69c963803a54d4a',1,'com::speedify::speedifysdk::Types::NetworkSharing::TunnelStatus']]]
 ];

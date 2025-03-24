@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['enableautomaticconnectionpriority',['enableAutomaticConnectionPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aac54c1e29f6b0b462e9e52081abc48c2',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['enablecaptiveportalmode',['enableCaptivePortalMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a33aed37f95e72f57554d3aa3e327b4b9',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['enablestatupdates',['enableStatUpdates',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#abefc2866126cda2a2e47cfdc37a1b9a3',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['erasealllogfiles',['eraseAllLogFiles',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a71ec7a377038174ab36595a11b153eb2',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['error',['error',['../classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#ae827305c548061974f0f5984726e1b69',1,'com.speedify.speedifysdk.Logging.LogHandler.error(String message)'],['../classcom_1_1speedify_1_1speedifysdk_1_1_logging_1_1_log_handler.html#a8c7f806523821b9b00c826818e82f745',1,'com.speedify.speedifysdk.Logging.LogHandler.error(String message, Throwable th)']]],
-  ['execute',['execute',['../classcom_1_1speedify_1_1speedifysdk_1_1_pooled_executor.html#a4eaeb8ee2f5cd65a968aff8bf06a1563',1,'com::speedify::speedifysdk::PooledExecutor']]]
+  ['enableautomaticconnectionpriority_0',['enableAutomaticConnectionPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a0a1e79d01156176c85e3967680c946cf',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['enablecaptiveportalmode_1',['enableCaptivePortalMode',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a568f4d23107b359e9b8c4af84c4e1468',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['enablestatupdates_2',['enableStatUpdates',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#ab6ca421ed8238599fe60d3bc6077ecec',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['enhancedstatistics_3',['EnhancedStatistics',['../classcom_1_1speedify_1_1speedifysdk_1_1enhancedstatistics_1_1EnhancedStatistics.html#a54ad95a62fea6faee4195f86c9932b0d',1,'com::speedify::speedifysdk::enhancedstatistics::EnhancedStatistics']]],
+  ['erasealllogfiles_4',['eraseAllLogFiles',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a3637c1eb8503732c72f20a07f79c5e10',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['error_5',['error',['../classcom_1_1speedify_1_1speedifysdk_1_1Logging_1_1LogHandler.html#a7a127582b139508c41cfd9e9e6017bd6',1,'com.speedify.speedifysdk.Logging.LogHandler.error(String message)'],['../classcom_1_1speedify_1_1speedifysdk_1_1Logging_1_1LogHandler.html#a940d35a6b87e078c25c5cb42d796550e',1,'com.speedify.speedifysdk.Logging.LogHandler.error(String message, Throwable th)']]],
+  ['execute_6',['execute',['../classcom_1_1speedify_1_1speedifysdk_1_1PooledExecutor.html#a0019cec0a6ee07ff33390ed3b609d8b7',1,'com::speedify::speedifysdk::PooledExecutor']]]
 ];

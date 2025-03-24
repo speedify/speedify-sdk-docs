@@ -1,31 +1,5 @@
 var searchData=
 [
-  ['speedifysdk_5faccountaction',['SpeedifySDK_AccountAction',['../group___t_y_p_e_s.html#ga66bbbf6ae3bf6871397b47096af8bd36',1,'types.h']]],
-  ['speedifysdk_5faccountpaymenttype',['SpeedifySDK_AccountPaymentType',['../group___t_y_p_e_s.html#gafddea3bcdbce77ede80928a7fb218600',1,'types.h']]],
-  ['speedifysdk_5fautoconnectmethod',['SpeedifySDK_AutoConnectMethod',['../group___t_y_p_e_s.html#gab919eb84f5459fa31364b2a5a24088f2',1,'types.h']]],
-  ['speedifysdk_5fbondingmode',['SpeedifySDK_BondingMode',['../group___t_y_p_e_s.html#ga673980be58fe205ac13216bd9c934128',1,'types.h']]],
-  ['speedifysdk_5fconnectiondirectionalmode',['SpeedifySDK_ConnectionDirectionalMode',['../group___t_y_p_e_s.html#ga8796437d8a333e0344d503c4e92c2cfe',1,'types.h']]],
-  ['speedifysdk_5fconnectionpriority',['SpeedifySDK_ConnectionPriority',['../group___t_y_p_e_s.html#gab1b46926c678d641667187a42ab9e303',1,'types.h']]],
-  ['speedifysdk_5fconnectionstate',['SpeedifySDK_ConnectionState',['../group___t_y_p_e_s.html#gabc5444e7756604223c538c9417e89cbe',1,'types.h']]],
-  ['speedifysdk_5fdisconnectreason',['SpeedifySDK_DisconnectReason',['../group___t_y_p_e_s.html#ga081a8b9c8a0177d504aa84266b56a994',1,'types.h']]],
-  ['speedifysdk_5fdscppriority',['SpeedifySDK_DSCPPriority',['../types_8h.html#aefa2608cce60aa05e96892cc12b9e408',1,'types.h']]],
-  ['speedifysdk_5fdscpreplication',['SpeedifySDK_DSCPReplication',['../types_8h.html#a8a834cd2194fde09ba10dbc4c22fdb46',1,'types.h']]],
-  ['speedifysdk_5ferrortype',['SpeedifySDK_ErrorType',['../group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2',1,'types.h']]],
-  ['speedifysdk_5ffirewallmode',['SpeedifySDK_FirewallMode',['../group___t_y_p_e_s.html#gaa0999d1c8d7d3eaf8d6cea85609364c8',1,'types.h']]],
-  ['speedifysdk_5floglevel',['SpeedifySDK_LogLevel',['../group___t_y_p_e_s.html#gae1b620799799836a6f78e3113a2884bf',1,'types.h']]],
-  ['speedifysdk_5fnetworksharingautopairbehavior',['SpeedifySDK_NetworkSharingAutoPairBehavior',['../types_8h.html#a96d1882fb645f53efcaa865084c12b6a',1,'types.h']]],
-  ['speedifysdk_5fnetworksharingpairrequestbehavior',['SpeedifySDK_NetworkSharingPairRequestBehavior',['../types_8h.html#af1be67b63c5f12f9e080f7824a3d123e',1,'types.h']]],
-  ['speedifysdk_5fnetworksharingpeerrole',['SpeedifySDK_NetworkSharingPeerRole',['../types_8h.html#a098a9c305c844a82d9da76bf4e38f1c6',1,'types.h']]],
-  ['speedifysdk_5fnetworksharingpeerstatus',['SpeedifySDK_NetworkSharingPeerStatus',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4',1,'types.h']]],
-  ['speedifysdk_5fnetworksharingtunnelstatus',['SpeedifySDK_NetworkSharingTunnelStatus',['../types_8h.html#af67511c19bae90b5fce16afb71e801a2',1,'types.h']]],
-  ['speedifysdk_5fnetworktype',['SpeedifySDK_NetworkType',['../group___t_y_p_e_s.html#ga1b0e167436dde4e47d01f7057280887b',1,'types.h']]],
-  ['speedifysdk_5fportprotocol',['SpeedifySDK_PortProtocol',['../group___t_y_p_e_s.html#ga765f83167900eb588a4b4c73c8e9f44e',1,'types.h']]],
-  ['speedifysdk_5fproxymatchmode',['SpeedifySDK_ProxyMatchMode',['../group___t_y_p_e_s.html#gac5fce2249549ad9ffc779c9b71ad343a',1,'types.h']]],
-  ['speedifysdk_5fsafebrowsingerror',['SpeedifySDK_SafeBrowsingError',['../group___t_y_p_e_s.html#gad486e8c4796944b3b6b9ad4e5f2d7c3c',1,'types.h']]],
-  ['speedifysdk_5fsafebrowsingloglevel',['SpeedifySDK_SafeBrowsingLogLevel',['../types_8h.html#ad2de182c4b58b299104638840d48e186',1,'types.h']]],
-  ['speedifysdk_5fsafebrowsingsafenetworkoverride',['SpeedifySDK_SafeBrowsingSafeNetworkOverride',['../types_8h.html#a640cd287e9ab0198f00cf4dc75771504',1,'types.h']]],
-  ['speedifysdk_5fspeedtesttype',['SpeedifySDK_SpeedTestType',['../types_8h.html#adddd3c19526cfad74565d52d47376ef4',1,'types.h']]],
-  ['speedifysdk_5fstate',['SpeedifySDK_State',['../group___t_y_p_e_s.html#gaa7c8c7559160aeec64a6625079ac4ee0',1,'types.h']]],
-  ['speedifysdk_5fstreamhealth',['SpeedifySDK_StreamHealth',['../group___t_y_p_e_s.html#ga4023d15f20a3c455a6d0ab65893a889b',1,'types.h']]],
-  ['speedifysdk_5ftransportmode',['SpeedifySDK_TransportMode',['../group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee',1,'types.h']]]
+  ['dispatch_5fquality_0',['Dispatch_Quality',['../dispatch_8h.html#a0913d110f0d2c7f0bf1b7ad3d5d3940f',1,'dispatch.h']]],
+  ['dispatch_5froutingmode_1',['Dispatch_RoutingMode',['../dispatch_8h.html#a795c9fb0c4e059d4df5b9dfa5eea857c',1,'dispatch.h']]]
 ];
