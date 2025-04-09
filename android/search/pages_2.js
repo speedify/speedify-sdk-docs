@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['configuration_0',['Local Proxy Configuration',['../localproxy.html',1,'']]]
+  ['for_20android_0',['Introduction to the Cujo Safebrowsing SDK for Android',['../index.html',1,'']]]
 ];

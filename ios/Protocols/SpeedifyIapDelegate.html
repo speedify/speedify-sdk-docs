@@ -384,7 +384,8 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyIapDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SpeedifyIapDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
@@ -412,7 +413,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resultReported</span><span class="p">(</span><span class="nv">status</span><span class="p">:</span> <span class="n"><a href="../Structs/iAPStatus.html">iAPStatus</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">func</span> <span class="nf">resultReported</span><span class="p">(</span><span class="nv">status</span><span class="p">:</span> <span class="n"><a href="../Structs/iAPStatus.html">iAPStatus</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

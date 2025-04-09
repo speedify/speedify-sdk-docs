@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['gatewayuri_0',['gatewayUri',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1DirectorySettings.html#afe289cc133676f391c407f28d7989c36',1,'com::speedify::speedifysdk::Types::DirectorySettings']]],
-  ['good_1',['GOOD',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1StreamHealth.html#acbcf8ca7dd1dc27867b15e67a53fa0b2',1,'com::speedify::speedifysdk::Types::StreamHealth']]],
-  ['groupid_2',['groupId',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1StreamStats.html#ae635b49a29d7295d8f70cb83b68f5329',1,'com::speedify::speedifysdk::Types::StreamStats']]]
+  ['host_0',['host',['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_lookup_error.html#a76b840c01b543d9a4d2983e41b8dc413',1,'com.cujo.safebrowsing.SBTypes.SafeBrowsingLookupError.host'],['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_block.html#abeef8ae7bf980894f5b008538f7a0301',1,'com.cujo.safebrowsing.SBTypes.SafeBrowsingBlock.host']]],
+  ['http_5fstatus_1',['HTTP_STATUS',['../enumcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_error.html#a23cd7ac4442d9826e52faa455a68bdb3',1,'com::cujo::safebrowsing::SBTypes::SafeBrowsingError']]]
 ];

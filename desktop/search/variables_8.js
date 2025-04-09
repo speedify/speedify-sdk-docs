@@ -15,5 +15,6 @@ var searchData=
   ['isp_12',['isp',['../struct_speedify_s_d_k___adapter_data.html#a0f565bc4647edfc850b5d43d21917334',1,'SpeedifySDK_AdapterData']]],
   ['ispremium_13',['isPremium',['../struct_speedify_s_d_k___server_information.html#aa1e02fe4c36af88326d559a42e3caaea',1,'SpeedifySDK_ServerInformation']]],
   ['isprivate_14',['isPrivate',['../struct_speedify_s_d_k___server_information.html#acc1d557ba404e446f9455517c82e54e1',1,'SpeedifySDK_ServerInformation']]],
-  ['isteam_15',['isTeam',['../struct_speedify_s_d_k___accounting_data.html#ad508f0947e1cca3beb8ec4b231a98bed',1,'SpeedifySDK_AccountingData']]]
+  ['ispstats_15',['ispStats',['../struct_speedify_s_d_k___adapter_data.html#af44be98bec4bbaf31e65c0d14dad5c8a',1,'SpeedifySDK_AdapterData']]],
+  ['isteam_16',['isTeam',['../struct_speedify_s_d_k___accounting_data.html#ad508f0947e1cca3beb8ec4b231a98bed',1,'SpeedifySDK_AccountingData']]]
 ];

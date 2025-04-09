@@ -1,14 +1,4 @@
 var searchData=
 [
-  ['9_0',['9',['../whatsnew.html#autotoc_md90',1,'Speedify SDK for Android 10.9'],['../whatsnew.html#autotoc_md72',1,'Speedify SDK for Android 11.9'],['../whatsnew.html#autotoc_md24',1,'Speedify SDK for Android 14.9'],['../whatsnew.html#autotoc_md105',1,'Speedify SDK for Android 9.9']]],
-  ['9_200_1',['Speedify SDK for Android 9.0',['../whatsnew.html#autotoc_md113',1,'']]],
-  ['9_201_2',['9 1',['../whatsnew.html#autotoc_md89',1,'Speedify SDK for Android 10.9.1'],['../whatsnew.html#autotoc_md23',1,'Speedify SDK for Android 14.9.1']]],
-  ['9_202_3',['9 2',['../whatsnew.html#autotoc_md71',1,'Speedify SDK for Android 11.9.2'],['../whatsnew.html#autotoc_md22',1,'Speedify SDK for Android 14.9.2'],['../whatsnew.html#autotoc_md112',1,'Speedify SDK for Android 9.2']]],
-  ['9_203_4',['9 3',['../whatsnew.html#autotoc_md21',1,'Speedify SDK for Android 14.9.3'],['../whatsnew.html#autotoc_md111',1,'Speedify SDK for Android 9.3']]],
-  ['9_204_5',['9 4',['../whatsnew.html#autotoc_md70',1,'Speedify SDK for Android 11.9.4'],['../whatsnew.html#autotoc_md20',1,'Speedify SDK for Android 14.9.4'],['../whatsnew.html#autotoc_md110',1,'Speedify SDK for Android 9.4']]],
-  ['9_205_6',['9 5',['../whatsnew.html#autotoc_md88',1,'Speedify SDK for Android 10.9.5'],['../whatsnew.html#autotoc_md109',1,'Speedify SDK for Android 9.5']]],
-  ['9_206_7',['Speedify SDK for Android 9.6',['../whatsnew.html#autotoc_md108',1,'']]],
-  ['9_207_8',['Speedify SDK for Android 9.7',['../whatsnew.html#autotoc_md107',1,'']]],
-  ['9_208_9',['Speedify SDK for Android 9.8',['../whatsnew.html#autotoc_md106',1,'']]],
-  ['9_209_10',['Speedify SDK for Android 9.9',['../whatsnew.html#autotoc_md105',1,'']]]
+  ['json_5fset_5ffailure_0',['JSON_SET_FAILURE',['../enumcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_error.html#a2cdd81571ba1bbd355a7a1e449517eb7',1,'com::cujo::safebrowsing::SBTypes::SafeBrowsingError']]]
 ];

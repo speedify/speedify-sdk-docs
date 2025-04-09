@@ -1,26 +1,8 @@
 var searchData=
 [
-  ['backup_0',['BACKUP',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1ConnectionPriority.html#aebcfea8dfd224962d0a4fe3f0a1439eb',1,'com::speedify::speedifysdk::Types::ConnectionPriority']]],
-  ['badlatency_1',['badLatency',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1StreamingStats.html#a09d81604fcefb6c26ac6d9b55836a0d0',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
-  ['badloss_2',['badLoss',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1StreamingStats.html#a57e2ebca4b3b40d3e444c6fea7b884c1',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
-  ['badmemory_3',['badMemory',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1StreamingStats.html#aaad42ce19ad598d36a7779d7356373c8',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
-  ['bestadapterid_4',['bestAdapterID',['../classcom_1_1speedify_1_1speedifysdk_1_1dispatch_1_1Dispatch_1_1Stats.html#a14ec8662020c98e1e753af18ca6fa3a3',1,'com::speedify::speedifysdk::dispatch::Dispatch::Stats']]],
-  ['bluetooth_5',['BLUETOOTH',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkType.html#a7969120158226d3ad4651ab977606f0a',1,'com::speedify::speedifysdk::Types::NetworkType']]],
-  ['bondingmode_6',['BondingMode',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1BondingMode.html',1,'com::speedify::speedifysdk::Types']]],
-  ['bondingmode_7',['bondingMode',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1Settings.html#a9f84ff2c7d7ef04c5089e3817976f97f',1,'com.speedify.speedifysdk.Types.Settings.bondingMode'],['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1StreamingStats.html#a9f84ff2c7d7ef04c5089e3817976f97f',1,'com.speedify.speedifysdk.Types.StreamingStats.bondingMode']]],
-  ['boot_20resume_20and_20killswitch_8',['On-Boot Resume and Killswitch',['../onboot.html',1,'']]],
-  ['bufferwaits_9',['bufferWaits',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1TunStats.html#a025f6141efcefd32801a8b119789589e',1,'com::speedify::speedifysdk::Types::TunStats']]],
-  ['builderhelper_10',['BuilderHelper',['../interfacecom_1_1speedify_1_1speedifysdk_1_1NotificationHelper_1_1BuilderHelper.html',1,'com::speedify::speedifysdk::NotificationHelper']]],
-  ['builderhelper_11',['builderHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1NotificationHelper_1_1Options.html#a9cc215ca2f154b3327cbab8e0b9a22a8',1,'com::speedify::speedifysdk::NotificationHelper::Options']]],
-  ['bysetting_12',['BYSETTING',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AutoConnectMethod.html#a520254c672b362af06a8083ab5fdb12f',1,'com::speedify::speedifysdk::Types::AutoConnectMethod']]],
-  ['bytesavailable_13',['bytesAvailable',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AccountingData.html#aae8e41157970d000e6751f753aec1427',1,'com::speedify::speedifysdk::Types::AccountingData']]],
-  ['bytesin_14',['bytesIn',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1TunStats.html#ad13f3d89da2e201c47612860c9b17395',1,'com.speedify.speedifysdk.Types.TunStats.bytesIn'],['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1HandlerStats.html#ad13f3d89da2e201c47612860c9b17395',1,'com.speedify.speedifysdk.Types.HandlerStats.bytesIn']]],
-  ['byteslastmonth_15',['bytesLastMonth',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkSharing_1_1Usage.html#ade9de617b2a3ef881921cfeca24e4e51',1,'com::speedify::speedifysdk::Types::NetworkSharing::Usage']]],
-  ['byteslastweek_16',['bytesLastWeek',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkSharing_1_1Usage.html#aa664afb802b010186b91d8c91562961d',1,'com::speedify::speedifysdk::Types::NetworkSharing::Usage']]],
-  ['bytesout_17',['bytesOut',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1TunStats.html#aeb6b45decabf8bcf7e1c7e1bb94632e5',1,'com.speedify.speedifysdk.Types.TunStats.bytesOut'],['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1HandlerStats.html#aeb6b45decabf8bcf7e1c7e1bb94632e5',1,'com.speedify.speedifysdk.Types.HandlerStats.bytesOut']]],
-  ['bytesreceived_18',['bytesReceived',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1SessionStats.html#a3e7128a4d5057cab095d615de60470e0',1,'com::speedify::speedifysdk::Types::SessionStats']]],
-  ['bytessent_19',['bytesSent',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1SessionStats.html#a9993fea115f38ae04a39c426758eac4f',1,'com::speedify::speedifysdk::Types::SessionStats']]],
-  ['bytestoday_20',['bytesToday',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkSharing_1_1Usage.html#a93e0586dc0d2fe339ad5592f5c04be11',1,'com::speedify::speedifysdk::Types::NetworkSharing::Usage']]],
-  ['bytestotal_21',['bytesTotal',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1NetworkSharing_1_1Usage.html#a9da1ae5a0bd5768dc7524fa6913e1233',1,'com::speedify::speedifysdk::Types::NetworkSharing::Usage']]],
-  ['bytesused_22',['bytesUsed',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AccountingData.html#a26c2b322893b3e32713da58e06f6bbec',1,'com::speedify::speedifysdk::Types::AccountingData']]]
+  ['maxtime_0',['maxTime',['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_stats.html#a7be5be061667c4c78d1d4029f128ace2',1,'com::cujo::safebrowsing::SBTypes::SafeBrowsingStats']]],
+  ['message_1',['message',['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_connect_error.html#acf0ad0193f111cd2467168874caea597',1,'com.cujo.safebrowsing.SBTypes.SafeBrowsingConnectError.message'],['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_lookup_error.html#a7d04fd27ca88357efb568aa2c82c45f6',1,'com.cujo.safebrowsing.SBTypes.SafeBrowsingLookupError.message']]],
+  ['migration_20guide_2',['Migration Guide',['../migration.html',1,'']]],
+  ['migration_2edox_3',['migration.dox',['../migration_8dox.html',1,'']]],
+  ['mintime_4',['minTime',['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_stats.html#a023fa0a2433d12ed20f2dd725b90c4c6',1,'com::cujo::safebrowsing::SBTypes::SafeBrowsingStats']]]
 ];
