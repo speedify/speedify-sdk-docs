@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['overview_2edox_0',['overview.dox',['../overview_8dox.html',1,'']]]
+  ['enhancedstatistics_2ejava_0',['EnhancedStatistics.java',['../EnhancedStatistics_8java.html',1,'']]]
 ];

@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cujo Safebrowsing SDK for Android: Initializing the Safebrowsing SDK</title>
+<title>Speedify SDK for Android: Initializing the SDK</title>
+<link rel="icon" href="speedify.webp" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="overrides.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,8 +26,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Cujo Safebrowsing SDK for Android<span id="projectnumber">&#160;1.24.1</span>
+   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.5.0</span>
    </div>
   </td>
  </tr>
@@ -84,15 +87,60 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div><div class="header">
-  <div class="headertitle"><div class="title">Initializing the Safebrowsing SDK</div></div>
+  <div class="headertitle"><div class="title">Initializing the SDK</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Starting the Safebrowsing SDK </h2>
-<p>The Safebrowsing SDK depends on the Speedify SDK. To use the Safebrowsing SDK, you must first initialize an instance of the Speedify SDK in your app. Then you can get an instance of the Safebrowsing SDK. Pass the Speedify SDK in when creating the Safebrowsing instance. </p><div class="fragment"><div class="line">SpeedifySDK sdk = SpeedifySDK.getInstance(context);</div>
-<div class="line">Safebrowsing sbsdk = Safebrowsing.getInstance(sdk);</div>
-</div><!-- fragment --><p>Alternatively, if the Speedify SDK was already created elsewhere, you can let the Safebrowsing SDK try to automatically get the Speedify SDK instance. </p><div class="fragment"><div class="line">Safebrowsing sbsdk = Safebrowsing.getInstance();</div>
-</div><!-- fragment --><h2>Optional: Handlers </h2>
-<p>To get callbacks from the Safebrowsing SDK, set a <code><a class="el" href="classcom_1_1cujo_1_1safebrowsing_1_1_safe_browsing_handler.html">SafeBrowsingHandler</a></code> with <code><a class="el" href="">setHandler</a></code>. The handler can override the callback functions it wants to handle. </p>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md9"></a>
+Implementing AutoConstruct</h2>
+<p>In your Application class, implement <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK_1_1AutoConstruct.html">SpeedifySDK.AutoConstruct</a></code>: </p><div class="fragment"><div class="line">// Implement SpeedifySDK.AutoConstruct</div>
+<div class="line">public class MyApplication extends Application implements SpeedifySDK.AutoConstruct {</div>
+<div class="line"> </div>
+<div class="line">  // ...</div>
+<div class="line"> </div>
+<div class="line">  @Override</div>
+<div class="line">  public SpeedifySDK getSpeedifySDK(Context context) {</div>
+<div class="line">    // instantiate a new SDK object</div>
+<div class="line">    SpeedifySDK sdk = new SpeedifySDK(context, &quot;My App Title&quot;, new SpeedifyHandler() {</div>
+<div class="line">      // override wanted methods here</div>
+<div class="line">    });</div>
+<div class="line"> </div>
+<div class="line">    // If using Dispatch, add on the Dispatch library</div>
+<div class="line">    Dispatch.getInstance(context);</div>
+<div class="line"> </div>
+<div class="line">    // If using Enhanced Statistics, add on the Enhanced Statistics library</div>
+<div class="line">    EnhancedStatistics.getInstance(context);</div>
+<div class="line"> </div>
+<div class="line">    return sdk;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  // ...</div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md10"></a>
+Starting the Speedify SDK</h2>
+<p>Before you use the Speedify SDK in your app, you must initialize VPN permission. </p><div class="fragment"><div class="line">// check for vpn permission, and request it if needed</div>
+<div class="line">if (!SpeedifySDK.hasVPNPermission(this)) {</div>
+<div class="line">  SpeedifySDK.initializeVPNPermission(this);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> When you want to start the Speedify SDK, call this to get an instance of the SDK. </p><div class="fragment"><div class="line">SpeedifySDK sdk = SpeedifySDK.getInstance(context);</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
+Optional: Application onCreate</h2>
+<p>The Speedify SDK starts up a background process to run the VPN. If you initialize other components in your Application's onCreate, you may need to return early to avoid initializing them in this process as well. </p><div class="fragment"><div class="line">@Override</div>
+<div class="line">public void onCreate() {</div>
+<div class="line">  super.onCreate();</div>
+<div class="line"> </div>
+<div class="line">  // ... common initialization ...</div>
+<div class="line"> </div>
+<div class="line">  if (SpeedifySDK.IsBackgroundProcess(this)) return;</div>
+<div class="line"> </div>
+<div class="line">  // ... other initialization that you only want to run in your app&#39;s UI process ...</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md12"></a>
+Optional: Handlers</h2>
+<p>If you do not specify a custom <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifyHandler.html">SpeedifyHandler</a></code> in <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK_1_1AutoConstruct.html#acd662f22775e6d93b750218afdc4bfab">getSpeedifySDK</a></code>, you can call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a0a9ba1c0d54aaa16638db4db1899fd3d">setHandler</a></code> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK_1_1AutoConstruct.html">SpeedifySDK.AutoConstruct</a></code> method above.</p>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Optional: SDK Cleanup</h2>
+<p>To close down the SDK entirely without exiting your application, call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a1a8131e223183aef72b78b514bbd5ad6">SpeedifySDK.ForceExit(context)</a></code>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#aa80ce466788f6fb067eb706e28c59fb7">restartServices</a></code> on your old SpeedifySDK object. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

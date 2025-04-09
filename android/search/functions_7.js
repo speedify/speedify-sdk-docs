@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['info_0',['info',['../classcom_1_1speedify_1_1speedifysdk_1_1Logging_1_1LogHandler.html#a9efd0d443be4f445996fb46637ddfca6',1,'com::speedify::speedifysdk::Logging::LogHandler']]],
+  ['init_1',['Init',['../classcom_1_1speedify_1_1speedifysdk_1_1Preferences.html#a9d80827e6109f0c304dd6667f6d72a3e',1,'com::speedify::speedifysdk::Preferences']]],
+  ['initializebackgroundlocationpermission_2',['initializeBackgroundLocationPermission',['../classcom_1_1speedify_1_1speedifysdk_1_1enhancedstatistics_1_1EnhancedStatistics.html#afa1c892c808cb594236d9093880f8825',1,'com::speedify::speedifysdk::enhancedstatistics::EnhancedStatistics']]],
+  ['initializefinelocationpermission_3',['initializeFineLocationPermission',['../classcom_1_1speedify_1_1speedifysdk_1_1enhancedstatistics_1_1EnhancedStatistics.html#a131cdb572d4c9c31896c266ce5043608',1,'com::speedify::speedifysdk::enhancedstatistics::EnhancedStatistics']]],
+  ['initializevpnpermission_4',['initializeVPNPermission',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a35deb3f7bcd6a85e74634f573b24bb77',1,'com.speedify.speedifysdk.SpeedifySDK.initializeVPNPermission()'],['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#afbd989afe6a0ae5f30fbdca86c7e3fd9',1,'com.speedify.speedifysdk.SpeedifySDK.initializeVPNPermission(Context appContext)']]],
+  ['iprange_5',['IPRange',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1IPRange.html#a2cf57d065c9aa150d413274dd7e11b22',1,'com.speedify.speedifysdk.Types.IPRange.IPRange(String ipAddress, int prefixLength)'],['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1IPRange.html#ad5b3003333115815350dbcb4b3d8c4fb',1,'com.speedify.speedifysdk.Types.IPRange.IPRange(String ipAddress)']]],
+  ['isbackgroundprocess_6',['IsBackgroundProcess',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a5d50d4171b7ffd3b9ad531c3098046e2',1,'com.speedify.speedifysdk.SpeedifySDK.IsBackgroundProcess(@NonNull Application application)'],['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a7bd4678acc1f6f0d01835b5d646e41f5',1,'com.speedify.speedifysdk.SpeedifySDK.IsBackgroundProcess(@NonNull Context context)']]],
+  ['isbackgroundprocess_7',['isBackgroundProcess',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a8fc93505cb557979ce2ea2f07d22b234',1,'com::speedify::speedifysdk::SpeedifySDK']]],
+  ['issdkalive_8',['isSdkAlive',['../classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a6c2b512e30bb5a90c7175ead205bf59a',1,'com::speedify::speedifysdk::SpeedifySDK']]]
+];

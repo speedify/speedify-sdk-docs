@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['handlemessage_0',['handleMessage',['../classcom_1_1cujo_1_1safebrowsing_1_1_safe_browsing_message_handler.html#ac3d755ee973f23ae49bd60fa50541c97',1,'com::cujo::safebrowsing::SafeBrowsingMessageHandler']]],
-  ['host_1',['host',['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_lookup_error.html#a76b840c01b543d9a4d2983e41b8dc413',1,'com.cujo.safebrowsing.SBTypes.SafeBrowsingLookupError.host'],['../classcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_block.html#abeef8ae7bf980894f5b008538f7a0301',1,'com.cujo.safebrowsing.SBTypes.SafeBrowsingBlock.host']]],
-  ['http_5fstatus_2',['HTTP_STATUS',['../enumcom_1_1cujo_1_1safebrowsing_1_1_s_b_types_1_1_safe_browsing_error.html#a23cd7ac4442d9826e52faa455a68bdb3',1,'com::cujo::safebrowsing::SBTypes::SafeBrowsingError']]]
+  ['7_0',['7',['../whatsnew.html#autotoc_md96',1,'Speedify SDK for Android 10.7'],['../whatsnew.html#autotoc_md76',1,'Speedify SDK for Android 11.7'],['../whatsnew.html#autotoc_md60',1,'Speedify SDK for Android 12.7'],['../whatsnew.html#autotoc_md33',1,'Speedify SDK for Android 14.7'],['../whatsnew.html#autotoc_md28',1,'Speedify SDK for Android 14.8.7'],['../whatsnew.html#autotoc_md109',1,'Speedify SDK for Android 9.7']]],
+  ['7_200_1',['Speedify SDK for Android 7.0',['../whatsnew.html#autotoc_md127',1,'']]],
+  ['7_201_2',['Speedify SDK for Android 10.7.1',['../whatsnew.html#autotoc_md95',1,'']]],
+  ['7_201_203_3',['Speedify SDK for Android 7.1.3',['../whatsnew.html#autotoc_md126',1,'']]],
+  ['7_202_4',['Speedify SDK for Android 7.2',['../whatsnew.html#autotoc_md125',1,'']]],
+  ['7_202_204_5',['Speedify SDK for Android 7.2.4',['../whatsnew.html#autotoc_md124',1,'']]],
+  ['7_204_6',['Speedify SDK for Android 7.4',['../whatsnew.html#autotoc_md123',1,'']]],
+  ['7_205_7',['Speedify SDK for Android 7.5',['../whatsnew.html#autotoc_md122',1,'']]],
+  ['7_206_201_8',['Speedify SDK for Android 7.6.1',['../whatsnew.html#autotoc_md121',1,'']]],
+  ['7_208_202_9',['Speedify SDK for Android 7.8.2',['../whatsnew.html#autotoc_md120',1,'']]]
 ];

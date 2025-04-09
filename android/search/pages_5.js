@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['migration_20guide_0',['Migration Guide',['../migration.html',1,'']]]
+  ['for_20android_0',['Introduction to the Speedify SDK for Android',['../index.html',1,'']]]
 ];
