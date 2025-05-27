@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.5.0</span>
+   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.6.2</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class for getting unique ID of the device. </p>
-<p>On devices with Play Services and Ad Tracking enabled, this is the AdvertisingId. On other devices, this is a randomly generated UUID. </p><dl class="section since"><dt>Since</dt><dd>6.0 </dd></dl>
+<p>As of 15.6, this is Secure.ANDROID_ID </p><dl class="section since"><dt>Since</dt><dd>6.0 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acfb1b7976e5ff650eec0519e1429427b" name="acfb1b7976e5ff650eec0519e1429427b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfb1b7976e5ff650eec0519e1429427b">&#9670;&#160;</a></span>GetUuid() <span class="overload">[1/2]</span></h2>
@@ -145,7 +145,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the UUID of the device. </p>
-<p>Note that this may be null or empty, as querying Play Services is asynchronous. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>context to load uuid </td></tr>
   </table>
@@ -184,7 +184,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the UUID of the device, possibly asynchronously. </p>
-<p>Note that the return may be null or empty, as querying Play Services is asynchronous. The callback will be called when the uuid is available. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>context to load uuid </td></tr>
     <tr><td class="paramname">handlerCallback</td><td>callback with uuid, </td></tr>
@@ -193,6 +193,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unique identifier for this device </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>11.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>as of 15.6. Use <code><a class="el" href="#acfb1b7976e5ff650eec0519e1429427b">GetUuid(Context)</a></code> instead. </dd></dl>
 
 </div>
 </div>

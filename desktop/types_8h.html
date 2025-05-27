@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.5.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.6.2</span>
    </div>
   </td>
  </tr>
@@ -350,6 +350,7 @@ Enumerations</h2></td></tr>
 <tr class="separator:a088bd5be74c1566ce9093bf8701fbdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a765f83167900eb588a4b4c73c8e9f44e" id="r_a765f83167900eb588a4b4c73c8e9f44e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a765f83167900eb588a4b4c73c8e9f44e">SpeedifySDK_PortProtocol</a> { <a class="el" href="#a765f83167900eb588a4b4c73c8e9f44ea9b480fd1da16f2b74b8732c4756217f9">PPROTO_TCP</a>
 , <a class="el" href="#a765f83167900eb588a4b4c73c8e9f44eaca15f369269ee3980fafa67a63f4ede4">PPROTO_UDP</a>
+, <a class="el" href="#a765f83167900eb588a4b4c73c8e9f44ea7377e6e8a9e539c4a38d3f30e14cdaca">PPROTO_ICMP</a>
  }</td></tr>
 <tr class="memdesc:a765f83167900eb588a4b4c73c8e9f44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protocol for ports.  <a href="#a765f83167900eb588a4b4c73c8e9f44e">More...</a><br /></td></tr>
 <tr class="separator:a765f83167900eb588a4b4c73c8e9f44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -540,6 +541,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aefa2608cce60aa05e96892cc12b9e408"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP priority behavior.  <a href="#aefa2608cce60aa05e96892cc12b9e408">More...</a><br /></td></tr>
 <tr class="separator:aefa2608cce60aa05e96892cc12b9e408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6415e52bffe3e03f452b7e5972675094" id="r_a6415e52bffe3e03f452b7e5972675094"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6415e52bffe3e03f452b7e5972675094">SpeedifySDK_TrafficRuleChangeMethod</a> { <a class="el" href="#a6415e52bffe3e03f452b7e5972675094a9e1a7dbb156d52b585ecb70814884620">TRAFFIC_RULE_UPDATE</a>
+, <a class="el" href="#a6415e52bffe3e03f452b7e5972675094aeefd11d5efc846080cfda183dd3cd1fc">TRAFFIC_RULE_REPLACE</a>
+, <a class="el" href="#a6415e52bffe3e03f452b7e5972675094a3ddc97507241b2a7bdf1553e95b2c047">TRAFFIC_RULE_REMOVE</a>
+ }</td></tr>
+<tr class="memdesc:a6415e52bffe3e03f452b7e5972675094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traffic rules change method.  <a href="#a6415e52bffe3e03f452b7e5972675094">More...</a><br /></td></tr>
+<tr class="separator:a6415e52bffe3e03f452b7e5972675094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -1386,6 +1393,9 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a765f83167900eb588a4b4c73c8e9f44eaca15f369269ee3980fafa67a63f4ede4" name="a765f83167900eb588a4b4c73c8e9f44eaca15f369269ee3980fafa67a63f4ede4"></a>PPROTO_UDP&#160;</td><td class="fielddoc"><p>UDP. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
 </td></tr>
+<tr><td class="fieldname"><a id="a765f83167900eb588a4b4c73c8e9f44ea7377e6e8a9e539c4a38d3f30e14cdaca" name="a765f83167900eb588a4b4c73c8e9f44ea7377e6e8a9e539c4a38d3f30e14cdaca"></a>PPROTO_ICMP&#160;</td><td class="fielddoc"><p>ICMP. </p>
+<dl class="section since"><dt>Since</dt><dd>15.6 </dd></dl>
+</td></tr>
 </table>
 
 </div>
@@ -1607,6 +1617,34 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a4023d15f20a3c455a6d0ab65893a889baa93f6767997b6f8f986ef9602aee4fb9" name="a4023d15f20a3c455a6d0ab65893a889baa93f6767997b6f8f986ef9602aee4fb9"></a>SH_GOOD&#160;</td><td class="fielddoc"><p>Stream is in good health. </p>
 <dl class="section since"><dt>Since</dt><dd>11.5 </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6415e52bffe3e03f452b7e5972675094" name="a6415e52bffe3e03f452b7e5972675094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6415e52bffe3e03f452b7e5972675094">&#9670;&#160;</a></span>SpeedifySDK_TrafficRuleChangeMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6415e52bffe3e03f452b7e5972675094">SpeedifySDK_TrafficRuleChangeMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traffic rules change method. </p>
+<dl class="section since"><dt>Since</dt><dd>15.6 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6415e52bffe3e03f452b7e5972675094a9e1a7dbb156d52b585ecb70814884620" name="a6415e52bffe3e03f452b7e5972675094a9e1a7dbb156d52b585ecb70814884620"></a>TRAFFIC_RULE_UPDATE&#160;</td><td class="fielddoc"><p>Update an existing traffic rule, or add a new one if it doesn't exist. </p>
+<dl class="section since"><dt>Since</dt><dd>15.6 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6415e52bffe3e03f452b7e5972675094aeefd11d5efc846080cfda183dd3cd1fc" name="a6415e52bffe3e03f452b7e5972675094aeefd11d5efc846080cfda183dd3cd1fc"></a>TRAFFIC_RULE_REPLACE&#160;</td><td class="fielddoc"><p>Replace an existing traffic rule, or add a new one if it doesn't exist. </p>
+<dl class="section since"><dt>Since</dt><dd>15.6 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a6415e52bffe3e03f452b7e5972675094a3ddc97507241b2a7bdf1553e95b2c047" name="a6415e52bffe3e03f452b7e5972675094a3ddc97507241b2a7bdf1553e95b2c047"></a>TRAFFIC_RULE_REMOVE&#160;</td><td class="fielddoc"><p>Remove an existing traffic rule. </p>
+<dl class="section since"><dt>Since</dt><dd>15.6 </dd></dl>
 </td></tr>
 </table>
 

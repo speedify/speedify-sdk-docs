@@ -27,5 +27,6 @@ var searchData=
   ['speedifysdk_5fspeedtesttype_24',['SpeedifySDK_SpeedTestType',['../types_8h.html#adddd3c19526cfad74565d52d47376ef4',1,'types.h']]],
   ['speedifysdk_5fstate_25',['SpeedifySDK_State',['../types_8h.html#aa7c8c7559160aeec64a6625079ac4ee0',1,'types.h']]],
   ['speedifysdk_5fstreamhealth_26',['SpeedifySDK_StreamHealth',['../types_8h.html#a4023d15f20a3c455a6d0ab65893a889b',1,'types.h']]],
-  ['speedifysdk_5ftransportmode_27',['SpeedifySDK_TransportMode',['../types_8h.html#a088bd5be74c1566ce9093bf8701fbdee',1,'types.h']]]
+  ['speedifysdk_5ftrafficrulechangemethod_27',['SpeedifySDK_TrafficRuleChangeMethod',['../types_8h.html#a6415e52bffe3e03f452b7e5972675094',1,'types.h']]],
+  ['speedifysdk_5ftransportmode_28',['SpeedifySDK_TransportMode',['../types_8h.html#a088bd5be74c1566ce9093bf8701fbdee',1,'types.h']]]
 ];

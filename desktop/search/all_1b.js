@@ -26,5 +26,6 @@ var searchData=
   ['role_23',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult']]],
   ['router_20ui_24',['Embedding the Router UI',['../routerui.html',1,'']]],
   ['routerui_2edox_25',['routerui.dox',['../routerui_8dox.html',1,'']]],
-  ['running_26',['Running',['../linux.html#autotoc_md7',1,'Running'],['../macos.html#autotoc_md12',1,'Running'],['../windows.html#autotoc_md126',1,'Running']]]
+  ['rulesjson_26',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]],
+  ['running_27',['Running',['../linux.html#autotoc_md7',1,'Running'],['../macos.html#autotoc_md12',1,'Running'],['../windows.html#autotoc_md129',1,'Running']]]
 ];
