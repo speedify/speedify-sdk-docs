@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.6.4</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.7.2</span>
    </div>
   </td>
  </tr>
@@ -141,7 +141,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#ac8c70d91f36eda04da91a65a5c29420c">  132</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_TICKET_ID_LENGTH 32</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#a6df5f50fc0fcc795b8a63ac2024ba72b">  136</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_NETWORKSHARING_DISPLAY_NAME_LENGTH 33</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#afc10ae22b66cef970cc29faa9202913a">  139</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_NETWORKSHARING_CONNECT_CODE_LENGTH 129</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#afc10ae22b66cef970cc29faa9202913a">  139</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_NETWORKSHARING_CONNECT_CODE_LENGTH 143</span></div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#af8bf116c1149029469db646cc6f81318">  142</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_NETWORK_SHARING_AVAILABLE_SHARES_RESULTS 32</span></div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#a9afe7f94d9764c768995ffa6aa06e3fa">  145</a></span><span class="preprocessor">#define SPEEDIFYSDK_NETWORKSHARING_PEER_UUID_LENGTH 37</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
@@ -155,39 +155,39 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#a455bceb4b538c9d3e16ba15da5a00899">  170</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_FIXED_DELAY_DOMAINS 100</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#a5d64cb2b6f2bd72206c511c4cec39b48">  173</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_FIXED_DELAY_IPS 100</span></div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#ac09374b3a0840e7d7ca6cc732c35d34b">  176</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_FIXED_DELAY_PORTS 100</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"> * C-wrapper default arg</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor"> #ifdef __cplusplus</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor"> #define SpeedifySDK_DEFAULTNULL = NULL</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor"> #else</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor"> #define SpeedifySDK_DEFAULTNULL</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor"> #endif</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"> * Export definitions</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#define SpeedifySDK_EXTERN extern &quot;C&quot;</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#define SpeedifySDK_EXTERN</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#ifndef SPEEDIFYSDK_SHARED</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#define SpeedifySDK_EXPORT SpeedifySDK_EXTERN</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#else </span><span class="comment">// SPEEDIFYSDK_SHARED</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">    #define SpeedifySDK_EXPORT SpeedifySDK_EXTERN __declspec(dllexport)</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#elif defined(__GNUC__)</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">    #define SpeedifySDK_EXPORT SpeedifySDK_EXTERN __attribute__((visibility(&quot;default&quot;)))</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">    #define SpeedifySDK_EXPORT SpeedifySDK_EXTERN</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">    #pragma warning Unknown dynamic link import/export semantics.</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#endif </span><span class="comment">// SPEEDIFYSDK_SHARED</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="sdkdefines_8h.html#a1b639479dde1941414f8a2b4860d5748">  179</a></span><span class="preprocessor">#define SPEEDIFYSDK_MAX_DATE_TIME_LENGTH 32</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"> * C-wrapper default arg</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor"> #ifdef __cplusplus</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor"> #define SpeedifySDK_DEFAULTNULL = NULL</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor"> #else</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor"> #define SpeedifySDK_DEFAULTNULL</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor"> #endif</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"> * Export definitions</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#define SpeedifySDK_EXTERN extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#define SpeedifySDK_EXTERN</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#ifndef SPEEDIFYSDK_SHARED</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#define SpeedifySDK_EXPORT SpeedifySDK_EXTERN</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#else </span><span class="comment">// SPEEDIFYSDK_SHARED</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">    #define SpeedifySDK_EXPORT SpeedifySDK_EXTERN __declspec(dllexport)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">#elif defined(__GNUC__)</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">    #define SpeedifySDK_EXPORT SpeedifySDK_EXTERN __attribute__((visibility(&quot;default&quot;)))</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">    #define SpeedifySDK_EXPORT SpeedifySDK_EXTERN</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">    #pragma warning Unknown dynamic link import/export semantics.</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#endif </span><span class="comment">// SPEEDIFYSDK_SHARED</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

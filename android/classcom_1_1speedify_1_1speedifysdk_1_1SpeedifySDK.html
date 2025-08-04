@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.6.4</span>
+   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.7.2</span>
    </div>
   </td>
  </tr>
@@ -491,9 +491,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9dc56954bfb5d99ff53c70c8a287287" id="r_ac9dc56954bfb5d99ff53c70c8a287287"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9dc56954bfb5d99ff53c70c8a287287">startSpeedTest</a> ()</td></tr>
 <tr class="memdesc:ac9dc56954bfb5d99ff53c70c8a287287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new speed test Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>.  <br /></td></tr>
 <tr class="separator:ac9dc56954bfb5d99ff53c70c8a287287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b737c16de9e183b1ae40df818c2dca3" id="r_a8b737c16de9e183b1ae40df818c2dca3"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b737c16de9e183b1ae40df818c2dca3">startSpeedTest</a> (String adapterID)</td></tr>
+<tr class="memdesc:a8b737c16de9e183b1ae40df818c2dca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new speed test on a specific adapter.  <br /></td></tr>
+<tr class="separator:a8b737c16de9e183b1ae40df818c2dca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a62b7090ea3a9f8f760d0d64d67ce47" id="r_a4a62b7090ea3a9f8f760d0d64d67ce47"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a62b7090ea3a9f8f760d0d64d67ce47">startStreamTest</a> ()</td></tr>
-<tr class="memdesc:a4a62b7090ea3a9f8f760d0d64d67ce47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new speed test Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>.  <br /></td></tr>
+<tr class="memdesc:a4a62b7090ea3a9f8f760d0d64d67ce47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new stream test Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>.  <br /></td></tr>
 <tr class="separator:a4a62b7090ea3a9f8f760d0d64d67ce47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafb12b33b0b8da20f0047f85497c512" id="r_adafb12b33b0b8da20f0047f85497c512"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adafb12b33b0b8da20f0047f85497c512">startStreamTest</a> (String adapterID)</td></tr>
+<tr class="memdesc:adafb12b33b0b8da20f0047f85497c512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new stream test on a specific adapter.  <br /></td></tr>
+<tr class="separator:adafb12b33b0b8da20f0047f85497c512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b05a71df04977b04d882a5df930a8c3" id="r_a1b05a71df04977b04d882a5df930a8c3"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b05a71df04977b04d882a5df930a8c3">refreshSpeedTestResults</a> ()</td></tr>
 <tr class="memdesc:a1b05a71df04977b04d882a5df930a8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets last 5 speed test results Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>.  <br /></td></tr>
 <tr class="separator:a1b05a71df04977b04d882a5df930a8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4869,7 +4875,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac9dc56954bfb5d99ff53c70c8a287287" name="ac9dc56954bfb5d99ff53c70c8a287287"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9dc56954bfb5d99ff53c70c8a287287">&#9670;&#160;</a></span>startSpeedTest()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9dc56954bfb5d99ff53c70c8a287287">&#9670;&#160;</a></span>startSpeedTest() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4888,8 +4894,34 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8b737c16de9e183b1ae40df818c2dca3" name="a8b737c16de9e183b1ae40df818c2dca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b737c16de9e183b1ae40df818c2dca3">&#9670;&#160;</a></span>startSpeedTest() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void startSpeedTest </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>adapterID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts a new speed test on a specific adapter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adapterID</td><td>adapter ID to use for the speed test. If null or empty string, the default bonding test is performed. Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>15.7.1 </dd></dl>
+
+</div>
+</div>
 <a id="a4a62b7090ea3a9f8f760d0d64d67ce47" name="a4a62b7090ea3a9f8f760d0d64d67ce47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a62b7090ea3a9f8f760d0d64d67ce47">&#9670;&#160;</a></span>startStreamTest()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a62b7090ea3a9f8f760d0d64d67ce47">&#9670;&#160;</a></span>startStreamTest() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4903,8 +4935,34 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts a new speed test Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>. </p>
+<p>Starts a new stream test Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>. </p>
 <dl class="section since"><dt>Since</dt><dd>11.5 </dd></dl>
+
+</div>
+</div>
+<a id="adafb12b33b0b8da20f0047f85497c512" name="adafb12b33b0b8da20f0047f85497c512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafb12b33b0b8da20f0047f85497c512">&#9670;&#160;</a></span>startStreamTest() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void startStreamTest </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>adapterID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts a new stream test on a specific adapter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adapterID</td><td>adapter ID to use for the stream test. If null or empty string, the default bonding test is performed. Triggers <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#aefd661dda433d2a18876706d8fc488fc">OnSpeedTestResults</a></code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>15.7.1 </dd></dl>
 
 </div>
 </div>

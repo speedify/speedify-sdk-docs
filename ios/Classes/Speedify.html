@@ -1860,7 +1860,7 @@ This checks the app extension state for</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startTunnel</span><span class="p">(</span><span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">9330</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startTunnel</span><span class="p">(</span><span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -6606,9 +6606,9 @@ Triggers LocalProxySettingsDelegate.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)startSpeedTest"></a>
-                    <a name="//apple_ref/swift/Method/startSpeedTest()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)startSpeedTest">startSpeedTest()</a>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)startSpeedTestWithGuid:"></a>
+                    <a name="//apple_ref/swift/Method/startSpeedTest(guid:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)startSpeedTestWithGuid:">startSpeedTest(guid:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -6617,10 +6617,13 @@ Triggers LocalProxySettingsDelegate.
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Requests that Speedify run a speed test to completion. May be cancelled with
-<code>stopSpeedTest</code>. The generated traffic is passed through the TUN device.
-The daemon (Network Extension), when generating traffic, does not send that traffic
+<code>stopSpeedTest</code>. The generated traffic is passed through the TUN device.</p>
+
+<p>The daemon (Network Extension), when generating traffic, does not send that traffic
 through the TUN. The OS prevents us from binding directly to the TUN device.
-Rather, the UI process can generate traffic for us.
+Rather, the UI process can generate traffic for us.</p>
+
+<p>@param guid An optional unique adapter ID for this stream test run on, or omitted to allow traffic on all available adapters.
 @since 11.0</p>
 
                       </div>
@@ -6629,7 +6632,7 @@ Rather, the UI process can generate traffic for us.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startSpeedTest</span><span class="p">()</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startSpeedTest</span><span class="p">(</span><span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -6639,9 +6642,9 @@ Rather, the UI process can generate traffic for us.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)startStreamTest"></a>
-                    <a name="//apple_ref/swift/Method/startStreamTest()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)startStreamTest">startStreamTest()</a>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)startStreamTestWithGuid:"></a>
+                    <a name="//apple_ref/swift/Method/startStreamTest(guid:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)startStreamTestWithGuid:">startStreamTest(guid:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -6649,8 +6652,12 @@ Rather, the UI process can generate traffic for us.
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Requests that Speedify run a stream test to completion. See notes under <code>startSpeedTest</code>.
-@since 11.5</p>
+                        <p>Requests that Speedify run a stream test to completion. May be cancelled with
+<code>stopStreamTest</code>. Like the speed test, generated traffic is passed through the TUN device
+and relies on the UI process to produce the traffic.</p>
+
+<p>@param guid An optional unique adapter ID for this stream test run on, or omitted to allow traffic on all available adapters.
+@since 11.0</p>
 
                       </div>
                       <div class="declaration">
@@ -6658,7 +6665,7 @@ Rather, the UI process can generate traffic for us.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startStreamTest</span><span class="p">()</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startStreamTest</span><span class="p">(</span><span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>

@@ -26,7 +26,7 @@ var searchData=
   ['disconnectonexit_23',['disconnectOnExit',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1Settings.html#af1cc1a68ff9151c4a078b08495d92c71',1,'com::speedify::speedifysdk::Types::Settings']]],
   ['disconnectreason_24',['DisconnectReason',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1DisconnectReason.html',1,'com::speedify::speedifysdk::Types']]],
   ['disconnectreason_25',['disconnectReason',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1DisconnectEvent.html#aa3c365448829d8544bf574c2aa2ad717',1,'com::speedify::speedifysdk::Types::DisconnectEvent']]],
-  ['discovery_26',['Discovery',['../networksharing.html#autotoc_md144',1,'']]],
+  ['discovery_26',['Discovery',['../networksharing.html#autotoc_md146',1,'']]],
   ['dispatch_27',['Dispatch',['../classcom_1_1speedify_1_1speedifysdk_1_1dispatch_1_1Dispatch.html',1,'Dispatch'],['../classcom_1_1speedify_1_1speedifysdk_1_1dispatch_1_1Dispatch.html#a7666e3f519ec90a2c6a497f3e3ac879b',1,'com.speedify.speedifysdk.dispatch.Dispatch.Dispatch()'],['../dispatch_intro.html',1,'Introduction to Dispatch']]],
   ['dispatch_20integration_20guide_28',['Dispatch Integration Guide',['../index.html#autotoc_md6',1,'']]],
   ['dispatch_2ejava_29',['Dispatch.java',['../Dispatch_8java.html',1,'']]],

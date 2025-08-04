@@ -15,11 +15,14 @@ var searchData=
   ['allowed_12',['allowed',['../struct_speedify_s_d_k___network_sharing_connection.html#af9b877d4c7da665be3eba8c76fb8df65',1,'SpeedifySDK_NetworkSharingConnection']]],
   ['alwaysondiscovery_13',['alwaysOnDiscovery',['../struct_speedify_s_d_k___network_sharing_settings.html#a1da4845cca72b5de002e436e39a65372',1,'SpeedifySDK_NetworkSharingSettings']]],
   ['apiprotection_14',['apiProtection',['../struct_speedify_s_d_k___privacy_settings.html#ad12377264e2242783d411fe5c2cc9ad9',1,'SpeedifySDK_PrivacySettings']]],
-  ['autopairbehavior_15',['autoPairBehavior',['../struct_speedify_s_d_k___network_sharing_settings.html#a9bd4fbae9c14bef83f170bee72e39680',1,'SpeedifySDK_NetworkSharingSettings']]],
-  ['autoreconnect_16',['autoReconnect',['../struct_speedify_s_d_k___network_share_peer.html#a0bc1746fa29a15b98fd16a4d012060f4',1,'SpeedifySDK_NetworkSharePeer']]],
-  ['availableshares_17',['availableShares',['../struct_speedify_s_d_k___network_sharing_available_shares_result.html#aa311d736a3cd54a35d2780b17c4e3a63',1,'SpeedifySDK_NetworkSharingAvailableSharesResult']]],
-  ['availablesharescount_18',['availableSharesCount',['../struct_speedify_s_d_k___network_sharing_available_shares_result.html#a5c685e7534cb1fcac74f90784eb1ea73',1,'SpeedifySDK_NetworkSharingAvailableSharesResult']]],
-  ['averagedownloadspeed_19',['averageDownloadSpeed',['../struct_speedify_s_d_k___stream_stats.html#a08ae9d78daa38ca513b415976191abfc',1,'SpeedifySDK_StreamStats']]],
-  ['averageuploadspeed_20',['averageUploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81',1,'SpeedifySDK_StreamStats']]],
-  ['avgtime_21',['avgTime',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a02ad92dfd79561a810aa7bb26482984e',1,'SpeedifySDK_SafeBrowsingStatsResult']]]
+  ['appname_15',['appName',['../struct_speedify_s_d_k___network_share_peer.html#a02f840b46c44cf38155918abecd2c015',1,'SpeedifySDK_NetworkSharePeer']]],
+  ['autopairbehavior_16',['autoPairBehavior',['../struct_speedify_s_d_k___network_sharing_settings.html#a9bd4fbae9c14bef83f170bee72e39680',1,'SpeedifySDK_NetworkSharingSettings']]],
+  ['autoreconnect_17',['autoReconnect',['../struct_speedify_s_d_k___network_share_peer.html#a0bc1746fa29a15b98fd16a4d012060f4',1,'SpeedifySDK_NetworkSharePeer']]],
+  ['autoreport_18',['autoreport',['../struct_speedify_s_d_k___safe_browsing_result.html#a7ccd74e7472eb0943cdf613f508085fe',1,'SpeedifySDK_SafeBrowsingResult']]],
+  ['autoreportintervalseconds_19',['autoreportIntervalSeconds',['../struct_speedify_s_d_k___safe_browsing_result.html#abc7bd44c6e42cb7e9872bf0ca9910bda',1,'SpeedifySDK_SafeBrowsingResult']]],
+  ['availableshares_20',['availableShares',['../struct_speedify_s_d_k___network_sharing_available_shares_result.html#aa311d736a3cd54a35d2780b17c4e3a63',1,'SpeedifySDK_NetworkSharingAvailableSharesResult']]],
+  ['availablesharescount_21',['availableSharesCount',['../struct_speedify_s_d_k___network_sharing_available_shares_result.html#a5c685e7534cb1fcac74f90784eb1ea73',1,'SpeedifySDK_NetworkSharingAvailableSharesResult']]],
+  ['averagedownloadspeed_22',['averageDownloadSpeed',['../struct_speedify_s_d_k___stream_stats.html#a08ae9d78daa38ca513b415976191abfc',1,'SpeedifySDK_StreamStats']]],
+  ['averageuploadspeed_23',['averageUploadSpeed',['../struct_speedify_s_d_k___stream_stats.html#acb025eb7233ac45ec3e76cdc4cd22a81',1,'SpeedifySDK_StreamStats']]],
+  ['avgtime_24',['avgTime',['../struct_speedify_s_d_k___safe_browsing_stats_result.html#a02ad92dfd79561a810aa7bb26482984e',1,'SpeedifySDK_SafeBrowsingStatsResult']]]
 ];

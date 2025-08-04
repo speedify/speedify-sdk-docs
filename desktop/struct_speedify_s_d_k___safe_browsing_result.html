@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.6.4</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.7.2</span>
    </div>
   </td>
  </tr>
@@ -128,11 +128,54 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a60f4b458bca38d050e2593b54f0a2158" id="r_a60f4b458bca38d050e2593b54f0a2158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a640cd287e9ab0198f00cf4dc75771504">SpeedifySDK_SafeBrowsingSafeNetworkOverride</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60f4b458bca38d050e2593b54f0a2158">snOverride</a></td></tr>
 <tr class="memdesc:a60f4b458bca38d050e2593b54f0a2158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safe Network decision override.  <br /></td></tr>
 <tr class="separator:a60f4b458bca38d050e2593b54f0a2158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccd74e7472eb0943cdf613f508085fe" id="r_a7ccd74e7472eb0943cdf613f508085fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ccd74e7472eb0943cdf613f508085fe">autoreport</a></td></tr>
+<tr class="memdesc:a7ccd74e7472eb0943cdf613f508085fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">If Safe Browsing auto reporting is enabled.  <br /></td></tr>
+<tr class="separator:a7ccd74e7472eb0943cdf613f508085fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7bd44c6e42cb7e9872bf0ca9910bda" id="r_abc7bd44c6e42cb7e9872bf0ca9910bda"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc7bd44c6e42cb7e9872bf0ca9910bda">autoreportIntervalSeconds</a></td></tr>
+<tr class="memdesc:abc7bd44c6e42cb7e9872bf0ca9910bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum interval between auto reports (in seconds)  <br /></td></tr>
+<tr class="separator:abc7bd44c6e42cb7e9872bf0ca9910bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4671486f53dc81375bdd2c5abb5353" id="r_a2d4671486f53dc81375bdd2c5abb5353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9c04416d6adf58d68c44f9d1656289d5">SpeedifySDK_DateTimeString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d4671486f53dc81375bdd2c5abb5353">lastReport</a></td></tr>
+<tr class="memdesc:a2d4671486f53dc81375bdd2c5abb5353"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timestamp of the last deduplication report.  <br /></td></tr>
+<tr class="separator:a2d4671486f53dc81375bdd2c5abb5353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Safe Browsing result. </p>
 <dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a7ccd74e7472eb0943cdf613f508085fe" name="a7ccd74e7472eb0943cdf613f508085fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccd74e7472eb0943cdf613f508085fe">&#9670;&#160;</a></span>autoreport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_SafeBrowsingResult::autoreport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If Safe Browsing auto reporting is enabled. </p>
+<dl class="section since"><dt>Since</dt><dd>15.7 </dd></dl>
+
+</div>
+</div>
+<a id="abc7bd44c6e42cb7e9872bf0ca9910bda" name="abc7bd44c6e42cb7e9872bf0ca9910bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7bd44c6e42cb7e9872bf0ca9910bda">&#9670;&#160;</a></span>autoreportIntervalSeconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SpeedifySDK_SafeBrowsingResult::autoreportIntervalSeconds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimum interval between auto reports (in seconds) </p>
+<dl class="section since"><dt>Since</dt><dd>15.7 </dd></dl>
+
+</div>
+</div>
 <a id="a8404fa478bc6f5bd7b2d838b0034b6ff" name="a8404fa478bc6f5bd7b2d838b0034b6ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8404fa478bc6f5bd7b2d838b0034b6ff">&#9670;&#160;</a></span>configSet</h2>
 
@@ -147,6 +190,7 @@ Data Fields</h2></td></tr>
 
 <p>If the additional config is set. </p>
 <dl class="section since"><dt>Since</dt><dd>10.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated</a></b></dt><dd>as of 15.7 as unused. </dd></dl>
 
 </div>
 </div>
@@ -246,6 +290,23 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates if this result is an error. </p>
+
+</div>
+</div>
+<a id="a2d4671486f53dc81375bdd2c5abb5353" name="a2d4671486f53dc81375bdd2c5abb5353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4671486f53dc81375bdd2c5abb5353">&#9670;&#160;</a></span>lastReport</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a9c04416d6adf58d68c44f9d1656289d5">SpeedifySDK_DateTimeString</a> SpeedifySDK_SafeBrowsingResult::lastReport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The timestamp of the last deduplication report. </p>
+<dl class="section since"><dt>Since</dt><dd>15.7 </dd></dl>
 
 </div>
 </div>
