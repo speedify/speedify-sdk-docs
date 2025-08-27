@@ -1,7 +1,7 @@
 var searchData=
 [
   ['aa_5factivate_0',['AA_ACTIVATE',['../types_8h.html#a66bbbf6ae3bf6871397b47096af8bd36a0c71dfbf3c75d720f674714862e2ee7e',1,'types.h']]],
-  ['aa_5factivate_5for_5fpurchase_5flicence_1',['AA_ACTIVATE_OR_PURCHASE_LICENCE',['../types_8h.html#a66bbbf6ae3bf6871397b47096af8bd36af92b45a97cbf532aed18aecb23b0b36c',1,'types.h']]],
+  ['aa_5factivate_5for_5fpurchase_5flicense_1',['AA_ACTIVATE_OR_PURCHASE_LICENSE',['../types_8h.html#a66bbbf6ae3bf6871397b47096af8bd36a554bc9e9386f9f33408fab8e7dbfba45',1,'types.h']]],
   ['aa_5fconnect_5finternet_5fand_5fretry_5flogin_2',['AA_CONNECT_INTERNET_AND_RETRY_LOGIN',['../types_8h.html#a66bbbf6ae3bf6871397b47096af8bd36ab46b84c3965ce4cd17328552eee6aa51',1,'types.h']]],
   ['aa_5fnone_3',['AA_NONE',['../types_8h.html#a66bbbf6ae3bf6871397b47096af8bd36a532bb054c746da3b1ac0bd2be96046f0',1,'types.h']]],
   ['aa_5fretry_5flogin_4',['AA_RETRY_LOGIN',['../types_8h.html#a66bbbf6ae3bf6871397b47096af8bd36ab108579203b2210ae7ad0052d3706837',1,'types.h']]],

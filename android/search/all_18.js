@@ -62,7 +62,7 @@ var searchData=
   ['onvendoruserdata_59',['OnVendorUserData',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#a443683c5f9756cd9ba45ce543fde215f',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onvpnpermissionresult_60',['OnVPNPermissionResult',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1ISdkStateReceiver.html#ae494a6f942ea4c046c432a1957b3319d',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onwebsocketcreate_61',['OnWebsocketCreate',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1IWebsocketIPCReceiver.html#ac1f10160123922f020144c92ce33c5e1',1,'com::speedify::speedifysdk::receivers::IWebsocketIPCReceiver']]],
-  ['optional_20permissions_62',['Optional Permissions',['../permissions.html#autotoc_md151',1,'']]],
+  ['optional_20permissions_62',['Optional Permissions',['../permissions.html#autotoc_md153',1,'']]],
   ['optional_3a_20application_20oncreate_63',['Optional: Application onCreate',['../sdkinit.html#autotoc_md11',1,'']]],
   ['optional_3a_20handlers_64',['Optional: Handlers',['../sdkinit.html#autotoc_md12',1,'']]],
   ['optional_3a_20sdk_20cleanup_65',['Optional: SDK Cleanup',['../sdkinit.html#autotoc_md13',1,'']]],
@@ -71,6 +71,6 @@ var searchData=
   ['overlimit_68',['OVERLIMIT',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1State.html#ae31590673dc90d41b7a9345b1d03dd88',1,'com::speedify::speedifysdk::Types::State']]],
   ['overlimitratelimit_69',['overlimitRatelimit',['../classcom_1_1speedify_1_1speedifysdk_1_1Types_1_1AdapterUsageData.html#a5f7c13433b2e69ff8ece20e7cac42264',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['overquota_70',['OVERQUOTA',['../enumcom_1_1speedify_1_1speedifysdk_1_1Types_1_1DisconnectReason.html#ab6cd9555b63c5673d67da5397fe929ed',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
-  ['overview_71',['Overview',['../networksharing.html#autotoc_md144',1,'']]],
+  ['overview_71',['Overview',['../networksharing.html#autotoc_md146',1,'']]],
   ['overview_2emd_72',['overview.md',['../overview_8md.html',1,'']]]
 ];

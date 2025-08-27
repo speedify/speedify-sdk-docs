@@ -158,4 +158,5 @@ var menudata={children:[
 {text:"s",url:"globals_eval.html#index_s"},
 {text:"t",url:"globals_eval.html#index_t"}]},
 {text:"Macros",url:"globals_defs.html",children:[
+{text:"a",url:"globals_defs.html#index_a"},
 {text:"s",url:"globals_defs.html#index_s"}]}]}]}]}
