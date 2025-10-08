@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.8.0</span>
+   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.9.0</span>
    </div>
   </td>
  </tr>
@@ -91,30 +91,30 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>As of version 14.0, Speedify SDK supports sharing cellular connections from mobile devices to other devices via Wi-Fi and/or Ethernet. These shared connections are used for VPN connection transports.</p>
-<h2><a class="anchor" id="autotoc_md145"></a>
+<h2><a class="anchor" id="autotoc_md147"></a>
 Permission Requirements</h2>
 <p>If you want to run network sharing, you need to add the <code>CHANGE_WIFI_MULTICAST_STATE</code> permission to your AndroidManifest.xml file. This permission is required to use the multicast DNS (MDNS) protocol, which is used for device discovery.</p>
-<h2><a class="anchor" id="autotoc_md146"></a>
+<h2><a class="anchor" id="autotoc_md148"></a>
 Overview</h2>
 <p>Devices discover each other via MDNS announcements and queries. Host devices (Android and iOS devices with cellular interfaces) announce themselves as network sharing hosts and run a TCP listen socket. Client devices query for hosts and connect to them. Command and control messaging is sent over these TCP sockets, with transport connections established over separate UDP sockets.</p>
-<h2><a class="anchor" id="autotoc_md147"></a>
+<h2><a class="anchor" id="autotoc_md149"></a>
 Configuration</h2>
 <p><code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a8baeb2aa3ffa126e02f3b5cb64d38c6f">setNetworkSharingClientEnabled</a></code> and <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a22260f8bb9e7b6f0818e263d6bad1691">setNetworkSharingHostEnabled</a></code> enable network sharing on the device.</p>
 <p>A default display name is pulled from the device. This can be overridden with <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#ac7fb853fa302723418f90759c49c1443">setNetworkSharingDisplayName</a></code>.</p>
-<h2><a class="anchor" id="autotoc_md148"></a>
+<h2><a class="anchor" id="autotoc_md150"></a>
 Discovery</h2>
 <p>Discovery/discoverability phases are automatically initiated on network or user data changes, and last for 10 seconds. Discovery can also be manually initiated with <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a55b9461638762ae994e90e15159b7f40">startNetworkSharingDiscovery</a></code>. Each call to this starts a discovery phase which lasts for 30 seconds.</p>
 <p>Newly discovered peers are signaled via <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1INetworkSharingReceiver.html#a6c601a26f4a56654cb1b9306b915c32e">OnNetworkSharingNewPeerAvailable</a></code>.</p>
-<h2><a class="anchor" id="autotoc_md149"></a>
+<h2><a class="anchor" id="autotoc_md151"></a>
 Pairing</h2>
 <p>Peers may be paired by calling <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#aa303bb3e31e38d624eb8bbd501ece61c">requestNetworkSharingPair</a></code>. This sends a pairing request to the peer, which is signaled via <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1INetworkSharingReceiver.html#a28411d9fd017c16c6f12decba6b71ab2">OnNetworkSharingPairRequest</a></code> and accepted or rejected with <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a7cc9dc01d4d0ad0ee2526838784e79fe">allowNetworkSharingPair</a></code>.</p>
 <p>Pair requests may be set to be automatically accepted or rejected with <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a7d455070b97e98d4cf94094c78f9433e">setNetworkSharingPairRequestBehavior</a></code>.</p>
 <p>A peer may be removed with <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#ad0356d2cf59c4fa9ad538d2a5edc3f9c">unpairNetworkSharingPeer</a></code>.</p>
-<h2><a class="anchor" id="autotoc_md150"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 Manual Connections</h2>
 <p><code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#af14256b4d099ff88fe1a28481472fa6f">connectToNetworkShareViaConnectCode</a></code> is used to manually connect to a network shared host via their connect code.</p>
 <p><code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a9be693a05fd1a8fc4dc1a432e36da7d7">reconnectToNetworkShare</a></code> reconnects to a previously authenticated network share peer.</p>
-<h2><a class="anchor" id="autotoc_md151"></a>
+<h2><a class="anchor" id="autotoc_md153"></a>
 Status</h2>
 <p>Currently available and previously paired peers are available via <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1INetworkSharingReceiver.html#a273a18019682920639d762474bac46b7">OnNetworkSharesAvailable</a></code>. </p>
 </div></div><!-- contents -->

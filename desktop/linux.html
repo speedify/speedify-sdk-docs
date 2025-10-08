@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.8.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;15.9.0</span>
    </div>
   </td>
  </tr>
@@ -130,11 +130,12 @@ Distributing</h2>
 <ul>
 <li>Install Speedify's dependencies<ul>
 <li>Debian-based:<ul>
-<li>net-tools, procps, libc-bin</li>
+<li>iptables, libnetfilter-conntrack3, libc-bin, net-tools, procps</li>
 </ul>
 </li>
 <li>OpenWrt-based:<ul>
-<li>kmod-tun, libstdcpp, libatomic1</li>
+<li>iptables-mod-conntrack-extra, iptables-mod-extra, iptables-mod-tproxy, iptables-nft|iptables, kmod-tun, libatomic1, libstdcpp</li>
+<li>on amd64, also install iptables-mod-ipopt, libnetfilter-conntrack3</li>
 <li>Provide a &lt;target-triple&gt;-compatible GNU libc runtime in /lib/&lt;target-triple&gt;, such as unpacked libc6 and libgcc1 tarballs</li>
 <li>Provide a GNU libc-compatible linker-loader in /lib/ld-linux-&lt;target-arch&gt;.so.&lt;linker-version&gt;</li>
 </ul>
