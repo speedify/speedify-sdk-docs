@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dispatch_2ejava_0',['Dispatch.java',['../Dispatch_8java.html',1,'']]]
+  ['dispatch_2ejava_0',['Dispatch.java',['../_dispatch_8java.html',1,'']]]
 ];

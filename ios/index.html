@@ -107,6 +107,9 @@
                 <a href="Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/TransportMode.html">TransportMode</a>
               </li>
               <li class="nav-group-task">
@@ -211,6 +214,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
@@ -372,6 +378,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:11speedifysdk15TrafficRulePorta">TrafficRulePort</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -421,6 +435,12 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-16-0' class='heading'>Speedify 16.0</h3>
+
+<ul>
+<li>Dispatch (Local Load Balancer) SDK is now fully supported.</li>
+<li>The jitter buffer can be controlled on a per-ip/port/domain basis via <code>setFixedDelayIPs</code>/<code>setFixedDelayPorts</code>/<code>setFixedDelayDomains</code>. The delay value can be set via <code>setFixedDelay</code>.</li>
+</ul>
 <h3 id='speedify-15-9' class='heading'>Speedify 15.9</h3>
 
 <ul>

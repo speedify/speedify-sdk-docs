@@ -112,6 +112,9 @@
                 <a href="../Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/TransportMode.html">TransportMode</a>
               </li>
               <li class="nav-group-task">
@@ -216,6 +219,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyStreamingStatsDelegate.html">SpeedifyStreamingStatsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a>
@@ -374,6 +380,14 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/iAPStatus.html">iAPStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11speedifysdk15TrafficRulePorta">TrafficRulePort</a>
               </li>
             </ul>
           </li>
@@ -1432,6 +1446,33 @@ allows a user to determine the existing profile settings</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">serverSettingsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyServerSettingsDelegate.html">SpeedifyServerSettingsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20trafficRulesDelegateAA0b7TrafficdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/trafficRulesDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20trafficRulesDelegateAA0b7TrafficdE0_pSgvp">trafficRulesDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">trafficRulesDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -7163,6 +7204,212 @@ This call is used to set that backoff timeout limit.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendLogReport</span><span class="p">(</span><span class="nv">fileUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC13setFixedDelay5delayySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/setFixedDelay(delay:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13setFixedDelay5delayySi_tF">setFixedDelay(delay:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the target delay that is applied to packets in each direction for selected flows. The SDK attempts to deliver packets with a consistent latency (jitter buffer).</p>
+
+<ul>
+<li>Current value available from <code><a href="../Protocols/SpeedifySettingsDelegate.html">SpeedifySettingsDelegate</a></code>.</li>
+<li>@param  delay  number of ms to delay / buffer packets, 0 (no delay) disables the feature</li>
+<li>@since 16.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFixedDelay</span><span class="p">(</span><span class="nv">delay</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC19refreshTrafficRulesyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshTrafficRules()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC19refreshTrafficRulesyyF">refreshTrafficRules()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get Traffic Rules settings.</p>
+
+<ul>
+<li>Triggers <code><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></code>.
+*</li>
+<li>@since 16.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshTrafficRules</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15setTrafficRules9rulesJsonySaySDySSypGG_tF"></a>
+                    <a name="//apple_ref/swift/Method/setTrafficRules(rulesJson:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15setTrafficRules9rulesJsonySaySDySSypGG_tF">setTrafficRules(rulesJson:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set Traffic Rules</p>
+
+<ul>
+<li>Triggers <code><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></code>.
+*</li>
+<li>@param rulesJson traffic rules as a JSON array</li>
+<li>@since 16.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setTrafficRules</span><span class="p">(</span><span class="nv">rulesJson</span><span class="p">:</span> <span class="p">[[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC20setFixedDelayDomains7domains6methodySaySSG_AA23TrafficRuleChangeMethodOtF"></a>
+                    <a name="//apple_ref/swift/Method/setFixedDelayDomains(domains:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC20setFixedDelayDomains7domains6methodySaySSG_AA23TrafficRuleChangeMethodOtF">setFixedDelayDomains(domains:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set domains to have a fixed delay applied</p>
+
+<ul>
+<li>Triggers <code><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></code>.
+*</li>
+<li>@param domains domain names to have a fixed delay applied</li>
+<li>@param method method to use for the traffic rule change</li>
+<li>@since 16.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFixedDelayDomains</span><span class="p">(</span><span class="nv">domains</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC16setFixedDelayIPs3ips6methodySaySSG_AA23TrafficRuleChangeMethodOtF"></a>
+                    <a name="//apple_ref/swift/Method/setFixedDelayIPs(ips:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16setFixedDelayIPs3ips6methodySaySSG_AA23TrafficRuleChangeMethodOtF">setFixedDelayIPs(ips:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set IP addresses to have a fixed delay applied.</p>
+
+<ul>
+<li>Triggers <code><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></code>.
+*</li>
+<li>@param ips ip address strings to have a fixed delay applied</li>
+<li>@param method method to use for the traffic rule change</li>
+<li>@since 16.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFixedDelayIPs</span><span class="p">(</span><span class="nv">ips</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC18setFixedDelayPorts5ports6methodySayAA16ProtocolPortPairVG_AA23TrafficRuleChangeMethodOtF"></a>
+                    <a name="//apple_ref/swift/Method/setFixedDelayPorts(ports:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18setFixedDelayPorts5ports6methodySayAA16ProtocolPortPairVG_AA23TrafficRuleChangeMethodOtF">setFixedDelayPorts(ports:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set ports to have a fixed delay applied</p>
+
+<ul>
+<li>Ports should be in host byte order.</li>
+<li>Triggers <code><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></code>.
+*</li>
+<li>@param ports ports to have a fixed delay applied</li>
+<li>@param method method to use for the traffic rule change</li>
+<li>@since 16.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFixedDelayPorts</span><span class="p">(</span><span class="nv">ports</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:11speedifysdk15TrafficRulePorta">TrafficRulePort</a></span><span class="p">],</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

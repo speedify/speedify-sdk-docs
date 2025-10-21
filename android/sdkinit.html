@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;15.9.0</span>
+   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;16.0.0</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,7 @@ $(function(){ initResizable(false); });
 <div class="contents">
 <div class="textblock"><h2><a class="anchor" id="autotoc_md9"></a>
 Implementing AutoConstruct</h2>
-<p>In your Application class, implement <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK_1_1AutoConstruct.html">SpeedifySDK.AutoConstruct</a></code>: </p><div class="fragment"><div class="line">// Implement SpeedifySDK.AutoConstruct</div>
+<p>In your Application class, implement <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k_1_1_auto_construct.html">SpeedifySDK.AutoConstruct</a></code>: </p><div class="fragment"><div class="line">// Implement SpeedifySDK.AutoConstruct</div>
 <div class="line">public class MyApplication extends Application implements SpeedifySDK.AutoConstruct {</div>
 <div class="line"> </div>
 <div class="line">  // ...</div>
@@ -137,10 +137,10 @@ Optional: Application onCreate</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md12"></a>
 Optional: Handlers</h2>
-<p>If you do not specify a custom <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifyHandler.html">SpeedifyHandler</a></code> in <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK_1_1AutoConstruct.html#acd662f22775e6d93b750218afdc4bfab">getSpeedifySDK</a></code>, you can call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a0a9ba1c0d54aaa16638db4db1899fd3d">setHandler</a></code> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK_1_1AutoConstruct.html">SpeedifySDK.AutoConstruct</a></code> method above.</p>
+<p>If you do not specify a custom <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_handler.html">SpeedifyHandler</a></code> in <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k_1_1_auto_construct.html#acd662f22775e6d93b750218afdc4bfab">getSpeedifySDK</a></code>, you can call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a0a9ba1c0d54aaa16638db4db1899fd3d">setHandler</a></code> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <code><a class="el" href="interfacecom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k_1_1_auto_construct.html">SpeedifySDK.AutoConstruct</a></code> method above.</p>
 <h2><a class="anchor" id="autotoc_md13"></a>
 Optional: SDK Cleanup</h2>
-<p>To close down the SDK entirely without exiting your application, call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#a1a8131e223183aef72b78b514bbd5ad6">SpeedifySDK.ForceExit(context)</a></code>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1SpeedifySDK.html#aa80ce466788f6fb067eb706e28c59fb7">restartServices</a></code> on your old SpeedifySDK object. </p>
+<p>To close down the SDK entirely without exiting your application, call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a1a8131e223183aef72b78b514bbd5ad6">SpeedifySDK.ForceExit(context)</a></code>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#aa80ce466788f6fb067eb706e28c59fb7">restartServices</a></code> on your old SpeedifySDK object. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
