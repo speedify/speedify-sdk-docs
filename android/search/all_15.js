@@ -6,7 +6,7 @@ var searchData=
   ['latencyms_3',['latencyMs',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_connection_stats.html#aecd330dfcaaad158a6c2d604f873df3f',1,'com::speedify::speedifysdk::Types::ConnectionStats']]],
   ['launchsharesheet_4',['LaunchShareSheet',['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_launch_share_sheet.html',1,'LogGeneration.LaunchShareSheet'],['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_launch_share_sheet.html#aaf59af13907e37308081d47df1ad4a0f',1,'com.speedify.speedifysdk.LogGeneration.LaunchShareSheet.LaunchShareSheet()'],['../classcom_1_1speedify_1_1speedifysdk_1_1_log_generation_1_1_launch_share_sheet.html#a05bde9f5d69200ab6c03beac8f71f739',1,'com.speedify.speedifysdk.LogGeneration.LaunchShareSheet.LaunchShareSheet(String email, String subject, String body)']]],
   ['list_5',['Deprecated List',['../deprecated.html',1,'']]],
-  ['local_20proxy_20api_6',['Local Proxy API',['../localproxy.html#autotoc_md147',1,'']]],
+  ['local_20proxy_20api_6',['Local Proxy API',['../localproxy.html#autotoc_md149',1,'']]],
   ['local_20proxy_20configuration_7',['Local Proxy Configuration',['../localproxy.html',1,'']]],
   ['localbroadcasthelper_8',['LocalBroadcastHelper',['../classcom_1_1speedify_1_1speedifysdk_1_1_local_broadcast_helper.html',1,'com::speedify::speedifysdk']]],
   ['localbroadcasthelper_2ejava_9',['LocalBroadcastHelper.java',['../_local_broadcast_helper_8java.html',1,'']]],

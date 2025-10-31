@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.0.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.0.2</span>
    </div>
   </td>
  </tr>
@@ -488,6 +488,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad25a7ef1fcc74b062d6d5d003fc0b96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89be248e8ce5be73166305af4f7ce1f" id="r_af89be248e8ce5be73166305af4f7ce1f"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___traffic_rules_result.html">SpeedifySDK_TrafficRulesResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af89be248e8ce5be73166305af4f7ce1f">SpeedifySDK_SetPepPorts</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="struct_speedify_s_d_k___protocol_port_pair.html">SpeedifySDK_ProtocolPortPair</a> *ports, <a class="el" href="types_8h.html#a6415e52bffe3e03f452b7e5972675094">SpeedifySDK_TrafficRuleChangeMethod</a> method, <a class="el" href="callbacks_8h.html#ac99087008fb3e875812f8182cd26611f">SpeedifySDK_TrafficRulesCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
 <tr class="separator:af89be248e8ce5be73166305af4f7ce1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891c8f79b515e9dd83d523ff77cd6237" id="r_a891c8f79b515e9dd83d523ff77cd6237"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___traffic_rules_result.html">SpeedifySDK_TrafficRulesResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a891c8f79b515e9dd83d523ff77cd6237">SpeedifySDK_SetPepDscp</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="types_8h.html#a7bfe5c194b28535ffa21c2d92a250121">SpeedifySDK_DscpValue</a> *dscp, <a class="el" href="types_8h.html#a6415e52bffe3e03f452b7e5972675094">SpeedifySDK_TrafficRuleChangeMethod</a> method, <a class="el" href="callbacks_8h.html#ac99087008fb3e875812f8182cd26611f">SpeedifySDK_TrafficRulesCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
+<tr class="separator:a891c8f79b515e9dd83d523ff77cd6237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc732aace3258d3a8656f0cc66c362f" id="r_a0bc732aace3258d3a8656f0cc66c362f"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___d_s_c_p_settings_result.html">SpeedifySDK_DSCPSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bc732aace3258d3a8656f0cc66c362f">SpeedifySDK_GetDSCPSettings</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="callbacks_8h.html#a30b0009e508d4eb55365409b56d99e96">SpeedifySDK_DSCPSettingsCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
 <tr class="separator:a0bc732aace3258d3a8656f0cc66c362f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010b36915359ebc387f6b54229830ef8" id="r_a010b36915359ebc387f6b54229830ef8"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___d_s_c_p_settings_result.html">SpeedifySDK_DSCPSettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a010b36915359ebc387f6b54229830ef8">SpeedifySDK_SetDSCPQueues</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint8_t count, <a class="el" href="struct_speedify_s_d_k___d_s_c_p_queue.html">SpeedifySDK_DSCPQueue</a> *queues, <a class="el" href="callbacks_8h.html#a30b0009e508d4eb55365409b56d99e96">SpeedifySDK_DSCPSettingsCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
@@ -5464,6 +5466,47 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="callbacks_8h.html#a3fd1a17d219a8e1bccac112548f4ad70">SpeedifySDK_SettingsCallback</a> cb</td>          <td class="paramname"><span class="paramname"><em>SpeedifySDK_DEFAULTNULL</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *userData</td>          <td class="paramname"><span class="paramname"><em>SpeedifySDK_DEFAULTNULL</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a891c8f79b515e9dd83d523ff77cd6237" name="a891c8f79b515e9dd83d523ff77cd6237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891c8f79b515e9dd83d523ff77cd6237">&#9670;&#160;</a></span>SpeedifySDK_SetPepDscp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___traffic_rules_result.html">SpeedifySDK_TrafficRulesResult</a> SpeedifySDK_SetPepDscp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a></td>          <td class="paramname"><span class="paramname"><em>sdk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a7bfe5c194b28535ffa21c2d92a250121">SpeedifySDK_DscpValue</a> *</td>          <td class="paramname"><span class="paramname"><em>dscp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6415e52bffe3e03f452b7e5972675094">SpeedifySDK_TrafficRuleChangeMethod</a></td>          <td class="paramname"><span class="paramname"><em>method</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="callbacks_8h.html#ac99087008fb3e875812f8182cd26611f">SpeedifySDK_TrafficRulesCallback</a> cb</td>          <td class="paramname"><span class="paramname"><em>SpeedifySDK_DEFAULTNULL</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
