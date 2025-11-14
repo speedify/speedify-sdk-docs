@@ -40,9 +40,10 @@ var searchData=
   ['speedifysdk_5fstatecallback_37',['SpeedifySDK_StateCallback',['../callbacks_8h.html#af65e99d7155a5b7c2512371d4c7ca160',1,'callbacks.h']]],
   ['speedifysdk_5fstreamingsettingscallback_38',['SpeedifySDK_StreamingSettingsCallback',['../callbacks_8h.html#a68c7fec405a2264a24684f34da424648',1,'callbacks.h']]],
   ['speedifysdk_5fstreamingstatscallback_39',['SpeedifySDK_StreamingStatsCallback',['../callbacks_8h.html#a08eb785469df319e496f63fbe9295a79',1,'callbacks.h']]],
-  ['speedifysdk_5ftorrentcallback_40',['SpeedifySDK_TorrentCallback',['../callbacks_8h.html#a039a065c52636679930a66a7fbfb7653',1,'callbacks.h']]],
-  ['speedifysdk_5ftrafficrulescallback_41',['SpeedifySDK_TrafficRulesCallback',['../callbacks_8h.html#ac99087008fb3e875812f8182cd26611f',1,'callbacks.h']]],
-  ['speedifysdk_5fvendorsettingscallback_42',['SpeedifySDK_VendorSettingsCallback',['../callbacks_8h.html#a7815bfd1565eb312cb9322dd42ef3bfa',1,'callbacks.h']]],
-  ['speedifysdk_5fvendoruserdatacallback_43',['SpeedifySDK_VendorUserDataCallback',['../callbacks_8h.html#ad9f707573c84a9aaaa22b09af11573ce',1,'callbacks.h']]],
-  ['speedifysdk_5fversioncallback_44',['SpeedifySDK_VersionCallback',['../callbacks_8h.html#afd2d6b994d4af5038136d4d93e72e1c5',1,'callbacks.h']]]
+  ['speedifysdk_5fsystemdatacallback_40',['SpeedifySDK_SystemDataCallback',['../callbacks_8h.html#a47308d2474c13a5c352503e91acb24a4',1,'callbacks.h']]],
+  ['speedifysdk_5ftorrentcallback_41',['SpeedifySDK_TorrentCallback',['../callbacks_8h.html#a039a065c52636679930a66a7fbfb7653',1,'callbacks.h']]],
+  ['speedifysdk_5ftrafficrulescallback_42',['SpeedifySDK_TrafficRulesCallback',['../callbacks_8h.html#ac99087008fb3e875812f8182cd26611f',1,'callbacks.h']]],
+  ['speedifysdk_5fvendorsettingscallback_43',['SpeedifySDK_VendorSettingsCallback',['../callbacks_8h.html#a7815bfd1565eb312cb9322dd42ef3bfa',1,'callbacks.h']]],
+  ['speedifysdk_5fvendoruserdatacallback_44',['SpeedifySDK_VendorUserDataCallback',['../callbacks_8h.html#ad9f707573c84a9aaaa22b09af11573ce',1,'callbacks.h']]],
+  ['speedifysdk_5fversioncallback_45',['SpeedifySDK_VersionCallback',['../callbacks_8h.html#afd2d6b994d4af5038136d4d93e72e1c5',1,'callbacks.h']]]
 ];

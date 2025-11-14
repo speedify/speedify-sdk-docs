@@ -23,7 +23,7 @@ var searchData=
   ['retransmissionattempts_20',['retransmissionAttempts',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a9bc38bbb77fdde429a7a8d38eee5e312',1,'SpeedifySDK_DSCPQueue']]],
   ['retries_21',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]],
   ['reverse_20proxy_20hosting_22',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md25',1,'']]],
-  ['role_23',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult']]],
+  ['role_23',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult::role'],['../struct_speedify_s_d_k___system_data.html#a9358a8787c0ecd242ef035244ea70ad2',1,'SpeedifySDK_SystemData::role']]],
   ['router_20ui_24',['Embedding the Router UI',['../routerui.html',1,'']]],
   ['routerui_2edox_25',['routerui.dox',['../routerui_8dox.html',1,'']]],
   ['rulesjson_26',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]],

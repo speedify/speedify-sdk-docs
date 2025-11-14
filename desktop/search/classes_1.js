@@ -79,12 +79,14 @@ var searchData=
   ['speedifysdk_5fstreamingstatsresult_76',['SpeedifySDK_StreamingStatsResult',['../struct_speedify_s_d_k___streaming_stats_result.html',1,'']]],
   ['speedifysdk_5fstreamstats_77',['SpeedifySDK_StreamStats',['../struct_speedify_s_d_k___stream_stats.html',1,'']]],
   ['speedifysdk_5fsubnet_78',['SpeedifySDK_Subnet',['../struct_speedify_s_d_k___subnet.html',1,'']]],
-  ['speedifysdk_5ftargetnumberofconnections_79',['SpeedifySDK_TargetNumberOfConnections',['../struct_speedify_s_d_k___target_number_of_connections.html',1,'']]],
-  ['speedifysdk_5ftorrentresult_80',['SpeedifySDK_TorrentResult',['../struct_speedify_s_d_k___torrent_result.html',1,'']]],
-  ['speedifysdk_5ftrafficrulesresult_81',['SpeedifySDK_TrafficRulesResult',['../struct_speedify_s_d_k___traffic_rules_result.html',1,'']]],
-  ['speedifysdk_5ftunstats_82',['SpeedifySDK_TunStats',['../struct_speedify_s_d_k___tun_stats.html',1,'']]],
-  ['speedifysdk_5fvendorsettingsresult_83',['SpeedifySDK_VendorSettingsResult',['../struct_speedify_s_d_k___vendor_settings_result.html',1,'']]],
-  ['speedifysdk_5fvendoruserdataresult_84',['SpeedifySDK_VendorUserDataResult',['../struct_speedify_s_d_k___vendor_user_data_result.html',1,'']]],
-  ['speedifysdk_5fversion_85',['SpeedifySDK_Version',['../struct_speedify_s_d_k___version.html',1,'']]],
-  ['speedifysdk_5fversionresult_86',['SpeedifySDK_VersionResult',['../struct_speedify_s_d_k___version_result.html',1,'']]]
+  ['speedifysdk_5fsystemdata_79',['SpeedifySDK_SystemData',['../struct_speedify_s_d_k___system_data.html',1,'']]],
+  ['speedifysdk_5fsystemdataresult_80',['SpeedifySDK_SystemDataResult',['../struct_speedify_s_d_k___system_data_result.html',1,'']]],
+  ['speedifysdk_5ftargetnumberofconnections_81',['SpeedifySDK_TargetNumberOfConnections',['../struct_speedify_s_d_k___target_number_of_connections.html',1,'']]],
+  ['speedifysdk_5ftorrentresult_82',['SpeedifySDK_TorrentResult',['../struct_speedify_s_d_k___torrent_result.html',1,'']]],
+  ['speedifysdk_5ftrafficrulesresult_83',['SpeedifySDK_TrafficRulesResult',['../struct_speedify_s_d_k___traffic_rules_result.html',1,'']]],
+  ['speedifysdk_5ftunstats_84',['SpeedifySDK_TunStats',['../struct_speedify_s_d_k___tun_stats.html',1,'']]],
+  ['speedifysdk_5fvendorsettingsresult_85',['SpeedifySDK_VendorSettingsResult',['../struct_speedify_s_d_k___vendor_settings_result.html',1,'']]],
+  ['speedifysdk_5fvendoruserdataresult_86',['SpeedifySDK_VendorUserDataResult',['../struct_speedify_s_d_k___vendor_user_data_result.html',1,'']]],
+  ['speedifysdk_5fversion_87',['SpeedifySDK_Version',['../struct_speedify_s_d_k___version.html',1,'']]],
+  ['speedifysdk_5fversionresult_88',['SpeedifySDK_VersionResult',['../struct_speedify_s_d_k___version_result.html',1,'']]]
 ];

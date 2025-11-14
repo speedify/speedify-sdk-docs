@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.0.2</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.0.3</span>
    </div>
   </td>
  </tr>
@@ -237,6 +237,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___d_s_c_p_settings.html">SpeedifySDK_DSCPSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP settings.  <a href="struct_speedify_s_d_k___d_s_c_p_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___system_data.html">SpeedifySDK_SystemData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -553,6 +555,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6415e52bffe3e03f452b7e5972675094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traffic rules change method.  <a href="#a6415e52bffe3e03f452b7e5972675094">More...</a><br /></td></tr>
 <tr class="separator:a6415e52bffe3e03f452b7e5972675094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3618d8bd896e177111f92573571f3f" id="r_aaf3618d8bd896e177111f92573571f3f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf3618d8bd896e177111f92573571f3f">SpeedifySDK_DeviceRole</a> { <a class="el" href="#aaf3618d8bd896e177111f92573571f3fa3f2dc700c755a1a0dd567eef03255a11">DR_CLIENT</a>
+, <a class="el" href="#aaf3618d8bd896e177111f92573571f3fadcbc37519aaf8a3f45ea6b3e30cfeaeb">DR_ROUTER</a>
+, <a class="el" href="#aaf3618d8bd896e177111f92573571f3fa907258344a2cb18641b73a414d85cf0c">DR_PROGEAR</a>
+ }</td></tr>
+<tr class="memdesc:aaf3618d8bd896e177111f92573571f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Role.  <a href="#aaf3618d8bd896e177111f92573571f3f">More...</a><br /></td></tr>
+<tr class="separator:aaf3618d8bd896e177111f92573571f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -626,6 +634,8 @@ Functions</h2></td></tr>
 <tr class="separator:a80d809c75ac25e3f0157145059d1bb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a529f98402510b0c3efcc9ab06710725d" id="r_a529f98402510b0c3efcc9ab06710725d"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a529f98402510b0c3efcc9ab06710725d">SpeedifySDK_DSCPPriority_toString</a> (<a class="el" href="#aefa2608cce60aa05e96892cc12b9e408">SpeedifySDK_DSCPPriority</a> priority)</td></tr>
 <tr class="separator:a529f98402510b0c3efcc9ab06710725d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f4d491bc51bdd73c0dc98e70bdc8b7" id="r_a76f4d491bc51bdd73c0dc98e70bdc8b7"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76f4d491bc51bdd73c0dc98e70bdc8b7">SpeedifySDK_DeviceRole_toString</a> (<a class="el" href="#aaf3618d8bd896e177111f92573571f3f">SpeedifySDK_DeviceRole</a> role)</td></tr>
+<tr class="separator:a76f4d491bc51bdd73c0dc98e70bdc8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -913,6 +923,34 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="abc5444e7756604223c538c9417e89cbeaa1fa11f367a7454366f2159c98c97098" name="abc5444e7756604223c538c9417e89cbeaa1fa11f367a7454366f2159c98c97098"></a>CSTATE_CONNECTED&#160;</td><td class="fielddoc"><p>Connected. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aaf3618d8bd896e177111f92573571f3f" name="aaf3618d8bd896e177111f92573571f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3618d8bd896e177111f92573571f3f">&#9670;&#160;</a></span>SpeedifySDK_DeviceRole</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aaf3618d8bd896e177111f92573571f3f">SpeedifySDK_DeviceRole</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device Role. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf3618d8bd896e177111f92573571f3fa3f2dc700c755a1a0dd567eef03255a11" name="aaf3618d8bd896e177111f92573571f3fa3f2dc700c755a1a0dd567eef03255a11"></a>DR_CLIENT&#160;</td><td class="fielddoc"><p>Client Device. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="aaf3618d8bd896e177111f92573571f3fadcbc37519aaf8a3f45ea6b3e30cfeaeb" name="aaf3618d8bd896e177111f92573571f3fadcbc37519aaf8a3f45ea6b3e30cfeaeb"></a>DR_ROUTER&#160;</td><td class="fielddoc"><p>Router Device. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="aaf3618d8bd896e177111f92573571f3fa907258344a2cb18641b73a414d85cf0c" name="aaf3618d8bd896e177111f92573571f3fa907258344a2cb18641b73a414d85cf0c"></a>DR_PROGEAR&#160;</td><td class="fielddoc"><p>Professional Video Gear Device. </p>
+<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
 </td></tr>
 </table>
 
@@ -1831,6 +1869,23 @@ Variables</h2></td></tr>
           <td class="memname">ENABLE_NETWORK_SHARING const char * SpeedifySDK_ConnectionState_toString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#abc5444e7756604223c538c9417e89cbe">SpeedifySDK_ConnectionState</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76f4d491bc51bdd73c0dc98e70bdc8b7" name="a76f4d491bc51bdd73c0dc98e70bdc8b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f4d491bc51bdd73c0dc98e70bdc8b7">&#9670;&#160;</a></span>SpeedifySDK_DeviceRole_toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ENABLE_NETWORK_SHARING const char * SpeedifySDK_DeviceRole_toString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aaf3618d8bd896e177111f92573571f3f">SpeedifySDK_DeviceRole</a></td>          <td class="paramname"><span class="paramname"><em>role</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

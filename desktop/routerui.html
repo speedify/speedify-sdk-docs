@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.0.2</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.0.3</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,7 @@ Secured Reverse Proxy Hosting</h2>
 <div class="line"> </div>
 <div class="line">location = /speedify/view/index.html {</div>
 <div class="line">    alias /www/speedify/index.html;</div>
+<div class="line">    add_header Cache-Control <span class="stringliteral">&quot;private, no-store, no-cache, must-revalidate, proxy-revalidate&quot;</span>;</div>
 <div class="line">    gzip_static on;</div>
 <div class="line">}</div>
 <div class="line"> </div>

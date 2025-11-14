@@ -19,6 +19,6 @@ var searchData=
   ['retransbytes_16',['retransBytes',['../struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578',1,'SpeedifySDK_SessionStats']]],
   ['retransmissionattempts_17',['retransmissionAttempts',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a9bc38bbb77fdde429a7a8d38eee5e312',1,'SpeedifySDK_DSCPQueue']]],
   ['retries_18',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]],
-  ['role_19',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult']]],
+  ['role_19',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult::role'],['../struct_speedify_s_d_k___system_data.html#a9358a8787c0ecd242ef035244ea70ad2',1,'SpeedifySDK_SystemData::role']]],
   ['rulesjson_20',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]]
 ];

@@ -19,6 +19,7 @@ var searchData=
   ['minutesavailable_16',['minutesAvailable',['../struct_speedify_s_d_k___accounting_data.html#a50bdde67f4a20477e0cacb914bf0259f',1,'SpeedifySDK_AccountingData']]],
   ['minutesused_17',['minutesUsed',['../struct_speedify_s_d_k___accounting_data.html#ab5b67fbb73ad5d160cac9bee0ea158c8',1,'SpeedifySDK_AccountingData']]],
   ['mode_18',['mode',['../struct_speedify_s_d_k___firewall_settings.html#a070c838a7e9409c8395e062e3074d546',1,'SpeedifySDK_FirewallSettings::mode'],['../struct_dispatch___settings.html#a17691b79c5d137482415b41a69a121d3',1,'Dispatch_Settings::mode']]],
-  ['monitoringpingdestination_19',['monitoringPingDestination',['../struct_dispatch___settings.html#a4f1fe151a0d8d7634b578cce1bcb7ec5',1,'Dispatch_Settings']]],
-  ['mos_20',['mos',['../struct_speedify_s_d_k___connection_stats.html#a5b5de7ce8180aaefbabc01b06d4e172e',1,'SpeedifySDK_ConnectionStats']]]
+  ['model_19',['model',['../struct_speedify_s_d_k___system_data.html#a5c35e7c97bce3f68945a4a7e8ee54f5b',1,'SpeedifySDK_SystemData']]],
+  ['monitoringpingdestination_20',['monitoringPingDestination',['../struct_dispatch___settings.html#a4f1fe151a0d8d7634b578cce1bcb7ec5',1,'Dispatch_Settings']]],
+  ['mos_21',['mos',['../struct_speedify_s_d_k___connection_stats.html#a5b5de7ce8180aaefbabc01b06d4e172e',1,'SpeedifySDK_ConnectionStats']]]
 ];

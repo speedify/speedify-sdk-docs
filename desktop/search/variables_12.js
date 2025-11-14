@@ -38,5 +38,6 @@ var searchData=
   ['streams_35',['streams',['../struct_speedify_s_d_k___streaming_stats.html#afb0bc30b39167440d9e9c456f232294b',1,'SpeedifySDK_StreamingStats']]],
   ['streamscount_36',['streamsCount',['../struct_speedify_s_d_k___streaming_stats.html#ab1c3760393f2f0d46b91c61d6fc615ed',1,'SpeedifySDK_StreamingStats']]],
   ['successes_37',['successes',['../struct_speedify_s_d_k___captive_portal_stats.html#a7780edc67c8539a52e38b75d968d1397',1,'SpeedifySDK_CaptivePortalStats']]],
-  ['supportshost_38',['supportsHost',['../struct_speedify_s_d_k___network_share_peer.html#a3291730188e2aa735ef8f9ef3a458d3f',1,'SpeedifySDK_NetworkSharePeer']]]
+  ['supportshost_38',['supportsHost',['../struct_speedify_s_d_k___network_share_peer.html#a3291730188e2aa735ef8f9ef3a458d3f',1,'SpeedifySDK_NetworkSharePeer']]],
+  ['systemdata_39',['systemData',['../struct_speedify_s_d_k___system_data_result.html#a024fb8d331d8fd522e158f964fe5bc5e',1,'SpeedifySDK_SystemDataResult']]]
 ];
