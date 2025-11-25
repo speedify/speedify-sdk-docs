@@ -56,7 +56,8 @@ var searchData=
   ['isprivate_53',['isPrivate',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#a235a9dbdc4a9914e9a43ea197d585600',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['ispstats_54',['ispStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#adc848d294c4c0be7927496424517808b',1,'com::speedify::speedifysdk::Types::AdapterData']]],
   ['issdkalive_55',['isSdkAlive',['../classcom_1_1speedify_1_1speedifysdk_1_1_speedify_s_d_k.html#a6c2b512e30bb5a90c7175ead205bf59a',1,'com::speedify::speedifysdk::SpeedifySDK']]],
-  ['isteam_56',['isTeam',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a7421baef09214470a2bd37edae98d9ce',1,'com::speedify::speedifysdk::Types::AccountingData']]],
-  ['iwebsocketipcreceiver_57',['IWebsocketIPCReceiver',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html',1,'com::speedify::speedifysdk::receivers']]],
-  ['iwebsocketipcreceiver_2ejava_58',['IWebsocketIPCReceiver.java',['../_i_websocket_i_p_c_receiver_8java.html',1,'']]]
+  ['isselfhosted_56',['isSelfHosted',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#a215d4a8068db7a253beeabe3be38361f',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
+  ['isteam_57',['isTeam',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a7421baef09214470a2bd37edae98d9ce',1,'com::speedify::speedifysdk::Types::AccountingData']]],
+  ['iwebsocketipcreceiver_58',['IWebsocketIPCReceiver',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html',1,'com::speedify::speedifysdk::receivers']]],
+  ['iwebsocketipcreceiver_2ejava_59',['IWebsocketIPCReceiver.java',['../_i_websocket_i_p_c_receiver_8java.html',1,'']]]
 ];

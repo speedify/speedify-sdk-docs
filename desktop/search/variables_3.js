@@ -13,7 +13,7 @@ var searchData=
   ['discoveryactive_10',['discoveryActive',['../struct_speedify_s_d_k___network_sharing_discovery_result.html#a8bd8095c0489fbd99b016de2c494e1de',1,'SpeedifySDK_NetworkSharingDiscoveryResult']]],
   ['displayname_11',['displayName',['../struct_speedify_s_d_k___network_sharing_pair_result.html#aafd26e8615dc0b7c23cccf2b0c07a832',1,'SpeedifySDK_NetworkSharingPairResult::displayName'],['../struct_speedify_s_d_k___network_sharing_settings.html#a964d053e5df1c1ca4c16debc5b917c39',1,'SpeedifySDK_NetworkSharingSettings::displayName'],['../struct_speedify_s_d_k___network_share_peer.html#a381fb77710d7f8743f656b01c184f9d1',1,'SpeedifySDK_NetworkSharePeer::displayName']]],
   ['dnsaddresscount_12',['dnsAddressCount',['../struct_speedify_s_d_k___privacy_settings.html#abee7b042ac42e35c6b6a915fc9073274',1,'SpeedifySDK_PrivacySettings']]],
-  ['dnsaddresses_13',['dnsAddresses',['../struct_speedify_s_d_k___privacy_settings.html#a37386f5000c86d6bceb5f2e2bb403ec2',1,'SpeedifySDK_PrivacySettings']]],
+  ['dnsaddresses_13',['dnsAddresses',['../struct_speedify_s_d_k___privacy_settings.html#adf429f888880bb599ba2cbe4a0891284',1,'SpeedifySDK_PrivacySettings']]],
   ['dnsip_14',['dnsIP',['../struct_speedify_s_d_k___server_information.html#aa895ab0cd7c667b1fef1eec9839a70ec',1,'SpeedifySDK_ServerInformation']]],
   ['dnsipcount_15',['dnsIPCount',['../struct_speedify_s_d_k___server_information.html#a734064ce5a44d51866a48b7ae4073132',1,'SpeedifySDK_ServerInformation']]],
   ['dnsleakprotection_16',['dnsLeakProtection',['../struct_speedify_s_d_k___privacy_settings.html#afda6b3e84b90b5931ded04140545f90c',1,'SpeedifySDK_PrivacySettings']]],
@@ -31,8 +31,9 @@ var searchData=
   ['downstreamsubnetscount_28',['downstreamSubnetsCount',['../struct_speedify_s_d_k___settings.html#a4fe7889567b7ccdbc36c90b6a93fd76a',1,'SpeedifySDK_Settings']]],
   ['droppedincoming_29',['droppedIncoming',['../struct_speedify_s_d_k___tun_stats.html#ab5b4d4f49683161431b90351bca636bc',1,'SpeedifySDK_TunStats']]],
   ['dscp_30',['dscp',['../struct_speedify_s_d_k___dscp_stats.html#aac417adb9971163c55923f3d6a595de0',1,'SpeedifySDK_DscpStats::dscp'],['../struct_speedify_s_d_k___stream_stats.html#a0c77665df71558a7bda12b957bb48c90',1,'SpeedifySDK_StreamStats::dscp']]],
-  ['dscpqueues_31',['dscpQueues',['../struct_speedify_s_d_k___d_s_c_p_settings.html#a77d5cdda14d5e811163916120ad94733',1,'SpeedifySDK_DSCPSettings']]],
-  ['dscpstats_32',['dscpStats',['../struct_speedify_s_d_k___session_stats.html#a1951799d7dc2b9a7f4fc576f52f9c8fd',1,'SpeedifySDK_SessionStats']]],
-  ['dscpvalue_33',['dscpValue',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a0ab12153c58a5fef243b1eebb3f7441b',1,'SpeedifySDK_DSCPQueue']]],
-  ['duration_34',['duration',['../struct_speedify_s_d_k___stream_stats.html#a1b65dab1d72b7be34bc4c834aae99592',1,'SpeedifySDK_StreamStats']]]
+  ['dscpmonitoringtags_31',['dscpMonitoringTags',['../struct_speedify_s_d_k___d_s_c_p_settings.html#abdd9c2e9bee0bf8b23613af5d439dbf1',1,'SpeedifySDK_DSCPSettings']]],
+  ['dscpqueues_32',['dscpQueues',['../struct_speedify_s_d_k___d_s_c_p_settings.html#a77d5cdda14d5e811163916120ad94733',1,'SpeedifySDK_DSCPSettings']]],
+  ['dscpstats_33',['dscpStats',['../struct_speedify_s_d_k___session_stats.html#a1951799d7dc2b9a7f4fc576f52f9c8fd',1,'SpeedifySDK_SessionStats']]],
+  ['dscpvalue_34',['dscpValue',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a0ab12153c58a5fef243b1eebb3f7441b',1,'SpeedifySDK_DSCPQueue']]],
+  ['duration_35',['duration',['../struct_speedify_s_d_k___stream_stats.html#a1b65dab1d72b7be34bc4c834aae99592',1,'SpeedifySDK_StreamStats']]]
 ];

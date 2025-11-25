@@ -63,7 +63,7 @@ var searchData=
   ['onvendoruserdata_60',['OnVendorUserData',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#a443683c5f9756cd9ba45ce543fde215f',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onvpnpermissionresult_61',['OnVPNPermissionResult',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_sdk_state_receiver.html#ae494a6f942ea4c046c432a1957b3319d',1,'com::speedify::speedifysdk::receivers::ISdkStateReceiver']]],
   ['onwebsocketcreate_62',['OnWebsocketCreate',['../interfacecom_1_1speedify_1_1speedifysdk_1_1receivers_1_1_i_websocket_i_p_c_receiver.html#ac1f10160123922f020144c92ce33c5e1',1,'com::speedify::speedifysdk::receivers::IWebsocketIPCReceiver']]],
-  ['optional_20permissions_63',['Optional Permissions',['../permissions.html#autotoc_md158',1,'']]],
+  ['optional_20permissions_63',['Optional Permissions',['../permissions.html#autotoc_md160',1,'']]],
   ['optional_3a_20application_20oncreate_64',['Optional: Application onCreate',['../sdkinit.html#autotoc_md11',1,'']]],
   ['optional_3a_20handlers_65',['Optional: Handlers',['../sdkinit.html#autotoc_md12',1,'']]],
   ['optional_3a_20sdk_20cleanup_66',['Optional: SDK Cleanup',['../sdkinit.html#autotoc_md13',1,'']]],
@@ -72,6 +72,6 @@ var searchData=
   ['overlimit_69',['OVERLIMIT',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_state.html#ae31590673dc90d41b7a9345b1d03dd88',1,'com::speedify::speedifysdk::Types::State']]],
   ['overlimitratelimit_70',['overlimitRatelimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a5f7c13433b2e69ff8ece20e7cac42264',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['overquota_71',['OVERQUOTA',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#ab6cd9555b63c5673d67da5397fe929ed',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
-  ['overview_72',['Overview',['../networksharing.html#autotoc_md151',1,'']]],
+  ['overview_72',['Overview',['../networksharing.html#autotoc_md153',1,'']]],
   ['overview_2emd_73',['overview.md',['../overview_8md.html',1,'']]]
 ];

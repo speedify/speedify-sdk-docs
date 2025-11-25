@@ -30,7 +30,8 @@ var searchData=
   ['streaming_27',['STREAMING',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_bonding_mode.html#aed18ee0ed9a6ab67cb538c2b491ffff4',1,'com::speedify::speedifysdk::Types::BondingMode']]],
   ['streamingstats_28',['streamingStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#ae2bc5ced19738af698d44c87d278d9cc',1,'com::speedify::speedifysdk::Types::SessionStats']]],
   ['streams_29',['streams',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_streaming_stats.html#a5e945540b2ebf5621eba460699cb9798',1,'com::speedify::speedifysdk::Types::StreamingStats']]],
-  ['subtext_30',['subtext',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper_1_1_options.html#ac49120744801f3f8ccfd95915f4363e8',1,'com::speedify::speedifysdk::NotificationHelper::Options']]],
-  ['successes_31',['successes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_captive_portal_stats.html#aff54c3dcdcd99d4a98095ca433071d66',1,'com::speedify::speedifysdk::Types::CaptivePortalStats']]],
-  ['supportshost_32',['supportsHost',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer.html#a163b27b32501dcfef10b2e0d06f543bb',1,'com::speedify::speedifysdk::Types::NetworkSharing::Peer']]]
+  ['subscriptionenddate_30',['subscriptionEndDate',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a12decca47311d5d6ee17fd045714baea',1,'com::speedify::speedifysdk::Types::AccountingData']]],
+  ['subtext_31',['subtext',['../classcom_1_1speedify_1_1speedifysdk_1_1_notification_helper_1_1_options.html#ac49120744801f3f8ccfd95915f4363e8',1,'com::speedify::speedifysdk::NotificationHelper::Options']]],
+  ['successes_32',['successes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_captive_portal_stats.html#aff54c3dcdcd99d4a98095ca433071d66',1,'com::speedify::speedifysdk::Types::CaptivePortalStats']]],
+  ['supportshost_33',['supportsHost',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer.html#a163b27b32501dcfef10b2e0d06f543bb',1,'com::speedify::speedifysdk::Types::NetworkSharing::Peer']]]
 ];

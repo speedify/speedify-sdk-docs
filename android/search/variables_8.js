@@ -20,5 +20,6 @@ var searchData=
   ['ispremium_17',['isPremium',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#a5502f69031b2a5b4140ca3e936636d41',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['isprivate_18',['isPrivate',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#a235a9dbdc4a9914e9a43ea197d585600',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
   ['ispstats_19',['ispStats',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_data.html#adc848d294c4c0be7927496424517808b',1,'com::speedify::speedifysdk::Types::AdapterData']]],
-  ['isteam_20',['isTeam',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a7421baef09214470a2bd37edae98d9ce',1,'com::speedify::speedifysdk::Types::AccountingData']]]
+  ['isselfhosted_20',['isSelfHosted',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_server_information.html#a215d4a8068db7a253beeabe3be38361f',1,'com::speedify::speedifysdk::Types::ServerInformation']]],
+  ['isteam_21',['isTeam',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_accounting_data.html#a7421baef09214470a2bd37edae98d9ce',1,'com::speedify::speedifysdk::Types::AccountingData']]]
 ];
