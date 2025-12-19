@@ -1,7 +1,7 @@
 var searchData=
 [
   ['manual_0',['MANUAL',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_auto_pair_behavior.html#a9745694aee3482607baa42f6db18919e',1,'com::speedify::speedifysdk::Types::NetworkSharing::AutoPairBehavior']]],
-  ['manual_20connections_1',['Manual Connections',['../networksharing.html#autotoc_md157',1,'']]],
+  ['manual_20connections_1',['Manual Connections',['../networksharing.html#autotoc_md159',1,'']]],
   ['matchmode_2',['matchMode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_local_proxy_settings.html#ab148fdbbf412873db267133957ccd0cd',1,'com::speedify::speedifysdk::Types::LocalProxySettings']]],
   ['maven_20repository_3',['Integration via Maven Repository',['../integration.html#autotoc_md0',1,'']]],
   ['maxdownloadspeed_4',['maxDownloadSpeed',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#aeadde142f83480c1072b7801c96256b4',1,'com::speedify::speedifysdk::Types::SessionStats']]],

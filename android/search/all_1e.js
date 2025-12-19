@@ -20,9 +20,10 @@ var searchData=
   ['usagemonthlylimit_17',['usageMonthlyLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a100c63f783e618046db3db9b40b02633',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['usagemonthlyresetday_18',['usageMonthlyResetDay',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a6355d3cc6d431a7f61c61f870241faa6',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['userinitiated_19',['USERINITIATED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#af823acb1dcc7f4bea1eea11e6f37a697',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
-  ['userstrings_2emd_20',['userstrings.md',['../userstrings_8md.html',1,'']]],
-  ['uuid_21',['uuid',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer.html#a7fd0b73c4f4438cce5338cce7e1c2de6',1,'com::speedify::speedifysdk::Types::NetworkSharing::Peer']]],
-  ['uuidhandler_22',['UuidHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider_1_1_uuid_handler.html',1,'com::speedify::speedifysdk::UuidProvider']]],
-  ['uuidprovider_23',['UuidProvider',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html',1,'com::speedify::speedifysdk']]],
-  ['uuidprovider_2ejava_24',['UuidProvider.java',['../_uuid_provider_8java.html',1,'']]]
+  ['userpriority_20',['userPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a95128b7a13419e5ad5de7b5bc6ec81bf',1,'com::speedify::speedifysdk::Types::StreamStats']]],
+  ['userstrings_2emd_21',['userstrings.md',['../userstrings_8md.html',1,'']]],
+  ['uuid_22',['uuid',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer.html#a7fd0b73c4f4438cce5338cce7e1c2de6',1,'com::speedify::speedifysdk::Types::NetworkSharing::Peer']]],
+  ['uuidhandler_23',['UuidHandler',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider_1_1_uuid_handler.html',1,'com::speedify::speedifysdk::UuidProvider']]],
+  ['uuidprovider_24',['UuidProvider',['../classcom_1_1speedify_1_1speedifysdk_1_1_uuid_provider.html',1,'com::speedify::speedifysdk']]],
+  ['uuidprovider_2ejava_25',['UuidProvider.java',['../_uuid_provider_8java.html',1,'']]]
 ];

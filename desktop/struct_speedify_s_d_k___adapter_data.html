@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.1.1</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.2.0</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a0f565bc4647edfc850b5d43d21917334" id="r_a0f565bc4647edfc850b5d43d21917334"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f565bc4647edfc850b5d43d21917334">isp</a> [<a class="el" href="sdkdefines_8h.html#abbaf8ead9aa98fb5632f549ae4bfceac">SPEEDIFYSDK_MAX_ADAPTER_NAME</a>]</td></tr>
 <tr class="memdesc:a0f565bc4647edfc850b5d43d21917334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internet Service Provider, if available.  <br /></td></tr>
 <tr class="separator:a0f565bc4647edfc850b5d43d21917334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f7c3ca30df43c700b5d5a3552c83ae" id="r_a98f7c3ca30df43c700b5d5a3552c83ae"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98f7c3ca30df43c700b5d5a3552c83ae">ispType</a> [<a class="el" href="sdkdefines_8h.html#ab74b0bbacff705da83accb93ca49922b">SPEEDIFYSDK_MAX_ISP_TYPE</a>]</td></tr>
+<tr class="memdesc:a98f7c3ca30df43c700b5d5a3552c83ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internet Service Provider type, if available.  <br /></td></tr>
+<tr class="separator:a98f7c3ca30df43c700b5d5a3552c83ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af44be98bec4bbaf31e65c0d14dad5c8a" id="r_af44be98bec4bbaf31e65c0d14dad5c8a"><td class="memItemLeft" align="right" valign="top">cJSON **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af44be98bec4bbaf31e65c0d14dad5c8a">ispStats</a></td></tr>
 <tr class="memdesc:af44be98bec4bbaf31e65c0d14dad5c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON object containing ISP data, if available The cJSON is valid until the next AdapterData update is received. SpeedifySDK manages the lifetime of this object.  <br /></td></tr>
 <tr class="separator:af44be98bec4bbaf31e65c0d14dad5c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,6 +292,23 @@ Data Fields</h2></td></tr>
 
 <p>JSON object containing ISP data, if available The cJSON is valid until the next AdapterData update is received. SpeedifySDK manages the lifetime of this object. </p>
 <dl class="section since"><dt>Since</dt><dd>15.5 </dd></dl>
+
+</div>
+</div>
+<a id="a98f7c3ca30df43c700b5d5a3552c83ae" name="a98f7c3ca30df43c700b5d5a3552c83ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f7c3ca30df43c700b5d5a3552c83ae">&#9670;&#160;</a></span>ispType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SpeedifySDK_AdapterData::ispType[<a class="el" href="sdkdefines_8h.html#ab74b0bbacff705da83accb93ca49922b">SPEEDIFYSDK_MAX_ISP_TYPE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internet Service Provider type, if available. </p>
+<dl class="section since"><dt>Since</dt><dd>16.2 </dd></dl>
 
 </div>
 </div>

@@ -15,5 +15,6 @@ var searchData=
   ['usagemonthlylimit_12',['usageMonthlyLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a100c63f783e618046db3db9b40b02633',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['usagemonthlyresetday_13',['usageMonthlyResetDay',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_adapter_usage_data.html#a6355d3cc6d431a7f61c61f870241faa6',1,'com::speedify::speedifysdk::Types::AdapterUsageData']]],
   ['userinitiated_14',['USERINITIATED',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_disconnect_reason.html#af823acb1dcc7f4bea1eea11e6f37a697',1,'com::speedify::speedifysdk::Types::DisconnectReason']]],
-  ['uuid_15',['uuid',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer.html#a7fd0b73c4f4438cce5338cce7e1c2de6',1,'com::speedify::speedifysdk::Types::NetworkSharing::Peer']]]
+  ['userpriority_15',['userPriority',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a95128b7a13419e5ad5de7b5bc6ec81bf',1,'com::speedify::speedifysdk::Types::StreamStats']]],
+  ['uuid_16',['uuid',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_peer.html#a7fd0b73c4f4438cce5338cce7e1c2de6',1,'com::speedify::speedifysdk::Types::NetworkSharing::Peer']]]
 ];
