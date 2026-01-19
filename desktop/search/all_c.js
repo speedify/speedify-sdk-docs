@@ -11,7 +11,7 @@ var searchData=
   ['clientenabled_8',['clientEnabled',['../struct_speedify_s_d_k___network_sharing_settings.html#a7ea86c30fe8ca8ba824eb7df5a03d38a',1,'SpeedifySDK_NetworkSharingSettings']]],
   ['common_20integration_20guide_9',['Common Integration Guide',['../index.html#autotoc_md20',1,'']]],
   ['configset_10',['configSet',['../struct_speedify_s_d_k___safe_browsing_result.html#a8404fa478bc6f5bd7b2d838b0034b6ff',1,'SpeedifySDK_SafeBrowsingResult']]],
-  ['configuration_11',['Configuration',['../dscpqueues.html#autotoc_md0',1,'CLI Configuration'],['../networksharing.html#autotoc_md14',1,'Configuration'],['../dscpqueues.html',1,'DSCP Queue Configuration'],['../localproxy.html',1,'Local Proxy Configuration']]],
+  ['configuration_11',['Configuration',['../dscpqueues.html#autotoc_md0',1,'CLI Configuration'],['../networksharing.html#autotoc_md14',1,'Configuration'],['../dscpqueues.html',1,'DSCP Queue Configuration'],['../localproxy.html',1,'Local Proxy Configuration'],['../residentialproxy.html',1,'Residential Proxy Configuration']]],
   ['congested_12',['congested',['../struct_speedify_s_d_k___connection_stats.html#a8cf9d2a5e83358a4e8c37b9f27f1c699',1,'SpeedifySDK_ConnectionStats']]],
   ['connected_13',['connected',['../struct_speedify_s_d_k___connection_stats.html#a6d17c9262b43a7b5a780246b16b6f11e',1,'SpeedifySDK_ConnectionStats']]],
   ['connectednetworkbssid_14',['connectedNetworkBSSID',['../struct_speedify_s_d_k___adapter_data.html#af0a48a42029eac75e0c87601107f8f85',1,'SpeedifySDK_AdapterData']]],

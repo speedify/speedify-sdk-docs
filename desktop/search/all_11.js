@@ -7,6 +7,7 @@ var searchData=
   ['host_4',['host',['../struct_speedify_s_d_k___safe_browsing_error_result.html#a84aff13726f81291d76a9920e7696f4c',1,'SpeedifySDK_SafeBrowsingErrorResult::host'],['../struct_speedify_s_d_k___safe_browsing_block_result.html#abfb317e2cc2bd1877f05b7a665cdcf8e',1,'SpeedifySDK_SafeBrowsingBlockResult::host']]],
   ['hostconnectcode_5',['hostConnectCode',['../struct_speedify_s_d_k___network_sharing_settings.html#a886827b0a6e36019ee8ea75d5698155e',1,'SpeedifySDK_NetworkSharingSettings']]],
   ['hostenabled_6',['hostEnabled',['../struct_speedify_s_d_k___network_sharing_settings.html#aefa62f61a20731e1bd4d13ae2f221763',1,'SpeedifySDK_NetworkSharingSettings']]],
-  ['hosting_7',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md25',1,'']]],
-  ['hostname_8',['hostname',['../struct_speedify_s_d_k___stream_stats.html#a0d270ec54f75fdbb9d771f7d8aca9c84',1,'SpeedifySDK_StreamStats']]]
+  ['hosting_7',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md26',1,'']]],
+  ['hostname_8',['hostname',['../struct_speedify_s_d_k___stream_stats.html#a0d270ec54f75fdbb9d771f7d8aca9c84',1,'SpeedifySDK_StreamStats']]],
+  ['hosttunnelratelimit_9',['hostTunnelRateLimit',['../struct_speedify_s_d_k___network_sharing_settings.html#a3285556c023f03f3021601089573b3be',1,'SpeedifySDK_NetworkSharingSettings']]]
 ];

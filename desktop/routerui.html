@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.2.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.3.0</span>
    </div>
   </td>
  </tr>
@@ -90,10 +90,10 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Embedding the Router UI</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md24"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md25"></a>
 Extracting the UI Files</h2>
 <p>Extract and install the Speedify UI files provided by the SDK. The UI files are located in the SDK's routerui/ directory. <code>speedifyui_files_gzip.tar.gz</code> contains files suitable for a server that supports gzip compression. If your webserver does not support this, use <code>speedifyui_files_uncompressed.tar.gz</code> instead. The UI files are a gzipped tarball that should be extracted to a directory that is accessible by the reverse proxy HTTP daemon. The following sections will assume the UI files have been extracted to /www/speedify/</p>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md26"></a>
 Secured Reverse Proxy Hosting</h2>
 <p>Hosting the Speedify UI behind a reverse proxy HTTP daemon, such as nginx, allows the Speedify API to be accessed securely over HTTPS and remain unexposed from direct access from the network. This is the recommended way to host the Speedify UI. The following is an example configuration for nginx:</p>
 <div class="fragment"><div class="line">location ~ ^/speedify/view/(.*) {</div>
@@ -117,7 +117,7 @@ Secured Reverse Proxy Hosting</h2>
 <div class="line">    proxy_set_header Connection <span class="stringliteral">&quot;upgrade&quot;</span>;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The Speedify UI can be embedded into your existing UI via an iframe. Use the wsPort and wsEndpoint query parameters to tell the Speedify UI where to connect to the Speedify API. The following is an example iframe that embeds the Speedify UI into your existing UI: </p><div class="fragment"><div class="line">&lt;iframe src=<span class="stringliteral">&quot;/speedify/view/index.html?wsPort=match&amp;wsEndpoint=/speedify/api/ws&quot;</span> width=<span class="stringliteral">&quot;100%&quot;</span> height=<span class="stringliteral">&quot;80vh&quot;</span> style=<span class="stringliteral">&quot;border:none&quot;</span>&gt;&lt;/iframe&gt;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md26"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md27"></a>
 Direct Access via Basic Web Server</h2>
 <p>If you do not have a reverse proxy, you can host the Speedify UI directly from a basic web server. You will need to disable Speedify API protection in order to allow the Speedify UI to access the Speedify API. This means that other devices on the network would have the ability to access the Speedify API to change settings, connect and disconnect Speedify, etc.</p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="speedifysdk_8h.html#a20a1c157fd52c753b367bb0d03c5cd26">SpeedifySDK_SetAPIProtection</a>(sdk,<span class="keyword">false</span>,NULL,NULL);</div>

@@ -17,10 +17,11 @@ var searchData=
   ['remove_14',['REMOVE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_traffic_rule_change_method.html#aa6533af166e05c78a0c1449a72be26e7',1,'com::speedify::speedifysdk::Types::TrafficRuleChangeMethod']]],
   ['replace_15',['REPLACE',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_traffic_rule_change_method.html#a5a2ce54ed845a00c451717cd2d9a7dff',1,'com::speedify::speedifysdk::Types::TrafficRuleChangeMethod']]],
   ['requesttodisabledoh_16',['requestToDisableDoH',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#a7c5cd8e65cc4952efb0311c0708575db',1,'com::speedify::speedifysdk::Types::PrivacySettings']]],
-  ['resolution_17',['resolution',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a4f7c3a99e2d571d9ed29e93a245bd876',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
-  ['retransbytes_18',['retransBytes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#aa454a3ab8f4e7fd4f6864a0eac403240',1,'com::speedify::speedifysdk::Types::SessionStats']]],
-  ['retries_19',['retries',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#a20a74ef60f62db72b54815e300d2f48b',1,'com::speedify::speedifysdk::Types::HandlerStats']]],
-  ['retry_5flogin_20',['RETRY_LOGIN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_action.html#ac524a4083d3b8dcc4943131a06898e66',1,'com::speedify::speedifysdk::Types::AccountAction']]],
-  ['round_5frobin_21',['ROUND_ROBIN',['../enumcom_1_1speedify_1_1speedifysdk_1_1dispatch_1_1_dispatch_1_1_routing_mode.html#aaa71d584c4de093229323f8f57ad88d1',1,'com::speedify::speedifysdk::dispatch::Dispatch::RoutingMode']]],
-  ['routingmode_22',['routingMode',['../classcom_1_1speedify_1_1speedifysdk_1_1dispatch_1_1_dispatch_1_1_settings.html#ab45354f925ff775db12e9cfbac25e2a8',1,'com::speedify::speedifysdk::dispatch::Dispatch::Settings']]]
+  ['residentialproxyenabled_17',['residentialProxyEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_privacy_settings.html#afdc42f71a33289567e3da90741f3f1e3',1,'com::speedify::speedifysdk::Types::PrivacySettings']]],
+  ['resolution_18',['resolution',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_speed_test_result_data.html#a4f7c3a99e2d571d9ed29e93a245bd876',1,'com::speedify::speedifysdk::Types::SpeedTestResultData']]],
+  ['retransbytes_19',['retransBytes',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_session_stats.html#aa454a3ab8f4e7fd4f6864a0eac403240',1,'com::speedify::speedifysdk::Types::SessionStats']]],
+  ['retries_20',['retries',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_handler_stats.html#a20a74ef60f62db72b54815e300d2f48b',1,'com::speedify::speedifysdk::Types::HandlerStats']]],
+  ['retry_5flogin_21',['RETRY_LOGIN',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_account_action.html#ac524a4083d3b8dcc4943131a06898e66',1,'com::speedify::speedifysdk::Types::AccountAction']]],
+  ['round_5frobin_22',['ROUND_ROBIN',['../enumcom_1_1speedify_1_1speedifysdk_1_1dispatch_1_1_dispatch_1_1_routing_mode.html#aaa71d584c4de093229323f8f57ad88d1',1,'com::speedify::speedifysdk::dispatch::Dispatch::RoutingMode']]],
+  ['routingmode_23',['routingMode',['../classcom_1_1speedify_1_1speedifysdk_1_1dispatch_1_1_dispatch_1_1_settings.html#ab45354f925ff775db12e9cfbac25e2a8',1,'com::speedify::speedifysdk::dispatch::Dispatch::Settings']]]
 ];

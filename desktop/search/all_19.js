@@ -45,9 +45,9 @@ var searchData=
   ['protocol_42',['protocol',['../struct_speedify_s_d_k___protocol_port_pair.html#ae4e763e72c8bc9153c6d9616ab32d0e7',1,'SpeedifySDK_ProtocolPortPair::protocol'],['../struct_speedify_s_d_k___connection_stats.html#afb8eb8d9465837008418f4462868267e',1,'SpeedifySDK_ConnectionStats::protocol'],['../struct_speedify_s_d_k___stream_stats.html#a89da30990ecf10a24744a602836eb59d',1,'SpeedifySDK_StreamStats::protocol']]],
   ['proxieddomains_43',['proxiedDomains',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a2f5ca97d98b997a7e5d1f7e34f0b40ec',1,'SpeedifySDK_LocalProxyDomainWatchlistItem']]],
   ['proxieddomainscount_44',['proxiedDomainsCount',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a40edf488688d8722b958c22458c4e85e',1,'SpeedifySDK_LocalProxyDomainWatchlistItem']]],
-  ['proxy_20api_45',['Local Proxy API',['../localproxy.html#autotoc_md8',1,'']]],
-  ['proxy_20configuration_46',['Local Proxy Configuration',['../localproxy.html',1,'']]],
-  ['proxy_20hosting_47',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md25',1,'']]],
+  ['proxy_20api_45',['Proxy API',['../localproxy.html#autotoc_md8',1,'Local Proxy API'],['../residentialproxy.html#autotoc_md24',1,'Residential Proxy API']]],
+  ['proxy_20configuration_46',['Proxy Configuration',['../localproxy.html',1,'Local Proxy Configuration'],['../residentialproxy.html',1,'Residential Proxy Configuration']]],
+  ['proxy_20hosting_47',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md26',1,'']]],
   ['publicip_48',['publicIP',['../struct_speedify_s_d_k___server_information.html#a8f1a925df09f34ca955754b6f68173c8',1,'SpeedifySDK_ServerInformation']]],
   ['publicipcount_49',['publicIPCount',['../struct_speedify_s_d_k___server_information.html#a4c630f60a1653404eb70edcfe8455137',1,'SpeedifySDK_ServerInformation']]]
 ];

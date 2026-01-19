@@ -17,5 +17,6 @@ var searchData=
   ['hostconnectcode_14',['hostConnectCode',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#ae770a50de1e796a57865cd556b3c2b7e',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
   ['hostenabled_15',['hostEnabled',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#adb58e72c0eb07631bd70b085ed370163',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
   ['hostname_16',['hostname',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_stream_stats.html#a49967f175bbdd35e30b4983775c7aa95',1,'com::speedify::speedifysdk::Types::StreamStats']]],
-  ['https_17',['HTTPS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a0c15b15be128e962e7759c29511219a2',1,'com::speedify::speedifysdk::Types::TransportMode']]]
+  ['hosttunnelratelimit_17',['hostTunnelRateLimit',['../classcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_network_sharing_1_1_settings.html#a9a707baac91246f81ea74f3eb1b948d0',1,'com::speedify::speedifysdk::Types::NetworkSharing::Settings']]],
+  ['https_18',['HTTPS',['../enumcom_1_1speedify_1_1speedifysdk_1_1_types_1_1_transport_mode.html#a0c15b15be128e962e7759c29511219a2',1,'com::speedify::speedifysdk::Types::TransportMode']]]
 ];

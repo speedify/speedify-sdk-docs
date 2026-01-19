@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['websocketautoconfig_2ejava_0',['WebsocketAutoConfig.java',['../_websocket_auto_config_8java.html',1,'']]],
-  ['whatsnew_2emd_1',['whatsnew.md',['../whatsnew_8md.html',1,'']]]
+  ['userstrings_2emd_0',['userstrings.md',['../userstrings_8md.html',1,'']]],
+  ['uuidprovider_2ejava_1',['UuidProvider.java',['../_uuid_provider_8java.html',1,'']]]
 ];

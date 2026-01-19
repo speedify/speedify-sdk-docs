@@ -7,7 +7,7 @@ var searchData=
   ['testtype_4',['testType',['../struct_speedify_s_d_k___speed_test_result_data.html#ab251d14ee3dfcb844278697b96355cba',1,'SpeedifySDK_SpeedTestResultData']]],
   ['the_20router_20ui_5',['Embedding the Router UI',['../routerui.html',1,'']]],
   ['the_20speedify_20sdk_20for_20desktop_20embedded_6',['Introduction to the Speedify SDK for Desktop/Embedded',['../index.html',1,'']]],
-  ['the_20ui_20files_7',['Extracting the UI Files',['../routerui.html#autotoc_md24',1,'']]],
+  ['the_20ui_20files_7',['Extracting the UI Files',['../routerui.html#autotoc_md25',1,'']]],
   ['ticketid_8',['ticketId',['../struct_speedify_s_d_k___log_report_result.html#ac431c0b8fdc185c22cd3194132b4990d',1,'SpeedifySDK_LogReportResult']]],
   ['time_9',['time',['../struct_speedify_s_d_k___connection_stats_group.html#aff8e62b6fcd54ba39eede11dbe4a5956',1,'SpeedifySDK_ConnectionStatsGroup']]],
   ['title_10',['title',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_hit_result.html#a65785dad720219c29ac820912164b10f',1,'SpeedifySDK_LocalProxyDomainWatchlistHitResult::title'],['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a26b83d082b0d3cffb8d261639112ec18',1,'SpeedifySDK_LocalProxyDomainWatchlistItem::title']]],

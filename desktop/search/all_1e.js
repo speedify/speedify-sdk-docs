@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ui_0',['Embedding the Router UI',['../routerui.html',1,'']]],
-  ['ui_20files_1',['Extracting the UI Files',['../routerui.html#autotoc_md24',1,'']]],
+  ['ui_20files_1',['Extracting the UI Files',['../routerui.html#autotoc_md25',1,'']]],
   ['ulpreportintervalseconds_2',['ulpReportIntervalSeconds',['../struct_speedify_s_d_k___settings.html#ab743257d312a3a03281bd30b922c38c7',1,'SpeedifySDK_Settings']]],
   ['uniquesaves_3',['uniqueSaves',['../struct_speedify_s_d_k___streaming_session_stats.html#a0916cce0dd4e0033160a51219f9fc8f6',1,'SpeedifySDK_StreamingSessionStats']]],
   ['upload_4',['upload',['../struct_speedify_s_d_k___connection_directional_settings.html#ac7d57f320da89c1613da75620f7d7035',1,'SpeedifySDK_ConnectionDirectionalSettings::upload'],['../struct_speedify_s_d_k___target_number_of_connections.html#ae79c5baec7802e6c4134c4907986dbb8',1,'SpeedifySDK_TargetNumberOfConnections::upload']]],

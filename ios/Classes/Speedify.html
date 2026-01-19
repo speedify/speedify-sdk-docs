@@ -3033,6 +3033,39 @@ Automatic accounts have false email address in the form of <platform>.<device id
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC15updateDirectory17completionHandleryySDySSypGc_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateDirectory(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC15updateDirectory17completionHandleryySDySSypGc_tF">updateDirectory(completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update the list of available servers from the directory list, bypassing cache.</p>
+
+<p>This is the same as getDirectory but forces a refresh from the server by ignoring any cached data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateDirectory</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>completionHandler: A dictionary containing a server list</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC18setDirectoryDomain6domain17completionHandlerySS_ySSctF"></a>
                     <a name="//apple_ref/swift/Method/setDirectoryDomain(domain:completionHandler:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC18setDirectoryDomain6domain17completionHandlerySS_ySSctF">setDirectoryDomain(domain:<wbr>completionHandler:<wbr>)</a>
@@ -3471,6 +3504,39 @@ Current value available from <code><a href="../Classes/Speedify.html#/s:11speedi
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkShareHostEnable</span><span class="p">(</span><span class="nv">enable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC36setNetworkSharingHostTunnelRateLimit04rateI0ys6UInt64V_tF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkSharingHostTunnelRateLimit(rateLimit:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC36setNetworkSharingHostTunnelRateLimit04rateI0ys6UInt64V_tF">setNetworkSharingHostTunnelRateLimit(rateLimit:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the host tunnel rate limit in bits per second.</p>
+
+<ul>
+<li>@param rateLimit rate limit in bits per second (0 for unlimited)</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareSettingsUpdated</code></li>
+<li>@since 16.3</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkSharingHostTunnelRateLimit</span><span class="p">(</span><span class="nv">rateLimit</span><span class="p">:</span> <span class="kt">UInt64</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -5686,6 +5752,36 @@ Triggers &lsquo;SpeedifySettingsDelegate&rsquo;.
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC26setResidentialProxyEnabled7enabledySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/setResidentialProxyEnabled(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC26setResidentialProxyEnabled7enabledySb_tF">setResidentialProxyEnabled(enabled:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set if residential proxy will be used if available on the speed server.
+Triggers &lsquo;SpeedifySettingsDelegate&rsquo;.
+@param enabled enable residential proxy
+@since 16.3</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setResidentialProxyEnabled</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)setAllowTunnelBypass:"></a>
                     <a name="//apple_ref/swift/Method/setAllowTunnelBypass(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)setAllowTunnelBypass:">setAllowTunnelBypass(_:<wbr>)</a>
@@ -7410,6 +7506,39 @@ This call is used to set that backoff timeout limit.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFixedDelayPorts</span><span class="p">(</span><span class="nv">ports</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:11speedifysdk15TrafficRulePorta">TrafficRulePort</a></span><span class="p">],</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24setResidentialProxyPorts5ports6methodySayAA16ProtocolPortPairVG_AA23TrafficRuleChangeMethodOtF"></a>
+                    <a name="//apple_ref/swift/Method/setResidentialProxyPorts(ports:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24setResidentialProxyPorts5ports6methodySayAA16ProtocolPortPairVG_AA23TrafficRuleChangeMethodOtF">setResidentialProxyPorts(ports:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set ports to use with residential proxy.
+ Ports should be in host byte order.
+ Triggers <code><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></code>.</p>
+
+<p>@param ports ports to use with residential proxy
+ @param method method to use for the traffic rule change
+ @since 16.3</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setResidentialProxyPorts</span><span class="p">(</span><span class="nv">ports</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:11speedifysdk15TrafficRulePorta">TrafficRulePort</a></span><span class="p">],</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

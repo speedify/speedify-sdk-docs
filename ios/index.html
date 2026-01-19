@@ -435,6 +435,17 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-16-3' class='heading'>Speedify 16.3</h3>
+
+<ul>
+<li><code>setNetworkSharingHostTunnelRateLimit</code> added to set rate limits on network sharing host tunnels.</li>
+<li>New Residential Proxy feature. Currently in beta. The Residential Proxy API instructs the currently connected Speed Server to put specific traffic from the configured ports through a proxy running on a residential IP address. This is useful for accessing content that may be blocked or restricted when accessed via data center IP addresses. By default, TCP ports 80 and 443 are proxied when the residential proxy is enabled.
+
+<ul>
+<li><code>setResidentialProxyEnabled</code> - Enables or disables the residential proxy.</li>
+<li><code>setResidentialProxyPorts</code> - Set ports to proxy. Currently only TCP traffic is supported for residential proxying.</li>
+</ul></li>
+</ul>
 <h3 id='speedify-16-2' class='heading'>Speedify 16.2</h3>
 
 <ul>
