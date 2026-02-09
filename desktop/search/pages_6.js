@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['linux_0',['Speedify SDK for Linux',['../linux.html',1,'']]],
-  ['list_1',['Deprecated List',['../deprecated.html',1,'']]],
-  ['local_20proxy_20configuration_2',['Local Proxy Configuration',['../localproxy.html',1,'']]]
+  ['introduction_20to_20dispatch_0',['Introduction to Dispatch',['../dispatch_intro.html',1,'']]],
+  ['introduction_20to_20the_20speedify_20sdk_20for_20desktop_20embedded_1',['Introduction to the Speedify SDK for Desktop/Embedded',['../index.html',1,'']]]
 ];

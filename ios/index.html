@@ -36,6 +36,18 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Classes/BonjourManager.html">BonjourManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NetBrowser.html">NetBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/NetServicePublisher.html">NetServicePublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PairAndShareManager.html">PairAndShareManager</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/Speedify.html">Speedify</a>
               </li>
               <li class="nav-group-task">
@@ -132,7 +144,16 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/ClientShareDiscovery.html">ClientShareDiscovery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/PacketTunnelSafeBrowsingBlockDelegate.html">PacketTunnelSafeBrowsingBlockDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/PairAndShareManagerDelegate.html">PairAndShareManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/PairAndShareNotificationDelegate.html">PairAndShareNotificationDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SafeBrowsingInternalMessageDelegate.html">SafeBrowsingInternalMessageDelegate</a>
@@ -434,7 +455,216 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <h2 id='support' class='heading'>Support</h2>
 
 <p>We are here to support our developers!  If you have any issues, questions or concerns, please email us at <a href="mailto:support@speedify.com">support@speedify.com</a></p>
+<h2 id='pair-amp-share' class='heading'>Pair &amp; Share</h2>
+
+<p>Pair &amp; Share allows Speedify users to share their VPN connection with other devices on the same local network. The SDK provides built-in support for mDNS-based peer discovery and connection management.</p>
+<h3 id='info-plist-configuration' class='heading'>Info.plist Configuration</h3>
+
+<p>To enable Pair &amp; Share functionality, you must add the following keys to your app&rsquo;s <code>Info.plist</code>:</p>
+<h4 id='1-bonjour-services-required' class='heading'>1. Bonjour Services (Required)</h4>
+
+<p>Add the <code>NSBonjourServices</code> key to declare the Bonjour service type used for peer discovery:</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSBonjourServices<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;array&gt;</span>
+    <span class="nt">&lt;string&gt;</span>_speedifysharing._tcp<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;/array&gt;</span>
+</code></pre>
+<h4 id='2-local-network-usage-description-required' class='heading'>2. Local Network Usage Description (Required)</h4>
+
+<p>Add a user-facing description explaining why your app needs local network access:</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSLocalNetworkUsageDescription<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;string&gt;</span>Allow [Your App Name] to discover and connect to other Pair and Share-enabled devices on your network.<span class="nt">&lt;/string&gt;</span>
+</code></pre>
+<h4 id='3-local-networking-permission-recommended' class='heading'>3. Local Networking Permission (Recommended)</h4>
+
+<p>Enable local networking in the App Transport Security settings:</p>
+<pre class="highlight xml"><code><span class="nt">&lt;key&gt;</span>NSAppTransportSecurity<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;dict&gt;</span>
+    <span class="nt">&lt;key&gt;</span>NSAllowsLocalNetworking<span class="nt">&lt;/key&gt;</span>
+    <span class="nt">&lt;true/&gt;</span>
+<span class="nt">&lt;/dict&gt;</span>
+</code></pre>
+<h3 id='do-i-need-to-implement-callbacks' class='heading'>Do I Need to Implement Callbacks?</h3>
+
+<p><strong>No, callbacks are optional.</strong> Pair &amp; Share will function fully without any callback implementation:</p>
+
+<ul>
+<li>Peers will be discovered automatically via mDNS/Bonjour</li>
+<li>Connections will be established and authenticated</li>
+<li>VPN will be shared with connected peers</li>
+</ul>
+
+<p>The only reason to implement callbacks is if your app&rsquo;s UI needs to display information about connected peers, such as:</p>
+
+<ul>
+<li>Showing how many devices are currently sharing the VPN</li>
+<li>Displaying peer names or connection status</li>
+<li>Updating widgets or live activities with peer information</li>
+</ul>
+<h3 id='implementation' class='heading'>Implementation</h3>
+<h4 id='step-1-start-the-bonjour-observer' class='heading'>Step 1: Start the Bonjour Observer</h4>
+
+<p>In your app&rsquo;s initialization (e.g., <code>AppDelegate</code> or main view controller), start the Bonjour observer to begin listening for peer discovery events:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="n">speedifysdk</span> <span class="c1">// or speedifymac for macOS</span>
+
+<span class="c1">// Start the Bonjour observer</span>
+<span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">bonjour</span><span class="o">.</span><span class="nf">startObserver</span><span class="p">()</span>
+</code></pre>
+<h4 id='step-2-subscribe-to-pair-amp-share-events' class='heading'>Step 2: Subscribe to Pair &amp; Share Events</h4>
+
+<p>Subscribe to receive network sharing events:</p>
+<pre class="highlight swift"><code><span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">pairAndShare</span><span class="o">.</span><span class="nf">subscribe</span><span class="p">()</span>
+</code></pre>
+
+<p>That&rsquo;s all that&rsquo;s required for Pair &amp; Share to work. The following steps are optional.</p>
+<h4 id='step-3-optional-handle-peer-status-changes' class='heading'>Step 3 (Optional): Handle Peer Status Changes</h4>
+
+<p>To receive updates about peer status and available shares for UI display, implement the <code><a href="Protocols/PairAndShareManagerDelegate.html">PairAndShareManagerDelegate</a></code> protocol:</p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MyPeerHandler</span><span class="p">:</span> <span class="kt">PairAndShareManagerDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">networkShareAvailable</span><span class="p">(</span><span class="nv">availableShares</span><span class="p">:</span> <span class="p">[</span><span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">Peer</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">// Handle list of available peers to connect to</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">networkSharePeerStatusChange</span><span class="p">(</span><span class="nv">role</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerRole</span><span class="p">,</span>
+                                       <span class="nv">uuid</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">,</span>
+                                       <span class="nv">peerStatus</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerStatus</span><span class="p">,</span>
+                                       <span class="nv">tunnelStatus</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">TunnelStatus</span><span class="p">,</span>
+                                       <span class="nv">errorType</span><span class="p">:</span> <span class="kt">Error</span><span class="p">,</span>
+                                       <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Handle peer connection status changes</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Set the delegate</span>
+<span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">pairAndShare</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="n">myPeerHandler</span>
+</code></pre>
+<h3 id='callback-examples' class='heading'>Callback Examples</h3>
+
+<p>Here&rsquo;s a real-world example showing how callbacks can be used to track connected devices (adapted from the Speedify iOS app&rsquo;s Live Activities widget):</p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">PeerTracker</span><span class="p">:</span> <span class="kt">PairAndShareManagerDelegate</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="k">var</span> <span class="nv">connectedDevices</span><span class="p">:</span> <span class="p">[</span><span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">Peer</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="kd">func</span> <span class="nf">networkShareAvailable</span><span class="p">(</span><span class="nv">availableShares</span><span class="p">:</span> <span class="p">[</span><span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">Peer</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">// Filter to only show authenticated, active peers</span>
+        <span class="n">connectedDevices</span> <span class="o">=</span> <span class="n">availableShares</span><span class="o">.</span><span class="n">filter</span> <span class="p">{</span> <span class="n">peer</span> <span class="k">in</span>
+            <span class="k">return</span> <span class="n">peer</span><span class="o">.</span><span class="n">peerAsClient</span><span class="o">.</span><span class="n">tunnelStatus</span> <span class="o">==</span> <span class="o">.</span><span class="n">active</span> <span class="o">&amp;&amp;</span>
+                   <span class="n">peer</span><span class="o">.</span><span class="n">peerAsClient</span><span class="o">.</span><span class="n">peerStatus</span> <span class="o">==</span> <span class="o">.</span><span class="n">authenticated</span> <span class="o">&amp;&amp;</span>
+                   <span class="n">peer</span><span class="o">.</span><span class="n">haveAuthToken</span> <span class="o">==</span> <span class="kc">true</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Update your UI with the connected device count</span>
+        <span class="nf">updateUI</span><span class="p">(</span><span class="nv">connectedCount</span><span class="p">:</span> <span class="n">connectedDevices</span><span class="o">.</span><span class="n">count</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">networkSharePeerStatusChange</span><span class="p">(</span><span class="nv">role</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerRole</span><span class="p">,</span>
+                                       <span class="nv">uuid</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">,</span>
+                                       <span class="nv">peerStatus</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerStatus</span><span class="p">,</span>
+                                       <span class="nv">tunnelStatus</span><span class="p">:</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">TunnelStatus</span><span class="p">,</span>
+                                       <span class="nv">errorType</span><span class="p">:</span> <span class="kt">Error</span><span class="p">,</span>
+                                       <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Handle errors - remove disconnected peers from UI</span>
+        <span class="k">if</span> <span class="o">!</span><span class="n">errorMessage</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+            <span class="n">connectedDevices</span> <span class="o">=</span> <span class="n">connectedDevices</span><span class="o">.</span><span class="n">filter</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">puuid</span><span class="o">.</span><span class="n">uuid</span> <span class="o">!=</span> <span class="n">uuid</span><span class="o">.</span><span class="n">uuid</span> <span class="p">}</span>
+            <span class="nf">updateUI</span><span class="p">(</span><span class="nv">connectedCount</span><span class="p">:</span> <span class="n">connectedDevices</span><span class="o">.</span><span class="n">count</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">updateUI</span><span class="p">(</span><span class="nv">connectedCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Update your app's UI with the number of connected peers</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"Currently sharing VPN with </span><span class="se">\(</span><span class="n">connectedCount</span><span class="se">)</span><span class="s"> device(s)"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='using-notificationcenter-alternative-to-delegates' class='heading'>Using NotificationCenter (Alternative to Delegates)</h3>
+
+<p>You can also observe Pair &amp; Share events via <code>NotificationCenter</code>:</p>
+<pre class="highlight swift"><code><span class="c1">// Listen for available network shares</span>
+<span class="kt">NotificationCenter</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">addObserver</span><span class="p">(</span>
+    <span class="nv">forName</span><span class="p">:</span> <span class="o">.</span><span class="n">networkSharesAvailable</span><span class="p">,</span>
+    <span class="nv">object</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">queue</span><span class="p">:</span> <span class="o">.</span><span class="n">main</span>
+<span class="p">)</span> <span class="p">{</span> <span class="n">notification</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">peers</span> <span class="o">=</span> <span class="n">notification</span><span class="o">.</span><span class="n">object</span> <span class="k">as?</span> <span class="p">[</span><span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">Peer</span><span class="p">]</span> <span class="p">{</span>
+        <span class="c1">// Handle available peers</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Listen for peer status changes</span>
+<span class="kt">NotificationCenter</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">addObserver</span><span class="p">(</span>
+    <span class="nv">forName</span><span class="p">:</span> <span class="o">.</span><span class="n">networkSharesStatusChange</span><span class="p">,</span>
+    <span class="nv">object</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">queue</span><span class="p">:</span> <span class="o">.</span><span class="n">main</span>
+<span class="p">)</span> <span class="p">{</span> <span class="n">notification</span> <span class="k">in</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">info</span> <span class="o">=</span> <span class="n">notification</span><span class="o">.</span><span class="n">object</span> <span class="k">as?</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">uuid</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s">"uuid"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerUuid</span>
+        <span class="k">let</span> <span class="nv">peerStatus</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s">"peerStatus"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">PeerStatus</span>
+        <span class="k">let</span> <span class="nv">tunnelStatus</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s">"tunnelStatus"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">NetworkSharing</span><span class="o">.</span><span class="kt">TunnelStatus</span>
+        <span class="c1">// Handle status change</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='controlling-pair-amp-share' class='heading'>Controlling Pair &amp; Share</h3>
+
+<p>The SDK provides functions to enable/disable Pair &amp; Share functionality:</p>
+<pre class="highlight swift"><code><span class="c1">// Enable or disable hosting (sharing your VPN with others)</span>
+<span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">setNetworkShareHostEnable</span><span class="p">(</span><span class="nv">enable</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+
+<span class="c1">// Enable or disable client mode (connecting to other hosts)</span>
+<span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">setNetworkShareClientEnable</span><span class="p">(</span><span class="nv">enable</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+
+<span class="c1">// Configure auto-pairing behavior</span>
+<span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">setNetworkSharingAutoPairBehavior</span><span class="p">(</span><span class="nv">behavior</span><span class="p">:</span> <span class="o">.</span><span class="n">sameUser</span><span class="p">)</span>
+
+<span class="c1">// Set rate limits for host tunnels (in bits per second)</span>
+<span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">setNetworkSharingHostTunnelRateLimit</span><span class="p">(</span><span class="nv">rateLimit</span><span class="p">:</span> <span class="mi">10_000_000</span><span class="p">)</span> <span class="c1">// 10 Mbps</span>
+
+<span class="c1">// Refresh current network sharing settings</span>
+<span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">refreshNetworkSharingSettings</span><span class="p">()</span>
+</code></pre>
+<h3 id='complete-example' class='heading'>Complete Example</h3>
+
+<p>Here&rsquo;s a complete example of setting up Pair &amp; Share in your AppDelegate:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">UIKit</span>
+<span class="kd">import</span> <span class="n">speedifysdk</span>
+
+<span class="kd">@main</span>
+<span class="kd">class</span> <span class="kt">AppDelegate</span><span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">UIApplicationDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span>
+                     <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+
+        <span class="c1">// Start Bonjour discovery</span>
+        <span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">bonjour</span><span class="o">.</span><span class="nf">startObserver</span><span class="p">()</span>
+
+        <span class="c1">// Subscribe to Pair &amp; Share events</span>
+        <span class="kt">Speedify</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">pairAndShare</span><span class="o">.</span><span class="nf">subscribe</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='macos-considerations' class='heading'>macOS Considerations</h3>
+
+<p>On macOS, the same setup applies. Import <code>speedifymac</code> instead of <code>speedifysdk</code>:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="n">speedifymac</span>
+</code></pre>
+
+<p>The container app (not the Network Extension) should call <code>bonjour.startObserver()</code> and <code>pairAndShare.subscribe()</code>.</p>
+<h3 id='troubleshooting' class='heading'>Troubleshooting</h3>
+
+<ol>
+<li><p><strong>Local Network Permission Not Appearing</strong>: Ensure <code>NSBonjourServices</code> and <code>NSLocalNetworkUsageDescription</code> are correctly set in your Info.plist.</p></li>
+<li><p><strong>No Peers Discovered</strong>: Verify that both devices are on the same local network and have Pair &amp; Share enabled in Speedify settings.</p></li>
+<li><p><strong>Permission Denied</strong>: The SDK automatically triggers the local network permission prompt when discovery starts. If the user denied permission, they must re-enable it in System Settings/Preferences.</p></li>
+</ol>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-16-4' class='heading'>Speedify 16.4</h3>
+
+<ul>
+<li>Disconnected adapters can be removed from the networks list via <code>removeAdapter</code></li>
+<li>Pair &amp; Share and Bonjour discovery managers are now part of the SDK. Access via <code>Speedify.sharedInstance.pairAndShare</code> and <code>Speedify.sharedInstance.bonjour</code>. Call <code>pairAndShare.subscribe()</code> to subscribe to network sharing events and <code>bonjour.startObserver()</code> to start mDNS discovery. Set <code>pairAndShare.notificationDelegate</code> to receive pairing request and new peer notifications.</li>
+</ul>
 <h3 id='speedify-16-3' class='heading'>Speedify 16.3</h3>
 
 <ul>

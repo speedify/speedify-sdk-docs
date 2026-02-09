@@ -12,7 +12,7 @@ var searchData=
   ['networktype_5funknown_9',['NETWORKTYPE_UNKNOWN',['../types_8h.html#a1b0e167436dde4e47d01f7057280887baf51a69e0a2c5a3e644f50f786cbc9992',1,'types.h']]],
   ['networktype_5fvpn_10',['NETWORKTYPE_VPN',['../types_8h.html#a1b0e167436dde4e47d01f7057280887ba277d6ee1babf5d8abbf2865c58ca66c2',1,'types.h']]],
   ['networktype_5fwifi_11',['NETWORKTYPE_WIFI',['../types_8h.html#a1b0e167436dde4e47d01f7057280887bac0371be8f103c110f715d063499845c5',1,'types.h']]],
-  ['new_12',['New',['../whatsnew.html',1,'What&apos;s New'],['../index.html#autotoc_md19',1,'What&apos;s New']]],
+  ['new_12',['New',['../whatsnew.html',1,'What&apos;s New'],['../index.html#autotoc_md22',1,'What&apos;s New']]],
   ['nps_5fauthenticated_13',['NPS_AUTHENTICATED',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4a2bc3c1752e83f78106776cf59788a131',1,'types.h']]],
   ['nps_5fdisconnected_14',['NPS_DISCONNECTED',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4a54c763ea999bfb42e013adff4d7fe047',1,'types.h']]],
   ['nps_5funauthenticated_15',['NPS_UNAUTHENTICATED',['../types_8h.html#a4eff981f0c19a3aa93aad4f473c9bef4a34521f0d8b7b68c22682333a93cdb354',1,'types.h']]],

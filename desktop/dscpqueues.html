@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.3.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.4.0</span>
    </div>
   </td>
  </tr>
@@ -118,22 +118,22 @@ $(function(){ initResizable(false); });
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md0"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 CLI Configuration</h2>
 <p>DSCP queues can be configured with the Speedify CLI using the <code>speedify_cli dscp queues</code> command. To show currently configured queues, run <code>speedify_cli show dscp</code>.</p>
-<h3><a class="anchor" id="autotoc_md1"></a>
+<h3><a class="anchor" id="autotoc_md4"></a>
 Adding Queues</h3>
 <p><code>speedify_cli dscp queues add [&lt;dscp value 0-63&gt; [priority] &lt;on|off|auto&gt; [replication] &lt;on|off|auto&gt; [retransmissions] &lt;0-255&gt;] ...</code> <code>speedify_cli dscp queues set [&lt;dscp value 0-63&gt; [priority] &lt;on|off|auto&gt; [replication] &lt;on|off|auto&gt; [retransmissions] &lt;0-255&gt;] ...</code></p>
 <p><code>add</code> appends the queue(s) to the existing list of configured queues. <code>set</code> removes any existing queues and only applies the specified queue(s).</p>
 <p>The setting names <code>priority</code>, <code>replication</code>, <code>retransmissions</code> can optionally be provided in the command. For example, the following two commands are equivalent:</p>
 <p><code>speedify_cli dscp queues add 10 priority on replication on retransmissions 5</code> <code>speedify_cli dscp queues add 10 on on 5</code></p>
 <p>Each command supports defining multiple queues at once. For example, <code>speedify_cli dscp queues add 10 priority on replication on retransmissions 5 20 priority off retransmissions off 0</code></p>
-<h3><a class="anchor" id="autotoc_md2"></a>
+<h3><a class="anchor" id="autotoc_md5"></a>
 Removing Queues</h3>
 <p><code>speedify_cli dscp queues rem [dscp value 0-63] ...</code></p>
 <p>Takes a list of DSCP values to remove. For example, if queues were previously defined for DSCP values 10 and 20, they could be removed with the command:</p>
 <p><code>speedify_cli dscp queues rem 10 20</code></p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Statistics</h2>
 <p>Statistics about DSCP traffic are reported with <code>session_stats</code> under the <code>dscp</code> section.</p>
 <p>To see stats, run <code>speedify_cli stats &lt;duration&gt;</code>.</p>

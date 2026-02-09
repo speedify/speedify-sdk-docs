@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['proxy_20configuration_0',['Proxy Configuration',['../localproxy.html',1,'Local Proxy Configuration'],['../residentialproxy.html',1,'Residential Proxy Configuration']]]
+  ['network_20sharing_0',['Network Sharing',['../networksharing.html',1,'']]],
+  ['new_1',['What&apos;s New',['../whatsnew.html',1,'']]]
 ];

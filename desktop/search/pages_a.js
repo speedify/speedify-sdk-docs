@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queue_20configuration_0',['DSCP Queue Configuration',['../dscpqueues.html',1,'']]]
+  ['proxy_20configuration_0',['Proxy Configuration',['../localproxy.html',1,'Local Proxy Configuration'],['../residentialproxy.html',1,'Residential Proxy Configuration']]]
 ];

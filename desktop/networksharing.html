@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.3.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.4.0</span>
    </div>
   </td>
  </tr>
@@ -91,27 +91,27 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>As of version 14.0, Speedify SDK supports sharing cellular connections from mobile devices to other devices via Wi-Fi and/or Ethernet. These shared connections are used for VPN connection transports.</p>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 Overview</h2>
 <p>Devices discover each other via MDNS announcements and queries. Host devices (Android and iOS devices with cellular interfaces) announce themselves as network sharing hosts and run a TCP listen socket. Client devices query for hosts and connect to them. Command and control messaging is sent over these TCP sockets, with transport connections established over separate UDP sockets.</p>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Configuration</h2>
 <p><code><a class="el" href="speedifysdk_8h.html#af9f7fa83839deff547f4ec5deb548ac0">SpeedifySDK_SetNetworkSharingClientEnabled</a></code> and <code><a class="el" href="speedifysdk_8h.html#a05678b373a02fb407cf88587377a44c8">SpeedifySDK_SetNetworkSharingHostEnabled</a></code> enable network sharing on the device.</p>
 <p>A default display name is pulled from the device. This can be overridden with <code><a class="el" href="speedifysdk_8h.html#ab2d62ce134f5ec728761bcea3d62a19f">SpeedifySDK_SetNetworkSharingDisplayName</a></code>.</p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Discovery</h2>
 <p>Discovery/discoverability phases are automatically initiated on network or user data changes, and last for 10 seconds. Discovery can also be manually initiated with <code><a class="el" href="speedifysdk_8h.html#a52c5e697c69e91f955f33a72b763a922">SpeedifySDK_StartNetworkSharingDiscovery</a></code>. Each call to this starts a discovery phase which lasts for 30 seconds.</p>
 <p>Newly discovered peers are signaled via <code><a class="el" href="speedifysdk_8h.html#aa2c0d2c69a2db2c31bcb7cac42e1f62b">SpeedifySDK_ListenForNetworkShareNewPeerAvailable</a></code>.</p>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Pairing</h2>
 <p>Peers may be paired by calling <code><a class="el" href="speedifysdk_8h.html#a233e36d050733eac16b0414ee7d9201e">SpeedifySDK_RequestNetworkSharingPair</a></code>. This sends a pairing request to the peer, which is signaled via <code><a class="el" href="speedifysdk_8h.html#a273cb86466310ec86812b8001f43a3cc">SpeedifySDK_ListenForNetworkSharePairRequest</a></code> and accepted or rejected with <code><a class="el" href="speedifysdk_8h.html#a050ce15a26e0a6f24c86f390eca4f4b5">SpeedifySDK_AllowNetworkSharingPair</a></code>.</p>
 <p>Pair requests may be set to be automatically accepted or rejected with <code><a class="el" href="speedifysdk_8h.html#a0e58f10da50285640e3f38643be22448">SpeedifySDK_SetNetworkSharingPairRequestBehavior</a></code>.</p>
 <p>A peer may be removed with <code><a class="el" href="speedifysdk_8h.html#a7ab9ec1e9cf8bb7ff9b72bf3750e07c3">SpeedifySDK_UnpairNetworkSharingPeer</a></code>.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Manual Connections</h2>
 <p><code><a class="el" href="speedifysdk_8h.html#ac3e86a2aa048ca6642fa673c1ad3b85c">SpeedifySDK_ConnectToNetworkShareViaConnectCode</a></code> is used to manually connect to a network shared host via their connect code.</p>
 <p><code><a class="el" href="speedifysdk_8h.html#ab886acbb4fcad051db9bb7662a3b9c60">SpeedifySDK_ReconnectToNetworkShare</a></code> reconnects to a previously authenticated network share peer.</p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
 Status</h2>
 <p>Currently available and previously paired peers are available via <code><a class="el" href="speedifysdk_8h.html#a8500ca90ef3d3f054b5e2c33deb51dbd">SpeedifySDK_GetNetworkSharesAvailable</a></code>. </p>
 </div></div><!-- contents -->

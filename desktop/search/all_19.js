@@ -5,7 +5,7 @@ var searchData=
   ['packetsin_2',['packetsIn',['../struct_speedify_s_d_k___tun_stats.html#a44039e9f5ef3113c1d213704b658fcb4',1,'SpeedifySDK_TunStats::packetsIn'],['../struct_speedify_s_d_k___handler_stats.html#ad84b15c082a9a9ebcb07834507cf058d',1,'SpeedifySDK_HandlerStats::packetsIn']]],
   ['packetsout_3',['packetsOut',['../struct_speedify_s_d_k___tun_stats.html#a71325d64ee983838f66bd229592b2dee',1,'SpeedifySDK_TunStats::packetsOut'],['../struct_speedify_s_d_k___handler_stats.html#aa23c39f7037c0032af11f5df1933b72d',1,'SpeedifySDK_HandlerStats::packetsOut']]],
   ['packetwaits_4',['packetWaits',['../struct_speedify_s_d_k___tun_stats.html#af3bb24525b67e6e704de7f79fa3dd123',1,'SpeedifySDK_TunStats']]],
-  ['pairing_5',['Pairing',['../networksharing.html#autotoc_md16',1,'']]],
+  ['pairing_5',['Pairing',['../networksharing.html#autotoc_md19',1,'']]],
   ['pairrequestbehavior_6',['pairRequestBehavior',['../struct_speedify_s_d_k___network_sharing_settings.html#a11871c72f3291250228ace162900b333',1,'SpeedifySDK_NetworkSharingSettings']]],
   ['paymenttype_7',['paymentType',['../struct_speedify_s_d_k___accounting_data.html#a037a294ba0e59d88ed9f72b660c2c957',1,'SpeedifySDK_AccountingData']]],
   ['peerasclient_8',['peerAsClient',['../struct_speedify_s_d_k___network_share_peer.html#a815c2fa91b70bb31cdd737b616268266',1,'SpeedifySDK_NetworkSharePeer']]],
@@ -45,9 +45,9 @@ var searchData=
   ['protocol_42',['protocol',['../struct_speedify_s_d_k___protocol_port_pair.html#ae4e763e72c8bc9153c6d9616ab32d0e7',1,'SpeedifySDK_ProtocolPortPair::protocol'],['../struct_speedify_s_d_k___connection_stats.html#afb8eb8d9465837008418f4462868267e',1,'SpeedifySDK_ConnectionStats::protocol'],['../struct_speedify_s_d_k___stream_stats.html#a89da30990ecf10a24744a602836eb59d',1,'SpeedifySDK_StreamStats::protocol']]],
   ['proxieddomains_43',['proxiedDomains',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a2f5ca97d98b997a7e5d1f7e34f0b40ec',1,'SpeedifySDK_LocalProxyDomainWatchlistItem']]],
   ['proxieddomainscount_44',['proxiedDomainsCount',['../struct_speedify_s_d_k___local_proxy_domain_watchlist_item.html#a40edf488688d8722b958c22458c4e85e',1,'SpeedifySDK_LocalProxyDomainWatchlistItem']]],
-  ['proxy_20api_45',['Proxy API',['../localproxy.html#autotoc_md8',1,'Local Proxy API'],['../residentialproxy.html#autotoc_md24',1,'Residential Proxy API']]],
+  ['proxy_20api_45',['Proxy API',['../localproxy.html#autotoc_md11',1,'Local Proxy API'],['../residentialproxy.html#autotoc_md27',1,'Residential Proxy API']]],
   ['proxy_20configuration_46',['Proxy Configuration',['../localproxy.html',1,'Local Proxy Configuration'],['../residentialproxy.html',1,'Residential Proxy Configuration']]],
-  ['proxy_20hosting_47',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md26',1,'']]],
+  ['proxy_20hosting_47',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md29',1,'']]],
   ['publicip_48',['publicIP',['../struct_speedify_s_d_k___server_information.html#a8f1a925df09f34ca955754b6f68173c8',1,'SpeedifySDK_ServerInformation']]],
   ['publicipcount_49',['publicIPCount',['../struct_speedify_s_d_k___server_information.html#a4c630f60a1653404eb70edcfe8455137',1,'SpeedifySDK_ServerInformation']]]
 ];

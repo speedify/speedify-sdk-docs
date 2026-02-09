@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basic_20usage_0',['Basic Usage',['../basicusage.html',1,'']]]
+  ['arguments_0',['Daemon Arguments',['../daemonarguments.html',1,'']]]
 ];

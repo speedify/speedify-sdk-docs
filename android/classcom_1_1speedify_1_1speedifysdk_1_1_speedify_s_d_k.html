@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;16.3.0</span>
+   <div id="projectname">Speedify SDK for Android<span id="projectnumber">&#160;16.4.0</span>
    </div>
   </td>
  </tr>
@@ -314,6 +314,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c12f07e05e83399a605404c69cea9e4" id="r_a6c12f07e05e83399a605404c69cea9e4"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c12f07e05e83399a605404c69cea9e4">resetAdapterUsage</a> (@NonNull String adapterID)</td></tr>
 <tr class="memdesc:a6c12f07e05e83399a605404c69cea9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the tracked data usage on an adapter.  <br /></td></tr>
 <tr class="separator:a6c12f07e05e83399a605404c69cea9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad717502e684ac5c2e94c30a96a4ffe91" id="r_ad717502e684ac5c2e94c30a96a4ffe91"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad717502e684ac5c2e94c30a96a4ffe91">removeAdapter</a> (@NonNull String adapterID)</td></tr>
+<tr class="memdesc:ad717502e684ac5c2e94c30a96a4ffe91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an adapter from Speedify's cached adapter list.  <br /></td></tr>
+<tr class="separator:ad717502e684ac5c2e94c30a96a4ffe91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae887725a2be7d7bf53ab84a3085849b3" id="r_ae887725a2be7d7bf53ab84a3085849b3"><td class="memItemLeft" align="right" valign="top">final void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae887725a2be7d7bf53ab84a3085849b3">loginAutoAccount</a> ()</td></tr>
 <tr class="memdesc:ae887725a2be7d7bf53ab84a3085849b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs out of any current account and logs in to an automatically generated account for this device.  <br /></td></tr>
 <tr class="separator:ae887725a2be7d7bf53ab84a3085849b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2593,6 +2596,32 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>11.9.2 </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated</a></b></dt><dd>as of 14.7. use <code><a class="el" href="classcom_1_1speedify_1_1speedifysdk_1_1_multi_receiver_manager.html#a9e8deb2197bf53ff822a4aaf70645a54">sdkStateReceivers.register</a></code> instead </dd></dl>
+
+</div>
+</div>
+<a id="ad717502e684ac5c2e94c30a96a4ffe91" name="ad717502e684ac5c2e94c30a96a4ffe91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad717502e684ac5c2e94c30a96a4ffe91">&#9670;&#160;</a></span>removeAdapter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final void removeAdapter </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull String</td>          <td class="paramname"><span class="paramname"><em>adapterID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an adapter from Speedify's cached adapter list. </p>
+<p>Use this to clean up stale adapters that are no longer present on the system. The adapter must not be currently connected. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adapterID</td><td>ID of the adapter to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>16.4 </dd></dl>
 
 </div>
 </div>

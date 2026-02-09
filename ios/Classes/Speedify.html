@@ -41,6 +41,18 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Classes/BonjourManager.html">BonjourManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetBrowser.html">NetBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetServicePublisher.html">NetServicePublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PairAndShareManager.html">PairAndShareManager</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/Speedify.html">Speedify</a>
               </li>
               <li class="nav-group-task">
@@ -137,7 +149,16 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Protocols/ClientShareDiscovery.html">ClientShareDiscovery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/PacketTunnelSafeBrowsingBlockDelegate.html">PacketTunnelSafeBrowsingBlockDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PairAndShareManagerDelegate.html">PairAndShareManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PairAndShareNotificationDelegate.html">PairAndShareNotificationDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SafeBrowsingInternalMessageDelegate.html">SafeBrowsingInternalMessageDelegate</a>
@@ -1684,6 +1705,62 @@ allows a user to determine the existing profile settings</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sbiDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SafeBrowsingInternalMessageDelegate.html">SafeBrowsingInternalMessageDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(py)pairAndShare"></a>
+                    <a name="//apple_ref/swift/Property/pairAndShare" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(py)pairAndShare">pairAndShare</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pair and Share manager for network sharing functionality</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">pairAndShare</span><span class="p">:</span> <span class="kt"><a href="../Classes/PairAndShareManager.html">PairAndShareManager</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(py)bonjour"></a>
+                    <a name="//apple_ref/swift/Property/bonjour" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(py)bonjour">bonjour</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bonjour manager for mDNS discovery</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">bonjour</span><span class="p">:</span> <span class="kt"><a href="../Classes/BonjourManager.html">BonjourManager</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -6460,6 +6537,39 @@ reason will not be updated in the database until the next extension launch.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetAdapterUsage</span><span class="p">(</span><span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC13removeAdapter9adapterIDySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeAdapter(adapterID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13removeAdapter9adapterIDySS_tF">removeAdapter(adapterID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Removes an adapter from Speedify&rsquo;s cached adapter list.</li>
+<li>Use this to clean up stale adapters that are no longer present on the system.</li>
+<li>The adapter must not be currently connected.</li>
+<li><p>@since 16.4</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAdapter</span><span class="p">(</span><span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

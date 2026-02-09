@@ -3,7 +3,7 @@ var searchData=
   ['mac_2emd_0',['mac.md',['../mac_8md.html',1,'']]],
   ['macos_1',['Speedify SDK for MacOS',['../macos.html',1,'']]],
   ['major_2',['major',['../struct_speedify_s_d_k___version.html#a44ae854a344a3833f0fd182a179f84df',1,'SpeedifySDK_Version']]],
-  ['manual_20connections_3',['Manual Connections',['../networksharing.html#autotoc_md17',1,'']]],
+  ['manual_20connections_3',['Manual Connections',['../networksharing.html#autotoc_md20',1,'']]],
   ['matchmode_4',['matchMode',['../struct_speedify_s_d_k___local_proxy_settings.html#a513e9b13254bff7384cea3f195018906',1,'SpeedifySDK_LocalProxySettings']]],
   ['maxdownloadspeed_5',['maxDownloadSpeed',['../struct_speedify_s_d_k___session_stats.html#ac5ca5a760f9abf13955f574775d9de19',1,'SpeedifySDK_SessionStats']]],
   ['maximumconnectretry_6',['maximumConnectRetry',['../struct_speedify_s_d_k___settings.html#ad4368a5b5bc8a4244bec27b746ec4f5d',1,'SpeedifySDK_Settings']]],

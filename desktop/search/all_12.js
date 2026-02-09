@@ -4,7 +4,7 @@ var searchData=
   ['inflight_1',['inFlight',['../struct_speedify_s_d_k___connection_stats.html#a3ca6775f113be39f64adde18e231b068',1,'SpeedifySDK_ConnectionStats']]],
   ['inflightwindow_2',['inFlightWindow',['../struct_speedify_s_d_k___connection_stats.html#a9ab007b3e61eb1f49e3431be53999bd9',1,'SpeedifySDK_ConnectionStats']]],
   ['initialized_3',['initialized',['../struct_speedify_s_d_k___safe_browsing_result.html#a4086401dd7adbbb4b996a07820362855',1,'SpeedifySDK_SafeBrowsingResult']]],
-  ['integration_20guide_4',['Integration Guide',['../index.html#autotoc_md20',1,'Common Integration Guide'],['../index.html#autotoc_md22',1,'Dispatch Integration Guide'],['../index.html#autotoc_md21',1,'Speedify Integration Guide']]],
+  ['integration_20guide_4',['Integration Guide',['../index.html#autotoc_md23',1,'Common Integration Guide'],['../index.html#autotoc_md25',1,'Dispatch Integration Guide'],['../index.html#autotoc_md24',1,'Speedify Integration Guide']]],
   ['introduction_20to_20dispatch_5',['Introduction to Dispatch',['../dispatch_intro.html',1,'']]],
   ['introduction_20to_20the_20speedify_20sdk_20for_20desktop_20embedded_6',['Introduction to the Speedify SDK for Desktop/Embedded',['../index.html',1,'']]],
   ['ip_7',['ip',['../struct_speedify_s_d_k___create_settings.html#a777e35d7d47f910570e1a55c4b639cbb',1,'SpeedifySDK_CreateSettings']]],

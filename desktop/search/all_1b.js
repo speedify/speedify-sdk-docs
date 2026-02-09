@@ -11,10 +11,10 @@ var searchData=
   ['redundantmodesaves_8',['redundantModeSaves',['../struct_speedify_s_d_k___stream_stats.html#acbb8d7ee60dcff367912d9edc3168cc9',1,'SpeedifySDK_StreamStats']]],
   ['remoteip_9',['remoteIp',['../struct_speedify_s_d_k___connection_stats.html#a6f7ae1268215eb0516cb2c6340fe0d2f',1,'SpeedifySDK_ConnectionStats::remoteIp'],['../struct_speedify_s_d_k___stream_stats.html#ac6053227578b21d2e0ef2738c0a8412c',1,'SpeedifySDK_StreamStats::remoteIp']]],
   ['remoteport_10',['remotePort',['../struct_speedify_s_d_k___stream_stats.html#a46c50ea3ae0cc8c1f00053ade8005419',1,'SpeedifySDK_StreamStats']]],
-  ['removing_20queues_11',['Removing Queues',['../dscpqueues.html#autotoc_md2',1,'']]],
+  ['removing_20queues_11',['Removing Queues',['../dscpqueues.html#autotoc_md5',1,'']]],
   ['replication_12',['replication',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a03a751cbe9d27adc4c23077417c629c1',1,'SpeedifySDK_DSCPQueue']]],
   ['requesttodisabledoh_13',['requestToDisableDoH',['../struct_speedify_s_d_k___privacy_settings.html#af3ac81d12c78ad6cf28319b0109c71fd',1,'SpeedifySDK_PrivacySettings']]],
-  ['residential_20proxy_20api_14',['Residential Proxy API',['../residentialproxy.html#autotoc_md24',1,'']]],
+  ['residential_20proxy_20api_14',['Residential Proxy API',['../residentialproxy.html#autotoc_md27',1,'']]],
   ['residential_20proxy_20configuration_15',['Residential Proxy Configuration',['../residentialproxy.html',1,'']]],
   ['residentialproxy_2emd_16',['residentialproxy.md',['../residentialproxy_8md.html',1,'']]],
   ['residentialproxyenabled_17',['residentialProxyEnabled',['../struct_speedify_s_d_k___privacy_settings.html#a6dfcf01bdaa4f430cdb395029bbd477e',1,'SpeedifySDK_PrivacySettings']]],
@@ -26,10 +26,10 @@ var searchData=
   ['retransbytes_23',['retransBytes',['../struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578',1,'SpeedifySDK_SessionStats']]],
   ['retransmissionattempts_24',['retransmissionAttempts',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a9bc38bbb77fdde429a7a8d38eee5e312',1,'SpeedifySDK_DSCPQueue']]],
   ['retries_25',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]],
-  ['reverse_20proxy_20hosting_26',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md26',1,'']]],
+  ['reverse_20proxy_20hosting_26',['Secured Reverse Proxy Hosting',['../routerui.html#autotoc_md29',1,'']]],
   ['role_27',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult::role'],['../struct_speedify_s_d_k___system_data.html#a9358a8787c0ecd242ef035244ea70ad2',1,'SpeedifySDK_SystemData::role']]],
   ['router_20ui_28',['Embedding the Router UI',['../routerui.html',1,'']]],
   ['routerui_2edox_29',['routerui.dox',['../routerui_8dox.html',1,'']]],
   ['rulesjson_30',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]],
-  ['running_31',['Running',['../linux.html#autotoc_md7',1,'Running'],['../macos.html#autotoc_md12',1,'Running'],['../windows.html#autotoc_md147',1,'Running']]]
+  ['running_31',['Running',['../linux.html#autotoc_md10',1,'Running'],['../macos.html#autotoc_md15',1,'Running'],['../windows.html#autotoc_md151',1,'Running']]]
 ];
