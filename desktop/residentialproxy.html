@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.4.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.5.0</span>
    </div>
   </td>
  </tr>
@@ -90,8 +90,8 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Residential Proxy Configuration</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The Residential Proxy API instructs the currently connected Speed Server to put specific traffic from the configured ports through a proxy running on a residential IP address. This is useful for accessing content that may be blocked or restricted when accessed via data center IP addresses. By default, TCP ports 80 and 443 are proxied when the residential proxy is enabled.</p>
-<p>As on 16.3, only TCP traffic is supported for residential proxying.</p>
+<div class="textblock"><p>The Residential Proxy API instructs the currently connected Speed Server to put specific traffic from the configured ports through a proxy running on a residential IP address. This is useful for accessing content that may be blocked or restricted when accessed via data center IP addresses. By default, TCP and UDP ports 53, 80, and 443 are proxied when the residential proxy is enabled.</p>
+<p>As on 16.3, only TCP traffic is supported for residential proxying. As of 16.5, UDP traffic is also supported.</p>
 <h2><a class="anchor" id="autotoc_md27"></a>
 Residential Proxy API</h2>
 <ul>

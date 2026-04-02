@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.4.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.5.0</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ Secured Reverse Proxy Hosting</h2>
 <div class="line">    proxy_set_header Upgrade $http_upgrade;</div>
 <div class="line">    proxy_set_header Connection <span class="stringliteral">&quot;upgrade&quot;</span>;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>The Speedify UI can be embedded into your existing UI via an iframe. Use the wsPort and wsEndpoint query parameters to tell the Speedify UI where to connect to the Speedify API. The following is an example iframe that embeds the Speedify UI into your existing UI: </p><div class="fragment"><div class="line">&lt;iframe src=<span class="stringliteral">&quot;/speedify/view/index.html?wsPort=match&amp;wsEndpoint=/speedify/api/ws&quot;</span> width=<span class="stringliteral">&quot;100%&quot;</span> height=<span class="stringliteral">&quot;80vh&quot;</span> style=<span class="stringliteral">&quot;border:none&quot;</span>&gt;&lt;/iframe&gt;</div>
+</div><!-- fragment --><p>The Speedify UI can be embedded into your existing UI via an iframe. Use the wsPort and wsEndpoint query parameters to tell the Speedify UI where to connect to the Speedify API. The following is an example iframe that embeds the Speedify UI into your existing UI: </p><div class="fragment"><div class="line">&lt;iframe src=<span class="stringliteral">&quot;/speedify/view/index.html#/?wsPort=match&amp;wsEndpoint=/speedify/api/ws&quot;</span> width=<span class="stringliteral">&quot;100%&quot;</span> height=<span class="stringliteral">&quot;80vh&quot;</span> style=<span class="stringliteral">&quot;border:none&quot;</span>&gt;&lt;/iframe&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md30"></a>
 Direct Access via Basic Web Server</h2>
 <p>If you do not have a reverse proxy, you can host the Speedify UI directly from a basic web server. You will need to disable Speedify API protection in order to allow the Speedify UI to access the Speedify API. This means that other devices on the network would have the ability to access the Speedify API to change settings, connect and disconnect Speedify, etc.</p>

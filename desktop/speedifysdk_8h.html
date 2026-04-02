@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.4.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.5.0</span>
    </div>
   </td>
  </tr>
@@ -520,6 +520,8 @@ Functions</h2></td></tr>
 <tr class="separator:a575025ab8f983bb3a1ab825263e9bc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2a96a6beae593b976b86b9a2445292" id="r_ade2a96a6beae593b976b86b9a2445292"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade2a96a6beae593b976b86b9a2445292">SpeedifySDK_SetAdvancedIspStats</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="callbacks_8h.html#ac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
 <tr class="separator:ade2a96a6beae593b976b86b9a2445292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaee3c190d00d0678951066ea3f9eb5d" id="r_adaee3c190d00d0678951066ea3f9eb5d"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaee3c190d00d0678951066ea3f9eb5d">SpeedifySDK_SetAppAnalytics</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, bool enabled, <a class="el" href="callbacks_8h.html#ac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
+<tr class="separator:adaee3c190d00d0678951066ea3f9eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a290a4b990cf3dc038fbd1c6a26dced7d" id="r_a290a4b990cf3dc038fbd1c6a26dced7d"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___system_data_result.html">SpeedifySDK_SystemDataResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a290a4b990cf3dc038fbd1c6a26dced7d">SpeedifySDK_GetSystemData</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="callbacks_8h.html#a47308d2474c13a5c352503e91acb24a4">SpeedifySDK_SystemDataCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
 <tr class="separator:a290a4b990cf3dc038fbd1c6a26dced7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bf2584e9eaa056d578b1d4a03a24d4" id="r_a06bf2584e9eaa056d578b1d4a03a24d4"><td class="memItemLeft" align="right" valign="top">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___system_data_result.html">SpeedifySDK_SystemDataResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06bf2584e9eaa056d578b1d4a03a24d4">SpeedifySDK_SetDeviceRole</a> (<a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, <a class="el" href="types_8h.html#aaf3618d8bd896e177111f92573571f3f">SpeedifySDK_DeviceRole</a> role, <a class="el" href="callbacks_8h.html#a47308d2474c13a5c352503e91acb24a4">SpeedifySDK_SystemDataCallback</a> cb SpeedifySDK_DEFAULTNULL, void *userData SpeedifySDK_DEFAULTNULL)</td></tr>
@@ -3303,6 +3305,37 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetAPIProtection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a></td>          <td class="paramname"><span class="paramname"><em>sdk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="callbacks_8h.html#ac33c88e37bed0d880d46ca60018f1c60">SpeedifySDK_PrivacySettingsCallback</a> cb</td>          <td class="paramname"><span class="paramname"><em>SpeedifySDK_DEFAULTNULL</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *userData</td>          <td class="paramname"><span class="paramname"><em>SpeedifySDK_DEFAULTNULL</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaee3c190d00d0678951066ea3f9eb5d" name="adaee3c190d00d0678951066ea3f9eb5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaee3c190d00d0678951066ea3f9eb5d">&#9670;&#160;</a></span>SpeedifySDK_SetAppAnalytics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ENABLE_NETWORK_SHARING <a class="el" href="struct_speedify_s_d_k___privacy_settings_result.html">SpeedifySDK_PrivacySettingsResult</a> SpeedifySDK_SetAppAnalytics </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a></td>          <td class="paramname"><span class="paramname"><em>sdk</em></span>, </td>
         </tr>

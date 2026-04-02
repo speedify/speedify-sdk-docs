@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Settings</title>
+<link href="../../../../../images/speedify.webp" rel="icon" type="image/webp"><script>var pathToRoot = "../../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../../../styles/dokka-custom.css" rel="Stylesheet">
+<link href="../../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../../../index.html" tabindex="1">
+                    Speedify SDK for Android 16.5.0.14084
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":speedifysdk/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":speedifysdk/main" data-filter=":speedifysdk/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Speedify SDK for Android 16.5.0.14084
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="SpeedifySDK::com.speedify.speedifysdk/Types.NetworkSharing.Settings///PointingToDeclaration//376528755">
+  <div class="breadcrumbs"><a href="../../../../index.html">SpeedifySDK</a><span class="delimiter">/</span><a href="../../../index.html">com.speedify.speedifysdk</a><span class="delimiter">/</span><a href="../../index.html">Types</a><span class="delimiter">/</span><a href="../index.html">NetworkSharing</a><span class="delimiter">/</span><span class="current">Settings</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Settings</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">Settings</a></div><p class="paragraph">Network Sharing Settings</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">14.0</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-753763421%2FConstructors%2F376528755" anchor-label="Settings" id="-753763421%2FConstructors%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-settings.html"><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-753763421%2FConstructors%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1234817784%2FProperties%2F376528755" anchor-label="appName" id="-1234817784%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="app-name.html"><span>app</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1234817784%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="app-name.html">appName</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief ">The application name for this peer</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="199652171%2FProperties%2F376528755" anchor-label="autoPairBehavior" id="199652171%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="auto-pair-behavior.html"><span>auto</span><wbr><span>Pair</span><wbr><span><span>Behavior</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="199652171%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="auto-pair-behavior.html">autoPairBehavior</a><span class="token operator">: </span><a href="../-auto-pair-behavior/index.html">Types.NetworkSharing.AutoPairBehavior</a></div><div class="brief ">If devices from the same user and/or team are automatically paired</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1315323486%2FProperties%2F376528755" anchor-label="clientEnabled" id="1315323486%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="client-enabled.html"><span>client</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1315323486%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="client-enabled.html">clientEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">if network sharing client is enabled</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="761617031%2FProperties%2F376528755" anchor-label="displayName" id="761617031%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="display-name.html"><span>display</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="761617031%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="display-name.html">displayName</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html">String</a></div><div class="brief ">The public display name for this peer</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-555426683%2FProperties%2F376528755" anchor-label="hostConnectCode" id="-555426683%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="host-connect-code.html"><span>host</span><wbr><span>Connect</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-555426683%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="host-connect-code.html">hostConnectCode</a><span class="token operator">: </span><a href="../-connect-code/index.html">Types.NetworkSharing.ConnectCode</a></div><div class="brief ">json data used for clients to manually connect to this host</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1710577147%2FProperties%2F376528755" anchor-label="hostEnabled" id="1710577147%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="host-enabled.html"><span>host</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1710577147%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="host-enabled.html">hostEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">if network sharing host is enabled</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-289904823%2FProperties%2F376528755" anchor-label="hostTunnelRateLimit" id="-289904823%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="host-tunnel-rate-limit.html"><span>host</span><wbr><span>Tunnel</span><wbr><span>Rate</span><wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-289904823%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="host-tunnel-rate-limit.html">hostTunnelRateLimit</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">host tunnel rate limit in bits per second (0 for unlimited)</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="900395885%2FProperties%2F376528755" anchor-label="pairRequestBehavior" id="900395885%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pair-request-behavior.html"><span>pair</span><wbr><span>Request</span><wbr><span><span>Behavior</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="900395885%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="pair-request-behavior.html">pairRequestBehavior</a><span class="token operator">: </span><a href="../-pair-request-behavior/index.html">Types.NetworkSharing.PairRequestBehavior</a></div><div class="brief ">How pair requests are handled</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-786146004%2FProperties%2F376528755" anchor-label="sameUserAutoPair" id="-786146004%2FProperties%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="same-user-auto-pair.html"><span>same</span><wbr><span>User</span><wbr><span>Auto</span><wbr><span><span>Pair</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-786146004%2FProperties%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="same-user-auto-pair.html"><strike>sameUserAutoPair</strike></a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">If devices from the same user are automatically paired</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -659,6 +659,22 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li><p><strong>Permission Denied</strong>: The SDK automatically triggers the local network permission prompt when discovery starts. If the user denied permission, they must re-enable it in System Settings/Preferences.</p></li>
 </ol>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-16-5' class='heading'>Speedify 16.5</h3>
+
+<ul>
+<li><code><a href="Structs/ConnectionStats.html">ConnectionStats</a></code> objects now include <code>bondingFiltered</code> and <code>poorConnection</code> fields to indicate whether the connection is being filtered by bonding rules and whether the connection is currently considered poor by Speedify&rsquo;s algorithms, respectively.</li>
+<li>UDP traffic is now supported for residential proxying. Use <code>setResidentialProxyPorts</code> to specify UDP ports to proxy. By default, TCP and UDP ports 53, 80, and 443 are proxied when the residential proxy is enabled.</li>
+</ul>
+<h3 id='speedify-16-4-2' class='heading'>Speedify 16.4.2</h3>
+
+<ul>
+<li>Pair and Share SDK improvements and bug fixes</li>
+</ul>
+<h3 id='speedify-16-4-1' class='heading'>Speedify 16.4.1</h3>
+
+<ul>
+<li>No new features. This is a performance and stability release.</li>
+</ul>
 <h3 id='speedify-16-4' class='heading'>Speedify 16.4</h3>
 
 <ul>

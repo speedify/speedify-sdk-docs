@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Integration Guide - Speedify SDK for Android 16.5.0.1</title>
+    <link href="../images/speedify.webp" rel="icon" type="image/webp">
+    <script>var pathToRoot = "../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+    <script type="text/javascript" src="../scripts/sourceset_dependencies.js" async="async"></script>
+    <link href="../styles/style.css" rel="Stylesheet">
+    <link href="../styles/main.css" rel="Stylesheet">
+    <link href="../styles/prism.css" rel="Stylesheet">
+    <link href="../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../ui-kit/ui-kit.min.css" rel="Stylesheet">
+    <script type="text/javascript" src="../scripts/safe-local-storage_blocking.js"></script>
+    <script type="text/javascript" src="../scripts/navigation-loader.js" async="async"></script>
+    <script type="text/javascript" src="../scripts/platform-content-handler.js" async="async"></script>
+    <script type="text/javascript" src="../scripts/main.js" defer="defer"></script>
+    <script type="text/javascript" src="../scripts/prism.js" async="async"></script>
+    <script type="text/javascript" src="../ui-kit/ui-kit.min.js" defer="defer"></script>
+    <link href="../styles/dokka-custom.css" rel="Stylesheet">
+    <style>
+        .guide-content { padding: 1rem 0 3rem; }
+        .guide-content h1 { border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .guide-content h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;
+                            margin-top: 2rem; }
+        .guide-content pre { background: var(--color-background-code-block); padding: 1rem; border-radius: 4px;
+                             overflow-x: auto; font: var(--font-code); }
+        .guide-content code { background: var(--color-background-inline-code); padding: 0.15rem 0.3rem;
+                              border-radius: 3px; font: var(--font-code); }
+        .guide-content pre code { background: none; padding: 0; }
+    </style>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../index.html" tabindex="1">
+                    Speedify SDK for Android 16.5.0.1
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Speedify SDK for Android 16.5.0.1
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content">
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 16.5.0.1</a><span class="delimiter">/</span>
+                    <a href="index.html">Guides</a><span class="delimiter">/</span>
+                    <span class="current">Integration Guide</span></div>
+  <div class="cover ">
+    <div class="guide-content">
+<body><h2><a id="integrate_maven"></a>Integration via Maven Repository</h2><p>Include the Connectify (<a href="https://nexus.connectify.me/repository/maven-releases">https://nexus.connectify.me/repository/maven-releases</a>) and Google (<a href="https://maven.google.com">https://maven.google.com</a>) maven repositories, and set your credentials :</p><pre><code>  repositories {
+    ...
+    google()
+    maven {
+      url &quot;https://nexus.connectify.me/repository/maven-releases&quot;
+      credentials {
+        username &quot;...&quot;
+        password &quot;...&quot;
+      }
+    }
+  }
+</code></pre><p>It is advisable to store your username and password in a gradle-local.properties file that is excluded from version control so that you do not commit your credentials.</p><p>Add a dependency on the SpeedifySDK :</p><pre><code>  dependencies {
+    ...
+    implementation 'com.speedify.speedifysdk:speedifysdk:16.5.0+'
+
+    /* If using Dispatch, also add */
+    implementation 'com.speedify.speedifysdk:dispatch:16.5.0+'
+
+    /* If using Enhanced Statistics, also add */
+    implementation 'com.speedify.speedifysdk:enhanced-statistics:16.5.0+'
+  }
+</code></pre><h2><a id="integrate_aar"></a>Integration via AAR File</h2><p>Include the Google (<a href="https://maven.google.com">https://maven.google.com</a>) maven repository :</p><pre><code>  repositories {
+    ...
+    google()
+  }
+</code></pre><p>Download the .aar file from Connectify (<a href="https://nexus.connectify.me/repository/maven-releases">https://nexus.connectify.me/repository/maven-releases</a>).</p><p>Add a dependency on the SpeedifySDK, as well as its dependencies :</p><pre><code>  dependencies {
+    ...
+    implementation files('libs/speedifysdk-16.5.0+1.aar')
+    implementation 'androidx.core:core:1.18.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'org.slf4j:slf4j-api:2.0.17'
+    implementation 'com.github.tony19:logback-android:3.0.0'
+
+    /* If using Dispatch, also add */
+    implementation files('libs/dispatch-16.5.0+1.aar')
+    implementation 'androidx.annotation:annotation:1.9.1'
+
+    /* If using Enhanced Statistics, also add */
+    implementation files('libs/enhanced-statistics-16.5.0+1.aar')
+    implementation 'androidx.annotation:annotation:1.9.1'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+  }
+</code></pre><h2><a id="sdk_authorization"></a>SDK Authorization</h2><p>Apps built on the Speedify for Android SDK requires authorization to connect to the Speedify cloud backend. Contact support@speedify.com with your app's package name and signing certificate hash to obtain authorization. Note that you may have different signing certificates for debug and release builds.</p><pre><code>  $ keytool -list -v -keystore ~/.android/[your keystore file]
+  ...
+  SHA256: 1A:2B:3C:4D:5E:6F:7G:8H:9I:0J:1K:2L:3M:4N:5O:6P:7Q:8R:9S:0T:1U:2V:3W:4X:5Y:6Z
+  ...
+</code></pre></body>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>Copyright &copy; Connectify, Inc. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

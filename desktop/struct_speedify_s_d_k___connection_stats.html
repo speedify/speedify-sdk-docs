@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.4.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.5.0</span>
    </div>
   </td>
  </tr>
@@ -178,6 +178,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:af9e52b2f2604f6da8a77092927df575c" id="r_af9e52b2f2604f6da8a77092927df575c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9e52b2f2604f6da8a77092927df575c">downloadCongested</a></td></tr>
 <tr class="memdesc:af9e52b2f2604f6da8a77092927df575c"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the connection is congested in the download direction.  <br /></td></tr>
 <tr class="separator:af9e52b2f2604f6da8a77092927df575c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac596dff6ccb5912f968f48d6a5674c49" id="r_ac596dff6ccb5912f968f48d6a5674c49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac596dff6ccb5912f968f48d6a5674c49">bondingFiltered</a></td></tr>
+<tr class="memdesc:ac596dff6ccb5912f968f48d6a5674c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if bonding is filtered on this connection.  <br /></td></tr>
+<tr class="separator:ac596dff6ccb5912f968f48d6a5674c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774985b3fe79181caac1ecc0f71c4194" id="r_a774985b3fe79181caac1ecc0f71c4194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a774985b3fe79181caac1ecc0f71c4194">poorConnection</a></td></tr>
+<tr class="memdesc:a774985b3fe79181caac1ecc0f71c4194"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if this is a poor connection.  <br /></td></tr>
+<tr class="separator:a774985b3fe79181caac1ecc0f71c4194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Statistics about a connection. </p>
@@ -198,6 +204,23 @@ Data Fields</h2></td></tr>
 
 <p>Adapter unique ID. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="ac596dff6ccb5912f968f48d6a5674c49" name="ac596dff6ccb5912f968f48d6a5674c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac596dff6ccb5912f968f48d6a5674c49">&#9670;&#160;</a></span>bondingFiltered</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_ConnectionStats::bondingFiltered</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if bonding is filtered on this connection. </p>
+<p>Not available on historic tunnel stat updates. </p><dl class="section since"><dt>Since</dt><dd>16.5 </dd></dl>
 
 </div>
 </div>
@@ -419,6 +442,23 @@ Data Fields</h2></td></tr>
 
 <p>Number of active sockets for this connection. </p>
 <p>Not available on historic tunnel stat updates. Not available on 'speedify' adapter. </p><dl class="section since"><dt>Since</dt><dd>10.9.5 </dd></dl>
+
+</div>
+</div>
+<a id="a774985b3fe79181caac1ecc0f71c4194" name="a774985b3fe79181caac1ecc0f71c4194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774985b3fe79181caac1ecc0f71c4194">&#9670;&#160;</a></span>poorConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_ConnectionStats::poorConnection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>True if this is a poor connection. </p>
+<p>Not available on historic tunnel stat updates. </p><dl class="section since"><dt>Since</dt><dd>16.5 </dd></dl>
 
 </div>
 </div>

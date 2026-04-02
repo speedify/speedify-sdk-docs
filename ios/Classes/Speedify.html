@@ -1849,6 +1849,35 @@ allows a user to determine the existing profile settings</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(py)suppressStarscreamLifecycle"></a>
+                    <a name="//apple_ref/swift/Property/suppressStarscreamLifecycle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(py)suppressStarscreamLifecycle">suppressStarscreamLifecycle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Temporarily suppress Starscream lifecycle handling (background/foreground)
+during window transitions so the daemon connection stays alive.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">suppressStarscreamLifecycle</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)respondsToLifeCycleEventsWithResponds:"></a>
                     <a name="//apple_ref/swift/Method/respondsToLifeCycleEvents(responds:)" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)respondsToLifeCycleEventsWithResponds:">respondsToLifeCycleEvents(responds:<wbr>)</a>
@@ -3640,6 +3669,437 @@ Current value available from <code><a href="../Classes/Speedify.html#/s:11speedi
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkShareClientEnable</span><span class="p">(</span><span class="nv">enable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28setNetworkSharingDisplayName07displayG0ySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkSharingDisplayName(displayName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28setNetworkSharingDisplayName07displayG0ySS_tF">setNetworkSharingDisplayName(displayName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the display name of this device.</p>
+
+<ul>
+<li>@param displayName the name shown to peers during discovery</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareSettingsUpdated</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkSharingDisplayName</span><span class="p">(</span><span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC36setNetworkSharingPairRequestBehavior8behavioryAA0dE0V0fgH0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkSharingPairRequestBehavior(behavior:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC36setNetworkSharingPairRequestBehavior8behavioryAA0dE0V0fgH0O_tF">setNetworkSharingPairRequestBehavior(behavior:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the behavior when a pair request is received from a peer.</p>
+
+<ul>
+<li>@param behavior how incoming pair requests should be handled (.ask, .accept, .reject)</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareSettingsUpdated</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkSharingPairRequestBehavior</span><span class="p">(</span><span class="nv">behavior</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PairRequestBehavior</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC35connectToNetworkShareViaConnectCode0cI0yAA0E7SharingV0hI0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/connectToNetworkShareViaConnectCode(connectCode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC35connectToNetworkShareViaConnectCode0cI0yAA0E7SharingV0hI0V_tF">connectToNetworkShareViaConnectCode(connectCode:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connects to a network share manually via a connect code.</p>
+
+<ul>
+<li>Used on remote clients.</li>
+<li>@param connectCode the hostConnectCode of the host</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectToNetworkShareViaConnectCode</span><span class="p">(</span><span class="nv">connectCode</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">ConnectCode</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23reconnectToNetworkShare8peerUuidyAA0E7SharingV04PeerH0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/reconnectToNetworkShare(peerUuid:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23reconnectToNetworkShare8peerUuidyAA0E7SharingV04PeerH0V_tF">reconnectToNetworkShare(peerUuid:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reconnects to a previously authenticated network share.</p>
+
+<ul>
+<li>@param peerUuid the uuid of the host</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reconnectToNetworkShare</span><span class="p">(</span><span class="nv">peerUuid</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC28startNetworkSharingDiscoveryyyF"></a>
+                    <a name="//apple_ref/swift/Method/startNetworkSharingDiscovery()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC28startNetworkSharingDiscoveryyyF">startNetworkSharingDiscovery()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Manually start (or restart) a discovery session lasting 30 seconds.</p>
+
+<ul>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareDiscoveryUpdated</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startNetworkSharingDiscovery</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC30refreshNetworkSharingDiscoveryyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshNetworkSharingDiscovery()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC30refreshNetworkSharingDiscoveryyyF">refreshNetworkSharingDiscovery()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the state of network sharing discovery.</p>
+
+<ul>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareDiscoveryUpdated</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshNetworkSharingDiscovery</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC29refreshNetworkSharesAvailableyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshNetworkSharesAvailable()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC29refreshNetworkSharesAvailableyyF">refreshNetworkSharesAvailable()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the discovered network shares.</p>
+
+<ul>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshNetworkSharesAvailable</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC25requestNetworkSharingPair8peerUuidyAA0dE0V04PeerH0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/requestNetworkSharingPair(peerUuid:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC25requestNetworkSharingPair8peerUuidyAA0dE0V04PeerH0V_tF">requestNetworkSharingPair(peerUuid:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initiate a pair request with the specified peer.</p>
+
+<ul>
+<li>@param peerUuid the UUID of the device to pair with</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">requestNetworkSharingPair</span><span class="p">(</span><span class="nv">peerUuid</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC23allowNetworkSharingPair8peerUuid7allowedyAA0dE0V04PeerH0V_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/allowNetworkSharingPair(peerUuid:allowed:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC23allowNetworkSharingPair8peerUuid7allowedyAA0dE0V04PeerH0V_SbtF">allowNetworkSharingPair(peerUuid:<wbr>allowed:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allow or deny a pair request from the specified peer.</p>
+
+<ul>
+<li>@param peerUuid the UUID of the device requesting the pair</li>
+<li>@param allowed whether to allow or deny the pair request</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">allowNetworkSharingPair</span><span class="p">(</span><span class="nv">peerUuid</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">,</span> <span class="nv">allowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC24unpairNetworkSharingPeer8peerUuidyAA0dE0V0fH0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/unpairNetworkSharingPeer(peerUuid:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC24unpairNetworkSharingPeer8peerUuidyAA0dE0V0fH0V_tF">unpairNetworkSharingPeer(peerUuid:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unpair from a device at the given UUID.</p>
+
+<ul>
+<li>@param peerUuid the UUID of the device to unpair from</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unpairNetworkSharingPeer</span><span class="p">(</span><span class="nv">peerUuid</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC34setNetworkSharingPeerAutoReconnect8peerUuid7allowedyAA0dE0V0fJ0V_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkSharingPeerAutoReconnect(peerUuid:allowed:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC34setNetworkSharingPeerAutoReconnect8peerUuid7allowedyAA0dE0V0fJ0V_SbtF">setNetworkSharingPeerAutoReconnect(peerUuid:<wbr>allowed:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets whether this device should automatically reconnect on discovery to a known network share.</p>
+
+<ul>
+<li>@param peerUuid the UUID of the device to configure</li>
+<li>@param allowed whether to enable or disable auto-reconnect</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkSharingPeerAutoReconnect</span><span class="p">(</span><span class="nv">peerUuid</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">,</span> <span class="nv">allowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC32setNetworkSharingPeerAllowAsHost8peerUuid7allowedyAA0dE0V0fK0V_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkSharingPeerAllowAsHost(peerUuid:allowed:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC32setNetworkSharingPeerAllowAsHost8peerUuid7allowedyAA0dE0V0fK0V_SbtF">setNetworkSharingPeerAllowAsHost(peerUuid:<wbr>allowed:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets whether the peer at the given UUID may be treated as a host.</p>
+
+<ul>
+<li>@param peerUuid the UUID of the device to configure</li>
+<li>@param allowed whether to enable or disable host capability for this peer</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkSharingPeerAllowAsHost</span><span class="p">(</span><span class="nv">peerUuid</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">,</span> <span class="nv">allowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC34setNetworkSharingPeerAllowAsClient8peerUuid7allowedyAA0dE0V0fK0V_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/setNetworkSharingPeerAllowAsClient(peerUuid:allowed:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC34setNetworkSharingPeerAllowAsClient8peerUuid7allowedyAA0dE0V0fK0V_SbtF">setNetworkSharingPeerAllowAsClient(peerUuid:<wbr>allowed:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets whether the peer at the given UUID may be treated as a client.</p>
+
+<ul>
+<li>@param peerUuid the UUID of the device to configure</li>
+<li>@param allowed whether to enable or disable client capability for this peer</li>
+<li>Triggers <code>SpeedifyPasDelegate.networkShareAvailable</code></li>
+<li>@since 16.4.2</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNetworkSharingPeerAllowAsClient</span><span class="p">(</span><span class="nv">peerUuid</span><span class="p">:</span> <span class="kt"><a href="../Structs/NetworkSharing.html">NetworkSharing</a></span><span class="o">.</span><span class="kt">PeerUuid</span><span class="p">,</span> <span class="nv">allowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

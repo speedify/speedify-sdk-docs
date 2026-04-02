@@ -1,0 +1,7 @@
+.filter-section {
+    display: none !important;
+}
+
+:root {
+    --dokka-logo-image-url: url('../images/speedify.webp');
+}

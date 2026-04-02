@@ -1,0 +1,972 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Types</title>
+<link href="../../../images/speedify.webp" rel="icon" type="image/webp"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../styles/dokka-custom.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    Speedify SDK for Android 16.5.0.14084
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":speedifysdk/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":speedifysdk/main" data-filter=":speedifysdk/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Speedify SDK for Android 16.5.0.14084
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="SpeedifySDK::com.speedify.speedifysdk/Types///PointingToDeclaration//376528755">
+  <div class="breadcrumbs"><a href="../../index.html">SpeedifySDK</a><span class="delimiter">/</span><a href="../index.html">com.speedify.speedifysdk</a><span class="delimiter">/</span><span class="current">Types</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Types</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Types</a></div><p class="paragraph">Data Types</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="1493440592%2FConstructors%2F376528755" anchor-label="Types" id="1493440592%2FConstructors%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-types.html"><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1493440592%2FConstructors%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-980850567%2FClasslikes%2F376528755" anchor-label="AccountAction" id="-980850567%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-account-action/index.html"><span>Account</span><wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-980850567%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-account-action/index.html">AccountAction</a></div><div class="brief ">\brief Actions that should be taken on an account</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="506978535%2FClasslikes%2F376528755" anchor-label="AccountingData" id="506978535%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-accounting-data/index.html"><span>Accounting</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="506978535%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-accounting-data/index.html">AccountingData</a></div><div class="brief ">Data on an account</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1839735085%2FClasslikes%2F376528755" anchor-label="AccountPaymentType" id="-1839735085%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-account-payment-type/index.html"><span>Account</span><wbr><span>Payment</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1839735085%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-account-payment-type/index.html">AccountPaymentType</a></div><div class="brief ">Information on an account's payment type</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1943530275%2FClasslikes%2F376528755" anchor-label="AdapterData" id="1943530275%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-adapter-data/index.html"><span>Adapter</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1943530275%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-adapter-data/index.html">AdapterData</a></div><div class="brief ">Information about a network adapter.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1189772342%2FClasslikes%2F376528755" anchor-label="AdapterUsageData" id="-1189772342%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-adapter-usage-data/index.html"><span>Adapter</span><wbr><span>Usage</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1189772342%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-adapter-usage-data/index.html">AdapterUsageData</a></div><div class="brief ">Information about the data usage and limits of a network adapter.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1144395488%2FClasslikes%2F376528755" anchor-label="AutoConnectMethod" id="1144395488%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-auto-connect-method/index.html"><span>Auto</span><wbr><span>Connect</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1144395488%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-auto-connect-method/index.html">AutoConnectMethod</a></div><div class="brief ">Methods for automatic server selection</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1948918362%2FClasslikes%2F376528755" anchor-label="BondingMode" id="1948918362%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-bonding-mode/index.html"><span>Bonding</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1948918362%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-bonding-mode/index.html">BondingMode</a></div><div class="brief ">Mode of the VPN tunnel</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="924082441%2FClasslikes%2F376528755" anchor-label="CaptivePortalStats" id="924082441%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-captive-portal-stats/index.html"><span>Captive</span><wbr><span>Portal</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="924082441%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-captive-portal-stats/index.html">CaptivePortalStats</a></div><div class="brief ">Contains stats regarding the captive portal</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="369968388%2FClasslikes%2F376528755" anchor-label="ConnectionPriority" id="369968388%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-connection-priority/index.html"><span>Connection</span><wbr><span><span>Priority</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="369968388%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-connection-priority/index.html">ConnectionPriority</a></div><div class="brief ">How a connection should be combined</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1492190679%2FClasslikes%2F376528755" anchor-label="ConnectionState" id="-1492190679%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-connection-state/index.html"><span>Connection</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1492190679%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-connection-state/index.html">ConnectionState</a></div><div class="brief ">State of Speedify on a given connection (network adapter).</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1057913381%2FClasslikes%2F376528755" anchor-label="ConnectionStats" id="-1057913381%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-connection-stats/index.html"><span>Connection</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1057913381%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-connection-stats/index.html">ConnectionStats</a></div><div class="brief ">Statistics about a connection.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1180365640%2FClasslikes%2F376528755" anchor-label="ConnectionStatsGroup" id="1180365640%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-connection-stats-group/index.html"><span>Connection</span><wbr><span>Stats</span><wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1180365640%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-connection-stats-group/index.html">ConnectionStatsGroup</a></div><div class="brief ">A grouping of ConnectionStats.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1498216281%2FClasslikes%2F376528755" anchor-label="DaemonLogSettings" id="1498216281%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-daemon-log-settings/index.html"><span>Daemon</span><wbr><span>Log</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1498216281%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-daemon-log-settings/index.html">DaemonLogSettings</a></div><div class="brief ">Settings for logging in the daemon</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="776350892%2FClasslikes%2F376528755" anchor-label="DirectorySettings" id="776350892%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-directory-settings/index.html"><span>Directory</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="776350892%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-directory-settings/index.html">DirectorySettings</a></div><div class="brief ">Directory settings</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-776818306%2FClasslikes%2F376528755" anchor-label="DisconnectEvent" id="-776818306%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-disconnect-event/index.html"><span>Disconnect</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-776818306%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-disconnect-event/index.html">DisconnectEvent</a></div><div class="brief ">Information about a disconnect event</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1261052070%2FClasslikes%2F376528755" anchor-label="DisconnectReason" id="1261052070%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-disconnect-reason/index.html"><span>Disconnect</span><wbr><span><span>Reason</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1261052070%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-disconnect-reason/index.html">DisconnectReason</a></div><div class="brief ">Reason for a disconnect</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1052957638%2FClasslikes%2F376528755" anchor-label="ErrorType" id="-1052957638%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-error-type/index.html"><span>Error</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1052957638%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-error-type/index.html">ErrorType</a></div><div class="brief ">Type classification for a login or connect error</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2011446211%2FClasslikes%2F376528755" anchor-label="FirewallMode" id="2011446211%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-firewall-mode/index.html"><span>Firewall</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2011446211%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-firewall-mode/index.html">FirewallMode</a></div><div class="brief ">How firewall treats matches</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="838775461%2FClasslikes%2F376528755" anchor-label="FirewallPort" id="838775461%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-firewall-port/index.html"><span>Firewall</span><wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="838775461%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-firewall-port/index.html">FirewallPort</a> : <a href="-protocol-port-pair/index.html">Types.ProtocolPortPair</a></div><div class="brief ">A firewalled port</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1071802685%2FClasslikes%2F376528755" anchor-label="FirewallSettings" id="-1071802685%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-firewall-settings/index.html"><span>Firewall</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1071802685%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-firewall-settings/index.html">FirewallSettings</a></div><div class="brief ">Firewall settings</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-897822537%2FClasslikes%2F376528755" anchor-label="ForwardedPort" id="-897822537%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-forwarded-port/index.html"><span>Forwarded</span><wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-897822537%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-forwarded-port/index.html">ForwardedPort</a> : <a href="-protocol-port-pair/index.html">Types.ProtocolPortPair</a></div><div class="brief ">A forwarded port</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="410793809%2FClasslikes%2F376528755" anchor-label="HandlerStats" id="410793809%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-handler-stats/index.html"><span>Handler</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="410793809%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-handler-stats/index.html">HandlerStats</a></div><div class="brief ">Contains stats regarding the packet handler, for use in session stats</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1151067546%2FClasslikes%2F376528755" anchor-label="IPRange" id="-1151067546%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-p-range/index.html"><span><span>IPRange</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1151067546%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-i-p-range/index.html">IPRange</a></div><div class="brief ">Represents an IP network segment</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1225491325%2FClasslikes%2F376528755" anchor-label="LocalProxyDomainWatchlistItem" id="-1225491325%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-local-proxy-domain-watchlist-item/index.html"><span>Local</span><wbr><span>Proxy</span><wbr><span>Domain</span><wbr><span>Watchlist</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1225491325%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-local-proxy-domain-watchlist-item/index.html">LocalProxyDomainWatchlistItem</a></div><div class="brief ">Local proxy domain watchlist item</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="212802434%2FClasslikes%2F376528755" anchor-label="LocalProxyPort" id="212802434%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-local-proxy-port/index.html"><span>Local</span><wbr><span>Proxy</span><wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="212802434%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-local-proxy-port/index.html">LocalProxyPort</a> : <a href="-protocol-port-pair/index.html">Types.ProtocolPortPair</a></div><div class="brief ">A proxied port</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2004596448%2FClasslikes%2F376528755" anchor-label="LocalProxySettings" id="-2004596448%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-local-proxy-settings/index.html"><span>Local</span><wbr><span>Proxy</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2004596448%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-local-proxy-settings/index.html">LocalProxySettings</a></div><div class="brief ">Local proxy settings</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-401221370%2FClasslikes%2F376528755" anchor-label="LogLevel" id="-401221370%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-log-level/index.html"><span>Log</span><wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-401221370%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-log-level/index.html">LogLevel</a></div><div class="brief ">Log levels in the SDK</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1790177064%2FClasslikes%2F376528755" anchor-label="NetworkSharing" id="-1790177064%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-network-sharing/index.html"><span>Network</span><wbr><span><span>Sharing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1790177064%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-network-sharing/index.html">NetworkSharing</a></div><div class="brief ">Network Sharing types</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1762162452%2FClasslikes%2F376528755" anchor-label="NetworkType" id="1762162452%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-network-type/index.html"><span>Network</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1762162452%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-network-type/index.html">NetworkType</a></div><div class="brief ">Type of network adapter</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1685953805%2FClasslikes%2F376528755" anchor-label="PortProtocol" id="1685953805%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-port-protocol/index.html"><span>Port</span><wbr><span><span>Protocol</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1685953805%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-port-protocol/index.html">PortProtocol</a></div><div class="brief ">Protocol for ports</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1676147279%2FClasslikes%2F376528755" anchor-label="PrivacySettings" id="-1676147279%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-privacy-settings/index.html"><span>Privacy</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1676147279%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-privacy-settings/index.html">PrivacySettings</a></div><div class="brief ">Privacy settings</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="49475667%2FClasslikes%2F376528755" anchor-label="ProtocolPortPair" id="49475667%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-protocol-port-pair/index.html"><span>Protocol</span><wbr><span>Port</span><wbr><span><span>Pair</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="49475667%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-protocol-port-pair/index.html">ProtocolPortPair</a></div><div class="brief ">A forwarded port</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="80524012%2FClasslikes%2F376528755" anchor-label="ProxyMatchMode" id="80524012%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-proxy-match-mode/index.html"><span>Proxy</span><wbr><span>Match</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="80524012%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-proxy-match-mode/index.html">ProxyMatchMode</a></div><div class="brief ">How local proxy treats matches</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1770827767%2FClasslikes%2F376528755" anchor-label="RestartReason" id="-1770827767%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-restart-reason/index.html"><span>Restart</span><wbr><span><span>Reason</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1770827767%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-restart-reason/index.html">RestartReason</a></div><div class="brief ">Reason for restart</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-612771181%2FClasslikes%2F376528755" anchor-label="ServerInformation" id="-612771181%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-information/index.html"><span>Server</span><wbr><span><span>Information</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-612771181%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-server-information/index.html">ServerInformation</a></div><div class="brief ">Information about a server</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1426380349%2FClasslikes%2F376528755" anchor-label="ServerInformationDetailed" id="-1426380349%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-information-detailed/index.html"><span>Server</span><wbr><span>Information</span><wbr><span><span>Detailed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1426380349%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-server-information-detailed/index.html"><strike>ServerInformationDetailed</strike></a> : <a href="-server-information/index.html">Types.ServerInformation</a></div><div class="brief ">Detailed information about a server</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1986925088%2FClasslikes%2F376528755" anchor-label="ServerSettings" id="1986925088%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-settings/index.html"><span>Server</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1986925088%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-server-settings/index.html">ServerSettings</a></div><div class="brief ">Automatic server selection method settings</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1773546242%2FClasslikes%2F376528755" anchor-label="SessionStatPeriods" id="-1773546242%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-session-stat-periods/index.html"><span>Session</span><wbr><span>Stat</span><wbr><span><span>Periods</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1773546242%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-session-stat-periods/index.html">SessionStatPeriods</a></div><div class="brief ">Statistics for sessions over various time periods</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-578841187%2FClasslikes%2F376528755" anchor-label="SessionStats" id="-578841187%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-session-stats/index.html"><span>Session</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-578841187%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-session-stats/index.html">SessionStats</a></div><div class="brief ">Statistics for a period</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-802080541%2FClasslikes%2F376528755" anchor-label="Settings" id="-802080541%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-settings/index.html"><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-802080541%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-settings/index.html">Settings</a></div><div class="brief ">Speedify settings</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1365370412%2FClasslikes%2F376528755" anchor-label="SettingsLockReason" id="-1365370412%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-settings-lock-reason/index.html"><span>Settings</span><wbr><span>Lock</span><wbr><span><span>Reason</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1365370412%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-settings-lock-reason/index.html"><strike>SettingsLockReason</strike></a></div><div class="brief ">Settings Lock Reason</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="219616732%2FClasslikes%2F376528755" anchor-label="SpeedTestResultData" id="219616732%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-speed-test-result-data/index.html"><span>Speed</span><wbr><span>Test</span><wbr><span>Result</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="219616732%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-speed-test-result-data/index.html">SpeedTestResultData</a></div><div class="brief ">\brief Results of a speed test</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-608449303%2FClasslikes%2F376528755" anchor-label="SpeedTestType" id="-608449303%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-speed-test-type/index.html"><span>Speed</span><wbr><span>Test</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-608449303%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-speed-test-type/index.html">SpeedTestType</a></div><div class="brief ">Internal speed test types</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1787814251%2FClasslikes%2F376528755" anchor-label="State" id="1787814251%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-state/index.html"><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1787814251%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-state/index.html">State</a></div><div class="brief ">State of the VPN</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="348990122%2FClasslikes%2F376528755" anchor-label="StreamHealth" id="348990122%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stream-health/index.html"><span>Stream</span><wbr><span><span>Health</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="348990122%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-stream-health/index.html">StreamHealth</a></div><div class="brief ">\brief Stream health indicator</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-727217351%2FClasslikes%2F376528755" anchor-label="StreamingPort" id="-727217351%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-streaming-port/index.html"><span>Streaming</span><wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-727217351%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-streaming-port/index.html">StreamingPort</a> : <a href="-protocol-port-pair/index.html">Types.ProtocolPortPair</a></div><div class="brief ">A streaming port</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="304810001%2FClasslikes%2F376528755" anchor-label="StreamingSessionStats" id="304810001%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-streaming-session-stats/index.html"><span>Streaming</span><wbr><span>Session</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="304810001%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-streaming-session-stats/index.html">StreamingSessionStats</a></div><div class="brief ">Contains session stats regarding streaming mode</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1161820841%2FClasslikes%2F376528755" anchor-label="StreamingSettings" id="-1161820841%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-streaming-settings/index.html"><span>Streaming</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1161820841%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-streaming-settings/index.html">StreamingSettings</a></div><div class="brief ">Settings for the priority streaming</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1909975767%2FClasslikes%2F376528755" anchor-label="StreamingStats" id="-1909975767%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-streaming-stats/index.html"><span>Streaming</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1909975767%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-streaming-stats/index.html">StreamingStats</a></div><div class="brief ">Streaming mode stats</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="196623485%2FClasslikes%2F376528755" anchor-label="StreamStats" id="196623485%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stream-stats/index.html"><span>Stream</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="196623485%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-stream-stats/index.html">StreamStats</a></div><div class="brief ">Statistics for a single stream</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1770405929%2FClasslikes%2F376528755" anchor-label="Subnet" id="1770405929%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-subnet/index.html"><span><span>Subnet</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1770405929%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-subnet/index.html">Subnet</a> : <a href="-i-p-range/index.html">Types.IPRange</a></div><div class="brief ">A subnet</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1150186126%2FClasslikes%2F376528755" anchor-label="TrafficRuleChangeMethod" id="-1150186126%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-traffic-rule-change-method/index.html"><span>Traffic</span><wbr><span>Rule</span><wbr><span>Change</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1150186126%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-traffic-rule-change-method/index.html">TrafficRuleChangeMethod</a></div><div class="brief ">Traffic rules change method</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-718004830%2FClasslikes%2F376528755" anchor-label="TrafficRulePort" id="-718004830%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-traffic-rule-port/index.html"><span>Traffic</span><wbr><span>Rule</span><wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-718004830%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-traffic-rule-port/index.html">TrafficRulePort</a> : <a href="-protocol-port-pair/index.html">Types.ProtocolPortPair</a></div><div class="brief ">A traffic rule port</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1924636944%2FClasslikes%2F376528755" anchor-label="TransportMode" id="-1924636944%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transport-mode/index.html"><span>Transport</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1924636944%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-transport-mode/index.html">TransportMode</a></div><div class="brief ">Transport Protocol modes</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1304072876%2FClasslikes%2F376528755" anchor-label="TunStats" id="-1304072876%2FClasslikes%2F376528755" data-filterable-set=":speedifysdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":speedifysdk/main" data-filterable-set=":speedifysdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tun-stats/index.html"><span>Tun</span><wbr><span><span>Stats</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1304072876%2FClasslikes%2F376528755"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-tun-stats/index.html">TunStats</a></div><div class="brief ">Contains stats regarding the TUN, for use in session stats</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

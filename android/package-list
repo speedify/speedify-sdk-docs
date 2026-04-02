@@ -1,0 +1,12 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:Speedify Dispatch
+com.speedify.speedifysdk.dispatch
+com.speedify.speedifysdk.dispatch.receivers
+module:Speedify Enhanced Statistics
+com.speedify.speedifysdk.enhancedstatistics
+com.speedify.speedifysdk.enhancedstatistics.receivers
+module:SpeedifySDK
+com.speedify.speedifysdk
+com.speedify.speedifysdk.receivers

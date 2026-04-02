@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Introduction to the Speedify SDK for Android - Speedify SDK for Android 0.0.0.1</title>
+    <link href="../images/speedify.webp" rel="icon" type="image/webp">
+    <script>var pathToRoot = "../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+    <script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
+    <link href="../styles/style.css" rel="Stylesheet">
+    <link href="../styles/main.css" rel="Stylesheet">
+    <link href="../styles/prism.css" rel="Stylesheet">
+    <link href="../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../ui-kit/ui-kit.min.css" rel="Stylesheet">
+    <script type="text/javascript" src="../scripts/safe-local-storage_blocking.js"></script>
+    <script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
+    <script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
+    <script type="text/javascript" src="../scripts/main.js" defer></script>
+    <script type="text/javascript" src="../scripts/prism.js" async></script>
+    <script type="text/javascript" src="../ui-kit/ui-kit.min.js" defer></script>
+    <link href="../styles/dokka-custom.css" rel="Stylesheet">
+    <style>
+        .guide-content { padding: 1rem 0 3rem; }
+        .guide-content h1 { border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .guide-content h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;
+                            margin-top: 2rem; }
+        .guide-content pre { background: var(--color-background-code-block); padding: 1rem; border-radius: 4px;
+                             overflow-x: auto; font: var(--font-code); }
+        .guide-content code { background: var(--color-background-inline-code); padding: 0.15rem 0.3rem;
+                              border-radius: 3px; font: var(--font-code); }
+        .guide-content pre code { background: none; padding: 0; }
+    </style>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../index.html" tabindex="1">
+                    Speedify SDK for Android 0.0.0.1
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Speedify SDK for Android 0.0.0.1
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content">
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 0.0.0.1</a><span class="delimiter">/</span>
+                    <span class="current">Guides</span></div>
+  <div class="cover ">
+    <div class="guide-content">
+<p>This lets you build the Bonding and VPN functionality of Speedify into your own application.  It lets you entirely replace the Speedify user interface with your own.</p><h2><a id="whatsnew"></a>What's New</h2><ul><li><a href="whatsnew.html#whatsnew_1650">Speedify SDK for Android 16.5</a></li><li><a href="whatsnew.html#whatsnew_1641">Speedify SDK for Android 16.4.1</a></li><li><a href="whatsnew.html#whatsnew_1640">Speedify SDK for Android 16.4</a></li><li><a href="whatsnew.html#whatsnew_1630">Speedify SDK for Android 16.3</a></li><li><a href="whatsnew.html">more…</a></li></ul><h2><a id="common_integration"></a>Common Integration Guide</h2><ul><li><a href="integration.html#integrate_maven">Integration via Maven Repository</a></li><li><a href="integration.html#integrate_aar">Integration via AAR File</a></li><li><a href="integration.html#sdk_authorization">SDK Authorization</a></li><li><a href="sdkinit.html">Initializing the SDK</a></li></ul><h2><a id="speedify_integration"></a>Speedify Integration Guide</h2><ul><li><a href="onboot.html">On-Boot Resume and Killswitch</a></li><li><a href="alwayson.html">Disable Always-On Support</a></li><li><a href="servicenotification.html">Service Notification</a></li><li><a href="permissions.html">Permissions</a></li><li><a href="userstrings.html">SDK Strings</a></li><li><a href="loggen.html">Log Generation</a></li><li><a href="localproxy.html">Local Proxy Configuration</a></li><li><a href="residentialproxy.html">Residential Proxy Configuration</a></li><li><a href="networksharing.html">Network Sharing</a></li></ul><h2><a id="dispatch_integration"></a>Dispatch Integration Guide</h2><ul><li><a href="#dispatch_intro">Introduction to Dispatch</a></li></ul><h2><a id="es_integration"></a>Enhanced Statistics Integration Guide</h2><ul><li><a href="#es_intro">Introduction to Enhanced Statistics</a></li><li><a href="#es_permissions">Permissions</a></li></ul><h2><a id="sample_apps"></a>Sample Applications</h2><ul><li>MyVPN - Obtain SpeedifyAndroidSDK_ExampleApp from Nexus, under android-releases/speedify/androidsdk</li></ul></div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>Copyright © Connectify, Inc. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+    
+</html>
