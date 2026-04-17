@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.5.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.6.1</span>
    </div>
   </td>
  </tr>
@@ -90,22 +90,22 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Local Proxy Configuration</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The Local Proxy API instructs the Speedify SDK to put specific traffic directly out over a local network interface instead of over the VPN. Note that if you are connecting in proxy mode instead of VPN mode via <code><a class="el" href="speedifysdk_8h.html#a3f2c8bbfe72f3d1cb05bb6e738708e4f">SpeedifySDK_ConnectProxy</a></code> these calls have no effect, as all traffic is proxied.</p>
+<div class="textblock"><p>The Local Proxy API instructs the Speedify SDK to put specific traffic directly out over a local network interface instead of over the VPN. Note that if you are connecting in proxy mode instead of VPN mode via <code><a class="el" href="group___s_d_k.html#gadf45c59dff623a3ab56aeae5ab3ade4b">SpeedifySDK_ConnectProxy</a></code> these calls have no effect, as all traffic is proxied.</p>
 <h2><a class="anchor" id="autotoc_md11"></a>
 Local Proxy API</h2>
 <ul>
-<li><code><a class="el" href="speedifysdk_8h.html#a7544ee04c19fd31dd31b3b9161de6c99">SpeedifySDK_SetLocalProxyEnabled</a></code> - Enables or disables the local proxy.</li>
-<li><code><a class="el" href="speedifysdk_8h.html#afc8758c087db96418798bfe3b5a395b8">SpeedifySDK_SetLocalProxyMatchMode</a></code> - Set the match mode used by the local proxy.<ul>
-<li>For the purposes of these docs, method decriptions assume the default match mode of <code><a class="el" href="types_8h.html#ac5fce2249549ad9ffc779c9b71ad343aaa0f36a86250d6a8c3a622bafc7ce6a23">PMM_ALLOWLIST</a></code>.</li>
-<li>If using <code><a class="el" href="types_8h.html#ac5fce2249549ad9ffc779c9b71ad343aa0de312811ca807ad5edd0a822e47091a">PMM_DENYLIST</a></code>, the configured lists specify items sent over the VPN instead of the proxy.</li>
+<li><code><a class="el" href="group___s_d_k.html#ga1161a3b5eff93c2877ee3f873adbd9e4">SpeedifySDK_SetLocalProxyEnabled</a></code> - Enables or disables the local proxy.</li>
+<li><code><a class="el" href="group___s_d_k.html#ga6ef89cc596dbb5ba7d30e917f5a66461">SpeedifySDK_SetLocalProxyMatchMode</a></code> - Set the match mode used by the local proxy.<ul>
+<li>For the purposes of these docs, method decriptions assume the default match mode of <code><a class="el" href="group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aaa0f36a86250d6a8c3a622bafc7ce6a23">PMM_ALLOWLIST</a></code>.</li>
+<li>If using <code><a class="el" href="group___t_y_p_e_s.html#ggac5fce2249549ad9ffc779c9b71ad343aa0de312811ca807ad5edd0a822e47091a">PMM_DENYLIST</a></code>, the configured lists specify items sent over the VPN instead of the proxy.</li>
 </ul>
 </li>
-<li><code><a class="el" href="speedifysdk_8h.html#a28d5f997ecc6690740e29047a76b06a0">SpeedifySDK_SetLocalProxyDomains</a></code> - Set domains to proxy locally, instead of going through the VPN.</li>
-<li><code><a class="el" href="speedifysdk_8h.html#afc5255801971231940f9a85c8a4d362f">SpeedifySDK_SetLocalProxyIPv4</a></code> - Set IPv4 address to proxy locally, instead of going through the VPN.</li>
-<li><code><a class="el" href="speedifysdk_8h.html#a7710c0f2f1563d91a630fe5d6967d3cc">SpeedifySDK_SetLocalProxyIPv6</a></code> - Set IPv6 address to proxy locally, instead of going through the VPN.</li>
-<li><code><a class="el" href="speedifysdk_8h.html#af7eb909049db3c0480b77b2795394243">SpeedifySDK_SetLocalProxyPorts</a></code> - Set ports to proxy.</li>
-<li><code><a class="el" href="speedifysdk_8h.html#a162ae1e9e67183a1137b8388eeb97a10">SpeedifySDK_SetLocalProxyDomainWatchlist</a></code> - Set domain watchlist settings for the local proxy</li>
-<li><code><a class="el" href="speedifysdk_8h.html#a4d98c754a14bb6553bde2c9e1605a16d">SpeedifySDK_SetLocalProxyDomainWatchlistEnable</a></code> - Toggle a single domain watchlist item from being enabled over the local proxy. </li>
+<li><code><a class="el" href="group___s_d_k.html#ga59c29093725b396e5052e02ef3f8c2a7">SpeedifySDK_SetLocalProxyDomains</a></code> - Set domains to proxy locally, instead of going through the VPN.</li>
+<li><code><a class="el" href="group___s_d_k.html#gaef3f39b63ff31b5adb5c9621bb6da4eb">SpeedifySDK_SetLocalProxyIPv4</a></code> - Set IPv4 address to proxy locally, instead of going through the VPN.</li>
+<li><code><a class="el" href="group___s_d_k.html#ga30f80f79eb22d78261022c1e728f7f6c">SpeedifySDK_SetLocalProxyIPv6</a></code> - Set IPv6 address to proxy locally, instead of going through the VPN.</li>
+<li><code><a class="el" href="group___s_d_k.html#gafbb20259225196d9884d8b65994f7c70">SpeedifySDK_SetLocalProxyPorts</a></code> - Set ports to proxy.</li>
+<li><code><a class="el" href="group___s_d_k.html#gac3a360edffb708b83a672c32af3b3ccc">SpeedifySDK_SetLocalProxyDomainWatchlist</a></code> - Set domain watchlist settings for the local proxy</li>
+<li><code><a class="el" href="group___s_d_k.html#gab0775c2f20bcd8489c39beae53d3bf55">SpeedifySDK_SetLocalProxyDomainWatchlistEnable</a></code> - Toggle a single domain watchlist item from being enabled over the local proxy. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

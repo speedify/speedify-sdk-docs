@@ -1,1 +1,1 @@
-sourceset_dependencies = '{":enhanced-statistics/main":[],":speedifysdk/main":[],":dispatch/main":[]}'
+sourceset_dependencies = '{":enhanced-statistics/release":[],":speedifysdk/release":[],":dispatch/release":[]}'

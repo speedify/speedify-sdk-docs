@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.5.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.6.1</span>
    </div>
   </td>
  </tr>
@@ -91,21 +91,27 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt>Global <a class="el" href="types_8h.html#acd29f9815605840e8411c3c430ff38e8">AA_ACTIVATE_OR_PURCHASE_LICENCE</a>  </dt>
+<dt>Global <a class="el" href="group___t_y_p_e_s.html#gacd29f9815605840e8411c3c430ff38e8">AA_ACTIVATE_OR_PURCHASE_LICENCE</a>  </dt>
 <dd><a class="anchor" id="_deprecated000021"></a>as of 15.8  </dd>
-<dt>Global <a class="el" href="types_8h.html#a2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7">ET_SDK_SETTING_LOCKED_ACCOUNT</a>  </dt>
+<dt>Global <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7">ET_SDK_SETTING_LOCKED_ACCOUNT</a>  </dt>
 <dd><a class="anchor" id="_deprecated000024"></a>As of 14.0. Use ET_LOCK_ACCOUNT instead.  </dd>
-<dt>Global <a class="el" href="types_8h.html#a2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3">ET_SDK_SETTING_LOCKED_TEAM</a>  </dt>
+<dt>Global <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3">ET_SDK_SETTING_LOCKED_TEAM</a>  </dt>
 <dd><a class="anchor" id="_deprecated000023"></a>As of 14.0. Use ET_LOCK_TEAM instead.  </dd>
-<dt>Global <a class="el" href="callbacks_8h.html#a7808c5235e3d79a0c813a4801e6a9d07">SpeedifySDK_AccountCheckCallback</a>  )(<a class="el" href="struct_speedify_s_d_k___account_check_result.html" title="Account check result.">SpeedifySDK_AccountCheckResult</a>, void *)</dt>
+<dt>Global <a class="el" href="group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4">SpeedifySDK_AccountCheck</a>  (CSpeedifySDK sdk, const char *email, SpeedifySDK_AccountCheckCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000008"></a>as of 15.4. Functionality removed  </dd>
+<dt>Global <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga7808c5235e3d79a0c813a4801e6a9d07">SpeedifySDK_AccountCheckCallback</a>  )(<a class="el" href="struct_speedify_s_d_k___account_check_result.html" title="Account check result.">SpeedifySDK_AccountCheckResult</a>, void *)</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>as of 15.4. Functionality removed  </dd>
 <dt>Struct <a class="el" href="struct_speedify_s_d_k___account_check_result.html">SpeedifySDK_AccountCheckResult</a>  </dt>
 <dd><a class="anchor" id="_deprecated000004"></a>as of 15.4. Functionality removed  </dd>
-<dt>Global <a class="el" href="callbacks_8h.html#aa9cdbcdba696e05d5d57bfd8213ccd4f">SpeedifySDK_AccountCreateCallback</a>  )(<a class="el" href="struct_speedify_s_d_k___account_create_result.html" title="Account create result.">SpeedifySDK_AccountCreateResult</a>, void *)</dt>
+<dt>Global <a class="el" href="group___s_d_k.html#gaa9c05d2331dcc69b88817da5c1746928">SpeedifySDK_AccountCreate</a>  (CSpeedifySDK sdk, const char *email, const char *password, SpeedifySDK_AccountCreateCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000009"></a>as of 15.4. Functionality removed  </dd>
+<dt>Global <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gaa9cdbcdba696e05d5d57bfd8213ccd4f">SpeedifySDK_AccountCreateCallback</a>  )(<a class="el" href="struct_speedify_s_d_k___account_create_result.html" title="Account create result.">SpeedifySDK_AccountCreateResult</a>, void *)</dt>
 <dd><a class="anchor" id="_deprecated000002"></a>as of 15.4. Functionality removed  </dd>
 <dt>Struct <a class="el" href="struct_speedify_s_d_k___account_create_result.html">SpeedifySDK_AccountCreateResult</a>  </dt>
 <dd><a class="anchor" id="_deprecated000005"></a>as of 15.4. Functionality removed  </dd>
-<dt>Global <a class="el" href="callbacks_8h.html#a602e009ffb97e8244ed65a5c4d32c942">SpeedifySDK_AccountPasswordChangeCallback</a>  )(<a class="el" href="struct_speedify_s_d_k___account_password_change_result.html" title="Password change result.">SpeedifySDK_AccountPasswordChangeResult</a>, void *)</dt>
+<dt>Global <a class="el" href="group___s_d_k.html#ga737c02bfdc85c91d9605406df3434dc8">SpeedifySDK_AccountPasswordChange</a>  (CSpeedifySDK sdk, const char *email, const char *originalPassword, const char *newPassword, SpeedifySDK_AccountPasswordChangeCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000010"></a>as of 15.4. Functionality removed  </dd>
+<dt>Global <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga602e009ffb97e8244ed65a5c4d32c942">SpeedifySDK_AccountPasswordChangeCallback</a>  )(<a class="el" href="struct_speedify_s_d_k___account_password_change_result.html" title="Password change result.">SpeedifySDK_AccountPasswordChangeResult</a>, void *)</dt>
 <dd><a class="anchor" id="_deprecated000003"></a>as of 15.4. Functionality removed  </dd>
 <dt>Struct <a class="el" href="struct_speedify_s_d_k___account_password_change_result.html">SpeedifySDK_AccountPasswordChangeResult</a>  </dt>
 <dd><a class="anchor" id="_deprecated000006"></a>as of 15.4. Functionality removed  </dd>
@@ -115,10 +121,28 @@ $(function(){ initResizable(false); });
 <dd><a class="anchor" id="_deprecated000025"></a>as of 14.3.2  </dd>
 <dt>Global <a class="el" href="struct_speedify_s_d_k___network_sharing_settings.html#a1da4845cca72b5de002e436e39a65372">SpeedifySDK_NetworkSharingSettings::alwaysOnDiscovery</a>  </dt>
 <dd><a class="anchor" id="_deprecated000026"></a>as of 14.8. Use <code><a class="el" href="struct_speedify_s_d_k___network_sharing_settings.html#a9bd4fbae9c14bef83f170bee72e39680">autoPairBehavior</a></code>  </dd>
+<dt>Global <a class="el" href="group___s_d_k.html#gaf4718443f9cd5d253f4c372f9fb54ddd">SpeedifySDK_ReportSafeBrowsingHomeNetwork</a>  (CSpeedifySDK sdk, SpeedifySDK_SafeBrowsingCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000014"></a>as of 15.7. Use SpeedifySDK_SendSafeBrowsingReport to have Safe Browsing continue running after the report is sent.  </dd>
+<dt>Global <a class="el" href="group___s_d_k.html#ga721c3aaa27ef7be9da550f25d5f487ce">SpeedifySDK_ReportSafeBrowsingHomeNetworkWithParameters</a>  (CSpeedifySDK sdk, uint32_t retries, uint64_t delay, uint64_t timeout, SpeedifySDK_SafeBrowsingCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000015"></a>as of 15.7. Use SpeedifySDK_SendSafeBrowsingReport to have Safe Browsing continue running after the report is sent.  </dd>
 <dt>Global <a class="el" href="struct_speedify_s_d_k___safe_browsing_result.html#a8404fa478bc6f5bd7b2d838b0034b6ff">SpeedifySDK_SafeBrowsingResult::configSet</a>  </dt>
 <dd><a class="anchor" id="_deprecated000007"></a>as of 15.7 as unused.  </dd>
-<dt>Global <a class="el" href="types_8h.html#a8822632887e0354ab629df357d8f2af6">SpeedifySDK_ServerInformationDetailed</a>  </dt>
-<dd><a class="anchor" id="_deprecated000017"></a>as of 14.0. Use <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a> instead. </dd>
+<dt>Global <a class="el" href="group___t_y_p_e_s.html#ga8545c4d5b44127641b5e26188694a165">SpeedifySDK_ServerInformationDetailed</a>  </dt>
+<dd><a class="anchor" id="_deprecated000017"></a>as of 14.0. Use <a class="el" href="struct_speedify_s_d_k___server_information.html" title="Detailed information about a server.">SpeedifySDK_ServerInformation</a> instead.  </dd>
+<dt>Global <a class="el" href="group___t_y_p_e_s.html#ga9021a8b7ae94c473dc5ef2e08fc3c53f">SpeedifySDK_ServerInformationDetailed_GetCityName</a>  (SpeedifySDK_ServerInformationDetailed server)</dt>
+<dd><a class="anchor" id="_deprecated000019"></a>as of 14.0. Use SpeedifySDK_ServerInformation_GetCityName instead.  </dd>
+<dt>Global <a class="el" href="group___t_y_p_e_s.html#ga80a18507929fe9d83e6ec9f930a1d786">SpeedifySDK_ServerInformationDetailed_GetCountryName</a>  (SpeedifySDK_ServerInformationDetailed server)</dt>
+<dd><a class="anchor" id="_deprecated000018"></a>as of 14.0. Use SpeedifySDK_ServerInformation_GetCountryName instead.  </dd>
+<dt>Global <a class="el" href="group___t_y_p_e_s.html#ga47967c5e9ea81bd11d536de12820c03d">SpeedifySDK_ServerInformationDetailed_toString</a>  (SpeedifySDK_ServerInformationDetailed server)</dt>
+<dd><a class="anchor" id="_deprecated000020"></a>as of 14.0. Use SpeedifySDK_ServerInformation_toString instead.  </dd>
+<dt>Global <a class="el" href="group___s_d_k.html#ga9eb4bf8a92b5a1d97afd1f686230ae68">SpeedifySDK_SetConnectionRateLimit</a>  (CSpeedifySDK sdk, const char *adapterID, int64_t bps, SpeedifySDK_AdaptersCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000013"></a>as of 15.4 Use SpeedifySDK_SetConnectionRateLimits specifying downBps and upBps separately  </dd>
+<dt>Global <a class="el" href="group___s_d_k.html#ga8c5cb702a9ab8ff29cbf737fdd52f59d">SpeedifySDK_SetDNSServers</a>  (CSpeedifySDK sdk, uint16_t count, SpeedifySDK_IPAddressString *dnsAddrs, SpeedifySDK_PrivacySettingsCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000012"></a>as of 16.1. use SpeedifySDK_SetDNSServerAddresses instead.  </dd>
+<dt>Global <a class="el" href="group___s_d_k.html#gaccf25c507d17e11c3ba10ae92c69fab4">SpeedifySDK_SetESNIEnabled</a>  (CSpeedifySDK sdk, bool enableEsni, SpeedifySDK_DirectorySettingsCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000011"></a>as of 14.3.2  </dd>
+<dt>Global <a class="el" href="group___s_d_k.html#gaed20753e679ff19f516121bf3279e352">SpeedifySDK_SetNetworkSharingSameUserAutoPair</a>  (CSpeedifySDK sdk, const bool allow, SpeedifySDK_NetworkSharingSettingsCallback cb, void *userData)</dt>
+<dd><a class="anchor" id="_deprecated000016"></a>as of 14.8 Use SpeedifySDK_SetNetworkSharingAutoPair behavior instead </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
