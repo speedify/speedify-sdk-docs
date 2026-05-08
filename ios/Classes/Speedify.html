@@ -2624,6 +2624,61 @@ If already connected, this will disconnect before reconnecting.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@speedifysdk@objc(cs)Speedify(im)disconnectWithExtendedReason:"></a>
+                    <a name="//apple_ref/swift/Method/disconnect(extendedReason:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@speedifysdk@objc(cs)Speedify(im)disconnectWithExtendedReason:">disconnect(extendedReason:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disconnect from the server, attaching a caller-supplied free-form reason string.</p>
+
+<p>The disconnect reason is always recorded as <code>USERINITIATED</code>; <code>extendedReason</code> is stored on
+the session record and surfaced in the resulting <code><a href="../Structs/DisconnectEvent.html">DisconnectEvent</a></code>.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    16.7
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">disconnect</span><span class="p">(</span><span class="nv">extendedReason</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>extendedReason</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>caller-supplied description; pass nil or empty to clear.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC5login8username8password17completionHandlerySS_SSyAA5StateOSg_AA9ErrorTypeVSgtctF"></a>
                     <a name="//apple_ref/swift/Method/login(username:password:completionHandler:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC5login8username8password17completionHandlerySS_SSyAA5StateOSg_AA9ErrorTypeVSgtctF">login(username:<wbr>password:<wbr>completionHandler:<wbr>)</a>

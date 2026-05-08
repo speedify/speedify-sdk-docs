@@ -16,7 +16,7 @@ var searchData=
   ['bufferwaits_13',['bufferWaits',['../struct_speedify_s_d_k___tun_stats.html#a7344909eecf766fb10222fb7e4e37b11',1,'SpeedifySDK_TunStats']]],
   ['bugfix_14',['bugfix',['../struct_speedify_s_d_k___version.html#acc185ed419011f89f30c1dd241316089',1,'SpeedifySDK_Version']]],
   ['build_15',['build',['../struct_speedify_s_d_k___version.html#a7015b24b64aaa972bab007849ad78abd',1,'SpeedifySDK_Version']]],
-  ['building_16',['Building',['../linux.html#autotoc_md8',1,'Building'],['../macos.html#autotoc_md13',1,'Building'],['../windows.html#autotoc_md153',1,'Building']]],
+  ['building_16',['Building',['../linux.html#autotoc_md8',1,'Building'],['../macos.html#autotoc_md13',1,'Building'],['../windows.html#autotoc_md155',1,'Building']]],
   ['bytesavailable_17',['bytesAvailable',['../struct_speedify_s_d_k___accounting_data.html#a437ee6351d56b6c37f26e30c62f02905',1,'SpeedifySDK_AccountingData']]],
   ['bytesin_18',['bytesIn',['../struct_speedify_s_d_k___tun_stats.html#acdbe6052840253ecfd72394d1465c3b3',1,'SpeedifySDK_TunStats::bytesIn'],['../struct_speedify_s_d_k___handler_stats.html#a6a868c8cf0f272e13ad246ef72752153',1,'SpeedifySDK_HandlerStats::bytesIn']]],
   ['byteslastmonth_19',['bytesLastMonth',['../struct_speedify_s_d_k___network_sharing_usage.html#a5df34d690c78f4218449aa0c8456f57d',1,'SpeedifySDK_NetworkSharingUsage']]],

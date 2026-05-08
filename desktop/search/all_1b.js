@@ -31,5 +31,5 @@ var searchData=
   ['router_20ui_28',['Embedding the Router UI',['../routerui.html',1,'']]],
   ['routerui_2edox_29',['routerui.dox',['../routerui_8dox.html',1,'']]],
   ['rulesjson_30',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]],
-  ['running_31',['Running',['../linux.html#autotoc_md10',1,'Running'],['../macos.html#autotoc_md15',1,'Running'],['../windows.html#autotoc_md155',1,'Running']]]
+  ['running_31',['Running',['../linux.html#autotoc_md10',1,'Running'],['../macos.html#autotoc_md15',1,'Running'],['../windows.html#autotoc_md157',1,'Running']]]
 ];

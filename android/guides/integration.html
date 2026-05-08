@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Integration Guide - Speedify SDK for Android 16.6.1.1</title>
+    <title>Integration Guide - Speedify SDK for Android 16.7.0.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -48,7 +48,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 16.6.1.1
+                    Speedify SDK for Android 16.7.0.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -73,7 +73,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 16.6.1.1
+                                    Speedify SDK for Android 16.7.0.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -87,7 +87,7 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 16.6.1.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 16.7.0.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Integration Guide</span></div>
   <div class="cover ">
@@ -105,13 +105,13 @@
   }
 </code></pre><p>It is advisable to store your username and password in a gradle-local.properties file that is excluded from version control so that you do not commit your credentials.</p><p>Add a dependency on the SpeedifySDK :</p><pre><code>  dependencies {
     ...
-    implementation 'com.speedify.speedifysdk:speedifysdk:16.6.1+'
+    implementation 'com.speedify.speedifysdk:speedifysdk:16.7.0+'
 
     /* If using Dispatch, also add */
-    implementation 'com.speedify.speedifysdk:dispatch:16.6.1+'
+    implementation 'com.speedify.speedifysdk:dispatch:16.7.0+'
 
     /* If using Enhanced Statistics, also add */
-    implementation 'com.speedify.speedifysdk:enhanced-statistics:16.6.1+'
+    implementation 'com.speedify.speedifysdk:enhanced-statistics:16.7.0+'
   }
 </code></pre><h2><a id="integrate_aar"></a>Integration via AAR File</h2><p>Include the Google (<a href="https://maven.google.com">https://maven.google.com</a>) maven repository :</p><pre><code>  repositories {
     ...
@@ -119,18 +119,18 @@
   }
 </code></pre><p>Download the .aar file from Connectify (<a href="https://nexus.connectify.me/repository/maven-releases">https://nexus.connectify.me/repository/maven-releases</a>).</p><p>Add a dependency on the SpeedifySDK, as well as its dependencies :</p><pre><code>  dependencies {
     ...
-    implementation files('libs/speedifysdk-16.6.1+1.aar')
+    implementation files('libs/speedifysdk-16.7.0+1.aar')
     implementation 'androidx.core:core:1.18.0'
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'org.slf4j:slf4j-api:2.0.17'
     implementation 'com.github.tony19:logback-android:3.0.0'
 
     /* If using Dispatch, also add */
-    implementation files('libs/dispatch-16.6.1+1.aar')
+    implementation files('libs/dispatch-16.7.0+1.aar')
     implementation 'androidx.annotation:annotation:1.9.1'
 
     /* If using Enhanced Statistics, also add */
-    implementation files('libs/enhanced-statistics-16.6.1+1.aar')
+    implementation files('libs/enhanced-statistics-16.7.0+1.aar')
     implementation 'androidx.annotation:annotation:1.9.1'
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.gms:play-services-location:21.3.0'

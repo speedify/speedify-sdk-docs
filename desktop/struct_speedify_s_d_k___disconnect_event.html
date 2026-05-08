@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.6.1</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.7.0</span>
    </div>
   </td>
  </tr>
@@ -109,6 +109,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ad76692151437a2b1da66fcffc6cf6a20" id="r_ad76692151437a2b1da66fcffc6cf6a20"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad76692151437a2b1da66fcffc6cf6a20">sessionLength</a></td></tr>
 <tr class="memdesc:ad76692151437a2b1da66fcffc6cf6a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the session in seconds.  <br /></td></tr>
 <tr class="separator:ad76692151437a2b1da66fcffc6cf6a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebbbb0fe4b71b1138810ebe0d204d47" id="r_a7ebbbb0fe4b71b1138810ebe0d204d47"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ebbbb0fe4b71b1138810ebe0d204d47">extendedDisconnectReason</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2e7f92835871fb78fa1c8825de803148">SPEEDIFYSDK_MAX_EXTENDED_DISCONNECT_REASON_LENGTH</a>]</td></tr>
+<tr class="memdesc:a7ebbbb0fe4b71b1138810ebe0d204d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caller-supplied free-form reason from <a class="el" href="group___s_d_k.html#ga1655a6d9f954099ed6642e2ab8f04001" title="Disconnect with a caller-supplied extended reason string.">SpeedifySDK_DisconnectWithReason()</a>, or empty if none was provided.  <br /></td></tr>
+<tr class="separator:a7ebbbb0fe4b71b1138810ebe0d204d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Information about a disconnect event. </p>
@@ -128,6 +131,23 @@ Data Fields</h2></td></tr>
 
 <p>Reason for the disconnect. </p>
 <dl class="section since"><dt>Since</dt><dd>10.4 </dd></dl>
+
+</div>
+</div>
+<a id="a7ebbbb0fe4b71b1138810ebe0d204d47" name="a7ebbbb0fe4b71b1138810ebe0d204d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebbbb0fe4b71b1138810ebe0d204d47">&#9670;&#160;</a></span>extendedDisconnectReason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char SpeedifySDK_DisconnectEvent::extendedDisconnectReason[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga2e7f92835871fb78fa1c8825de803148">SPEEDIFYSDK_MAX_EXTENDED_DISCONNECT_REASON_LENGTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Caller-supplied free-form reason from <a class="el" href="group___s_d_k.html#ga1655a6d9f954099ed6642e2ab8f04001" title="Disconnect with a caller-supplied extended reason string.">SpeedifySDK_DisconnectWithReason()</a>, or empty if none was provided. </p>
+<dl class="section since"><dt>Since</dt><dd>16.7 </dd></dl>
 
 </div>
 </div>
