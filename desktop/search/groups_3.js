@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['methods_0',['Methods',['../group___dispatch.html',1,'Dispatch SDK Methods'],['../group___s_d_k.html',1,'SDK Methods']]]
+  ['limits_0',['Data Limits',['../group___d_e_f_i_n_e_l_i_m_i_t_s.html',1,'']]]
 ];

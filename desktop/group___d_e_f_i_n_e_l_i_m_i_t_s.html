@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.7.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga7e7f5d88a268342966e117251f43328e" id="r_ga7e7f5d88a268342966e117251f43328e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7e7f5d88a268342966e117251f43328e">SPEEDIFYSDK_MAX_ERROR_STRING</a>&#160;&#160;&#160;200</td></tr>
 <tr class="memdesc:ga7e7f5d88a268342966e117251f43328e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of an error message.  <br /></td></tr>
 <tr class="separator:ga7e7f5d88a268342966e117251f43328e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd7f081a43fd0dcf9e17a3ec683a17e2" id="r_gadd7f081a43fd0dcf9e17a3ec683a17e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>&#160;&#160;&#160;48</td></tr>
+<tr class="memitem:gadd7f081a43fd0dcf9e17a3ec683a17e2" id="r_gadd7f081a43fd0dcf9e17a3ec683a17e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>&#160;&#160;&#160;275</td></tr>
 <tr class="memdesc:gadd7f081a43fd0dcf9e17a3ec683a17e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simultaneous adapters supported.  <br /></td></tr>
 <tr class="separator:gadd7f081a43fd0dcf9e17a3ec683a17e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab9d8efef2bbe4253f74ca0f94cb90c62" id="r_gab9d8efef2bbe4253f74ca0f94cb90c62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab9d8efef2bbe4253f74ca0f94cb90c62">SPEEDIFYSDK_MAX_SERVERS</a>&#160;&#160;&#160;1024</td></tr>
@@ -293,6 +293,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga2e7f92835871fb78fa1c8825de803148" id="r_ga2e7f92835871fb78fa1c8825de803148"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2e7f92835871fb78fa1c8825de803148">SPEEDIFYSDK_MAX_EXTENDED_DISCONNECT_REASON_LENGTH</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memdesc:ga2e7f92835871fb78fa1c8825de803148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the caller-supplied extended disconnect reason string.  <br /></td></tr>
 <tr class="separator:ga2e7f92835871fb78fa1c8825de803148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03180dae85457cfda35b866460387b20" id="r_ga03180dae85457cfda35b866460387b20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga03180dae85457cfda35b866460387b20">SPEEDIFYSDK_MAX_ISP_ACTIONS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:ga03180dae85457cfda35b866460387b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of ISP-stats actions advertised per adapter.  <br /></td></tr>
+<tr class="separator:ga03180dae85457cfda35b866460387b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f31f04790443f6589b23ef1188b89c8" id="r_ga0f31f04790443f6589b23ef1188b89c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0f31f04790443f6589b23ef1188b89c8">SPEEDIFYSDK_MAX_ISP_ACTION_ID</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:ga0f31f04790443f6589b23ef1188b89c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of an ISP-stats action id string.  <br /></td></tr>
+<tr class="separator:ga0f31f04790443f6589b23ef1188b89c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Data size constants. </p>
@@ -355,7 +361,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPEEDIFYSDK_MAX_ADAPTERS&#160;&#160;&#160;48</td>
+          <td class="memname">#define SPEEDIFYSDK_MAX_ADAPTERS&#160;&#160;&#160;275</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -821,6 +827,40 @@ Macros</h2></td></tr>
 
 <p>IP string length. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="ga0f31f04790443f6589b23ef1188b89c8" name="ga0f31f04790443f6589b23ef1188b89c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f31f04790443f6589b23ef1188b89c8">&#9670;&#160;</a></span>SPEEDIFYSDK_MAX_ISP_ACTION_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEEDIFYSDK_MAX_ISP_ACTION_ID&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of an ISP-stats action id string. </p>
+<dl class="section since"><dt>Since</dt><dd>16.8 </dd></dl>
+
+</div>
+</div>
+<a id="ga03180dae85457cfda35b866460387b20" name="ga03180dae85457cfda35b866460387b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03180dae85457cfda35b866460387b20">&#9670;&#160;</a></span>SPEEDIFYSDK_MAX_ISP_ACTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEEDIFYSDK_MAX_ISP_ACTIONS&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of ISP-stats actions advertised per adapter. </p>
+<dl class="section since"><dt>Since</dt><dd>16.8 </dd></dl>
 
 </div>
 </div>

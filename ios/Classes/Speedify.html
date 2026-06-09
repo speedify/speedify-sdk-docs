@@ -124,6 +124,9 @@
                 <a href="../Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/TcpCca.html">TcpCca</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a>
               </li>
               <li class="nav-group-task">
@@ -192,6 +195,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyIspActionsDelegate.html">SpeedifyIspActionsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
@@ -308,6 +314,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IspAction.html">IspAction</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
@@ -1494,6 +1503,33 @@ allows a user to determine the existing profile settings</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">trafficRulesDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyTrafficRulesDelegate.html">SpeedifyTrafficRulesDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC18ispActionsDelegateAA0b3IspdE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/ispActionsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC18ispActionsDelegateAA0b3IspdE0_pSgvp">ispActionsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callbacks for the <code><a href="../Protocols/SpeedifyIspActionsDelegate.html">SpeedifyIspActionsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">ispActionsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SpeedifyIspActionsDelegate.html">SpeedifyIspActionsDelegate</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -6258,6 +6294,186 @@ Current value available from delegate <code>settingsDidUpdate</code>.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11speedifysdk8SpeedifyC9setTcpCca3ccayAA0dE0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/setTcpCca(cca:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC9setTcpCca3ccayAA0dE0O_tF">setTcpCca(cca:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the kernel TCP congestion control algorithm preference for transport sockets.
+Current value available from delegate <code>settingsDidUpdate</code>.</p>
+
+<ul>
+<li>@since 16.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setTcpCca</span><span class="p">(</span><span class="nv">cca</span><span class="p">:</span> <span class="kt"><a href="../Enums/TcpCca.html">TcpCca</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cca</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/TcpCca.html">TcpCca</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC13getIspActions9adapterIDySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/getIspActions(adapterID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC13getIspActions9adapterIDySS_tF">getIspActions(adapterID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests the list of ISP-stats actions advertised for an adapter.
+The reply arrives asynchronously via <code><a href="../Protocols/SpeedifyIspActionsDelegate.html#/s:11speedifysdk26SpeedifyIspActionsDelegateP03ispD9DidUpdate9adapterID7actionsySS_SayAA0C6ActionVGtF">SpeedifyIspActionsDelegate.ispActionsDidUpdate(...)</a></code>.</p>
+
+<p>Action descriptors are static for the lifetime of an adapter&rsquo;s hardware
+association; typical callers fetch once per adapter sighting and cache.</p>
+
+<ul>
+<li>@since 16.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIspActions</span><span class="p">(</span><span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adapterID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the adapter to query</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk8SpeedifyC16performIspAction9adapterID06actionG05valueySS_SSSDySSypGSgtF"></a>
+                    <a name="//apple_ref/swift/Method/performIspAction(adapterID:actionID:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk8SpeedifyC16performIspAction9adapterID06actionG05valueySS_SSSDySSypGSgtF">performIspAction(adapterID:<wbr>actionID:<wbr>value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invokes an ISP-stats action on an adapter. Fire-and-forget; observable
+effects propagate through the regular adapter/state update streams.</p>
+
+<ul>
+<li>@since 16.8</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">performIspAction</span><span class="p">(</span><span class="nv">adapterID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">actionID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adapterID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>adapter to invoke the action on</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actionID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>action id from a prior <code><a href="../Classes/Speedify.html#/s:11speedifysdk8SpeedifyC13getIspActions9adapterIDySS_tF">getIspActions(adapterID:)</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>action-specific JSON object payload, or nil for button actions</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11speedifysdk8SpeedifyC15setJumboPackets03useD0ySb_tF"></a>
                     <a name="//apple_ref/swift/Method/setJumboPackets(useJumbo:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:11speedifysdk8SpeedifyC15setJumboPackets03useD0ySb_tF">setJumboPackets(useJumbo:<wbr>)</a>
@@ -6355,6 +6571,7 @@ Triggers &lsquo;SpeedifySettingsDelegate&rsquo;.
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Set if residential proxy will be used if available on the speed server.
+If the value changes while connected, the SDK will reconnect.
 Triggers &lsquo;SpeedifySettingsDelegate&rsquo;.
 @param enabled enable residential proxy
 @since 16.3</p>

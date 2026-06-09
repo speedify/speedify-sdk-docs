@@ -122,6 +122,9 @@
                 <a href="Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/TcpCca.html">TcpCca</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a>
               </li>
               <li class="nav-group-task">
@@ -190,6 +193,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyIspActionsDelegate.html">SpeedifyIspActionsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
@@ -306,6 +312,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IspAction.html">IspAction</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
@@ -824,6 +833,39 @@ possible for there to be more than one on a single internet connection.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServerSettings</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk9IspActionV"></a>
+                    <a name="//apple_ref/swift/Struct/IspAction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk9IspActionV">IspAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A single ISP-stats action descriptor advertised by an adapter. The <code>id</code>
+identifies the action and defines the shape of the value payload
+<code><a href="Classes/Speedify.html#/s:11speedifysdk8SpeedifyC16performIspAction9adapterID06actionG05valueySS_SSSDySSypGSgtF">Speedify.performIspAction(...)</a></code> expects. Action descriptors are static
+for the lifetime of an adapter&rsquo;s hardware association; fetch via
+<code><a href="Classes/Speedify.html#/s:11speedifysdk8SpeedifyC13getIspActions9adapterIDySS_tF">Speedify.getIspActions(adapterID:)</a></code>.
+@since 16.8</p>
+
+                        <a href="Structs/IspAction.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IspAction</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>

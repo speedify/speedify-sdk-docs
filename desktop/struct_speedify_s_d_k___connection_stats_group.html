@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.7.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
    </div>
   </td>
  </tr>
@@ -109,6 +109,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a11232300c6858e8453ef35e050c2b25f" id="r_a11232300c6858e8453ef35e050c2b25f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___connection_stats.html">SpeedifySDK_ConnectionStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11232300c6858e8453ef35e050c2b25f">connections</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gadd7f081a43fd0dcf9e17a3ec683a17e2">SPEEDIFYSDK_MAX_ADAPTERS</a>]</td></tr>
 <tr class="memdesc:a11232300c6858e8453ef35e050c2b25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of connections  <br /></td></tr>
 <tr class="separator:a11232300c6858e8453ef35e050c2b25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfa25ba008847f57bc765537c183bd5" id="r_afcfa25ba008847f57bc765537c183bd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcfa25ba008847f57bc765537c183bd5">isHistoric</a></td></tr>
+<tr class="memdesc:afcfa25ba008847f57bc765537c183bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if this group came from a historic stats report; real-time fields such as jitterMs, mos, sendBytes, and the congestion flags are not populated on historic entries.  <br /></td></tr>
+<tr class="separator:afcfa25ba008847f57bc765537c183bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A grouping of ConnectionStats. </p>
@@ -145,6 +148,23 @@ Data Fields</h2></td></tr>
 
 <p>how many connections are in this group </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="afcfa25ba008847f57bc765537c183bd5" name="afcfa25ba008847f57bc765537c183bd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfa25ba008847f57bc765537c183bd5">&#9670;&#160;</a></span>isHistoric</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_ConnectionStatsGroup::isHistoric</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if this group came from a historic stats report; real-time fields such as jitterMs, mos, sendBytes, and the congestion flags are not populated on historic entries. </p>
+<dl class="section since"><dt>Since</dt><dd>16.7 </dd></dl>
 
 </div>
 </div>

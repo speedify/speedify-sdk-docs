@@ -13,13 +13,14 @@ var searchData=
   ['remoteport_10',['remotePort',['../struct_speedify_s_d_k___stream_stats.html#a46c50ea3ae0cc8c1f00053ade8005419',1,'SpeedifySDK_StreamStats']]],
   ['replication_11',['replication',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a03a751cbe9d27adc4c23077417c629c1',1,'SpeedifySDK_DSCPQueue']]],
   ['requesttodisabledoh_12',['requestToDisableDoH',['../struct_speedify_s_d_k___privacy_settings.html#af3ac81d12c78ad6cf28319b0109c71fd',1,'SpeedifySDK_PrivacySettings']]],
-  ['residentialproxyenabled_13',['residentialProxyEnabled',['../struct_speedify_s_d_k___privacy_settings.html#a6dfcf01bdaa4f430cdb395029bbd477e',1,'SpeedifySDK_PrivacySettings']]],
-  ['resolution_14',['resolution',['../struct_speedify_s_d_k___speed_test_result_data.html#a78aa471009516bb5cb2fb205e6e1388e',1,'SpeedifySDK_SpeedTestResultData']]],
-  ['results_15',['results',['../struct_speedify_s_d_k___speed_test_result.html#a26ecf178606cfae8768caf3ec454f57b',1,'SpeedifySDK_SpeedTestResult']]],
-  ['resultscount_16',['resultsCount',['../struct_speedify_s_d_k___speed_test_result.html#a56912f39a77fb667856d97250c1a3b42',1,'SpeedifySDK_SpeedTestResult']]],
-  ['retransbytes_17',['retransBytes',['../struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578',1,'SpeedifySDK_SessionStats']]],
-  ['retransmissionattempts_18',['retransmissionAttempts',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a9bc38bbb77fdde429a7a8d38eee5e312',1,'SpeedifySDK_DSCPQueue']]],
-  ['retries_19',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]],
-  ['role_20',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult::role'],['../struct_speedify_s_d_k___system_data.html#a9358a8787c0ecd242ef035244ea70ad2',1,'SpeedifySDK_SystemData::role']]],
-  ['rulesjson_21',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]]
+  ['residentialproxy_13',['residentialProxy',['../struct_speedify_s_d_k___server_information.html#abf46cb1c09c703b6cda04743fac16397',1,'SpeedifySDK_ServerInformation']]],
+  ['residentialproxyenabled_14',['residentialProxyEnabled',['../struct_speedify_s_d_k___privacy_settings.html#a6dfcf01bdaa4f430cdb395029bbd477e',1,'SpeedifySDK_PrivacySettings']]],
+  ['resolution_15',['resolution',['../struct_speedify_s_d_k___speed_test_result_data.html#a78aa471009516bb5cb2fb205e6e1388e',1,'SpeedifySDK_SpeedTestResultData']]],
+  ['results_16',['results',['../struct_speedify_s_d_k___speed_test_result.html#a26ecf178606cfae8768caf3ec454f57b',1,'SpeedifySDK_SpeedTestResult']]],
+  ['resultscount_17',['resultsCount',['../struct_speedify_s_d_k___speed_test_result.html#a56912f39a77fb667856d97250c1a3b42',1,'SpeedifySDK_SpeedTestResult']]],
+  ['retransbytes_18',['retransBytes',['../struct_speedify_s_d_k___session_stats.html#a6c8fc02d608cfff810d4250a1fb12578',1,'SpeedifySDK_SessionStats']]],
+  ['retransmissionattempts_19',['retransmissionAttempts',['../struct_speedify_s_d_k___d_s_c_p_queue.html#a9bc38bbb77fdde429a7a8d38eee5e312',1,'SpeedifySDK_DSCPQueue']]],
+  ['retries_20',['retries',['../struct_speedify_s_d_k___handler_stats.html#a814edb30649f86e5a47d3b45ef9266f2',1,'SpeedifySDK_HandlerStats']]],
+  ['role_21',['role',['../struct_speedify_s_d_k___network_sharing_connection_result.html#a3a70b6bf33c4a99eca72ee0d6389368e',1,'SpeedifySDK_NetworkSharingConnectionResult::role'],['../struct_speedify_s_d_k___system_data.html#a9358a8787c0ecd242ef035244ea70ad2',1,'SpeedifySDK_SystemData::role']]],
+  ['rulesjson_22',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]]
 ];

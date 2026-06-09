@@ -124,6 +124,9 @@
                 <a href="../Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/TcpCca.html">TcpCca</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a>
               </li>
               <li class="nav-group-task">
@@ -192,6 +195,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SpeedifyIspActionsDelegate.html">SpeedifyIspActionsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
@@ -308,6 +314,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IspAction.html">IspAction</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
@@ -1143,6 +1152,37 @@ Not available on historic tunnel stat updates.
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">bondingFiltered</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk15ConnectionStatsV04slowB0Sbvp"></a>
+                    <a name="//apple_ref/swift/Property/slowConnection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk15ConnectionStatsV04slowB0Sbvp">slowConnection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>True if this connection is currently slow.
+Set when the connection has been bonding-filtered for a sustained
+duration while sending below a low-bandwidth threshold.
+Not available on historic tunnel stat updates.
+@since 16.9</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">slowConnection</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>

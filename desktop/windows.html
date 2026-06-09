@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.7.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
    </div>
   </td>
  </tr>
@@ -90,13 +90,14 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Speedify SDK for Windows</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md154"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md156"></a>
 Files</h2>
 <p>Speedify SDK</p><ul>
 <li>bin/[x64|arm64]<ul>
 <li>speedify.exe - main daemon</li>
+<li>wintun.dll - Wintun tunnel-adapter library, loaded by the daemon. This is the default tunnel backend on Windows; it must sit next to speedify.exe.</li>
 <li>bondingsdk.dll - Speedify SDK Library DLL for communicating with the daemon</li>
-<li>tap-driver/ - driver and driver installer. <b>Everything in this folder is architecture-dependent</b><ul>
+<li>tap-driver/ - legacy TAP-Windows6 driver and driver installer, used when the tunnel driver is set to Tap (see SpeedifySDK_SetDriver). <b>Everything in this folder is architecture-dependent</b><ul>
 <li>TapDriverInstallCheck.exe - driver install manager</li>
 <li>[amd64|arm64]/ - Windows drivers<ul>
 <li>devcon.exe - driver installer</li>
@@ -126,21 +127,22 @@ Files</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md155"></a>
+<h2><a class="anchor" id="autotoc_md157"></a>
 Building</h2>
 <ul>
 <li>Link with bondingsdk.lib and put include/ in your include path.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md156"></a>
+<h2><a class="anchor" id="autotoc_md158"></a>
 Distributing</h2>
 <ul>
 <li>Include the contents of the bin/[x64|arm64] folder in your installation path.<ul>
 <li>If you are creating an app that controls a standard Speedify install, you only need bondingsdk.dll</li>
+<li>wintun.dll must be deployed next to speedify.exe. It is the default tunnel adapter, so it is required unless you force Tap mode via SpeedifySDK_SetDriver.</li>
 </ul>
 </li>
-<li>Run tap-driver/TapDriverInstallCheck.exe during installation for the architecture you are installing to install the network driver.</li>
+<li>The TAP driver is only needed when using Tap mode (the legacy TAP-Windows6 adapter). If you use it, run tap-driver/TapDriverInstallCheck.exe during installation for the architecture you are installing to install the network driver.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md157"></a>
+<h2><a class="anchor" id="autotoc_md159"></a>
 Running</h2>
 <ul>
 <li>Run speedify.exe as an admin process or install it as a Windows service.</li>

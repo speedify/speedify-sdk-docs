@@ -6,6 +6,7 @@ var searchData=
   ['filesperdaemon_3',['filesPerDaemon',['../struct_speedify_s_d_k___daemon_log_settings.html#af6b5b71ea301f7eaa00129ad7a6263e5',1,'SpeedifySDK_DaemonLogSettings']]],
   ['firewallsettings_4',['firewallSettings',['../struct_speedify_s_d_k___firewall_settings_result.html#a03686ec6f15b2ffd4d834bb429bf68d4',1,'SpeedifySDK_FirewallSettingsResult']]],
   ['fixeddelay_5',['fixedDelay',['../struct_speedify_s_d_k___settings.html#aa0a7bcbf984e3ae5733dd1a7ac53fd9b',1,'SpeedifySDK_Settings']]],
-  ['forwardedports_6',['forwardedPorts',['../struct_speedify_s_d_k___settings.html#a8500ddc10abfce2aad30f069b5593248',1,'SpeedifySDK_Settings']]],
-  ['fps_7',['fps',['../struct_speedify_s_d_k___speed_test_result_data.html#a8138d584a7d2eeca1cd0179b1425fb1a',1,'SpeedifySDK_SpeedTestResultData']]]
+  ['forwardedportdestips_6',['forwardedPortDestIps',['../struct_speedify_s_d_k___settings.html#aa9e140cb6b07077f8f29ae2dcb5e4b2b',1,'SpeedifySDK_Settings']]],
+  ['forwardedports_7',['forwardedPorts',['../struct_speedify_s_d_k___settings.html#a8500ddc10abfce2aad30f069b5593248',1,'SpeedifySDK_Settings']]],
+  ['fps_8',['fps',['../struct_speedify_s_d_k___speed_test_result_data.html#a8138d584a7d2eeca1cd0179b1425fb1a',1,'SpeedifySDK_SpeedTestResultData']]]
 ];

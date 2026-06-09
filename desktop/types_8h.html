@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.7.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
    </div>
   </td>
  </tr>
@@ -135,6 +135,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___server_settings.html">SpeedifySDK_ServerSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatic server selection method settings.  <a href="struct_speedify_s_d_k___server_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___isp_action.html">SpeedifySDK_IspAction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single ISP-stats action descriptor advertised by an adapter. The <code>id</code> identifies the action and defines the shape of the value payload performIspAction() expects.  <a href="struct_speedify_s_d_k___isp_action.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_speedify_s_d_k___protocol_port_pair.html">SpeedifySDK_ProtocolPortPair</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A protocol/port pair.  <a href="struct_speedify_s_d_k___protocol_port_pair.html#details">More...</a><br /></td></tr>
@@ -404,12 +407,24 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga088bd5be74c1566ce9093bf8701fbdee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transport Protocol modes.  <a href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">More...</a><br /></td></tr>
 <tr class="separator:ga088bd5be74c1566ce9093bf8701fbdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f61964d0882e8954dd0e4f9a6768b94" id="r_ga5f61964d0882e8954dd0e4f9a6768b94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga5f61964d0882e8954dd0e4f9a6768b94">SpeedifySDK_TcpCca</a> { <a class="el" href="group___t_y_p_e_s.html#gga5f61964d0882e8954dd0e4f9a6768b94a474c4c21cffa16b85bc38c10a2a37a74">CCA_AUTO</a>
+, <a class="el" href="group___t_y_p_e_s.html#gga5f61964d0882e8954dd0e4f9a6768b94a013d455c9ca74fc587496f7469606588">CCA_BBR</a>
+, <a class="el" href="group___t_y_p_e_s.html#gga5f61964d0882e8954dd0e4f9a6768b94acb16b074bb0619660c97ea011384c2e8">CCA_SYSTEM</a>
+ }</td></tr>
+<tr class="memdesc:ga5f61964d0882e8954dd0e4f9a6768b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel TCP congestion control algorithm preference for transport sockets.  <a href="group___t_y_p_e_s.html#ga5f61964d0882e8954dd0e4f9a6768b94">More...</a><br /></td></tr>
+<tr class="separator:ga5f61964d0882e8954dd0e4f9a6768b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga765f83167900eb588a4b4c73c8e9f44e" id="r_ga765f83167900eb588a4b4c73c8e9f44e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga765f83167900eb588a4b4c73c8e9f44e">SpeedifySDK_PortProtocol</a> { <a class="el" href="group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44ea9b480fd1da16f2b74b8732c4756217f9">PPROTO_TCP</a>
 , <a class="el" href="group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44eaca15f369269ee3980fafa67a63f4ede4">PPROTO_UDP</a>
 , <a class="el" href="group___t_y_p_e_s.html#gga765f83167900eb588a4b4c73c8e9f44ea7377e6e8a9e539c4a38d3f30e14cdaca">PPROTO_ICMP</a>
  }</td></tr>
 <tr class="memdesc:ga765f83167900eb588a4b4c73c8e9f44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protocol for ports.  <a href="group___t_y_p_e_s.html#ga765f83167900eb588a4b4c73c8e9f44e">More...</a><br /></td></tr>
 <tr class="separator:ga765f83167900eb588a4b4c73c8e9f44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3950d2207c9455dbcdecd3477113cda" id="r_gae3950d2207c9455dbcdecd3477113cda"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gae3950d2207c9455dbcdecd3477113cda">SpeedifySDK_Driver</a> { <a class="el" href="group___t_y_p_e_s.html#ggae3950d2207c9455dbcdecd3477113cdaa4707ef5f3b3812fe73771ca5f7487ac4">SpeedifySDK_Driver_Auto</a> = 0
+, <a class="el" href="group___t_y_p_e_s.html#ggae3950d2207c9455dbcdecd3477113cdaa032c2dee14a7aa407fb0919e9a92c4d6">SpeedifySDK_Driver_Tun</a> = 1
+, <a class="el" href="group___t_y_p_e_s.html#ggae3950d2207c9455dbcdecd3477113cdaa84099719f5029e83a069a4dd8c48e5e5">SpeedifySDK_Driver_Tap</a> = 2
+ }</td></tr>
+<tr class="memdesc:gae3950d2207c9455dbcdecd3477113cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows tunnel-adapter driver selection.  <a href="group___t_y_p_e_s.html#gae3950d2207c9455dbcdecd3477113cda">More...</a><br /></td></tr>
+<tr class="separator:gae3950d2207c9455dbcdecd3477113cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c6cd395ee7068fe5c85f3c861b0c7f2" id="r_ga2c6cd395ee7068fe5c85f3c861b0c7f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2">SpeedifySDK_ErrorType</a> { <br />
 &#160;&#160;<a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2ad57e67a101a4a78c2f0390065043078e">ET_OK</a> = 0
 , <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a4a723d8ce02c2c58ac32fc8a0c713353">ET_NETWORK</a> = 1
@@ -665,9 +680,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gad1fa654aef624b70cd3ba9bd57313daa" id="r_gad1fa654aef624b70cd3ba9bd57313daa"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gad1fa654aef624b70cd3ba9bd57313daa">SpeedifySDK_TransportMode_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">SpeedifySDK_TransportMode</a> priority)</td></tr>
 <tr class="memdesc:gad1fa654aef624b70cd3ba9bd57313daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_TransportMode.  <br /></td></tr>
 <tr class="separator:gad1fa654aef624b70cd3ba9bd57313daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34a1f9e5428276eea822a0a6239a9e6b" id="r_ga34a1f9e5428276eea822a0a6239a9e6b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga34a1f9e5428276eea822a0a6239a9e6b">SpeedifySDK_TcpCca_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga5f61964d0882e8954dd0e4f9a6768b94">SpeedifySDK_TcpCca</a> cca)</td></tr>
+<tr class="memdesc:ga34a1f9e5428276eea822a0a6239a9e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_TcpCca.  <br /></td></tr>
+<tr class="separator:ga34a1f9e5428276eea822a0a6239a9e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf2667ec5bdfbd48ac91a11557ab8cd3c" id="r_gaf2667ec5bdfbd48ac91a11557ab8cd3c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gaf2667ec5bdfbd48ac91a11557ab8cd3c">SpeedifySDK_PortProtocol_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga765f83167900eb588a4b4c73c8e9f44e">SpeedifySDK_PortProtocol</a> portProto)</td></tr>
 <tr class="memdesc:gaf2667ec5bdfbd48ac91a11557ab8cd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_PortProtocol.  <br /></td></tr>
 <tr class="separator:gaf2667ec5bdfbd48ac91a11557ab8cd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabaa7aaf443d7056217edf1f8b37d1eb4" id="r_gabaa7aaf443d7056217edf1f8b37d1eb4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#gabaa7aaf443d7056217edf1f8b37d1eb4">SpeedifySDK_Driver_toString</a> (<a class="el" href="group___t_y_p_e_s.html#gae3950d2207c9455dbcdecd3477113cda">SpeedifySDK_Driver</a> driver)</td></tr>
+<tr class="memdesc:gabaa7aaf443d7056217edf1f8b37d1eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_Driver.  <br /></td></tr>
+<tr class="separator:gabaa7aaf443d7056217edf1f8b37d1eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9281f5f30ee09600e1a0fea5164e71a7" id="r_ga9281f5f30ee09600e1a0fea5164e71a7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_y_p_e_s.html#ga9281f5f30ee09600e1a0fea5164e71a7">SpeedifySDK_ErrorType_toString</a> (<a class="el" href="group___t_y_p_e_s.html#ga2c6cd395ee7068fe5c85f3c861b0c7f2">SpeedifySDK_ErrorType</a> error)</td></tr>
 <tr class="memdesc:ga9281f5f30ee09600e1a0fea5164e71a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a SpeedifySDK_ErrorType.  <br /></td></tr>
 <tr class="separator:ga9281f5f30ee09600e1a0fea5164e71a7"><td class="memSeparator" colspan="2">&#160;</td></tr>

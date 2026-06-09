@@ -119,6 +119,9 @@
                 <a href="Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/TcpCca.html">TcpCca</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/TrafficRuleChangeMethod.html">TrafficRuleChangeMethod</a>
               </li>
               <li class="nav-group-task">
@@ -187,6 +190,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SpeedifyIapDelegate.html">SpeedifyIapDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SpeedifyIspActionsDelegate.html">SpeedifyIspActionsDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/SpeedifyLastDisconnectDelegate.html">SpeedifyLastDisconnectDelegate</a>
@@ -303,6 +309,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/IPRange.html">IPRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IspAction.html">IspAction</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/LocalProxyDomainWatchListItem.html">LocalProxyDomainWatchListItem</a>
@@ -659,6 +668,17 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li><p><strong>Permission Denied</strong>: The SDK automatically triggers the local network permission prompt when discovery starts. If the user denied permission, they must re-enable it in System Settings/Preferences.</p></li>
 </ol>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-16-9' class='heading'>Speedify 16.9</h3>
+
+<ul>
+<li><code><a href="Structs/ConnectionStats.html">ConnectionStats</a></code> objects now include a <code>slowConnection</code> field, set when the connection has been bonding-filtered for a sustained duration while sending below a low-bandwidth threshold. Not available on historic tunnel stat updates.</li>
+</ul>
+<h3 id='speedify-16-8' class='heading'>Speedify 16.8</h3>
+
+<ul>
+<li><code>setTcpCca(cca:)</code> on <code><a href="Classes/Speedify.html">Speedify</a></code> selects the kernel TCP congestion control algorithm applied to Speedify&rsquo;s underlying transport sockets (TCP, multi-TCP, and the TCP carrying HTTPS/WebSocket transport). Accepts <code><a href="Enums/TcpCca.html#/s:11speedifysdk6TcpCcaO4autoyA2CmF">TcpCca.auto</a></code> (Speedify&rsquo;s choice: BBR on Linux/Android kernels that expose it, silent no-op on iOS/macOS where <code>TCP_CONGESTION</code> is absent), <code>.bbr</code>, or <code>.system</code>. Persisted setting is surfaced as <code>tcpCca</code> on <code><a href="Structs/Settings.html">Settings</a></code>.</li>
+<li><code>getIspActions(adapterID:)</code> and <code>performIspAction(adapterID:actionID:value:)</code> on <code><a href="Classes/Speedify.html">Speedify</a></code> expose the per-adapter ISP-stats action mechanism. Adapters that support hardware actions (Starlink: <code>reboot</code>, <code>stow</code>, <code>unstow</code>; cellular on Linux: <code>reset</code>) advertise an action descriptor list — fetched on demand via <code>getIspActions</code>, returned asynchronously to a <code><a href="Protocols/SpeedifyIspActionsDelegate.html#/s:11speedifysdk26SpeedifyIspActionsDelegateP03ispD9DidUpdate9adapterID7actionsySS_SayAA0C6ActionVGtF">SpeedifyIspActionsDelegate.ispActionsDidUpdate(adapterID:actions:)</a></code> as an array of <code><a href="Structs/IspAction.html">IspAction</a></code> entries. Invoke an action with <code>performIspAction</code>; observable effects (e.g. a Starlink reboot dropping the connection) propagate through the regular state / adapter update streams.</li>
+</ul>
 <h3 id='speedify-16-7' class='heading'>Speedify 16.7</h3>
 
 <ul>

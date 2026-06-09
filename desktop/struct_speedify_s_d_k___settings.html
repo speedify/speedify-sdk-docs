@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.7.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
    </div>
   </td>
  </tr>
@@ -118,6 +118,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aba5fb1a5c8ff54a8d0c6404a0ef23098" id="r_aba5fb1a5c8ff54a8d0c6404a0ef23098"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga088bd5be74c1566ce9093bf8701fbdee">SpeedifySDK_TransportMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba5fb1a5c8ff54a8d0c6404a0ef23098">transportMode</a></td></tr>
 <tr class="memdesc:aba5fb1a5c8ff54a8d0c6404a0ef23098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently used connection transport mode selection.  <br /></td></tr>
 <tr class="separator:aba5fb1a5c8ff54a8d0c6404a0ef23098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4baa25e73a38f2bb9fb43efd4239ccc4" id="r_a4baa25e73a38f2bb9fb43efd4239ccc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga5f61964d0882e8954dd0e4f9a6768b94">SpeedifySDK_TcpCca</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4baa25e73a38f2bb9fb43efd4239ccc4">tcpCca</a></td></tr>
+<tr class="memdesc:a4baa25e73a38f2bb9fb43efd4239ccc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">User preference for kernel TCP congestion control on transport sockets.  <br /></td></tr>
+<tr class="separator:a4baa25e73a38f2bb9fb43efd4239ccc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f7497ebe6f0e7a0aa6e05a46566d527" id="r_a7f7497ebe6f0e7a0aa6e05a46566d527"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f7497ebe6f0e7a0aa6e05a46566d527">portsCount</a></td></tr>
 <tr class="memdesc:a7f7497ebe6f0e7a0aa6e05a46566d527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of configured ports to forward.  <br /></td></tr>
 <tr class="separator:a7f7497ebe6f0e7a0aa6e05a46566d527"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +187,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1a88500340ab7d1f70c5ce5184fb8dbe" id="r_a1a88500340ab7d1f70c5ce5184fb8dbe"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a88500340ab7d1f70c5ce5184fb8dbe">maximumTransportRetry</a></td></tr>
 <tr class="memdesc:a1a88500340ab7d1f70c5ce5184fb8dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum time between transport connection retries, in seconds  <br /></td></tr>
 <tr class="separator:a1a88500340ab7d1f70c5ce5184fb8dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8c97fe04820846a94b7f0f332f1623" id="r_a5e8c97fe04820846a94b7f0f332f1623"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e8c97fe04820846a94b7f0f332f1623">transportRotationMinutes</a></td></tr>
+<tr class="memdesc:a5e8c97fe04820846a94b7f0f332f1623"><td class="mdescLeft">&#160;</td><td class="mdescRight">age in minutes after which a TCP transport socket is rotated; 0 disables  <br /></td></tr>
+<tr class="separator:a5e8c97fe04820846a94b7f0f332f1623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d23a119899512a063948baae5e4d203" id="r_a0d23a119899512a063948baae5e4d203"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d23a119899512a063948baae5e4d203">packetPoolSize</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#ga914dacd35d5642c80c000a7920cb8c45">SPEEDIFYSDK_MAX_PACKET_POOL_NAME_LENGTH</a>]</td></tr>
 <tr class="memdesc:a0d23a119899512a063948baae5e4d203"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of the packet pool  <br /></td></tr>
 <tr class="separator:a0d23a119899512a063948baae5e4d203"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +202,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aa0a7bcbf984e3ae5733dd1a7ac53fd9b" id="r_aa0a7bcbf984e3ae5733dd1a7ac53fd9b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a7bcbf984e3ae5733dd1a7ac53fd9b">fixedDelay</a></td></tr>
 <tr class="memdesc:aa0a7bcbf984e3ae5733dd1a7ac53fd9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The delay in ms applied in each direction to select flows.  <br /></td></tr>
 <tr class="separator:aa0a7bcbf984e3ae5733dd1a7ac53fd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15125f7a79c2ed418055adc41eb28a00" id="r_a15125f7a79c2ed418055adc41eb28a00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#gae3950d2207c9455dbcdecd3477113cda">SpeedifySDK_Driver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15125f7a79c2ed418055adc41eb28a00">driver</a></td></tr>
+<tr class="memdesc:a15125f7a79c2ed418055adc41eb28a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows tunnel-adapter driver selection.  <br /></td></tr>
+<tr class="separator:a15125f7a79c2ed418055adc41eb28a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e140cb6b07077f8f29ae2dcb5e4b2b" id="r_aa9e140cb6b07077f8f29ae2dcb5e4b2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9e140cb6b07077f8f29ae2dcb5e4b2b">forwardedPortDestIps</a> [<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gae7f28a426899e7ff9da29f9061e3ccc5">SPEEDIFYSDK_MAX_FORWARD_PORTS</a>]</td></tr>
+<tr class="memdesc:aa9e140cb6b07077f8f29ae2dcb5e4b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional destination IP for each entry in forwardedPorts[], same index and bounded by portsCount. Empty string (first byte 0) means legacy router delivery. Set via SpeedifySDK_SetForwardPortsWithDestination.  <br /></td></tr>
+<tr class="separator:aa9e140cb6b07077f8f29ae2dcb5e4b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Speedify settings. </p>
@@ -269,6 +281,24 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a15125f7a79c2ed418055adc41eb28a00" name="a15125f7a79c2ed418055adc41eb28a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15125f7a79c2ed418055adc41eb28a00">&#9670;&#160;</a></span>driver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#gae3950d2207c9455dbcdecd3477113cda">SpeedifySDK_Driver</a> SpeedifySDK_Settings::driver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Windows tunnel-adapter driver selection. </p>
+<p>Default Auto (currently resolves to Tun / Wintun). Set to Tap when an LWF-based product (e.g. Connectify Hotspot) needs to bind a filter driver to the Speedify adapter; Wintun does not accept LWF binds.</p>
+<p>Windows only. </p><dl class="section since"><dt>Since</dt><dd>16.9 </dd></dl>
+
+</div>
+</div>
 <a id="a6982a372b37777fa8dfea1f711759cfc" name="a6982a372b37777fa8dfea1f711759cfc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6982a372b37777fa8dfea1f711759cfc">&#9670;&#160;</a></span>enableAutomaticPriority</h2>
 
@@ -334,6 +364,23 @@ Data Fields</h2></td></tr>
 
 <p>The delay in ms applied in each direction to select flows. </p>
 <dl class="section since"><dt>Since</dt><dd>15.2 </dd></dl>
+
+</div>
+</div>
+<a id="aa9e140cb6b07077f8f29ae2dcb5e4b2b" name="aa9e140cb6b07077f8f29ae2dcb5e4b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e140cb6b07077f8f29ae2dcb5e4b2b">&#9670;&#160;</a></span>forwardedPortDestIps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga3eee6ad672e51836e3557d157b9acbb2">SpeedifySDK_IPAddressString</a> SpeedifySDK_Settings::forwardedPortDestIps[<a class="el" href="group___d_e_f_i_n_e_l_i_m_i_t_s.html#gae7f28a426899e7ff9da29f9061e3ccc5">SPEEDIFYSDK_MAX_FORWARD_PORTS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional destination IP for each entry in forwardedPorts[], same index and bounded by portsCount. Empty string (first byte 0) means legacy router delivery. Set via SpeedifySDK_SetForwardPortsWithDestination. </p>
+<dl class="section since"><dt>Since</dt><dd>16.9 </dd></dl>
 
 </div>
 </div>
@@ -711,6 +758,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a4baa25e73a38f2bb9fb43efd4239ccc4" name="a4baa25e73a38f2bb9fb43efd4239ccc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baa25e73a38f2bb9fb43efd4239ccc4">&#9670;&#160;</a></span>tcpCca</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___t_y_p_e_s.html#ga5f61964d0882e8954dd0e4f9a6768b94">SpeedifySDK_TcpCca</a> SpeedifySDK_Settings::tcpCca</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User preference for kernel TCP congestion control on transport sockets. </p>
+<dl class="section since"><dt>Since</dt><dd>16.8 </dd></dl>
+
+</div>
+</div>
 <a id="aba5fb1a5c8ff54a8d0c6404a0ef23098" name="aba5fb1a5c8ff54a8d0c6404a0ef23098"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba5fb1a5c8ff54a8d0c6404a0ef23098">&#9670;&#160;</a></span>transportMode</h2>
 
@@ -725,6 +789,23 @@ Data Fields</h2></td></tr>
 
 <p>Currently used connection transport mode selection. </p>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="a5e8c97fe04820846a94b7f0f332f1623" name="a5e8c97fe04820846a94b7f0f332f1623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8c97fe04820846a94b7f0f332f1623">&#9670;&#160;</a></span>transportRotationMinutes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SpeedifySDK_Settings::transportRotationMinutes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>age in minutes after which a TCP transport socket is rotated; 0 disables </p>
+<dl class="section since"><dt>Since</dt><dd>16.9 </dd></dl>
 
 </div>
 </div>
