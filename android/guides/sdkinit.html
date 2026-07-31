@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Initializing the SDK - Speedify SDK for Android 16.9.0.1</title>
+    <title>Initializing the SDK - Speedify SDK for Android 17.0.4.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -48,7 +48,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 16.9.0.1
+                    Speedify SDK for Android 17.0.4.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -73,7 +73,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 16.9.0.1
+                                    Speedify SDK for Android 17.0.4.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -87,7 +87,7 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 16.9.0.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.0.4.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Initializing the SDK</span></div>
   <div class="cover ">
@@ -121,7 +121,13 @@ public class MyApplication extends Application implements SpeedifySDK.AutoConstr
     SpeedifySDK.initializeVPNPermission(this);
   }
 </code></pre><p>When you want to start the Speedify SDK, call this to get an instance of the SDK.</p><pre><code>  SpeedifySDK sdk = SpeedifySDK.getInstance(context);
-</code></pre><h2>Optional: Application onCreate</h2><p>The Speedify SDK starts up a background process to run the VPN. If you initialize other components in your Application's onCreate, you may need to return early to avoid initializing them in this process as well.</p><pre><code>  @Override
+</code></pre><h2>Logging In</h2><p>You must be logged in before you can connect. A fresh SDK starts in the <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-o-u-t/index.html"><code>LOGGED_OUT</code></a> state; once authenticated it moves to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a>, from which you can connect. State changes are delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (see <a href="#receivingstate">Receiving State in Your UI</a>).</p><p>Choose one of:</p><ul><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login.html"><code>login(username, password)</code></a> — a Speedify account.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-o-auth.html"><code>loginOAuth(token)</code></a> — an OAuth access token. This is an enterprise feature that requires additional backend development; contact Connectify for more information about implementing this for your organization.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-auto-account.html"><code>loginAutoAccount()</code></a> — an automatically generated, device-bound account. This is the lowest-friction option for getting a VPN running without a login screen.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode()</code></a> — activate the device from a browser instead of entering credentials in-app. Useful for TVs, set-top boxes, and other limited-input devices.</li></ul><p>The current state is delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-state.html"><code>refreshState</code></a> to fetch it on demand); there is no synchronous state getter. Drive login from your state receiver:</p><pre><code>  @Override
+  public void OnState(Types.State state) {
+    if (state == Types.State.LOGGED_OUT) {
+      sdk.loginAutoAccount();   // or login(user, password) / loginOAuth(token)
+    }
+  }
+</code></pre><p>The activation-code flow is a two-step login. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode</code></a>, then handle <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-activation-code.html"><code>OnActivationCode</code></a>, which delivers an <code>activationCode</code> and an <code>activationUrl</code>. Present those to the user (for example, render the URL as a QR code); they open the URL in a browser, sign in, and enter the code to authorize this device. On success the SDK transitions to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a> like any other login — watch <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a>.</p><p>Login failures are reported via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a>. If login fails even with valid credentials, confirm your app has been authorized — see <a href="prerequisites.html">Prerequisites</a>. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/logout.html"><code>logout</code></a> to log out.</p><h2>Optional: Application onCreate</h2><p>The Speedify SDK starts up a background process to run the VPN. If you initialize other components in your Application's onCreate, you may need to return early to avoid initializing them in this process as well.</p><pre><code>  @Override
   public void onCreate() {
     super.onCreate();
 
@@ -131,7 +137,7 @@ public class MyApplication extends Application implements SpeedifySDK.AutoConstr
 
     // ... other initialization that you only want to run in your app's UI process ...
   }
-</code></pre><h2>Optional: Handlers</h2><p>If you do not specify a custom <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> in  <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/get-speedify-s-d-k.html"><code>getSpeedifySDK</code></a>, you can call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-handler.html"><code>setHandler</code></a> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a> method above.</p><h2>Optional: SDK Cleanup</h2><p>To close down the SDK entirely without exiting your application, call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-force-exit.html"><code>SpeedifySDK.ForceExit(context)</code></a>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/restart-services.html"><code>restartServices</code></a> on your old SpeedifySDK object.</p></body>
+</code></pre><h2>Receiving State</h2><p>To drive your UI you register an <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/index.html"><code>ISdkStateReceiver</code></a>, whose callbacks run in your process — see <a href="receivingstate.html">Receiving State in Your UI</a>. This is distinct from the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> below, some of whose callbacks run in the SDK's background process.</p><h2>Optional: Handlers</h2><p>If you do not specify a custom <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> in  <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/get-speedify-s-d-k.html"><code>getSpeedifySDK</code></a>, you can call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-handler.html"><code>setHandler</code></a> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a> method above.</p><h2>Optional: SDK Cleanup</h2><p>To close down the SDK entirely without exiting your application, call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-force-exit.html"><code>SpeedifySDK.ForceExit(context)</code></a>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/restart-services.html"><code>restartServices</code></a> on your old SpeedifySDK object.</p></body>
     </div>
   </div>
 </div>

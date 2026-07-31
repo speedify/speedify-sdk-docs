@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Network Sharing - Speedify SDK for Android 16.9.0.1</title>
+    <title>Network Sharing - Speedify SDK for Android 17.0.4.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -48,7 +48,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 16.9.0.1
+                    Speedify SDK for Android 17.0.4.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -73,7 +73,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 16.9.0.1
+                                    Speedify SDK for Android 17.0.4.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -87,60 +87,12 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 16.9.0.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.0.4.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Network Sharing</span></div>
   <div class="cover ">
     <div class="guide-content">
-<body><p>
-
-
-As of version 14.0, Speedify SDK supports sharing cellular connections from mobile devices to other devices via Wi-Fi and/or Ethernet. These shared connections are used for VPN connection transports.
-
-Permission Requirements
------
-
-If you want to run network sharing, you need to add the <code>CHANGE_WIFI_MULTICAST_STATE</code> permission to your AndroidManifest.xml file. This permission is required to use the multicast DNS (MDNS) protocol, which is used for device discovery.
-
-Overview
------
-
-Devices discover each other via MDNS announcements and queries. Host devices (Android and iOS devices with cellular interfaces) announce themselves as network sharing hosts and run a TCP listen socket. Client devices query for hosts and connect to them. Command and control messaging is sent over these TCP sockets, with transport connections established over separate UDP sockets.
-
-Configuration
------
-
-<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-client-enabled.html"><code>setNetworkSharingClientEnabled</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-host-enabled.html"><code>setNetworkSharingHostEnabled</code></a> enable network sharing on the device.
-
-A default display name is pulled from the device. This can be overridden with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-display-name.html"><code>setNetworkSharingDisplayName</code></a>.
-
-Discovery
------
-
-Discovery/discoverability phases are automatically initiated on network or user data changes, and last for 10 seconds. Discovery can also be manually initiated with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/start-network-sharing-discovery.html"><code>startNetworkSharingDiscovery</code></a>. Each call to this starts a discovery phase which lasts for 30 seconds.
-
-Newly discovered peers are signaled via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-new-peer-available.html"><code>OnNetworkSharingNewPeerAvailable</code></a>.
-
-Pairing
------
-
-Peers may be paired by calling <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/request-network-sharing-pair.html"><code>requestNetworkSharingPair</code></a>. This sends a pairing request to the peer, which is signaled via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-pair-request.html"><code>OnNetworkSharingPairRequest</code></a> and accepted or rejected with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/allow-network-sharing-pair.html"><code>allowNetworkSharingPair</code></a>.
-
-Pair requests may be set to be automatically accepted or rejected with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-pair-request-behavior.html"><code>setNetworkSharingPairRequestBehavior</code></a>.
-
-A peer may be removed with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/unpair-network-sharing-peer.html"><code>unpairNetworkSharingPeer</code></a>.
-
-Manual Connections
------
-
-<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/connect-to-network-share-via-connect-code.html"><code>connectToNetworkShareViaConnectCode</code></a> is used to manually connect to a network shared host via their connect code.
-
-<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/reconnect-to-network-share.html"><code>reconnectToNetworkShare</code></a> reconnects to a previously authenticated network share peer.
-
-Status
------
-
-Currently available and previously paired peers are available via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-shares-available.html"><code>OnNetworkSharesAvailable</code></a>.</p></body>
+<body><p><a id="pairshare"></a></p><p>As of version 14.0, Speedify SDK supports sharing cellular connections from mobile devices to other devices via Wi-Fi and/or Ethernet (also referred to as &quot;Pair &amp; Share&quot;). These shared connections are used for VPN connection transports.</p><h2>Permission Requirements</h2><p>If you want to run network sharing, you need to add the <code>CHANGE_WIFI_MULTICAST_STATE</code> permission to your AndroidManifest.xml file. This permission is required to use the multicast DNS (MDNS) protocol, which is used for device discovery.</p><p>On Android 17 and later, network sharing discovery also requires the <code>ACCESS_LOCAL_NETWORK</code> runtime permission. The <code>.aar</code> declares it for you, but you must request it at runtime (see <a href="#permissions">Permissions</a>). If discovery or connection is blocked because the permission has not been granted, <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-local-network-blocked.html"><code>OnNetworkSharingLocalNetworkBlocked</code></a> is called — prompt the user for the permission in response.</p><h2>Overview</h2><p>Devices discover each other via MDNS announcements and queries. Host devices (Android and iOS devices with cellular interfaces) announce themselves as network sharing hosts and run a TCP listen socket. Client devices query for hosts and connect to them. Command and control messaging is sent over these TCP sockets, with transport connections established over separate UDP sockets.</p><h2>Typical Flow</h2><ol><li>Enable the role(s) you want with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-host-enabled.html"><code>setNetworkSharingHostEnabled</code></a> and/or <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-client-enabled.html"><code>setNetworkSharingClientEnabled</code></a>.</li><li>Start discovery with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/start-network-sharing-discovery.html"><code>startNetworkSharingDiscovery</code></a>; newly seen peers arrive via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-new-peer-available.html"><code>OnNetworkSharingNewPeerAvailable</code></a>.</li><li>Request a pairing with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/request-network-sharing-pair.html"><code>requestNetworkSharingPair</code></a>. The remote device is notified via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-pair-request.html"><code>OnNetworkSharingPairRequest</code></a> and answers with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/allow-network-sharing-pair.html"><code>allowNetworkSharingPair</code></a>.</li><li>Both sides observe the result via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-peer-pairing-change.html"><code>OnNetworkSharingPeerPairingChange</code></a>, and the updated peer list via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-shares-available.html"><code>OnNetworkSharesAvailable</code></a>.</li><li>Connection/tunnel state changes for a peer are reported via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-peer-status-change.html"><code>OnNetworkSharingPeerStatusChange</code></a>.</li></ol><h2>Configuration</h2><p><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-client-enabled.html"><code>setNetworkSharingClientEnabled</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-host-enabled.html"><code>setNetworkSharingHostEnabled</code></a> enable network sharing on the device. The current network sharing settings are reported on <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-settings.html"><code>OnNetworkSharingSettings</code></a> (refresh with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-network-sharing-settings.html"><code>refreshNetworkSharingSettings</code></a>).</p><p>A default display name is pulled from the device. This can be overridden with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-display-name.html"><code>setNetworkSharingDisplayName</code></a>.</p><h2>Discovery</h2><p>Discovery/discoverability phases are automatically initiated on network or user data changes, and last for 10 seconds. Discovery can also be manually initiated with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/start-network-sharing-discovery.html"><code>startNetworkSharingDiscovery</code></a>. Each call to this starts a discovery phase which lasts for 30 seconds.</p><p>Newly discovered peers are signaled via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-new-peer-available.html"><code>OnNetworkSharingNewPeerAvailable</code></a>.</p><h2>Pairing</h2><p>Peers may be paired by calling <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/request-network-sharing-pair.html"><code>requestNetworkSharingPair</code></a>. This sends a pairing request to the peer, which is signaled via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-pair-request.html"><code>OnNetworkSharingPairRequest</code></a> and accepted or rejected with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/allow-network-sharing-pair.html"><code>allowNetworkSharingPair</code></a>.</p><p>Pair requests may be set to be automatically accepted or rejected with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-network-sharing-pair-request-behavior.html"><code>setNetworkSharingPairRequestBehavior</code></a>.</p><p>A peer may be removed with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/unpair-network-sharing-peer.html"><code>unpairNetworkSharingPeer</code></a>.</p><h2>Manual Connections</h2><p><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/connect-to-network-share-via-connect-code.html"><code>connectToNetworkShareViaConnectCode</code></a> is used to manually connect to a network shared host via their connect code.</p><p><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/reconnect-to-network-share.html"><code>reconnectToNetworkShare</code></a> reconnects to a previously authenticated network share peer.</p><h2>Status</h2><p>Currently available and previously paired peers are available via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-shares-available.html"><code>OnNetworkSharesAvailable</code></a>.</p></body>
     </div>
   </div>
 </div>

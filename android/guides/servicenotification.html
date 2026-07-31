@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Service Notification - Speedify SDK for Android 16.9.0.1</title>
+    <title>Service Notification - Speedify SDK for Android 17.0.4.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -48,7 +48,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 16.9.0.1
+                    Speedify SDK for Android 17.0.4.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -73,7 +73,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 16.9.0.1
+                                    Speedify SDK for Android 17.0.4.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -87,45 +87,24 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 16.9.0.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.0.4.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Service Notification</span></div>
   <div class="cover ">
     <div class="guide-content">
-<body><p>
-
-
-The main processing and VPN service of the Speedify SDK is done in an Android foreground service running in a background process. Starting with Android Oreo, foreground services are required to have a notification visible at all times. Prior to Oreo it is still recommened to have this notification so that the OS knows that the service is important, and that it should not be killed in low memory situations.
-
-As of Android 13, <code>POST_NOTIFICATIONS</code> permission is required to show the foreground service notification.</p><pre><code class="language-">  // notification permission is required for foreground service notification to show
+<body><p>The main processing and VPN service of the Speedify SDK is done in an Android foreground service running in a background process. Starting with Android Oreo, foreground services are required to have a notification visible at all times. Prior to Oreo it is still recommened to have this notification so that the OS knows that the service is important, and that it should not be killed in low memory situations.</p><p>As of Android 13, <code>POST_NOTIFICATIONS</code> permission is required to show the foreground service notification.</p><pre><code>  // notification permission is required for foreground service notification to show
   if (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.TIRAMISU) {
     NotificationManager mNotifyMgr = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
     if (!mNotifyMgr.areNotificationsEnabled()) {
       ActivityCompat.requestPermissions(this, new String[] { android.Manifest.permission.POST_NOTIFICATIONS }, 100);
     }
   }
-```
-
-The default [`SpeedifyHandler`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html) provided by the Speedify SDK implements a notification for the foreground service, complete with connect, disconnect, and exit controls. 
-
-The text of this notification is customizable via the default service notification resource strings outlined in [SDK Strings](userstrings.html).
-
-The default icon used is drawable resource named `speedify_notification_icon`. This can be overridden via [`setServiceNotificationIcon`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-icon.html).
-
-The default click action is to launch the main launcher intent of the application, as returned by &lt;a href=&quot;https://developer.android.com/reference/android/content/pm/PackageManager#getLaunchIntentForPackage(java.lang.String)&quot;&gt;PackageManager.getLaunchIntentForPackage&lt;/a&gt;. This can be overridden via [`setServiceNotificationLaunchIntent`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-launch-intent.html).
-
-If you want to completely customize the notification, you can override [`UpdateForegroundNotification`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html) and [`HideForegroundNotification`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html) in [`SpeedifyHandler`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html), and provide your own notification. You must also use a notification ID of [`SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-n-o-t-i-f-i-c-a-t-i-o-n_-i-d.html) to replace the temporary minimal foreground notification that is generated to avoid ANRs. The notification channel used is [`SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-c-h-a-n-n-e-l_-i-d.html).
-
-**NOTE** : [`UpdateForegroundNotification`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html) and [`HideForegroundNotification`](../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html) are called from the background process. You will not be able to access objects running in your UI process.
-
-```
-
-    mySpeedifySDKObject.setHandler(new SpeedifyHandler() {
+</code></pre><p>The default <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> provided by the Speedify SDK implements a notification for the foreground service, complete with connect, disconnect, and exit controls.</p><p>The text of this notification is customizable via the default service notification resource strings outlined in <a href="userstrings.html">SDK Strings</a>.</p><p>The default icon used is drawable resource named <code>speedify_notification_icon</code>. This can be overridden via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-icon.html"><code>setServiceNotificationIcon</code></a>.</p><p>The default click action is to launch the main launcher intent of the application, as returned by <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getLaunchIntentForPackage(java.lang.String)">PackageManager.getLaunchIntentForPackage</a>. This can be overridden via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-launch-intent.html"><code>setServiceNotificationLaunchIntent</code></a>.</p><p>If you want to completely customize the notification, you can override <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html"><code>UpdateForegroundNotification</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html"><code>HideForegroundNotification</code></a> in <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a>, and provide your own notification. You must also use a notification ID of <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-n-o-t-i-f-i-c-a-t-i-o-n_-i-d.html"><code>SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</code></a> to replace the temporary minimal foreground notification that is generated to avoid ANRs. The notification channel used is <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-c-h-a-n-n-e-l_-i-d.html"><code>SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</code></a>.</p><p>The current service state is passed in a <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-foreground-notification-receiver/-service-data/index.html"><code>ServiceData</code></a> object, whose fields include <code>state</code>, <code>serverName</code>, <code>killswitchActive</code>, <code>activePeerClients</code>, and <code>sharedNetworks</code>.</p><p><strong>NOTE</strong> : <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html"><code>UpdateForegroundNotification</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html"><code>HideForegroundNotification</code></a> are called from the background process. You will not be able to access objects running in your UI process.</p><pre><code>    mySpeedifySDKObject.setHandler(new SpeedifyHandler() {
 
       @Override
-      public void UpdateForegroundNotification(Service service, Types.State state, String serverName, boolean killswitchActive)	 {        
+      public void UpdateForegroundNotification(Service service, IForegroundNotificationReceiver.ServiceData serviceData) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(service, MY_NOTIFICATION_CHANNEL_ID);
-        builder.setContentTitle(&quot;MyVPN&quot;).setContentText(state.toString()).setSmallIcon(R.drawable.notification_icon);
+        builder.setContentTitle(&quot;MyVPN&quot;).setContentText(serviceData.state.toString()).setSmallIcon(R.drawable.notification_icon);
         Notification n = builder.build();
         service.startForeground(MY_FOREGROUND_NOTIFICATION_ID, n);
       }
@@ -137,8 +116,6 @@ If you want to completely customize the notification, you can override [`UpdateF
       }
 
     });
-
-```
 </code></pre></body>
     </div>
   </div>

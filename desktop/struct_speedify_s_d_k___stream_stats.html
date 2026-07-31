@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.0.4</span>
    </div>
   </td>
  </tr>
@@ -159,6 +159,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2cb713d586601a784dca03bfb14ca188" id="r_a2cb713d586601a784dca03bfb14ca188"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cb713d586601a784dca03bfb14ca188">userPriority</a></td></tr>
 <tr class="memdesc:a2cb713d586601a784dca03bfb14ca188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this stream is from user-configured priority (not auto-detected).  <br /></td></tr>
 <tr class="separator:a2cb713d586601a784dca03bfb14ca188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf64632c1f2f7a1971bbaf6a48dcb444" id="r_aaf64632c1f2f7a1971bbaf6a48dcb444"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf64632c1f2f7a1971bbaf6a48dcb444">retransmitRate</a></td></tr>
+<tr class="memdesc:aaf64632c1f2f7a1971bbaf6a48dcb444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retransmit rate of this stream, as a percent of outbound packets in the last interval (for protocols that flag retransmits, e.g. TCP and SRT).  <br /></td></tr>
+<tr class="separator:aaf64632c1f2f7a1971bbaf6a48dcb444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd34ca0b47e5ca6c852dae3852599856" id="r_afd34ca0b47e5ca6c852dae3852599856"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd34ca0b47e5ca6c852dae3852599856">rtt</a></td></tr>
+<tr class="memdesc:afd34ca0b47e5ca6c852dae3852599856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average round-trip time of this stream in milliseconds, when reported by the stream's protocol (currently SRT); -1 when no RTT is available.  <br /></td></tr>
+<tr class="separator:afd34ca0b47e5ca6c852dae3852599856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Statistics for a single stream. </p>
@@ -431,6 +437,40 @@ Data Fields</h2></td></tr>
 
 <p>The remote port that this stream is connected to. </p>
 <dl class="section since"><dt>Since</dt><dd>14.1 </dd></dl>
+
+</div>
+</div>
+<a id="aaf64632c1f2f7a1971bbaf6a48dcb444" name="aaf64632c1f2f7a1971bbaf6a48dcb444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf64632c1f2f7a1971bbaf6a48dcb444">&#9670;&#160;</a></span>retransmitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SpeedifySDK_StreamStats::retransmitRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retransmit rate of this stream, as a percent of outbound packets in the last interval (for protocols that flag retransmits, e.g. TCP and SRT). </p>
+<dl class="section since"><dt>Since</dt><dd>17.0 </dd></dl>
+
+</div>
+</div>
+<a id="afd34ca0b47e5ca6c852dae3852599856" name="afd34ca0b47e5ca6c852dae3852599856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd34ca0b47e5ca6c852dae3852599856">&#9670;&#160;</a></span>rtt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SpeedifySDK_StreamStats::rtt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Average round-trip time of this stream in milliseconds, when reported by the stream's protocol (currently SRT); -1 when no RTT is available. </p>
+<dl class="section since"><dt>Since</dt><dd>17.0 </dd></dl>
 
 </div>
 </div>

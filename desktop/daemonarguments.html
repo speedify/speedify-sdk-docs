@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.0.4</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(function(){ initResizable(false); });
 Options</h2>
 <ul>
 <li><code>-h</code> : Show this help</li>
-<li><code>-r &lt;resource path&gt;</code> : Path to a directory containing runtime resources, like cacert.pem (default: .)</li>
+<li><code>-r &lt;resource path&gt;</code> : Path to a directory containing runtime resources, like cacert.pem (default: .). Point this at the SDK's <code>resources/</code> folder — without it the daemon cannot establish TLS to Speedify's servers, so login/connect will fail.</li>
 <li><code>-d &lt;data path&gt;</code> : Path to a directory to use for persistent data storage (default: .)</li>
 <li><code>-g &lt;temp path&gt;</code> : Path to a directory to use for temporary storage and logging (default: same as the data path)</li>
 <li><code>-c &lt;crash path&gt;</code> : Path to a directory to use for crash dumps (default: same as the data path)</li>

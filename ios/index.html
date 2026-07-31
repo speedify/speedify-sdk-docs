@@ -668,6 +668,21 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li><p><strong>Permission Denied</strong>: The SDK automatically triggers the local network permission prompt when discovery starts. If the user denied permission, they must re-enable it in System Settings/Preferences.</p></li>
 </ol>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-17-0-4' class='heading'>Speedify 17.0.4</h3>
+
+<ul>
+<li>No new features. This is a performance and stability release.</li>
+</ul>
+<h3 id='speedify-17-0-2' class='heading'>Speedify 17.0.2</h3>
+
+<ul>
+<li>No new features. This is a performance and stability release.</li>
+</ul>
+<h3 id='speedify-17-0' class='heading'>Speedify 17.0</h3>
+
+<ul>
+<li><code><a href="Structs/StreamStats.html">StreamStats</a></code> objects now include a <code>retransmitRate</code> field, the retransmit rate of the stream as a percent of outbound packets in the last interval (for protocols that flag retransmits, e.g. TCP and SRT), and an <code>rtt</code> field, the average round-trip time of the stream in milliseconds when reported by the stream&rsquo;s protocol (currently SRT); -1 when no RTT is available.</li>
+</ul>
 <h3 id='speedify-16-9' class='heading'>Speedify 16.9</h3>
 
 <ul>

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Permissions - Speedify SDK for Android 16.9.0.1</title>
+    <title>Permissions - Speedify SDK for Android 17.0.4.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -48,7 +48,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 16.9.0.1
+                    Speedify SDK for Android 17.0.4.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -73,7 +73,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 16.9.0.1
+                                    Speedify SDK for Android 17.0.4.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -87,12 +87,12 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 16.9.0.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.0.4.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Permissions</span></div>
   <div class="cover ">
     <div class="guide-content">
-<body><h2>Required Permissions</h2><ul><li><code>INTERNET</code><ul><li>Talk to speed servers on the internet</li></ul></li><li><code>FOREGROUND_SERVICE</code><ul><li>Ability to run VPN service in background</li></ul></li><li><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>, <code>CHANGE_NETWORK_STATE</code><ul><li>Check and control network adapter state</li></ul></li><li><code>FOREGROUND_SERVICE_SYSTEM_EXEMPTED</code><ul><li>Ability to run VPN service in background as of Android U</li></ul></li></ul><h2>Optional Permissions</h2><ul><li><code>RECEIVE_BOOT_COMPLETED</code><ul><li><a href="onboot.html">Automatic reconnect</a> after boot</li></ul></li><li><code>QUERY_ALL_PACKAGES</code><ul><li>Better Streaming mode performance, Allow apps that use P2P for legal purposes to stay on normal servers</li></ul></li><li><code>VIBRATE</code><ul><li>Default <a href="servicenotification.html">foreground notification</a> will vibrate when entering kill switch mode</li></ul></li><li><code>CHANGE_WIFI_MULTICAST_STATE</code><ul><li>Required for <a href="networksharing.html">network sharing</a></li></ul></li><li><code>POST_NOTIFICATIONS</code><ul><li>Required to see the <a href="servicenotification.html">foreground notification</a> on Android T+</li></ul></li></ul></body>
+<body><h2>Required Permissions</h2><ul><li><code>INTERNET</code><ul><li>Talk to speed servers on the internet</li></ul></li><li><code>FOREGROUND_SERVICE</code><ul><li>Ability to run VPN service in background</li></ul></li><li><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>, <code>CHANGE_NETWORK_STATE</code><ul><li>Check and control network adapter state</li></ul></li><li><code>FOREGROUND_SERVICE_SYSTEM_EXEMPTED</code><ul><li>Ability to run VPN service in background as of Android U</li></ul></li></ul><h2>Optional Permissions</h2><ul><li><code>RECEIVE_BOOT_COMPLETED</code><ul><li><a href="onboot.html">Automatic reconnect</a> after boot</li></ul></li><li><code>QUERY_ALL_PACKAGES</code><ul><li>Better Streaming mode performance, Allow apps that use P2P for legal purposes to stay on normal servers</li></ul></li><li><code>VIBRATE</code><ul><li>Default <a href="servicenotification.html">foreground notification</a> will vibrate when entering kill switch mode</li></ul></li><li><code>CHANGE_WIFI_MULTICAST_STATE</code><ul><li>Required for <a href="networksharing.html">network sharing</a></li></ul></li><li><code>POST_NOTIFICATIONS</code><ul><li>Required to see the <a href="servicenotification.html">foreground notification</a> on Android T+</li></ul></li><li><code>ACCESS_LOCAL_NETWORK</code><ul><li>Required for <a href="networksharing.html#pairshare">Pair &amp; Share</a> discovery on Android 17+</li></ul></li></ul><h2>Runtime Permissions</h2><p>Most of the permissions above are install-time and merged in from the SDK's <code>.aar</code> manifest. A few must be requested at runtime:</p><ul><li><code>POST_NOTIFICATIONS</code> — request on Android 13+ (T) so the foreground <a href="servicenotification.html">service notification</a> can be shown. See <a href="servicenotification.html">Service Notification</a> for a request example.</li><li><code>ACCESS_LOCAL_NETWORK</code> — request on Android 17+ for <a href="networksharing.html">network sharing</a> discovery. If discovery is blocked because it has not been granted, <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-network-sharing-local-network-blocked.html"><code>OnNetworkSharingLocalNetworkBlocked</code></a> fires — request the permission in response.</li></ul><p>VPN consent is handled separately (not a normal runtime permission): call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/initialize-v-p-n-permission.html"><code>initializeVPNPermission</code></a> to show the system VPN dialog; the result is reported via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-v-p-n-permission-result.html"><code>OnVPNPermissionResult</code></a>. See <a href="sdkinit.html">Initializing the SDK</a>.</p></body>
     </div>
   </div>
 </div>

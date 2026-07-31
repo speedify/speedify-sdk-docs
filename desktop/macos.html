@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;16.9.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.0.4</span>
    </div>
   </td>
  </tr>
@@ -90,7 +90,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Speedify SDK for MacOS</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md12"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md19"></a>
 Files</h2>
 <p>Speedify SDK</p><ul>
 <li>bin/<ul>
@@ -113,12 +113,13 @@ Files</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Building</h2>
 <ul>
 <li>Link with libbondingsdk.dylib and put include/ in your include path.</li>
+<li>Make sure your executable can find libbondingsdk.dylib at runtime: set an rpath to its directory (e.g. <code>-Wl,-rpath,@executable_path/...</code>) or add that directory to <code>DYLD_LIBRARY_PATH</code>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
 Distributing</h2>
 <ul>
 <li>Include the contents of the bin folder in your installation path.<ul>
@@ -127,10 +128,12 @@ Distributing</h2>
 </li>
 <li>Notarize your binaries as well as libbondingsdk.dylib</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md22"></a>
 Running</h2>
 <ul>
-<li>Pass in arguments to the daemon of '-p &lt;port number&gt; -r &lt;installation path of the resources folder&gt; -d &lt;log data path&gt;'. </li>
+<li>Run the daemon as <b>root</b> — it creates the VPN tunnel device and configures routing/firewall rules. Without root, login/state calls may work but connecting will fail.</li>
+<li>Pass in arguments to the daemon of '-p &lt;port number&gt; -r &lt;installation path of the resources folder&gt; -d &lt;log data path&gt;'. The <code>-r</code> resources path is required for the daemon to reach Speedify's servers (it contains <code>cacert.pem</code>).</li>
+<li>See <a class="el" href="gettingstarted.html">Getting Started: Daemon, Login &amp; Connect</a> for the full daemon → login → connect flow. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

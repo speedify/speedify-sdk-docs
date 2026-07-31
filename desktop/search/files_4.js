@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mac_2emd_0',['mac.md',['../mac_8md.html',1,'']]]
+  ['linux_2emd_0',['linux.md',['../linux_8md.html',1,'']]],
+  ['localproxy_2emd_1',['localproxy.md',['../localproxy_8md.html',1,'']]]
 ];
