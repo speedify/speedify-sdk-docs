@@ -1026,6 +1026,186 @@ Callers on macOS use this to decide whether it is safe to force-exit the extensi
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC19daemonSettingsWipedSo18NSNotificationNameavpZ"></a>
+                    <a name="//apple_ref/swift/Variable/daemonSettingsWiped" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC19daemonSettingsWipedSo18NSNotificationNameavpZ">daemonSettingsWiped</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted in the extension process once Clear Settings has emptied
+<code><a href="../Classes/SpeedifyPacketTunnel.html#/s:11speedifysdk20SpeedifyPacketTunnelC17settingsDirectorySSyFZ">settingsDirectory()</a></code>. The extension target owns the stderr redirect and
+listens for this so it can reopen its log; this framework can&rsquo;t reach
+<code>Logger</code> to do it here.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">daemonSettingsWiped</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC20privateDataDirectorySSyFZ"></a>
+                    <a name="//apple_ref/swift/Method/privateDataDirectory()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC20privateDataDirectorySSyFZ">privateDataDirectory()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Where the daemon keeps <code>sql.db</code>: the private data path, one level ABOVE
+the settings directory — <code>SpeedifyDb::Init</code> moves the database here.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">privateDataDirectory</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC17settingsDirectorySSyFZ"></a>
+                    <a name="//apple_ref/swift/Method/settingsDirectory()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC17settingsDirectorySSyFZ">settingsDirectory()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Where the daemon keeps its persistent data — settings, VERSION, logs.
+Must stay in step with <code>discoverPersistentDataPath()</code> on the C++ side.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">settingsDirectory</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC16daemonStatePathsSaySSGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/daemonStatePaths()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC16daemonStatePathsSaySSGyFZ">daemonStatePaths()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The daemon&rsquo;s persisted state — not logs or VERSION, which are
+diagnostics and get rewritten. Anything left here is picked straight
+back up when the daemon restarts.</p>
+
+<p>macOS layout only, and the settings half is what makes it so: on iOS the
+daemon&rsquo;s persistent path is <code><a href="../Classes/Speedify.html">Speedify</a></code>, not the
+<code><a href="../Classes/Speedify.html">Speedify</a></code> used here, so those six paths would miss. The four
+sql.db paths, however, resolve to a real iOS location and WOULD delete
+the live statistics database. Fix the settings path before adding an iOS
+caller, and do not assume this list is inert there.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">daemonStatePaths</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC15wipeDaemonStateSaySSGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/wipeDaemonState()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC15wipeDaemonStateSaySSGyFZ">wipeDaemonState()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes <code><a href="../Classes/SpeedifyPacketTunnel.html#/s:11speedifysdk20SpeedifyPacketTunnelC16daemonStatePathsSaySSGyFZ">daemonStatePaths()</a></code>. Returns the paths that were still there
+afterwards so callers can report a partial wipe rather than claim
+success.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">wipeDaemonState</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk20SpeedifyPacketTunnelC15wipeDaemonState5pathsSaySSGAF_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/wipeDaemonState(paths:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk20SpeedifyPacketTunnelC15wipeDaemonState5pathsSaySSGAF_tFZ">wipeDaemonState(paths:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tests must use this overload, never <code><a href="../Classes/SpeedifyPacketTunnel.html#/s:11speedifysdk20SpeedifyPacketTunnelC15wipeDaemonStateSaySSGyFZ">wipeDaemonState()</a></code> — the latter
+resolves real container paths and on a dev machine that is your own
+installed Speedify&rsquo;s settings and usage history.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">wipeDaemonState</span><span class="p">(</span><span class="nv">paths</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>

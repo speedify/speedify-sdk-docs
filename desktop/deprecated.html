@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.0.4</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.1.0</span>
    </div>
   </td>
  </tr>
@@ -94,9 +94,9 @@ $(function(){ initResizable(false); });
 <dt>Global <a class="el" href="group___t_y_p_e_s.html#gacd29f9815605840e8411c3c430ff38e8">AA_ACTIVATE_OR_PURCHASE_LICENCE</a>  </dt>
 <dd><a class="anchor" id="_deprecated000021"></a>as of 15.8  </dd>
 <dt>Global <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2afc1794a2294a151abde21b241e6b66b7">ET_SDK_SETTING_LOCKED_ACCOUNT</a>  </dt>
-<dd><a class="anchor" id="_deprecated000024"></a>As of 14.0. Use ET_LOCK_ACCOUNT instead.  </dd>
+<dd><a class="anchor" id="_deprecated000026"></a>As of 14.0. Use ET_LOCK_ACCOUNT instead.  </dd>
 <dt>Global <a class="el" href="group___t_y_p_e_s.html#gga2c6cd395ee7068fe5c85f3c861b0c7f2a1559e2086a3724a0ec771be731c5bfd3">ET_SDK_SETTING_LOCKED_TEAM</a>  </dt>
-<dd><a class="anchor" id="_deprecated000023"></a>As of 14.0. Use ET_LOCK_TEAM instead.  </dd>
+<dd><a class="anchor" id="_deprecated000025"></a>As of 14.0. Use ET_LOCK_TEAM instead.  </dd>
 <dt>Global <a class="el" href="group___s_d_k.html#ga15971af6e53bc950d9afa5feecb9f2d4">SpeedifySDK_AccountCheck</a>  (CSpeedifySDK sdk, const char *email, SpeedifySDK_AccountCheckCallback cb, void *userData)</dt>
 <dd><a class="anchor" id="_deprecated000008"></a>as of 15.4. Functionality removed  </dd>
 <dt>Global <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#ga7808c5235e3d79a0c813a4801e6a9d07">SpeedifySDK_AccountCheckCallback</a>  )(<a class="el" href="struct_speedify_s_d_k___account_check_result.html" title="Account check result.">SpeedifySDK_AccountCheckResult</a>, void *)</dt>
@@ -118,9 +118,9 @@ $(function(){ initResizable(false); });
 <dt>Global <a class="el" href="struct_speedify_s_d_k___adapter_data.html#a37006399cd50b16ec7a08cc513f40a41">SpeedifySDK_AdapterData::rateLimit</a>  </dt>
 <dd><a class="anchor" id="_deprecated000022"></a>As of 15.6. Use rateLimitDownloadBps and rateLimitUploadBps instead.  </dd>
 <dt>Global <a class="el" href="struct_speedify_s_d_k___directory_settings.html#a056c810e6ff66e125f10056ab143a4d7">SpeedifySDK_DirectorySettings::enableEsni</a>  </dt>
-<dd><a class="anchor" id="_deprecated000025"></a>as of 14.3.2  </dd>
+<dd><a class="anchor" id="_deprecated000027"></a>as of 14.3.2  </dd>
 <dt>Global <a class="el" href="struct_speedify_s_d_k___network_sharing_settings.html#a1da4845cca72b5de002e436e39a65372">SpeedifySDK_NetworkSharingSettings::alwaysOnDiscovery</a>  </dt>
-<dd><a class="anchor" id="_deprecated000026"></a>as of 14.8. Use <code><a class="el" href="struct_speedify_s_d_k___network_sharing_settings.html#a9bd4fbae9c14bef83f170bee72e39680">autoPairBehavior</a></code>  </dd>
+<dd><a class="anchor" id="_deprecated000028"></a>as of 14.8. Use <code><a class="el" href="struct_speedify_s_d_k___network_sharing_settings.html#a9bd4fbae9c14bef83f170bee72e39680">autoPairBehavior</a></code>  </dd>
 <dt>Global <a class="el" href="group___s_d_k.html#gaf4718443f9cd5d253f4c372f9fb54ddd">SpeedifySDK_ReportSafeBrowsingHomeNetwork</a>  (CSpeedifySDK sdk, SpeedifySDK_SafeBrowsingCallback cb, void *userData)</dt>
 <dd><a class="anchor" id="_deprecated000014"></a>as of 15.7. Use SpeedifySDK_SendSafeBrowsingReport to have Safe Browsing continue running after the report is sent.  </dd>
 <dt>Global <a class="el" href="group___s_d_k.html#ga721c3aaa27ef7be9da550f25d5f487ce">SpeedifySDK_ReportSafeBrowsingHomeNetworkWithParameters</a>  (CSpeedifySDK sdk, uint32_t retries, uint64_t delay, uint64_t timeout, SpeedifySDK_SafeBrowsingCallback cb, void *userData)</dt>
@@ -135,6 +135,10 @@ $(function(){ initResizable(false); });
 <dd><a class="anchor" id="_deprecated000018"></a>as of 14.0. Use SpeedifySDK_ServerInformation_GetCountryName instead.  </dd>
 <dt>Global <a class="el" href="group___t_y_p_e_s.html#ga47967c5e9ea81bd11d536de12820c03d">SpeedifySDK_ServerInformationDetailed_toString</a>  (SpeedifySDK_ServerInformationDetailed server)</dt>
 <dd><a class="anchor" id="_deprecated000020"></a>as of 14.0. Use SpeedifySDK_ServerInformation_toString instead.  </dd>
+<dt>Global <a class="el" href="struct_speedify_s_d_k___session_stats.html#a26387ca76def5f40542d3707c1998f0d">SpeedifySDK_SessionStats::mbpsDownBenefit</a>  </dt>
+<dd><a class="anchor" id="_deprecated000023"></a>as of 17.1. Always 0. The underlying measurement only sampled moments when every connection was saturated, so it reported a best-case peak rather than a benefit; it has been removed rather than left misleading.  </dd>
+<dt>Global <a class="el" href="struct_speedify_s_d_k___session_stats.html#aae582ad4c7561409b528846e51236a4b">SpeedifySDK_SessionStats::mbpsUpBenefit</a>  </dt>
+<dd><a class="anchor" id="_deprecated000024"></a>as of 17.1. Always 0. See mbpsDownBenefit.  </dd>
 <dt>Global <a class="el" href="group___s_d_k.html#ga9eb4bf8a92b5a1d97afd1f686230ae68">SpeedifySDK_SetConnectionRateLimit</a>  (CSpeedifySDK sdk, const char *adapterID, int64_t bps, SpeedifySDK_AdaptersCallback cb, void *userData)</dt>
 <dd><a class="anchor" id="_deprecated000013"></a>as of 15.4 Use SpeedifySDK_SetConnectionRateLimits specifying downBps and upBps separately  </dd>
 <dt>Global <a class="el" href="group___s_d_k.html#ga8c5cb702a9ab8ff29cbf737fdd52f59d">SpeedifySDK_SetDNSServers</a>  (CSpeedifySDK sdk, uint16_t count, SpeedifySDK_IPAddressString *dnsAddrs, SpeedifySDK_PrivacySettingsCallback cb, void *userData)</dt>

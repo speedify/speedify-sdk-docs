@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Initializing the SDK - Speedify SDK for Android 17.0.4.1</title>
+    <title>Initializing the SDK - Speedify SDK for Android 17.1.0.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -42,13 +42,99 @@
         .guide-content code { background: var(--color-background-inline-code); padding: 0.15rem 0.3rem;
                               border-radius: 3px; font: var(--font-code); }
         .guide-content pre code { background: none; padding: 0; }
+        .guide-tabs { margin: 1rem 0; }
+        .guide-tabs--bar { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--color-background-nav-dt, #4d5156); }
+        .guide-tab { background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px;
+                     padding: 0.4rem 1rem; cursor: pointer; color: inherit; font: inherit; font-size: 0.9em; opacity: 0.75; }
+        .guide-tab:hover { opacity: 1; }
+        .guide-tab[aria-selected="true"] { border-bottom-color: #7f52ff; font-weight: 600; opacity: 1; }
+        .guide-tab-content > pre:first-child { margin-top: 0.5rem; }
+        .guide-code-wrap { position: relative; }
+        .guide-copy-btn { position: absolute; top: 0.6rem; right: 0.6rem; opacity: 0.55;
+                          background: var(--color-background-inline-code); color: inherit;
+                          border: 1px solid rgba(128, 128, 128, 0.35); border-radius: 4px;
+                          padding: 0.3rem 0.4rem; cursor: pointer; line-height: 0; }
+        .guide-copy-btn:hover, .guide-copy-btn:focus-visible { opacity: 1; }
+        .guide-copy-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor;
+                              stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
     </style>
+    <script>
+        // Language tab groups: clicking a tab switches every group on the page
+        // that offers that language, and the choice persists across pages.
+        (function() {
+            var KEY = 'speedify-docs-tab-lang';
+            function apply(group, lang) {
+                var tabs = group.querySelectorAll('.guide-tab');
+                var target = tabs[0] && tabs[0].dataset.lang;
+                tabs.forEach(function(t) { if (t.dataset.lang === lang) target = lang; });
+                tabs.forEach(function(t) { t.setAttribute('aria-selected', String(t.dataset.lang === target)); });
+                group.querySelectorAll('.guide-tab-content').forEach(function(c) {
+                    c.hidden = c.dataset.lang !== target;
+                });
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                var groups = document.querySelectorAll('.guide-tabs');
+                var saved = localStorage.getItem(KEY);
+                groups.forEach(function(g) { apply(g, saved); });
+                groups.forEach(function(g) {
+                    g.addEventListener('click', function(e) {
+                        var btn = e.target.closest('.guide-tab');
+                        if (!btn) return;
+                        localStorage.setItem(KEY, btn.dataset.lang);
+                        groups.forEach(function(x) { apply(x, btn.dataset.lang); });
+                    });
+                });
+            });
+        })();
+
+        // Copy button on every code block.
+        (function() {
+            var COPY = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="1.5"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"/></svg>';
+            var CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.guide-content pre').forEach(function(pre) {
+                    // position the button on a wrapper so it doesn't scroll with wide code
+                    var wrap = document.createElement('div');
+                    wrap.className = 'guide-code-wrap';
+                    pre.parentNode.insertBefore(wrap, pre);
+                    wrap.appendChild(pre);
+                    var btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'guide-copy-btn';
+                    btn.title = 'Copy code sample';
+                    btn.setAttribute('aria-label', 'Copy code sample');
+                    btn.innerHTML = COPY;
+                    btn.addEventListener('click', function() {
+                        var code = pre.querySelector('code');
+                        var text = (code || pre).innerText.replace(/\n$/, '');
+                        function done(ok) {
+                            btn.innerHTML = ok ? CHECK : COPY;
+                            setTimeout(function() { btn.innerHTML = COPY; }, 1500);
+                        }
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(text).then(function() { done(true); }, function() { done(false); });
+                        } else {
+                            var ta = document.createElement('textarea');
+                            ta.value = text;
+                            document.body.appendChild(ta);
+                            ta.select();
+                            var ok = false;
+                            try { ok = document.execCommand('copy'); } catch (e) {}
+                            document.body.removeChild(ta);
+                            done(ok);
+                        }
+                    });
+                    wrap.appendChild(btn);
+                });
+            });
+        })();
+    </script>
 </head>
 <body>
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 17.0.4.1
+                    Speedify SDK for Android 17.1.0.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -73,7 +159,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 17.0.4.1
+                                    Speedify SDK for Android 17.1.0.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -87,12 +173,41 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.0.4.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.1.0.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Initializing the SDK</span></div>
   <div class="cover ">
     <div class="guide-content">
-<body><h2>Implementing AutoConstruct</h2><p>In your Application class, implement <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a>:</p><pre><code>// Implement SpeedifySDK.AutoConstruct
+<body><h2>Implementing AutoConstruct</h2><p>In your Application class, implement <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a>:</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">// Implement SpeedifySDK.AutoConstruct
+class MyApplication : Application(), SpeedifySDK.AutoConstruct {
+
+  // ...
+
+  override fun getSpeedifySDK(context: Context): SpeedifySDK {
+    // instantiate a new SDK object
+    val sdk = SpeedifySDK(context, &quot;My App Title&quot;, object : SpeedifyHandler() {
+      // override wanted methods here
+    })
+
+    // If using Dispatch, add on the Dispatch library
+    Dispatch.getInstance(context)
+
+    // If using Enhanced Statistics, add on the Enhanced Statistics library
+    EnhancedStatistics.getInstance(context)
+
+    return sdk
+  }
+
+  // ...
+
+}
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">// Implement SpeedifySDK.AutoConstruct
 public class MyApplication extends Application implements SpeedifySDK.AutoConstruct {
 
   // ...
@@ -116,18 +231,69 @@ public class MyApplication extends Application implements SpeedifySDK.AutoConstr
   // ...
 
 }
-</code></pre><h2>Starting the Speedify SDK</h2><p>Before you use the Speedify SDK in your app, you must initialize VPN permission.</p><pre><code>  // check for vpn permission, and request it if needed
+</code></pre>
+</div>
+</div><h2>Starting the Speedify SDK</h2><p>Before you use the Speedify SDK in your app, you must initialize VPN permission.</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">  // check for vpn permission, and request it if needed
+  if (!SpeedifySDK.hasVPNPermission(this)) {
+    SpeedifySDK.initializeVPNPermission(this)
+  }
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">  // check for vpn permission, and request it if needed
   if (!SpeedifySDK.hasVPNPermission(this)) {
     SpeedifySDK.initializeVPNPermission(this);
   }
-</code></pre><p>When you want to start the Speedify SDK, call this to get an instance of the SDK.</p><pre><code>  SpeedifySDK sdk = SpeedifySDK.getInstance(context);
-</code></pre><h2>Logging In</h2><p>You must be logged in before you can connect. A fresh SDK starts in the <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-o-u-t/index.html"><code>LOGGED_OUT</code></a> state; once authenticated it moves to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a>, from which you can connect. State changes are delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (see <a href="#receivingstate">Receiving State in Your UI</a>).</p><p>Choose one of:</p><ul><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login.html"><code>login(username, password)</code></a> — a Speedify account.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-o-auth.html"><code>loginOAuth(token)</code></a> — an OAuth access token. This is an enterprise feature that requires additional backend development; contact Connectify for more information about implementing this for your organization.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-auto-account.html"><code>loginAutoAccount()</code></a> — an automatically generated, device-bound account. This is the lowest-friction option for getting a VPN running without a login screen.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode()</code></a> — activate the device from a browser instead of entering credentials in-app. Useful for TVs, set-top boxes, and other limited-input devices.</li></ul><p>The current state is delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-state.html"><code>refreshState</code></a> to fetch it on demand); there is no synchronous state getter. Drive login from your state receiver:</p><pre><code>  @Override
+</code></pre>
+</div>
+</div><p>When you want to start the Speedify SDK, call this to get an instance of the SDK.</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">  val sdk = SpeedifySDK.getInstance(context)
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">  SpeedifySDK sdk = SpeedifySDK.getInstance(context);
+</code></pre>
+</div>
+</div><h2>Logging In</h2><p>You must be logged in before you can connect. A fresh SDK starts in the <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-o-u-t/index.html"><code>LOGGED_OUT</code></a> state; once authenticated it moves to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a>, from which you can connect. State changes are delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (see <a href="#receivingstate">Receiving State in Your UI</a>).</p><p>Choose one of:</p><ul><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login.html"><code>login(username, password)</code></a> — a Speedify account.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-o-auth.html"><code>loginOAuth(token)</code></a> — an OAuth access token. This is an enterprise feature that requires additional backend development; contact Connectify for more information about implementing this for your organization.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-auto-account.html"><code>loginAutoAccount()</code></a> — an automatically generated, device-bound account. This is the lowest-friction option for getting a VPN running without a login screen.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode()</code></a> — activate the device from a browser instead of entering credentials in-app. Useful for TVs, set-top boxes, and other limited-input devices.</li></ul><p>The current state is delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-state.html"><code>refreshState</code></a> to fetch it on demand); there is no synchronous state getter. Drive login from your state receiver:</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">  override fun OnState(state: Types.State) {
+    if (state == Types.State.LOGGED_OUT) {
+      sdk.loginAutoAccount()   // or login(user, password) / loginOAuth(token)
+    }
+  }
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">  @Override
   public void OnState(Types.State state) {
     if (state == Types.State.LOGGED_OUT) {
       sdk.loginAutoAccount();   // or login(user, password) / loginOAuth(token)
     }
   }
-</code></pre><p>The activation-code flow is a two-step login. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode</code></a>, then handle <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-activation-code.html"><code>OnActivationCode</code></a>, which delivers an <code>activationCode</code> and an <code>activationUrl</code>. Present those to the user (for example, render the URL as a QR code); they open the URL in a browser, sign in, and enter the code to authorize this device. On success the SDK transitions to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a> like any other login — watch <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a>.</p><p>Login failures are reported via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a>. If login fails even with valid credentials, confirm your app has been authorized — see <a href="prerequisites.html">Prerequisites</a>. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/logout.html"><code>logout</code></a> to log out.</p><h2>Optional: Application onCreate</h2><p>The Speedify SDK starts up a background process to run the VPN. If you initialize other components in your Application's onCreate, you may need to return early to avoid initializing them in this process as well.</p><pre><code>  @Override
+</code></pre>
+</div>
+</div><p>The activation-code flow is a two-step login. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode</code></a>, then handle <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-activation-code.html"><code>OnActivationCode</code></a>, which delivers an <code>activationCode</code> and an <code>activationUrl</code>. Present those to the user (for example, render the URL as a QR code); they open the URL in a browser, sign in, and enter the code to authorize this device. On success the SDK transitions to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a> like any other login — watch <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a>.</p><p>Login failures are reported via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a>. If login fails even with valid credentials, confirm your app has been authorized — see <a href="prerequisites.html">Prerequisites</a>. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/logout.html"><code>logout</code></a> to log out.</p><h2>Optional: Application onCreate</h2><p>The Speedify SDK starts up a background process to run the VPN. If you initialize other components in your Application's onCreate, you may need to return early to avoid initializing them in this process as well.</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">  override fun onCreate() {
+    super.onCreate()
+
+    // ... common initialization ...
+
+    if (SpeedifySDK.IsBackgroundProcess(this)) return
+
+    // ... other initialization that you only want to run in your app's UI process ...
+  }
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">  @Override
   public void onCreate() {
     super.onCreate();
 
@@ -137,7 +303,9 @@ public class MyApplication extends Application implements SpeedifySDK.AutoConstr
 
     // ... other initialization that you only want to run in your app's UI process ...
   }
-</code></pre><h2>Receiving State</h2><p>To drive your UI you register an <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/index.html"><code>ISdkStateReceiver</code></a>, whose callbacks run in your process — see <a href="receivingstate.html">Receiving State in Your UI</a>. This is distinct from the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> below, some of whose callbacks run in the SDK's background process.</p><h2>Optional: Handlers</h2><p>If you do not specify a custom <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> in  <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/get-speedify-s-d-k.html"><code>getSpeedifySDK</code></a>, you can call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-handler.html"><code>setHandler</code></a> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a> method above.</p><h2>Optional: SDK Cleanup</h2><p>To close down the SDK entirely without exiting your application, call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-force-exit.html"><code>SpeedifySDK.ForceExit(context)</code></a>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/restart-services.html"><code>restartServices</code></a> on your old SpeedifySDK object.</p></body>
+</code></pre>
+</div>
+</div><h2>Receiving State</h2><p>To drive your UI you register an <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/index.html"><code>ISdkStateReceiver</code></a>, whose callbacks run in your process — see <a href="receivingstate.html">Receiving State in Your UI</a>. This is distinct from the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> below, some of whose callbacks run in the SDK's background process.</p><h2>Optional: Handlers</h2><p>If you do not specify a custom <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> in  <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/get-speedify-s-d-k.html"><code>getSpeedifySDK</code></a>, you can call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-handler.html"><code>setHandler</code></a> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a> method above.</p><h2>Optional: SDK Cleanup</h2><p>To close down the SDK entirely without exiting your application, call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-force-exit.html"><code>SpeedifySDK.ForceExit(context)</code></a>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/restart-services.html"><code>restartServices</code></a> on your old SpeedifySDK object.</p></body>
     </div>
   </div>
 </div>

@@ -35,7 +35,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
 <a class="library-name--link" href="../../../index.html" tabindex="1">
-                    Speedify SDK for Android 17.0.4.14114
+                    Speedify SDK for Android 17.1.0.14119
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
@@ -77,7 +77,7 @@
                 <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 17.0.4.14114
+                                    Speedify SDK for Android 17.1.0.14119
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">SpeedifySDK</a><span class="delimiter">/</span><a href="../index.html">com.speedify.speedifysdk.receivers</a><span class="delimiter">/</span><span class="current">IForegroundNotificationReceiver</span></div>
   <div class="cover ">
     <h1 class="cover"><span>IForeground</span><wbr><span>Notification</span><wbr><span><span>Receiver</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">IForegroundNotificationReceiver</a></div><p class="paragraph">Foreground Service notification Interface. All calls happen from the background :vpnservice process. All calls are sent from background threads.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">14.7</p></span><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":speedifysdk/release" data-filterable-set=":speedifysdk/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-i-foreground-service-receiver/index.html">IForegroundServiceReceiver</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">IForegroundNotificationReceiver</a></div><p class="paragraph">Foreground Service notification Interface.</p><p class="paragraph">All calls happen from the background :vpnservice process. All calls are sent from background threads.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">14.7</p></span><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":speedifysdk/release" data-filterable-set=":speedifysdk/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-i-foreground-service-receiver/index.html">IForegroundServiceReceiver</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -111,7 +111,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-service-data/index.html">ServiceData</a></div><div class="brief ">Common status data used in default foreground notification</div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-service-data/index.html">ServiceData</a></div><div class="brief "><p class="paragraph">Common status data used in default foreground notification</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-hide-foreground-notification.html"><span class="token function">HideForegroundNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>service<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Service.html">Service</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Callback when vpn service task is removed.</div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-hide-foreground-notification.html"><span class="token function">HideForegroundNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">service<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Service.html">Service</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Callback when vpn service task is removed. If overriding UpdateForegroundNotification, use this to hide your notification. Called from secondary (:vpnservice) process.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-update-foreground-notification.html"><span class="token function">UpdateForegroundNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>service<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Service.html">Service</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>serviceData<span class="token operator">: </span><a href="-service-data/index.html">IForegroundNotificationReceiver.ServiceData</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Callback to show a notification of the service state.</div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-update-foreground-notification.html"><span class="token function">UpdateForegroundNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">service<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Service.html">Service</a><span class="token punctuation">, </span></span><span class="parameter ">serviceData<span class="token operator">: </span><a href="-service-data/index.html">IForegroundNotificationReceiver.ServiceData</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Callback to show a notification of the service state. A default implementation is provided. If overriding, it is required on Oreo and higher that you call service.startForeground so that Android does not automatically stop the service after a few seconds. Prior to Oreo it is still recommended to use service.startForeground so that Android is less likely to destroy the service in low memory situations. Called from secondary (:vpnservice) process.</p></div></div></div>
                 </div>
               </div>
             </div>

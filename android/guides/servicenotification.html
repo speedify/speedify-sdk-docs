@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Service Notification - Speedify SDK for Android 17.0.4.1</title>
+    <title>Service Notification - Speedify SDK for Android 17.1.0.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -42,13 +42,99 @@
         .guide-content code { background: var(--color-background-inline-code); padding: 0.15rem 0.3rem;
                               border-radius: 3px; font: var(--font-code); }
         .guide-content pre code { background: none; padding: 0; }
+        .guide-tabs { margin: 1rem 0; }
+        .guide-tabs--bar { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--color-background-nav-dt, #4d5156); }
+        .guide-tab { background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px;
+                     padding: 0.4rem 1rem; cursor: pointer; color: inherit; font: inherit; font-size: 0.9em; opacity: 0.75; }
+        .guide-tab:hover { opacity: 1; }
+        .guide-tab[aria-selected="true"] { border-bottom-color: #7f52ff; font-weight: 600; opacity: 1; }
+        .guide-tab-content > pre:first-child { margin-top: 0.5rem; }
+        .guide-code-wrap { position: relative; }
+        .guide-copy-btn { position: absolute; top: 0.6rem; right: 0.6rem; opacity: 0.55;
+                          background: var(--color-background-inline-code); color: inherit;
+                          border: 1px solid rgba(128, 128, 128, 0.35); border-radius: 4px;
+                          padding: 0.3rem 0.4rem; cursor: pointer; line-height: 0; }
+        .guide-copy-btn:hover, .guide-copy-btn:focus-visible { opacity: 1; }
+        .guide-copy-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor;
+                              stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
     </style>
+    <script>
+        // Language tab groups: clicking a tab switches every group on the page
+        // that offers that language, and the choice persists across pages.
+        (function() {
+            var KEY = 'speedify-docs-tab-lang';
+            function apply(group, lang) {
+                var tabs = group.querySelectorAll('.guide-tab');
+                var target = tabs[0] && tabs[0].dataset.lang;
+                tabs.forEach(function(t) { if (t.dataset.lang === lang) target = lang; });
+                tabs.forEach(function(t) { t.setAttribute('aria-selected', String(t.dataset.lang === target)); });
+                group.querySelectorAll('.guide-tab-content').forEach(function(c) {
+                    c.hidden = c.dataset.lang !== target;
+                });
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                var groups = document.querySelectorAll('.guide-tabs');
+                var saved = localStorage.getItem(KEY);
+                groups.forEach(function(g) { apply(g, saved); });
+                groups.forEach(function(g) {
+                    g.addEventListener('click', function(e) {
+                        var btn = e.target.closest('.guide-tab');
+                        if (!btn) return;
+                        localStorage.setItem(KEY, btn.dataset.lang);
+                        groups.forEach(function(x) { apply(x, btn.dataset.lang); });
+                    });
+                });
+            });
+        })();
+
+        // Copy button on every code block.
+        (function() {
+            var COPY = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="1.5"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"/></svg>';
+            var CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.guide-content pre').forEach(function(pre) {
+                    // position the button on a wrapper so it doesn't scroll with wide code
+                    var wrap = document.createElement('div');
+                    wrap.className = 'guide-code-wrap';
+                    pre.parentNode.insertBefore(wrap, pre);
+                    wrap.appendChild(pre);
+                    var btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'guide-copy-btn';
+                    btn.title = 'Copy code sample';
+                    btn.setAttribute('aria-label', 'Copy code sample');
+                    btn.innerHTML = COPY;
+                    btn.addEventListener('click', function() {
+                        var code = pre.querySelector('code');
+                        var text = (code || pre).innerText.replace(/\n$/, '');
+                        function done(ok) {
+                            btn.innerHTML = ok ? CHECK : COPY;
+                            setTimeout(function() { btn.innerHTML = COPY; }, 1500);
+                        }
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(text).then(function() { done(true); }, function() { done(false); });
+                        } else {
+                            var ta = document.createElement('textarea');
+                            ta.value = text;
+                            document.body.appendChild(ta);
+                            ta.select();
+                            var ok = false;
+                            try { ok = document.execCommand('copy'); } catch (e) {}
+                            document.body.removeChild(ta);
+                            done(ok);
+                        }
+                    });
+                    wrap.appendChild(btn);
+                });
+            });
+        })();
+    </script>
 </head>
 <body>
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 17.0.4.1
+                    Speedify SDK for Android 17.1.0.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -73,7 +159,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 17.0.4.1
+                                    Speedify SDK for Android 17.1.0.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -87,19 +173,54 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.0.4.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.1.0.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Service Notification</span></div>
   <div class="cover ">
     <div class="guide-content">
-<body><p>The main processing and VPN service of the Speedify SDK is done in an Android foreground service running in a background process. Starting with Android Oreo, foreground services are required to have a notification visible at all times. Prior to Oreo it is still recommened to have this notification so that the OS knows that the service is important, and that it should not be killed in low memory situations.</p><p>As of Android 13, <code>POST_NOTIFICATIONS</code> permission is required to show the foreground service notification.</p><pre><code>  // notification permission is required for foreground service notification to show
+<body><p>The main processing and VPN service of the Speedify SDK is done in an Android foreground service running in a background process. Starting with Android Oreo, foreground services are required to have a notification visible at all times. Prior to Oreo it is still recommened to have this notification so that the OS knows that the service is important, and that it should not be killed in low memory situations.</p><p>As of Android 13, <code>POST_NOTIFICATIONS</code> permission is required to show the foreground service notification.</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">  // notification permission is required for foreground service notification to show
+  if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.TIRAMISU) {
+    val notifyMgr = applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+    if (!notifyMgr.areNotificationsEnabled()) {
+      ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), 100)
+    }
+  }
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">  // notification permission is required for foreground service notification to show
   if (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.TIRAMISU) {
     NotificationManager mNotifyMgr = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
     if (!mNotifyMgr.areNotificationsEnabled()) {
       ActivityCompat.requestPermissions(this, new String[] { android.Manifest.permission.POST_NOTIFICATIONS }, 100);
     }
   }
-</code></pre><p>The default <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> provided by the Speedify SDK implements a notification for the foreground service, complete with connect, disconnect, and exit controls.</p><p>The text of this notification is customizable via the default service notification resource strings outlined in <a href="userstrings.html">SDK Strings</a>.</p><p>The default icon used is drawable resource named <code>speedify_notification_icon</code>. This can be overridden via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-icon.html"><code>setServiceNotificationIcon</code></a>.</p><p>The default click action is to launch the main launcher intent of the application, as returned by <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getLaunchIntentForPackage(java.lang.String)">PackageManager.getLaunchIntentForPackage</a>. This can be overridden via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-launch-intent.html"><code>setServiceNotificationLaunchIntent</code></a>.</p><p>If you want to completely customize the notification, you can override <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html"><code>UpdateForegroundNotification</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html"><code>HideForegroundNotification</code></a> in <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a>, and provide your own notification. You must also use a notification ID of <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-n-o-t-i-f-i-c-a-t-i-o-n_-i-d.html"><code>SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</code></a> to replace the temporary minimal foreground notification that is generated to avoid ANRs. The notification channel used is <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-c-h-a-n-n-e-l_-i-d.html"><code>SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</code></a>.</p><p>The current service state is passed in a <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-foreground-notification-receiver/-service-data/index.html"><code>ServiceData</code></a> object, whose fields include <code>state</code>, <code>serverName</code>, <code>killswitchActive</code>, <code>activePeerClients</code>, and <code>sharedNetworks</code>.</p><p><strong>NOTE</strong> : <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html"><code>UpdateForegroundNotification</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html"><code>HideForegroundNotification</code></a> are called from the background process. You will not be able to access objects running in your UI process.</p><pre><code>    mySpeedifySDKObject.setHandler(new SpeedifyHandler() {
+</code></pre>
+</div>
+</div><p>The default <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> provided by the Speedify SDK implements a notification for the foreground service, complete with connect, disconnect, and exit controls.</p><p>The text of this notification is customizable via the default service notification resource strings outlined in <a href="userstrings.html">SDK Strings</a>.</p><p>The default icon used is drawable resource named <code>speedify_notification_icon</code>. This can be overridden via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-icon.html"><code>setServiceNotificationIcon</code></a>.</p><p>The default click action is to launch the main launcher intent of the application, as returned by <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getLaunchIntentForPackage(java.lang.String)">PackageManager.getLaunchIntentForPackage</a>. This can be overridden via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/set-service-notification-launch-intent.html"><code>setServiceNotificationLaunchIntent</code></a>.</p><p>If you want to completely customize the notification, you can override <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html"><code>UpdateForegroundNotification</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html"><code>HideForegroundNotification</code></a> in <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a>, and provide your own notification. You must also use a notification ID of <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-n-o-t-i-f-i-c-a-t-i-o-n_-i-d.html"><code>SpeedifyHandler.SPEEDIFY_FOREGROUND_NOTIFICATION_ID</code></a> to replace the temporary minimal foreground notification that is generated to avoid ANRs. The notification channel used is <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-s-p-e-e-d-i-f-y_-f-o-r-e-g-r-o-u-n-d_-c-h-a-n-n-e-l_-i-d.html"><code>SpeedifyHandler.SPEEDIFY_FOREGROUND_CHANNEL_ID</code></a>.</p><p>The current service state is passed in a <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-foreground-notification-receiver/-service-data/index.html"><code>ServiceData</code></a> object, whose fields include <code>state</code>, <code>serverName</code>, <code>killswitchActive</code>, <code>activePeerClients</code>, and <code>sharedNetworks</code>.</p><p><strong>NOTE</strong> : <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-update-foreground-notification.html"><code>UpdateForegroundNotification</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/-hide-foreground-notification.html"><code>HideForegroundNotification</code></a> are called from the background process. You will not be able to access objects running in your UI process.</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">    mySpeedifySDKObject.setHandler(object : SpeedifyHandler() {
+
+      override fun UpdateForegroundNotification(service: Service, serviceData: IForegroundNotificationReceiver.ServiceData) {
+        val builder = NotificationCompat.Builder(service, MY_NOTIFICATION_CHANNEL_ID)
+        builder.setContentTitle(&quot;MyVPN&quot;).setContentText(serviceData.state.toString()).setSmallIcon(R.drawable.notification_icon)
+        service.startForeground(MY_FOREGROUND_NOTIFICATION_ID, builder.build())
+      }
+
+      override fun HideForegroundNotification(service: Service) {
+        val nMgr = service.applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        nMgr.cancel(MY_FOREGROUND_NOTIFICATION_ID)
+      }
+
+    })
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">    mySpeedifySDKObject.setHandler(new SpeedifyHandler() {
 
       @Override
       public void UpdateForegroundNotification(Service service, IForegroundNotificationReceiver.ServiceData serviceData) {
@@ -116,7 +237,9 @@
       }
 
     });
-</code></pre></body>
+</code></pre>
+</div>
+</div></body>
     </div>
   </div>
 </div>

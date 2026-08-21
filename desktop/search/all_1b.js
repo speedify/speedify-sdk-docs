@@ -35,6 +35,6 @@ var searchData=
   ['routerui_2edox_32',['routerui.dox',['../routerui_8dox.html',1,'']]],
   ['rtt_33',['rtt',['../struct_speedify_s_d_k___stream_stats.html#afd34ca0b47e5ca6c852dae3852599856',1,'SpeedifySDK_StreamStats']]],
   ['rulesjson_34',['rulesJson',['../struct_speedify_s_d_k___traffic_rules_result.html#a7a40a15c50c69ef95b0014537837e442',1,'SpeedifySDK_TrafficRulesResult']]],
-  ['running_35',['Running',['../linux.html#autotoc_md17',1,'Running'],['../macos.html#autotoc_md22',1,'Running'],['../windows.html#autotoc_md169',1,'Running']]],
+  ['running_35',['Running',['../linux.html#autotoc_md17',1,'Running'],['../macos.html#autotoc_md22',1,'Running'],['../windows.html#autotoc_md171',1,'Running']]],
   ['running_20the_20speedify_20daemon_36',['Running the Speedify daemon',['../gettingstarted.html#autotoc_md7',1,'']]]
 ];

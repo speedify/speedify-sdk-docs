@@ -674,6 +674,10 @@
                       <div class="abstract">
                         <p>Extra download bandwidth achieved, this period, in megabits per second</p>
 
+<p>@deprecated as of 17.1. Always 0. The underlying measurement only sampled
+moments when every connection was saturated, so it reported a best-case peak
+rather than a benefit; it has been removed rather than left misleading.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -700,6 +704,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Extra upload bandwidth achieved, this period, in megabits per second</p>
+
+<p>@deprecated as of 17.1. Always 0. See <code><a href="../Structs/SessionStats.html#/s:11speedifysdk12SessionStatsV15mbpsDownBenefits5Int64Vvp">mbpsDownBenefit</a></code>.</p>
 
                       </div>
                       <div class="declaration">

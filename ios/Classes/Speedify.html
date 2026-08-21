@@ -2135,7 +2135,9 @@ This checks the app extension state for</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">initializeVPNPermission</span><span class="p">(</span><span class="nv">profile</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onDemandRules</span><span class="p">:</span> <span class="p">[</span><span class="kt">NEOnDemandRule</span><span class="p">]?,</span> <span class="nv">startTunnel</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">waitUntilConnected</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">didSave</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">initializeVPNPermission</span><span class="p">(</span><span class="nv">profile</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onDemandRules</span><span class="p">:</span> <span class="p">[</span><span class="kt">NEOnDemandRule</span><span class="p">]?,</span> <span class="nv">startTunnel</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                                    <span class="nv">waitUntilConnected</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                                    <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">didSave</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -7205,7 +7207,7 @@ reason will not be updated in the database until the next extension launch.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sessionStatsDidUpdate</span><span class="p">(</span><span class="nv">stats</span><span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sessionStatsDidUpdate</span><span class="p">(</span><span class="nv">stats</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -8426,8 +8428,7 @@ This call is used to set that backoff timeout limit.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendBatteryState</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendBatteryState</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
