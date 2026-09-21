@@ -35,7 +35,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
 <a class="library-name--link" href="../../../index.html" tabindex="1">
-                    Speedify SDK for Android 17.1.0.14119
+                    Speedify SDK for Android 17.2.0
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
@@ -77,7 +77,7 @@
                 <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 17.1.0.14119
+                                    Speedify SDK for Android 17.2.0
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -95,7 +95,7 @@
   <div class="cover ">
     <h1 class="cover"><span>set</span><wbr><span>Maximum</span><wbr><span>Connect</span><wbr><span><span>Retry</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-maximum-connect-retry.html"><span class="token function">setMaximumConnectRetry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Speedify follows a backoff pattern for repeated errors when logging in or connecting to VPN servers. With each subsequent failure, the wait time increases before attempting to login or connect again. The backoff's timeout limit can be set with this call.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">14.6</p></span><h4 class="tableheader">Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":speedifysdk/release" data-filterable-set=":speedifysdk/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>timeout</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Timeout in seconds</p></div></div></div></div></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":speedifysdk/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-maximum-connect-retry.html"><span class="token function">setMaximumConnectRetry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Caps the wait between automatic login and connect retries.</p><p class="paragraph">After a failed login or connect the SDK retries on its own, waiting longer between attempts each time, from seconds up to a ceiling of tens of minutes. Errors that point at the account or credential itself back off faster, and a success resets the schedule. This call limits the longest of those waits; 0, the default, keeps the SDK's own ceiling.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">14.6</p></span><h4 class="tableheader">Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":speedifysdk/release" data-filterable-set=":speedifysdk/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>timeout</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Longest wait between attempts, in seconds; 0 for no cap</p></div></div></div></div></div></div></div>
 </div>
     <div class="footer">
         <div class="footer--container">

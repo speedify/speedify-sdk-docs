@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.1.0</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.2.0</span>
    </div>
   </td>
  </tr>
@@ -708,6 +708,9 @@ Supports Subscription.  <br /></td></tr>
 <tr class="memitem:ga915db43bc9d806fa915558c68ca4a167" id="r_ga915db43bc9d806fa915558c68ca4a167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___traffic_rules_result.html">SpeedifySDK_TrafficRulesResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga915db43bc9d806fa915558c68ca4a167">SpeedifySDK_SetTrafficRules</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, const char *rulesJson, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac99087008fb3e875812f8182cd26611f">SpeedifySDK_TrafficRulesCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga915db43bc9d806fa915558c68ca4a167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Traffic Rules.  <br /></td></tr>
 <tr class="separator:ga915db43bc9d806fa915558c68ca4a167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga466d1e51ca1fdbeffcdf7efb5c6e7480" id="r_ga466d1e51ca1fdbeffcdf7efb5c6e7480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___recent_apps_result.html">SpeedifySDK_RecentAppsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga466d1e51ca1fdbeffcdf7efb5c6e7480">SpeedifySDK_GetRecentApps</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gacc90513f671f1b4737aed2a7ba6ac6e0">SpeedifySDK_RecentAppsCallback</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ga466d1e51ca1fdbeffcdf7efb5c6e7480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recently seen applications.  <br /></td></tr>
+<tr class="separator:ga466d1e51ca1fdbeffcdf7efb5c6e7480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga085e96b22b22524b2dd266a4b8af0f54" id="r_ga085e96b22b22524b2dd266a4b8af0f54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_speedify_s_d_k___traffic_rules_result.html">SpeedifySDK_TrafficRulesResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga085e96b22b22524b2dd266a4b8af0f54">SpeedifySDK_SetFixedDelayDomains</a> (<a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a> sdk, uint16_t count, <a class="el" href="group___t_y_p_e_s.html#gaffaec6a9ce68f94b60c8b62767207326">SpeedifySDK_DomainString</a> *domains, <a class="el" href="types_8h.html#a6415e52bffe3e03f452b7e5972675094">SpeedifySDK_TrafficRuleChangeMethod</a> method, <a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gac99087008fb3e875812f8182cd26611f">SpeedifySDK_TrafficRulesCallback</a> cb, void *userData)</td></tr>
 <tr class="memdesc:ga085e96b22b22524b2dd266a4b8af0f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set domains to have a fixed delay applied.  <br /></td></tr>
 <tr class="separator:ga085e96b22b22524b2dd266a4b8af0f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2604,6 +2607,51 @@ Methods marked 'Subscription Only' must be given a callback. </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>privacy settings result object </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>7.5 </dd></dl>
+
+</div>
+</div>
+<a id="ga466d1e51ca1fdbeffcdf7efb5c6e7480" name="ga466d1e51ca1fdbeffcdf7efb5c6e7480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga466d1e51ca1fdbeffcdf7efb5c6e7480">&#9670;&#160;</a></span>SpeedifySDK_GetRecentApps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_speedify_s_d_k___recent_apps_result.html">SpeedifySDK_RecentAppsResult</a> SpeedifySDK_GetRecentApps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="speedifysdk_8h.html#a256b71774105b68b43040010e88169d3">CSpeedifySDK</a></td>          <td class="paramname"><span class="paramname"><em>sdk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_a_l_l_b_a_c_k_s.html#gacc90513f671f1b4737aed2a7ba6ac6e0">SpeedifySDK_RecentAppsCallback</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>userData</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the most recently seen applications. </p>
+<p>Returns the applications whose network traffic the daemon most recently classified, newest first — for example to offer as suggestions when the user is building application-based traffic rules.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdk</td><td>SpeedifySDK object </td></tr>
+    <tr><td class="paramname">count</td><td>maximum number of applications to return, capped at SPEEDIFYSDK_MAX_RECENT_APPS </td></tr>
+    <tr><td class="paramname">cb</td><td>optional callback </td></tr>
+    <tr><td class="paramname">userData</td><td>optional user data pointer returned in the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>recent apps result object </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>17.2 </dd></dl>
 
 </div>
 </div>

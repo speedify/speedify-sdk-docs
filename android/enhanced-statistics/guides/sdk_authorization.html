@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SDK Authorization - Speedify SDK for Android 17.2.0</title>
+    <link href="../images/speedify.webp" rel="icon" type="image/webp">
+    <script>var pathToRoot = "../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+    <script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
+    <link href="../styles/style.css" rel="Stylesheet">
+    <link href="../styles/main.css" rel="Stylesheet">
+    <link href="../styles/prism.css" rel="Stylesheet">
+    <link href="../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../ui-kit/ui-kit.min.css" rel="Stylesheet">
+    <script type="text/javascript" src="../scripts/safe-local-storage_blocking.js"></script>
+    <script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
+    <script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
+    <script type="text/javascript" src="../scripts/main.js" defer></script>
+    <script type="text/javascript" src="../scripts/prism.js" async></script>
+    <script type="text/javascript" src="../ui-kit/ui-kit.min.js" defer></script>
+    <link href="../styles/dokka-custom.css" rel="Stylesheet">
+    <style>
+        .guide-content { padding: 1rem 0 3rem; }
+        .guide-content h1 { border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .guide-content h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;
+                            margin-top: 2rem; }
+        .guide-content pre { background: var(--color-background-code-block); padding: 1rem; border-radius: 4px;
+                             overflow-x: auto; font: var(--font-code); }
+        .guide-content code { background: var(--color-background-inline-code); padding: 0.15rem 0.3rem;
+                              border-radius: 3px; font: var(--font-code); }
+        .guide-content pre code { background: none; padding: 0; }
+        .guide-tabs { margin: 1rem 0; }
+        .guide-tabs--bar { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--color-background-nav-dt, #4d5156); }
+        .guide-tab { background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px;
+                     padding: 0.4rem 1rem; cursor: pointer; color: inherit; font: inherit; font-size: 0.9em; opacity: 0.75; }
+        .guide-tab:hover { opacity: 1; }
+        .guide-tab[aria-selected="true"] { border-bottom-color: #7f52ff; font-weight: 600; opacity: 1; }
+        .guide-tab-content > pre:first-child { margin-top: 0.5rem; }
+        .guide-code-wrap { position: relative; }
+        .guide-copy-btn { position: absolute; top: 0.6rem; right: 0.6rem; opacity: 0.55;
+                          background: var(--color-background-inline-code); color: inherit;
+                          border: 1px solid rgba(128, 128, 128, 0.35); border-radius: 4px;
+                          padding: 0.3rem 0.4rem; cursor: pointer; line-height: 0; }
+        .guide-copy-btn:hover, .guide-copy-btn:focus-visible { opacity: 1; }
+        .guide-copy-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor;
+                              stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <script>
+        // Language tab groups: clicking a tab switches every group on the page
+        // that offers that language, and the choice persists across pages.
+        (function() {
+            var KEY = 'speedify-docs-tab-lang';
+            function apply(group, lang) {
+                var tabs = group.querySelectorAll('.guide-tab');
+                var target = tabs[0] && tabs[0].dataset.lang;
+                tabs.forEach(function(t) { if (t.dataset.lang === lang) target = lang; });
+                tabs.forEach(function(t) { t.setAttribute('aria-selected', String(t.dataset.lang === target)); });
+                group.querySelectorAll('.guide-tab-content').forEach(function(c) {
+                    c.hidden = c.dataset.lang !== target;
+                });
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                var groups = document.querySelectorAll('.guide-tabs');
+                var saved = localStorage.getItem(KEY);
+                groups.forEach(function(g) { apply(g, saved); });
+                groups.forEach(function(g) {
+                    g.addEventListener('click', function(e) {
+                        var btn = e.target.closest('.guide-tab');
+                        if (!btn) return;
+                        localStorage.setItem(KEY, btn.dataset.lang);
+                        groups.forEach(function(x) { apply(x, btn.dataset.lang); });
+                    });
+                });
+            });
+        })();
+
+        // Copy button on every code block.
+        (function() {
+            var COPY = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="1.5"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"/></svg>';
+            var CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.guide-content pre').forEach(function(pre) {
+                    // position the button on a wrapper so it doesn't scroll with wide code
+                    var wrap = document.createElement('div');
+                    wrap.className = 'guide-code-wrap';
+                    pre.parentNode.insertBefore(wrap, pre);
+                    wrap.appendChild(pre);
+                    var btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'guide-copy-btn';
+                    btn.title = 'Copy code sample';
+                    btn.setAttribute('aria-label', 'Copy code sample');
+                    btn.innerHTML = COPY;
+                    btn.addEventListener('click', function() {
+                        var code = pre.querySelector('code');
+                        var text = (code || pre).innerText.replace(/\n$/, '');
+                        function done(ok) {
+                            btn.innerHTML = ok ? CHECK : COPY;
+                            setTimeout(function() { btn.innerHTML = COPY; }, 1500);
+                        }
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(text).then(function() { done(true); }, function() { done(false); });
+                        } else {
+                            var ta = document.createElement('textarea');
+                            ta.value = text;
+                            document.body.appendChild(ta);
+                            ta.select();
+                            var ok = false;
+                            try { ok = document.execCommand('copy'); } catch (e) {}
+                            document.body.removeChild(ta);
+                            done(ok);
+                        }
+                    });
+                    wrap.appendChild(btn);
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../index.html" tabindex="1">
+                    Speedify SDK for Android 17.2.0
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Speedify SDK for Android 17.2.0
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content">
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.2.0</a><span class="delimiter">/</span>
+                    <a href="index.html">Guides</a><span class="delimiter">/</span>
+                    <span class="current">SDK Authorization</span></div>
+  <div class="cover ">
+    <div class="guide-content">
+<p>The Speedify backend only serves apps that Connectify has authorized. Authorization is keyed on
+two things the SDK reports about the installed app with its requests: the app's <strong>package name</strong>
+and the <strong>signing certificate</strong> the APK was signed with. Until the exact package and certificate
+you are running have been authorized, the app installs and starts normally and every login fails,
+reported through <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a>.</p><p>This is the most common first-run problem, so arrange it before you write code, and again
+whenever a package name or signing key changes.</p><h2>What to Send</h2><p>Send support@speedify.com, for every build of the app that will reach the backend:</p><ul><li>the <strong>package name</strong> (<code>applicationId</code>), including any flavor or build-type suffix such as
+   <code>.debug</code>;</li><li>the <strong>SHA-256 fingerprint</strong> of every certificate that build can be signed with, labelled with
+   the build it belongs to.</li></ul><p>Most apps have three certificates to register:</p><table><thead><tr><th>Build</th><th>Signed with</th><th>Fingerprint comes from</th></tr></thead><tbody><tr><td>Debug builds from Android Studio</td><td>the debug keystore, <code>~/.android/debug.keystore</code>, one per developer machine</td><td><code>keytool</code> or <code>signingReport</code>, below</td></tr><tr class="intellij-row-even"><td>Release builds you sign yourself</td><td>your release keystore</td><td><code>keytool</code> or <code>signingReport</code></td></tr><tr><td>Anything installed through Google Play</td><td>Google's <strong>app signing key</strong>, not your upload key: Play re-signs the APK</td><td>Play Console, your app, Test and release, Setup, App signing: the <em>App signing key certificate</em></td></tr></tbody></table><p>Register the Play app-signing certificate even if you only use internal testing tracks; those
+installs are signed by Google too.</p><h2>Finding a Fingerprint</h2><p>For any keystore you hold:</p><pre><code>  $ keytool -list -v -keystore &lt;path to keystore&gt; -alias &lt;key alias&gt;
+  ...
+  Certificate fingerprints:
+       SHA1: ...
+       SHA256: 1A:2B:3C:4D:5E:6F:70:81:92:A3:B4:C5:D6:E7:F8:09:1A:2B:3C:4D:5E:6F:70:81:92:A3:B4:C5:D6:E7:F8:09
+  ...
+</code></pre><p>Or let Gradle print one for every variant the project can build, which also catches flavors and
+build types you had forgotten about:</p><pre><code>  $ ./gradlew signingReport
+</code></pre><p>Send the <code>SHA256</code> line; colon-separated or plain hex are both fine.</p><h2>After Authorization</h2><p>Nothing changes in your code: the SDK reports the package and certificate by itself. If a login
+that used to work starts failing after a build-configuration change, check whether the package
+name or signing key changed before debugging anything else. A new flavor, a new CI signing key,
+or moving to Play App Signing each need a new authorization.</p><p>Next: the <a href="integration.html">Integration Guide</a>.</p></div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>Copyright © Connectify, Inc. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+    
+</html>

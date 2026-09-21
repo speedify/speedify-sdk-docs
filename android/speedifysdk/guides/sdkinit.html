@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>Initializing the SDK - Speedify SDK for Android 0.0.0.1</title>
+    <title>Initializing the SDK - Speedify SDK for Android 17.2.0</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -134,7 +134,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 0.0.0.1
+                    Speedify SDK for Android 17.2.0
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
@@ -156,7 +156,7 @@
                 <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 0.0.0.1
+                                    Speedify SDK for Android 17.2.0
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -170,7 +170,7 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 0.0.0.1</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.2.0</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">Initializing the SDK</span></div>
   <div class="cover ">
@@ -256,26 +256,80 @@ public class MyApplication extends Application implements SpeedifySDK.AutoConstr
 <pre><code class="language-java">  SpeedifySDK sdk = SpeedifySDK.getInstance(context);
 </code></pre>
 </div>
-</div><h2>Logging In</h2><p>You must be logged in before you can connect. A fresh SDK starts in the <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-o-u-t/index.html"><code>LOGGED_OUT</code></a> state; once authenticated it moves to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a>, from which you can connect. State changes are delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (see <a href="#receivingstate">Receiving State in Your UI</a>).</p><p>Choose one of:</p><ul><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login.html"><code>login(username, password)</code></a> — a Speedify account.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-o-auth.html"><code>loginOAuth(token)</code></a> — an OAuth access token. This is an enterprise feature that requires additional backend development; contact Connectify for more information about implementing this for your organization.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-auto-account.html"><code>loginAutoAccount()</code></a> — an automatically generated, device-bound account. This is the lowest-friction option for getting a VPN running without a login screen.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode()</code></a> — activate the device from a browser instead of entering credentials in-app. Useful for TVs, set-top boxes, and other limited-input devices.</li></ul><p>The current state is delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-state.html"><code>refreshState</code></a> to fetch it on demand); there is no synchronous state getter. Drive login from your state receiver:</p><div class="guide-tabs">
+</div><h2>Logging In</h2><p>You must be logged in before you can connect. A fresh SDK starts in the <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-o-u-t/index.html"><code>LOGGED_OUT</code></a> state; once authenticated it moves to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a>, from which you can connect. State changes are delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (see <a href="#receivingstate">Receiving State in Your UI</a>).</p><p>Choose one of:</p><ul><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login.html"><code>login(username, password)</code></a> — a Speedify account.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-o-auth.html"><code>loginOAuth(token)</code></a> — an OAuth access token your own backend issued. Only for integrations that manage their own tokens: you supply the token and deliver replacements when it expires, via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-o-auth-token.html"><code>refreshOAuthToken</code></a>. This is an enterprise feature that requires additional backend development; contact Connectify for more information about implementing this for your organization.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode()</code></a> — activate the device from a browser instead of entering credentials in-app. Useful for TVs, set-top boxes, and other limited-input devices.</li></ul><h2>How Often to Log In</h2><p>Logging in is a one-time operation, not something to do on every launch. A successful login stores the credentials in the SDK's secure storage, and the SDK re-authenticates with them by itself every time it starts — after an app restart, an app update, or a device reboot — retrying automatically with backoff when the network is down. Call a login method again only when:</p><ul><li>the user has never logged in on this device (first run),</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/logout.html"><code>logout</code></a> was called — it clears the stored credentials,</li><li>the stored credentials stop working — <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a> reports <a href="../speedifysdk/com.speedify.speedifysdk/-types/-error-type/-c-r-e-d-e-n-t-i-a-l/index.html"><code>CREDENTIAL</code></a> (password changed, account revoked) or <a href="../speedifysdk/com.speedify.speedifysdk/-types/-error-type/-t-o-k-e-n_-e-x-p-i-r-e-d/index.html"><code>TOKEN_EXPIRED</code></a> — the SDK tried to refresh the token itself and could not, so supply a fresh one via <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-o-auth-token.html"><code>refreshOAuthToken</code></a> if your backend issues them, and otherwise sign the user in again, or</li><li>credential storage is disabled with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-do-not-store-credentials.html"><code>setDoNotStoreCredentials</code></a> — then nothing persists and every SDK start begins logged out.</li></ul><p>The current state is delivered to <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a> (call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-state.html"><code>refreshState</code></a> to fetch it on demand); there is no synchronous state getter.</p><p>Do not log in from OnState. The SDK passes through LOGGED_OUT briefly at every startup while its own stored-credential login is in flight, so treating LOGGED_OUT as "ask the user to sign in" prompts them on every launch. Sign in from your own UI on first run, and let <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a> tell you when the stored credentials have stopped working:</p><div class="guide-tabs">
 <div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
 <div class="guide-tab-content" data-lang="Kotlin">
-<pre><code class="language-kotlin">  override fun OnState(state: Types.State) {
-    if (state == Types.State.LOGGED_OUT) {
-      sdk.loginAutoAccount()   // or login(user, password) / loginOAuth(token)
+<pre><code class="language-kotlin">  override fun OnLoginError(errorType: Types.ErrorType?, message: String?) {
+    when (errorType) {
+      // the stored credentials no longer work: show your sign-in UI again
+      Types.ErrorType.CREDENTIAL -&gt; showSignIn()
+      // The SDK already tried to refresh this token and could not, whoever
+      // issued it. If your own backend issues them, hand over a new one with
+      // refreshOAuthToken; otherwise the user has to sign in again.
+      Types.ErrorType.TOKEN_EXPIRED -&gt; showSignIn()
+      // anything else is usually transient; the SDK retries with backoff
+      else -&gt; { }
     }
   }
 </code></pre>
 </div>
 <div class="guide-tab-content" data-lang="Java" hidden>
 <pre><code class="language-java">  @Override
-  public void OnState(Types.State state) {
-    if (state == Types.State.LOGGED_OUT) {
-      sdk.loginAutoAccount();   // or login(user, password) / loginOAuth(token)
+  public void OnLoginError(Types.ErrorType errorType, String message) {
+    if (errorType == Types.ErrorType.CREDENTIAL) {
+      // the stored credentials no longer work: show your sign-in UI again
+      showSignIn();
+    } else if (errorType == Types.ErrorType.TOKEN_EXPIRED) {
+      // The SDK already tried to refresh this token and could not, whoever
+      // issued it. If your own backend issues them, hand over a new one with
+      // refreshOAuthToken; otherwise the user has to sign in again.
+      showSignIn();
     }
+    // anything else is usually transient; the SDK retries with backoff
   }
 </code></pre>
 </div>
-</div><p>The activation-code flow is a two-step login. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode</code></a>, then handle <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-activation-code.html"><code>OnActivationCode</code></a>, which delivers an <code>activationCode</code> and an <code>activationUrl</code>. Present those to the user (for example, render the URL as a QR code); they open the URL in a browser, sign in, and enter the code to authorize this device. On success the SDK transitions to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a> like any other login — watch <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a>.</p><p>Login failures are reported via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a>. If login fails even with valid credentials, confirm your app has been authorized — see <a href="prerequisites.html">Prerequisites</a>. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/logout.html"><code>logout</code></a> to log out.</p><h2>Optional: Application onCreate</h2><p>The Speedify SDK starts up a background process to run the VPN. If you initialize other components in your Application's onCreate, you may need to return early to avoid initializing them in this process as well.</p><div class="guide-tabs">
+</div><p>The activation-code flow is a two-step login. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode</code></a>, then handle <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-activation-code.html"><code>OnActivationCode</code></a>, which delivers an <code>activationCode</code> and an <code>activationUrl</code>. Present those to the user (for example, render the URL as a QR code); they open the URL in a browser, sign in, and enter the code to authorize this device. On success the SDK transitions to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a> like any other login — watch <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a>.</p><p>Login failures are reported via <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a>. If login fails even with valid credentials, confirm your app has been authorized — see <a href="prerequisites.html">Prerequisites</a>. Call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/logout.html"><code>logout</code></a> to log out.</p><h2>What the SDK Retries on Its Own</h2><p>You do not need retry loops around login or connect. The SDK already has them, and a second
+layer only multiplies traffic when something is actually down.</p><p><strong>Login.</strong> After a failed login the SDK keeps trying by itself for as long as it holds stored
+credentials, waiting longer between attempts each time, from seconds at first to a ceiling of
+tens of minutes. Errors that mean the account or credential itself is the problem (bad
+credentials, an expired token, rate limiting, an exhausted quota or device limit) back off faster.
+A successful login resets the schedule, and
+<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-maximum-connect-retry.html"><code>setMaximumConnectRetry</code></a> caps the
+longest wait if the ceiling is too long for your product.</p><p>Every attempt that fails, including the automatic ones, reaches
+<a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a>. Expect the same
+<a href="../speedifysdk/com.speedify.speedifysdk/-types/-error-type/-c-r-e-d-e-n-t-i-a-l/index.html"><code>CREDENTIAL</code></a> or <a href="../speedifysdk/com.speedify.speedifysdk/-types/-error-type/-t-o-k-e-n_-e-x-p-i-r-e-d/index.html"><code>TOKEN_EXPIRED</code></a>
+to arrive again at each retry until you log in with something new or call
+<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/logout.html"><code>logout</code></a>, which clears the stored credentials and stops the retries. Make
+the handler idempotent: showing your sign-in screen once is right, stacking a dialog per attempt is
+not.</p><p><strong>Connect.</strong> A failed connect first falls through to the next candidate server; you see
+<a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-connected-server.html"><code>OnConnectedServer</code></a> for each one tried and no
+error. When the candidates are exhausted the SDK reports
+<a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-connect-error.html"><code>OnConnectError</code></a>, drops back to
+<a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n/index.html"><code>LOGGED_IN</code></a>, and schedules another full attempt on the same
+backoff as login, passing through <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-a-u-t-o_-c-o-n-n-e-c-t-i-n-g/index.html"><code>AUTO_CONNECTING</code></a> each
+time. Each attempt is bounded, so a hung one does not stall the schedule. This continues until it connects, until you call
+<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/disconnect.html"><code>disconnect</code></a>, or until the server answers with an error that retrying
+cannot fix. Connecting resets the schedule.</p><p>Transport failures on one Internet connection while a session is up are handled separately, per
+connection, with their own backoff; <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-maximum-transport-retry.html"><code>setMaximumTransportRetry</code></a>
+caps that one.</p><h2>Keeping an OAuth Token Fresh</h2><p>This section only applies to integrations that issue their own tokens and log in with
+<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-o-auth.html"><code>loginOAuth</code></a>. With a Speedify account or an activation code the SDK
+renews its own tokens and there is nothing to do.</p><p>The SDK presents the token you gave it on every call to the Speedify backend: at login, at every
+connect (the server assignment), and in periodic background account refreshes, more frequent while
+connected than while merely logged in. The tunnel itself does not use the
+token, so a token expiring mid-session does not end the session by itself; the next backend call
+does. The SDK cannot renew a token it did not issue, so on that call it reports
+<a href="../speedifysdk/com.speedify.speedifysdk/-types/-error-type/-t-o-k-e-n_-e-x-p-i-r-e-d/index.html"><code>TOKEN_EXPIRED</code></a>, logs out (disconnecting if connected), and
+then retries the login with the token it still holds on the schedule above, reporting
+TOKEN_EXPIRED again each time, until you hand it a replacement.</p><p>So the rule is to <strong>deliver the replacement before the current token expires</strong>, with
+<a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-o-auth-token.html"><code>refreshOAuthToken</code></a>. While the SDK is logged in with an OAuth
+token that call only stores the new token for the next request, with no network round trip and no
+state change, so it is safe to call as often as your backend rotates tokens. In practice:</p><ul><li>Issue tokens with lifetimes measured in hours or days, not minutes; the SDK's own background
+   refreshes will otherwise find them expired between yours.</li><li>Call refreshOAuthToken whenever your backend gives you a new token, and check the held token's
+   expiry when the app comes to the foreground, refreshing if it is in the last quarter of its
+   lifetime.</li><li>Treat TOKEN_EXPIRED as the sign that this schedule has already failed. Hand over a new token
+   immediately; refreshOAuthToken logs back in at once when the SDK is logged out. Do not wait for
+   the next automatic retry.</li></ul><h2>Optional: Application onCreate</h2><p>The Speedify SDK starts up a background process to run the VPN. If you initialize other components in your Application's onCreate, you may need to return early to avoid initializing them in this process as well.</p><div class="guide-tabs">
 <div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
 <div class="guide-tab-content" data-lang="Kotlin">
 <pre><code class="language-kotlin">  override fun onCreate() {
@@ -302,7 +356,7 @@ public class MyApplication extends Application implements SpeedifySDK.AutoConstr
   }
 </code></pre>
 </div>
-</div><h2>Receiving State</h2><p>To drive your UI you register an <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/index.html"><code>ISdkStateReceiver</code></a>, whose callbacks run in your process — see <a href="receivingstate.html">Receiving State in Your UI</a>. This is distinct from the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> below, some of whose callbacks run in the SDK's background process.</p><h2>Optional: Handlers</h2><p>If you do not specify a custom <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> in  <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/get-speedify-s-d-k.html"><code>getSpeedifySDK</code></a>, you can call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-handler.html"><code>setHandler</code></a> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a> method above.</p><h2>Optional: SDK Cleanup</h2><p>To close down the SDK entirely without exiting your application, call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-force-exit.html"><code>SpeedifySDK.ForceExit(context)</code></a>. To restart the SDK, you must either obtain a new SpeedifySDK object or call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/restart-services.html"><code>restartServices</code></a> on your old SpeedifySDK object.</p></div>
+</div><h2>Receiving State</h2><p>To drive your UI you register an <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/index.html"><code>ISdkStateReceiver</code></a>, whose callbacks run in your process — see <a href="receivingstate.html">Receiving State in Your UI</a>. This is distinct from the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> below, some of whose callbacks run in the SDK's background process.</p><h2>Optional: Handlers</h2><p>If you do not specify a custom <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> in  <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/get-speedify-s-d-k.html"><code>getSpeedifySDK</code></a>, you can call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-handler.html"><code>setHandler</code></a> on your SpeedifySDK object to set one later. Note that some callbacks on the ISpeedifyHandler happen in Speedify SDK's background process. If you want to implement these, use the <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-auto-construct/index.html"><code>SpeedifySDK.AutoConstruct</code></a> method above.</p><h2>Optional: Stopping What You Aren't Using</h2><p>Everything here is safe to stop and start again at any time:</p><ul><li><strong>Statistics</strong> — <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/enable-stat-updates.html"><code>enableStatUpdates(false, null)</code></a> stops the once-per-second stats stream. Enable it only while a screen that displays stats is visible; see <a href="receivingstate.html">Receiving State in Your UI</a>.</li><li><strong>State receivers</strong> — <a href="../speedifysdk/com.speedify.speedifysdk/-multi-receiver-manager/unregister.html"><code>sdkStateReceivers.unregister</code></a> when the UI that was listening goes away.</li><li><strong>The tunnel</strong> — <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/disconnect.html"><code>disconnect</code></a> tears down the VPN but leaves the SDK logged in and its services running, ready to connect again.</li><li><strong>The SDK itself</strong> — <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/-force-exit.html"><code>SpeedifySDK.ForceExit(context)</code></a> disconnects, stops the SDK's background VPN process, and removes the foreground service notification. Any SpeedifySDK object you previously constructed becomes unusable after this; to start again, obtain a new SpeedifySDK object or call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/restart-services.html"><code>restartServices</code></a> on the old one. Stored login credentials are kept, so the SDK logs back in on the next start.</li></ul></div>
   </div>
 </div>
     <div class="footer">

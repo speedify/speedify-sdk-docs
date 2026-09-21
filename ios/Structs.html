@@ -287,6 +287,9 @@
                 <a href="Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/DaemonExitOutcome.html">DaemonExitOutcome</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/DaemonLogSettings.html">DaemonLogSettings</a>
               </li>
               <li class="nav-group-task">
@@ -431,6 +434,44 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk17DaemonExitOutcomeV"></a>
+                    <a name="//apple_ref/swift/Struct/DaemonExitOutcome" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk17DaemonExitOutcomeV">DaemonExitOutcome</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>What one exitDaemon() call did, carried back to whoever asked for it.</p>
+
+<p>A bare <code>false</code> was ambiguous: it meant both &ldquo;waited the full budget and the
+daemon never confirmed&rdquo; and &ldquo;could not even build the command, so nothing
+was sent and we returned immediately&rdquo;. Those are different bugs and reached
+Sentry as the same message.</p>
+
+<p>Returned rather than stored on the shared instance on purpose: exitDaemon()
+is called from tunnelWillStop (NE stop thread) and from clearSettings (app
+message thread), so a property would be written from two threads and could
+describe the wrong call.</p>
+
+                        <a href="Structs/DaemonExitOutcome.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DaemonExitOutcome</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>

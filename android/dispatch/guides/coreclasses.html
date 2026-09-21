@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>The Two Core Classes - Speedify SDK for Android 17.2.0</title>
+    <link href="../images/speedify.webp" rel="icon" type="image/webp">
+    <script>var pathToRoot = "../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+    <script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
+    <link href="../styles/style.css" rel="Stylesheet">
+    <link href="../styles/main.css" rel="Stylesheet">
+    <link href="../styles/prism.css" rel="Stylesheet">
+    <link href="../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../ui-kit/ui-kit.min.css" rel="Stylesheet">
+    <script type="text/javascript" src="../scripts/safe-local-storage_blocking.js"></script>
+    <script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
+    <script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
+    <script type="text/javascript" src="../scripts/main.js" defer></script>
+    <script type="text/javascript" src="../scripts/prism.js" async></script>
+    <script type="text/javascript" src="../ui-kit/ui-kit.min.js" defer></script>
+    <link href="../styles/dokka-custom.css" rel="Stylesheet">
+    <style>
+        .guide-content { padding: 1rem 0 3rem; }
+        .guide-content h1 { border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .guide-content h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem;
+                            margin-top: 2rem; }
+        .guide-content pre { background: var(--color-background-code-block); padding: 1rem; border-radius: 4px;
+                             overflow-x: auto; font: var(--font-code); }
+        .guide-content code { background: var(--color-background-inline-code); padding: 0.15rem 0.3rem;
+                              border-radius: 3px; font: var(--font-code); }
+        .guide-content pre code { background: none; padding: 0; }
+        .guide-tabs { margin: 1rem 0; }
+        .guide-tabs--bar { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--color-background-nav-dt, #4d5156); }
+        .guide-tab { background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px;
+                     padding: 0.4rem 1rem; cursor: pointer; color: inherit; font: inherit; font-size: 0.9em; opacity: 0.75; }
+        .guide-tab:hover { opacity: 1; }
+        .guide-tab[aria-selected="true"] { border-bottom-color: #7f52ff; font-weight: 600; opacity: 1; }
+        .guide-tab-content > pre:first-child { margin-top: 0.5rem; }
+        .guide-code-wrap { position: relative; }
+        .guide-copy-btn { position: absolute; top: 0.6rem; right: 0.6rem; opacity: 0.55;
+                          background: var(--color-background-inline-code); color: inherit;
+                          border: 1px solid rgba(128, 128, 128, 0.35); border-radius: 4px;
+                          padding: 0.3rem 0.4rem; cursor: pointer; line-height: 0; }
+        .guide-copy-btn:hover, .guide-copy-btn:focus-visible { opacity: 1; }
+        .guide-copy-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor;
+                              stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <script>
+        // Language tab groups: clicking a tab switches every group on the page
+        // that offers that language, and the choice persists across pages.
+        (function() {
+            var KEY = 'speedify-docs-tab-lang';
+            function apply(group, lang) {
+                var tabs = group.querySelectorAll('.guide-tab');
+                var target = tabs[0] && tabs[0].dataset.lang;
+                tabs.forEach(function(t) { if (t.dataset.lang === lang) target = lang; });
+                tabs.forEach(function(t) { t.setAttribute('aria-selected', String(t.dataset.lang === target)); });
+                group.querySelectorAll('.guide-tab-content').forEach(function(c) {
+                    c.hidden = c.dataset.lang !== target;
+                });
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                var groups = document.querySelectorAll('.guide-tabs');
+                var saved = localStorage.getItem(KEY);
+                groups.forEach(function(g) { apply(g, saved); });
+                groups.forEach(function(g) {
+                    g.addEventListener('click', function(e) {
+                        var btn = e.target.closest('.guide-tab');
+                        if (!btn) return;
+                        localStorage.setItem(KEY, btn.dataset.lang);
+                        groups.forEach(function(x) { apply(x, btn.dataset.lang); });
+                    });
+                });
+            });
+        })();
+
+        // Copy button on every code block.
+        (function() {
+            var COPY = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="1.5"/><path d="M5 15h-.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"/></svg>';
+            var CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.guide-content pre').forEach(function(pre) {
+                    // position the button on a wrapper so it doesn't scroll with wide code
+                    var wrap = document.createElement('div');
+                    wrap.className = 'guide-code-wrap';
+                    pre.parentNode.insertBefore(wrap, pre);
+                    wrap.appendChild(pre);
+                    var btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'guide-copy-btn';
+                    btn.title = 'Copy code sample';
+                    btn.setAttribute('aria-label', 'Copy code sample');
+                    btn.innerHTML = COPY;
+                    btn.addEventListener('click', function() {
+                        var code = pre.querySelector('code');
+                        var text = (code || pre).innerText.replace(/\n$/, '');
+                        function done(ok) {
+                            btn.innerHTML = ok ? CHECK : COPY;
+                            setTimeout(function() { btn.innerHTML = COPY; }, 1500);
+                        }
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(text).then(function() { done(true); }, function() { done(false); });
+                        } else {
+                            var ta = document.createElement('textarea');
+                            ta.value = text;
+                            document.body.appendChild(ta);
+                            ta.select();
+                            var ok = false;
+                            try { ok = document.execCommand('copy'); } catch (e) {}
+                            document.body.removeChild(ta);
+                            done(ok);
+                        }
+                    });
+                    wrap.appendChild(btn);
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../index.html" tabindex="1">
+                    Speedify SDK for Android 17.2.0
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Speedify SDK for Android 17.2.0
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content">
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.2.0</a><span class="delimiter">/</span>
+                    <a href="index.html">Guides</a><span class="delimiter">/</span>
+                    <span class="current">The Two Core Classes</span></div>
+  <div class="cover ">
+    <div class="guide-content">
+<p>Everything you build on the Speedify SDK revolves around two classes:</p><ul><li><strong><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/index.html"><code>SpeedifySDK</code></a></strong> — the command side. Obtained with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-instance.html"><code>getInstance</code></a> (see <a href="#sdkinit">Initializing the SDK</a>). Every method on it — login, connect, settings — returns immediately; nothing on this class blocks or returns a result directly.</li><li><strong><a href="../speedifysdk/com.speedify.speedifysdk/-i-speedify-handler/index.html"><code>ISpeedifyHandler</code></a></strong> — the callback side. Results, errors, and state changes all arrive here. Extend <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-handler/index.html"><code>SpeedifyHandler</code></a> (which provides empty defaults for everything) and override what you need. Some of its callbacks run in the SDK's background process; to drive UI, register the <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/index.html"><code>ISdkStateReceiver</code></a> subset in your UI process instead — see <a href="receivingstate.html">Receiving State in Your UI</a>.</li></ul><p>Commands in one direction, events in the other: your app calls a <code>SpeedifySDK</code> method, then reacts to the callback that reports the outcome. The one piece of state that matters most is <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/index.html"><code>State</code></a>, delivered on <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-state.html"><code>OnState</code></a>.</p><h2>The Essential Flow: Log In, Then Connect</h2><p>A VPN session is two steps, and each is a single call:</p><p><strong>1. Log in — once.</strong> From <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-o-u-t.html"><code>LOGGED_OUT</code></a>, authenticate with one of <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login.html"><code>login</code></a>, <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/login-o-auth.html"><code>loginOAuth</code></a>, or <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/get-activation-code.html"><code>getActivationCode</code></a> (sign in from a browser — ideal for TVs and other limited-input devices). On success the SDK reaches <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n.html"><code>LOGGED_IN</code></a>, stores the credentials, and from then on logs itself back in every time it starts — you do not call login again on later launches. See <a href="sdkinit.html">How Often to Log In</a> for details and the exceptions.</p><p><strong>2. Connect.</strong> From <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-l-o-g-g-e-d_-i-n.html"><code>LOGGED_IN</code></a>, call <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/connect-auto.html"><code>connectAuto</code></a> — with <a href="../speedifysdk/com.speedify.speedifysdk/-types/-auto-connect-method/-c-l-o-s-e-s-t.html"><code>CLOSEST</code></a> it picks the nearest server for you. The SDK walks through <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-c-o-n-n-e-c-t-i-n-g.html"><code>CONNECTING</code></a> to <a href="../speedifysdk/com.speedify.speedifysdk/-types/-state/-c-o-n-n-e-c-t-e-d.html"><code>CONNECTED</code></a>, reporting the chosen server on <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-connected-server.html"><code>OnConnectedServer</code></a>. To pick a specific server instead, use <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/connect-by-country.html"><code>connectByCountry</code></a>, <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/connect-by-city.html"><code>connectByCity</code></a>, or <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/connect-by-server.html"><code>connectByServer</code></a>.</p><p>Failures arrive on <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-login-error.html"><code>OnLoginError</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-connect-error.html"><code>OnConnectError</code></a>; <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/disconnect.html"><code>disconnect</code></a> returns to LOGGED_IN.</p><p>Put together, the smallest useful app is a handler that reacts to state:</p><div class="guide-tabs">
+<div class="guide-tabs--bar" role="tablist"><button class="guide-tab" role="tab" data-lang="Kotlin" aria-selected="true">Kotlin</button><button class="guide-tab" role="tab" data-lang="Java" aria-selected="false">Java</button></div>
+<div class="guide-tab-content" data-lang="Kotlin">
+<pre><code class="language-kotlin">class MyHandler(private val context: Context) : SpeedifyHandler() {
+
+  override fun OnState(state: Types.State) {
+    val sdk = SpeedifySDK.getInstance(context) ?: return
+    when (state) {
+      // Not a place to log in: the SDK passes through LOGGED_OUT at startup
+      // while its own stored-credential login is in flight. Sign in from your
+      // own UI on first run, and again only when OnLoginError says the stored
+      // credentials stopped working.
+      Types.State.LOGGED_OUT -&gt; { /* nothing to do here */ }
+      // LOGGED_IN is also the state after a manual disconnect, so gate the
+      // connect on your app's own intent rather than connecting unconditionally.
+      Types.State.LOGGED_IN -&gt; if (userWantsVpn) sdk.connectAuto(Types.AutoConnectMethod.CLOSEST)
+      Types.State.CONNECTED -&gt; { /* tunnel is up */ }
+      else -&gt; { /* transitional states */ }
+    }
+  }
+
+  override fun OnLoginError(errorType: Types.ErrorType?, message: String?) {
+    // credentials rejected / token expired / network trouble
+  }
+}
+</code></pre>
+</div>
+<div class="guide-tab-content" data-lang="Java" hidden>
+<pre><code class="language-java">public class MyHandler extends SpeedifyHandler {
+  private final Context context;
+
+  public MyHandler(Context context) { this.context = context; }
+
+  @Override
+  public void OnState(Types.State state) {
+    SpeedifySDK sdk = SpeedifySDK.getInstance(context);
+    if (sdk == null) return;
+    switch (state) {
+      case LOGGED_OUT:
+        // Not a place to log in: the SDK passes through LOGGED_OUT at startup
+        // while its own stored-credential login is in flight. Sign in from your
+        // own UI on first run, and again only when OnLoginError says the stored
+        // credentials stopped working.
+        break;
+      case LOGGED_IN:
+        // LOGGED_IN is also the state after a manual disconnect, so gate the
+        // connect on your app's own intent rather than connecting unconditionally.
+        if (userWantsVpn) sdk.connectAuto(Types.AutoConnectMethod.CLOSEST);
+        break;
+      case CONNECTED:
+        // tunnel is up
+        break;
+      default:
+        // transitional states
+        break;
+    }
+  }
+
+  @Override
+  public void OnLoginError(Types.ErrorType errorType, String message) {
+    // credentials rejected / token expired / network trouble
+  }
+}
+</code></pre>
+</div>
+</div><p>Pass your handler to the <code>SpeedifySDK</code> constructor in <a href="sdkinit.html">getSpeedifySDK</a>, or attach it later with <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-handler.html"><code>setHandler</code></a>.</p><p>Everything else the SDK offers — server selection, per-connection settings, statistics, sharing — hangs off this same skeleton: a <code>SpeedifySDK</code> call, answered by a callback.</p></div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>Copyright © Connectify, Inc. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+    
+</html>

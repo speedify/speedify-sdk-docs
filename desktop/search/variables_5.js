@@ -8,5 +8,6 @@ var searchData=
   ['fixeddelay_5',['fixedDelay',['../struct_speedify_s_d_k___settings.html#aa0a7bcbf984e3ae5733dd1a7ac53fd9b',1,'SpeedifySDK_Settings']]],
   ['forwardedportdestips_6',['forwardedPortDestIps',['../struct_speedify_s_d_k___settings.html#aa9e140cb6b07077f8f29ae2dcb5e4b2b',1,'SpeedifySDK_Settings']]],
   ['forwardedports_7',['forwardedPorts',['../struct_speedify_s_d_k___settings.html#a8500ddc10abfce2aad30f069b5593248',1,'SpeedifySDK_Settings']]],
-  ['fps_8',['fps',['../struct_speedify_s_d_k___speed_test_result_data.html#a8138d584a7d2eeca1cd0179b1425fb1a',1,'SpeedifySDK_SpeedTestResultData']]]
+  ['fps_8',['fps',['../struct_speedify_s_d_k___speed_test_result_data.html#a8138d584a7d2eeca1cd0179b1425fb1a',1,'SpeedifySDK_SpeedTestResultData']]],
+  ['friendlyname_9',['friendlyName',['../struct_speedify_s_d_k___recent_app.html#a09fabb614a29b026f5e5ff516ed22bf6',1,'SpeedifySDK_RecentApp']]]
 ];

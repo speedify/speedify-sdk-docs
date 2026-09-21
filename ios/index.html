@@ -284,6 +284,9 @@
                 <a href="Structs/ConnectionStatsGroup.html">ConnectionStatsGroup</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/DaemonExitOutcome.html">DaemonExitOutcome</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/DaemonLogSettings.html">DaemonLogSettings</a>
               </li>
               <li class="nav-group-task">
@@ -668,6 +671,11 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li><p><strong>Permission Denied</strong>: The SDK automatically triggers the local network permission prompt when discovery starts. If the user denied permission, they must re-enable it in System Settings/Preferences.</p></li>
 </ol>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-17-2' class='heading'>Speedify 17.2</h3>
+
+<ul>
+<li>No new features. This is a performance and stability release.</li>
+</ul>
 <h3 id='speedify-17-1' class='heading'>Speedify 17.1</h3>
 
 <ul>
@@ -1342,7 +1350,7 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 #### Function changes</li>
 <li><code>func startTunnel()</code> is now  <code>func startTunnel(shouldStart:Bool)</code> pass in a bool to tell the SDK whether to start the tunnel or just ask permissions and save the profile. The default before this change was true. 
 ### New Protocol
-*<code><a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a></code> this allows a callback to trigger when a user denies permission or cannot save the profile. When these errors occur you MUST restart the tunnel by calling  <code>func startTunnel(shouldStart:Bool)</code>. Please see LoginViewController in the sample app for more information.</li>
+*<code><a href="Protocols/SpeedifyTunnelDelegate.html">SpeedifyTunnelDelegate</a></code> this allows a callback to trigger when a user denies permission or cannot save the profile. When these errors occur you MUST restart the tunnel by calling  <code>func startTunnel(shouldStart:Bool)</code>. Please see the sample app for more information.</li>
 </ul>
 <h4 id='code-streamstats-code-has-new-property-fields' class='heading'><code><a href="Structs/StreamStats.html">StreamStats</a></code> has new property fields.</h4>
 
