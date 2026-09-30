@@ -671,6 +671,11 @@ For the sample application, first go to <a href="https://developer.apple.com/acc
 <li><p><strong>Permission Denied</strong>: The SDK automatically triggers the local network permission prompt when discovery starts. If the user denied permission, they must re-enable it in System Settings/Preferences.</p></li>
 </ol>
 <h2 id='changelog' class='heading'>ChangeLog</h2>
+<h3 id='speedify-17-2-1' class='heading'>Speedify 17.2.1</h3>
+
+<ul>
+<li><code><a href="Enums/TcpCca.html">TcpCca</a></code> gains <code>.bbr1</code>, <code>.bbr2</code>, <code>.bbr3</code>, <code>.cubic</code>, <code>.htcp</code>, <code>.hybla</code>, <code>.illinois</code>, <code>.reno</code>, <code>.vegas</code> and <code>.westwood</code>. Linux and Android only; on iOS and macOS anything but <code>.auto</code> and <code>.system</code> is rejected.</li>
+</ul>
 <h3 id='speedify-17-2' class='heading'>Speedify 17.2</h3>
 
 <ul>

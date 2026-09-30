@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>What's New - Speedify SDK for Android 17.2.0</title>
+    <title>What's New - Speedify SDK for Android 17.2.1</title>
     <link href="../images/speedify.webp" rel="icon" type="image/webp">
     <script>var pathToRoot = "../";</script>
     <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -134,7 +134,7 @@
 <div class="root">
     <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
             <a class="library-name--link" href="../index.html" tabindex="1">
-                    Speedify SDK for Android 17.2.0
+                    Speedify SDK for Android 17.2.1
             </a>
         <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
                 type="button">Toggle table of contents
@@ -159,7 +159,7 @@
                     data-role="dropdown-listbox" aria-label="Table of contents">
                     <div class="dropdown--header">
                             <span>
-                                    Speedify SDK for Android 17.2.0
+                                    Speedify SDK for Android 17.2.1
                             </span>
                         <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
@@ -173,12 +173,13 @@
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
 <div class="main-content" id="content">
-  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.2.0</a><span class="delimiter">/</span>
+  <div class="breadcrumbs"><a href="../index.html">Speedify SDK for Android 17.2.1</a><span class="delimiter">/</span>
                     <a href="index.html">Guides</a><span class="delimiter">/</span>
                     <span class="current">What's New</span></div>
   <div class="cover ">
     <div class="guide-content">
-<body><p><a id="whatsnew_1720"></a>
+<body><p><a id="whatsnew_1721"></a>
+Speedify SDK for Android 17.2.1</p><hr /><ul><li>DSCP support, matching the desktop SDK. <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-dscp-queues.html"><code>setDscpQueues</code></a> sets how traffic carrying each DSCP tag is treated (priority, replication, retransmission attempts), <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-dscp-monitoring-tags.html"><code>setDscpMonitoringTags</code></a> chooses the tags to report on in stats without changing how they are carried, and <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/refresh-dscp-settings.html"><code>refreshDscpSettings</code></a> asks for the current configuration. All three answer through the new <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-dscp-settings.html"><code>OnDscpSettings</code></a> callback with a <a href="../speedifysdk/com.speedify.speedifysdk/-types/-dscp-settings/index.html"><code>DscpSettings</code></a> of <a href="../speedifysdk/com.speedify.speedifysdk/-types/-dscp-queue/index.html"><code>DscpQueue</code></a> entries and monitoring tags; both lists are empty when nothing is set.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-connection-expose-dscp.html"><code>setConnectionExposeDscp</code></a> lets the DSCP tags of traffic inside the tunnel show on the transport packets of one connection, so the network between the device and the Speedify server can apply its own QoS to them. On TCP transport each tag gets its own connection, marked from its first packet. The current per-connection values arrive in <a href="../speedifysdk/com.speedify.speedifysdk/-types/-settings/expose-dscp-per-connection.html"><code>Settings.exposeDscpPerConnection</code></a> through <a href="../speedifysdk/com.speedify.speedifysdk.receivers/-i-sdk-state-receiver/-on-settings.html"><code>OnSettings</code></a>.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-types/-tcp-cca/index.html"><code>TcpCca</code></a> gains <code>BBR1</code>, <code>BBR2</code>, <code>BBR3</code>, <code>CUBIC</code>, <code>HTCP</code>, <code>HYBLA</code>, <code>ILLINOIS</code>, <code>RENO</code>, <code>VEGAS</code> and <code>WESTWOOD</code>. Anything but <code>AUTO</code> and <code>SYSTEM</code> must be registered in the running kernel; <a href="../speedifysdk/com.speedify.speedifysdk/-speedify-s-d-k/set-tcp-cca.html"><code>setTcpCca</code></a> reports an error if it is not.</li></ul><p><a id="whatsnew_1720"></a>
 Speedify SDK for Android 17.2</p><hr /><ul><li>No new features. This is a performance and stability release.</li></ul><p><a id="whatsnew_1710"></a>
 Speedify SDK for Android 17.1</p><hr /><ul><li>The SDK is now written in Kotlin. The public API is unchanged and existing Java callers need no source changes — <code>@JvmStatic</code>, <code>@JvmField</code> and <code>@JvmOverloads</code> preserve the previous call shapes. Kotlin callers will now see nullability on parameters and return types where it was previously unannotated.</li><li><a href="../speedifysdk/com.speedify.speedifysdk/-types/-session-stats/mbps-down-benefit.html"><code>mbpsDownBenefit</code></a> and <a href="../speedifysdk/com.speedify.speedifysdk/-types/-session-stats/mbps-up-benefit.html"><code>mbpsUpBenefit</code></a> are deprecated and now always 0. The underlying measurement only sampled moments when every connection was simultaneously saturated, so it reported a best-case peak rather than a benefit; it has been removed rather than left misleading.</li></ul><p><a id="whatsnew_1705"></a>
 Speedify SDK for Android 17.0.5</p><hr /><ul><li>No new features. This is a performance and stability release.</li></ul><p><a id="whatsnew_1704"></a>
