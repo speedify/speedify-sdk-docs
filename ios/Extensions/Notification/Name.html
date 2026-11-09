@@ -126,6 +126,21 @@
                 <a href="../../Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Enums/SystemExtensionUninstall.html">SystemExtensionUninstall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/SystemExtensionUninstall/Step.html">– Step</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/SystemExtensionUninstall/StepOutcome.html">– StepOutcome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/SystemExtensionUninstall/DeactivationResult.html">– DeactivationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/SystemExtensionUninstall/NextStep.html">– NextStep</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Enums/TcpCca.html">TcpCca</a>
               </li>
               <li class="nav-group-task">
@@ -579,6 +594,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:So18NSNotificationNamea11speedifysdkE32automaticTunnelRecoverySuspendedABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/automaticTunnelRecoverySuspended" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea11speedifysdkE32automaticTunnelRecoverySuspendedABvpZ">automaticTunnelRecoverySuspended</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>iOS passive recovery stopped because another VPN displaced this
+profile or the profile was disabled. Offer an explicit restart.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">automaticTunnelRecoverySuspended</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:So18NSNotificationNamea11speedifysdkE21extensionStateUpdatedABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/extensionStateUpdated" class="dashAnchor"></a>
                     <a class="token" href="#/s:So18NSNotificationNamea11speedifysdkE21extensionStateUpdatedABvpZ">extensionStateUpdated</a>
@@ -602,6 +645,60 @@ You can viw the Status here <a href="https://developer.apple.com/documentation/n
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">extensionStateUpdated</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So18NSNotificationNamea11speedifysdkE16otherVPNTookOverABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/otherVPNTookOver" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea11speedifysdkE16otherVPNTookOverABvpZ">otherVPNTookOver</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>macOS: another VPN connected and stopped ours. object: its name (String).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherVPNTookOver</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So18NSNotificationNamea11speedifysdkE16otherVPNReleasedABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/otherVPNReleased" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea11speedifysdkE16otherVPNReleasedABvpZ">otherVPNReleased</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>macOS: the VPN reported by otherVPNTookOver went away, or ours is up again.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">otherVPNReleased</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
 
                         </div>
                       </div>
@@ -656,6 +753,102 @@ You can viw the Status here <a href="https://developer.apple.com/documentation/n
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">readyDaemon</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So18NSNotificationNamea11speedifysdkE23captivePortalsDidUpdateABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/captivePortalsDidUpdate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea11speedifysdkE23captivePortalsDidUpdateABvpZ">captivePortalsDidUpdate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Broadcast of every daemon report_captive_networks, posted on the main queue.</p>
+
+<ul>
+<li>Object: [&ldquo;networks&rdquo;: [String]] — adapters currently behind a captive portal (empty = none).</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">captivePortalsDidUpdate</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So18NSNotificationNamea11speedifysdkE12nagDidUpdateABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/nagDidUpdate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea11speedifysdkE12nagDidUpdateABvpZ">nagDidUpdate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Broadcast of every daemon report_nag, posted on the main queue. The daemon
+re-sends the current type repeatedly; observers must de-duplicate.</p>
+
+<ul>
+<li>Object: [&ldquo;type&rdquo;: String] — &ldquo;usage50&rdquo;, &ldquo;usage75&rdquo;, &ldquo;usage100&rdquo;, &ldquo;expired&rdquo;, or &ldquo;&rdquo; (cleared).</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">nagDidUpdate</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So18NSNotificationNamea11speedifysdkE24networkOverLimitReportedABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/networkOverLimitReported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea11speedifysdkE24networkOverLimitReportedABvpZ">networkOverLimitReported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Broadcast of every daemon report_network_overlimit (an adapter crossed 75% or
+100% of a user data cap), posted on the main queue. The daemon re-sends queued
+ones; observers must de-duplicate.</p>
+
+<ul>
+<li>Object: the raw report (&ldquo;guid&rdquo;, &ldquo;name&rdquo;, &ldquo;type&rdquo;, &ldquo;usage&rdquo;: [String: Any]).</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">networkOverLimitReported</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
 
                         </div>
                       </div>

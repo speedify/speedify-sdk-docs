@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.2.1</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.3.0</span>
    </div>
   </td>
  </tr>
@@ -124,6 +124,24 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ab5b4d4f49683161431b90351bca636bc" id="r_ab5b4d4f49683161431b90351bca636bc"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5b4d4f49683161431b90351bca636bc">droppedIncoming</a></td></tr>
 <tr class="memdesc:ab5b4d4f49683161431b90351bca636bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of incoming packets dropped.  <br /></td></tr>
 <tr class="separator:ab5b4d4f49683161431b90351bca636bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad579177bad1a54b067e9241b67fc3cf2" id="r_ad579177bad1a54b067e9241b67fc3cf2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad579177bad1a54b067e9241b67fc3cf2">segmentationOffloadActive</a></td></tr>
+<tr class="memdesc:ad579177bad1a54b067e9241b67fc3cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the TUN is currently exchanging super-packets with the kernel.  <br /></td></tr>
+<tr class="separator:ad579177bad1a54b067e9241b67fc3cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7f35bfaf27433a57eb36d5830c1720" id="r_afd7f35bfaf27433a57eb36d5830c1720"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd7f35bfaf27433a57eb36d5830c1720">segmentationOffloadConfirmed</a></td></tr>
+<tr class="memdesc:afd7f35bfaf27433a57eb36d5830c1720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the peer has advertised that its tun can write super-packets.  <br /></td></tr>
+<tr class="separator:afd7f35bfaf27433a57eb36d5830c1720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0582b4221be00f242ad899c3e163359b" id="r_a0582b4221be00f242ad899c3e163359b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0582b4221be00f242ad899c3e163359b">segmentationOffloadUnavailable</a></td></tr>
+<tr class="memdesc:a0582b4221be00f242ad899c3e163359b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this kernel refused the TUN framing the offload needs.  <br /></td></tr>
+<tr class="separator:a0582b4221be00f242ad899c3e163359b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbae8ed3c3bdd44063caf96dcaf3eaf9" id="r_acbae8ed3c3bdd44063caf96dcaf3eaf9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbae8ed3c3bdd44063caf96dcaf3eaf9">segmentedPacketsIn</a></td></tr>
+<tr class="memdesc:acbae8ed3c3bdd44063caf96dcaf3eaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of super-packets read from the TUN.  <br /></td></tr>
+<tr class="separator:acbae8ed3c3bdd44063caf96dcaf3eaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67320a1c91612aa1633a5015c6184f92" id="r_a67320a1c91612aa1633a5015c6184f92"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67320a1c91612aa1633a5015c6184f92">segmentedPacketsOut</a></td></tr>
+<tr class="memdesc:a67320a1c91612aa1633a5015c6184f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of super-packets written to the TUN.  <br /></td></tr>
+<tr class="separator:a67320a1c91612aa1633a5015c6184f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34e7f4cd91a2dd47d40b41f78bd0ff9" id="r_ae34e7f4cd91a2dd47d40b41f78bd0ff9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae34e7f4cd91a2dd47d40b41f78bd0ff9">segmentedPacketsDropped</a></td></tr>
+<tr class="memdesc:ae34e7f4cd91a2dd47d40b41f78bd0ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of super-packets dropped because this TUN could not write them.  <br /></td></tr>
+<tr class="separator:ae34e7f4cd91a2dd47d40b41f78bd0ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains stats regarding the TUN, for use in session stats. </p>
@@ -262,6 +280,108 @@ Data Fields</h2></td></tr>
 
 <p>Size of the read queue. </p>
 <dl class="section since"><dt>Since</dt><dd>8.0 </dd></dl>
+
+</div>
+</div>
+<a id="ad579177bad1a54b067e9241b67fc3cf2" name="ad579177bad1a54b067e9241b67fc3cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad579177bad1a54b067e9241b67fc3cf2">&#9670;&#160;</a></span>segmentationOffloadActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_TunStats::segmentationOffloadActive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the TUN is currently exchanging super-packets with the kernel. </p>
+<p>The state, as opposed to the segmentationOffload setting, which is only the request. False while the setting is on means it was asked for and did not take: see segmentationOffloadUnavailable and segmentationOffloadConfirmed for which half failed. The counters below cannot answer this &ndash; an offload that never applied and one that applied and found nothing to merge both read as zero. </p><dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
+
+</div>
+</div>
+<a id="afd7f35bfaf27433a57eb36d5830c1720" name="afd7f35bfaf27433a57eb36d5830c1720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7f35bfaf27433a57eb36d5830c1720">&#9670;&#160;</a></span>segmentationOffloadConfirmed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_TunStats::segmentationOffloadConfirmed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the peer has advertised that its tun can write super-packets. </p>
+<p>Reports the peer's capability only: it can be true while this end's own setting is off. </p><dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
+
+</div>
+</div>
+<a id="a0582b4221be00f242ad899c3e163359b" name="a0582b4221be00f242ad899c3e163359b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0582b4221be00f242ad899c3e163359b">&#9670;&#160;</a></span>segmentationOffloadUnavailable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_TunStats::segmentationOffloadUnavailable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether this kernel refused the TUN framing the offload needs. </p>
+<p>Sticky for the life of the process, and the reason an enabled setting can read inactive with nothing else wrong. </p><dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
+
+</div>
+</div>
+<a id="ae34e7f4cd91a2dd47d40b41f78bd0ff9" name="ae34e7f4cd91a2dd47d40b41f78bd0ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae34e7f4cd91a2dd47d40b41f78bd0ff9">&#9670;&#160;</a></span>segmentedPacketsDropped</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SpeedifySDK_TunStats::segmentedPacketsDropped</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of super-packets dropped because this TUN could not write them. </p>
+<dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
+
+</div>
+</div>
+<a id="acbae8ed3c3bdd44063caf96dcaf3eaf9" name="acbae8ed3c3bdd44063caf96dcaf3eaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbae8ed3c3bdd44063caf96dcaf3eaf9">&#9670;&#160;</a></span>segmentedPacketsIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SpeedifySDK_TunStats::segmentedPacketsIn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of super-packets read from the TUN. </p>
+<dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
+
+</div>
+</div>
+<a id="a67320a1c91612aa1633a5015c6184f92" name="a67320a1c91612aa1633a5015c6184f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67320a1c91612aa1633a5015c6184f92">&#9670;&#160;</a></span>segmentedPacketsOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SpeedifySDK_TunStats::segmentedPacketsOut</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of super-packets written to the TUN. </p>
+<dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
 
 </div>
 </div>

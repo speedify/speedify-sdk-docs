@@ -122,6 +122,21 @@
                 <a href="Enums/StreamHealth.html">StreamHealth</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/SystemExtensionUninstall.html">SystemExtensionUninstall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SystemExtensionUninstall/Step.html">– Step</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SystemExtensionUninstall/StepOutcome.html">– StepOutcome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SystemExtensionUninstall/DeactivationResult.html">– DeactivationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SystemExtensionUninstall/NextStep.html">– NextStep</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/TcpCca.html">TcpCca</a>
               </li>
               <li class="nav-group-task">
@@ -434,6 +449,43 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11speedifysdk24SystemExtensionUninstallO"></a>
+                    <a name="//apple_ref/swift/Enum/SystemExtensionUninstall" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11speedifysdk24SystemExtensionUninstallO">SystemExtensionUninstall</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The website Mac build&rsquo;s &ldquo;Uninstall Speedify…&rdquo;, as decisions. Public
+because the app, not the SDK, runs the uninstall:</p>
+
+<p>wipe the daemon&rsquo;s state (RPC, or one start carrying wipeStartOptionKey)
+  -&gt; deactivate the system extension -&gt; remove our VPN profiles
+  -&gt; clear the app&rsquo;s own state -&gt; reveal the app and quit</p>
+
+<p>The daemon&rsquo;s account and settings live in the root system extension&rsquo;s
+container, which deactivation leaves behind and the app cannot reach, so
+the wipe has to happen while the extension is still installed.</p>
+
+                        <a href="Enums/SystemExtensionUninstall.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SystemExtensionUninstall</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="speedify.webp"/></td>
   <td id="projectalign">
-   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.2.1</span>
+   <div id="projectname">Speedify SDK for Desktop/Embedded<span id="projectnumber">&#160;17.3.0</span>
    </div>
   </td>
  </tr>
@@ -163,6 +163,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aac9afaa9408ebf5cb1f5daa081c68224" id="r_aac9afaa9408ebf5cb1f5daa081c68224"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac9afaa9408ebf5cb1f5daa081c68224">packetAggregation</a></td></tr>
 <tr class="memdesc:aac9afaa9408ebf5cb1f5daa081c68224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether packet aggregation is enabled.  <br /></td></tr>
 <tr class="separator:aac9afaa9408ebf5cb1f5daa081c68224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd813ce2f0d7a9b95ee2486f060c31a0" id="r_afd813ce2f0d7a9b95ee2486f060c31a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd813ce2f0d7a9b95ee2486f060c31a0">segmentationOffload</a></td></tr>
+<tr class="memdesc:afd813ce2f0d7a9b95ee2486f060c31a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether TUN segmentation offload is enabled.  <br /></td></tr>
+<tr class="separator:afd813ce2f0d7a9b95ee2486f060c31a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ed2859741a8ae13456782b3cee364a" id="r_ae6ed2859741a8ae13456782b3cee364a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6ed2859741a8ae13456782b3cee364a">segmentationOffloadMergeDelayUs</a></td></tr>
+<tr class="memdesc:ae6ed2859741a8ae13456782b3cee364a"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long an ingress interface waits for a packet to merge with, in microseconds.  <br /></td></tr>
+<tr class="separator:ae6ed2859741a8ae13456782b3cee364a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b4cbbc5f29f748a367fed124b30de8e" id="r_a7b4cbbc5f29f748a367fed124b30de8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b4cbbc5f29f748a367fed124b30de8e">enableDefaultRoute</a></td></tr>
 <tr class="memdesc:a7b4cbbc5f29f748a367fed124b30de8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the default route goes over the VPN tunnel.  <br /></td></tr>
 <tr class="separator:a7b4cbbc5f29f748a367fed124b30de8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -721,6 +727,40 @@ Data Fields</h2></td></tr>
 
 <p>Priority overflow threshold, in megabits per second. </p>
 <dl class="section since"><dt>Since</dt><dd>12.0 </dd></dl>
+
+</div>
+</div>
+<a id="afd813ce2f0d7a9b95ee2486f060c31a0" name="afd813ce2f0d7a9b95ee2486f060c31a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd813ce2f0d7a9b95ee2486f060c31a0">&#9670;&#160;</a></span>segmentationOffload</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpeedifySDK_Settings::segmentationOffload</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether TUN segmentation offload is enabled. </p>
+<p>Linux only; the setting does not exist on other platforms and reads as false there. Lets the daemon hand the kernel one large packet in place of a run of same-flow segments, in both directions, when the server agrees to it. </p><dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
+
+</div>
+</div>
+<a id="ae6ed2859741a8ae13456782b3cee364a" name="ae6ed2859741a8ae13456782b3cee364a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ed2859741a8ae13456782b3cee364a">&#9670;&#160;</a></span>segmentationOffloadMergeDelayUs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SpeedifySDK_Settings::segmentationOffloadMergeDelayUs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How long an ingress interface waits for a packet to merge with, in microseconds. </p>
+<p>Linux only, and only has an effect while segmentation offload is enabled and the server has agreed to it. Applies to interfaces that receive traffic bound for the tunnel, which on a client are typically LAN interfaces. Zero disables the merge delay. A larger value merges more at low rates and costs latency on sparse traffic. </p><dl class="section since"><dt>Since</dt><dd>17.3 </dd></dl>
 
 </div>
 </div>
